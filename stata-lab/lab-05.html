@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Buổi 12 — Quản trị địa phương và phân cấp tài khoá – Nguyên lý Quản lý Kinh tế (DTU301)</title>
+<title>Lab 05 — DNNN vs Tư nhân vs FDI – Nguyên lý Quản lý Kinh tế (DTU301)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -22,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -130,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-12.html">Chương 5 — Địa phương + Vùng</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-12.html">Buổi 12 — Quản trị địa phương và phân cấp tài khoá</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-05.html">Lab 05 — DNNN vs Tư nhân vs FDI</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -148,10 +183,16 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">← Trang chủ</span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../stata-lab/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Stata Lab</span></a>
+  </div>
+</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Chương 1 — Tổng quan QLKT</span></a>
+ <span class="menu-text">Hướng dẫn</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -159,14 +200,8 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lectures/buoi-01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 1 — Nền tảng kinh tế học: Cơ sở khoa học và Triết lý chính sách</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../lectures/buoi-02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 2 — Chức năng và Công cụ Quản lý Kinh tế</span></a>
+  <a href="../stata-lab/lab-00.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 0 — Cài Stata và các lệnh cơ bản</span></a>
   </div>
 </li>
       </ul>
@@ -174,7 +209,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Chương 2 — Ngành và doanh nghiệp</span></a>
+ <span class="menu-text">Lab theo buổi</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -182,124 +217,92 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lectures/buoi-03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 03 — Cấu trúc thị trường và thất bại thị trường</span></a>
+  <a href="../stata-lab/lab-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 1 — Vẽ PPF và tính chi phí cơ hội</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lectures/buoi-04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp</span></a>
+  <a href="../stata-lab/lab-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 2 — Phân tích chi tiêu công Việt Nam</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lectures/buoi-05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 05 — Quản trị doanh nghiệp và case Việt Nam</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Chương 3 — Vĩ mô (KT đóng)</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../lectures/buoi-06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn</span></a>
+  <a href="../stata-lab/lab-03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 03 — Tính HHI cho 5 ngành Việt Nam</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lectures/buoi-07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 07 — Mô hình IS-LM</span></a>
+  <a href="../stata-lab/lab-04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 04 — Mô phỏng thuế Pigou</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lectures/buoi-08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Chương 4 — Vĩ mô (KT mở)</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../lectures/buoi-09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 09 — Cán cân thanh toán và tỷ giá</span></a>
+  <a href="../stata-lab/lab-05.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Lab 05 — DNNN vs Tư nhân vs FDI</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lectures/buoi-10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 10 — Mô hình Mundell-Fleming</span></a>
+  <a href="../stata-lab/lab-06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 06 — Ước lượng Cobb-Douglas cho Việt Nam</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lectures/buoi-11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
- <span class="menu-text">Chương 5 — Địa phương + Vùng</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../lectures/buoi-12.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Buổi 12 — Quản trị địa phương và phân cấp tài khoá</span></a>
+  <a href="../stata-lab/lab-07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 07 — Cân bằng IS-LM bằng số</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lectures/buoi-13.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 13 — Phát triển kinh tế vùng</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
- <span class="menu-text">Seminar tổng hợp</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../lectures/buoi-14.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 14 — Chia sẻ thực tiễn</span></a>
+  <a href="../stata-lab/lab-08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 08 — Đường Phillips Việt Nam 2010-2024</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lectures/buoi-15.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 15 — Tổng kết và đánh giá</span></a>
+  <a href="../stata-lab/lab-09.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 09 — Tính NEER và REER VND</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../stata-lab/lab-10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 10 — Mundell-Fleming bằng dữ liệu lịch sử</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../stata-lab/lab-11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 11 — Event study Khủng hoảng châu Á 1997</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../stata-lab/lab-12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 12 — PCI / PAPI / PAR Index theo tỉnh</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../stata-lab/lab-13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 13 — So sánh 6 vùng KT-XH</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../stata-lab/lab-14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 14 — Capstone — phân tích 1 chính sách</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../stata-lab/lab-15.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 15 — Xuất bảng + biểu đồ cho thuyết trình</span></a>
   </div>
 </li>
       </ul>
@@ -314,21 +317,25 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Trong bài</h2>
    
   <ul>
-  <li><a href="#nội-dung-lý-thuyết-thuyết-giảng" id="toc-nội-dung-lý-thuyết-thuyết-giảng" class="nav-link active" data-scroll-target="#nội-dung-lý-thuyết-thuyết-giảng">Nội dung lý thuyết (thuyết giảng)</a></li>
-  <li><a href="#thực-hành-thảo-luận" id="toc-thực-hành-thảo-luận" class="nav-link" data-scroll-target="#thực-hành-thảo-luận">Thực hành / Thảo luận</a></li>
-  <li><a href="#bài-tập-lớn-tiểu-luận" id="toc-bài-tập-lớn-tiểu-luận" class="nav-link" data-scroll-target="#bài-tập-lớn-tiểu-luận">Bài tập lớn / Tiểu luận</a></li>
-  <li><a href="#tự-học-có-hướng-dẫn" id="toc-tự-học-có-hướng-dẫn" class="nav-link" data-scroll-target="#tự-học-có-hướng-dẫn">Tự học có hướng dẫn</a></li>
-  <li><a href="#đọc-thêm" id="toc-đọc-thêm" class="nav-link" data-scroll-target="#đọc-thêm">Đọc thêm</a></li>
+  <li><a href="#khung-lab-05" id="toc-khung-lab-05" class="nav-link active" data-scroll-target="#khung-lab-05">Khung Lab 05</a>
+  <ul class="collapse">
+  <li><a href="#bài-toán" id="toc-bài-toán" class="nav-link" data-scroll-target="#bài-toán">1. Bài toán</a></li>
+  <li><a href="#dữ-liệu-cần" id="toc-dữ-liệu-cần" class="nav-link" data-scroll-target="#dữ-liệu-cần">2. Dữ liệu cần</a></li>
+  <li><a href="#lệnh-stata-trọng-tâm" id="toc-lệnh-stata-trọng-tâm" class="nav-link" data-scroll-target="#lệnh-stata-trọng-tâm">3. Lệnh Stata trọng tâm</a></li>
+  <li><a href="#câu-hỏi-suy-nghĩ-sẽ-chi-tiết" id="toc-câu-hỏi-suy-nghĩ-sẽ-chi-tiết" class="nav-link" data-scroll-target="#câu-hỏi-suy-nghĩ-sẽ-chi-tiết">4. Câu hỏi suy nghĩ (sẽ chi tiết)</a></li>
+  </ul></li>
+  <li><a href="#deliverable-lab-05" id="toc-deliverable-lab-05" class="nav-link" data-scroll-target="#deliverable-lab-05">Deliverable Lab 05</a></li>
+  <li><a href="#tiêu-chí-chấm" id="toc-tiêu-chí-chấm" class="nav-link" data-scroll-target="#tiêu-chí-chấm">Tiêu chí chấm</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-12.html">Chương 5 — Địa phương + Vùng</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-12.html">Buổi 12 — Quản trị địa phương và phân cấp tài khoá</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-05.html">Lab 05 — DNNN vs Tư nhân vs FDI</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Buổi 12 — Quản trị địa phương và phân cấp tài khoá</h1>
-<p class="subtitle lead">Phân cấp; Tiebout, Oates, Musgrave; cải cách 2025 (34 tỉnh, 2 cấp); PCI, PAPI, PAR Index</p>
+<h1 class="title">Lab 05 — DNNN vs Tư nhân vs FDI</h1>
+<p class="subtitle lead">Tương ứng Buổi 5: Quản trị doanh nghiệp và 3 thành phần</p>
 </div>
 
 
@@ -351,81 +358,124 @@ ul.task-list li input[type="checkbox"] {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>🎯 Đóng góp CLO
+<span class="screen-reader-only">Note</span>🎯 Liên kết với Buổi 5
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>CLO3 — Phân tích phối hợp chính sách giữa các cấp</strong></p>
+<p>Bài này áp dụng khái niệm chính từ <a href="../lectures/buoi-05.html">Buổi 5</a> vào dữ liệu thực tế Việt Nam.</p>
+<p><strong>Khái niệm Stata học</strong>: <code>tabulate, summarize by group</code></p>
 </div>
 </div>
-<section id="nội-dung-lý-thuyết-thuyết-giảng" class="level2">
-<h2 class="anchored" data-anchor-id="nội-dung-lý-thuyết-thuyết-giảng">Nội dung lý thuyết (thuyết giảng)</h2>
-<p><strong>5.1. Quản trị địa phương và phân cấp tài khoá</strong></p>
-<ul>
-<li><strong>Phân cấp / phân quyền / tản quyền / uỷ quyền</strong></li>
-<li>Lý thuyết phân cấp:
-<ul>
-<li><strong>Tiebout</strong> — voting with feet</li>
-<li><strong>Oates</strong> — Decentralization Theorem</li>
-<li><strong>Musgrave</strong> — ba chức năng của Nhà nước</li>
-</ul></li>
-</ul>
-<p><strong>Bộ máy QLNN ở Việt Nam SAU cải cách 2025</strong></p>
-<ul>
-<li><strong>Chính quyền hai cấp</strong> tỉnh – xã (Luật 72/2025/QH15)</li>
-<li><strong>34 tỉnh/thành</strong> sau sắp xếp (NQ 202/2025/QH15)</li>
-<li><strong>Luật NSNN 89/2025/QH15</strong> — phân cấp nguồn thu, nhiệm vụ chi, trợ cấp cân đối</li>
-</ul>
-<p><strong>Đánh giá quản trị địa phương</strong></p>
-<ul>
-<li><strong>PCI</strong> (Provincial Competitiveness Index — VCCI)</li>
-<li><strong>PAPI</strong> (Public Administration Performance Index — UNDP)</li>
-<li><strong>PAR Index</strong> (Public Administration Reform Index — Bộ Nội vụ)</li>
-</ul>
-<p><strong>Cơ chế đặc thù</strong></p>
-<ul>
-<li><strong>NQ 98/2023</strong> cho TP.HCM</li>
-<li>Case <strong>Quảng Ninh</strong></li>
-</ul>
-</section>
-<section id="thực-hành-thảo-luận" class="level2">
-<h2 class="anchored" data-anchor-id="thực-hành-thảo-luận">Thực hành / Thảo luận</h2>
-<p><strong>Trò chơi phân cấp ngân sách</strong> theo Luật NSNN 89/2025: 3 vai (TW – Tỉnh A đầu tàu – Tỉnh B kém phát triển). Mỗi tỉnh có nguồn thu khác nhau; thảo luận trợ cấp cân đối.</p>
-</section>
-<section id="bài-tập-lớn-tiểu-luận" class="level2">
-<h2 class="anchored" data-anchor-id="bài-tập-lớn-tiểu-luận">Bài tập lớn / Tiểu luận</h2>
-<p>Đề xuất <strong>chiến lược phát triển cho một tỉnh/vùng</strong> cụ thể (Phần 1 — cấu trúc đề xuất).</p>
-</section>
-<section id="tự-học-có-hướng-dẫn" class="level2">
-<h2 class="anchored" data-anchor-id="tự-học-có-hướng-dẫn">Tự học có hướng dẫn</h2>
-<ol type="1">
-<li>Tại sao phân cấp cần đi cùng phân quyền tài khoá?</li>
-<li>Có nên dùng PCI làm KPI cho bí thư tỉnh?</li>
-<li>Mô hình 34 tỉnh: ưu nhược điểm so với 63 tỉnh cũ?</li>
-</ol>
-</section>
-<section id="đọc-thêm" class="level2">
-<h2 class="anchored" data-anchor-id="đọc-thêm">Đọc thêm</h2>
-<ul>
-<li>HCMA (2021), <em>Giáo trình Quản lý nhà nước về kinh tế</em>, chương 5.</li>
-<li>Tài liệu chuyên đề do giảng viên cung cấp.</li>
-<li>Luật 72/2025/QH15, Luật 89/2025/QH15, NQ 202/2025/QH15.</li>
-</ul>
 <div class="callout callout-style-simple callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>🚧 Nội dung đang biên soạn
+<span class="screen-reader-only">Warning</span>🚧 Lab đang biên soạn
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Bài giảng buổi 12 hiện ở dạng <strong>dàn ý theo đề cương DTU301</strong>. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.</p>
+<p>Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 05. Cấu trúc cố định theo template chuẩn của 16 lab.</p>
 </div>
 </div>
+<section id="khung-lab-05" class="level2">
+<h2 class="anchored" data-anchor-id="khung-lab-05">Khung Lab 05</h2>
+<section id="bài-toán" class="level3">
+<h3 class="anchored" data-anchor-id="bài-toán">1. Bài toán</h3>
+<p>So sánh ROE, ROA, năng suất lao động giữa 3 loại</p>
+</section>
+<section id="dữ-liệu-cần" class="level3">
+<h3 class="anchored" data-anchor-id="dữ-liệu-cần">2. Dữ liệu cần</h3>
+<p>Dataset top 500 DN VN từ VietnamReport hoặc FortuneVN</p>
+</section>
+<section id="lệnh-stata-trọng-tâm" class="level3">
+<h3 class="anchored" data-anchor-id="lệnh-stata-trọng-tâm">3. Lệnh Stata trọng tâm</h3>
+<p>Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 05 — DTU301</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>* Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span> <span class="ot">all</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">more</span> <span class="kw">off</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">using</span> <span class="st">"lab05_&lt;ten&gt;.log"</span>, <span class="kw">replace</span> <span class="bn">text</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>* === Tải dữ liệu ===</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>* (sẽ chi tiết khi có dataset thật)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>* === Phân tích ===</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>* Sử dụng: <span class="kw">tabulate</span>, <span class="kw">summarize</span> <span class="kw">by</span> <span class="fu">group</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>* === Đóng <span class="fu">log</span> ===</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">close</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="câu-hỏi-suy-nghĩ-sẽ-chi-tiết" class="level3">
+<h3 class="anchored" data-anchor-id="câu-hỏi-suy-nghĩ-sẽ-chi-tiết">4. Câu hỏi suy nghĩ (sẽ chi tiết)</h3>
+<ol type="1">
+<li>Câu hỏi mô tả dữ liệu</li>
+<li>Câu hỏi so sánh / xu hướng</li>
+<li>Câu hỏi liên hệ với lý thuyết</li>
+<li>Câu hỏi liên hệ với chính sách Việt Nam</li>
+<li>Câu hỏi mở rộng / phản biện</li>
+</ol>
+</section>
+</section>
+<section id="deliverable-lab-05" class="level2">
+<h2 class="anchored" data-anchor-id="deliverable-lab-05">Deliverable Lab 05</h2>
+<p>Nộp 3 file (như các lab trước):</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>File</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>lab05_&lt;tên&gt;.do</code></td>
+<td>Code + comment</td>
+</tr>
+<tr class="even">
+<td><code>lab05_&lt;tên&gt;.log</code></td>
+<td>Output</td>
+</tr>
+<tr class="odd">
+<td><code>lab05_&lt;tên&gt;.pdf</code> (1-2 trang)</td>
+<td>Trả lời câu hỏi + biểu đồ</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tiêu đề email</strong>: <code>DTU301-LAB05-MSSV-HọTên</code></p>
+</section>
+<section id="tiêu-chí-chấm" class="level2">
+<h2 class="anchored" data-anchor-id="tiêu-chí-chấm">Tiêu chí chấm</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Tiêu chí</th>
+<th style="text-align: center;">Điểm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Code chạy đúng, có log</td>
+<td style="text-align: center;">30%</td>
+</tr>
+<tr class="even">
+<td>Vận dụng đúng khái niệm Stata mới của bài</td>
+<td style="text-align: center;">25%</td>
+</tr>
+<tr class="odd">
+<td>Biểu đồ / bảng kết quả rõ ràng</td>
+<td style="text-align: center;">20%</td>
+</tr>
+<tr class="even">
+<td>Trả lời câu hỏi sâu, có liên hệ thực tiễn</td>
+<td style="text-align: center;">25%</td>
+</tr>
+</tbody>
+</table>
 <hr>
-<p>← <em>Buổi trước</em>: <a href="../lectures/buoi-11.html">Buổi 11</a> <em>Buổi tiếp theo</em>: <a href="../lectures/buoi-13.html">Buổi 13</a> →</p>
+<p>← <em>Lab trước</em>: <a href="../stata-lab/lab-04.html">Lab 4</a> | <em>Lab tiếp theo</em>: <a href="../stata-lab/lab-06.html">Lab 6</a> →</p>
 
 
 </section>
