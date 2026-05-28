@@ -1,52 +1,324 @@
 ---
-title: "Buổi 01 — Cơ sở khoa học kinh tế và triết lý chính sách"
-subtitle: "Khan hiếm, chi phí cơ hội, thực chứng vs chuẩn tắc; Bentham/Kant/Rawls"
-reading-time: "Chương 1"
+title: "Buổi 1 — Nền tảng kinh tế học: Cơ sở khoa học và Triết lý chính sách"
+subtitle: "Khan hiếm, PPF, thực chứng vs chuẩn tắc, ba triết lý Bentham–Kant–Rawls"
+reading-time: "Chương 1 · ~50 phút đọc"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Đóng góp CLO
 
-**CLO1 — Giải thích vai trò và công cụ QLNN về kinh tế**
+**CLO1** — Giải thích vai trò, chức năng và công cụ quản lý nhà nước về kinh tế trong nền kinh tế thị trường hiện đại.
+
+Buổi 1 đặt **nền tảng tư duy**: kinh tế học cho biết *hậu quả* của lựa chọn; triết học cho biết *nên* chọn gì. Hai vế này, cộng lại, là cơ sở khoa học của môn Quản lý Kinh tế.
 :::
 
-## Nội dung lý thuyết (thuyết giảng)
+## Lộ trình Buổi 1
 
-**1.1. Cơ sở khoa học kinh tế**
+| Phần | Nội dung |
+|:---:|---|
+| **A** | Cơ sở khoa học kinh tế — định nghĩa, ba câu hỏi, khan hiếm, PPF |
+| **B** | Phân biệt phát biểu thực chứng vs chuẩn tắc |
+| **C** | Triết lý chính sách: Bentham – Kant – Rawls |
+| **D** | Liên hệ thực tiễn Việt Nam: ba case + hộp tranh luận |
 
-- Khan hiếm và chi phí cơ hội
-- Phát biểu thực chứng vs chuẩn tắc
+## A. Cơ sở khoa học kinh tế
 
-**1.2. Triết lý chính sách**
+### A.1. Định nghĩa và ba câu hỏi cốt lõi
 
-- Bentham và **Cost-Benefit Analysis** (trọng tâm)
-- Kant và Rawls (giới thiệu để so sánh khung)
+Kinh tế học, theo Paul Samuelson (1948), là **khoa học về sự lựa chọn trong điều kiện nguồn lực khan hiếm**. Định nghĩa này gói trọn ba ý: (1) nguồn lực luôn có hạn, (2) nhu cầu luôn vượt nguồn lực, (3) lựa chọn là không thể tránh.
 
-## Thực hành / Thảo luận
+Mọi xã hội — từ bộ lạc nguyên thuỷ đến quốc gia hiện đại — đều phải trả lời ba câu hỏi nền tảng:
 
-Thảo luận phân loại phát biểu thực chứng vs chuẩn tắc; áp dụng **ba lăng kính Bentham / Kant / Rawls** cho một chính sách Việt Nam.
+1. **Sản xuất CÁI GÌ?** — bánh mì hay vũ khí? đường cao tốc hay bệnh viện?
+2. **Sản xuất NHƯ THẾ NÀO?** — bằng máy móc hay lao động thủ công? công nghệ trong nước hay nhập khẩu?
+3. **Sản xuất CHO AI?** — phân phối kết quả lao động ra sao? thị trường hay kế hoạch?
 
-## Bài tập lớn / Tiểu luận
+**Quản lý kinh tế chính là phương thức xã hội trả lời ba câu hỏi này một cách có tổ chức**. Mỗi mô hình quản lý — từ kinh tế kế hoạch tập trung tới thị trường tự do — là một cách tổ chức câu trả lời khác nhau.
 
-Bài tập: phân tích vai trò Nhà nước trong **một chính sách kinh tế cụ thể** qua ba lăng kính đạo đức.
+### A.2. Mười nguyên lý Mankiw — bộ DNA của tư duy kinh tế
 
-## Tự học có hướng dẫn
+Mười nguyên lý trong *Kinh tế học vi mô* của Mankiw là bản tóm tắt tinh tế nhất về tư duy kinh tế hiện đại. Chúng chia thành ba nhóm.
 
-1. Khái niệm về quản lý và quản lý kinh tế?
-2. Đặc điểm của quản lý kinh tế?
-3. Vai trò và chức năng của quản lý kinh tế?
+**Nhóm 1 — Con người đưa ra quyết định như thế nào (Nguyên lý 1–4)**
+
+| # | Nguyên lý | Ý nghĩa cho QLKT |
+|:---:|---|---|
+| 1 | Con người đối mặt với **đánh đổi** | Mọi chính sách đều có cái được và cái mất; không có "win-win tuyệt đối" |
+| 2 | Chi phí của một thứ = cái bị từ bỏ (**chi phí cơ hội**) | Đánh giá chính sách phải so sánh với phương án thay thế tốt nhất, không phải so với "không làm gì" |
+| 3 | Con người duy lý suy nghĩ **ở mức biên** | Điều chỉnh nhỏ thường hiệu quả hơn cải cách lớn |
+| 4 | Con người **phản ứng với khuyến khích** | Thiết kế chính sách = thiết kế hệ khuyến khích, không chỉ là ra lệnh |
+
+**Nhóm 2 — Con người tương tác với nhau ra sao (Nguyên lý 5–7)**
+
+| # | Nguyên lý | Ý nghĩa cho QLKT |
+|:---:|---|---|
+| 5 | **Trao đổi** có lợi cho mọi người | Cấm/hạn chế thương mại thường tốn kém hơn cho phép |
+| 6 | **Thị trường** thường là cách tốt để tổ chức kinh tế | Mặc định nên để thị trường vận hành |
+| 7 | Chính phủ **ĐÔI KHI** cải thiện kết quả thị trường | "Đôi khi" là từ khoá: chỉ khi có thất bại thị trường rõ ràng |
+
+**Nhóm 3 — Nền kinh tế tổng thể vận hành như thế nào (Nguyên lý 8–10)**
+
+| # | Nguyên lý | Ý nghĩa cho QLKT |
+|:---:|---|---|
+| 8 | Mức sống phụ thuộc vào **năng suất** | Mọi chính sách dài hạn cuối cùng đều quay về câu hỏi: có tăng năng suất không? |
+| 9 | Giá cả tăng khi chính phủ **in quá nhiều tiền** | Chính sách tiền tệ phải có kỷ luật |
+| 10 | Đánh đổi **ngắn hạn** giữa lạm phát và thất nghiệp | Đường Phillips — nhưng chỉ trong ngắn hạn |
+
+Mười nguyên lý này là **lăng kính chung** chúng ta sẽ dùng xuyên suốt 5 chương. Hãy ghi nhớ — chúng sẽ xuất hiện liên tục.
+
+### A.3. Vi mô và Vĩ mô — hai cấp phân tích
+
+| | **Kinh tế vi mô** | **Kinh tế vĩ mô** |
+|---|---|---|
+| Đối tượng | Cá nhân, doanh nghiệp, thị trường | Toàn bộ nền kinh tế quốc dân |
+| Khái niệm chính | Cung – cầu, giá cả, lợi nhuận | GDP, lạm phát, thất nghiệp |
+| Câu hỏi | Tại sao giá xăng tăng? | Tại sao tăng trưởng chậm lại? |
+| Trong DTU301 | **Chương 2** | **Chương 3 và 4** |
+
+Vi mô không phải "phần nhỏ" của vĩ mô — chúng là **hai cấp phân tích bổ sung**. Một chính sách thuế VAT có tác động vi mô (giá hàng tăng, cầu giảm) và tác động vĩ mô (lạm phát, ngân sách). Quản lý kinh tế đòi hỏi nhìn được cả hai.
+
+### A.4. Khan hiếm và chi phí cơ hội
+
+**Khan hiếm** là tiền đề căn bản của kinh tế học: nguồn lực hữu hạn, nhu cầu vô hạn. Bốn nguồn lực sản xuất truyền thống:
+
+| Nguồn lực | Đặc điểm |
+|---|---|
+| **Vốn** | Máy móc, nhà xưởng, hạ tầng — hao mòn theo thời gian |
+| **Lao động** | Số người làm việc — bị giới hạn bởi dân số trong tuổi LĐ |
+| **Đất đai** | Tài nguyên thiên nhiên — gần như cố định |
+| **Tri thức** | Công nghệ, bí quyết — **không cạn kiệt khi dùng**, có thể nhân đôi |
+
+Tri thức là nguồn lực đặc biệt vì *phi tranh giành* (non-rival) — một công thức, một thiết kế có thể được vô số người dùng cùng lúc. Đây là lý do nền kinh tế hiện đại tăng trưởng dài hạn chủ yếu nhờ tích luỹ tri thức (sẽ học kỹ ở **Buổi 6** với Cobb-Douglas).
+
+**Chi phí cơ hội** là lựa chọn TỐT NHẤT bị từ bỏ khi ta quyết định một việc. Đây là khái niệm quan trọng bậc nhất trong QLKT, nhưng cũng bị hiểu lầm nhiều nhất.
+
+::: {.callout-tip}
+## 📐 Ví dụ tính chi phí cơ hội
+
+**Học đại học 4 năm** — chi phí thực sự là bao nhiêu?
+
+- Chi phí trực tiếp: học phí + sách vở + chỗ ở (giả sử 200 triệu/4 năm)
+- **Chi phí cơ hội**: 4 năm thu nhập bị mất (giả sử 15 triệu/tháng × 48 tháng = 720 triệu)
+- **Tổng chi phí thật**: ~920 triệu
+
+Nếu bạn chỉ tính 200 triệu, bạn đã đánh giá thấp chi phí thật gần 5 lần. Đây là sai lầm phổ biến trong đánh giá chính sách công.
+:::
+
+**Mọi quyết định ngân sách công đều có chi phí cơ hội.** Chi 100.000 tỷ cho cao tốc Bắc-Nam có nghĩa là không chi 100.000 tỷ đó cho y tế, giáo dục, hay quốc phòng. Quản lý kinh tế tốt bắt đầu từ việc *luôn đặt câu hỏi*: "Phương án thay thế tốt nhất là gì? Liệu nó có tốt hơn?"
+
+### A.5. Đường giới hạn sản xuất (PPF)
+
+**PPF (Production Possibility Frontier)** là công cụ trực quan để hiểu khái niệm đánh đổi.
+
+Trên trục hoành: lượng hàng hoá X. Trên trục tung: lượng hàng hoá Y. Đường PPF *cong lõm* về phía gốc toạ độ, thể hiện **đánh đổi tăng dần** — càng sản xuất nhiều X, càng phải hy sinh nhiều Y.
+
+| Vị trí | Ý nghĩa |
+|---|---|
+| **Trên đường PPF** | Hiệu quả tối đa — đã dùng hết nguồn lực |
+| **Bên trong PPF** | Lãng phí — còn nguồn lực không dùng (thất nghiệp, công suất dư) |
+| **Bên ngoài PPF** | Chưa khả thi — vượt nguồn lực hiện có |
+
+**Ba bài học từ PPF**:
+
+1. **Đánh đổi dọc PPF**: muốn nhiều X hơn phải hy sinh Y. Không có "tăng tất cả" trên một đường PPF cố định.
+2. **PPF dịch ra ngoài** = tăng trưởng kinh tế. Nguyên nhân: tăng nguồn lực (vốn, lao động) hoặc tiến bộ công nghệ.
+3. **Tốc độ dịch PPF** phụ thuộc vào năng suất. Đông Á (1960–2000) là ví dụ kinh điển về PPF dịch ra rất nhanh. Việt Nam 1986–2024 GDP tăng khoảng 30 lần — PPF của VN đã dịch ra mạnh mẽ.
+
+PPF cũng giải thích vì sao tranh luận "đánh đổi giữa tăng trưởng và môi trường" thường sai. Nếu công nghệ xanh tốt hơn, PPF dịch ra theo *cả hai* chiều — có thể có nhiều GDP HƠN *và* ít ô nhiễm HƠN đồng thời.
+
+## B. Thực chứng vs Chuẩn tắc
+
+### B.1. Hai loại phát biểu kinh tế
+
+Đây là phân biệt **tối quan trọng** trong tư duy kinh tế. Tranh cãi chính sách thường rối rắm vì người ta lẫn lộn hai loại phát biểu này.
+
+| | **Thực chứng (Positive)** | **Chuẩn tắc (Normative)** |
+|---|---|---|
+| Mô tả | Thế giới như nó vận hành | Đánh giá và đề xuất chính sách |
+| Câu hỏi | "**Thực tế** là gì?" | "**NÊN** làm gì?" |
+| Tính chất | Khách quan, kiểm chứng được | Phụ thuộc giá trị, đạo đức |
+| Phương pháp giải quyết | Nghiên cứu thực nghiệm | Thảo luận giá trị |
+| Ví dụ | *Tăng lương tối thiểu 10% làm giảm việc làm 2%* | *Nên tăng lương tối thiểu vì NLĐ xứng đáng* |
+
+Sự khác biệt cốt lõi: **phát biểu thực chứng có thể đúng/sai dựa trên bằng chứng**. Phát biểu chuẩn tắc thì không — nó phụ thuộc vào hệ giá trị bạn chọn.
+
+### B.2. Case Việt Nam — Lương tối thiểu 2025
+
+Hãy phân loại ba phát biểu sau:
+
+> **"DN nhỏ có thể cắt 3–5% lao động phổ thông khi lương tối thiểu tăng 6%."**
+>
+> → **Thực chứng** — có thể kiểm chứng bằng khảo sát doanh nghiệp.
+
+> **"Nên tăng lương mạnh hơn vì người lao động đang bị thiệt."**
+>
+> → **Chuẩn tắc** — dựa trên quan điểm công bằng phân phối.
+
+> **"Không nên tăng lương vì hại doanh nghiệp và làm giảm FDI."**
+>
+> → **Chuẩn tắc** — dựa trên ưu tiên tăng trưởng và việc làm.
+
+Lưu ý: hai phát biểu chuẩn tắc cuối có thể **đối lập nhau** mà cả hai đều không "sai". Chúng phản ánh hai hệ giá trị khác nhau, không phải hai sự thật khác nhau.
+
+### B.3. Khi nào nhà kinh tế bất đồng?
+
+Có hai loại bất đồng giữa các nhà kinh tế:
+
+**Bất đồng thực chứng** — do dữ liệu hoặc phương pháp khác nhau.
+
+> *Ví dụ*: "FDI làm tăng năng suất doanh nghiệp nội địa Việt Nam thêm 2%" vs "thêm 0,5%". Cả hai có thể đúng tuỳ mẫu khảo sát, phương pháp ước lượng. Loại bất đồng này về nguyên tắc **có thể giải quyết bằng thêm nghiên cứu**.
+
+**Bất đồng chuẩn tắc** — do giá trị, ưu tiên khác nhau.
+
+> *Ví dụ*: "Ưu tiên tăng trưởng" vs "Ưu tiên bình đẳng". Cả hai không sai về sự kiện, mà khác nhau về *ưu tiên giá trị*. Loại bất đồng này **không giải quyết được bằng nghiên cứu** — phải bằng thảo luận giá trị và biểu quyết chính trị.
+
+**Kỹ năng quan trọng**: khi bạn đọc một tranh luận chính sách, hãy hỏi: *"Họ đang bất đồng ở cấp thực chứng hay chuẩn tắc?"* Trả lời được câu này, bạn đã hiểu một nửa cuộc tranh luận.
+
+## C. Triết lý chính sách: Bentham – Kant – Rawls
+
+> *"Kinh tế học cho biết HẬU QUẢ; triết học cho biết NÊN chọn gì."*
+> — Quy ước phương pháp luận DTU301
+
+Khi đánh giá chính sách, chỉ riêng kinh tế học là không đủ. Ta cần *triết lý chính trị* để biết "tốt" nghĩa là gì. Ba trường phái dưới đây là ba lăng kính chuẩn để phân tích chính sách công.
+
+### C.1. Bentham — Thuyết Công lợi (Utilitarianism)
+
+**Jeremy Bentham** (1748–1832) đề xuất nguyên lý: **hành động đúng = hành động tạo ra HẠNH PHÚC LỚN NHẤT cho NHIỀU NGƯỜI NHẤT**.
+
+Đặc điểm:
+
+- Đánh giá qua **HẬU QUẢ**, không qua động cơ.
+- **Tổng phúc lợi** = tổng hạnh phúc của mọi người, mỗi người trọng số bằng nhau.
+- Là cơ sở triết học của **Cost-Benefit Analysis (CBA)** — phương pháp đánh giá chính sách phổ biến nhất hiện nay.
+
+**Ứng dụng tại Việt Nam**:
+
+- Thuế carbon — đánh giá qua tổng giảm phát thải × giá trị biên môi trường so với chi phí kinh tế
+- Sân bay Long Thành — CBA so sánh tổng lợi ích (tiết kiệm thời gian, mở rộng năng lực vận tải) với chi phí (vốn, đất đai, vận hành)
+- Cao tốc Bắc-Nam — tính tổng lợi ích vận tải so với 350.000 tỷ đầu tư
+
+**Hạn chế của Bentham**:
+
+- Có thể **hi sinh thiểu số** vì lợi ích đa số (nếu tổng lợi ích lớn).
+- Khó đo "hạnh phúc" một cách khách quan.
+
+### C.2. Kant — Thuyết Bổn phận (Deontology)
+
+**Immanuel Kant** (1724–1804) đề xuất nguyên lý đối lập: **hành động đúng = hành động theo quy tắc có thể áp dụng PHỔ QUÁT cho tất cả mọi người**.
+
+Đặc điểm:
+
+- **Mỗi người là MỤC ĐÍCH TỰ THÂN**, không phải phương tiện để đạt mục đích khác.
+- **Quyền cơ bản** không thể bị xâm phạm vì lợi ích chung.
+- Đánh giá qua quy tắc (rule-based), không qua hậu quả.
+
+**Ứng dụng tại Việt Nam**:
+
+- **Đền bù đất theo giá thị trường** (Luật Đất đai 2024) — chủ đất là mục đích tự thân, không thể bị thu hồi rẻ để phục vụ "lợi ích chung" mơ hồ
+- Cấm tra tấn để lấy lời khai — dù có thể "giải cứu nhiều người"
+- Quyền tài sản tư nhân được hiến định
+
+**Hạn chế của Kant**:
+
+- **Cứng nhắc** khi hai bổn phận xung đột nhau (vd: bổn phận trung thực vs bổn phận bảo vệ).
+- Không có cách rõ ràng để quyết định khi hai quy tắc cân bằng.
+
+### C.3. Rawls — Màn vô minh và Nguyên tắc Khác biệt
+
+**John Rawls** (1921–2002) trong *A Theory of Justice* (1971) đề xuất một thí nghiệm tư tưởng: hãy hình dung bạn thiết kế quy tắc xã hội **trước khi biết** mình sẽ là ai trong xã hội đó — giàu hay nghèo, khoẻ hay yếu, may mắn hay không.
+
+Đó là **màn vô minh** (veil of ignorance). Đứng sau màn này, Rawls cho rằng người duy lý sẽ chọn ba nguyên tắc:
+
+| Nguyên tắc | Nội dung |
+|---|---|
+| **NT 1** | Tự do cơ bản bình đẳng cho mọi người (tự do ngôn luận, tín ngưỡng, sở hữu...) |
+| **NT 2a** | **Cơ hội công bằng**: giáo dục, y tế, việc làm phổ cập cho mọi người |
+| **NT 2b** | **Nguyên tắc Khác biệt**: bất bình đẳng chỉ chấp nhận khi nó có lợi cho người yếu thế nhất |
+
+**Ứng dụng tại Việt Nam**:
+
+- **Chương trình 135** — đầu tư đặc biệt cho xã đặc biệt khó khăn (bất bình đẳng đầu tư có lợi cho người yếu thế)
+- **BHYT toàn dân** — đảm bảo cơ hội tiếp cận y tế công bằng
+- **Học bổng dân tộc thiểu số** — bù đắp bất lợi cơ cấu
+
+**Hạn chế của Rawls**:
+
+- Khó vận hành — "lợi ích của người yếu thế" được đo bằng gì?
+- Có thể chấp nhận tăng trưởng chậm nếu nó "đi đôi với bình đẳng".
+
+### C.4. Ba trường phái — bảng so sánh
+
+| | **BENTHAM** | **KANT** | **RAWLS** |
+|---|---|---|---|
+| Câu hỏi | Tổng phúc lợi lớn nhất? | Quy tắc phổ quát? | Người yếu thế ra sao? |
+| Phương pháp | Qua hậu quả | Qua quy tắc | Qua màn vô minh |
+| Trọng tâm | Tổng | Cá nhân | Người yếu nhất |
+| Công cụ chính sách | CBA | Quyền cá nhân | Phân phối lại |
+| Nguy cơ | Hi sinh thiểu số | Cứng nhắc | Khó đo lường |
+
+**Quy ước phương pháp DTU301**: ba lăng kính **không loại trừ nhau** — chúng *bổ sung* nhau. Một chính sách tốt thường phải vượt qua được **cả ba** kiểm tra:
+
+1. Tổng lợi ích > tổng chi phí (Bentham)
+2. Không xâm phạm quyền cơ bản (Kant)
+3. Không làm tệ hơn cho người yếu thế (Rawls)
+
+## D. Liên hệ thực tiễn Việt Nam
+
+### D.1. Ba case Việt Nam — ba lăng kính
+
+| Case | Lăng kính chính | Phân tích |
+|---|---|---|
+| **Sân bay Long Thành** | Bentham | CBA: tổng lợi ích vận tải, đất nước hội nhập > chi phí 110.000 tỷ. Luật Đầu tư công 2014 yêu cầu CBA cho mọi dự án PPP. |
+| **Đền bù đất giá thị trường** | Kant | Chủ đất là mục đích tự thân — Luật Đất đai 2024 chuyển từ "giá đất do Nhà nước quy định" sang "giá thị trường" cho thu hồi đất. |
+| **Chương trình 135** | Rawls | Nguyên tắc Khác biệt: ngân sách phân bổ *bất bình đẳng* (xã 135 nhận nhiều hơn) vì có lợi cho người yếu thế nhất. |
+
+### D.2. Hộp tranh luận — Bentham vs Rawls
+
+**Câu hỏi**: Trợ giá điện đồng nhất (mọi hộ trả cùng đơn giá) có **vượt qua kiểm tra Rawls** không?
+
+**Phân tích**:
+
+- Theo Bentham: tổng phúc lợi tăng (giá điện rẻ → tiêu dùng tăng → phúc lợi xã hội tăng).
+- Theo Rawls: **người giàu hưởng lợi tuyệt đối nhiều hơn người nghèo** (vì dùng nhiều điện hơn). Bất bình đẳng tăng nhưng người nghèo chỉ được lợi nhỏ.
+- Bài học: trợ giá đồng nhất *thường thua* trợ cấp trực tiếp cho người nghèo theo lăng kính Rawls.
+
+**Michael Sandel** (Harvard) đặt câu hỏi sâu hơn: *"Có thể đo MỌI giá trị bằng tiền không?"* Khi CBA định giá môi trường, sức khoẻ, đời sống văn hoá thành tiền, ta có nguy cơ **đơn giản hoá** những giá trị không thể quy đổi.
+
+::: {.callout-warning}
+## ✋ Hoạt động nhóm 4 sinh viên
+
+Chọn **một chính sách Việt Nam** hiện hành (vd: chính sách hỗ trợ DN nhỏ, thuế carbon, BHYT, giáo dục phổ thông miễn phí, hỗ trợ vùng khó khăn). Áp dụng **ba lăng kính Bentham / Kant / Rawls** và trả lời:
+
+1. Theo Bentham: tổng lợi ích có vượt tổng chi phí không?
+2. Theo Kant: có xâm phạm quyền cơ bản của ai không?
+3. Theo Rawls: có làm tệ hơn cho người yếu thế nhất không?
+
+Nếu chính sách vượt qua cả ba kiểm tra → chính sách tốt theo nhiều khung. Nếu vượt một, thất bại hai → cần thảo luận thêm.
+:::
+
+## Tổng kết Buổi 1 — Năm điểm cốt lõi
+
+1. **QLKT** = phương thức xã hội trả lời ba câu hỏi: sản xuất *cái gì*, *thế nào*, *cho ai*.
+2. **Chi phí cơ hội** là tư duy nền tảng; **PPF** là công cụ trực quan thể hiện đánh đổi và tăng trưởng.
+3. **Phân biệt thực chứng vs chuẩn tắc** là kỹ năng cốt lõi — tránh nhầm cuộc tranh luận giá trị với cuộc tranh luận sự kiện.
+4. **Bentham, Kant, Rawls** bổ sung nhau, không loại trừ. Chính sách tốt thường phải qua cả ba kiểm tra.
+5. **Việt Nam** dùng cả ba khung trong thực tế: CBA cho hạ tầng, Kant cho đất đai, Rawls cho an sinh.
+
+## Bài tập về nhà (chuẩn bị Buổi 2)
+
+1. **Đọc** Học viện Chính trị quốc gia Hồ Chí Minh (HCMA, 2021), *Giáo trình Quản lý nhà nước về kinh tế* — Bài 1 về *Năm chức năng QLNN về kinh tế*.
+2. **Đọc** Mankiw (2026), *Kinh tế học vi mô* — chương về vai trò Nhà nước.
+3. **Chuẩn bị** 3 câu hỏi cho thảo luận về chức năng QLKT.
+4. **Tự đọc**: Nghị quyết 60/2025 về bộ máy chính quyền hai cấp.
 
 ## Đọc thêm
 
-- Mankiw, *Kinh tế học vi mô*, chương 1.
-- Buchholz, *Ý tưởng mới từ các Kinh tế gia tiền bối*, chương 1.
-
-::: {.callout-warning appearance="simple"}
-## 🚧 Nội dung đang biên soạn
-
-Bài giảng buổi 01 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
-:::
+- Mankiw, *Kinh tế học vi mô* (2026), Chương 1 — *Mười nguyên lý kinh tế học*.
+- Buchholz, *Ý tưởng mới từ các Kinh tế gia tiền bối* (2007), chương về Bentham và J.S. Mill.
+- Sandel, M., *What Money Can't Buy: The Moral Limits of Markets* (2012).
+- Rawls, J., *A Theory of Justice* (1971), chương 2.
+- Luật Đất đai (2024) — văn bản gốc.
 
 ---
 
- *Buổi tiếp theo*: [Buổi 2](buoi-02.qmd) →
+*Buổi tiếp theo*: [Buổi 2 — Chức năng và Công cụ QLKT](buoi-02.qmd) →

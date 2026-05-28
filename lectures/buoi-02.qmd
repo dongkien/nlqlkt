@@ -1,64 +1,278 @@
 ---
-title: "Buổi 02 — Khái niệm, chức năng và công cụ QLKT"
-subtitle: "5 chức năng, 3 nhóm công cụ, 3 vai trò Nhà nước trong nền KTTT"
-reading-time: "Chương 1"
+title: "Buổi 2 — Chức năng và Công cụ Quản lý Kinh tế"
+subtitle: "Khái niệm · Năm chức năng · Ba nhóm công cụ · Vai trò Nhà nước · KTTT định hướng XHCN"
+reading-time: "Chương 1 · ~50 phút đọc"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Đóng góp CLO
 
-**CLO1 — Giải thích vai trò và công cụ QLNN về kinh tế**
+**CLO1** — Giải thích vai trò, chức năng và công cụ quản lý nhà nước về kinh tế trong nền kinh tế thị trường hiện đại.
+
+Buổi 2 hoàn thiện Chương 1 bằng cách trả lời ba câu hỏi: QLKT *làm gì* (chức năng), *bằng công cụ nào* (3 nhóm), *với vai trò gì* (vai trò Nhà nước). Cuối buổi, ta đặt khung này vào bối cảnh **kinh tế thị trường định hướng XHCN** của Việt Nam.
 :::
 
-## Nội dung lý thuyết (thuyết giảng)
+## Lộ trình Buổi 2
 
-**1.3. Khái niệm, đối tượng và phạm vi quản lý kinh tế**
+| Phần | Nội dung |
+|:---:|---|
+| **A** | Khái niệm QLKT — ba cấp độ + năm đặc điểm |
+| **B** | Năm chức năng QLKT — Fayol POSDC + Điều tiết |
+| **C** | Ba nhóm công cụ — hành chính, kinh tế, thông tin |
+| **D** | Vai trò Nhà nước — ba vai trò + hai tư cách |
+| **E** | KTTT định hướng XHCN — đặc trưng + định hướng Đại hội XIV |
 
-**1.4. Năm chức năng QLKT**
+## A. Khái niệm và đối tượng QLKT
 
-- Hoạch định
-- Tổ chức
-- Chỉ đạo
-- Kiểm soát
-- Điều tiết
+### A.1. Định nghĩa Quản lý Kinh tế
 
-**1.5. Ba nhóm công cụ**
+Trước khi nói về chức năng và công cụ, cần thống nhất *quản lý kinh tế là gì*.
 
-- Hành chính – pháp lý
-- Kinh tế – tài chính
-- Thông tin – giáo dục
+**Quản lý** là tác động *có mục đích* lên *đối tượng* nhằm đạt được *mục tiêu* nhất định. Đây là định nghĩa chung nhất, áp dụng được cho mọi loại quản lý: quản lý gia đình, quản lý doanh nghiệp, quản lý nhà trường.
 
-**1.6. Ba vai trò Nhà nước trong nền kinh tế thị trường**
+**Quản lý kinh tế (QLKT)** = áp dụng nguyên lý quản lý chung vào **lĩnh vực kinh tế**.
 
-- Chủ sở hữu
-- Quản lý
-- Điều tiết
+| Phương diện | Phạm vi |
+|---|---|
+| **Đối tượng** | Nền kinh tế, các ngành, các doanh nghiệp, hộ kinh tế gia đình |
+| **Phạm vi** | Vĩ mô (quốc gia) / Trung mô (ngành) / Vi mô (doanh nghiệp) |
 
-## Thực hành / Thảo luận
+### A.2. Ba cấp độ — bảng đối chiếu
 
-Thảo luận: phân biệt 3 vai trò Nhà nước qua **một ví dụ** (vd: ngành điện, ngành ngân hàng) — phân tích cách Nhà nước thể hiện cả 3 vai trò trong cùng một ngành.
+Trong môn DTU301, cần phân biệt **ba cấp độ** thuật ngữ thường bị nhầm lẫn:
 
-## Bài tập lớn / Tiểu luận
+| Khái niệm | Nội dung | Chủ thể |
+|---|---|---|
+| **Quản lý** | Tác động có mục đích lên đối tượng nhằm đạt mục tiêu | Bất kỳ ai (cá nhân, tổ chức) |
+| **Quản lý Kinh tế** | Quản lý áp dụng vào lĩnh vực kinh tế | Cá nhân, doanh nghiệp, Nhà nước |
+| **QLNN về Kinh tế** | QLKT do **Nhà nước** thực hiện, mang **quyền lực công** | Nhà nước (các cấp) |
 
-Tiếp tục bài tập Buổi 1: bổ sung phân tích chức năng và công cụ Nhà nước đã sử dụng trong chính sách bạn chọn.
+Môn DTU301 tập trung chủ yếu vào **QLNN về Kinh tế** — tức cấp độ thứ ba. Tuy nhiên, ta vẫn dùng thuật ngữ "QLKT" thay thế cho ngắn gọn, hiểu ngầm là QLNN về kinh tế trừ khi nói rõ khác.
 
-## Tự học có hướng dẫn
+### A.3. Năm đặc điểm của QLKT
 
-1. Khi nào nên dùng công cụ hành chính, khi nào dùng công cụ kinh tế?
-2. Năm chức năng QLKT có thứ tự bắt buộc không?
-3. Vai trò 'điều tiết' khác 'quản lý' ở điểm nào?
+QLKT có năm đặc điểm khiến nó khác với các loại quản lý khác (vd: quản lý sản xuất, quản lý nhân sự):
+
+1. **Đối tượng phức tạp**: hệ thống kinh tế đa cấp (vi/trung/vĩ mô), đa chủ thể (Nhà nước, DN, hộ gia đình, nước ngoài).
+2. **Mục tiêu đa chiều**: phải đồng thời cân nhắc *tăng trưởng*, *ổn định*, *công bằng*, *bền vững* — bốn mục tiêu thường mâu thuẫn với nhau (sẽ học kỹ ở Buổi 6).
+3. **Công cụ đa dạng**: hành chính + kinh tế + thông tin (Phần C).
+4. **Phạm vi rộng**: cùng lúc vi mô (doanh nghiệp), trung mô (ngành), vĩ mô (nền kinh tế).
+5. **Chịu tác động chính trị, văn hoá và lịch sử**: chính sách kinh tế không bao giờ "thuần khoa học". Mỗi quyết định đều mang dấu ấn của bối cảnh chính trị, hệ thống giá trị và truyền thống.
+
+Năm đặc điểm này là lý do QLKT vừa là *khoa học* (có quy luật khách quan) vừa là *nghệ thuật* (đòi hỏi phán đoán bối cảnh).
+
+## B. Năm chức năng QLKT
+
+### B.1. Khung Fayol POSDC mở rộng
+
+**Henri Fayol** (1916) — kỹ sư người Pháp — đề xuất bốn chức năng kinh điển của quản lý, viết tắt **POSDC**:
+
+- **P**lanning — Hoạch định
+- **O**rganizing — Tổ chức
+- **D**irecting — Chỉ đạo
+- **C**ontrolling — Kiểm soát
+
+Áp dụng vào QLKT, người ta thường **bổ sung chức năng thứ 5 — Điều tiết (Regulating)** — vì đặc thù của QLKT là phải xử lý *thất bại thị trường*, điều mà quản lý nội bộ doanh nghiệp không gặp.
+
+**Năm chức năng tạo thành một vòng quản lý liên tục**: hoạch định → tổ chức → chỉ đạo → kiểm soát → điều tiết → quay lại hoạch định. Mỗi chức năng có công cụ và phương pháp riêng. Trong QLNN về kinh tế, năm chức năng **đan xen liên tục**, không tách rời.
+
+### B.2. Hoạch định và Tổ chức
+
+**Hoạch định (Planning)** = xác định mục tiêu và lộ trình đạt mục tiêu.
+
+> **Ví dụ Việt Nam**: *Chiến lược phát triển KT-XH 2026–2030* (theo Đại hội XIV) xác định mục tiêu tăng trưởng GDP ≥10%/năm, tầm nhìn 2045 trở thành nước phát triển thu nhập cao. Đây là **hoạch định cấp quốc gia**, định hướng cho mọi chính sách 5 năm tiếp theo.
+
+Hoạch định phải trả lời: chúng ta *đang ở đâu* — *muốn đến đâu* — *đi bằng con đường nào*.
+
+**Tổ chức (Organizing)** = thiết kế bộ máy thực thi kế hoạch.
+
+> **Ví dụ Việt Nam**: *Sắp xếp bộ máy theo Luật 72/2025/QH15* — chuyển sang chính quyền 2 cấp (tỉnh – xã), giảm từ 63 xuống 34 tỉnh/thành. Đây là **tổ chức** cấp quốc gia, đi sau hoạch định và là điều kiện tiền đề để thực thi chiến lược 2026–2030.
+
+**Tổ chức quyết định tính khả thi của hoạch định**. Một kế hoạch hay nhưng bộ máy thực thi yếu thì kế hoạch chỉ là giấy. Đây là lý do Việt Nam song hành cải cách bộ máy với chiến lược phát triển.
+
+### B.3. Chỉ đạo và Kiểm soát
+
+**Chỉ đạo (Directing)** = biến cấu trúc tổ chức thành hành động cụ thể trên thực địa.
+
+> **Ví dụ**: *Chỉ thị, công văn, hướng dẫn thi hành luật* của Thủ tướng / Bộ trưởng / Chủ tịch tỉnh. Đây là phần "ra lệnh" trong quản lý, biến các quy phạm chung thành chỉ đạo cụ thể.
+
+**Kiểm soát (Controlling)** = đo lường → so sánh với mục tiêu → phân tích sai lệch → hiệu chỉnh.
+
+> **Ví dụ Việt Nam**: *Kiểm toán Nhà nước*, *thanh tra*, *giám sát của Quốc hội*. Mỗi cơ chế là một lớp kiểm soát, đảm bảo hoạt động kinh tế của Nhà nước đi đúng kế hoạch.
+
+**Không có kiểm soát thì hoạch định mất ý nghĩa.** Bạn có thể có chiến lược tuyệt vời, bộ máy tốt, chỉ đạo rõ ràng — nhưng nếu không đo được kết quả và sửa kịp thời, mọi thứ sẽ trượt ra ngoài quỹ đạo.
+
+### B.4. Điều tiết — chức năng đặc thù của QLKT
+
+**Điều tiết (Regulating)** là chức năng *bổ sung* mà Fayol không có. Lý do: Fayol viết về quản lý doanh nghiệp, không phải quản lý nền kinh tế.
+
+Điều tiết = **sửa các thất bại thị trường**.
+
+Khi nào Nhà nước cần can thiệp? Câu hỏi này được Stiglitz & Rosengard (2015) trả lời rất rõ: chỉ khi thị trường thất bại do một trong **bốn nguồn**:
+
+| Nguồn thất bại | Bản chất | Học chi tiết ở |
+|---|---|---|
+| **Hàng hoá công** | Không bị loại trừ + không tranh giành (vd: quốc phòng) | Chương 2 |
+| **Ngoại tác** | Hành động của A ảnh hưởng B không qua giá (vd: ô nhiễm) | Chương 2 |
+| **Độc quyền tự nhiên** | Lợi thế quy mô lớn → 1 DN làm hiệu quả hơn nhiều DN | Chương 2 |
+| **Thông tin bất cân xứng** | Một bên biết nhiều hơn bên kia (vd: bảo hiểm) | Chương 2 |
+
+**Công cụ điều tiết** chính: thuế, trợ cấp, quy chuẩn kỹ thuật, cấp phép, hạn ngạch.
+
+**Đặc điểm quan trọng**: **điều tiết không tạo ra hoạt động mới, mà uốn nắn hoạt động hiện có**. Đây là điểm khác biệt then chốt giữa Nhà nước trong vai trò *điều tiết* (sửa thị trường) và Nhà nước trong vai trò *chủ sở hữu* (tự tham gia thị trường — vd: DNNN).
+
+### B.5. Hai khung năm chức năng
+
+Trong tài liệu Việt Nam, ngoài khung Fayol mở rộng, có một khung khác từ **HCMA (2021)**. Sinh viên cần biết cả hai vì chúng song song trong các tài liệu chính thức.
+
+| | **FAYOL POSDC + Điều tiết** | **HCMA 2021** |
+|---|---|---|
+| Cách tiếp cận | Khung quốc tế kinh điển + bổ sung | Khung 5 chức năng QLNN VN |
+| Chức năng 1 | Hoạch định (Planning) | Tạo lập môi trường |
+| Chức năng 2 | Tổ chức (Organizing) | Định hướng, hướng dẫn |
+| Chức năng 3 | Chỉ đạo (Directing) | Tổ chức (DNNN) |
+| Chức năng 4 | Kiểm soát (Controlling) | Điều tiết |
+| Chức năng 5 | Điều tiết (Regulating) | Kiểm tra |
+
+Hai khung **không mâu thuẫn** — chúng nhìn cùng một quá trình từ hai góc khác nhau. Khung Fayol nhấn mạnh *quy trình quản lý* (kế hoạch → tổ chức → ...), khung HCMA nhấn mạnh *vai trò của Nhà nước* trong nền kinh tế (tạo lập → định hướng → ...).
+
+## C. Ba nhóm công cụ QLKT
+
+### C.1. Phân loại ba nhóm công cụ
+
+Trong tay Nhà nước có rất nhiều công cụ, nhưng tất cả thuộc về **ba nhóm chính**:
+
+| Nhóm | Bản chất | Công cụ cụ thể |
+|---|---|---|
+| **Hành chính – Pháp lý** | Mệnh lệnh, ràng buộc pháp luật | Luật, nghị định, thông tư, cấp phép, tiêu chuẩn, xử phạt |
+| **Kinh tế – Tài chính** | Tác động qua khuyến khích kinh tế | Thuế, trợ cấp, lãi suất, tỷ giá, đầu tư công |
+| **Thông tin – Giáo dục** | Tác động qua nhận thức | Công bố thông tin, tuyên truyền, nhãn mác, giáo dục công chúng |
+
+### C.2. Lựa chọn công cụ — ưu và nhược
+
+Mỗi nhóm công cụ có ưu nhược riêng. Hiểu được điều này là *kỹ năng lựa chọn công cụ* — một trong những kỹ năng quan trọng nhất của nhà QLKT.
+
+| Nhóm | Ưu | Nhược |
+|---|---|---|
+| **Hành chính** | Mạnh, kết quả nhanh, dễ thực thi | Cứng nhắc, có thể phản tác dụng (làm xuất hiện thị trường ngầm), tốn kém kiểm soát |
+| **Kinh tế** | Linh hoạt, đo được, tận dụng thị trường | Cần thị trường vận hành tốt, có thể bóp méo nếu thiết kế kém |
+| **Thông tin** | Rẻ, ít cưỡng chế, tôn trọng tự chủ | Tác dụng chậm, khó đo, dễ bị nhiễu |
+
+**Thực tế: hiếm khi dùng một nhóm đơn lẻ — luôn kết hợp cả ba.**
+
+> **Ví dụ — Chính sách kiểm soát rượu bia tham gia giao thông**:
+>
+> - **Hành chính**: Nghị định 100/2019 cấm tuyệt đối nồng độ cồn khi lái xe; xử phạt mạnh.
+> - **Kinh tế**: tăng thuế tiêu thụ đặc biệt với rượu bia.
+> - **Thông tin**: chiến dịch truyền thông "Đã uống rượu bia — không lái xe".
+>
+> Kết quả tốt nhất khi cả ba nhóm cùng tác động — không nhóm nào đơn lẻ đủ.
+
+## D. Vai trò Nhà nước trong KTTT
+
+### D.1. Ba vai trò phổ quát và Hai tư cách đặc thù Việt Nam
+
+Trong nền kinh tế thị trường hiện đại, Nhà nước đảm nhiệm đồng thời **ba vai trò**. Khung này phổ quát, áp dụng cho mọi nền kinh tế thị trường.
+
+| Vai trò | Bản chất | Ví dụ |
+|---|---|---|
+| **Chủ sở hữu** | Nhà nước nắm tài sản kinh tế | DNNN (Viettel, EVN, VNR), đất đai, tài nguyên |
+| **Quản lý hành chính** | Nhà nước ban hành và thực thi quy phạm | Luật, nghị định, cấp phép, kiểm tra |
+| **Điều tiết thị trường** | Nhà nước sửa thất bại thị trường | Thuế Pigou, quy chuẩn môi trường, chống độc quyền |
+
+Trong tài liệu HCMA (2021) có thêm khung **hai tư cách** đặc thù Việt Nam, làm rõ tính phức tạp của vai trò Nhà nước trong KTTT định hướng XHCN:
+
+| Tư cách | Vai trò |
+|---|---|
+| **Quyền lực chính trị** | Nhà nước với tư cách cơ quan quyền lực công, ban hành pháp luật |
+| **Chủ thể kinh tế** | Nhà nước với tư cách chủ sở hữu, tham gia trực tiếp vào hoạt động kinh tế |
+
+**Hai tư cách này đan xen trong QLKT Việt Nam** — và đây vừa là *thế mạnh* (linh hoạt, đồng bộ) vừa là *thách thức* (xung đột lợi ích, ranh giới mờ).
+
+### D.2. Mô hình QLNN sau cải cách 2025
+
+Bộ máy QLNN về kinh tế của Việt Nam vừa trải qua một đợt cải cách quan trọng nhất kể từ Đổi mới 1986. Sinh viên cần nắm vững ba văn bản pháp luật then chốt:
+
+| Văn bản | Nội dung chính |
+|---|---|
+| **NQ 202/2025/QH15** | Sắp xếp đơn vị hành chính cấp tỉnh — giảm từ 63 xuống **34 tỉnh/thành** |
+| **Luật 72/2025/QH15** | Tổ chức chính quyền địa phương — chuyển sang **chính quyền 2 cấp** (tỉnh – xã, bỏ cấp huyện) |
+| **Luật 89/2025/QH15** | Ngân sách Nhà nước — **phân cấp ngân sách mới** phù hợp với mô hình 2 cấp |
+
+**Hiệu lực**: từ năm ngân sách **2026**.
+
+Đây là bộ ba cải cách kết hợp cả ba chức năng QLKT: **tổ chức** (sắp xếp đơn vị HC), **hoạch định** (luật khung mới), **kiểm soát** (cơ chế ngân sách mới). Ta sẽ học chi tiết về phân cấp tài khoá và quản trị địa phương ở **Chương 5 (Buổi 12)**.
+
+## E. KTTT định hướng XHCN
+
+### E.1. Ba đặc trưng của mô hình Việt Nam
+
+Việt Nam xây dựng **kinh tế thị trường định hướng xã hội chủ nghĩa** — một mô hình mang đặc thù riêng. Ba đặc trưng cốt lõi:
+
+**(1) Nhiều thành phần kinh tế**
+
+- **DNNN** giữ vai trò chủ đạo trong các lĩnh vực then chốt (năng lượng, hạ tầng, viễn thông)
+- **Kinh tế tư nhân (KTTN)** được khẳng định là **"động lực quan trọng nhất"** của nền kinh tế
+- **FDI** đóng vai trò bổ sung quan trọng, đặc biệt trong xuất khẩu và chuyển giao công nghệ
+
+**(2) Thị trường + Nhà nước**
+
+- Giá cả về cơ bản do thị trường quyết định
+- Nhưng có **sự định hướng của Nhà nước** trong các lĩnh vực chiến lược (năng lượng, lương thực, y tế, giáo dục)
+- Đây không phải mâu thuẫn — đây là *kết hợp có chủ ý* giữa hiệu quả thị trường và mục tiêu xã hội
+
+**(3) Công bằng + Hội nhập**
+
+- Tăng trưởng đi cùng **an sinh xã hội** (BHYT toàn dân, BHXH bắt buộc, các chương trình xoá đói giảm nghèo)
+- **Chủ động hội nhập** kinh tế quốc tế (16+ FTA đã ký, vai trò trong WTO, ASEAN, APEC, CPTPP, RCEP)
+
+### E.2. Định hướng theo Đại hội XIV
+
+Đại hội Đảng XIV (2026) xác định định hướng phát triển kinh tế giai đoạn 2026–2030–2045:
+
+**Phương châm**: *Đoàn kết — Dân chủ — Kỷ cương — Đột phá — Phát triển*
+
+**Tầm nhìn 2045**: Việt Nam trở thành **nước phát triển, thu nhập cao**.
+
+**Mục tiêu 2030**: Tăng trưởng GDP ≥ **10%/năm** (đây là mục tiêu rất tham vọng — cao hơn mức trung bình của Việt Nam giai đoạn 2010–2024 vào khoảng 6–7%/năm).
+
+**Vai trò KTTN**: được khẳng định là **"động lực quan trọng nhất"** — một sự nâng cấp so với các đại hội trước.
+
+**Bốn loại kinh tế mới** được nhấn mạnh:
+
+| Loại | Bản chất |
+|---|---|
+| **Kinh tế dữ liệu** | Dữ liệu là tài nguyên sản xuất mới |
+| **Kinh tế số** | Số hoá toàn diện sản xuất – phân phối – tiêu dùng |
+| **Kinh tế xanh** | Tăng trưởng đi đôi với bảo vệ môi trường |
+| **Kinh tế tuần hoàn** | Giảm chất thải, tái sử dụng tài nguyên |
+
+Bốn loại kinh tế này sẽ là **trọng tâm chính sách kinh tế Việt Nam 2026–2030**, và là chủ đề chính của nhiều case xuyên suốt các chương sau.
+
+## Tổng kết Buổi 2 — Năm điểm cốt lõi
+
+1. **QLKT có ba cấp độ** (quản lý → QLKT → QLNN về KT); môn DTU301 tập trung vào QLNN về KT.
+2. **Năm chức năng QLKT**: Hoạch định – Tổ chức – Chỉ đạo – Kiểm soát + **Điều tiết** (bổ sung Fayol). Năm chức năng đan xen liên tục.
+3. **Ba nhóm công cụ**: Hành chính – Kinh tế – Thông tin. Thực tế luôn kết hợp cả ba.
+4. **Vai trò Nhà nước**: ba vai trò phổ quát (chủ sở hữu, quản lý, điều tiết) + hai tư cách đặc thù VN (quyền lực chính trị, chủ thể kinh tế).
+5. **Việt Nam**: KTTT định hướng XHCN, cải cách thể chế 2025 (34 tỉnh, chính quyền 2 cấp), định hướng XIV với KTTN là động lực quan trọng nhất.
+
+## Bài tập về nhà (chuẩn bị Buổi 3 — mở Chương 2)
+
+1. **Đọc** Mankiw (2026), *Kinh tế học vi mô* — chương về cấu trúc thị trường.
+2. **Tự đọc** Luật Cạnh tranh Việt Nam (23/2018/QH14).
+3. **Chuẩn bị 3 ví dụ thực tế Việt Nam** cho bốn cấu trúc thị trường: cạnh tranh hoàn hảo, độc quyền, độc quyền nhóm, cạnh tranh độc quyền.
+4. **Đọc thêm (tự chọn)**: Case Singapore — *Lý Hiển Long: Ba quy tắc QLKT*.
 
 ## Đọc thêm
 
-- Mankiw, *Kinh tế học vi mô*, chương 10–11.
-- HCMA (2021), *Giáo trình Quản lý nhà nước về kinh tế*, chương 1–2.
-
-::: {.callout-warning appearance="simple"}
-## 🚧 Nội dung đang biên soạn
-
-Bài giảng buổi 02 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
-:::
+- Mankiw, *Kinh tế học vi mô* (2026), chương về vai trò Nhà nước.
+- HCMA (2021), *Giáo trình Quản lý nhà nước về kinh tế*, Bài 1 — *Năm chức năng QLNN về kinh tế*.
+- Luật Tổ chức chính quyền địa phương số 72/2025/QH15 (văn bản gốc).
+- Luật Ngân sách Nhà nước số 89/2025/QH15 (văn bản gốc).
+- Nghị quyết 202/2025/QH15 về sắp xếp đơn vị hành chính cấp tỉnh.
+- Văn kiện Đại hội Đảng XIV — mục về định hướng phát triển kinh tế 2026–2030.
 
 ---
 
-← *Buổi trước*: [Buổi 1](buoi-01.qmd) *Buổi tiếp theo*: [Buổi 3](buoi-03.qmd) →
+← *Buổi trước*: [Buổi 1 — Cơ sở khoa học và Triết lý chính sách](buoi-01.qmd) | *Buổi tiếp theo*: [Buổi 3 — Cấu trúc thị trường](buoi-03.qmd) →
