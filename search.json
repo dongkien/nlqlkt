@@ -173,67 +173,100 @@
   {
     "objectID": "lectures/buoi-04.html",
     "href": "lectures/buoi-04.html",
-    "title": "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp",
+    "title": "Buổi 4 — Thất bại thị trường và Cơ chế điều tiết",
     "section": "",
-    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO1, CLO2 — Vận dụng khung điều tiết và chính sách công nghiệp",
+    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO1, CLO2 — Vận dụng khung thất bại thị trường vào tình huống Việt Nam và quốc tế.\nBuổi 3 mô tả thị trường vận hành ra sao trong các cấu trúc khác nhau. Buổi 4 trả lời câu hỏi tiếp theo: khi nào thị trường thất bại và Nhà nước nên can thiệp bằng cách nào. Đây là lõi của Chức năng Điều tiết — chức năng thứ 5 của QLKT đã giới thiệu ở Buổi 2.",
     "crumbs": [
       "Chương 2 — Ngành và doanh nghiệp",
-      "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp"
+      "Buổi 4 — Thất bại thị trường và Cơ chế điều tiết"
     ]
   },
   {
-    "objectID": "lectures/buoi-04.html#nội-dung-lý-thuyết-thuyết-giảng",
-    "href": "lectures/buoi-04.html#nội-dung-lý-thuyết-thuyết-giảng",
-    "title": "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp",
-    "section": "Nội dung lý thuyết (thuyết giảng)",
-    "text": "Nội dung lý thuyết (thuyết giảng)\n2.3. Cơ chế điều tiết\n\nThuế Pigou\nĐịnh lý Coase\nCap-and-trade\nĐiều tiết độc quyền tự nhiên\n\n2.4. Chính sách công nghiệp và đổi mới sáng tạo\n\nHệ thống Đổi mới sáng tạo quốc gia (National Innovation System)\nBốn chuyển đổi theo Đại hội XIV: chuyển đổi xanh, chuyển đổi số, chuyển đổi năng lượng, chuyển đổi mô hình tăng trưởng",
+    "objectID": "lectures/buoi-04.html#lộ-trình-buổi-4",
+    "href": "lectures/buoi-04.html#lộ-trình-buổi-4",
+    "title": "Buổi 4 — Thất bại thị trường và Cơ chế điều tiết",
+    "section": "Lộ trình Buổi 4",
+    "text": "Lộ trình Buổi 4\n\n\n\nPhần\nNội dung\n\n\n\n\nA\nBốn nguồn thất bại thị trường — khái niệm chung\n\n\nB\nPigou và Coase — hai cách xử lý ngoại tác\n\n\nC\nĐiều tiết độc quyền tự nhiên — ba phương án\n\n\nD\nThông tin bất cân xứng — Akerlof và Principal-Agent",
     "crumbs": [
       "Chương 2 — Ngành và doanh nghiệp",
-      "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp"
+      "Buổi 4 — Thất bại thị trường và Cơ chế điều tiết"
     ]
   },
   {
-    "objectID": "lectures/buoi-04.html#thực-hành-thảo-luận",
-    "href": "lectures/buoi-04.html#thực-hành-thảo-luận",
-    "title": "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp",
-    "section": "Thực hành / Thảo luận",
-    "text": "Thực hành / Thảo luận\nPhân tích Formosa Hà Tĩnh qua khung Pigou/Coase: thuế hay đàm phán? Mô phỏng đấu giá quyền phát thải (cap-and-trade game).",
+    "objectID": "lectures/buoi-04.html#a.-bốn-nguồn-thất-bại-thị-trường",
+    "href": "lectures/buoi-04.html#a.-bốn-nguồn-thất-bại-thị-trường",
+    "title": "Buổi 4 — Thất bại thị trường và Cơ chế điều tiết",
+    "section": "A. Bốn nguồn thất bại thị trường",
+    "text": "A. Bốn nguồn thất bại thị trường\n\nA.1. Khái niệm\nThất bại thị trường (market failure) xảy ra khi phân bổ nguồn lực không đạt tối ưu Pareto — tức có thể cải thiện tình trạng của một người mà không làm tệ đi cho ai khác.\nTrong các trường hợp này, thị trường tự do KHÔNG dẫn đến hiệu quả xã hội. Đây chính là cơ sở lý luận để Nhà nước can thiệp (xem nguyên lý 7 của Mankiw ở Buổi 1: “Chính phủ ĐÔI KHI cải thiện kết quả thị trường”).\nBốn nguồn cần Nhà nước can thiệp, chia thành hai nhóm:\n\n\n\n\n\n\n\nNhóm\nNguồn thất bại\n\n\n\n\nPhân loại 1: tính chất hàng hoá\n1. Hàng hoá công; 2. Ngoại tác\n\n\nPhân loại 2: cấu trúc thị trường + thông tin\n3. Độc quyền tự nhiên; 4. Thông tin bất cân xứng\n\n\n\n\n\nA.2. Hàng hoá công và Ngoại tác\n\nHàng hoá công (Public goods)\nHai đặc tính:\n\n\n\n\n\n\n\nĐặc tính\nÝ nghĩa\n\n\n\n\nKhông loại trừ (non-excludable)\nKhông thể ngăn ai khỏi sử dụng\n\n\nKhông tranh giành (non-rival)\nMột người dùng không làm giảm cho người khác\n\n\n\nVấn đề: free-rider — ai cũng muốn dùng miễn phí → tư nhân không sản xuất đủ → thị trường thất bại.\nVí dụ:\n\nQuốc phòng — không thể bảo vệ chỉ một số công dân\nĐèn biển — tàu nào cũng dùng được, không loại trừ\nKhông khí sạch — không thể bán riêng cho từng người\nTri thức cơ bản — công thức toán học không cạn kiệt khi dùng\n\n→ Nhà nước cần trực tiếp cung cấp hoặc tài trợ sản xuất.\n\n\nNgoại tác (Externalities)\nNgoại tác = tác động của hoạt động một bên lên bên thứ ba không phản ánh trong giá.\nHai loại:\n\n\n\n\n\n\n\n\nLoại\nMô tả\nVí dụ\n\n\n\n\nNgoại tác âm\nHành động A gây thiệt hại cho B mà A không trả\nÔ nhiễm, tiếng ồn, ùn tắc giao thông\n\n\nNgoại tác dương\nHành động A có lợi cho B mà A không thu được\nTiêm vắc-xin, R&D, giáo dục\n\n\n\nKết quả: ngoại tác âm → sản xuất quá nhiều so với mức xã hội mong muốn. Ngoại tác dương → sản xuất quá ít.\nPhần B sẽ trình bày hai cách xử lý ngoại tác: Pigou và Coase.\n\n\n\nA.3. Độc quyền tự nhiên và Thông tin bất cân xứng\n\nĐộc quyền tự nhiên (Natural monopoly)\nATC giảm dần liên tục trên dải sản lượng — nghĩa là một DN làm tất cả sẽ rẻ hơn nhiều DN chia nhỏ.\nNguyên nhân: chi phí cố định lớn + chi phí biên thấp.\nVí dụ:\n\nĐiện (truyền tải)\nNước\nĐường sắt (hạ tầng)\nViễn thông cố định (mạng vật lý)\n\nTrong các ngành này, “cạnh tranh trực tiếp” thực tế gây lãng phí (mỗi DN phải xây hạ tầng riêng).\nPhần C sẽ trình bày ba cách điều tiết ĐQTN.\n\n\nThông tin bất cân xứng (Asymmetric information)\nMột bên giao dịch biết nhiều hơn bên kia → thị trường vận hành kém hoặc sụp đổ.\nAkerlof (1970) — The Market for Lemons — được giải Nobel Kinh tế 2001 cùng với Spence và Stiglitz.\nPhần D sẽ phân tích chi tiết.",
     "crumbs": [
       "Chương 2 — Ngành và doanh nghiệp",
-      "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp"
+      "Buổi 4 — Thất bại thị trường và Cơ chế điều tiết"
     ]
   },
   {
-    "objectID": "lectures/buoi-04.html#bài-tập-lớn-tiểu-luận",
-    "href": "lectures/buoi-04.html#bài-tập-lớn-tiểu-luận",
-    "title": "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp",
-    "section": "Bài tập lớn / Tiểu luận",
-    "text": "Bài tập lớn / Tiểu luận\nBài tập phân tích vai trò của quyền sở hữu và thể chế trong giải quyết một thất bại thị trường ở Việt Nam (Phần 2).",
+    "objectID": "lectures/buoi-04.html#b.-pigou-và-coase-hai-cách-xử-lý-ngoại-tác",
+    "href": "lectures/buoi-04.html#b.-pigou-và-coase-hai-cách-xử-lý-ngoại-tác",
+    "title": "Buổi 4 — Thất bại thị trường và Cơ chế điều tiết",
+    "section": "B. Pigou và Coase — Hai cách xử lý ngoại tác",
+    "text": "B. Pigou và Coase — Hai cách xử lý ngoại tác\n\nB.1. Thuế Pigou\nArthur Cecil Pigou (1920) — The Economics of Welfare:\n\nNếu hoạt động sản xuất gây ngoại tác âm, đánh thuế = chi phí ngoại tác biên (MEC) sẽ khiến DN “nội hoá” ngoại tác.\n\nCơ chế:\n\\[\\text{MSC (xã hội)} = \\text{MPC (DN)} + \\text{MEC (ngoại tác)}\\]\nKhi thuế Pigou = MEC, giá thị trường = giá xã hội đúng, sản lượng tối ưu.\nVí dụ:\n\nThuế carbon trên CO₂ thải\nPhí xả thải đối với nước thải công nghiệp\nThuế tiêu thụ đặc biệt với rượu, thuốc lá (ngoại tác âm về sức khoẻ)\n\nNgoại tác dương: làm ngược lại — trợ cấp = lợi ích biên xã hội. Vd: trợ cấp R&D, miễn phí vắc-xin.\n\n\nB.2. Định lý Coase\nRonald Coase (1960) — The Problem of Social Cost (Nobel Kinh tế 1991):\n\nNếu chi phí giao dịch ≈ 0 và quyền sở hữu rõ ràng, các bên sẽ tự đàm phán để đạt kết quả tối ưu. Phân bổ quyền sở hữu không ảnh hưởng đến hiệu quả (chỉ ảnh hưởng phân phối thu nhập).\n\nVai trò Nhà nước theo Coase: không can thiệp bằng thuế — chỉ thiết lập quyền sở hữu rõ ràng và giảm chi phí giao dịch.\nVí dụ kinh điển: một nhà máy thải khói lên hộ gia đình bên cạnh. Theo Coase:\n\nNếu nhà máy có quyền thải → hộ gia đình trả tiền để nhà máy giảm thải.\nNếu hộ gia đình có quyền không khí sạch → nhà máy trả tiền để được thải.\nTrong cả hai trường hợp, mức ô nhiễm tối ưu giống nhau — chỉ khác chuyện ai trả tiền.\n\n\n\nB.3. Pigou vs Coase — đối chiếu\n\n\n\n\n\n\n\n\n\nPIGOU (1920)\nCOASE (1960)\n\n\n\n\nCách tiếp cận\nCan thiệp bằng thuế và trợ cấp\nĐàm phán giữa các bên\n\n\nVai trò NN\nChủ động can thiệp\nThiết lập luật, giảm chi phí giao dịch\n\n\nYêu cầu\nBiết MEC chính xác\nChi phí giao dịch ≈ 0\n\n\nPhù hợp khi\nNhiều người bị ảnh hưởng, khó đàm phán\nÍt bên liên quan, quyền rõ ràng\n\n\nVí dụ\nThuế carbon\nTrao đổi đất nông nghiệp với khu công nghiệp\n\n\n\nKết luận thực tế: thường kết hợp cả hai — Nhà nước thiết lập luật + đánh thuế khi đàm phán quá tốn kém.\n\n\nB.4. Cap-and-Trade — Coase quy mô lớn\nCap-and-Trade = hệ thống lai giữa Pigou và Coase:\n\nNhà nước đặt cap (giới hạn tổng) — tổng quota phát thải toàn ngành.\nDN trao đổi quota trên thị trường — DN nào giảm thải dễ thì bán quota cho DN giảm thải khó.\n\nƯu điểm: hiệu quả khi chi phí giảm thải khác nhau giữa các DN. Đảm bảo mục tiêu môi trường (cap cố định) đồng thời tối thiểu hoá chi phí.\nVí dụ thực tế:\n\nEU ETS (European Emissions Trading System) — từ 2005, thị trường carbon lớn nhất thế giới.\nViệt Nam: thí điểm thị trường carbon theo Nghị định 06/2022/NĐ-CP — chuẩn bị vận hành chính thức 2028.",
     "crumbs": [
       "Chương 2 — Ngành và doanh nghiệp",
-      "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp"
+      "Buổi 4 — Thất bại thị trường và Cơ chế điều tiết"
     ]
   },
   {
-    "objectID": "lectures/buoi-04.html#tự-học-có-hướng-dẫn",
-    "href": "lectures/buoi-04.html#tự-học-có-hướng-dẫn",
-    "title": "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp",
-    "section": "Tự học có hướng dẫn",
-    "text": "Tự học có hướng dẫn\n\nKhi nào điều tiết bằng giá hiệu quả hơn quy chuẩn?\nChính sách công nghiệp Việt Nam hậu Đại hội XIV?\nĐiều kiện để cap-and-trade hiệu quả là gì?",
+    "objectID": "lectures/buoi-04.html#c.-điều-tiết-độc-quyền-tự-nhiên",
+    "href": "lectures/buoi-04.html#c.-điều-tiết-độc-quyền-tự-nhiên",
+    "title": "Buổi 4 — Thất bại thị trường và Cơ chế điều tiết",
+    "section": "C. Điều tiết độc quyền tự nhiên",
+    "text": "C. Điều tiết độc quyền tự nhiên\n\nC.1. Vì sao có độc quyền tự nhiên?\nĐặc trưng: ATC giảm liên tục trên dải sản lượng → chi phí cố định lớn + chi phí biên thấp.\nHậu quả: nếu hai DN cùng làm, tổng chi phí cao hơn một DN làm.\nNgành điển hình:\n\n\n\nNgành\nVì sao là ĐQTN\n\n\n\n\nĐiện (truyền tải)\nLưới điện trùng lặp = lãng phí khủng khiếp\n\n\nNước\nỐng cấp nước cố định, không thể “cạnh tranh trên đường ống”\n\n\nĐường sắt\nĐường ray cố định\n\n\nViễn thông cố định\nCáp đồng/cáp quang đến từng nhà\n\n\n\nKhông thể có cạnh tranh trực tiếp hiệu quả trong các ngành này — phải có cơ chế điều tiết.\n\n\nC.2. Ba phương án điều tiết ĐQTN\n\n\n\n\n\n\n\n\n\nPhương án\nCơ chế\nƯu\nNhược\n\n\n\n\nPrice cap\nNN đặt \\(P = MC\\) hoặc \\(P = ATC\\)\nĐơn giản, dễ thực thi\n\\(P = MC\\) làm DN lỗ (vì ATC &gt; MC); \\(P = ATC\\) làm DN không có động lực cải tiến\n\n\nRate of return\nCho phép tỷ suất lợi nhuận hợp lý (vd: 10%/năm trên vốn)\nDN có động lực đầu tư\nKhuyến khích đầu tư quá nhiều (Averch-Johnson effect)\n\n\nRamsey pricing\nFrank Ramsey 1927: giá theo độ nhạy cầu — đánh giá cao hơn vào nhóm cầu kém co dãn\nTối ưu phúc lợi với ràng buộc cân đối tài chính\nPhức tạp, đòi hỏi biết độ co giãn cầu\n\n\n\n\n\nC.3. Điều tiết ĐQTN ở Việt Nam\n\n\n\n\n\n\n\nNgành\nCơ chế hiện hành\n\n\n\n\nĐiện (EVN)\nĐQTN truyền tải; tách phát điện + bán lẻ thí điểm; giá điện do Nhà nước quyết định\n\n\nViễn thông\nĐã bỏ ĐQTN cố định nhờ chuyển sang di động; cạnh tranh hiệu quả giữa VNPT, Viettel, MobiFone\n\n\nĐường sắt\nĐQTN cơ sở hạ tầng (Tổng công ty Đường sắt VN); cần cải cách để tách hạ tầng và vận hành\n\n\n\nBài học chính sách: trong những ngành mà công nghệ cho phép, chia tách “phần ĐQTN cứng” (hạ tầng) và “phần có thể cạnh tranh” (dịch vụ) — đây là cách EU và Anh đã làm với đường sắt và điện.",
     "crumbs": [
       "Chương 2 — Ngành và doanh nghiệp",
-      "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp"
+      "Buổi 4 — Thất bại thị trường và Cơ chế điều tiết"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-04.html#d.-thông-tin-bất-cân-xứng",
+    "href": "lectures/buoi-04.html#d.-thông-tin-bất-cân-xứng",
+    "title": "Buổi 4 — Thất bại thị trường và Cơ chế điều tiết",
+    "section": "D. Thông tin bất cân xứng",
+    "text": "D. Thông tin bất cân xứng\n\nD.1. Akerlof và thị trường lemons\nGeorge Akerlof (1970) — The Market for Lemons: Quality Uncertainty and the Market Mechanism. Nobel Kinh tế 2001.\nVí dụ kinh điển: thị trường xe cũ ở Mỹ\n\nNgười bán biết chất lượng xe (có phải “lemon” — xe hỏng vặt không).\nNgười mua không biết.\n\nHậu quả — Adverse Selection (lựa chọn ngược):\n\nNgười mua không biết, sẵn sàng trả giá trung bình cho cả xe tốt và xe lemon.\nNgười bán xe tốt không bán được giá xứng đáng → rút khỏi thị trường.\nCòn lại chủ yếu xe lemon.\nNgười mua nhận ra → trả giá thấp hơn nữa.\nVòng xoáy tiếp tục → thị trường thu hẹp dần, có thể sụp đổ.\n\nÁp dụng tại Việt Nam:\n\nThị trường BHYT: người có sức khoẻ kém có động lực mua bảo hiểm hơn người khoẻ → công ty bảo hiểm phải tính phí cao → người khoẻ rút khỏi thị trường → BHYT toàn dân bắt buộc là giải pháp.\nThị trường lao động: nhà tuyển dụng không biết năng lực ứng viên → dùng bằng cấp làm tín hiệu (signaling — đóng góp của Spence).\n\n\n\nD.2. Principal-Agent và moral hazard\nJensen-Meckling (1976) — lý thuyết về chi phí đại diện (agency cost):\n\nPrincipal (người chủ): cổ đông, người bầu cử, người mua bảo hiểm\nAgent (đại diện): CEO, đại biểu Quốc hội, người được bảo hiểm\n\nVấn đề: lợi ích của Principal và Agent không giống nhau + Principal khó quan sát hành động của Agent.\nHậu quả — Moral hazard (rủi ro đạo đức): agent hành xử không tối ưu cho principal sau khi giao dịch xong.\nVí dụ:\n\nCEO chi tiêu phung phí (private jet, văn phòng sang) vì cổ đông trả tiền, không phải CEO.\nNgười có BHYT đi khám nhiều hơn cần thiết vì bảo hiểm trả, không phải mình.\n\nBốn giải pháp chính:\n\n\n\n\n\n\n\n\nGiải pháp\nBản chất\nVí dụ\n\n\n\n\nSignaling\nBên có thông tin tự gửi tín hiệu đáng tin\nBằng cấp, chứng chỉ, bảo hành\n\n\nScreening\nBên thiếu thông tin thiết kế cơ chế phân loại\nHợp đồng nhiều lựa chọn (deductible)\n\n\nHợp đồng khuyến khích\nGắn lương với hiệu suất\nStock options, hoa hồng\n\n\nGiám sát + kiểm toán\nTrực tiếp đo hành vi\nKiểm toán độc lập, thanh tra\n\n\n\nÁp dụng tại Việt Nam:\n\nQuản trị DNNN — vấn đề kinh điển: đại diện quản lý không tương đồng lợi ích với “chủ sở hữu Nhà nước”. Cải cách DNNN luôn xoay quanh giảm chi phí đại diện.\nBHYT — đồng chi trả (co-payment) là cơ chế screening + giảm moral hazard.\nNgân hàng — bắt buộc dự phòng rủi ro, basel III, là cơ chế giảm moral hazard sau “too big to fail”.",
+    "crumbs": [
+      "Chương 2 — Ngành và doanh nghiệp",
+      "Buổi 4 — Thất bại thị trường và Cơ chế điều tiết"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-04.html#tổng-kết-buổi-4-năm-điểm-cốt-lõi",
+    "href": "lectures/buoi-04.html#tổng-kết-buổi-4-năm-điểm-cốt-lõi",
+    "title": "Buổi 4 — Thất bại thị trường và Cơ chế điều tiết",
+    "section": "Tổng kết Buổi 4 — Năm điểm cốt lõi",
+    "text": "Tổng kết Buổi 4 — Năm điểm cốt lõi\n\nBốn nguồn thất bại thị trường cần Nhà nước can thiệp: hàng hoá công, ngoại tác, độc quyền tự nhiên, thông tin bất cân xứng.\nPigou: đánh thuế ngoại tác biên (MEC); Coase: thiết lập quyền sở hữu + đàm phán giữa các bên.\nCap-and-trade: Coase quy mô lớn — NN đặt cap, DN trao đổi quota. VN thí điểm theo NĐ 06/2022.\nĐiều tiết ĐQTN: 3 phương án chính — price cap, rate of return, Ramsey pricing.\nThông tin bất cân xứng: Akerlof (adverse selection) + Principal-Agent (moral hazard). Giải pháp: signaling, screening, hợp đồng, giám sát.",
+    "crumbs": [
+      "Chương 2 — Ngành và doanh nghiệp",
+      "Buổi 4 — Thất bại thị trường và Cơ chế điều tiết"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-04.html#bài-tập-về-nhà-chuẩn-bị-buổi-5",
+    "href": "lectures/buoi-04.html#bài-tập-về-nhà-chuẩn-bị-buổi-5",
+    "title": "Buổi 4 — Thất bại thị trường và Cơ chế điều tiết",
+    "section": "Bài tập về nhà (chuẩn bị Buổi 5)",
+    "text": "Bài tập về nhà (chuẩn bị Buổi 5)\n\nĐọc Mankiw, chương về chính sách công nghiệp.\nTự đọc về Quản trị doanh nghiệp.\nChuẩn bị 1 case chính sách ngành tại VN — vd: chính sách bán dẫn 2024, ưu đãi thuế cho doanh nghiệp công nghệ cao, gói hỗ trợ DN nhỏ.\nĐọc thêm về Hệ thống Đổi mới sáng tạo quốc gia (NIS).\n\n\n\n\n\n\n\nTip🔧 Stata Lab 4 (bonus 5%)\n\n\n\nBài này có lab thực hành mô phỏng thuế Pigou trong Stata: tạo dataset cung-cầu, tìm cân bằng trước và sau khi áp thuế, đo deadweight loss (DWL) và tổng phúc lợi. Áp dụng cho case thuế carbon Việt Nam.\n→ Bắt đầu Lab 4 — Mô phỏng thuế Pigou (~25 phút)",
+    "crumbs": [
+      "Chương 2 — Ngành và doanh nghiệp",
+      "Buổi 4 — Thất bại thị trường và Cơ chế điều tiết"
     ]
   },
   {
     "objectID": "lectures/buoi-04.html#đọc-thêm",
     "href": "lectures/buoi-04.html#đọc-thêm",
-    "title": "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp",
+    "title": "Buổi 4 — Thất bại thị trường và Cơ chế điều tiết",
     "section": "Đọc thêm",
-    "text": "Đọc thêm\n\nMankiw, Kinh tế học vi mô, chương 10 (ngoại tác).\nVăn kiện Đại hội Đảng XIV — mục về 4 chuyển đổi.\n\n\n\n\n\n\n\nWarning🚧 Nội dung đang biên soạn\n\n\n\nBài giảng buổi 04 hiện ở dạng dàn ý theo đề cương DTU301. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.\n\n\n\n← Buổi trước: Buổi 3 Buổi tiếp theo: Buổi 5 →",
+    "text": "Đọc thêm\n\nMankiw, Kinh tế học vi mô (2026), chương 10 (Externalities) và 11 (Public Goods).\nStiglitz, J. E. & Rosengard, J. K. (2015), Economics of the Public Sector, chương 4–6.\nCoase, R. (1960), The Problem of Social Cost — bài báo gốc.\nAkerlof, G. (1970), The Market for Lemons — bài báo gốc.\nNghị định 06/2022/NĐ-CP về giảm phát thải khí nhà kính và bảo vệ tầng ozon (cơ sở pháp lý cho thị trường carbon VN).\n\n\n← Buổi trước: Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh | Buổi tiếp theo: Buổi 5 — Chính sách công nghiệp và Quản trị doanh nghiệp →",
     "crumbs": [
       "Chương 2 — Ngành và doanh nghiệp",
-      "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp"
+      "Buổi 4 — Thất bại thị trường và Cơ chế điều tiết"
     ]
   },
   {
@@ -241,7 +274,7 @@
     "href": "lectures/index.html",
     "title": "Bài giảng",
     "section": "",
-    "text": "Toàn bộ 15 buổi tổ chức theo 5 chương + Seminar tổng hợp. Mỗi buổi có cấu trúc thống nhất theo đề cương DTU301:\n\nNội dung lý thuyết (thuyết giảng)\nThực hành / Thảo luận trên lớp\nBài tập lớn / Tiểu luận\nTự học có hướng dẫn (kèm 3 câu hỏi định hướng)\nĐọc thêm (Mankiw, Buchholz, HCMA 2021, văn kiện XIV…)\n\n\n\n\n\n\n\nTipCách đọc hiệu quả\n\n\n\n\nTrước buổi: đọc Đọc thêm và trả lời các câu hỏi Tự học có hướng dẫn.\nSau buổi: hoàn thiện Bài tập lớn / Tiểu luận được giao.\nĐối chiếu CLO: mỗi buổi đóng góp vào những CLO khác nhau — xem header bài giảng.\n\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\nBuổi\n\n\n\nNội dung chính\n\n\n\nThuộc chương\n\n\n\n\n\n\n\n\nBuổi 1 — Nền tảng kinh tế học: Cơ sở khoa học và Triết lý chính sách\n\n\nKhan hiếm, PPF, thực chứng vs chuẩn tắc, ba triết lý Bentham–Kant–Rawls\n\n\n18 min\n\n\n\n\n\n\nBuổi 2 — Chức năng và Công cụ Quản lý Kinh tế\n\n\nKhái niệm · Năm chức năng · Ba nhóm công cụ · Vai trò Nhà nước · KTTT định hướng XHCN\n\n\n16 min\n\n\n\n\n\n\nBuổi 03 — Cấu trúc thị trường và thất bại thị trường\n\n\n4 loại cấu trúc; Lerner, HHI; hàng hoá công, ngoại tác, độc quyền, thông tin bất cân xứng\n\n\n2 min\n\n\n\n\n\n\nBuổi 04 — Cơ chế điều tiết và chính sách công nghiệp\n\n\nPigou, Coase, cap-and-trade, ĐMST quốc gia, 4 chuyển đổi XIV\n\n\n2 min\n\n\n\n\n\n\nBuổi 05 — Quản trị doanh nghiệp và case Việt Nam\n\n\nDNNN, kinh tế tư nhân, FDI; case viễn thông, Formosa, ô tô/bán dẫn\n\n\n2 min\n\n\n\n\n\n\nBuổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn\n\n\n4 mục tiêu vĩ mô; Cobb-Douglas, phân rã Solow, growth accounting Việt Nam\n\n\n2 min\n\n\n\n\n\n\nBuổi 07 — Mô hình IS-LM\n\n\nĐường IS, LM, cân bằng, crowding out, bẫy thanh khoản\n\n\n1 min\n\n\n\n\n\n\nBuổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ\n\n\nAD-AS; Phillips ngắn hạn + kỳ vọng; phối hợp 2020-2024 VN\n\n\n2 min\n\n\n\n\n\n\nBuổi 09 — Cán cân thanh toán và tỷ giá\n\n\nBoP, NEER, REER, chế độ tỷ giá, PPP, UIP, CIP, dự trữ ngoại hối\n\n\n2 min\n\n\n\n\n\n\nBuổi 10 — Mô hình Mundell-Fleming\n\n\nBa phương trình IS-LM-BP; case Hong Kong LERS, Reaganomics, ERM 1992\n\n\n2 min\n\n\n\n\n\n\nBuổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997\n\n\nTrilemma; sterilization; VN trong Trilemma; định hướng XIV; bài học 1997\n\n\n2 min\n\n\n\n\n\n\nBuổi 12 — Quản trị địa phương và phân cấp tài khoá\n\n\nPhân cấp; Tiebout, Oates, Musgrave; cải cách 2025 (34 tỉnh, 2 cấp); PCI, PAPI, PAR Index\n\n\n2 min\n\n\n\n\n\n\nBuổi 13 — Phát triển kinh tế vùng\n\n\nMarshall, Krugman; 6 vùng KT-XH, 4 vùng KTTĐ; 4 cực động lực, 6 siêu dự án XIV\n\n\n2 min\n\n\n\n\n\n\nBuổi 14 — Chia sẻ thực tiễn\n\n\nMời chuyên gia chia sẻ; thảo luận chính sách; vận dụng nhóm\n\n\n2 min\n\n\n\n\n\n\nBuổi 15 — Tổng kết và đánh giá\n\n\nThuyết trình sinh viên; phản biện chéo; đánh giá tổng kết cuối kỳ\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Toàn bộ 15 buổi tổ chức theo 5 chương + Seminar tổng hợp. Mỗi buổi có cấu trúc thống nhất theo đề cương DTU301:\n\nNội dung lý thuyết (thuyết giảng)\nThực hành / Thảo luận trên lớp\nBài tập lớn / Tiểu luận\nTự học có hướng dẫn (kèm 3 câu hỏi định hướng)\nĐọc thêm (Mankiw, Buchholz, HCMA 2021, văn kiện XIV…)\n\n\n\n\n\n\n\nTipCách đọc hiệu quả\n\n\n\n\nTrước buổi: đọc Đọc thêm và trả lời các câu hỏi Tự học có hướng dẫn.\nSau buổi: hoàn thiện Bài tập lớn / Tiểu luận được giao.\nĐối chiếu CLO: mỗi buổi đóng góp vào những CLO khác nhau — xem header bài giảng.\n\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\nBuổi\n\n\n\nNội dung chính\n\n\n\nThuộc chương\n\n\n\n\n\n\n\n\nBuổi 1 — Nền tảng kinh tế học: Cơ sở khoa học và Triết lý chính sách\n\n\nKhan hiếm, PPF, thực chứng vs chuẩn tắc, ba triết lý Bentham–Kant–Rawls\n\n\n18 min\n\n\n\n\n\n\nBuổi 2 — Chức năng và Công cụ Quản lý Kinh tế\n\n\nKhái niệm · Năm chức năng · Ba nhóm công cụ · Vai trò Nhà nước · KTTT định hướng XHCN\n\n\n16 min\n\n\n\n\n\n\nBuổi 3 — Cấu trúc thị trường và Luật Cạnh tranh\n\n\nLược sử tư tưởng kinh tế · 4 cấu trúc thị trường · Lerner & HHI · Luật Cạnh tranh VN 2018\n\n\n12 min\n\n\n\n\n\n\nBuổi 4 — Thất bại thị trường và Cơ chế điều tiết\n\n\nBốn nguồn thất bại · Pigou & Coase · Điều tiết độc quyền tự nhiên · Thông tin bất cân xứng\n\n\n12 min\n\n\n\n\n\n\nBuổi 05 — Quản trị doanh nghiệp và case Việt Nam\n\n\nDNNN, kinh tế tư nhân, FDI; case viễn thông, Formosa, ô tô/bán dẫn\n\n\n2 min\n\n\n\n\n\n\nBuổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn\n\n\n4 mục tiêu vĩ mô; Cobb-Douglas, phân rã Solow, growth accounting Việt Nam\n\n\n2 min\n\n\n\n\n\n\nBuổi 07 — Mô hình IS-LM\n\n\nĐường IS, LM, cân bằng, crowding out, bẫy thanh khoản\n\n\n1 min\n\n\n\n\n\n\nBuổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ\n\n\nAD-AS; Phillips ngắn hạn + kỳ vọng; phối hợp 2020-2024 VN\n\n\n2 min\n\n\n\n\n\n\nBuổi 09 — Cán cân thanh toán và tỷ giá\n\n\nBoP, NEER, REER, chế độ tỷ giá, PPP, UIP, CIP, dự trữ ngoại hối\n\n\n2 min\n\n\n\n\n\n\nBuổi 10 — Mô hình Mundell-Fleming\n\n\nBa phương trình IS-LM-BP; case Hong Kong LERS, Reaganomics, ERM 1992\n\n\n2 min\n\n\n\n\n\n\nBuổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997\n\n\nTrilemma; sterilization; VN trong Trilemma; định hướng XIV; bài học 1997\n\n\n2 min\n\n\n\n\n\n\nBuổi 12 — Quản trị địa phương và phân cấp tài khoá\n\n\nPhân cấp; Tiebout, Oates, Musgrave; cải cách 2025 (34 tỉnh, 2 cấp); PCI, PAPI, PAR Index\n\n\n2 min\n\n\n\n\n\n\nBuổi 13 — Phát triển kinh tế vùng\n\n\nMarshall, Krugman; 6 vùng KT-XH, 4 vùng KTTĐ; 4 cực động lực, 6 siêu dự án XIV\n\n\n2 min\n\n\n\n\n\n\nBuổi 14 — Chia sẻ thực tiễn\n\n\nMời chuyên gia chia sẻ; thảo luận chính sách; vận dụng nhóm\n\n\n2 min\n\n\n\n\n\n\nBuổi 15 — Tổng kết và đánh giá\n\n\nThuyết trình sinh viên; phản biện chéo; đánh giá tổng kết cuối kỳ\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "lectures/buoi-06.html",
@@ -1317,49 +1350,145 @@
   {
     "objectID": "stata-lab/lab-04.html",
     "href": "stata-lab/lab-04.html",
-    "title": "Lab 04 — Mô phỏng thuế Pigou",
+    "title": "Lab 4 — Mô phỏng thuế Pigou",
     "section": "",
-    "text": "Note🎯 Liên kết với Buổi 4\n\n\n\nBài này áp dụng khái niệm chính từ Buổi 4 vào dữ liệu thực tế Việt Nam.\nKhái niệm Stata học: gen, đường cung-cầu, equilibrium",
+    "text": "Note🎯 Liên kết với Buổi 4\n\n\n\nBài này áp dụng khái niệm thuế Pigou từ Buổi 4 vào một ngành có ngoại tác âm điển hình tại Việt Nam: xi măng (phát thải CO₂).\nSau Lab 4, bạn có thể:\n\nTạo dataset cung-cầu trong Stata\nTìm điểm cân bằng thị trường (giao điểm S, D)\nSo sánh MPC (chi phí tư nhân biên) và MSC (chi phí xã hội biên)\nÁp thuế Pigou = MEC và tìm cân bằng mới\nTính DWL (deadweight loss) trước và sau thuế\n\nKhái niệm Stata học: set obs, generate, mô phỏng đại số, twoway nhiều layer",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "Lab 04 — Mô phỏng thuế Pigou"
+      "Lab 4 — Mô phỏng thuế Pigou"
     ]
   },
   {
-    "objectID": "stata-lab/lab-04.html#khung-lab-04",
-    "href": "stata-lab/lab-04.html#khung-lab-04",
-    "title": "Lab 04 — Mô phỏng thuế Pigou",
-    "section": "Khung Lab 04",
-    "text": "Khung Lab 04\n\n1. Bài toán\nSo sánh equilibrium trước và sau thuế Pigou\n\n\n2. Dữ liệu cần\nDữ liệu giả định về ngành xi măng có ngoại tác CO2\n\n\n3. Lệnh Stata trọng tâm\nBài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):\n* Lab 04 — DTU301\n* Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nclear all\nset more off\nlog using \"lab04_&lt;ten&gt;.log\", replace text\n\n* === Tải dữ liệu ===\n* (sẽ chi tiết khi có dataset thật)\n\n* === Phân tích ===\n* Sử dụng: gen, đường cung-cầu, equilibrium\n\n* === Đóng log ===\nlog close\n\n\n4. Câu hỏi suy nghĩ (sẽ chi tiết)\n\nCâu hỏi mô tả dữ liệu\nCâu hỏi so sánh / xu hướng\nCâu hỏi liên hệ với lý thuyết\nCâu hỏi liên hệ với chính sách Việt Nam\nCâu hỏi mở rộng / phản biện",
+    "objectID": "stata-lab/lab-04.html#bài-toán",
+    "href": "stata-lab/lab-04.html#bài-toán",
+    "title": "Lab 4 — Mô phỏng thuế Pigou",
+    "section": "1. Bài toán",
+    "text": "1. Bài toán\nNgành xi măng VN có:\n\nĐường cầu: \\(Q_D = 100 - P\\)\nĐường cung tư nhân (MPC): \\(P = 20 + 0.5Q\\)\nChi phí ngoại tác biên (MEC) từ phát thải CO₂: \\(\\text{MEC} = 0.5Q\\)\nChi phí xã hội biên (MSC) = MPC + MEC = \\(20 + Q\\)\n\nCâu hỏi:\n\nCân bằng thị trường tự do (không thuế) ở đâu?\nCân bằng xã hội tối ưu (có MSC) ở đâu?\nThuế Pigou bằng bao nhiêu?\nDWL trước thuế là bao nhiêu?",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "Lab 04 — Mô phỏng thuế Pigou"
+      "Lab 4 — Mô phỏng thuế Pigou"
     ]
   },
   {
-    "objectID": "stata-lab/lab-04.html#deliverable-lab-04",
-    "href": "stata-lab/lab-04.html#deliverable-lab-04",
-    "title": "Lab 04 — Mô phỏng thuế Pigou",
-    "section": "Deliverable Lab 04",
-    "text": "Deliverable Lab 04\nNộp 3 file (như các lab trước):\n\n\n\nFile\nNội dung\n\n\n\n\nlab04_&lt;tên&gt;.do\nCode + comment\n\n\nlab04_&lt;tên&gt;.log\nOutput\n\n\nlab04_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: DTU301-LAB04-MSSV-HọTên",
+    "objectID": "stata-lab/lab-04.html#tạo-dataset-cung-cầu",
+    "href": "stata-lab/lab-04.html#tạo-dataset-cung-cầu",
+    "title": "Lab 4 — Mô phỏng thuế Pigou",
+    "section": "2. Tạo dataset cung-cầu",
+    "text": "2. Tạo dataset cung-cầu\n* Lab 4 — DTU301 — Mô phỏng thuế Pigou cho ngành xi măng\n* Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nclear all\nset more off\nlog using \"lab04_&lt;ten&gt;.log\", replace text\n\n* === Tạo lưới Q từ 0 đến 100 ===\nclear\nset obs 101\ngenerate Q = _n - 1\n\n* === Tính các đường ===\ngenerate P_D = 100 - Q                    // Cầu: P = 100 - Q\ngenerate P_MPC = 20 + 0.5 * Q             // Cung tư nhân (Marginal Private Cost)\ngenerate P_MEC = 0.5 * Q                  // Chi phí ngoại tác biên\ngenerate P_MSC = P_MPC + P_MEC            // Chi phí xã hội biên = MPC + MEC\n\nlabel variable P_D \"Cầu D\"\nlabel variable P_MPC \"Cung tư nhân (MPC)\"\nlabel variable P_MEC \"Chi phí ngoại tác (MEC)\"\nlabel variable P_MSC \"Chi phí xã hội (MSC)\"\n\nlist Q P_D P_MPC P_MSC in 1/10",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "Lab 04 — Mô phỏng thuế Pigou"
+      "Lab 4 — Mô phỏng thuế Pigou"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-04.html#tìm-cân-bằng-thị-trường-tự-do",
+    "href": "stata-lab/lab-04.html#tìm-cân-bằng-thị-trường-tự-do",
+    "title": "Lab 4 — Mô phỏng thuế Pigou",
+    "section": "3. Tìm cân bằng thị trường tự do",
+    "text": "3. Tìm cân bằng thị trường tự do\nCân bằng khi \\(P_D = P_{MPC}\\):\n\\[100 - Q = 20 + 0.5Q \\Rightarrow Q^* = 53.33,\\, P^* = 46.67\\]\nKiểm tra bằng Stata:\n* === Cân bằng thị trường tự do (không có thuế) ===\ngenerate dif_tu_do = abs(P_D - P_MPC)\nsort dif_tu_do\ndisplay \"Q* tự do  ≈ \" Q[1]\ndisplay \"P* tự do  ≈ \" P_D[1]\n\n* Lưu giá trị\nscalar Q_tu_do = Q[1]\nscalar P_tu_do = P_D[1]\nsort Q\nCâu hỏi 1: Cân bằng thị trường tự do ở Q ≈ ? và P ≈ ?",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 4 — Mô phỏng thuế Pigou"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-04.html#tìm-cân-bằng-xã-hội-tối-ưu",
+    "href": "stata-lab/lab-04.html#tìm-cân-bằng-xã-hội-tối-ưu",
+    "title": "Lab 4 — Mô phỏng thuế Pigou",
+    "section": "4. Tìm cân bằng xã hội tối ưu",
+    "text": "4. Tìm cân bằng xã hội tối ưu\nKhi tính cả ngoại tác, cân bằng đúng là khi \\(P_D = P_{MSC}\\):\n\\[100 - Q = 20 + Q \\Rightarrow Q^{**} = 40,\\, P^{**} = 60\\]\n* === Cân bằng xã hội tối ưu (có ngoại tác) ===\ngenerate dif_xa_hoi = abs(P_D - P_MSC)\nsort dif_xa_hoi\ndisplay \"Q** xã hội ≈ \" Q[1]\ndisplay \"P** xã hội ≈ \" P_D[1]\n\nscalar Q_xh = Q[1]\nscalar P_xh = P_D[1]\nsort Q\nCâu hỏi 2: Cân bằng xã hội ở Q ≈ ? và P ≈ ? So với tự do: sản lượng giảm bao nhiêu? Giá tăng bao nhiêu?",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 4 — Mô phỏng thuế Pigou"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-04.html#thuế-pigou-bằng-mec-tại-điểm-tối-ưu",
+    "href": "stata-lab/lab-04.html#thuế-pigou-bằng-mec-tại-điểm-tối-ưu",
+    "title": "Lab 4 — Mô phỏng thuế Pigou",
+    "section": "5. Thuế Pigou — bằng MEC tại điểm tối ưu",
+    "text": "5. Thuế Pigou — bằng MEC tại điểm tối ưu\n* === Thuế Pigou tại Q_xh ===\n* Pigou tax = MEC khi Q = Q**\nsort Q\nscalar pigou_tax = 0.5 * Q_xh\ndisplay \"Thuế Pigou = MEC tại Q** = \" pigou_tax\n\n* Kiểm tra: cung sau thuế = MPC + thuế = MSC\ngenerate P_MPC_co_thue = P_MPC + pigou_tax\n\n* Cân bằng mới: D = MPC + thuế\ngenerate dif_sau_thue = abs(P_D - P_MPC_co_thue)\nsort dif_sau_thue\ndisplay \"Q sau thuế ≈ \" Q[1]\ndisplay \"P sau thuế ≈ \" P_D[1]\nsort Q\nCâu hỏi 3: Thuế Pigou bằng bao nhiêu? Sau khi áp thuế, cân bằng có trùng với cân bằng xã hội tối ưu (Q** = 40, P** = 60) không?",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 4 — Mô phỏng thuế Pigou"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-04.html#tính-dwl-deadweight-loss",
+    "href": "stata-lab/lab-04.html#tính-dwl-deadweight-loss",
+    "title": "Lab 4 — Mô phỏng thuế Pigou",
+    "section": "6. Tính DWL (Deadweight Loss)",
+    "text": "6. Tính DWL (Deadweight Loss)\nDWL = diện tích tam giác mất phúc lợi do thị trường tự do sản xuất quá nhiều.\nHình tam giác có:\n\nĐáy: \\(\\Delta Q = Q^* - Q^{**} = 53.33 - 40 = 13.33\\)\nChiều cao: chênh lệch MSC – MPC tại \\(Q^*\\) = \\(0.5 \\times 53.33 = 26.67\\)\n\n\\[\\text{DWL} = \\frac{1}{2} \\times 13.33 \\times 26.67 \\approx 177.8\\]\nTính bằng Stata:\n* === Tính DWL ===\nscalar delta_Q = Q_tu_do - Q_xh\nscalar MEC_at_Qfree = 0.5 * Q_tu_do\nscalar DWL = 0.5 * delta_Q * MEC_at_Qfree\ndisplay \"Đáy ΔQ = \" delta_Q\ndisplay \"Cao MEC = \" MEC_at_Qfree\ndisplay \"DWL = \" DWL\nCâu hỏi 4: DWL bằng bao nhiêu? Nếu tăng được thuế Pigou đúng, toàn bộ DWL có được loại bỏ không?",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 4 — Mô phỏng thuế Pigou"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-04.html#vẽ-biểu-đồ-tổng-hợp",
+    "href": "stata-lab/lab-04.html#vẽ-biểu-đồ-tổng-hợp",
+    "title": "Lab 4 — Mô phỏng thuế Pigou",
+    "section": "7. Vẽ biểu đồ tổng hợp",
+    "text": "7. Vẽ biểu đồ tổng hợp\n* === Biểu đồ 4 đường + đánh dấu hai cân bằng ===\ntwoway (line P_D Q,   lcolor(\"114 47 55\") lwidth(thick)) ///\n       (line P_MPC Q, lcolor(\"46 125 80\") lwidth(medium)) ///\n       (line P_MSC Q, lcolor(\"0 88 163\")  lwidth(medium) lpattern(dash)) ///\n       (line P_MEC Q, lcolor(\"193 154 77\") lwidth(medium)) ///\n       , ///\n       title(\"Thuế Pigou cho ngành xi măng VN\") ///\n       subtitle(\"MSC = MPC + MEC; Q* tự do vs Q** xã hội\") ///\n       xtitle(\"Sản lượng Q\") ytitle(\"Giá P\") ///\n       legend(label(1 \"Cầu D\") label(2 \"MPC (tư nhân)\") ///\n              label(3 \"MSC (xã hội)\") label(4 \"MEC (ngoại tác)\") ///\n              position(2) ring(0) cols(1)) ///\n       xline(40, lpattern(dot) lcolor(gray)) ///\n       xline(53.33, lpattern(dot) lcolor(gray)) ///\n       graphregion(color(white))\n\ngraph export \"pigou_tax.png\", replace width(1400)",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 4 — Mô phỏng thuế Pigou"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-04.html#liên-hệ-thực-tiễn-thuế-carbon-việt-nam",
+    "href": "stata-lab/lab-04.html#liên-hệ-thực-tiễn-thuế-carbon-việt-nam",
+    "title": "Lab 4 — Mô phỏng thuế Pigou",
+    "section": "8. Liên hệ thực tiễn — Thuế carbon Việt Nam",
+    "text": "8. Liên hệ thực tiễn — Thuế carbon Việt Nam\nCâu hỏi 5 (suy nghĩ + viết, 300-400 từ):\nViệt Nam đang chuẩn bị thị trường carbon theo NĐ 06/2022/NĐ-CP (vận hành chính thức 2028). Theo bạn:\n\nMô phỏng Pigou ở trên đơn giản hoá thực tế ở những điểm nào? (Gợi ý: cầu xi măng có cứng nhắc không? MEC có biết chính xác không?)\nCap-and-Trade (như EU ETS) là phiên bản nào của Coase? Có ưu điểm gì so với thuế Pigou cố định?\nViệt Nam nên chọn thuế carbon trực tiếp hay cap-and-trade trước? Lập luận của bạn.",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 4 — Mô phỏng thuế Pigou"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-04.html#đóng-log",
+    "href": "stata-lab/lab-04.html#đóng-log",
+    "title": "Lab 4 — Mô phỏng thuế Pigou",
+    "section": "9. Đóng log",
+    "text": "9. Đóng log\nlog close",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 4 — Mô phỏng thuế Pigou"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-04.html#deliverable-lab-4",
+    "href": "stata-lab/lab-04.html#deliverable-lab-4",
+    "title": "Lab 4 — Mô phỏng thuế Pigou",
+    "section": "Deliverable Lab 4",
+    "text": "Deliverable Lab 4\nNộp 3 file:\n\n\n\nFile\nNội dung\n\n\n\n\nlab04_&lt;tên&gt;.do\nCode đầy đủ + comment tiếng Việt\n\n\nlab04_&lt;tên&gt;.log\nOutput Stata\n\n\nlab04_&lt;tên&gt;.pdf (2-3 trang)\nTrả lời 5 câu hỏi + biểu đồ Pigou\n\n\n\nTiêu đề email: DTU301-LAB04-MSSV-HọTên",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 4 — Mô phỏng thuế Pigou"
     ]
   },
   {
     "objectID": "stata-lab/lab-04.html#tiêu-chí-chấm",
     "href": "stata-lab/lab-04.html#tiêu-chí-chấm",
-    "title": "Lab 04 — Mô phỏng thuế Pigou",
+    "title": "Lab 4 — Mô phỏng thuế Pigou",
     "section": "Tiêu chí chấm",
-    "text": "Tiêu chí chấm\n\n\n\nTiêu chí\nĐiểm\n\n\n\n\nCode chạy đúng, có log\n30%\n\n\nVận dụng đúng khái niệm Stata mới của bài\n25%\n\n\nBiểu đồ / bảng kết quả rõ ràng\n20%\n\n\nTrả lời câu hỏi sâu, có liên hệ thực tiễn\n25%\n\n\n\n\n← Lab trước: Lab 3 | Lab tiếp theo: Lab 5 →",
+    "text": "Tiêu chí chấm\n\n\n\nTiêu chí\nĐiểm\n\n\n\n\nCode chạy đúng, có log\n25%\n\n\nTìm cân bằng tự do và xã hội chính xác\n20%\n\n\nTính thuế Pigou và DWL đúng\n25%\n\n\nBiểu đồ rõ ràng, có chú thích\n15%\n\n\nLiên hệ thực tiễn (carbon VN, cap-and-trade)\n15%\n\n\n\n\n← Lab trước: Lab 3 — Tính HHI cho 5 ngành VN | Lab tiếp theo: Lab 5 — DNNN vs Tư nhân vs FDI →",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "Lab 04 — Mô phỏng thuế Pigou"
+      "Lab 4 — Mô phỏng thuế Pigou"
     ]
   },
   {
@@ -1557,49 +1686,133 @@
   {
     "objectID": "stata-lab/lab-03.html",
     "href": "stata-lab/lab-03.html",
-    "title": "Lab 03 — Tính HHI cho 5 ngành Việt Nam",
+    "title": "Lab 3 — Tính HHI cho 5 ngành Việt Nam",
     "section": "",
-    "text": "Note🎯 Liên kết với Buổi 3\n\n\n\nBài này áp dụng khái niệm chính từ Buổi 3 vào dữ liệu thực tế Việt Nam.\nKhái niệm Stata học: egen, sort, ranking",
+    "text": "Note🎯 Liên kết với Buổi 3\n\n\n\nBài này áp dụng chỉ số HHI từ Buổi 3 vào 5 ngành thực tế Việt Nam: viễn thông, ngân hàng, bia, bán lẻ hiện đại, hàng không.\nSau Lab 3, bạn có thể:\n\nNhập dữ liệu thị phần thủ công vào Stata\nTính HHI bằng egen và gen\nSo sánh mức độ tập trung giữa các ngành\nLiên hệ HHI với vị trí thống lĩnh thị trường (Luật Cạnh tranh 2018)\n\nKhái niệm Stata học: input, egen total, gen, gsort, replace, preserve/restore, biểu đồ bar",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "Lab 03 — Tính HHI cho 5 ngành Việt Nam"
+      "Lab 3 — Tính HHI cho 5 ngành Việt Nam"
     ]
   },
   {
-    "objectID": "stata-lab/lab-03.html#khung-lab-03",
-    "href": "stata-lab/lab-03.html#khung-lab-03",
-    "title": "Lab 03 — Tính HHI cho 5 ngành Việt Nam",
-    "section": "Khung Lab 03",
-    "text": "Khung Lab 03\n\n1. Bài toán\nViễn thông: Viettel/VNPT/MobiFone/Vietnamobile; Ngân hàng: VCB/BID/CTG/TCB; Bán lẻ: BHX/WCM/Coopmart\n\n\n2. Dữ liệu cần\nDataset thị phần 5 doanh nghiệp lớn nhất từng ngành\n\n\n3. Lệnh Stata trọng tâm\nBài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):\n* Lab 03 — DTU301\n* Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nclear all\nset more off\nlog using \"lab03_&lt;ten&gt;.log\", replace text\n\n* === Tải dữ liệu ===\n* (sẽ chi tiết khi có dataset thật)\n\n* === Phân tích ===\n* Sử dụng: egen, sort, ranking\n\n* === Đóng log ===\nlog close\n\n\n4. Câu hỏi suy nghĩ (sẽ chi tiết)\n\nCâu hỏi mô tả dữ liệu\nCâu hỏi so sánh / xu hướng\nCâu hỏi liên hệ với lý thuyết\nCâu hỏi liên hệ với chính sách Việt Nam\nCâu hỏi mở rộng / phản biện",
+    "objectID": "stata-lab/lab-03.html#tạo-dataset-5-ngành-việt-nam",
+    "href": "stata-lab/lab-03.html#tạo-dataset-5-ngành-việt-nam",
+    "title": "Lab 3 — Tính HHI cho 5 ngành Việt Nam",
+    "section": "1. Tạo dataset 5 ngành Việt Nam",
+    "text": "1. Tạo dataset 5 ngành Việt Nam\nMở do-file mới, gõ:\n* Lab 3 — DTU301 — HHI 5 ngành Việt Nam\n* Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nclear all\nset more off\nlog using \"lab03_&lt;ten&gt;.log\", replace text\n\n* === Tạo dataset thị phần (% — ước lượng từ báo cáo ngành) ===\nclear\ninput str20 nganh str20 doanh_nghiep thi_phan\n\"Viễn thông\"      \"Viettel\"          54\n\"Viễn thông\"      \"VinaPhone\"        18\n\"Viễn thông\"      \"MobiFone\"         19\n\"Viễn thông\"      \"Vietnamobile\"      4\n\"Viễn thông\"      \"Khác\"              5\n\"Ngân hàng\"       \"Agribank\"         11\n\"Ngân hàng\"       \"BIDV\"             11\n\"Ngân hàng\"       \"VietinBank\"       10\n\"Ngân hàng\"       \"Vietcombank\"      10\n\"Ngân hàng\"       \"Techcombank\"       5\n\"Ngân hàng\"       \"Khác\"             53\n\"Bia\"             \"Heineken\"         39\n\"Bia\"             \"Sabeco\"           33\n\"Bia\"             \"Habeco\"           11\n\"Bia\"             \"Carlsberg\"        10\n\"Bia\"             \"Khác\"              7\n\"Bán lẻ\"          \"BHX\"              18\n\"Bán lẻ\"          \"WinMart\"          16\n\"Bán lẻ\"          \"Coopmart\"         10\n\"Bán lẻ\"          \"Aeon\"              7\n\"Bán lẻ\"          \"Khác\"             49\n\"Hàng không\"      \"Vietnam Airlines\" 35\n\"Hàng không\"      \"Vietjet\"          40\n\"Hàng không\"      \"Bamboo\"           15\n\"Hàng không\"      \"Vietravel\"         5\n\"Hàng không\"      \"Khác\"              5\nend\n\nlist, sepby(nganh)\n\n\n\n\n\n\nSố liệu là ước lượng tham khảo để minh hoạ quy trình. Trước khi nộp bài, hãy kiểm chứng bằng số liệu mới nhất từ:\n\nBáo cáo của VietnamReport, Statista, VIRAC\nBáo cáo thường niên của từng DN\nSố liệu của Bộ Công Thương, NHNN, Cục Hàng không VN",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "Lab 03 — Tính HHI cho 5 ngành Việt Nam"
+      "Lab 3 — Tính HHI cho 5 ngành Việt Nam"
     ]
   },
   {
-    "objectID": "stata-lab/lab-03.html#deliverable-lab-03",
-    "href": "stata-lab/lab-03.html#deliverable-lab-03",
-    "title": "Lab 03 — Tính HHI cho 5 ngành Việt Nam",
-    "section": "Deliverable Lab 03",
-    "text": "Deliverable Lab 03\nNộp 3 file (như các lab trước):\n\n\n\nFile\nNội dung\n\n\n\n\nlab03_&lt;tên&gt;.do\nCode + comment\n\n\nlab03_&lt;tên&gt;.log\nOutput\n\n\nlab03_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: DTU301-LAB03-MSSV-HọTên",
+    "objectID": "stata-lab/lab-03.html#tính-hhi-cho-từng-ngành",
+    "href": "stata-lab/lab-03.html#tính-hhi-cho-từng-ngành",
+    "title": "Lab 3 — Tính HHI cho 5 ngành Việt Nam",
+    "section": "2. Tính HHI cho từng ngành",
+    "text": "2. Tính HHI cho từng ngành\n* === Tính bình phương thị phần ===\ngenerate thi_phan_sq = thi_phan ^ 2\n\n* === Tổng bình phương theo ngành = HHI ===\negen HHI = total(thi_phan_sq), by(nganh)\n\n* Xem kết quả: in mỗi ngành 1 dòng\npreserve\n    duplicates drop nganh, force\n    keep nganh HHI\n    gsort -HHI\n    list, separator(0) noobs\nrestore\nBạn sẽ thấy bảng kiểu:\n\n\n\nnganh\nHHI\n\n\n\n\nViễn thông\n~3,602\n\n\nNgân hàng\n~3,242\n\n\nBia\n~2,940\n\n\nHàng không\n~2,930\n\n\nBán lẻ\n~889\n\n\n\nCâu hỏi 1: Ngành nào tập trung nhất? Ngành nào ít tập trung nhất? Có mấy ngành có HHI &gt; 2500 (cao)?",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "Lab 03 — Tính HHI cho 5 ngành Việt Nam"
+      "Lab 3 — Tính HHI cho 5 ngành Việt Nam"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-03.html#phân-loại-theo-chuẩn-quốc-tế",
+    "href": "stata-lab/lab-03.html#phân-loại-theo-chuẩn-quốc-tế",
+    "title": "Lab 3 — Tính HHI cho 5 ngành Việt Nam",
+    "section": "3. Phân loại theo chuẩn quốc tế",
+    "text": "3. Phân loại theo chuẩn quốc tế\n* === Gán nhãn mức độ tập trung ===\ngenerate muc_tap_trung = \"\"\nreplace muc_tap_trung = \"Thấp\"        if HHI &lt; 1500\nreplace muc_tap_trung = \"Trung bình\"  if HHI &gt;= 1500 & HHI &lt;= 2500\nreplace muc_tap_trung = \"Cao\"         if HHI &gt; 2500\n\n* Hiển thị\npreserve\n    duplicates drop nganh, force\n    keep nganh HHI muc_tap_trung\n    gsort -HHI\n    list, separator(0) noobs\nrestore\nCâu hỏi 2: Áp dụng chuẩn của Mỹ (DOJ) và EU, bao nhiêu trong 5 ngành được xếp loại “tập trung cao”?",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 3 — Tính HHI cho 5 ngành Việt Nam"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-03.html#tìm-doanh-nghiệp-có-vị-trí-thống-lĩnh",
+    "href": "stata-lab/lab-03.html#tìm-doanh-nghiệp-có-vị-trí-thống-lĩnh",
+    "title": "Lab 3 — Tính HHI cho 5 ngành Việt Nam",
+    "section": "4. Tìm doanh nghiệp có vị trí thống lĩnh",
+    "text": "4. Tìm doanh nghiệp có vị trí thống lĩnh\nTheo Luật Cạnh tranh VN 2018, DN có thị phần &gt; 30% được coi là có vị trí thống lĩnh thị trường.\n* === Tìm DN có thị phần &gt; 30% ===\ngenerate thong_linh = (thi_phan &gt; 30)\nlist nganh doanh_nghiep thi_phan if thong_linh == 1, noobs\nCâu hỏi 3: Có những DN nào có vị trí thống lĩnh trong 5 ngành? DN nào có thị phần cao nhất?",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 3 — Tính HHI cho 5 ngành Việt Nam"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-03.html#mô-phỏng-tác-động-ma",
+    "href": "stata-lab/lab-03.html#mô-phỏng-tác-động-ma",
+    "title": "Lab 3 — Tính HHI cho 5 ngành Việt Nam",
+    "section": "5. Mô phỏng tác động M&A",
+    "text": "5. Mô phỏng tác động M&A\nGiả sử 2 DN lớn nhất ngành Bia đề xuất sáp nhập. NCC có nên duyệt không? Hãy tính HHI sau M&A:\n* === Mô phỏng M&A: Heineken + Sabeco trong ngành Bia ===\npreserve\n    keep if nganh == \"Bia\"\n    egen HHI_truoc = total(thi_phan_sq)\n    display \"HHI trước M&A: \" HHI_truoc[1]\n\n    * Sau M&A: cộng thị phần Heineken + Sabeco\n    replace thi_phan = 39 + 33 if doanh_nghiep == \"Heineken\"\n    drop if doanh_nghiep == \"Sabeco\"\n\n    generate thi_phan_sq_moi = thi_phan ^ 2\n    egen HHI_sau = total(thi_phan_sq_moi)\n    display \"HHI sau M&A : \" HHI_sau[1]\n    display \"Thay đổi    : \" HHI_sau[1] - HHI_truoc[1]\nrestore\nCâu hỏi 4: HHI tăng bao nhiêu sau M&A? Theo chuẩn DOJ (thay đổi HHI &gt; 200 tại ngành tập trung cao thường bị từ chối), NCC có nên duyệt?",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 3 — Tính HHI cho 5 ngành Việt Nam"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-03.html#vẽ-biểu-đồ-so-sánh-5-ngành",
+    "href": "stata-lab/lab-03.html#vẽ-biểu-đồ-so-sánh-5-ngành",
+    "title": "Lab 3 — Tính HHI cho 5 ngành Việt Nam",
+    "section": "6. Vẽ biểu đồ so sánh 5 ngành",
+    "text": "6. Vẽ biểu đồ so sánh 5 ngành\n* === Biểu đồ HHI 5 ngành ===\npreserve\n    duplicates drop nganh, force\n    keep nganh HHI\n    gsort -HHI\n\n    graph bar HHI, over(nganh, sort(HHI) descending) ///\n        bar(1, color(\"114 47 55\")) ///\n        title(\"Chỉ số HHI — 5 ngành Việt Nam\") ///\n        subtitle(\"Đường ngang: chuẩn 1500 (TB) và 2500 (Cao)\") ///\n        yline(1500, lcolor(orange) lpattern(dash)) ///\n        yline(2500, lcolor(red) lpattern(dash)) ///\n        ylabel(0(1000)5000) ///\n        graphregion(color(white))\n\n    graph export \"hhi_5nganh.png\", replace width(1400)\nrestore",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 3 — Tính HHI cho 5 ngành Việt Nam"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-03.html#liên-hệ-với-buổi-3",
+    "href": "stata-lab/lab-03.html#liên-hệ-với-buổi-3",
+    "title": "Lab 3 — Tính HHI cho 5 ngành Việt Nam",
+    "section": "7. Liên hệ với Buổi 3",
+    "text": "7. Liên hệ với Buổi 3\nCâu hỏi 5 (suy nghĩ + viết, 300 từ):\nĐặt 5 ngành đã tính HHI vào bốn cấu trúc thị trường đã học ở Buổi 3:\n\nNgành nào gần cạnh tranh hoàn hảo (HHI thấp)?\nNgành nào gần độc quyền (HHI rất cao + 1 DN chiếm &gt; 50%)?\nNgành nào là Oligopoly điển hình?\n\nTheo bạn, Uỷ ban Cạnh tranh Quốc gia (NCC) nên ưu tiên giám sát ngành nào nhất? Vì sao?",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 3 — Tính HHI cho 5 ngành Việt Nam"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-03.html#đóng-log",
+    "href": "stata-lab/lab-03.html#đóng-log",
+    "title": "Lab 3 — Tính HHI cho 5 ngành Việt Nam",
+    "section": "8. Đóng log",
+    "text": "8. Đóng log\nlog close",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 3 — Tính HHI cho 5 ngành Việt Nam"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-03.html#deliverable-lab-3",
+    "href": "stata-lab/lab-03.html#deliverable-lab-3",
+    "title": "Lab 3 — Tính HHI cho 5 ngành Việt Nam",
+    "section": "Deliverable Lab 3",
+    "text": "Deliverable Lab 3\nNộp 3 file:\n\n\n\n\n\n\n\nFile\nNội dung\n\n\n\n\nlab03_&lt;tên&gt;.do\nCode đầy đủ + comment tiếng Việt\n\n\nlab03_&lt;tên&gt;.log\nOutput Stata\n\n\nlab03_&lt;tên&gt;.pdf (2 trang)\nTrả lời 5 câu hỏi + biểu đồ HHI 5 ngành\n\n\n\nTiêu đề email: DTU301-LAB03-MSSV-HọTên",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 3 — Tính HHI cho 5 ngành Việt Nam"
     ]
   },
   {
     "objectID": "stata-lab/lab-03.html#tiêu-chí-chấm",
     "href": "stata-lab/lab-03.html#tiêu-chí-chấm",
-    "title": "Lab 03 — Tính HHI cho 5 ngành Việt Nam",
+    "title": "Lab 3 — Tính HHI cho 5 ngành Việt Nam",
     "section": "Tiêu chí chấm",
-    "text": "Tiêu chí chấm\n\n\n\nTiêu chí\nĐiểm\n\n\n\n\nCode chạy đúng, có log\n30%\n\n\nVận dụng đúng khái niệm Stata mới của bài\n25%\n\n\nBiểu đồ / bảng kết quả rõ ràng\n20%\n\n\nTrả lời câu hỏi sâu, có liên hệ thực tiễn\n25%\n\n\n\n\n← Lab trước: Lab 2 | Lab tiếp theo: Lab 4 →",
+    "text": "Tiêu chí chấm\n\n\n\nTiêu chí\nĐiểm\n\n\n\n\nCode chạy đúng, có log\n25%\n\n\nHHI tính đúng + phân loại chuẩn\n25%\n\n\nMô phỏng M&A và bình luận hợp lý\n20%\n\n\nBiểu đồ rõ ràng + liên hệ Luật Cạnh tranh 2018\n30%\n\n\n\n\n← Lab trước: Lab 2 — Phân tích chi tiêu công VN | Lab tiếp theo: Lab 4 — Mô phỏng thuế Pigou →",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "Lab 03 — Tính HHI cho 5 ngành Việt Nam"
+      "Lab 3 — Tính HHI cho 5 ngành Việt Nam"
     ]
   },
   {
@@ -1963,67 +2176,100 @@
   {
     "objectID": "lectures/buoi-03.html",
     "href": "lectures/buoi-03.html",
-    "title": "Buổi 03 — Cấu trúc thị trường và thất bại thị trường",
+    "title": "Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh",
     "section": "",
-    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO1, CLO2 — Vận dụng khung phân tích vào tình huống điển hình",
+    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO1, CLO2 — Vận dụng khung cấu trúc thị trường vào phân tích ngành Việt Nam.\nBuổi 3 mở Chương 2 bằng một câu hỏi nền tảng: thị trường vận hành ra sao trong các cấu trúc khác nhau, và làm thế nào đo lường sức mạnh thị trường. Đây là cơ sở để Buổi 4 bàn về thất bại thị trường và Buổi 5 về quản trị doanh nghiệp.",
     "crumbs": [
       "Chương 2 — Ngành và doanh nghiệp",
-      "Buổi 03 — Cấu trúc thị trường và thất bại thị trường"
+      "Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh"
     ]
   },
   {
-    "objectID": "lectures/buoi-03.html#nội-dung-lý-thuyết-thuyết-giảng",
-    "href": "lectures/buoi-03.html#nội-dung-lý-thuyết-thuyết-giảng",
-    "title": "Buổi 03 — Cấu trúc thị trường và thất bại thị trường",
-    "section": "Nội dung lý thuyết (thuyết giảng)",
-    "text": "Nội dung lý thuyết (thuyết giảng)\n2.1. Cấu trúc thị trường\n\nBốn loại: cạnh tranh hoàn hảo, độc quyền, độc quyền nhóm, cạnh tranh độc quyền\nChỉ số Lerner, chỉ số HHI\nLuật Cạnh tranh Việt Nam\n\n2.2. Thất bại thị trường\n\nHàng hoá công\nNgoại tác (externalities)\nĐộc quyền tự nhiên\nThông tin bất cân xứng",
+    "objectID": "lectures/buoi-03.html#lộ-trình-buổi-3",
+    "href": "lectures/buoi-03.html#lộ-trình-buổi-3",
+    "title": "Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh",
+    "section": "Lộ trình Buổi 3",
+    "text": "Lộ trình Buổi 3\n\n\n\nPhần\nNội dung\n\n\n\n\nA\nLược sử tư tưởng kinh tế — năm trường phái lớn\n\n\nB\nBốn cấu trúc thị trường — CTHH, ĐQ, CTĐQ, Oligopoly\n\n\nC\nĐo lường sức mạnh thị trường — Lerner và HHI\n\n\nD\nLuật Cạnh tranh Việt Nam 2018",
     "crumbs": [
       "Chương 2 — Ngành và doanh nghiệp",
-      "Buổi 03 — Cấu trúc thị trường và thất bại thị trường"
+      "Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh"
     ]
   },
   {
-    "objectID": "lectures/buoi-03.html#thực-hành-thảo-luận",
-    "href": "lectures/buoi-03.html#thực-hành-thảo-luận",
-    "title": "Buổi 03 — Cấu trúc thị trường và thất bại thị trường",
-    "section": "Thực hành / Thảo luận",
-    "text": "Thực hành / Thảo luận\nTính HHI cho một ngành Việt Nam (vd: viễn thông, ngân hàng); thảo luận mức độ tập trung và hàm ý cho chính sách cạnh tranh.",
+    "objectID": "lectures/buoi-03.html#a.-lược-sử-tư-tưởng-kinh-tế",
+    "href": "lectures/buoi-03.html#a.-lược-sử-tư-tưởng-kinh-tế",
+    "title": "Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh",
+    "section": "A. Lược sử tư tưởng kinh tế",
+    "text": "A. Lược sử tư tưởng kinh tế\n\nA.1. Vì sao học lịch sử tư tưởng?\nSinh viên kinh tế hay hỏi: học lịch sử để làm gì? Câu trả lời ngắn: để có đa lăng kính phân tích chính sách. Cụ thể:\n\nMỗi trường phái mang giả định riêng — hiểu giả định mới dùng đúng khung.\nHiểu gốc rễ giúp đọc lý thuyết hiện đại sâu hơn.\nMỗi giai đoạn đều có sai lầm chính sách kinh điển — biết để không lặp lại.\n\nTa sẽ điểm qua năm trường phái lớn: Trọng thương → Trọng nông → Cổ điển (Smith, Ricardo) → Cận biên → Tân cổ điển (Marshall).\n\n\nA.2. Trọng thương và Trọng nông — hai trường phái tiền cổ điển\nTrọng thương (Mercantilism, XVI–XVIII):\n\nTư tưởng cốt lõi: của cải quốc gia = vàng và kim loại quý.\nChính sách: ưu tiên xuất siêu, hạn chế nhập khẩu, tích trữ vàng.\nĐại diện: Thomas Mun (Anh, 1664), Jean-Baptiste Colbert (Pháp).\nGiới hạn: nhầm tích vàng với của cải thực. Hume sau này chỉ ra: tích vàng làm tăng cung tiền nội địa → lạm phát → mất lợi thế xuất khẩu.\n\nTrọng nông (Physiocracy):\n\nFrançois Quesnay với Tableau Économique (1758) — bản đồ kinh tế đầu tiên.\nTư tưởng: nông nghiệp là nguồn duy nhất của của cải; công nghiệp chỉ “chế biến”.\nĐóng góp: ý tưởng dòng tuần hoàn kinh tế — tiền đề của Input-Output Leontief sau này.\nGiới hạn: bỏ qua vai trò công nghiệp.\n\nCả hai trường phái này có giới hạn lý thuyết quan trọng, nhưng đặt nền cho Adam Smith.\n\n\nA.3. Adam Smith và Ricardo — trường phái Cổ điển\nAdam Smith (1776) — An Inquiry into the Nature and Causes of the Wealth of Nations:\n\nKhái niệm trọng tâm: bàn tay vô hình — thị trường tự điều tiết khi mọi người theo đuổi lợi ích riêng.\nPhản đối Trọng thương: của cải = sản xuất, không phải vàng.\nNguyên lý phân công lao động (pin example) — gia tăng năng suất.\n\nDavid Ricardo (1817) — On the Principles of Political Economy and Taxation:\n\nLợi thế so sánh (comparative advantage) — cơ sở của tự do thương mại quốc tế.\nMọi quốc gia đều có lợi từ thương mại, kể cả khi tuyệt đối kém hơn.\nVí dụ kinh điển: vải Anh đổi rượu Bồ.\n\nHai ông là hai trụ cột của trường phái Cổ điển. Ý tưởng “bàn tay vô hình” và “lợi thế so sánh” vẫn ảnh hưởng tới tư duy chính sách thương mại Việt Nam hôm nay (FTAs, WTO).\n\n\nA.4. Cách mạng cận biên và trường phái Tân cổ điển\nCách mạng cận biên (Marginal Revolution, 1870s):\nBa người tiên phong độc lập đưa ra cùng ý tưởng phân tích biên:\n\n\n\n\n\n\n\n\nTên\nQuốc tịch\nĐóng góp\n\n\n\n\nWilliam Stanley Jevons\nAnh\nThe Theory of Political Economy (1871)\n\n\nCarl Menger\nÁo\nGrundsätze der Volkswirtschaftslehre (1871)\n\n\nLéon Walras\nPháp-Thuỵ Sĩ\nÉléments d’économie politique pure (1874)\n\n\n\nTư duy mới: cung – cầu gặp nhau ở giá cân bằng. Hành vi của người tiêu dùng và sản xuất phân tích qua mức biên (marginal utility, marginal cost).\nAlfred Marshall (1890) — Principles of Economics:\n\nTổng hợp Cổ điển + Cận biên = Tân cổ điển.\nKhung phân tích cung – cầu – giá vẫn dùng đến ngày nay (chính là khung Mankiw).\nÝ tưởng agglomeration — tập trung công nghiệp — sẽ trở lại ở Buổi 13 (kinh tế vùng).\n\nTrường phái Tân cổ điển là nền tảng của môn DTU301 và mọi giáo trình kinh tế học vi mô hiện đại.",
     "crumbs": [
       "Chương 2 — Ngành và doanh nghiệp",
-      "Buổi 03 — Cấu trúc thị trường và thất bại thị trường"
+      "Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh"
     ]
   },
   {
-    "objectID": "lectures/buoi-03.html#bài-tập-lớn-tiểu-luận",
-    "href": "lectures/buoi-03.html#bài-tập-lớn-tiểu-luận",
-    "title": "Buổi 03 — Cấu trúc thị trường và thất bại thị trường",
-    "section": "Bài tập lớn / Tiểu luận",
-    "text": "Bài tập lớn / Tiểu luận\nBài tập phân tích vai trò của quyền sở hữu và thể chế trong giải quyết một thất bại thị trường ở Việt Nam (Phần 1).",
+    "objectID": "lectures/buoi-03.html#b.-bốn-cấu-trúc-thị-trường",
+    "href": "lectures/buoi-03.html#b.-bốn-cấu-trúc-thị-trường",
+    "title": "Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh",
+    "section": "B. Bốn cấu trúc thị trường",
+    "text": "B. Bốn cấu trúc thị trường\n\nB.1. Tiêu chí phân loại\nBốn cấu trúc thị trường được phân loại theo ba tiêu chí:\n\nSố doanh nghiệp — một, vài, nhiều, hay rất nhiều?\nTính chất sản phẩm — đồng nhất hay khác biệt hoá?\nRào cản gia nhập / rút lui — tự do hay khó khăn?\n\nCàng ít doanh nghiệp + rào cản cao → càng có quyền lực thị trường (market power).\n\n\nB.2. Cạnh tranh hoàn hảo (CTHH)\n\n\n\nYếu tố\nĐặc điểm\n\n\n\n\nSố DN\nRất nhiều, mỗi DN nhỏ\n\n\nSản phẩm\nĐồng nhất, không thương hiệu\n\n\nThông tin\nĐầy đủ, đối xứng\n\n\nGia nhập\nTự do\n\n\nQuy tắc giá\nP = MC = MR\n\n\nLợi nhuận dài hạn\n= 0 (chỉ đủ chi phí cơ hội)\n\n\n\nVí dụ thực tế: thị trường gạo, lúa mì, một số nông sản. Trong CTHH, mỗi DN là price taker — không thể tự đặt giá.\nĐây là mô hình lý tưởng — hiếm tồn tại trong thực tế, nhưng là chuẩn so sánh để đánh giá các cấu trúc khác.\n\n\nB.3. Độc quyền (Monopoly)\n\n\n\nYếu tố\nĐặc điểm\n\n\n\n\nSố DN\n1 duy nhất\n\n\nSản phẩm\nKhông có thay thế gần\n\n\nRào cản\nRất cao\n\n\nQuy tắc giá\nP &gt; MC → quyền lực giá\n\n\nHậu quả\nTổn thất phúc lợi (DWL) — sản lượng thấp, giá cao\n\n\n\nBốn nguồn của độc quyền:\n\nĐộc quyền tự nhiên — quy mô lớn làm chi phí giảm dần (sẽ học kỹ ở Buổi 4)\nSở hữu trí tuệ — bằng sáng chế, bản quyền tạm thời cho độc quyền\nQuy chế Nhà nước — cấp phép độc quyền cho một ngành (vd: in tiền)\nSáp nhập / mua lại — DN lớn nuốt đối thủ\n\nVí dụ Việt Nam: EVN trong truyền tải điện — độc quyền tự nhiên. Lưu ý: phát điện và bán lẻ đang được tách dần, nhưng truyền tải vẫn độc quyền.\n\n\nB.4. Cạnh tranh độc quyền (Monopolistic Competition)\nChamberlin (1933) — The Theory of Monopolistic Competition:\n\n\n\n\n\n\n\nYếu tố\nĐặc điểm\n\n\n\n\nSố DN\nNhiều\n\n\nSản phẩm\nKhác biệt hoá (thương hiệu, chất lượng, vị trí)\n\n\nGia nhập\nTự do\n\n\nQuy tắc giá\nP &gt; MC nhưng lợi nhuận dài hạn → 0 vì có DN mới gia nhập\n\n\n\nĐặc trưng nổi bật: mỗi DN có “độc quyền nhỏ” trong phân khúc của mình nhờ khác biệt hoá.\nVí dụ: quán cà phê, nhà hàng, sách báo, quần áo thời trang — vô số DN, mỗi DN có chút khác biệt riêng.\n\n\nB.5. Oligopoly — Độc quyền nhóm\n\n\n\n\n\n\n\nYếu tố\nĐặc điểm\n\n\n\n\nSố DN\nVài DN lớn chi phối\n\n\nSản phẩm\nCó thể đồng nhất hoặc khác biệt\n\n\nRào cản\nCao\n\n\nĐặc trưng nổi bật\nPhụ thuộc lẫn nhau — quyết định của DN A ảnh hưởng B\n\n\nCông cụ phân tích\nLý thuyết trò chơi (Game Theory)\n\n\n\nTrong oligopoly, mỗi DN phải tính đến phản ứng của đối thủ khi ra quyết định giá hay sản lượng. Có thể có collusion (kết cấu) — vd: OPEC.\nVí dụ Việt Nam:\n\nBia: Sabeco, Habeco, Heineken — chiếm ~80% thị phần.\nViễn thông di động: Viettel, VNPT (VinaPhone), MobiFone — 3 nhà mạng lớn.\nNgân hàng quốc doanh: VCB, BIDV, VietinBank, Agribank.",
     "crumbs": [
       "Chương 2 — Ngành và doanh nghiệp",
-      "Buổi 03 — Cấu trúc thị trường và thất bại thị trường"
+      "Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh"
     ]
   },
   {
-    "objectID": "lectures/buoi-03.html#tự-học-có-hướng-dẫn",
-    "href": "lectures/buoi-03.html#tự-học-có-hướng-dẫn",
-    "title": "Buổi 03 — Cấu trúc thị trường và thất bại thị trường",
-    "section": "Tự học có hướng dẫn",
-    "text": "Tự học có hướng dẫn\n\nBốn nguồn thất bại thị trường?\nHHI &lt; 1500: thị trường có cạnh tranh không?\nThông tin bất cân xứng tạo ra vấn đề gì cho QLKT?",
+    "objectID": "lectures/buoi-03.html#c.-đo-lường-sức-mạnh-thị-trường",
+    "href": "lectures/buoi-03.html#c.-đo-lường-sức-mạnh-thị-trường",
+    "title": "Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh",
+    "section": "C. Đo lường sức mạnh thị trường",
+    "text": "C. Đo lường sức mạnh thị trường\n\nC.1. Lerner Index — đo cấp doanh nghiệp\n\\[L = \\frac{P - MC}{P}\\]\nTrong đó: - \\(P\\) = giá bán - \\(MC\\) = chi phí biên\nDiễn giải:\n\n\n\nGiá trị L\nÝ nghĩa\n\n\n\n\n\\(L = 0\\)\nCạnh tranh hoàn hảo (\\(P = MC\\))\n\n\n\\(L \\to 1\\)\nGần độc quyền tuyệt đối\n\n\n\\(0 &lt; L &lt; 1\\)\nCó quyền lực thị trường, ở mức tương ứng\n\n\n\nHạn chế của Lerner: - Cần biết MC — khó đo trong thực tế (DN không công bố chi phí biên). - Chỉ đo cấp DN, không cho biết toàn ngành.\n\n\nC.2. HHI — đo độ tập trung ngành\nHerfindahl-Hirschman Index đo độ tập trung của một ngành dựa trên thị phần của tất cả DN.\n\\[\\text{HHI} = \\sum_{i=1}^{n} S_i^2\\]\nTrong đó \\(S_i\\) là thị phần (%) của DN thứ \\(i\\).\nDiễn giải chuẩn quốc tế (Mỹ DOJ):\n\n\n\nHHI\nMức độ tập trung\nÝ nghĩa chính sách\n\n\n\n\n&lt; 1500\nThấp\nCạnh tranh tốt\n\n\n1500 – 2500\nTrung bình\nCần theo dõi\n\n\n&gt; 2500\nCao\nCó thể can thiệp\n\n\n\nVí dụ tính: 4 DN, mỗi DN có thị phần 25%:\n\\[\\text{HHI} = 25^2 + 25^2 + 25^2 + 25^2 = 2500\\]\n→ Mức cao trung bình. Nếu 2 DN sáp nhập (thành 50% + 25% + 25%):\n\\[\\text{HHI} = 50^2 + 25^2 + 25^2 = 2500 + 625 + 625 = 3750\\]\n→ Vượt ngưỡng cao. Mỹ và EU dùng HHI để đánh giá M&A — có cho phép sáp nhập hay không.",
     "crumbs": [
       "Chương 2 — Ngành và doanh nghiệp",
-      "Buổi 03 — Cấu trúc thị trường và thất bại thị trường"
+      "Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-03.html#d.-luật-cạnh-tranh-việt-nam",
+    "href": "lectures/buoi-03.html#d.-luật-cạnh-tranh-việt-nam",
+    "title": "Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh",
+    "section": "D. Luật Cạnh tranh Việt Nam",
+    "text": "D. Luật Cạnh tranh Việt Nam\n\nD.1. Khung pháp lý 2018\n\n\n\nYếu tố\nNội dung\n\n\n\n\nVăn bản\nLuật 23/2018/QH14\n\n\nHiệu lực\n1/7/2019\n\n\nThay thế\nLuật 27/2004/QH11 cũ\n\n\nPhạm vi\nDN, hiệp hội DN, cơ quan Nhà nước\n\n\nCơ quan thực thi\nUỷ ban Cạnh tranh Quốc gia (NCC)\n\n\nĐịnh hướng\nBám chuẩn quốc tế và thực tiễn ASEAN\n\n\n\nLuật 2018 mở rộng phạm vi so với Luật 2004 cũ — nay áp dụng cho cả cơ quan Nhà nước khi can thiệp vào kinh tế.\n\n\nD.2. Bốn loại hành vi bị cấm\n\n\n\n\n\n\n\n\n#\nHành vi\nVí dụ\n\n\n\n\n1\nThoả thuận hạn chế cạnh tranh\nCartel giá, chia thị trường\n\n\n2\nLạm dụng vị trí thống lĩnh thị trường\nDN &gt;30% thị phần ép giá, từ chối giao dịch\n\n\n3\nTập trung kinh tế gây hại cạnh tranh\nM&A tạo độc quyền\n\n\n4\nCạnh tranh không lành mạnh\nVu khống, gây nhầm lẫn, đánh cắp bí mật\n\n\n\nHình thức xử lý: phạt tiền (tới 10% doanh thu), buộc khôi phục, truy cứu hình sự với vi phạm nghiêm trọng.\n\n\nD.3. Ba ví dụ ngành Việt Nam — phân tích cấu trúc\n\n\n\n\n\n\n\n\nNgành\nCấu trúc\nPhân tích\n\n\n\n\nViễn thông di động\nOligopoly\nViettel, VNPT, MobiFone chiếm ~95%. HHI cao. NCC giám sát chặt khi có M&A.\n\n\nBia\nOligopoly\nSabeco, Habeco, Heineken ~80%. Có khả năng parallel pricing.\n\n\nXăng dầu\nOligopoly với DN thống lĩnh\nPetrolimex chi phối ~50% thị trường, các DN còn lại cộng lại &lt; 50%. Có thể có lạm dụng vị trí thống lĩnh.\n\n\n\n\n\n\n\n\n\nWarning✋ Bài tập thảo luận trên lớp\n\n\n\nTính HHI cho một ngành Việt Nam tự chọn (ngân hàng, bán lẻ, hàng không, thép…). Trả lời:\n\nMức độ tập trung của ngành theo chuẩn quốc tế?\nCó DN nào có thị phần &gt; 30% (ngưỡng “thống lĩnh” theo Luật 2018)?\nNếu hai DN lớn nhất ngành đề xuất sáp nhập, NCC có nên duyệt không?",
+    "crumbs": [
+      "Chương 2 — Ngành và doanh nghiệp",
+      "Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-03.html#tổng-kết-buổi-3-năm-điểm-cốt-lõi",
+    "href": "lectures/buoi-03.html#tổng-kết-buổi-3-năm-điểm-cốt-lõi",
+    "title": "Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh",
+    "section": "Tổng kết Buổi 3 — Năm điểm cốt lõi",
+    "text": "Tổng kết Buổi 3 — Năm điểm cốt lõi\n\nLịch sử tư tưởng kinh tế qua 5 trường phái lớn: Trọng thương → Trọng nông → Cổ điển → Cận biên → Tân cổ điển.\nBốn cấu trúc thị trường: CTHH, Độc quyền, Cạnh tranh độc quyền, Oligopoly.\nĐo lường sức mạnh thị trường: Lerner Index (cấp DN) + HHI (cấp ngành).\nLuật Cạnh tranh VN 2018 (23/2018/QH14) — cơ quan NCC; 4 loại hành vi bị cấm.\nCấu trúc thị trường quyết định mức can thiệp — Nhà nước cần khác cách xử lý CTHH vs oligopoly.",
+    "crumbs": [
+      "Chương 2 — Ngành và doanh nghiệp",
+      "Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-03.html#bài-tập-về-nhà-chuẩn-bị-buổi-4",
+    "href": "lectures/buoi-03.html#bài-tập-về-nhà-chuẩn-bị-buổi-4",
+    "title": "Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh",
+    "section": "Bài tập về nhà (chuẩn bị Buổi 4)",
+    "text": "Bài tập về nhà (chuẩn bị Buổi 4)\n\nĐọc Mankiw, chương về thất bại thị trường.\nTự đọc về 4 nguồn thất bại thị trường — sẽ học chi tiết ở Buổi 4.\nChuẩn bị 1 case ngoại tác âm tại Việt Nam (vd: ô nhiễm, tiếng ồn, ùn tắc).\nĐọc thêm về thuế Pigou và định lý Coase.\n\n\n\n\n\n\n\nTip🔧 Stata Lab 3 (bonus 5%)\n\n\n\nBài này có lab thực hành tính HHI cho 5 ngành Việt Nam trong Stata: viễn thông, ngân hàng, bia, bán lẻ, hàng không. Bạn sẽ học egen rowtotal, gsort, formatting bảng so sánh.\n→ Bắt đầu Lab 3 — Tính HHI cho 5 ngành Việt Nam (~20 phút)",
+    "crumbs": [
+      "Chương 2 — Ngành và doanh nghiệp",
+      "Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh"
     ]
   },
   {
     "objectID": "lectures/buoi-03.html#đọc-thêm",
     "href": "lectures/buoi-03.html#đọc-thêm",
-    "title": "Buổi 03 — Cấu trúc thị trường và thất bại thị trường",
+    "title": "Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh",
     "section": "Đọc thêm",
-    "text": "Đọc thêm\n\nMankiw, Kinh tế học vi mô, chương 14–17.\nStiglitz & Rosengard (2015), Economics of the Public Sector, chương 4–6.\n\n\n\n\n\n\n\nWarning🚧 Nội dung đang biên soạn\n\n\n\nBài giảng buổi 03 hiện ở dạng dàn ý theo đề cương DTU301. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.\n\n\n\n← Buổi trước: Buổi 2 Buổi tiếp theo: Buổi 4 →",
+    "text": "Đọc thêm\n\nMankiw, Kinh tế học vi mô (2026), chương 13–17 (Cạnh tranh, Độc quyền, Oligopoly).\nBuchholz, Ý tưởng mới từ các Kinh tế gia tiền bối (2007), chương về Adam Smith, Ricardo, Marshall.\nLuật Cạnh tranh 2018 (23/2018/QH14) — văn bản gốc.\nBáo cáo thường niên của Uỷ ban Cạnh tranh Quốc gia — phiên bản mới nhất.\n\n\n← Buổi trước: Buổi 2 — Chức năng và Công cụ QLKT | Buổi tiếp theo: Buổi 4 — Thất bại thị trường và Cơ chế điều tiết →",
     "crumbs": [
       "Chương 2 — Ngành và doanh nghiệp",
-      "Buổi 03 — Cấu trúc thị trường và thất bại thị trường"
+      "Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh"
     ]
   },
   {

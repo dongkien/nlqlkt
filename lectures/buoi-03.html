@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Buổi 03 — Cấu trúc thị trường và thất bại thị trường – Nguyên lý Quản lý Kinh tế (DTU301)</title>
+<title>Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh – Nguyên lý Quản lý Kinh tế (DTU301)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-3a25ebfbbb03e529eea34e993f2a5140.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-44fb2a9de40de98efce28c89c6896243.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-b0e610993ba9119e54b64e8e30a4d128.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": true,
@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles/custom.css">
 </head>
@@ -130,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-03.html">Chương 2 — Ngành và doanh nghiệp</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-03.html">Buổi 03 — Cấu trúc thị trường và thất bại thị trường</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-03.html">Chương 2 — Ngành và doanh nghiệp</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-03.html">Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -183,13 +212,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-03.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Buổi 03 — Cấu trúc thị trường và thất bại thị trường</span></a>
+ <span class="menu-text">Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp</span></a>
+ <span class="menu-text">Buổi 4 — Thất bại thị trường và Cơ chế điều tiết</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -314,10 +343,35 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Trong bài</h2>
    
   <ul>
-  <li><a href="#nội-dung-lý-thuyết-thuyết-giảng" id="toc-nội-dung-lý-thuyết-thuyết-giảng" class="nav-link active" data-scroll-target="#nội-dung-lý-thuyết-thuyết-giảng">Nội dung lý thuyết (thuyết giảng)</a></li>
-  <li><a href="#thực-hành-thảo-luận" id="toc-thực-hành-thảo-luận" class="nav-link" data-scroll-target="#thực-hành-thảo-luận">Thực hành / Thảo luận</a></li>
-  <li><a href="#bài-tập-lớn-tiểu-luận" id="toc-bài-tập-lớn-tiểu-luận" class="nav-link" data-scroll-target="#bài-tập-lớn-tiểu-luận">Bài tập lớn / Tiểu luận</a></li>
-  <li><a href="#tự-học-có-hướng-dẫn" id="toc-tự-học-có-hướng-dẫn" class="nav-link" data-scroll-target="#tự-học-có-hướng-dẫn">Tự học có hướng dẫn</a></li>
+  <li><a href="#lộ-trình-buổi-3" id="toc-lộ-trình-buổi-3" class="nav-link active" data-scroll-target="#lộ-trình-buổi-3">Lộ trình Buổi 3</a></li>
+  <li><a href="#a.-lược-sử-tư-tưởng-kinh-tế" id="toc-a.-lược-sử-tư-tưởng-kinh-tế" class="nav-link" data-scroll-target="#a.-lược-sử-tư-tưởng-kinh-tế">A. Lược sử tư tưởng kinh tế</a>
+  <ul class="collapse">
+  <li><a href="#a.1.-vì-sao-học-lịch-sử-tư-tưởng" id="toc-a.1.-vì-sao-học-lịch-sử-tư-tưởng" class="nav-link" data-scroll-target="#a.1.-vì-sao-học-lịch-sử-tư-tưởng">A.1. Vì sao học lịch sử tư tưởng?</a></li>
+  <li><a href="#a.2.-trọng-thương-và-trọng-nông-hai-trường-phái-tiền-cổ-điển" id="toc-a.2.-trọng-thương-và-trọng-nông-hai-trường-phái-tiền-cổ-điển" class="nav-link" data-scroll-target="#a.2.-trọng-thương-và-trọng-nông-hai-trường-phái-tiền-cổ-điển">A.2. Trọng thương và Trọng nông — hai trường phái tiền cổ điển</a></li>
+  <li><a href="#a.3.-adam-smith-và-ricardo-trường-phái-cổ-điển" id="toc-a.3.-adam-smith-và-ricardo-trường-phái-cổ-điển" class="nav-link" data-scroll-target="#a.3.-adam-smith-và-ricardo-trường-phái-cổ-điển">A.3. Adam Smith và Ricardo — trường phái Cổ điển</a></li>
+  <li><a href="#a.4.-cách-mạng-cận-biên-và-trường-phái-tân-cổ-điển" id="toc-a.4.-cách-mạng-cận-biên-và-trường-phái-tân-cổ-điển" class="nav-link" data-scroll-target="#a.4.-cách-mạng-cận-biên-và-trường-phái-tân-cổ-điển">A.4. Cách mạng cận biên và trường phái Tân cổ điển</a></li>
+  </ul></li>
+  <li><a href="#b.-bốn-cấu-trúc-thị-trường" id="toc-b.-bốn-cấu-trúc-thị-trường" class="nav-link" data-scroll-target="#b.-bốn-cấu-trúc-thị-trường">B. Bốn cấu trúc thị trường</a>
+  <ul class="collapse">
+  <li><a href="#b.1.-tiêu-chí-phân-loại" id="toc-b.1.-tiêu-chí-phân-loại" class="nav-link" data-scroll-target="#b.1.-tiêu-chí-phân-loại">B.1. Tiêu chí phân loại</a></li>
+  <li><a href="#b.2.-cạnh-tranh-hoàn-hảo-cthh" id="toc-b.2.-cạnh-tranh-hoàn-hảo-cthh" class="nav-link" data-scroll-target="#b.2.-cạnh-tranh-hoàn-hảo-cthh">B.2. Cạnh tranh hoàn hảo (CTHH)</a></li>
+  <li><a href="#b.3.-độc-quyền-monopoly" id="toc-b.3.-độc-quyền-monopoly" class="nav-link" data-scroll-target="#b.3.-độc-quyền-monopoly">B.3. Độc quyền (Monopoly)</a></li>
+  <li><a href="#b.4.-cạnh-tranh-độc-quyền-monopolistic-competition" id="toc-b.4.-cạnh-tranh-độc-quyền-monopolistic-competition" class="nav-link" data-scroll-target="#b.4.-cạnh-tranh-độc-quyền-monopolistic-competition">B.4. Cạnh tranh độc quyền (Monopolistic Competition)</a></li>
+  <li><a href="#b.5.-oligopoly-độc-quyền-nhóm" id="toc-b.5.-oligopoly-độc-quyền-nhóm" class="nav-link" data-scroll-target="#b.5.-oligopoly-độc-quyền-nhóm">B.5. Oligopoly — Độc quyền nhóm</a></li>
+  </ul></li>
+  <li><a href="#c.-đo-lường-sức-mạnh-thị-trường" id="toc-c.-đo-lường-sức-mạnh-thị-trường" class="nav-link" data-scroll-target="#c.-đo-lường-sức-mạnh-thị-trường">C. Đo lường sức mạnh thị trường</a>
+  <ul class="collapse">
+  <li><a href="#c.1.-lerner-index-đo-cấp-doanh-nghiệp" id="toc-c.1.-lerner-index-đo-cấp-doanh-nghiệp" class="nav-link" data-scroll-target="#c.1.-lerner-index-đo-cấp-doanh-nghiệp">C.1. Lerner Index — đo cấp doanh nghiệp</a></li>
+  <li><a href="#c.2.-hhi-đo-độ-tập-trung-ngành" id="toc-c.2.-hhi-đo-độ-tập-trung-ngành" class="nav-link" data-scroll-target="#c.2.-hhi-đo-độ-tập-trung-ngành">C.2. HHI — đo độ tập trung ngành</a></li>
+  </ul></li>
+  <li><a href="#d.-luật-cạnh-tranh-việt-nam" id="toc-d.-luật-cạnh-tranh-việt-nam" class="nav-link" data-scroll-target="#d.-luật-cạnh-tranh-việt-nam">D. Luật Cạnh tranh Việt Nam</a>
+  <ul class="collapse">
+  <li><a href="#d.1.-khung-pháp-lý-2018" id="toc-d.1.-khung-pháp-lý-2018" class="nav-link" data-scroll-target="#d.1.-khung-pháp-lý-2018">D.1. Khung pháp lý 2018</a></li>
+  <li><a href="#d.2.-bốn-loại-hành-vi-bị-cấm" id="toc-d.2.-bốn-loại-hành-vi-bị-cấm" class="nav-link" data-scroll-target="#d.2.-bốn-loại-hành-vi-bị-cấm">D.2. Bốn loại hành vi bị cấm</a></li>
+  <li><a href="#d.3.-ba-ví-dụ-ngành-việt-nam-phân-tích-cấu-trúc" id="toc-d.3.-ba-ví-dụ-ngành-việt-nam-phân-tích-cấu-trúc" class="nav-link" data-scroll-target="#d.3.-ba-ví-dụ-ngành-việt-nam-phân-tích-cấu-trúc">D.3. Ba ví dụ ngành Việt Nam — phân tích cấu trúc</a></li>
+  </ul></li>
+  <li><a href="#tổng-kết-buổi-3-năm-điểm-cốt-lõi" id="toc-tổng-kết-buổi-3-năm-điểm-cốt-lõi" class="nav-link" data-scroll-target="#tổng-kết-buổi-3-năm-điểm-cốt-lõi">Tổng kết Buổi 3 — Năm điểm cốt lõi</a></li>
+  <li><a href="#bài-tập-về-nhà-chuẩn-bị-buổi-4" id="toc-bài-tập-về-nhà-chuẩn-bị-buổi-4" class="nav-link" data-scroll-target="#bài-tập-về-nhà-chuẩn-bị-buổi-4">Bài tập về nhà (chuẩn bị Buổi 4)</a></li>
   <li><a href="#đọc-thêm" id="toc-đọc-thêm" class="nav-link" data-scroll-target="#đọc-thêm">Đọc thêm</a></li>
   </ul>
 </nav>
@@ -325,10 +379,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-03.html">Chương 2 — Ngành và doanh nghiệp</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-03.html">Buổi 03 — Cấu trúc thị trường và thất bại thị trường</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-03.html">Chương 2 — Ngành và doanh nghiệp</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-03.html">Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Buổi 03 — Cấu trúc thị trường và thất bại thị trường</h1>
-<p class="subtitle lead">4 loại cấu trúc; Lerner, HHI; hàng hoá công, ngoại tác, độc quyền, thông tin bất cân xứng</p>
+<h1 class="title">Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh</h1>
+<p class="subtitle lead">Lược sử tư tưởng kinh tế · 4 cấu trúc thị trường · Lerner &amp; HHI · Luật Cạnh tranh VN 2018</p>
 </div>
 
 
@@ -355,62 +409,549 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>CLO1, CLO2 — Vận dụng khung phân tích vào tình huống điển hình</strong></p>
+<p><strong>CLO1, CLO2</strong> — Vận dụng khung cấu trúc thị trường vào phân tích ngành Việt Nam.</p>
+<p>Buổi 3 mở Chương 2 bằng một câu hỏi nền tảng: <strong>thị trường vận hành ra sao trong các cấu trúc khác nhau</strong>, và <strong>làm thế nào đo lường sức mạnh thị trường</strong>. Đây là cơ sở để Buổi 4 bàn về thất bại thị trường và Buổi 5 về quản trị doanh nghiệp.</p>
 </div>
 </div>
-<section id="nội-dung-lý-thuyết-thuyết-giảng" class="level2">
-<h2 class="anchored" data-anchor-id="nội-dung-lý-thuyết-thuyết-giảng">Nội dung lý thuyết (thuyết giảng)</h2>
-<p><strong>2.1. Cấu trúc thị trường</strong></p>
+<section id="lộ-trình-buổi-3" class="level2">
+<h2 class="anchored" data-anchor-id="lộ-trình-buổi-3">Lộ trình Buổi 3</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Phần</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>A</strong></td>
+<td>Lược sử tư tưởng kinh tế — năm trường phái lớn</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>B</strong></td>
+<td>Bốn cấu trúc thị trường — CTHH, ĐQ, CTĐQ, Oligopoly</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>C</strong></td>
+<td>Đo lường sức mạnh thị trường — Lerner và HHI</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>D</strong></td>
+<td>Luật Cạnh tranh Việt Nam 2018</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="a.-lược-sử-tư-tưởng-kinh-tế" class="level2">
+<h2 class="anchored" data-anchor-id="a.-lược-sử-tư-tưởng-kinh-tế">A. Lược sử tư tưởng kinh tế</h2>
+<section id="a.1.-vì-sao-học-lịch-sử-tư-tưởng" class="level3">
+<h3 class="anchored" data-anchor-id="a.1.-vì-sao-học-lịch-sử-tư-tưởng">A.1. Vì sao học lịch sử tư tưởng?</h3>
+<p>Sinh viên kinh tế hay hỏi: <em>học lịch sử để làm gì?</em> Câu trả lời ngắn: <strong>để có đa lăng kính phân tích chính sách</strong>. Cụ thể:</p>
 <ul>
-<li>Bốn loại: cạnh tranh hoàn hảo, độc quyền, độc quyền nhóm, cạnh tranh độc quyền</li>
-<li>Chỉ số <strong>Lerner</strong>, chỉ số <strong>HHI</strong></li>
-<li>Luật Cạnh tranh Việt Nam</li>
+<li>Mỗi trường phái mang <strong>giả định</strong> riêng — hiểu giả định mới dùng đúng khung.</li>
+<li><strong>Hiểu gốc rễ</strong> giúp đọc lý thuyết hiện đại sâu hơn.</li>
+<li>Mỗi giai đoạn đều có <strong>sai lầm chính sách kinh điển</strong> — biết để không lặp lại.</li>
 </ul>
-<p><strong>2.2. Thất bại thị trường</strong></p>
+<p>Ta sẽ điểm qua <strong>năm trường phái lớn</strong>: Trọng thương → Trọng nông → Cổ điển (Smith, Ricardo) → Cận biên → Tân cổ điển (Marshall).</p>
+</section>
+<section id="a.2.-trọng-thương-và-trọng-nông-hai-trường-phái-tiền-cổ-điển" class="level3">
+<h3 class="anchored" data-anchor-id="a.2.-trọng-thương-và-trọng-nông-hai-trường-phái-tiền-cổ-điển">A.2. Trọng thương và Trọng nông — hai trường phái tiền cổ điển</h3>
+<p><strong>Trọng thương (Mercantilism, XVI–XVIII)</strong>:</p>
 <ul>
-<li>Hàng hoá công</li>
-<li>Ngoại tác (externalities)</li>
-<li>Độc quyền tự nhiên</li>
-<li>Thông tin bất cân xứng</li>
+<li>Tư tưởng cốt lõi: <strong>của cải quốc gia = vàng và kim loại quý</strong>.</li>
+<li>Chính sách: ưu tiên <strong>xuất siêu</strong>, hạn chế nhập khẩu, tích trữ vàng.</li>
+<li>Đại diện: <strong>Thomas Mun</strong> (Anh, 1664), <strong>Jean-Baptiste Colbert</strong> (Pháp).</li>
+<li>Giới hạn: nhầm <em>tích vàng</em> với <em>của cải thực</em>. Hume sau này chỉ ra: tích vàng làm tăng cung tiền nội địa → lạm phát → mất lợi thế xuất khẩu.</li>
 </ul>
+<p><strong>Trọng nông (Physiocracy)</strong>:</p>
+<ul>
+<li><strong>François Quesnay</strong> với <em>Tableau Économique</em> (1758) — bản đồ kinh tế đầu tiên.</li>
+<li>Tư tưởng: <strong>nông nghiệp là nguồn duy nhất của của cải</strong>; công nghiệp chỉ “chế biến”.</li>
+<li>Đóng góp: ý tưởng <em>dòng tuần hoàn kinh tế</em> — tiền đề của Input-Output Leontief sau này.</li>
+<li>Giới hạn: bỏ qua vai trò công nghiệp.</li>
+</ul>
+<p>Cả hai trường phái này có <strong>giới hạn lý thuyết quan trọng</strong>, nhưng đặt nền cho Adam Smith.</p>
 </section>
-<section id="thực-hành-thảo-luận" class="level2">
-<h2 class="anchored" data-anchor-id="thực-hành-thảo-luận">Thực hành / Thảo luận</h2>
-<p>Tính HHI cho một ngành Việt Nam (vd: viễn thông, ngân hàng); thảo luận <strong>mức độ tập trung</strong> và hàm ý cho chính sách cạnh tranh.</p>
+<section id="a.3.-adam-smith-và-ricardo-trường-phái-cổ-điển" class="level3">
+<h3 class="anchored" data-anchor-id="a.3.-adam-smith-và-ricardo-trường-phái-cổ-điển">A.3. Adam Smith và Ricardo — trường phái Cổ điển</h3>
+<p><strong>Adam Smith (1776)</strong> — <em>An Inquiry into the Nature and Causes of the Wealth of Nations</em>:</p>
+<ul>
+<li>Khái niệm trọng tâm: <strong>bàn tay vô hình</strong> — thị trường tự điều tiết khi mọi người theo đuổi lợi ích riêng.</li>
+<li>Phản đối Trọng thương: của cải = sản xuất, không phải vàng.</li>
+<li>Nguyên lý phân công lao động (pin example) — gia tăng năng suất.</li>
+</ul>
+<p><strong>David Ricardo (1817)</strong> — <em>On the Principles of Political Economy and Taxation</em>:</p>
+<ul>
+<li><strong>Lợi thế so sánh</strong> (comparative advantage) — cơ sở của tự do thương mại quốc tế.</li>
+<li>Mọi quốc gia đều có lợi từ thương mại, kể cả khi tuyệt đối kém hơn.</li>
+<li>Ví dụ kinh điển: vải Anh đổi rượu Bồ.</li>
+</ul>
+<p>Hai ông là <strong>hai trụ cột</strong> của trường phái Cổ điển. Ý tưởng “bàn tay vô hình” và “lợi thế so sánh” vẫn ảnh hưởng tới tư duy chính sách thương mại Việt Nam hôm nay (FTAs, WTO).</p>
 </section>
-<section id="bài-tập-lớn-tiểu-luận" class="level2">
-<h2 class="anchored" data-anchor-id="bài-tập-lớn-tiểu-luận">Bài tập lớn / Tiểu luận</h2>
-<p>Bài tập phân tích <strong>vai trò của quyền sở hữu và thể chế</strong> trong giải quyết một thất bại thị trường ở Việt Nam (Phần 1).</p>
+<section id="a.4.-cách-mạng-cận-biên-và-trường-phái-tân-cổ-điển" class="level3">
+<h3 class="anchored" data-anchor-id="a.4.-cách-mạng-cận-biên-và-trường-phái-tân-cổ-điển">A.4. Cách mạng cận biên và trường phái Tân cổ điển</h3>
+<p><strong>Cách mạng cận biên (Marginal Revolution, 1870s)</strong>:</p>
+<p>Ba người tiên phong <strong>độc lập</strong> đưa ra cùng ý tưởng <em>phân tích biên</em>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tên</th>
+<th>Quốc tịch</th>
+<th>Đóng góp</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>William Stanley Jevons</strong></td>
+<td>Anh</td>
+<td><em>The Theory of Political Economy</em> (1871)</td>
+</tr>
+<tr class="even">
+<td><strong>Carl Menger</strong></td>
+<td>Áo</td>
+<td><em>Grundsätze der Volkswirtschaftslehre</em> (1871)</td>
+</tr>
+<tr class="odd">
+<td><strong>Léon Walras</strong></td>
+<td>Pháp-Thuỵ Sĩ</td>
+<td><em>Éléments d’économie politique pure</em> (1874)</td>
+</tr>
+</tbody>
+</table>
+<p>Tư duy mới: <strong>cung – cầu gặp nhau ở giá cân bằng</strong>. Hành vi của người tiêu dùng và sản xuất phân tích qua <strong>mức biên</strong> (marginal utility, marginal cost).</p>
+<p><strong>Alfred Marshall (1890)</strong> — <em>Principles of Economics</em>:</p>
+<ul>
+<li>Tổng hợp Cổ điển + Cận biên = <strong>Tân cổ điển</strong>.</li>
+<li>Khung phân tích cung – cầu – giá vẫn dùng đến ngày nay (chính là khung Mankiw).</li>
+<li>Ý tưởng <em>agglomeration</em> — tập trung công nghiệp — sẽ trở lại ở Buổi 13 (kinh tế vùng).</li>
+</ul>
+<p>Trường phái Tân cổ điển là <strong>nền tảng</strong> của môn DTU301 và mọi giáo trình kinh tế học vi mô hiện đại.</p>
 </section>
-<section id="tự-học-có-hướng-dẫn" class="level2">
-<h2 class="anchored" data-anchor-id="tự-học-có-hướng-dẫn">Tự học có hướng dẫn</h2>
+</section>
+<section id="b.-bốn-cấu-trúc-thị-trường" class="level2">
+<h2 class="anchored" data-anchor-id="b.-bốn-cấu-trúc-thị-trường">B. Bốn cấu trúc thị trường</h2>
+<section id="b.1.-tiêu-chí-phân-loại" class="level3">
+<h3 class="anchored" data-anchor-id="b.1.-tiêu-chí-phân-loại">B.1. Tiêu chí phân loại</h3>
+<p>Bốn cấu trúc thị trường được phân loại theo <strong>ba tiêu chí</strong>:</p>
 <ol type="1">
-<li>Bốn nguồn thất bại thị trường?</li>
-<li>HHI &lt; 1500: thị trường có cạnh tranh không?</li>
-<li>Thông tin bất cân xứng tạo ra vấn đề gì cho QLKT?</li>
+<li><strong>Số doanh nghiệp</strong> — một, vài, nhiều, hay rất nhiều?</li>
+<li><strong>Tính chất sản phẩm</strong> — đồng nhất hay khác biệt hoá?</li>
+<li><strong>Rào cản gia nhập / rút lui</strong> — tự do hay khó khăn?</li>
 </ol>
+<p>Càng ít doanh nghiệp + rào cản cao → <strong>càng có quyền lực thị trường (market power)</strong>.</p>
 </section>
-<section id="đọc-thêm" class="level2">
-<h2 class="anchored" data-anchor-id="đọc-thêm">Đọc thêm</h2>
+<section id="b.2.-cạnh-tranh-hoàn-hảo-cthh" class="level3">
+<h3 class="anchored" data-anchor-id="b.2.-cạnh-tranh-hoàn-hảo-cthh">B.2. Cạnh tranh hoàn hảo (CTHH)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Yếu tố</th>
+<th>Đặc điểm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Số DN</td>
+<td>Rất nhiều, mỗi DN nhỏ</td>
+</tr>
+<tr class="even">
+<td>Sản phẩm</td>
+<td>Đồng nhất, không thương hiệu</td>
+</tr>
+<tr class="odd">
+<td>Thông tin</td>
+<td>Đầy đủ, đối xứng</td>
+</tr>
+<tr class="even">
+<td>Gia nhập</td>
+<td>Tự do</td>
+</tr>
+<tr class="odd">
+<td>Quy tắc giá</td>
+<td><strong>P = MC = MR</strong></td>
+</tr>
+<tr class="even">
+<td>Lợi nhuận dài hạn</td>
+<td>= 0 (chỉ đủ chi phí cơ hội)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ví dụ thực tế</strong>: thị trường gạo, lúa mì, một số nông sản. Trong CTHH, mỗi DN là <em>price taker</em> — không thể tự đặt giá.</p>
+<p>Đây là <strong>mô hình lý tưởng</strong> — hiếm tồn tại trong thực tế, nhưng là <strong>chuẩn so sánh</strong> để đánh giá các cấu trúc khác.</p>
+</section>
+<section id="b.3.-độc-quyền-monopoly" class="level3">
+<h3 class="anchored" data-anchor-id="b.3.-độc-quyền-monopoly">B.3. Độc quyền (Monopoly)</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Yếu tố</th>
+<th>Đặc điểm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Số DN</td>
+<td><strong>1 duy nhất</strong></td>
+</tr>
+<tr class="even">
+<td>Sản phẩm</td>
+<td>Không có thay thế gần</td>
+</tr>
+<tr class="odd">
+<td>Rào cản</td>
+<td>Rất cao</td>
+</tr>
+<tr class="even">
+<td>Quy tắc giá</td>
+<td><strong>P &gt; MC</strong> → quyền lực giá</td>
+</tr>
+<tr class="odd">
+<td>Hậu quả</td>
+<td><strong>Tổn thất phúc lợi (DWL)</strong> — sản lượng thấp, giá cao</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bốn nguồn của độc quyền</strong>:</p>
+<ol type="1">
+<li><strong>Độc quyền tự nhiên</strong> — quy mô lớn làm chi phí giảm dần (sẽ học kỹ ở Buổi 4)</li>
+<li><strong>Sở hữu trí tuệ</strong> — bằng sáng chế, bản quyền tạm thời cho độc quyền</li>
+<li><strong>Quy chế Nhà nước</strong> — cấp phép độc quyền cho một ngành (vd: in tiền)</li>
+<li><strong>Sáp nhập / mua lại</strong> — DN lớn nuốt đối thủ</li>
+</ol>
+<p><strong>Ví dụ Việt Nam</strong>: <strong>EVN</strong> trong truyền tải điện — độc quyền tự nhiên. Lưu ý: phát điện và bán lẻ đang được tách dần, nhưng <em>truyền tải</em> vẫn độc quyền.</p>
+</section>
+<section id="b.4.-cạnh-tranh-độc-quyền-monopolistic-competition" class="level3">
+<h3 class="anchored" data-anchor-id="b.4.-cạnh-tranh-độc-quyền-monopolistic-competition">B.4. Cạnh tranh độc quyền (Monopolistic Competition)</h3>
+<p>Chamberlin (1933) — <em>The Theory of Monopolistic Competition</em>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Yếu tố</th>
+<th>Đặc điểm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Số DN</td>
+<td>Nhiều</td>
+</tr>
+<tr class="even">
+<td>Sản phẩm</td>
+<td><strong>Khác biệt hoá</strong> (thương hiệu, chất lượng, vị trí)</td>
+</tr>
+<tr class="odd">
+<td>Gia nhập</td>
+<td>Tự do</td>
+</tr>
+<tr class="even">
+<td>Quy tắc giá</td>
+<td>P &gt; MC nhưng lợi nhuận dài hạn → 0 vì có DN mới gia nhập</td>
+</tr>
+</tbody>
+</table>
+<p>Đặc trưng nổi bật: <strong>mỗi DN có “độc quyền nhỏ”</strong> trong phân khúc của mình nhờ khác biệt hoá.</p>
+<p><strong>Ví dụ</strong>: quán cà phê, nhà hàng, sách báo, quần áo thời trang — vô số DN, mỗi DN có chút khác biệt riêng.</p>
+</section>
+<section id="b.5.-oligopoly-độc-quyền-nhóm" class="level3">
+<h3 class="anchored" data-anchor-id="b.5.-oligopoly-độc-quyền-nhóm">B.5. Oligopoly — Độc quyền nhóm</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Yếu tố</th>
+<th>Đặc điểm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Số DN</td>
+<td><strong>Vài DN lớn</strong> chi phối</td>
+</tr>
+<tr class="even">
+<td>Sản phẩm</td>
+<td>Có thể đồng nhất hoặc khác biệt</td>
+</tr>
+<tr class="odd">
+<td>Rào cản</td>
+<td>Cao</td>
+</tr>
+<tr class="even">
+<td>Đặc trưng nổi bật</td>
+<td><strong>Phụ thuộc lẫn nhau</strong> — quyết định của DN A ảnh hưởng B</td>
+</tr>
+<tr class="odd">
+<td>Công cụ phân tích</td>
+<td><strong>Lý thuyết trò chơi (Game Theory)</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Trong oligopoly, mỗi DN phải tính đến <em>phản ứng của đối thủ</em> khi ra quyết định giá hay sản lượng. Có thể có <strong>collusion (kết cấu)</strong> — vd: OPEC.</p>
+<p><strong>Ví dụ Việt Nam</strong>:</p>
 <ul>
-<li>Mankiw, <em>Kinh tế học vi mô</em>, chương 14–17.</li>
-<li>Stiglitz &amp; Rosengard (2015), <em>Economics of the Public Sector</em>, chương 4–6.</li>
+<li><strong>Bia</strong>: Sabeco, Habeco, Heineken — chiếm ~80% thị phần.</li>
+<li><strong>Viễn thông di động</strong>: Viettel, VNPT (VinaPhone), MobiFone — 3 nhà mạng lớn.</li>
+<li><strong>Ngân hàng quốc doanh</strong>: VCB, BIDV, VietinBank, Agribank.</li>
 </ul>
-<div class="callout callout-style-simple callout-warning callout-titled">
+</section>
+</section>
+<section id="c.-đo-lường-sức-mạnh-thị-trường" class="level2">
+<h2 class="anchored" data-anchor-id="c.-đo-lường-sức-mạnh-thị-trường">C. Đo lường sức mạnh thị trường</h2>
+<section id="c.1.-lerner-index-đo-cấp-doanh-nghiệp" class="level3">
+<h3 class="anchored" data-anchor-id="c.1.-lerner-index-đo-cấp-doanh-nghiệp">C.1. Lerner Index — đo cấp doanh nghiệp</h3>
+<p><span class="math display">\[L = \frac{P - MC}{P}\]</span></p>
+<p>Trong đó: - <span class="math inline">\(P\)</span> = giá bán - <span class="math inline">\(MC\)</span> = chi phí biên</p>
+<p><strong>Diễn giải</strong>:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Giá trị L</th>
+<th>Ý nghĩa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(L = 0\)</span></td>
+<td>Cạnh tranh hoàn hảo (<span class="math inline">\(P = MC\)</span>)</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(L \to 1\)</span></td>
+<td>Gần độc quyền tuyệt đối</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(0 &lt; L &lt; 1\)</span></td>
+<td>Có quyền lực thị trường, ở mức tương ứng</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Hạn chế của Lerner</strong>: - Cần biết <strong>MC</strong> — khó đo trong thực tế (DN không công bố chi phí biên). - Chỉ đo <em>cấp DN</em>, không cho biết toàn ngành.</p>
+</section>
+<section id="c.2.-hhi-đo-độ-tập-trung-ngành" class="level3">
+<h3 class="anchored" data-anchor-id="c.2.-hhi-đo-độ-tập-trung-ngành">C.2. HHI — đo độ tập trung ngành</h3>
+<p><strong>Herfindahl-Hirschman Index</strong> đo độ tập trung của một ngành dựa trên <strong>thị phần</strong> của tất cả DN.</p>
+<p><span class="math display">\[\text{HHI} = \sum_{i=1}^{n} S_i^2\]</span></p>
+<p>Trong đó <span class="math inline">\(S_i\)</span> là thị phần (%) của DN thứ <span class="math inline">\(i\)</span>.</p>
+<p><strong>Diễn giải chuẩn quốc tế (Mỹ DOJ)</strong>:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>HHI</th>
+<th>Mức độ tập trung</th>
+<th>Ý nghĩa chính sách</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>&lt; 1500</strong></td>
+<td>Thấp</td>
+<td>Cạnh tranh tốt</td>
+</tr>
+<tr class="even">
+<td><strong>1500 – 2500</strong></td>
+<td>Trung bình</td>
+<td>Cần theo dõi</td>
+</tr>
+<tr class="odd">
+<td><strong>&gt; 2500</strong></td>
+<td>Cao</td>
+<td>Có thể can thiệp</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Ví dụ tính</strong>: 4 DN, mỗi DN có thị phần 25%:</p>
+<p><span class="math display">\[\text{HHI} = 25^2 + 25^2 + 25^2 + 25^2 = 2500\]</span></p>
+<p>→ Mức cao trung bình. Nếu 2 DN sáp nhập (thành 50% + 25% + 25%):</p>
+<p><span class="math display">\[\text{HHI} = 50^2 + 25^2 + 25^2 = 2500 + 625 + 625 = 3750\]</span></p>
+<p>→ Vượt ngưỡng cao. Mỹ và EU dùng HHI để đánh giá <strong>M&amp;A</strong> — có cho phép sáp nhập hay không.</p>
+</section>
+</section>
+<section id="d.-luật-cạnh-tranh-việt-nam" class="level2">
+<h2 class="anchored" data-anchor-id="d.-luật-cạnh-tranh-việt-nam">D. Luật Cạnh tranh Việt Nam</h2>
+<section id="d.1.-khung-pháp-lý-2018" class="level3">
+<h3 class="anchored" data-anchor-id="d.1.-khung-pháp-lý-2018">D.1. Khung pháp lý 2018</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Yếu tố</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Văn bản</td>
+<td><strong>Luật 23/2018/QH14</strong></td>
+</tr>
+<tr class="even">
+<td>Hiệu lực</td>
+<td><strong>1/7/2019</strong></td>
+</tr>
+<tr class="odd">
+<td>Thay thế</td>
+<td>Luật 27/2004/QH11 cũ</td>
+</tr>
+<tr class="even">
+<td>Phạm vi</td>
+<td>DN, hiệp hội DN, <strong>cơ quan Nhà nước</strong></td>
+</tr>
+<tr class="odd">
+<td>Cơ quan thực thi</td>
+<td><strong>Uỷ ban Cạnh tranh Quốc gia (NCC)</strong></td>
+</tr>
+<tr class="even">
+<td>Định hướng</td>
+<td>Bám chuẩn quốc tế và thực tiễn ASEAN</td>
+</tr>
+</tbody>
+</table>
+<p>Luật 2018 mở rộng phạm vi so với Luật 2004 cũ — nay áp dụng cho cả <strong>cơ quan Nhà nước</strong> khi can thiệp vào kinh tế.</p>
+</section>
+<section id="d.2.-bốn-loại-hành-vi-bị-cấm" class="level3">
+<h3 class="anchored" data-anchor-id="d.2.-bốn-loại-hành-vi-bị-cấm">D.2. Bốn loại hành vi bị cấm</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Hành vi</th>
+<th>Ví dụ</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><strong>Thoả thuận hạn chế cạnh tranh</strong></td>
+<td>Cartel giá, chia thị trường</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><strong>Lạm dụng vị trí thống lĩnh thị trường</strong></td>
+<td>DN &gt;30% thị phần ép giá, từ chối giao dịch</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><strong>Tập trung kinh tế gây hại cạnh tranh</strong></td>
+<td>M&amp;A tạo độc quyền</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><strong>Cạnh tranh không lành mạnh</strong></td>
+<td>Vu khống, gây nhầm lẫn, đánh cắp bí mật</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Hình thức xử lý</strong>: phạt tiền (tới 10% doanh thu), buộc khôi phục, <strong>truy cứu hình sự</strong> với vi phạm nghiêm trọng.</p>
+</section>
+<section id="d.3.-ba-ví-dụ-ngành-việt-nam-phân-tích-cấu-trúc" class="level3">
+<h3 class="anchored" data-anchor-id="d.3.-ba-ví-dụ-ngành-việt-nam-phân-tích-cấu-trúc">D.3. Ba ví dụ ngành Việt Nam — phân tích cấu trúc</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ngành</th>
+<th>Cấu trúc</th>
+<th>Phân tích</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Viễn thông di động</strong></td>
+<td>Oligopoly</td>
+<td>Viettel, VNPT, MobiFone chiếm ~95%. HHI cao. NCC giám sát chặt khi có M&amp;A.</td>
+</tr>
+<tr class="even">
+<td><strong>Bia</strong></td>
+<td>Oligopoly</td>
+<td>Sabeco, Habeco, Heineken ~80%. Có khả năng <em>parallel pricing</em>.</td>
+</tr>
+<tr class="odd">
+<td><strong>Xăng dầu</strong></td>
+<td>Oligopoly với DN thống lĩnh</td>
+<td><strong>Petrolimex</strong> chi phối ~50% thị trường, các DN còn lại cộng lại &lt; 50%. Có thể có <em>lạm dụng vị trí thống lĩnh</em>.</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>🚧 Nội dung đang biên soạn
+<span class="screen-reader-only">Warning</span>✋ Bài tập thảo luận trên lớp
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Bài giảng buổi 03 hiện ở dạng <strong>dàn ý theo đề cương DTU301</strong>. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.</p>
+<p>Tính <strong>HHI</strong> cho một ngành Việt Nam tự chọn (ngân hàng, bán lẻ, hàng không, thép…). Trả lời:</p>
+<ol type="1">
+<li>Mức độ tập trung của ngành theo chuẩn quốc tế?</li>
+<li>Có DN nào có thị phần &gt; 30% (ngưỡng “thống lĩnh” theo Luật 2018)?</li>
+<li>Nếu hai DN lớn nhất ngành đề xuất sáp nhập, NCC có nên duyệt không?</li>
+</ol>
 </div>
 </div>
+</section>
+</section>
+<section id="tổng-kết-buổi-3-năm-điểm-cốt-lõi" class="level2">
+<h2 class="anchored" data-anchor-id="tổng-kết-buổi-3-năm-điểm-cốt-lõi">Tổng kết Buổi 3 — Năm điểm cốt lõi</h2>
+<ol type="1">
+<li><strong>Lịch sử tư tưởng</strong> kinh tế qua 5 trường phái lớn: Trọng thương → Trọng nông → Cổ điển → Cận biên → Tân cổ điển.</li>
+<li><strong>Bốn cấu trúc thị trường</strong>: CTHH, Độc quyền, Cạnh tranh độc quyền, Oligopoly.</li>
+<li><strong>Đo lường sức mạnh thị trường</strong>: <strong>Lerner Index</strong> (cấp DN) + <strong>HHI</strong> (cấp ngành).</li>
+<li><strong>Luật Cạnh tranh VN 2018</strong> (23/2018/QH14) — cơ quan NCC; 4 loại hành vi bị cấm.</li>
+<li><strong>Cấu trúc thị trường quyết định mức can thiệp</strong> — Nhà nước cần khác cách xử lý CTHH vs oligopoly.</li>
+</ol>
+</section>
+<section id="bài-tập-về-nhà-chuẩn-bị-buổi-4" class="level2">
+<h2 class="anchored" data-anchor-id="bài-tập-về-nhà-chuẩn-bị-buổi-4">Bài tập về nhà (chuẩn bị Buổi 4)</h2>
+<ol type="1">
+<li><strong>Đọc</strong> Mankiw, chương về <strong>thất bại thị trường</strong>.</li>
+<li><strong>Tự đọc</strong> về 4 nguồn thất bại thị trường — sẽ học chi tiết ở Buổi 4.</li>
+<li><strong>Chuẩn bị 1 case ngoại tác âm</strong> tại Việt Nam (vd: ô nhiễm, tiếng ồn, ùn tắc).</li>
+<li><strong>Đọc thêm</strong> về thuế Pigou và định lý Coase.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>🔧 Stata Lab 3 (bonus 5%)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Bài này có lab thực hành <strong>tính HHI cho 5 ngành Việt Nam</strong> trong Stata: viễn thông, ngân hàng, bia, bán lẻ, hàng không. Bạn sẽ học <code>egen rowtotal</code>, <code>gsort</code>, formatting bảng so sánh.</p>
+<p>→ <a href="../stata-lab/lab-03.html"><strong>Bắt đầu Lab 3 — Tính HHI cho 5 ngành Việt Nam</strong></a> <em>(~20 phút)</em></p>
+</div>
+</div>
+</section>
+<section id="đọc-thêm" class="level2">
+<h2 class="anchored" data-anchor-id="đọc-thêm">Đọc thêm</h2>
+<ul>
+<li>Mankiw, <em>Kinh tế học vi mô</em> (2026), chương 13–17 (Cạnh tranh, Độc quyền, Oligopoly).</li>
+<li>Buchholz, <em>Ý tưởng mới từ các Kinh tế gia tiền bối</em> (2007), chương về Adam Smith, Ricardo, Marshall.</li>
+<li><strong>Luật Cạnh tranh 2018</strong> (23/2018/QH14) — văn bản gốc.</li>
+<li><em>Báo cáo thường niên của Uỷ ban Cạnh tranh Quốc gia</em> — phiên bản mới nhất.</li>
+</ul>
 <hr>
-<p>← <em>Buổi trước</em>: <a href="../lectures/buoi-02.html">Buổi 2</a> <em>Buổi tiếp theo</em>: <a href="../lectures/buoi-04.html">Buổi 4</a> →</p>
+<p>← <em>Buổi trước</em>: <a href="../lectures/buoi-02.html">Buổi 2 — Chức năng và Công cụ QLKT</a> | <em>Buổi tiếp theo</em>: <a href="../lectures/buoi-04.html">Buổi 4 — Thất bại thị trường và Cơ chế điều tiết</a> →</p>
 
 
 </section>

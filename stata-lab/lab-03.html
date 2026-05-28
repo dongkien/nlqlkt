@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lab 03 — Tính HHI cho 5 ngành Việt Nam – Nguyên lý Quản lý Kinh tế (DTU301)</title>
+<title>Lab 3 — Tính HHI cho 5 ngành Việt Nam – Nguyên lý Quản lý Kinh tế (DTU301)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -76,7 +76,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-3a25ebfbbb03e529eea34e993f2a5140.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-44fb2a9de40de98efce28c89c6896243.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-b0e610993ba9119e54b64e8e30a4d128.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": true,
@@ -165,7 +165,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-03.html">Lab 03 — Tính HHI cho 5 ngành Việt Nam</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-03.html">Lab 3 — Tính HHI cho 5 ngành Việt Nam</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -230,13 +230,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../stata-lab/lab-03.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Lab 03 — Tính HHI cho 5 ngành Việt Nam</span></a>
+ <span class="menu-text">Lab 3 — Tính HHI cho 5 ngành Việt Nam</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../stata-lab/lab-04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab 04 — Mô phỏng thuế Pigou</span></a>
+ <span class="menu-text">Lab 4 — Mô phỏng thuế Pigou</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -317,14 +317,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Trong bài</h2>
    
   <ul>
-  <li><a href="#khung-lab-03" id="toc-khung-lab-03" class="nav-link active" data-scroll-target="#khung-lab-03">Khung Lab 03</a>
-  <ul class="collapse">
-  <li><a href="#bài-toán" id="toc-bài-toán" class="nav-link" data-scroll-target="#bài-toán">1. Bài toán</a></li>
-  <li><a href="#dữ-liệu-cần" id="toc-dữ-liệu-cần" class="nav-link" data-scroll-target="#dữ-liệu-cần">2. Dữ liệu cần</a></li>
-  <li><a href="#lệnh-stata-trọng-tâm" id="toc-lệnh-stata-trọng-tâm" class="nav-link" data-scroll-target="#lệnh-stata-trọng-tâm">3. Lệnh Stata trọng tâm</a></li>
-  <li><a href="#câu-hỏi-suy-nghĩ-sẽ-chi-tiết" id="toc-câu-hỏi-suy-nghĩ-sẽ-chi-tiết" class="nav-link" data-scroll-target="#câu-hỏi-suy-nghĩ-sẽ-chi-tiết">4. Câu hỏi suy nghĩ (sẽ chi tiết)</a></li>
-  </ul></li>
-  <li><a href="#deliverable-lab-03" id="toc-deliverable-lab-03" class="nav-link" data-scroll-target="#deliverable-lab-03">Deliverable Lab 03</a></li>
+  <li><a href="#tạo-dataset-5-ngành-việt-nam" id="toc-tạo-dataset-5-ngành-việt-nam" class="nav-link active" data-scroll-target="#tạo-dataset-5-ngành-việt-nam">1. Tạo dataset 5 ngành Việt Nam</a></li>
+  <li><a href="#tính-hhi-cho-từng-ngành" id="toc-tính-hhi-cho-từng-ngành" class="nav-link" data-scroll-target="#tính-hhi-cho-từng-ngành">2. Tính HHI cho từng ngành</a></li>
+  <li><a href="#phân-loại-theo-chuẩn-quốc-tế" id="toc-phân-loại-theo-chuẩn-quốc-tế" class="nav-link" data-scroll-target="#phân-loại-theo-chuẩn-quốc-tế">3. Phân loại theo chuẩn quốc tế</a></li>
+  <li><a href="#tìm-doanh-nghiệp-có-vị-trí-thống-lĩnh" id="toc-tìm-doanh-nghiệp-có-vị-trí-thống-lĩnh" class="nav-link" data-scroll-target="#tìm-doanh-nghiệp-có-vị-trí-thống-lĩnh">4. Tìm doanh nghiệp có vị trí thống lĩnh</a></li>
+  <li><a href="#mô-phỏng-tác-động-ma" id="toc-mô-phỏng-tác-động-ma" class="nav-link" data-scroll-target="#mô-phỏng-tác-động-ma">5. Mô phỏng tác động M&amp;A</a></li>
+  <li><a href="#vẽ-biểu-đồ-so-sánh-5-ngành" id="toc-vẽ-biểu-đồ-so-sánh-5-ngành" class="nav-link" data-scroll-target="#vẽ-biểu-đồ-so-sánh-5-ngành">6. Vẽ biểu đồ so sánh 5 ngành</a></li>
+  <li><a href="#liên-hệ-với-buổi-3" id="toc-liên-hệ-với-buổi-3" class="nav-link" data-scroll-target="#liên-hệ-với-buổi-3">7. Liên hệ với Buổi 3</a></li>
+  <li><a href="#đóng-log" id="toc-đóng-log" class="nav-link" data-scroll-target="#đóng-log">8. Đóng log</a></li>
+  <li><a href="#deliverable-lab-3" id="toc-deliverable-lab-3" class="nav-link" data-scroll-target="#deliverable-lab-3">Deliverable Lab 3</a></li>
   <li><a href="#tiêu-chí-chấm" id="toc-tiêu-chí-chấm" class="nav-link" data-scroll-target="#tiêu-chí-chấm">Tiêu chí chấm</a></li>
   </ul>
 </nav>
@@ -332,10 +333,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-03.html">Lab 03 — Tính HHI cho 5 ngành Việt Nam</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-03.html">Lab 3 — Tính HHI cho 5 ngành Việt Nam</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Lab 03 — Tính HHI cho 5 ngành Việt Nam</h1>
-<p class="subtitle lead">Tương ứng Buổi 3: Cấu trúc thị trường và chỉ số tập trung</p>
+<h1 class="title">Lab 3 — Tính HHI cho 5 ngành Việt Nam</h1>
+<p class="subtitle lead">Tương ứng Buổi 3: Cấu trúc thị trường và đo lường sức mạnh thị trường</p>
 </div>
 
 
@@ -362,67 +363,211 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Bài này áp dụng khái niệm chính từ <a href="../lectures/buoi-03.html">Buổi 3</a> vào dữ liệu thực tế Việt Nam.</p>
-<p><strong>Khái niệm Stata học</strong>: <code>egen, sort, ranking</code></p>
+<p>Bài này áp dụng <strong>chỉ số HHI</strong> từ <a href="../lectures/buoi-03.html">Buổi 3</a> vào 5 ngành thực tế Việt Nam: viễn thông, ngân hàng, bia, bán lẻ hiện đại, hàng không.</p>
+<p>Sau Lab 3, bạn có thể:</p>
+<ul>
+<li>Nhập dữ liệu thị phần thủ công vào Stata</li>
+<li>Tính HHI bằng <code>egen</code> và <code>gen</code></li>
+<li>So sánh mức độ tập trung giữa các ngành</li>
+<li>Liên hệ HHI với <em>vị trí thống lĩnh thị trường</em> (Luật Cạnh tranh 2018)</li>
+</ul>
+<p><strong>Khái niệm Stata học</strong>: <code>input</code>, <code>egen total</code>, <code>gen</code>, <code>gsort</code>, <code>replace</code>, <code>preserve/restore</code>, biểu đồ bar</p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>🚧 Lab đang biên soạn
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 03. Cấu trúc cố định theo template chuẩn của 16 lab.</p>
-</div>
-</div>
-<section id="khung-lab-03" class="level2">
-<h2 class="anchored" data-anchor-id="khung-lab-03">Khung Lab 03</h2>
-<section id="bài-toán" class="level3">
-<h3 class="anchored" data-anchor-id="bài-toán">1. Bài toán</h3>
-<p>Viễn thông: Viettel/VNPT/MobiFone/Vietnamobile; Ngân hàng: VCB/BID/CTG/TCB; Bán lẻ: BHX/WCM/Coopmart</p>
-</section>
-<section id="dữ-liệu-cần" class="level3">
-<h3 class="anchored" data-anchor-id="dữ-liệu-cần">2. Dữ liệu cần</h3>
-<p>Dataset thị phần 5 doanh nghiệp lớn nhất từng ngành</p>
-</section>
-<section id="lệnh-stata-trọng-tâm" class="level3">
-<h3 class="anchored" data-anchor-id="lệnh-stata-trọng-tâm">3. Lệnh Stata trọng tâm</h3>
-<p>Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 03 — DTU301</span>
+<section id="tạo-dataset-5-ngành-việt-nam" class="level2">
+<h2 class="anchored" data-anchor-id="tạo-dataset-5-ngành-việt-nam">1. Tạo dataset 5 ngành Việt Nam</h2>
+<p>Mở do-file mới, gõ:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 3 — DTU301 — HHI 5 ngành Việt Nam</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>* Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span> <span class="ot">all</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">more</span> <span class="kw">off</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">using</span> <span class="st">"lab03_&lt;ten&gt;.log"</span>, <span class="kw">replace</span> <span class="bn">text</span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>* === Tải dữ liệu ===</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>* (sẽ chi tiết khi có dataset thật)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>* === Phân tích ===</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>* Sử dụng: <span class="kw">egen</span>, <span class="kw">sort</span>, ranking</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>* === Đóng <span class="fu">log</span> ===</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">close</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>* === Tạo dataset thị phần (% — ước lượng từ báo cáo ngành) ===</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>input str20 nganh str20 doanh_nghiep thi_phan</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="st">"Viễn thông"</span>      <span class="st">"Viettel"</span>          54</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="st">"Viễn thông"</span>      <span class="st">"VinaPhone"</span>        18</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="st">"Viễn thông"</span>      <span class="st">"MobiFone"</span>         19</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="st">"Viễn thông"</span>      <span class="st">"Vietnamobile"</span>      4</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="st">"Viễn thông"</span>      <span class="st">"Khác"</span>              5</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="st">"Ngân hàng"</span>       <span class="st">"Agribank"</span>         11</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="st">"Ngân hàng"</span>       <span class="st">"BIDV"</span>             11</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="st">"Ngân hàng"</span>       <span class="st">"VietinBank"</span>       10</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="st">"Ngân hàng"</span>       <span class="st">"Vietcombank"</span>      10</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="st">"Ngân hàng"</span>       <span class="st">"Techcombank"</span>       5</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="st">"Ngân hàng"</span>       <span class="st">"Khác"</span>             53</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="st">"Bia"</span>             <span class="st">"Heineken"</span>         39</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="st">"Bia"</span>             <span class="st">"Sabeco"</span>           33</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="st">"Bia"</span>             <span class="st">"Habeco"</span>           11</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="st">"Bia"</span>             <span class="st">"Carlsberg"</span>        10</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="st">"Bia"</span>             <span class="st">"Khác"</span>              7</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="st">"Bán lẻ"</span>          <span class="st">"BHX"</span>              18</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="st">"Bán lẻ"</span>          <span class="st">"WinMart"</span>          16</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="st">"Bán lẻ"</span>          <span class="st">"Coopmart"</span>         10</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="st">"Bán lẻ"</span>          <span class="st">"Aeon"</span>              7</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="st">"Bán lẻ"</span>          <span class="st">"Khác"</span>             49</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="st">"Hàng không"</span>      <span class="st">"Vietnam Airlines"</span> 35</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="st">"Hàng không"</span>      <span class="st">"Vietjet"</span>          40</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="st">"Hàng không"</span>      <span class="st">"Bamboo"</span>           15</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="st">"Hàng không"</span>      <span class="st">"Vietravel"</span>         5</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="st">"Hàng không"</span>      <span class="st">"Khác"</span>              5</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="ot">list</span>, sepby(nganh)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-simple callout-warning">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p>Số liệu là <strong>ước lượng tham khảo</strong> để minh hoạ quy trình. Trước khi nộp bài, hãy <strong>kiểm chứng</strong> bằng số liệu mới nhất từ:</p>
+<ul>
+<li>Báo cáo của VietnamReport, Statista, VIRAC</li>
+<li>Báo cáo thường niên của từng DN</li>
+<li>Số liệu của Bộ Công Thương, NHNN, Cục Hàng không VN</li>
+</ul>
+</div>
+</div>
+</div>
 </section>
-<section id="câu-hỏi-suy-nghĩ-sẽ-chi-tiết" class="level3">
-<h3 class="anchored" data-anchor-id="câu-hỏi-suy-nghĩ-sẽ-chi-tiết">4. Câu hỏi suy nghĩ (sẽ chi tiết)</h3>
-<ol type="1">
-<li>Câu hỏi mô tả dữ liệu</li>
-<li>Câu hỏi so sánh / xu hướng</li>
-<li>Câu hỏi liên hệ với lý thuyết</li>
-<li>Câu hỏi liên hệ với chính sách Việt Nam</li>
-<li>Câu hỏi mở rộng / phản biện</li>
-</ol>
-</section>
-</section>
-<section id="deliverable-lab-03" class="level2">
-<h2 class="anchored" data-anchor-id="deliverable-lab-03">Deliverable Lab 03</h2>
-<p>Nộp 3 file (như các lab trước):</p>
+<section id="tính-hhi-cho-từng-ngành" class="level2">
+<h2 class="anchored" data-anchor-id="tính-hhi-cho-từng-ngành">2. Tính HHI cho từng ngành</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>* === Tính bình phương thị phần ===</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> thi_phan_sq = thi_phan ^ 2</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>* === Tổng bình phương theo ngành = HHI ===</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">egen</span> HHI = <span class="kw">total</span>(thi_phan_sq), <span class="kw">by</span>(nganh)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>* Xem kết quả: <span class="kw">in</span> mỗi ngành 1 dòng</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="kw">preserve</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">duplicates</span> <span class="kw">drop</span> nganh, <span class="kw">force</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">keep</span> nganh HHI</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">gsort</span> -HHI</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    <span class="ot">list</span>, separator(0) <span class="kw">noobs</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="kw">restore</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Bạn sẽ thấy bảng kiểu:</p>
 <table class="caption-top table">
+<thead>
+<tr class="header">
+<th>nganh</th>
+<th style="text-align: center;">HHI</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Viễn thông</td>
+<td style="text-align: center;">~3,602</td>
+</tr>
+<tr class="even">
+<td>Ngân hàng</td>
+<td style="text-align: center;">~3,242</td>
+</tr>
+<tr class="odd">
+<td>Bia</td>
+<td style="text-align: center;">~2,940</td>
+</tr>
+<tr class="even">
+<td>Hàng không</td>
+<td style="text-align: center;">~2,930</td>
+</tr>
+<tr class="odd">
+<td>Bán lẻ</td>
+<td style="text-align: center;">~889</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Câu hỏi 1</strong>: Ngành nào tập trung nhất? Ngành nào ít tập trung nhất? Có mấy ngành có HHI &gt; 2500 (cao)?</p>
+</section>
+<section id="phân-loại-theo-chuẩn-quốc-tế" class="level2">
+<h2 class="anchored" data-anchor-id="phân-loại-theo-chuẩn-quốc-tế">3. Phân loại theo chuẩn quốc tế</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>* === Gán nhãn mức độ tập trung ===</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> muc_tap_trung = <span class="st">""</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> muc_tap_trung = <span class="st">"Thấp"</span>        <span class="kw">if</span> HHI &lt; 1500</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> muc_tap_trung = <span class="st">"Trung bình"</span>  <span class="kw">if</span> HHI &gt;= 1500 &amp; HHI &lt;= 2500</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> muc_tap_trung = <span class="st">"Cao"</span>         <span class="kw">if</span> HHI &gt; 2500</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>* Hiển thị</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="kw">preserve</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">duplicates</span> <span class="kw">drop</span> nganh, <span class="kw">force</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">keep</span> nganh HHI muc_tap_trung</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">gsort</span> -HHI</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>    <span class="ot">list</span>, separator(0) <span class="kw">noobs</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a><span class="kw">restore</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 2</strong>: Áp dụng chuẩn của Mỹ (DOJ) và EU, bao nhiêu trong 5 ngành được xếp loại “tập trung cao”?</p>
+</section>
+<section id="tìm-doanh-nghiệp-có-vị-trí-thống-lĩnh" class="level2">
+<h2 class="anchored" data-anchor-id="tìm-doanh-nghiệp-có-vị-trí-thống-lĩnh">4. Tìm doanh nghiệp có vị trí thống lĩnh</h2>
+<p>Theo Luật Cạnh tranh VN 2018, DN có <strong>thị phần &gt; 30%</strong> được coi là có <em>vị trí thống lĩnh thị trường</em>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>* === Tìm DN có thị phần &gt; 30% ===</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> thong_linh = (thi_phan &gt; 30)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="ot">list</span> nganh doanh_nghiep thi_phan <span class="kw">if</span> thong_linh == 1, <span class="kw">noobs</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 3</strong>: Có những DN nào có vị trí thống lĩnh trong 5 ngành? DN nào có thị phần cao nhất?</p>
+</section>
+<section id="mô-phỏng-tác-động-ma" class="level2">
+<h2 class="anchored" data-anchor-id="mô-phỏng-tác-động-ma">5. Mô phỏng tác động M&amp;A</h2>
+<p>Giả sử 2 DN lớn nhất ngành <strong>Bia</strong> đề xuất sáp nhập. NCC có nên duyệt không? Hãy tính HHI <strong>sau M&amp;A</strong>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>* === Mô phỏng M&amp;A: Heineken + Sabeco trong ngành Bia ===</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="kw">preserve</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">keep</span> <span class="kw">if</span> nganh == <span class="st">"Bia"</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">egen</span> HHI_truoc = <span class="kw">total</span>(thi_phan_sq)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">display</span> <span class="st">"HHI trước M&amp;A: "</span> HHI_truoc[1]</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    * Sau M&amp;A: cộng thị phần Heineken + Sabeco</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="kw">replace</span> thi_phan = 39 + 33 <span class="kw">if</span> doanh_nghiep == <span class="st">"Heineken"</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">drop</span> <span class="kw">if</span> doanh_nghiep == <span class="st">"Sabeco"</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">generate</span> thi_phan_sq_moi = thi_phan ^ 2</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="kw">egen</span> HHI_sau = <span class="kw">total</span>(thi_phan_sq_moi)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    <span class="kw">display</span> <span class="st">"HHI sau M&amp;A : "</span> HHI_sau[1]</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>    <span class="kw">display</span> <span class="st">"Thay đổi    : "</span> HHI_sau[1] - HHI_truoc[1]</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="kw">restore</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 4</strong>: HHI tăng bao nhiêu sau M&amp;A? Theo chuẩn DOJ (thay đổi HHI &gt; 200 tại ngành tập trung cao thường bị từ chối), NCC có nên duyệt?</p>
+</section>
+<section id="vẽ-biểu-đồ-so-sánh-5-ngành" class="level2">
+<h2 class="anchored" data-anchor-id="vẽ-biểu-đồ-so-sánh-5-ngành">6. Vẽ biểu đồ so sánh 5 ngành</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>* === Biểu đồ HHI 5 ngành ===</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="kw">preserve</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">duplicates</span> <span class="kw">drop</span> nganh, <span class="kw">force</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">keep</span> nganh HHI</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">gsort</span> -HHI</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">graph</span> <span class="bn">bar</span> HHI, <span class="bn">over</span>(nganh, <span class="kw">sort</span>(HHI) descending) <span class="co">///</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>        <span class="bn">bar</span>(1, <span class="kw">color</span>(<span class="st">"114 47 55"</span>)) <span class="co">///</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>        <span class="bn">title</span>(<span class="st">"Chỉ số HHI — 5 ngành Việt Nam"</span>) <span class="co">///</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>        <span class="bn">subtitle</span>(<span class="st">"Đường ngang: chuẩn 1500 (TB) và 2500 (Cao)"</span>) <span class="co">///</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>        <span class="kw">yline</span>(1500, lcolor(<span class="bn">orange</span>) lpattern(<span class="kw">dash</span>)) <span class="co">///</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>        <span class="kw">yline</span>(2500, lcolor(<span class="kw">red</span>) lpattern(<span class="kw">dash</span>)) <span class="co">///</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>        <span class="kw">ylabel</span>(0(1000)5000) <span class="co">///</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>        graphregion(<span class="kw">color</span>(<span class="bn">white</span>))</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>    <span class="kw">graph</span> <span class="kw">export</span> <span class="st">"hhi_5nganh.png"</span>, <span class="kw">replace</span> <span class="kw">width</span>(1400)</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="kw">restore</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="liên-hệ-với-buổi-3" class="level2">
+<h2 class="anchored" data-anchor-id="liên-hệ-với-buổi-3">7. Liên hệ với Buổi 3</h2>
+<p><strong>Câu hỏi 5</strong> (suy nghĩ + viết, 300 từ):</p>
+<p>Đặt 5 ngành đã tính HHI vào <em>bốn cấu trúc thị trường</em> đã học ở Buổi 3:</p>
+<ul>
+<li>Ngành nào gần <em>cạnh tranh hoàn hảo</em> (HHI thấp)?</li>
+<li>Ngành nào gần <em>độc quyền</em> (HHI rất cao + 1 DN chiếm &gt; 50%)?</li>
+<li>Ngành nào là <em>Oligopoly</em> điển hình?</li>
+</ul>
+<p>Theo bạn, <strong>Uỷ ban Cạnh tranh Quốc gia (NCC)</strong> nên ưu tiên giám sát ngành nào nhất? Vì sao?</p>
+</section>
+<section id="đóng-log" class="level2">
+<h2 class="anchored" data-anchor-id="đóng-log">8. Đóng log</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">close</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="deliverable-lab-3" class="level2">
+<h2 class="anchored" data-anchor-id="deliverable-lab-3">Deliverable Lab 3</h2>
+<p>Nộp 3 file:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
 <th>File</th>
@@ -432,15 +577,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td><code>lab03_&lt;tên&gt;.do</code></td>
-<td>Code + comment</td>
+<td>Code đầy đủ + comment tiếng Việt</td>
 </tr>
 <tr class="even">
 <td><code>lab03_&lt;tên&gt;.log</code></td>
-<td>Output</td>
+<td>Output Stata</td>
 </tr>
 <tr class="odd">
-<td><code>lab03_&lt;tên&gt;.pdf</code> (1-2 trang)</td>
-<td>Trả lời câu hỏi + biểu đồ</td>
+<td><code>lab03_&lt;tên&gt;.pdf</code> (2 trang)</td>
+<td>Trả lời 5 câu hỏi + biểu đồ HHI 5 ngành</td>
 </tr>
 </tbody>
 </table>
@@ -458,24 +603,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td>Code chạy đúng, có log</td>
-<td style="text-align: center;">30%</td>
+<td style="text-align: center;">25%</td>
 </tr>
 <tr class="even">
-<td>Vận dụng đúng khái niệm Stata mới của bài</td>
+<td>HHI tính đúng + phân loại chuẩn</td>
 <td style="text-align: center;">25%</td>
 </tr>
 <tr class="odd">
-<td>Biểu đồ / bảng kết quả rõ ràng</td>
+<td>Mô phỏng M&amp;A và bình luận hợp lý</td>
 <td style="text-align: center;">20%</td>
 </tr>
 <tr class="even">
-<td>Trả lời câu hỏi sâu, có liên hệ thực tiễn</td>
-<td style="text-align: center;">25%</td>
+<td>Biểu đồ rõ ràng + liên hệ Luật Cạnh tranh 2018</td>
+<td style="text-align: center;">30%</td>
 </tr>
 </tbody>
 </table>
 <hr>
-<p>← <em>Lab trước</em>: <a href="../stata-lab/lab-02.html">Lab 2</a> | <em>Lab tiếp theo</em>: <a href="../stata-lab/lab-04.html">Lab 4</a> →</p>
+<p>← <em>Lab trước</em>: <a href="../stata-lab/lab-02.html">Lab 2 — Phân tích chi tiêu công VN</a> | <em>Lab tiếp theo</em>: <a href="../stata-lab/lab-04.html">Lab 4 — Mô phỏng thuế Pigou</a> →</p>
 
 
 </section>

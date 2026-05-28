@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lab 04 — Mô phỏng thuế Pigou – Nguyên lý Quản lý Kinh tế (DTU301)</title>
+<title>Lab 4 — Mô phỏng thuế Pigou – Nguyên lý Quản lý Kinh tế (DTU301)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -76,7 +76,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-3a25ebfbbb03e529eea34e993f2a5140.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-44fb2a9de40de98efce28c89c6896243.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-b0e610993ba9119e54b64e8e30a4d128.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": true,
@@ -105,6 +105,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles/custom.css">
 </head>
@@ -165,7 +194,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-04.html">Lab 04 — Mô phỏng thuế Pigou</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-04.html">Lab 4 — Mô phỏng thuế Pigou</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -230,13 +259,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../stata-lab/lab-03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab 03 — Tính HHI cho 5 ngành Việt Nam</span></a>
+ <span class="menu-text">Lab 3 — Tính HHI cho 5 ngành Việt Nam</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../stata-lab/lab-04.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Lab 04 — Mô phỏng thuế Pigou</span></a>
+ <span class="menu-text">Lab 4 — Mô phỏng thuế Pigou</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -317,14 +346,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Trong bài</h2>
    
   <ul>
-  <li><a href="#khung-lab-04" id="toc-khung-lab-04" class="nav-link active" data-scroll-target="#khung-lab-04">Khung Lab 04</a>
-  <ul class="collapse">
-  <li><a href="#bài-toán" id="toc-bài-toán" class="nav-link" data-scroll-target="#bài-toán">1. Bài toán</a></li>
-  <li><a href="#dữ-liệu-cần" id="toc-dữ-liệu-cần" class="nav-link" data-scroll-target="#dữ-liệu-cần">2. Dữ liệu cần</a></li>
-  <li><a href="#lệnh-stata-trọng-tâm" id="toc-lệnh-stata-trọng-tâm" class="nav-link" data-scroll-target="#lệnh-stata-trọng-tâm">3. Lệnh Stata trọng tâm</a></li>
-  <li><a href="#câu-hỏi-suy-nghĩ-sẽ-chi-tiết" id="toc-câu-hỏi-suy-nghĩ-sẽ-chi-tiết" class="nav-link" data-scroll-target="#câu-hỏi-suy-nghĩ-sẽ-chi-tiết">4. Câu hỏi suy nghĩ (sẽ chi tiết)</a></li>
-  </ul></li>
-  <li><a href="#deliverable-lab-04" id="toc-deliverable-lab-04" class="nav-link" data-scroll-target="#deliverable-lab-04">Deliverable Lab 04</a></li>
+  <li><a href="#bài-toán" id="toc-bài-toán" class="nav-link active" data-scroll-target="#bài-toán">1. Bài toán</a></li>
+  <li><a href="#tạo-dataset-cung-cầu" id="toc-tạo-dataset-cung-cầu" class="nav-link" data-scroll-target="#tạo-dataset-cung-cầu">2. Tạo dataset cung-cầu</a></li>
+  <li><a href="#tìm-cân-bằng-thị-trường-tự-do" id="toc-tìm-cân-bằng-thị-trường-tự-do" class="nav-link" data-scroll-target="#tìm-cân-bằng-thị-trường-tự-do">3. Tìm cân bằng thị trường tự do</a></li>
+  <li><a href="#tìm-cân-bằng-xã-hội-tối-ưu" id="toc-tìm-cân-bằng-xã-hội-tối-ưu" class="nav-link" data-scroll-target="#tìm-cân-bằng-xã-hội-tối-ưu">4. Tìm cân bằng xã hội tối ưu</a></li>
+  <li><a href="#thuế-pigou-bằng-mec-tại-điểm-tối-ưu" id="toc-thuế-pigou-bằng-mec-tại-điểm-tối-ưu" class="nav-link" data-scroll-target="#thuế-pigou-bằng-mec-tại-điểm-tối-ưu">5. Thuế Pigou — bằng MEC tại điểm tối ưu</a></li>
+  <li><a href="#tính-dwl-deadweight-loss" id="toc-tính-dwl-deadweight-loss" class="nav-link" data-scroll-target="#tính-dwl-deadweight-loss">6. Tính DWL (Deadweight Loss)</a></li>
+  <li><a href="#vẽ-biểu-đồ-tổng-hợp" id="toc-vẽ-biểu-đồ-tổng-hợp" class="nav-link" data-scroll-target="#vẽ-biểu-đồ-tổng-hợp">7. Vẽ biểu đồ tổng hợp</a></li>
+  <li><a href="#liên-hệ-thực-tiễn-thuế-carbon-việt-nam" id="toc-liên-hệ-thực-tiễn-thuế-carbon-việt-nam" class="nav-link" data-scroll-target="#liên-hệ-thực-tiễn-thuế-carbon-việt-nam">8. Liên hệ thực tiễn — Thuế carbon Việt Nam</a></li>
+  <li><a href="#đóng-log" id="toc-đóng-log" class="nav-link" data-scroll-target="#đóng-log">9. Đóng log</a></li>
+  <li><a href="#deliverable-lab-4" id="toc-deliverable-lab-4" class="nav-link" data-scroll-target="#deliverable-lab-4">Deliverable Lab 4</a></li>
   <li><a href="#tiêu-chí-chấm" id="toc-tiêu-chí-chấm" class="nav-link" data-scroll-target="#tiêu-chí-chấm">Tiêu chí chấm</a></li>
   </ul>
 </nav>
@@ -332,10 +363,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-04.html">Lab 04 — Mô phỏng thuế Pigou</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-04.html">Lab 4 — Mô phỏng thuế Pigou</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Lab 04 — Mô phỏng thuế Pigou</h1>
-<p class="subtitle lead">Tương ứng Buổi 4: Cơ chế điều tiết ngoại tác</p>
+<h1 class="title">Lab 4 — Mô phỏng thuế Pigou</h1>
+<p class="subtitle lead">Tương ứng Buổi 4: Cơ chế điều tiết ngoại tác và tính toán DWL</p>
 </div>
 
 
@@ -362,66 +393,169 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Bài này áp dụng khái niệm chính từ <a href="../lectures/buoi-04.html">Buổi 4</a> vào dữ liệu thực tế Việt Nam.</p>
-<p><strong>Khái niệm Stata học</strong>: <code>gen, đường cung-cầu, equilibrium</code></p>
+<p>Bài này áp dụng khái niệm <strong>thuế Pigou</strong> từ <a href="../lectures/buoi-04.html">Buổi 4</a> vào một ngành có ngoại tác âm điển hình tại Việt Nam: <strong>xi măng (phát thải CO₂)</strong>.</p>
+<p>Sau Lab 4, bạn có thể:</p>
+<ul>
+<li>Tạo dataset cung-cầu trong Stata</li>
+<li>Tìm điểm cân bằng thị trường (giao điểm S, D)</li>
+<li>So sánh <strong>MPC</strong> (chi phí tư nhân biên) và <strong>MSC</strong> (chi phí xã hội biên)</li>
+<li>Áp thuế Pigou = MEC và tìm cân bằng mới</li>
+<li>Tính <strong>DWL</strong> (deadweight loss) trước và sau thuế</li>
+</ul>
+<p><strong>Khái niệm Stata học</strong>: <code>set obs</code>, <code>generate</code>, mô phỏng đại số, <code>twoway</code> nhiều layer</p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>🚧 Lab đang biên soạn
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 04. Cấu trúc cố định theo template chuẩn của 16 lab.</p>
-</div>
-</div>
-<section id="khung-lab-04" class="level2">
-<h2 class="anchored" data-anchor-id="khung-lab-04">Khung Lab 04</h2>
-<section id="bài-toán" class="level3">
-<h3 class="anchored" data-anchor-id="bài-toán">1. Bài toán</h3>
-<p>So sánh equilibrium trước và sau thuế Pigou</p>
+<section id="bài-toán" class="level2">
+<h2 class="anchored" data-anchor-id="bài-toán">1. Bài toán</h2>
+<p>Ngành xi măng VN có:</p>
+<ul>
+<li><strong>Đường cầu</strong>: <span class="math inline">\(Q_D = 100 - P\)</span></li>
+<li><strong>Đường cung tư nhân (MPC)</strong>: <span class="math inline">\(P = 20 + 0.5Q\)</span></li>
+<li><strong>Chi phí ngoại tác biên (MEC)</strong> từ phát thải CO₂: <span class="math inline">\(\text{MEC} = 0.5Q\)</span></li>
+<li><strong>Chi phí xã hội biên (MSC)</strong> = MPC + MEC = <span class="math inline">\(20 + Q\)</span></li>
+</ul>
+<p>Câu hỏi:</p>
+<ol type="1">
+<li>Cân bằng thị trường tự do (không thuế) ở đâu?</li>
+<li>Cân bằng xã hội tối ưu (có MSC) ở đâu?</li>
+<li>Thuế Pigou bằng bao nhiêu?</li>
+<li>DWL trước thuế là bao nhiêu?</li>
+</ol>
 </section>
-<section id="dữ-liệu-cần" class="level3">
-<h3 class="anchored" data-anchor-id="dữ-liệu-cần">2. Dữ liệu cần</h3>
-<p>Dữ liệu giả định về ngành xi măng có ngoại tác CO2</p>
-</section>
-<section id="lệnh-stata-trọng-tâm" class="level3">
-<h3 class="anchored" data-anchor-id="lệnh-stata-trọng-tâm">3. Lệnh Stata trọng tâm</h3>
-<p>Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 04 — DTU301</span>
+<section id="tạo-dataset-cung-cầu" class="level2">
+<h2 class="anchored" data-anchor-id="tạo-dataset-cung-cầu">2. Tạo dataset cung-cầu</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 4 — DTU301 — Mô phỏng thuế Pigou cho ngành <span class="kw">xi</span> măng</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>* Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span> <span class="ot">all</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">more</span> <span class="kw">off</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">using</span> <span class="st">"lab04_&lt;ten&gt;.log"</span>, <span class="kw">replace</span> <span class="bn">text</span></span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>* === Tải dữ liệu ===</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>* (sẽ chi tiết khi có dataset thật)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>* === Phân tích ===</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>* Sử dụng: <span class="kw">gen</span>, đường cung-cầu, equilibrium</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>* === Đóng <span class="fu">log</span> ===</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">close</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>* === Tạo lưới Q từ 0 đến 100 ===</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">obs</span> 101</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> Q = <span class="dt">_n</span> - 1</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>* === Tính các đường ===</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> P_D = 100 - Q                    <span class="co">// Cầu: P = 100 - Q</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> P_MPC = 20 + 0.5 * Q             <span class="co">// Cung tư nhân (Marginal Private Cost)</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> P_MEC = 0.5 * Q                  <span class="co">// Chi phí ngoại tác biên</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> P_MSC = P_MPC + P_MEC            <span class="co">// Chi phí xã hội biên = MPC + MEC</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="kw">label</span> <span class="kw">variable</span> P_D <span class="st">"Cầu D"</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="kw">label</span> <span class="kw">variable</span> P_MPC <span class="st">"Cung tư nhân (MPC)"</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="kw">label</span> <span class="kw">variable</span> P_MEC <span class="st">"Chi phí ngoại tác (MEC)"</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="kw">label</span> <span class="kw">variable</span> P_MSC <span class="st">"Chi phí xã hội (MSC)"</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="ot">list</span> Q P_D P_MPC P_MSC <span class="kw">in</span> 1/10</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="câu-hỏi-suy-nghĩ-sẽ-chi-tiết" class="level3">
-<h3 class="anchored" data-anchor-id="câu-hỏi-suy-nghĩ-sẽ-chi-tiết">4. Câu hỏi suy nghĩ (sẽ chi tiết)</h3>
-<ol type="1">
-<li>Câu hỏi mô tả dữ liệu</li>
-<li>Câu hỏi so sánh / xu hướng</li>
-<li>Câu hỏi liên hệ với lý thuyết</li>
-<li>Câu hỏi liên hệ với chính sách Việt Nam</li>
-<li>Câu hỏi mở rộng / phản biện</li>
-</ol>
+<section id="tìm-cân-bằng-thị-trường-tự-do" class="level2">
+<h2 class="anchored" data-anchor-id="tìm-cân-bằng-thị-trường-tự-do">3. Tìm cân bằng thị trường tự do</h2>
+<p>Cân bằng khi <span class="math inline">\(P_D = P_{MPC}\)</span>:</p>
+<p><span class="math display">\[100 - Q = 20 + 0.5Q \Rightarrow Q^* = 53.33,\, P^* = 46.67\]</span></p>
+<p>Kiểm tra bằng Stata:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>* === Cân bằng thị trường tự <span class="kw">do</span> (không có thuế) ===</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> dif_tu_do = <span class="fu">abs</span>(P_D - P_MPC)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">sort</span> dif_tu_do</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"Q* tự do  ≈ "</span> Q[1]</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"P* tự do  ≈ "</span> P_D[1]</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>* Lưu giá trị</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> Q_tu_do = Q[1]</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> P_tu_do = P_D[1]</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="kw">sort</span> Q</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 1</strong>: Cân bằng thị trường tự do ở Q ≈ ? và P ≈ ?</p>
 </section>
+<section id="tìm-cân-bằng-xã-hội-tối-ưu" class="level2">
+<h2 class="anchored" data-anchor-id="tìm-cân-bằng-xã-hội-tối-ưu">4. Tìm cân bằng xã hội tối ưu</h2>
+<p>Khi tính cả ngoại tác, cân bằng đúng là khi <span class="math inline">\(P_D = P_{MSC}\)</span>:</p>
+<p><span class="math display">\[100 - Q = 20 + Q \Rightarrow Q^{**} = 40,\, P^{**} = 60\]</span></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>* === Cân bằng xã hội tối ưu (có ngoại tác) ===</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> dif_xa_hoi = <span class="fu">abs</span>(P_D - P_MSC)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">sort</span> dif_xa_hoi</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"Q** xã hội ≈ "</span> Q[1]</span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"P** xã hội ≈ "</span> P_D[1]</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> Q_xh = Q[1]</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> P_xh = P_D[1]</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="kw">sort</span> Q</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 2</strong>: Cân bằng xã hội ở Q ≈ ? và P ≈ ? So với tự do: <strong>sản lượng giảm</strong> bao nhiêu? <strong>Giá tăng</strong> bao nhiêu?</p>
 </section>
-<section id="deliverable-lab-04" class="level2">
-<h2 class="anchored" data-anchor-id="deliverable-lab-04">Deliverable Lab 04</h2>
-<p>Nộp 3 file (như các lab trước):</p>
+<section id="thuế-pigou-bằng-mec-tại-điểm-tối-ưu" class="level2">
+<h2 class="anchored" data-anchor-id="thuế-pigou-bằng-mec-tại-điểm-tối-ưu">5. Thuế Pigou — bằng MEC tại điểm tối ưu</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>* === Thuế Pigou tại Q_xh ===</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>* Pigou tax = MEC khi Q = Q**</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="kw">sort</span> Q</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> pigou_tax = 0.5 * Q_xh</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"Thuế Pigou = MEC tại Q** = "</span> pigou_tax</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>* Kiểm tra: cung sau thuế = MPC + thuế = MSC</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> P_MPC_co_thue = P_MPC + pigou_tax</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>* Cân bằng mới: D = MPC + thuế</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> dif_sau_thue = <span class="fu">abs</span>(P_D - P_MPC_co_thue)</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="kw">sort</span> dif_sau_thue</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"Q sau thuế ≈ "</span> Q[1]</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"P sau thuế ≈ "</span> P_D[1]</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="kw">sort</span> Q</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 3</strong>: Thuế Pigou bằng bao nhiêu? Sau khi áp thuế, cân bằng có <em>trùng</em> với cân bằng xã hội tối ưu (Q** = 40, P** = 60) không?</p>
+</section>
+<section id="tính-dwl-deadweight-loss" class="level2">
+<h2 class="anchored" data-anchor-id="tính-dwl-deadweight-loss">6. Tính DWL (Deadweight Loss)</h2>
+<p><strong>DWL</strong> = diện tích tam giác mất phúc lợi do thị trường tự do sản xuất quá nhiều.</p>
+<p>Hình tam giác có:</p>
+<ul>
+<li>Đáy: <span class="math inline">\(\Delta Q = Q^* - Q^{**} = 53.33 - 40 = 13.33\)</span></li>
+<li>Chiều cao: chênh lệch MSC – MPC tại <span class="math inline">\(Q^*\)</span> = <span class="math inline">\(0.5 \times 53.33 = 26.67\)</span></li>
+</ul>
+<p><span class="math display">\[\text{DWL} = \frac{1}{2} \times 13.33 \times 26.67 \approx 177.8\]</span></p>
+<p>Tính bằng Stata:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>* === Tính DWL ===</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> delta_Q = Q_tu_do - Q_xh</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> MEC_at_Qfree = 0.5 * Q_tu_do</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">scalar</span> DWL = 0.5 * delta_Q * MEC_at_Qfree</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"Đáy ΔQ = "</span> delta_Q</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"Cao MEC = "</span> MEC_at_Qfree</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"DWL = "</span> DWL</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 4</strong>: DWL bằng bao nhiêu? Nếu tăng được thuế Pigou đúng, <em>toàn bộ DWL có được loại bỏ</em> không?</p>
+</section>
+<section id="vẽ-biểu-đồ-tổng-hợp" class="level2">
+<h2 class="anchored" data-anchor-id="vẽ-biểu-đồ-tổng-hợp">7. Vẽ biểu đồ tổng hợp</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>* === Biểu đồ 4 đường + đánh dấu hai cân bằng ===</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="kw">twoway</span> (<span class="kw">line</span> P_D Q,   lcolor(<span class="st">"114 47 55"</span>) lwidth(thick)) <span class="co">///</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>       (<span class="kw">line</span> P_MPC Q, lcolor(<span class="st">"46 125 80"</span>) lwidth(medium)) <span class="co">///</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>       (<span class="kw">line</span> P_MSC Q, lcolor(<span class="st">"0 88 163"</span>)  lwidth(medium) lpattern(<span class="kw">dash</span>)) <span class="co">///</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>       (<span class="kw">line</span> P_MEC Q, lcolor(<span class="st">"193 154 77"</span>) lwidth(medium)) <span class="co">///</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>       , <span class="co">///</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>       <span class="bn">title</span>(<span class="st">"Thuế Pigou cho ngành xi măng VN"</span>) <span class="co">///</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>       <span class="bn">subtitle</span>(<span class="st">"MSC = MPC + MEC; Q* tự do vs Q** xã hội"</span>) <span class="co">///</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>       <span class="bn">xtitle</span>(<span class="st">"Sản lượng Q"</span>) <span class="bn">ytitle</span>(<span class="st">"Giá P"</span>) <span class="co">///</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>       <span class="bn">legend</span>(<span class="kw">label</span>(1 <span class="st">"Cầu D"</span>) <span class="kw">label</span>(2 <span class="st">"MPC (tư nhân)"</span>) <span class="co">///</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>              <span class="kw">label</span>(3 <span class="st">"MSC (xã hội)"</span>) <span class="kw">label</span>(4 <span class="st">"MEC (ngoại tác)"</span>) <span class="co">///</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>              <span class="bn">position</span>(2) <span class="bn">ring</span>(0) <span class="bn">cols</span>(1)) <span class="co">///</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>       <span class="bn">xline</span>(40, lpattern(<span class="bn">dot</span>) lcolor(<span class="bn">gray</span>)) <span class="co">///</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>       <span class="bn">xline</span>(53.33, lpattern(<span class="bn">dot</span>) lcolor(<span class="bn">gray</span>)) <span class="co">///</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>       graphregion(<span class="kw">color</span>(<span class="bn">white</span>))</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">export</span> <span class="st">"pigou_tax.png"</span>, <span class="kw">replace</span> <span class="kw">width</span>(1400)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="liên-hệ-thực-tiễn-thuế-carbon-việt-nam" class="level2">
+<h2 class="anchored" data-anchor-id="liên-hệ-thực-tiễn-thuế-carbon-việt-nam">8. Liên hệ thực tiễn — Thuế carbon Việt Nam</h2>
+<p><strong>Câu hỏi 5</strong> (suy nghĩ + viết, 300-400 từ):</p>
+<p>Việt Nam đang chuẩn bị <strong>thị trường carbon</strong> theo NĐ 06/2022/NĐ-CP (vận hành chính thức 2028). Theo bạn:</p>
+<ul>
+<li>Mô phỏng Pigou ở trên <em>đơn giản hoá</em> thực tế ở những điểm nào? (Gợi ý: cầu xi măng có cứng nhắc không? MEC có biết chính xác không?)</li>
+<li><strong>Cap-and-Trade</strong> (như EU ETS) là phiên bản nào của Coase? Có ưu điểm gì so với thuế Pigou cố định?</li>
+<li>Việt Nam nên chọn <em>thuế carbon trực tiếp</em> hay <em>cap-and-trade</em> trước? Lập luận của bạn.</li>
+</ul>
+</section>
+<section id="đóng-log" class="level2">
+<h2 class="anchored" data-anchor-id="đóng-log">9. Đóng log</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">close</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="deliverable-lab-4" class="level2">
+<h2 class="anchored" data-anchor-id="deliverable-lab-4">Deliverable Lab 4</h2>
+<p>Nộp 3 file:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -432,15 +566,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td><code>lab04_&lt;tên&gt;.do</code></td>
-<td>Code + comment</td>
+<td>Code đầy đủ + comment tiếng Việt</td>
 </tr>
 <tr class="even">
 <td><code>lab04_&lt;tên&gt;.log</code></td>
-<td>Output</td>
+<td>Output Stata</td>
 </tr>
 <tr class="odd">
-<td><code>lab04_&lt;tên&gt;.pdf</code> (1-2 trang)</td>
-<td>Trả lời câu hỏi + biểu đồ</td>
+<td><code>lab04_&lt;tên&gt;.pdf</code> (2-3 trang)</td>
+<td>Trả lời 5 câu hỏi + biểu đồ Pigou</td>
 </tr>
 </tbody>
 </table>
@@ -458,24 +592,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td>Code chạy đúng, có log</td>
-<td style="text-align: center;">30%</td>
-</tr>
-<tr class="even">
-<td>Vận dụng đúng khái niệm Stata mới của bài</td>
 <td style="text-align: center;">25%</td>
 </tr>
-<tr class="odd">
-<td>Biểu đồ / bảng kết quả rõ ràng</td>
+<tr class="even">
+<td>Tìm cân bằng tự do và xã hội chính xác</td>
 <td style="text-align: center;">20%</td>
 </tr>
-<tr class="even">
-<td>Trả lời câu hỏi sâu, có liên hệ thực tiễn</td>
+<tr class="odd">
+<td>Tính thuế Pigou và DWL đúng</td>
 <td style="text-align: center;">25%</td>
+</tr>
+<tr class="even">
+<td>Biểu đồ rõ ràng, có chú thích</td>
+<td style="text-align: center;">15%</td>
+</tr>
+<tr class="odd">
+<td>Liên hệ thực tiễn (carbon VN, cap-and-trade)</td>
+<td style="text-align: center;">15%</td>
 </tr>
 </tbody>
 </table>
 <hr>
-<p>← <em>Lab trước</em>: <a href="../stata-lab/lab-03.html">Lab 3</a> | <em>Lab tiếp theo</em>: <a href="../stata-lab/lab-05.html">Lab 5</a> →</p>
+<p>← <em>Lab trước</em>: <a href="../stata-lab/lab-03.html">Lab 3 — Tính HHI cho 5 ngành VN</a> | <em>Lab tiếp theo</em>: <a href="../stata-lab/lab-05.html">Lab 5 — DNNN vs Tư nhân vs FDI</a> →</p>
 
 
 </section>

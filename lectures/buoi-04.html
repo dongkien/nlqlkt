@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp – Nguyên lý Quản lý Kinh tế (DTU301)</title>
+<title>Buổi 4 — Thất bại thị trường và Cơ chế điều tiết – Nguyên lý Quản lý Kinh tế (DTU301)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-3a25ebfbbb03e529eea34e993f2a5140.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-44fb2a9de40de98efce28c89c6896243.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-b0e610993ba9119e54b64e8e30a4d128.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": true,
@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles/custom.css">
 </head>
@@ -130,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-03.html">Chương 2 — Ngành và doanh nghiệp</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-04.html">Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-03.html">Chương 2 — Ngành và doanh nghiệp</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-04.html">Buổi 4 — Thất bại thị trường và Cơ chế điều tiết</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -183,13 +212,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 03 — Cấu trúc thị trường và thất bại thị trường</span></a>
+ <span class="menu-text">Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-04.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp</span></a>
+ <span class="menu-text">Buổi 4 — Thất bại thị trường và Cơ chế điều tiết</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -314,10 +343,33 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Trong bài</h2>
    
   <ul>
-  <li><a href="#nội-dung-lý-thuyết-thuyết-giảng" id="toc-nội-dung-lý-thuyết-thuyết-giảng" class="nav-link active" data-scroll-target="#nội-dung-lý-thuyết-thuyết-giảng">Nội dung lý thuyết (thuyết giảng)</a></li>
-  <li><a href="#thực-hành-thảo-luận" id="toc-thực-hành-thảo-luận" class="nav-link" data-scroll-target="#thực-hành-thảo-luận">Thực hành / Thảo luận</a></li>
-  <li><a href="#bài-tập-lớn-tiểu-luận" id="toc-bài-tập-lớn-tiểu-luận" class="nav-link" data-scroll-target="#bài-tập-lớn-tiểu-luận">Bài tập lớn / Tiểu luận</a></li>
-  <li><a href="#tự-học-có-hướng-dẫn" id="toc-tự-học-có-hướng-dẫn" class="nav-link" data-scroll-target="#tự-học-có-hướng-dẫn">Tự học có hướng dẫn</a></li>
+  <li><a href="#lộ-trình-buổi-4" id="toc-lộ-trình-buổi-4" class="nav-link active" data-scroll-target="#lộ-trình-buổi-4">Lộ trình Buổi 4</a></li>
+  <li><a href="#a.-bốn-nguồn-thất-bại-thị-trường" id="toc-a.-bốn-nguồn-thất-bại-thị-trường" class="nav-link" data-scroll-target="#a.-bốn-nguồn-thất-bại-thị-trường">A. Bốn nguồn thất bại thị trường</a>
+  <ul class="collapse">
+  <li><a href="#a.1.-khái-niệm" id="toc-a.1.-khái-niệm" class="nav-link" data-scroll-target="#a.1.-khái-niệm">A.1. Khái niệm</a></li>
+  <li><a href="#a.2.-hàng-hoá-công-và-ngoại-tác" id="toc-a.2.-hàng-hoá-công-và-ngoại-tác" class="nav-link" data-scroll-target="#a.2.-hàng-hoá-công-và-ngoại-tác">A.2. Hàng hoá công và Ngoại tác</a></li>
+  <li><a href="#a.3.-độc-quyền-tự-nhiên-và-thông-tin-bất-cân-xứng" id="toc-a.3.-độc-quyền-tự-nhiên-và-thông-tin-bất-cân-xứng" class="nav-link" data-scroll-target="#a.3.-độc-quyền-tự-nhiên-và-thông-tin-bất-cân-xứng">A.3. Độc quyền tự nhiên và Thông tin bất cân xứng</a></li>
+  </ul></li>
+  <li><a href="#b.-pigou-và-coase-hai-cách-xử-lý-ngoại-tác" id="toc-b.-pigou-và-coase-hai-cách-xử-lý-ngoại-tác" class="nav-link" data-scroll-target="#b.-pigou-và-coase-hai-cách-xử-lý-ngoại-tác">B. Pigou và Coase — Hai cách xử lý ngoại tác</a>
+  <ul class="collapse">
+  <li><a href="#b.1.-thuế-pigou" id="toc-b.1.-thuế-pigou" class="nav-link" data-scroll-target="#b.1.-thuế-pigou">B.1. Thuế Pigou</a></li>
+  <li><a href="#b.2.-định-lý-coase" id="toc-b.2.-định-lý-coase" class="nav-link" data-scroll-target="#b.2.-định-lý-coase">B.2. Định lý Coase</a></li>
+  <li><a href="#b.3.-pigou-vs-coase-đối-chiếu" id="toc-b.3.-pigou-vs-coase-đối-chiếu" class="nav-link" data-scroll-target="#b.3.-pigou-vs-coase-đối-chiếu">B.3. Pigou vs Coase — đối chiếu</a></li>
+  <li><a href="#b.4.-cap-and-trade-coase-quy-mô-lớn" id="toc-b.4.-cap-and-trade-coase-quy-mô-lớn" class="nav-link" data-scroll-target="#b.4.-cap-and-trade-coase-quy-mô-lớn">B.4. Cap-and-Trade — Coase quy mô lớn</a></li>
+  </ul></li>
+  <li><a href="#c.-điều-tiết-độc-quyền-tự-nhiên" id="toc-c.-điều-tiết-độc-quyền-tự-nhiên" class="nav-link" data-scroll-target="#c.-điều-tiết-độc-quyền-tự-nhiên">C. Điều tiết độc quyền tự nhiên</a>
+  <ul class="collapse">
+  <li><a href="#c.1.-vì-sao-có-độc-quyền-tự-nhiên" id="toc-c.1.-vì-sao-có-độc-quyền-tự-nhiên" class="nav-link" data-scroll-target="#c.1.-vì-sao-có-độc-quyền-tự-nhiên">C.1. Vì sao có độc quyền tự nhiên?</a></li>
+  <li><a href="#c.2.-ba-phương-án-điều-tiết-đqtn" id="toc-c.2.-ba-phương-án-điều-tiết-đqtn" class="nav-link" data-scroll-target="#c.2.-ba-phương-án-điều-tiết-đqtn">C.2. Ba phương án điều tiết ĐQTN</a></li>
+  <li><a href="#c.3.-điều-tiết-đqtn-ở-việt-nam" id="toc-c.3.-điều-tiết-đqtn-ở-việt-nam" class="nav-link" data-scroll-target="#c.3.-điều-tiết-đqtn-ở-việt-nam">C.3. Điều tiết ĐQTN ở Việt Nam</a></li>
+  </ul></li>
+  <li><a href="#d.-thông-tin-bất-cân-xứng" id="toc-d.-thông-tin-bất-cân-xứng" class="nav-link" data-scroll-target="#d.-thông-tin-bất-cân-xứng">D. Thông tin bất cân xứng</a>
+  <ul class="collapse">
+  <li><a href="#d.1.-akerlof-và-thị-trường-lemons" id="toc-d.1.-akerlof-và-thị-trường-lemons" class="nav-link" data-scroll-target="#d.1.-akerlof-và-thị-trường-lemons">D.1. Akerlof và thị trường lemons</a></li>
+  <li><a href="#d.2.-principal-agent-và-moral-hazard" id="toc-d.2.-principal-agent-và-moral-hazard" class="nav-link" data-scroll-target="#d.2.-principal-agent-và-moral-hazard">D.2. Principal-Agent và moral hazard</a></li>
+  </ul></li>
+  <li><a href="#tổng-kết-buổi-4-năm-điểm-cốt-lõi" id="toc-tổng-kết-buổi-4-năm-điểm-cốt-lõi" class="nav-link" data-scroll-target="#tổng-kết-buổi-4-năm-điểm-cốt-lõi">Tổng kết Buổi 4 — Năm điểm cốt lõi</a></li>
+  <li><a href="#bài-tập-về-nhà-chuẩn-bị-buổi-5" id="toc-bài-tập-về-nhà-chuẩn-bị-buổi-5" class="nav-link" data-scroll-target="#bài-tập-về-nhà-chuẩn-bị-buổi-5">Bài tập về nhà (chuẩn bị Buổi 5)</a></li>
   <li><a href="#đọc-thêm" id="toc-đọc-thêm" class="nav-link" data-scroll-target="#đọc-thêm">Đọc thêm</a></li>
   </ul>
 </nav>
@@ -325,10 +377,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-03.html">Chương 2 — Ngành và doanh nghiệp</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-04.html">Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-03.html">Chương 2 — Ngành và doanh nghiệp</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-04.html">Buổi 4 — Thất bại thị trường và Cơ chế điều tiết</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp</h1>
-<p class="subtitle lead">Pigou, Coase, cap-and-trade, ĐMST quốc gia, 4 chuyển đổi XIV</p>
+<h1 class="title">Buổi 4 — Thất bại thị trường và Cơ chế điều tiết</h1>
+<p class="subtitle lead">Bốn nguồn thất bại · Pigou &amp; Coase · Điều tiết độc quyền tự nhiên · Thông tin bất cân xứng</p>
 </div>
 
 
@@ -355,61 +407,489 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>CLO1, CLO2 — Vận dụng khung điều tiết và chính sách công nghiệp</strong></p>
+<p><strong>CLO1, CLO2</strong> — Vận dụng khung thất bại thị trường vào tình huống Việt Nam và quốc tế.</p>
+<p>Buổi 3 mô tả <em>thị trường vận hành ra sao</em> trong các cấu trúc khác nhau. Buổi 4 trả lời câu hỏi tiếp theo: <strong>khi nào thị trường thất bại</strong> và <strong>Nhà nước nên can thiệp bằng cách nào</strong>. Đây là lõi của <em>Chức năng Điều tiết</em> — chức năng thứ 5 của QLKT đã giới thiệu ở Buổi 2.</p>
 </div>
 </div>
-<section id="nội-dung-lý-thuyết-thuyết-giảng" class="level2">
-<h2 class="anchored" data-anchor-id="nội-dung-lý-thuyết-thuyết-giảng">Nội dung lý thuyết (thuyết giảng)</h2>
-<p><strong>2.3. Cơ chế điều tiết</strong></p>
+<section id="lộ-trình-buổi-4" class="level2">
+<h2 class="anchored" data-anchor-id="lộ-trình-buổi-4">Lộ trình Buổi 4</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Phần</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>A</strong></td>
+<td>Bốn nguồn thất bại thị trường — khái niệm chung</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>B</strong></td>
+<td>Pigou và Coase — hai cách xử lý ngoại tác</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>C</strong></td>
+<td>Điều tiết độc quyền tự nhiên — ba phương án</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>D</strong></td>
+<td>Thông tin bất cân xứng — Akerlof và Principal-Agent</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="a.-bốn-nguồn-thất-bại-thị-trường" class="level2">
+<h2 class="anchored" data-anchor-id="a.-bốn-nguồn-thất-bại-thị-trường">A. Bốn nguồn thất bại thị trường</h2>
+<section id="a.1.-khái-niệm" class="level3">
+<h3 class="anchored" data-anchor-id="a.1.-khái-niệm">A.1. Khái niệm</h3>
+<p><strong>Thất bại thị trường (market failure)</strong> xảy ra khi phân bổ nguồn lực <strong>không đạt tối ưu Pareto</strong> — tức có thể cải thiện tình trạng của một người mà không làm tệ đi cho ai khác.</p>
+<p>Trong các trường hợp này, <strong>thị trường tự do KHÔNG dẫn đến hiệu quả xã hội</strong>. Đây chính là cơ sở lý luận để Nhà nước can thiệp (xem nguyên lý 7 của Mankiw ở Buổi 1: “Chính phủ ĐÔI KHI cải thiện kết quả thị trường”).</p>
+<p>Bốn nguồn cần Nhà nước can thiệp, chia thành <strong>hai nhóm</strong>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Nhóm</th>
+<th>Nguồn thất bại</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Phân loại 1: tính chất hàng hoá</strong></td>
+<td>1. Hàng hoá công; 2. Ngoại tác</td>
+</tr>
+<tr class="even">
+<td><strong>Phân loại 2: cấu trúc thị trường + thông tin</strong></td>
+<td>3. Độc quyền tự nhiên; 4. Thông tin bất cân xứng</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="a.2.-hàng-hoá-công-và-ngoại-tác" class="level3">
+<h3 class="anchored" data-anchor-id="a.2.-hàng-hoá-công-và-ngoại-tác">A.2. Hàng hoá công và Ngoại tác</h3>
+<section id="hàng-hoá-công-public-goods" class="level4">
+<h4 class="anchored" data-anchor-id="hàng-hoá-công-public-goods">Hàng hoá công (Public goods)</h4>
+<p>Hai đặc tính:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Đặc tính</th>
+<th>Ý nghĩa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Không loại trừ</strong> (non-excludable)</td>
+<td>Không thể ngăn ai khỏi sử dụng</td>
+</tr>
+<tr class="even">
+<td><strong>Không tranh giành</strong> (non-rival)</td>
+<td>Một người dùng không làm giảm cho người khác</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Vấn đề</strong>: free-rider — ai cũng muốn dùng miễn phí → tư nhân không sản xuất đủ → thị trường thất bại.</p>
+<p><strong>Ví dụ</strong>:</p>
 <ul>
-<li>Thuế Pigou</li>
-<li>Định lý Coase</li>
-<li>Cap-and-trade</li>
-<li>Điều tiết độc quyền tự nhiên</li>
+<li><strong>Quốc phòng</strong> — không thể bảo vệ chỉ một số công dân</li>
+<li><strong>Đèn biển</strong> — tàu nào cũng dùng được, không loại trừ</li>
+<li><strong>Không khí sạch</strong> — không thể bán riêng cho từng người</li>
+<li><strong>Tri thức cơ bản</strong> — công thức toán học không cạn kiệt khi dùng</li>
 </ul>
-<p><strong>2.4. Chính sách công nghiệp và đổi mới sáng tạo</strong></p>
+<p>→ Nhà nước cần <strong>trực tiếp cung cấp</strong> hoặc <strong>tài trợ</strong> sản xuất.</p>
+</section>
+<section id="ngoại-tác-externalities" class="level4">
+<h4 class="anchored" data-anchor-id="ngoại-tác-externalities">Ngoại tác (Externalities)</h4>
+<p><strong>Ngoại tác</strong> = tác động của hoạt động một bên lên bên thứ ba <strong>không phản ánh trong giá</strong>.</p>
+<p>Hai loại:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Loại</th>
+<th>Mô tả</th>
+<th>Ví dụ</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Ngoại tác âm</strong></td>
+<td>Hành động A gây thiệt hại cho B mà A không trả</td>
+<td>Ô nhiễm, tiếng ồn, ùn tắc giao thông</td>
+</tr>
+<tr class="even">
+<td><strong>Ngoại tác dương</strong></td>
+<td>Hành động A có lợi cho B mà A không thu được</td>
+<td>Tiêm vắc-xin, R&amp;D, giáo dục</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Kết quả</strong>: ngoại tác âm → sản xuất <em>quá nhiều</em> so với mức xã hội mong muốn. Ngoại tác dương → sản xuất <em>quá ít</em>.</p>
+<p>Phần B sẽ trình bày <em>hai cách</em> xử lý ngoại tác: Pigou và Coase.</p>
+</section>
+</section>
+<section id="a.3.-độc-quyền-tự-nhiên-và-thông-tin-bất-cân-xứng" class="level3">
+<h3 class="anchored" data-anchor-id="a.3.-độc-quyền-tự-nhiên-và-thông-tin-bất-cân-xứng">A.3. Độc quyền tự nhiên và Thông tin bất cân xứng</h3>
+<section id="độc-quyền-tự-nhiên-natural-monopoly" class="level4">
+<h4 class="anchored" data-anchor-id="độc-quyền-tự-nhiên-natural-monopoly">Độc quyền tự nhiên (Natural monopoly)</h4>
+<p><strong>ATC giảm dần liên tục</strong> trên dải sản lượng — nghĩa là một DN làm tất cả sẽ rẻ hơn nhiều DN chia nhỏ.</p>
+<p>Nguyên nhân: <strong>chi phí cố định lớn + chi phí biên thấp</strong>.</p>
+<p><strong>Ví dụ</strong>:</p>
 <ul>
-<li>Hệ thống Đổi mới sáng tạo quốc gia (National Innovation System)</li>
-<li><strong>Bốn chuyển đổi</strong> theo Đại hội XIV: chuyển đổi xanh, chuyển đổi số, chuyển đổi năng lượng, chuyển đổi mô hình tăng trưởng</li>
+<li>Điện (truyền tải)</li>
+<li>Nước</li>
+<li>Đường sắt (hạ tầng)</li>
+<li>Viễn thông cố định (mạng vật lý)</li>
+</ul>
+<p>Trong các ngành này, “cạnh tranh trực tiếp” thực tế gây <em>lãng phí</em> (mỗi DN phải xây hạ tầng riêng).</p>
+<p>Phần C sẽ trình bày <em>ba cách</em> điều tiết ĐQTN.</p>
+</section>
+<section id="thông-tin-bất-cân-xứng-asymmetric-information" class="level4">
+<h4 class="anchored" data-anchor-id="thông-tin-bất-cân-xứng-asymmetric-information">Thông tin bất cân xứng (Asymmetric information)</h4>
+<p>Một bên giao dịch biết nhiều hơn bên kia → thị trường vận hành kém hoặc sụp đổ.</p>
+<p><strong>Akerlof (1970)</strong> — <em>The Market for Lemons</em> — được giải Nobel Kinh tế 2001 cùng với Spence và Stiglitz.</p>
+<p>Phần D sẽ phân tích chi tiết.</p>
+</section>
+</section>
+</section>
+<section id="b.-pigou-và-coase-hai-cách-xử-lý-ngoại-tác" class="level2">
+<h2 class="anchored" data-anchor-id="b.-pigou-và-coase-hai-cách-xử-lý-ngoại-tác">B. Pigou và Coase — Hai cách xử lý ngoại tác</h2>
+<section id="b.1.-thuế-pigou" class="level3">
+<h3 class="anchored" data-anchor-id="b.1.-thuế-pigou">B.1. Thuế Pigou</h3>
+<p><strong>Arthur Cecil Pigou (1920)</strong> — <em>The Economics of Welfare</em>:</p>
+<blockquote class="blockquote">
+<p>Nếu hoạt động sản xuất gây ngoại tác âm, <strong>đánh thuế</strong> = chi phí ngoại tác biên (MEC) sẽ khiến DN “nội hoá” ngoại tác.</p>
+</blockquote>
+<p>Cơ chế:</p>
+<p><span class="math display">\[\text{MSC (xã hội)} = \text{MPC (DN)} + \text{MEC (ngoại tác)}\]</span></p>
+<p>Khi thuế Pigou = MEC, <strong>giá thị trường = giá xã hội đúng</strong>, sản lượng tối ưu.</p>
+<p><strong>Ví dụ</strong>:</p>
+<ul>
+<li><strong>Thuế carbon</strong> trên CO₂ thải</li>
+<li><strong>Phí xả thải</strong> đối với nước thải công nghiệp</li>
+<li><strong>Thuế tiêu thụ đặc biệt</strong> với rượu, thuốc lá (ngoại tác âm về sức khoẻ)</li>
+</ul>
+<p><strong>Ngoại tác dương</strong>: làm ngược lại — <strong>trợ cấp</strong> = lợi ích biên xã hội. Vd: trợ cấp R&amp;D, miễn phí vắc-xin.</p>
+</section>
+<section id="b.2.-định-lý-coase" class="level3">
+<h3 class="anchored" data-anchor-id="b.2.-định-lý-coase">B.2. Định lý Coase</h3>
+<p><strong>Ronald Coase (1960)</strong> — <em>The Problem of Social Cost</em> (Nobel Kinh tế 1991):</p>
+<blockquote class="blockquote">
+<p>Nếu <strong>chi phí giao dịch ≈ 0</strong> và <strong>quyền sở hữu rõ ràng</strong>, các bên sẽ <strong>tự đàm phán</strong> để đạt kết quả tối ưu. Phân bổ quyền sở hữu <em>không</em> ảnh hưởng đến hiệu quả (chỉ ảnh hưởng phân phối thu nhập).</p>
+</blockquote>
+<p><strong>Vai trò Nhà nước theo Coase</strong>: <em>không</em> can thiệp bằng thuế — chỉ <strong>thiết lập quyền sở hữu rõ ràng</strong> và <strong>giảm chi phí giao dịch</strong>.</p>
+<p><strong>Ví dụ kinh điển</strong>: một nhà máy thải khói lên hộ gia đình bên cạnh. Theo Coase:</p>
+<ul>
+<li>Nếu nhà máy có quyền thải → hộ gia đình <strong>trả tiền</strong> để nhà máy giảm thải.</li>
+<li>Nếu hộ gia đình có quyền không khí sạch → nhà máy <strong>trả tiền</strong> để được thải.</li>
+<li>Trong cả hai trường hợp, <em>mức ô nhiễm tối ưu giống nhau</em> — chỉ khác chuyện ai trả tiền.</li>
 </ul>
 </section>
-<section id="thực-hành-thảo-luận" class="level2">
-<h2 class="anchored" data-anchor-id="thực-hành-thảo-luận">Thực hành / Thảo luận</h2>
-<p>Phân tích <strong>Formosa Hà Tĩnh</strong> qua khung Pigou/Coase: thuế hay đàm phán? Mô phỏng <strong>đấu giá quyền phát thải</strong> (cap-and-trade game).</p>
+<section id="b.3.-pigou-vs-coase-đối-chiếu" class="level3">
+<h3 class="anchored" data-anchor-id="b.3.-pigou-vs-coase-đối-chiếu">B.3. Pigou vs Coase — đối chiếu</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>PIGOU (1920)</strong></th>
+<th><strong>COASE (1960)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Cách tiếp cận</td>
+<td>Can thiệp bằng thuế và trợ cấp</td>
+<td>Đàm phán giữa các bên</td>
+</tr>
+<tr class="even">
+<td>Vai trò NN</td>
+<td><strong>Chủ động</strong> can thiệp</td>
+<td><strong>Thiết lập luật</strong>, giảm chi phí giao dịch</td>
+</tr>
+<tr class="odd">
+<td>Yêu cầu</td>
+<td>Biết MEC chính xác</td>
+<td>Chi phí giao dịch ≈ 0</td>
+</tr>
+<tr class="even">
+<td>Phù hợp khi</td>
+<td>Nhiều người bị ảnh hưởng, khó đàm phán</td>
+<td>Ít bên liên quan, quyền rõ ràng</td>
+</tr>
+<tr class="odd">
+<td>Ví dụ</td>
+<td>Thuế carbon</td>
+<td>Trao đổi đất nông nghiệp với khu công nghiệp</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Kết luận thực tế</strong>: thường <strong>kết hợp cả hai</strong> — Nhà nước thiết lập luật + đánh thuế khi đàm phán quá tốn kém.</p>
 </section>
-<section id="bài-tập-lớn-tiểu-luận" class="level2">
-<h2 class="anchored" data-anchor-id="bài-tập-lớn-tiểu-luận">Bài tập lớn / Tiểu luận</h2>
-<p>Bài tập phân tích vai trò của quyền sở hữu và thể chế trong giải quyết một thất bại thị trường ở Việt Nam (Phần 2).</p>
-</section>
-<section id="tự-học-có-hướng-dẫn" class="level2">
-<h2 class="anchored" data-anchor-id="tự-học-có-hướng-dẫn">Tự học có hướng dẫn</h2>
+<section id="b.4.-cap-and-trade-coase-quy-mô-lớn" class="level3">
+<h3 class="anchored" data-anchor-id="b.4.-cap-and-trade-coase-quy-mô-lớn">B.4. Cap-and-Trade — Coase quy mô lớn</h3>
+<p><strong>Cap-and-Trade</strong> = hệ thống lai giữa Pigou và Coase:</p>
 <ol type="1">
-<li>Khi nào điều tiết bằng giá hiệu quả hơn quy chuẩn?</li>
-<li>Chính sách công nghiệp Việt Nam hậu Đại hội XIV?</li>
-<li>Điều kiện để cap-and-trade hiệu quả là gì?</li>
+<li><strong>Nhà nước đặt cap (giới hạn tổng)</strong> — tổng quota phát thải toàn ngành.</li>
+<li><strong>DN trao đổi quota</strong> trên thị trường — DN nào giảm thải dễ thì bán quota cho DN giảm thải khó.</li>
+</ol>
+<p><strong>Ưu điểm</strong>: hiệu quả khi <em>chi phí giảm thải khác nhau giữa các DN</em>. Đảm bảo mục tiêu môi trường (cap cố định) đồng thời tối thiểu hoá chi phí.</p>
+<p><strong>Ví dụ thực tế</strong>:</p>
+<ul>
+<li><strong>EU ETS</strong> (European Emissions Trading System) — từ 2005, thị trường carbon lớn nhất thế giới.</li>
+<li><strong>Việt Nam</strong>: thí điểm thị trường carbon theo <strong>Nghị định 06/2022/NĐ-CP</strong> — chuẩn bị vận hành chính thức 2028.</li>
+</ul>
+</section>
+</section>
+<section id="c.-điều-tiết-độc-quyền-tự-nhiên" class="level2">
+<h2 class="anchored" data-anchor-id="c.-điều-tiết-độc-quyền-tự-nhiên">C. Điều tiết độc quyền tự nhiên</h2>
+<section id="c.1.-vì-sao-có-độc-quyền-tự-nhiên" class="level3">
+<h3 class="anchored" data-anchor-id="c.1.-vì-sao-có-độc-quyền-tự-nhiên">C.1. Vì sao có độc quyền tự nhiên?</h3>
+<p><strong>Đặc trưng</strong>: ATC giảm liên tục trên dải sản lượng → chi phí cố định lớn + chi phí biên thấp.</p>
+<p><strong>Hậu quả</strong>: nếu hai DN cùng làm, tổng chi phí <em>cao hơn</em> một DN làm.</p>
+<p><strong>Ngành điển hình</strong>:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Ngành</th>
+<th>Vì sao là ĐQTN</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Điện (truyền tải)</td>
+<td>Lưới điện trùng lặp = lãng phí khủng khiếp</td>
+</tr>
+<tr class="even">
+<td>Nước</td>
+<td>Ống cấp nước cố định, không thể “cạnh tranh trên đường ống”</td>
+</tr>
+<tr class="odd">
+<td>Đường sắt</td>
+<td>Đường ray cố định</td>
+</tr>
+<tr class="even">
+<td>Viễn thông cố định</td>
+<td>Cáp đồng/cáp quang đến từng nhà</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Không thể có cạnh tranh trực tiếp hiệu quả</strong> trong các ngành này — phải có cơ chế điều tiết.</p>
+</section>
+<section id="c.2.-ba-phương-án-điều-tiết-đqtn" class="level3">
+<h3 class="anchored" data-anchor-id="c.2.-ba-phương-án-điều-tiết-đqtn">C.2. Ba phương án điều tiết ĐQTN</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Phương án</th>
+<th>Cơ chế</th>
+<th>Ưu</th>
+<th>Nhược</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Price cap</strong></td>
+<td>NN đặt <span class="math inline">\(P = MC\)</span> hoặc <span class="math inline">\(P = ATC\)</span></td>
+<td>Đơn giản, dễ thực thi</td>
+<td><span class="math inline">\(P = MC\)</span> làm DN lỗ (vì ATC &gt; MC); <span class="math inline">\(P = ATC\)</span> làm DN không có động lực cải tiến</td>
+</tr>
+<tr class="even">
+<td><strong>Rate of return</strong></td>
+<td>Cho phép tỷ suất lợi nhuận hợp lý (vd: 10%/năm trên vốn)</td>
+<td>DN có động lực đầu tư</td>
+<td>Khuyến khích đầu tư <em>quá nhiều</em> (Averch-Johnson effect)</td>
+</tr>
+<tr class="odd">
+<td><strong>Ramsey pricing</strong></td>
+<td>Frank Ramsey 1927: giá theo <strong>độ nhạy cầu</strong> — đánh giá cao hơn vào nhóm cầu kém co dãn</td>
+<td>Tối ưu phúc lợi với ràng buộc cân đối tài chính</td>
+<td>Phức tạp, đòi hỏi biết độ co giãn cầu</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="c.3.-điều-tiết-đqtn-ở-việt-nam" class="level3">
+<h3 class="anchored" data-anchor-id="c.3.-điều-tiết-đqtn-ở-việt-nam">C.3. Điều tiết ĐQTN ở Việt Nam</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ngành</th>
+<th>Cơ chế hiện hành</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Điện (EVN)</strong></td>
+<td>ĐQTN truyền tải; <strong>tách phát điện + bán lẻ</strong> thí điểm; <strong>giá điện do Nhà nước quyết định</strong></td>
+</tr>
+<tr class="even">
+<td><strong>Viễn thông</strong></td>
+<td>Đã <em>bỏ ĐQTN</em> cố định nhờ chuyển sang di động; cạnh tranh hiệu quả giữa VNPT, Viettel, MobiFone</td>
+</tr>
+<tr class="odd">
+<td><strong>Đường sắt</strong></td>
+<td>ĐQTN cơ sở hạ tầng (Tổng công ty Đường sắt VN); <strong>cần cải cách</strong> để tách hạ tầng và vận hành</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Bài học chính sách</strong>: trong những ngành mà công nghệ cho phép, <strong>chia tách “phần ĐQTN cứng” (hạ tầng) và “phần có thể cạnh tranh” (dịch vụ)</strong> — đây là cách EU và Anh đã làm với đường sắt và điện.</p>
+</section>
+</section>
+<section id="d.-thông-tin-bất-cân-xứng" class="level2">
+<h2 class="anchored" data-anchor-id="d.-thông-tin-bất-cân-xứng">D. Thông tin bất cân xứng</h2>
+<section id="d.1.-akerlof-và-thị-trường-lemons" class="level3">
+<h3 class="anchored" data-anchor-id="d.1.-akerlof-và-thị-trường-lemons">D.1. Akerlof và thị trường lemons</h3>
+<p><strong>George Akerlof (1970)</strong> — <em>The Market for Lemons: Quality Uncertainty and the Market Mechanism</em>. Nobel Kinh tế 2001.</p>
+<p><strong>Ví dụ kinh điển: thị trường xe cũ ở Mỹ</strong></p>
+<ul>
+<li>Người <strong>bán</strong> biết chất lượng xe (có phải “lemon” — xe hỏng vặt không).</li>
+<li>Người <strong>mua</strong> <em>không biết</em>.</li>
+</ul>
+<p><strong>Hậu quả — Adverse Selection (lựa chọn ngược)</strong>:</p>
+<ol type="1">
+<li>Người mua không biết, sẵn sàng trả giá <em>trung bình</em> cho cả xe tốt và xe lemon.</li>
+<li>Người bán xe <em>tốt</em> không bán được giá xứng đáng → rút khỏi thị trường.</li>
+<li>Còn lại chủ yếu xe lemon.</li>
+<li>Người mua nhận ra → trả giá thấp hơn nữa.</li>
+<li>Vòng xoáy tiếp tục → <strong>thị trường thu hẹp dần, có thể sụp đổ</strong>.</li>
+</ol>
+<p><strong>Áp dụng tại Việt Nam</strong>:</p>
+<ul>
+<li><strong>Thị trường BHYT</strong>: người có sức khoẻ kém có động lực mua bảo hiểm hơn người khoẻ → công ty bảo hiểm phải tính phí cao → người khoẻ rút khỏi thị trường → BHYT toàn dân <em>bắt buộc</em> là giải pháp.</li>
+<li><strong>Thị trường lao động</strong>: nhà tuyển dụng không biết năng lực ứng viên → dùng <em>bằng cấp</em> làm tín hiệu (signaling — đóng góp của Spence).</li>
+</ul>
+</section>
+<section id="d.2.-principal-agent-và-moral-hazard" class="level3">
+<h3 class="anchored" data-anchor-id="d.2.-principal-agent-và-moral-hazard">D.2. Principal-Agent và moral hazard</h3>
+<p><strong>Jensen-Meckling (1976)</strong> — lý thuyết về <strong>chi phí đại diện (agency cost)</strong>:</p>
+<ul>
+<li><strong>Principal (người chủ)</strong>: cổ đông, người bầu cử, người mua bảo hiểm</li>
+<li><strong>Agent (đại diện)</strong>: CEO, đại biểu Quốc hội, người được bảo hiểm</li>
+</ul>
+<p><strong>Vấn đề</strong>: lợi ích của Principal và Agent <strong>không giống nhau</strong> + Principal khó <em>quan sát</em> hành động của Agent.</p>
+<p><strong>Hậu quả — Moral hazard (rủi ro đạo đức)</strong>: agent hành xử <em>không tối ưu cho principal</em> sau khi giao dịch xong.</p>
+<p><strong>Ví dụ</strong>:</p>
+<ul>
+<li>CEO chi tiêu phung phí (private jet, văn phòng sang) vì <em>cổ đông trả tiền</em>, không phải CEO.</li>
+<li>Người có BHYT đi khám nhiều hơn cần thiết vì <em>bảo hiểm trả</em>, không phải mình.</li>
+</ul>
+<p><strong>Bốn giải pháp chính</strong>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Giải pháp</th>
+<th>Bản chất</th>
+<th>Ví dụ</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Signaling</strong></td>
+<td>Bên có thông tin tự gửi tín hiệu đáng tin</td>
+<td>Bằng cấp, chứng chỉ, bảo hành</td>
+</tr>
+<tr class="even">
+<td><strong>Screening</strong></td>
+<td>Bên thiếu thông tin thiết kế cơ chế phân loại</td>
+<td>Hợp đồng nhiều lựa chọn (deductible)</td>
+</tr>
+<tr class="odd">
+<td><strong>Hợp đồng khuyến khích</strong></td>
+<td>Gắn lương với hiệu suất</td>
+<td>Stock options, hoa hồng</td>
+</tr>
+<tr class="even">
+<td><strong>Giám sát + kiểm toán</strong></td>
+<td>Trực tiếp đo hành vi</td>
+<td>Kiểm toán độc lập, thanh tra</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Áp dụng tại Việt Nam</strong>:</p>
+<ul>
+<li><strong>Quản trị DNNN</strong> — vấn đề kinh điển: đại diện quản lý không tương đồng lợi ích với “chủ sở hữu Nhà nước”. Cải cách DNNN luôn xoay quanh giảm chi phí đại diện.</li>
+<li><strong>BHYT</strong> — đồng chi trả (co-payment) là cơ chế <em>screening</em> + giảm moral hazard.</li>
+<li><strong>Ngân hàng</strong> — bắt buộc dự phòng rủi ro, basel III, là cơ chế giảm moral hazard sau “too big to fail”.</li>
+</ul>
+</section>
+</section>
+<section id="tổng-kết-buổi-4-năm-điểm-cốt-lõi" class="level2">
+<h2 class="anchored" data-anchor-id="tổng-kết-buổi-4-năm-điểm-cốt-lõi">Tổng kết Buổi 4 — Năm điểm cốt lõi</h2>
+<ol type="1">
+<li><strong>Bốn nguồn thất bại thị trường</strong> cần Nhà nước can thiệp: hàng hoá công, ngoại tác, độc quyền tự nhiên, thông tin bất cân xứng.</li>
+<li><strong>Pigou</strong>: đánh thuế ngoại tác biên (MEC); <strong>Coase</strong>: thiết lập quyền sở hữu + đàm phán giữa các bên.</li>
+<li><strong>Cap-and-trade</strong>: Coase quy mô lớn — NN đặt cap, DN trao đổi quota. VN thí điểm theo NĐ 06/2022.</li>
+<li><strong>Điều tiết ĐQTN</strong>: 3 phương án chính — price cap, rate of return, Ramsey pricing.</li>
+<li><strong>Thông tin bất cân xứng</strong>: Akerlof (adverse selection) + Principal-Agent (moral hazard). Giải pháp: signaling, screening, hợp đồng, giám sát.</li>
 </ol>
 </section>
-<section id="đọc-thêm" class="level2">
-<h2 class="anchored" data-anchor-id="đọc-thêm">Đọc thêm</h2>
-<ul>
-<li>Mankiw, <em>Kinh tế học vi mô</em>, chương 10 (ngoại tác).</li>
-<li>Văn kiện Đại hội Đảng XIV — mục về 4 chuyển đổi.</li>
-</ul>
-<div class="callout callout-style-simple callout-warning callout-titled">
+<section id="bài-tập-về-nhà-chuẩn-bị-buổi-5" class="level2">
+<h2 class="anchored" data-anchor-id="bài-tập-về-nhà-chuẩn-bị-buổi-5">Bài tập về nhà (chuẩn bị Buổi 5)</h2>
+<ol type="1">
+<li><strong>Đọc</strong> Mankiw, chương về chính sách công nghiệp.</li>
+<li><strong>Tự đọc</strong> về Quản trị doanh nghiệp.</li>
+<li><strong>Chuẩn bị 1 case chính sách ngành tại VN</strong> — vd: chính sách bán dẫn 2024, ưu đãi thuế cho doanh nghiệp công nghệ cao, gói hỗ trợ DN nhỏ.</li>
+<li><strong>Đọc thêm</strong> về Hệ thống Đổi mới sáng tạo quốc gia (NIS).</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>🚧 Nội dung đang biên soạn
+<span class="screen-reader-only">Tip</span>🔧 Stata Lab 4 (bonus 5%)
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Bài giảng buổi 04 hiện ở dạng <strong>dàn ý theo đề cương DTU301</strong>. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.</p>
+<p>Bài này có lab thực hành <strong>mô phỏng thuế Pigou</strong> trong Stata: tạo dataset cung-cầu, tìm cân bằng trước và sau khi áp thuế, đo <em>deadweight loss (DWL)</em> và tổng phúc lợi. Áp dụng cho case <strong>thuế carbon Việt Nam</strong>.</p>
+<p>→ <a href="../stata-lab/lab-04.html"><strong>Bắt đầu Lab 4 — Mô phỏng thuế Pigou</strong></a> <em>(~25 phút)</em></p>
 </div>
 </div>
+</section>
+<section id="đọc-thêm" class="level2">
+<h2 class="anchored" data-anchor-id="đọc-thêm">Đọc thêm</h2>
+<ul>
+<li>Mankiw, <em>Kinh tế học vi mô</em> (2026), chương 10 (Externalities) và 11 (Public Goods).</li>
+<li>Stiglitz, J. E. &amp; Rosengard, J. K. (2015), <em>Economics of the Public Sector</em>, chương 4–6.</li>
+<li><strong>Coase, R.</strong> (1960), <em>The Problem of Social Cost</em> — bài báo gốc.</li>
+<li><strong>Akerlof, G.</strong> (1970), <em>The Market for Lemons</em> — bài báo gốc.</li>
+<li>Nghị định 06/2022/NĐ-CP về giảm phát thải khí nhà kính và bảo vệ tầng ozon (cơ sở pháp lý cho thị trường carbon VN).</li>
+</ul>
 <hr>
-<p>← <em>Buổi trước</em>: <a href="../lectures/buoi-03.html">Buổi 3</a> <em>Buổi tiếp theo</em>: <a href="../lectures/buoi-05.html">Buổi 5</a> →</p>
+<p>← <em>Buổi trước</em>: <a href="../lectures/buoi-03.html">Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh</a> | <em>Buổi tiếp theo</em>: <a href="../lectures/buoi-05.html">Buổi 5 — Chính sách công nghiệp và Quản trị doanh nghiệp</a> →</p>
 
 
 </section>
