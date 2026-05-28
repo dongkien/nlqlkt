@@ -1,0 +1,1297 @@
+[
+  {
+    "objectID": "problem-sets/index.html",
+    "href": "problem-sets/index.html",
+    "title": "Bài tập",
+    "section": "",
+    "text": "Mỗi học kỳ có 3 Problem Sets, mỗi PS chiếm 5% tổng điểm.\nHạn nộp ghi rõ trong mỗi PS. Chậm 1 ngày trừ 10%, chậm trên 7 ngày không nhận.\nBài có sử dụng Stata phải nộp kèm file .do (code) và .log (kết quả chạy).\nKhuyến khích thảo luận nhóm nhưng viết bài độc lập. Nộp bài giống nhau (kể cả 50%+ trùng lặp) tính là đạo văn.\nSử dụng AI (ChatGPT, Claude…) cần khai báo rõ ràng phần nào do AI hỗ trợ."
+  },
+  {
+    "objectID": "problem-sets/index.html#quy-định-chung",
+    "href": "problem-sets/index.html#quy-định-chung",
+    "title": "Bài tập",
+    "section": "",
+    "text": "Mỗi học kỳ có 3 Problem Sets, mỗi PS chiếm 5% tổng điểm.\nHạn nộp ghi rõ trong mỗi PS. Chậm 1 ngày trừ 10%, chậm trên 7 ngày không nhận.\nBài có sử dụng Stata phải nộp kèm file .do (code) và .log (kết quả chạy).\nKhuyến khích thảo luận nhóm nhưng viết bài độc lập. Nộp bài giống nhau (kể cả 50%+ trùng lặp) tính là đạo văn.\nSử dụng AI (ChatGPT, Claude…) cần khai báo rõ ràng phần nào do AI hỗ trợ."
+  },
+  {
+    "objectID": "problem-sets/index.html#cấu-trúc-một-problem-set",
+    "href": "problem-sets/index.html#cấu-trúc-một-problem-set",
+    "title": "Bài tập",
+    "section": "Cấu trúc một Problem Set",
+    "text": "Cấu trúc một Problem Set\nMỗi PS bao gồm:\n\nPhần A — Tự luận (40%): 2–3 câu phân tích, 200–400 từ mỗi câu.\nPhần B — Tính toán / Định lượng (40%): bài tập với dữ liệu thực, viết code Stata.\nPhần C — Đọc và bình luận (20%): đọc 1 bài báo / chính sách và bình luận ngắn 300 từ."
+  },
+  {
+    "objectID": "problem-sets/index.html#danh-sách-bài-tập",
+    "href": "problem-sets/index.html#danh-sách-bài-tập",
+    "title": "Bài tập",
+    "section": "Danh sách bài tập",
+    "text": "Danh sách bài tập"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Nguyên lý Quản lý Kinh tế",
+    "section": "",
+    "text": "Nguyên lý quản lý kinh tế là môn học nền tảng cung cấp hệ thống tri thức cơ bản về bản chất, đặc điểm, nguyên tắc, chức năng, phương pháp và công cụ quản lý nền kinh tế. Sinh viên sau khi hoàn thành môn học có thể phân tích các vấn đề quản lý kinh tế ở tầm vĩ mô và đối chiếu với thực tiễn Việt Nam.\n\n\n\n\nHọc liệu được biên soạn cho sinh viên cử nhân năm 3–4 thuộc các ngành Kinh tế, Quản lý Kinh tế, Quản trị Kinh doanh và các ngành liên quan. Sinh viên cần đã học qua Kinh tế vi mô, Kinh tế vĩ mô và Thống kê trước khi vào môn này.\nMôn được tổ chức theo 15 tuần × 3 tiết, tổng 45 tiết lên lớp, kèm khối lượng tự học tương đương ~3× thời lượng lên lớp theo chuẩn tín chỉ.\n\n\n\n\nCơ sở lý luận (Tuần 1–4) — bản chất, lịch sử tư tưởng, quy luật, hệ thống QLKT.\nCác yếu tố của hệ thống QLKT (Tuần 5–8) — chức năng, cơ cấu, phương pháp, cán bộ.\nCông cụ và chính sách QLKT (Tuần 9–12) — quản lý nhà nước, tài khóa, tiền tệ, thương mại–đầu tư.\nQLKT trong thực tiễn Việt Nam (Tuần 13–15) — kinh tế thị trường định hướng XHCN, hội nhập, tổng ôn.\n\n\n\n\n\n\n\n\n\n\nNote📚 Bắt đầu nhanh\n\n\n\n\n📋 Đề cương chi tiết\n📅 Lịch học 15 tuần\n🎓 Tất cả bài giảng\n✏️ Bài tập\n📝 Đề thi mẫu\n\n\n\n\n\n\n\n\n\nTuần 1 · Giới thiệu môn học và bản chất QLKT\nĐối tượng, phương pháp, vai trò của Nguyên lý quản lý kinh tế. Vị trí trong khoa học quản lý và khoa học kinh tế.\n\n\nTuần 2 · Lịch sử tư tưởng QLKT\nTừ trường phái cổ điển (Smith, Marx) đến hiện đại (Keynes, Coase, Williamson). Vận dụng vào quản lý kinh tế.\n\n\nTuần 3 · Quy luật khách quan và vận dụng\nCác quy luật kinh tế khách quan và nguyên tắc vận dụng trong quản lý. Tính khoa học và tính nghệ thuật.\n\n\nTuần 4 · Hệ thống quản lý kinh tế\nChủ thể quản lý, đối tượng quản lý, các bộ phận cấu thành. Mối quan hệ giữa các thành tố.\n\n\n\n\n\nTuần 5 · Chức năng quản lý kinh tế\nBốn chức năng cơ bản: kế hoạch, tổ chức, lãnh đạo, kiểm soát. Vận hành liên hoàn.\n\n\nTuần 6 · Cơ cấu tổ chức QLKT\nPhân cấp, phân quyền, ủy quyền. Các mô hình cơ cấu tổ chức quản lý.\n\n\nTuần 7 · Phương pháp quản lý kinh tế\nPhương pháp kinh tế, hành chính, giáo dục. Phối hợp các phương pháp.\n\n\nTuần 8 · Cán bộ và thông tin trong QLKT\nYêu cầu phẩm chất, kỹ năng của cán bộ quản lý. Hệ thống thông tin và quyết định.\n\n\n\n\n\nTuần 9 · Quản lý nhà nước về kinh tế\nChức năng, công cụ của Nhà nước trong quản lý nền kinh tế thị trường.\n\n\nTuần 10 · Chính sách tài khóa\nQuản lý ngân sách, chi tiêu công, nợ công. Vai trò ổn định và phân phối.\n\n\nTuần 11 · Chính sách tiền tệ\nNgân hàng trung ương, công cụ tiền tệ, quản lý hệ thống tài chính.\n\n\nTuần 12 · Chính sách thương mại — đầu tư — công nghiệp\nQuản lý xuất nhập khẩu, FDI, chính sách công nghiệp hóa.\n\n\n\n\n\nTuần 13 · Đặc thù QLKT Việt Nam\nKinh tế thị trường định hướng xã hội chủ nghĩa. Vai trò Nhà nước, kinh tế tư nhân, doanh nghiệp nhà nước.\n\n\nTuần 14 · Hội nhập kinh tế quốc tế\nWTO, FTA, CPTPP. Áp lực hội nhập với quản lý kinh tế trong nước.\n\n\nTuần 15 · Tổng ôn và thuyết trình\nHệ thống hóa kiến thức. Thuyết trình nhóm về một vấn đề QLKT đương đại.",
+    "crumbs": [
+      "Trang chủ",
+      "← Trang chủ"
+    ]
+  },
+  {
+    "objectID": "index.html#về-môn-học",
+    "href": "index.html#về-môn-học",
+    "title": "Nguyên lý Quản lý Kinh tế",
+    "section": "",
+    "text": "Nguyên lý quản lý kinh tế là môn học nền tảng cung cấp hệ thống tri thức cơ bản về bản chất, đặc điểm, nguyên tắc, chức năng, phương pháp và công cụ quản lý nền kinh tế. Sinh viên sau khi hoàn thành môn học có thể phân tích các vấn đề quản lý kinh tế ở tầm vĩ mô và đối chiếu với thực tiễn Việt Nam.\n\n\n\n\nHọc liệu được biên soạn cho sinh viên cử nhân năm 3–4 thuộc các ngành Kinh tế, Quản lý Kinh tế, Quản trị Kinh doanh và các ngành liên quan. Sinh viên cần đã học qua Kinh tế vi mô, Kinh tế vĩ mô và Thống kê trước khi vào môn này.\nMôn được tổ chức theo 15 tuần × 3 tiết, tổng 45 tiết lên lớp, kèm khối lượng tự học tương đương ~3× thời lượng lên lớp theo chuẩn tín chỉ.\n\n\n\n\nCơ sở lý luận (Tuần 1–4) — bản chất, lịch sử tư tưởng, quy luật, hệ thống QLKT.\nCác yếu tố của hệ thống QLKT (Tuần 5–8) — chức năng, cơ cấu, phương pháp, cán bộ.\nCông cụ và chính sách QLKT (Tuần 9–12) — quản lý nhà nước, tài khóa, tiền tệ, thương mại–đầu tư.\nQLKT trong thực tiễn Việt Nam (Tuần 13–15) — kinh tế thị trường định hướng XHCN, hội nhập, tổng ôn.\n\n\n\n\n\n\n\n\n\n\nNote📚 Bắt đầu nhanh\n\n\n\n\n📋 Đề cương chi tiết\n📅 Lịch học 15 tuần\n🎓 Tất cả bài giảng\n✏️ Bài tập\n📝 Đề thi mẫu",
+    "crumbs": [
+      "Trang chủ",
+      "← Trang chủ"
+    ]
+  },
+  {
+    "objectID": "index.html#phan-i",
+    "href": "index.html#phan-i",
+    "title": "Nguyên lý Quản lý Kinh tế",
+    "section": "",
+    "text": "Tuần 1 · Giới thiệu môn học và bản chất QLKT\nĐối tượng, phương pháp, vai trò của Nguyên lý quản lý kinh tế. Vị trí trong khoa học quản lý và khoa học kinh tế.\n\n\nTuần 2 · Lịch sử tư tưởng QLKT\nTừ trường phái cổ điển (Smith, Marx) đến hiện đại (Keynes, Coase, Williamson). Vận dụng vào quản lý kinh tế.\n\n\nTuần 3 · Quy luật khách quan và vận dụng\nCác quy luật kinh tế khách quan và nguyên tắc vận dụng trong quản lý. Tính khoa học và tính nghệ thuật.\n\n\nTuần 4 · Hệ thống quản lý kinh tế\nChủ thể quản lý, đối tượng quản lý, các bộ phận cấu thành. Mối quan hệ giữa các thành tố.",
+    "crumbs": [
+      "Trang chủ",
+      "← Trang chủ"
+    ]
+  },
+  {
+    "objectID": "index.html#phan-ii",
+    "href": "index.html#phan-ii",
+    "title": "Nguyên lý Quản lý Kinh tế",
+    "section": "",
+    "text": "Tuần 5 · Chức năng quản lý kinh tế\nBốn chức năng cơ bản: kế hoạch, tổ chức, lãnh đạo, kiểm soát. Vận hành liên hoàn.\n\n\nTuần 6 · Cơ cấu tổ chức QLKT\nPhân cấp, phân quyền, ủy quyền. Các mô hình cơ cấu tổ chức quản lý.\n\n\nTuần 7 · Phương pháp quản lý kinh tế\nPhương pháp kinh tế, hành chính, giáo dục. Phối hợp các phương pháp.\n\n\nTuần 8 · Cán bộ và thông tin trong QLKT\nYêu cầu phẩm chất, kỹ năng của cán bộ quản lý. Hệ thống thông tin và quyết định.",
+    "crumbs": [
+      "Trang chủ",
+      "← Trang chủ"
+    ]
+  },
+  {
+    "objectID": "index.html#phan-iii",
+    "href": "index.html#phan-iii",
+    "title": "Nguyên lý Quản lý Kinh tế",
+    "section": "",
+    "text": "Tuần 9 · Quản lý nhà nước về kinh tế\nChức năng, công cụ của Nhà nước trong quản lý nền kinh tế thị trường.\n\n\nTuần 10 · Chính sách tài khóa\nQuản lý ngân sách, chi tiêu công, nợ công. Vai trò ổn định và phân phối.\n\n\nTuần 11 · Chính sách tiền tệ\nNgân hàng trung ương, công cụ tiền tệ, quản lý hệ thống tài chính.\n\n\nTuần 12 · Chính sách thương mại — đầu tư — công nghiệp\nQuản lý xuất nhập khẩu, FDI, chính sách công nghiệp hóa.",
+    "crumbs": [
+      "Trang chủ",
+      "← Trang chủ"
+    ]
+  },
+  {
+    "objectID": "index.html#phan-iv",
+    "href": "index.html#phan-iv",
+    "title": "Nguyên lý Quản lý Kinh tế",
+    "section": "",
+    "text": "Tuần 13 · Đặc thù QLKT Việt Nam\nKinh tế thị trường định hướng xã hội chủ nghĩa. Vai trò Nhà nước, kinh tế tư nhân, doanh nghiệp nhà nước.\n\n\nTuần 14 · Hội nhập kinh tế quốc tế\nWTO, FTA, CPTPP. Áp lực hội nhập với quản lý kinh tế trong nước.\n\n\nTuần 15 · Tổng ôn và thuyết trình\nHệ thống hóa kiến thức. Thuyết trình nhóm về một vấn đề QLKT đương đại.",
+    "crumbs": [
+      "Trang chủ",
+      "← Trang chủ"
+    ]
+  },
+  {
+    "objectID": "index.html#học-liệu-mở",
+    "href": "index.html#học-liệu-mở",
+    "title": "Nguyên lý Quản lý Kinh tế",
+    "section": "Học liệu mở",
+    "text": "Học liệu mở\nBộ học liệu này được phát hành theo giấy phép Creative Commons BY-NC-SA 4.0: bạn được tự do sao chép, chia sẻ và chỉnh sửa cho mục đích phi thương mại, miễn dẫn nguồn và giữ giấy phép tương tự.",
+    "crumbs": [
+      "Trang chủ",
+      "← Trang chủ"
+    ]
+  },
+  {
+    "objectID": "lectures/week-13.html",
+    "href": "lectures/week-13.html",
+    "title": "Tuần 13 — Đặc thù QLKT Việt Nam",
+    "section": "",
+    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Định hướng XHCN; sở hữu hỗn hợp; DNNN; cải cách thể chế.\nVận dụng được khung phân tích của tuần 13 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần IV — QLKT Việt Nam",
+      "Tuần 13 — Đặc thù QLKT Việt Nam"
+    ]
+  },
+  {
+    "objectID": "lectures/week-13.html#dàn-ý-dự-kiến",
+    "href": "lectures/week-13.html#dàn-ý-dự-kiến",
+    "title": "Tuần 13 — Đặc thù QLKT Việt Nam",
+    "section": "Dàn ý dự kiến",
+    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần IV — QLKT Việt Nam",
+      "Tuần 13 — Đặc thù QLKT Việt Nam"
+    ]
+  },
+  {
+    "objectID": "lectures/week-13.html#khái-niệm-cốt-lõi-sẽ-học",
+    "href": "lectures/week-13.html#khái-niệm-cốt-lõi-sẽ-học",
+    "title": "Tuần 13 — Đặc thù QLKT Việt Nam",
+    "section": "Khái niệm cốt lõi sẽ học",
+    "text": "Khái niệm cốt lõi sẽ học\n\nĐịnh hướng XHCN\nsở hữu hỗn hợp\nDNNN\ncải cách thể chế",
+    "crumbs": [
+      "Trang chủ",
+      "Phần IV — QLKT Việt Nam",
+      "Tuần 13 — Đặc thù QLKT Việt Nam"
+    ]
+  },
+  {
+    "objectID": "lectures/week-13.html#đọc-trước",
+    "href": "lectures/week-13.html#đọc-trước",
+    "title": "Tuần 13 — Đặc thù QLKT Việt Nam",
+    "section": "Đọc trước",
+    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần IV — QLKT Việt Nam",
+      "Tuần 13 — Đặc thù QLKT Việt Nam"
+    ]
+  },
+  {
+    "objectID": "lectures/week-13.html#tự-kiểm-tra",
+    "href": "lectures/week-13.html#tự-kiểm-tra",
+    "title": "Tuần 13 — Đặc thù QLKT Việt Nam",
+    "section": "Tự kiểm tra",
+    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 13 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 12 | Tuần tiếp theo: Tuần 14 →",
+    "crumbs": [
+      "Trang chủ",
+      "Phần IV — QLKT Việt Nam",
+      "Tuần 13 — Đặc thù QLKT Việt Nam"
+    ]
+  },
+  {
+    "objectID": "lectures/week-04.html",
+    "href": "lectures/week-04.html",
+    "title": "Tuần 04 — Hệ thống quản lý kinh tế",
+    "section": "",
+    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Cấu trúc hệ thống; phân tích đầu vào-đầu ra; phản hồi; cân bằng động.\nVận dụng được khung phân tích của tuần 04 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần I — Cơ sở lý luận",
+      "Tuần 04 — Hệ thống quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-04.html#dàn-ý-dự-kiến",
+    "href": "lectures/week-04.html#dàn-ý-dự-kiến",
+    "title": "Tuần 04 — Hệ thống quản lý kinh tế",
+    "section": "Dàn ý dự kiến",
+    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần I — Cơ sở lý luận",
+      "Tuần 04 — Hệ thống quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-04.html#khái-niệm-cốt-lõi-sẽ-học",
+    "href": "lectures/week-04.html#khái-niệm-cốt-lõi-sẽ-học",
+    "title": "Tuần 04 — Hệ thống quản lý kinh tế",
+    "section": "Khái niệm cốt lõi sẽ học",
+    "text": "Khái niệm cốt lõi sẽ học\n\nCấu trúc hệ thống\nphân tích đầu vào-đầu ra\nphản hồi\ncân bằng động",
+    "crumbs": [
+      "Trang chủ",
+      "Phần I — Cơ sở lý luận",
+      "Tuần 04 — Hệ thống quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-04.html#đọc-trước",
+    "href": "lectures/week-04.html#đọc-trước",
+    "title": "Tuần 04 — Hệ thống quản lý kinh tế",
+    "section": "Đọc trước",
+    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần I — Cơ sở lý luận",
+      "Tuần 04 — Hệ thống quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-04.html#tự-kiểm-tra",
+    "href": "lectures/week-04.html#tự-kiểm-tra",
+    "title": "Tuần 04 — Hệ thống quản lý kinh tế",
+    "section": "Tự kiểm tra",
+    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 04 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 3 | Tuần tiếp theo: Tuần 5 →",
+    "crumbs": [
+      "Trang chủ",
+      "Phần I — Cơ sở lý luận",
+      "Tuần 04 — Hệ thống quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-12.html",
+    "href": "lectures/week-12.html",
+    "title": "Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp",
+    "section": "",
+    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Hàng rào thương mại; FDI; chuỗi giá trị toàn cầu; công nghiệp hóa hướng xuất khẩu.\nVận dụng được khung phân tích của tuần 12 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần III — Công cụ chính sách",
+      "Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp"
+    ]
+  },
+  {
+    "objectID": "lectures/week-12.html#dàn-ý-dự-kiến",
+    "href": "lectures/week-12.html#dàn-ý-dự-kiến",
+    "title": "Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp",
+    "section": "Dàn ý dự kiến",
+    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần III — Công cụ chính sách",
+      "Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp"
+    ]
+  },
+  {
+    "objectID": "lectures/week-12.html#khái-niệm-cốt-lõi-sẽ-học",
+    "href": "lectures/week-12.html#khái-niệm-cốt-lõi-sẽ-học",
+    "title": "Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp",
+    "section": "Khái niệm cốt lõi sẽ học",
+    "text": "Khái niệm cốt lõi sẽ học\n\nHàng rào thương mại\nFDI\nchuỗi giá trị toàn cầu\ncông nghiệp hóa hướng xuất khẩu",
+    "crumbs": [
+      "Trang chủ",
+      "Phần III — Công cụ chính sách",
+      "Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp"
+    ]
+  },
+  {
+    "objectID": "lectures/week-12.html#đọc-trước",
+    "href": "lectures/week-12.html#đọc-trước",
+    "title": "Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp",
+    "section": "Đọc trước",
+    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần III — Công cụ chính sách",
+      "Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp"
+    ]
+  },
+  {
+    "objectID": "lectures/week-12.html#ví-dụ-định-lượng-với-stata",
+    "href": "lectures/week-12.html#ví-dụ-định-lượng-với-stata",
+    "title": "Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp",
+    "section": "Ví dụ định lượng với Stata",
+    "text": "Ví dụ định lượng với Stata\nTrong tuần này, một ví dụ phân tích chính sách bằng dữ liệu Việt Nam sẽ được phát kèm. Code mẫu (sẽ chi tiết hóa):\n* Đọc dữ liệu liên quan tới chủ đề tuần 12\nimport delimited \"data/topic-week-12.csv\", clear case(lower)\nsummarize\n* (chi tiết phân tích — sẽ bổ sung)",
+    "crumbs": [
+      "Trang chủ",
+      "Phần III — Công cụ chính sách",
+      "Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp"
+    ]
+  },
+  {
+    "objectID": "lectures/week-12.html#tự-kiểm-tra",
+    "href": "lectures/week-12.html#tự-kiểm-tra",
+    "title": "Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp",
+    "section": "Tự kiểm tra",
+    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 12 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 11 | Tuần tiếp theo: Tuần 13 →",
+    "crumbs": [
+      "Trang chủ",
+      "Phần III — Công cụ chính sách",
+      "Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp"
+    ]
+  },
+  {
+    "objectID": "lectures/index.html",
+    "href": "lectures/index.html",
+    "title": "Bài giảng",
+    "section": "",
+    "text": "Toàn bộ 15 bài giảng được tổ chức theo bốn phần lớn của môn học. Mỗi bài có cấu trúc thống nhất: mục tiêu bài học, khái niệm cốt lõi, phân tích chi tiết, ví dụ thực tiễn Việt Nam, và bài tập tự kiểm tra.\n\n\n\n\n\n\nTipCách đọc hiệu quả\n\n\n\nTrước mỗi buổi, đọc lướt phần Mục tiêu và Khái niệm cốt lõi. Sau buổi học, quay lại đọc kỹ phần Phân tích chi tiết và làm phần Tự kiểm tra.\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\nBài giảng\n\n\n\nNội dung chính\n\n\n\nThời lượng đọc\n\n\n\n\n\n\n\n\nTuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế\n\n\nĐối tượng, phương pháp, vai trò; vị trí trong hệ thống khoa học quản lý\n\n\n9 min\n\n\n\n\n\n\nTuần 02 — Lịch sử tư tưởng quản lý kinh tế\n\n\nTừ Adam Smith và Marx đến Keynes, Coase và Williamson\n\n\n2 min\n\n\n\n\n\n\nTuần 03 — Quy luật khách quan và nguyên tắc vận dụng\n\n\nCác quy luật kinh tế và nguyên tắc quản lý dựa trên quy luật\n\n\n2 min\n\n\n\n\n\n\nTuần 04 — Hệ thống quản lý kinh tế\n\n\nChủ thể, đối tượng, mối quan hệ và các bộ phận cấu thành\n\n\n2 min\n\n\n\n\n\n\nTuần 05 — Chức năng quản lý kinh tế\n\n\nBốn chức năng cơ bản: kế hoạch, tổ chức, lãnh đạo, kiểm soát\n\n\n2 min\n\n\n\n\n\n\nTuần 06 — Cơ cấu tổ chức quản lý kinh tế\n\n\nPhân cấp, phân quyền, ủy quyền và các mô hình cơ cấu\n\n\n2 min\n\n\n\n\n\n\nTuần 07 — Phương pháp quản lý kinh tế\n\n\nPhương pháp kinh tế, hành chính, giáo dục và phối hợp\n\n\n2 min\n\n\n\n\n\n\nTuần 08 — Cán bộ và thông tin trong QLKT\n\n\nYêu cầu cán bộ quản lý; hệ thống thông tin và ra quyết định\n\n\n2 min\n\n\n\n\n\n\nTuần 09 — Quản lý nhà nước về kinh tế\n\n\nChức năng và công cụ của Nhà nước trong nền KTTT\n\n\n2 min\n\n\n\n\n\n\nTuần 10 — Chính sách tài khóa\n\n\nQuản lý ngân sách, chi tiêu công, nợ công\n\n\n2 min\n\n\n\n\n\n\nTuần 11 — Chính sách tiền tệ\n\n\nNgân hàng trung ương và quản lý hệ thống tài chính\n\n\n2 min\n\n\n\n\n\n\nTuần 12 — Chính sách thương mại — đầu tư — công nghiệp\n\n\nQuản lý xuất nhập khẩu, FDI, và chính sách công nghiệp hóa\n\n\n2 min\n\n\n\n\n\n\nTuần 13 — Đặc thù QLKT Việt Nam\n\n\nKTTT định hướng XHCN; vai trò Nhà nước, DNNN, kinh tế tư nhân\n\n\n2 min\n\n\n\n\n\n\nTuần 14 — Hội nhập kinh tế quốc tế\n\n\nWTO, FTA, CPTPP và áp lực điều chỉnh trong nước\n\n\n2 min\n\n\n\n\n\n\nTuần 15 — Tổng ôn và thuyết trình nhóm\n\n\nHệ thống hóa kiến thức và thuyết trình về vấn đề QLKT đương đại\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "lectures/week-10.html",
+    "href": "lectures/week-10.html",
+    "title": "Tuần 10 — Chính sách tài khóa",
+    "section": "",
+    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Thâm hụt-thặng dư; nợ công bền vững; chính sách tài khóa phản chu kỳ; quy tắc tài khóa.\nVận dụng được khung phân tích của tuần 10 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần III — Công cụ chính sách",
+      "Tuần 10 — Chính sách tài khóa"
+    ]
+  },
+  {
+    "objectID": "lectures/week-10.html#dàn-ý-dự-kiến",
+    "href": "lectures/week-10.html#dàn-ý-dự-kiến",
+    "title": "Tuần 10 — Chính sách tài khóa",
+    "section": "Dàn ý dự kiến",
+    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần III — Công cụ chính sách",
+      "Tuần 10 — Chính sách tài khóa"
+    ]
+  },
+  {
+    "objectID": "lectures/week-10.html#khái-niệm-cốt-lõi-sẽ-học",
+    "href": "lectures/week-10.html#khái-niệm-cốt-lõi-sẽ-học",
+    "title": "Tuần 10 — Chính sách tài khóa",
+    "section": "Khái niệm cốt lõi sẽ học",
+    "text": "Khái niệm cốt lõi sẽ học\n\nThâm hụt-thặng dư\nnợ công bền vững\nchính sách tài khóa phản chu kỳ\nquy tắc tài khóa",
+    "crumbs": [
+      "Trang chủ",
+      "Phần III — Công cụ chính sách",
+      "Tuần 10 — Chính sách tài khóa"
+    ]
+  },
+  {
+    "objectID": "lectures/week-10.html#đọc-trước",
+    "href": "lectures/week-10.html#đọc-trước",
+    "title": "Tuần 10 — Chính sách tài khóa",
+    "section": "Đọc trước",
+    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần III — Công cụ chính sách",
+      "Tuần 10 — Chính sách tài khóa"
+    ]
+  },
+  {
+    "objectID": "lectures/week-10.html#ví-dụ-định-lượng-với-stata",
+    "href": "lectures/week-10.html#ví-dụ-định-lượng-với-stata",
+    "title": "Tuần 10 — Chính sách tài khóa",
+    "section": "Ví dụ định lượng với Stata",
+    "text": "Ví dụ định lượng với Stata\nTrong tuần này, một ví dụ phân tích chính sách bằng dữ liệu Việt Nam sẽ được phát kèm. Code mẫu (sẽ chi tiết hóa):\n* Đọc dữ liệu liên quan tới chủ đề tuần 10\nimport delimited \"data/topic-week-10.csv\", clear case(lower)\nsummarize\n* (chi tiết phân tích — sẽ bổ sung)",
+    "crumbs": [
+      "Trang chủ",
+      "Phần III — Công cụ chính sách",
+      "Tuần 10 — Chính sách tài khóa"
+    ]
+  },
+  {
+    "objectID": "lectures/week-10.html#tự-kiểm-tra",
+    "href": "lectures/week-10.html#tự-kiểm-tra",
+    "title": "Tuần 10 — Chính sách tài khóa",
+    "section": "Tự kiểm tra",
+    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 10 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 9 | Tuần tiếp theo: Tuần 11 →",
+    "crumbs": [
+      "Trang chủ",
+      "Phần III — Công cụ chính sách",
+      "Tuần 10 — Chính sách tài khóa"
+    ]
+  },
+  {
+    "objectID": "lectures/week-05.html",
+    "href": "lectures/week-05.html",
+    "title": "Tuần 05 — Chức năng quản lý kinh tế",
+    "section": "",
+    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Lập kế hoạch chiến lược; cơ cấu; động viên; KPI và đo lường.\nVận dụng được khung phân tích của tuần 05 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần II — Hệ thống QLKT",
+      "Tuần 05 — Chức năng quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-05.html#dàn-ý-dự-kiến",
+    "href": "lectures/week-05.html#dàn-ý-dự-kiến",
+    "title": "Tuần 05 — Chức năng quản lý kinh tế",
+    "section": "Dàn ý dự kiến",
+    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần II — Hệ thống QLKT",
+      "Tuần 05 — Chức năng quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-05.html#khái-niệm-cốt-lõi-sẽ-học",
+    "href": "lectures/week-05.html#khái-niệm-cốt-lõi-sẽ-học",
+    "title": "Tuần 05 — Chức năng quản lý kinh tế",
+    "section": "Khái niệm cốt lõi sẽ học",
+    "text": "Khái niệm cốt lõi sẽ học\n\nLập kế hoạch chiến lược\ncơ cấu\nđộng viên\nKPI và đo lường",
+    "crumbs": [
+      "Trang chủ",
+      "Phần II — Hệ thống QLKT",
+      "Tuần 05 — Chức năng quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-05.html#đọc-trước",
+    "href": "lectures/week-05.html#đọc-trước",
+    "title": "Tuần 05 — Chức năng quản lý kinh tế",
+    "section": "Đọc trước",
+    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần II — Hệ thống QLKT",
+      "Tuần 05 — Chức năng quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-05.html#tự-kiểm-tra",
+    "href": "lectures/week-05.html#tự-kiểm-tra",
+    "title": "Tuần 05 — Chức năng quản lý kinh tế",
+    "section": "Tự kiểm tra",
+    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 05 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 4 | Tuần tiếp theo: Tuần 6 →",
+    "crumbs": [
+      "Trang chủ",
+      "Phần II — Hệ thống QLKT",
+      "Tuần 05 — Chức năng quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-09.html",
+    "href": "lectures/week-09.html",
+    "title": "Tuần 09 — Quản lý nhà nước về kinh tế",
+    "section": "",
+    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Thất bại thị trường; ngoại ứng; hàng hóa công; vai trò Nhà nước.\nVận dụng được khung phân tích của tuần 09 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần III — Công cụ chính sách",
+      "Tuần 09 — Quản lý nhà nước về kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-09.html#dàn-ý-dự-kiến",
+    "href": "lectures/week-09.html#dàn-ý-dự-kiến",
+    "title": "Tuần 09 — Quản lý nhà nước về kinh tế",
+    "section": "Dàn ý dự kiến",
+    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần III — Công cụ chính sách",
+      "Tuần 09 — Quản lý nhà nước về kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-09.html#khái-niệm-cốt-lõi-sẽ-học",
+    "href": "lectures/week-09.html#khái-niệm-cốt-lõi-sẽ-học",
+    "title": "Tuần 09 — Quản lý nhà nước về kinh tế",
+    "section": "Khái niệm cốt lõi sẽ học",
+    "text": "Khái niệm cốt lõi sẽ học\n\nThất bại thị trường\nngoại ứng\nhàng hóa công\nvai trò Nhà nước",
+    "crumbs": [
+      "Trang chủ",
+      "Phần III — Công cụ chính sách",
+      "Tuần 09 — Quản lý nhà nước về kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-09.html#đọc-trước",
+    "href": "lectures/week-09.html#đọc-trước",
+    "title": "Tuần 09 — Quản lý nhà nước về kinh tế",
+    "section": "Đọc trước",
+    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần III — Công cụ chính sách",
+      "Tuần 09 — Quản lý nhà nước về kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-09.html#ví-dụ-định-lượng-với-stata",
+    "href": "lectures/week-09.html#ví-dụ-định-lượng-với-stata",
+    "title": "Tuần 09 — Quản lý nhà nước về kinh tế",
+    "section": "Ví dụ định lượng với Stata",
+    "text": "Ví dụ định lượng với Stata\nTrong tuần này, một ví dụ phân tích chính sách bằng dữ liệu Việt Nam sẽ được phát kèm. Code mẫu (sẽ chi tiết hóa):\n* Đọc dữ liệu liên quan tới chủ đề tuần 09\nimport delimited \"data/topic-week-09.csv\", clear case(lower)\nsummarize\n* (chi tiết phân tích — sẽ bổ sung)",
+    "crumbs": [
+      "Trang chủ",
+      "Phần III — Công cụ chính sách",
+      "Tuần 09 — Quản lý nhà nước về kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-09.html#tự-kiểm-tra",
+    "href": "lectures/week-09.html#tự-kiểm-tra",
+    "title": "Tuần 09 — Quản lý nhà nước về kinh tế",
+    "section": "Tự kiểm tra",
+    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 09 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 8 | Tuần tiếp theo: Tuần 10 →",
+    "crumbs": [
+      "Trang chủ",
+      "Phần III — Công cụ chính sách",
+      "Tuần 09 — Quản lý nhà nước về kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-11.html",
+    "href": "lectures/week-11.html",
+    "title": "Tuần 11 — Chính sách tiền tệ",
+    "section": "",
+    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Lãi suất chính sách; cung tiền M2; tỷ giá; lạm phát mục tiêu; ổn định tài chính.\nVận dụng được khung phân tích của tuần 11 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần III — Công cụ chính sách",
+      "Tuần 11 — Chính sách tiền tệ"
+    ]
+  },
+  {
+    "objectID": "lectures/week-11.html#dàn-ý-dự-kiến",
+    "href": "lectures/week-11.html#dàn-ý-dự-kiến",
+    "title": "Tuần 11 — Chính sách tiền tệ",
+    "section": "Dàn ý dự kiến",
+    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần III — Công cụ chính sách",
+      "Tuần 11 — Chính sách tiền tệ"
+    ]
+  },
+  {
+    "objectID": "lectures/week-11.html#khái-niệm-cốt-lõi-sẽ-học",
+    "href": "lectures/week-11.html#khái-niệm-cốt-lõi-sẽ-học",
+    "title": "Tuần 11 — Chính sách tiền tệ",
+    "section": "Khái niệm cốt lõi sẽ học",
+    "text": "Khái niệm cốt lõi sẽ học\n\nLãi suất chính sách\ncung tiền M2\ntỷ giá\nlạm phát mục tiêu\nổn định tài chính",
+    "crumbs": [
+      "Trang chủ",
+      "Phần III — Công cụ chính sách",
+      "Tuần 11 — Chính sách tiền tệ"
+    ]
+  },
+  {
+    "objectID": "lectures/week-11.html#đọc-trước",
+    "href": "lectures/week-11.html#đọc-trước",
+    "title": "Tuần 11 — Chính sách tiền tệ",
+    "section": "Đọc trước",
+    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần III — Công cụ chính sách",
+      "Tuần 11 — Chính sách tiền tệ"
+    ]
+  },
+  {
+    "objectID": "lectures/week-11.html#ví-dụ-định-lượng-với-stata",
+    "href": "lectures/week-11.html#ví-dụ-định-lượng-với-stata",
+    "title": "Tuần 11 — Chính sách tiền tệ",
+    "section": "Ví dụ định lượng với Stata",
+    "text": "Ví dụ định lượng với Stata\nTrong tuần này, một ví dụ phân tích chính sách bằng dữ liệu Việt Nam sẽ được phát kèm. Code mẫu (sẽ chi tiết hóa):\n* Đọc dữ liệu liên quan tới chủ đề tuần 11\nimport delimited \"data/topic-week-11.csv\", clear case(lower)\nsummarize\n* (chi tiết phân tích — sẽ bổ sung)",
+    "crumbs": [
+      "Trang chủ",
+      "Phần III — Công cụ chính sách",
+      "Tuần 11 — Chính sách tiền tệ"
+    ]
+  },
+  {
+    "objectID": "lectures/week-11.html#tự-kiểm-tra",
+    "href": "lectures/week-11.html#tự-kiểm-tra",
+    "title": "Tuần 11 — Chính sách tiền tệ",
+    "section": "Tự kiểm tra",
+    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 11 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 10 | Tuần tiếp theo: Tuần 12 →",
+    "crumbs": [
+      "Trang chủ",
+      "Phần III — Công cụ chính sách",
+      "Tuần 11 — Chính sách tiền tệ"
+    ]
+  },
+  {
+    "objectID": "schedule.html",
+    "href": "schedule.html",
+    "title": "Lịch học 15 tuần",
+    "section": "",
+    "text": "Tuần\nPhần\nChủ đề\nĐọc trước\nBài tập / Kiểm tra\n\n\n\n\n1\nI\nGiới thiệu môn học và bản chất QLKT\nĐỗ-Mai Ch.1\n—\n\n\n2\nI\nLịch sử tư tưởng QLKT\nĐỗ-Mai Ch.2; Acemoglu-Robinson Ch.1–2\n—\n\n\n3\nI\nQuy luật khách quan và vận dụng\nĐỗ-Mai Ch.3\nPS-01 giao\n\n\n4\nI\nHệ thống quản lý kinh tế\nĐỗ-Mai Ch.4\nPS-01 nộp\n\n\n5\nII\nChức năng quản lý kinh tế\nĐỗ-Mai Ch.5\n—\n\n\n6\nII\nCơ cấu tổ chức QLKT\nĐỗ-Mai Ch.6\nPS-02 giao\n\n\n7\nII\nPhương pháp quản lý kinh tế\nĐỗ-Mai Ch.7\n—\n\n\n8\nII\nCán bộ và thông tin trong QLKT\nĐỗ-Mai Ch.8\n⚠️ Kiểm tra giữa kỳ + PS-02 nộp\n\n\n9\nIII\nQuản lý nhà nước về kinh tế\nPhan Huy Đường Ch.1–2\n—\n\n\n10\nIII\nChính sách tài khóa\nPhan Huy Đường Ch.3; Luật NSNN\nPS-03 giao\n\n\n11\nIII\nChính sách tiền tệ\nPhan Huy Đường Ch.4\n—\n\n\n12\nIII\nThương mại — đầu tư — công nghiệp\nRodrik Ch.4–5\nPS-03 nộp\n\n\n13\nIV\nĐặc thù QLKT Việt Nam\nVăn kiện Đại hội XIII\n—\n\n\n14\nIV\nHội nhập kinh tế quốc tế\nWorld Bank VDR\nĐăng ký nhóm thuyết trình\n\n\n15\nIV\nTổng ôn và thuyết trình nhóm\n—\n🎤 Thuyết trình nhóm\n\n\nThi\n—\nThi cuối kỳ (90 phút, tự luận)\nToàn bộ\n⚠️ Thi cuối kỳ"
+  },
+  {
+    "objectID": "schedule.html#tổng-quan-tiến-độ",
+    "href": "schedule.html#tổng-quan-tiến-độ",
+    "title": "Lịch học 15 tuần",
+    "section": "",
+    "text": "Tuần\nPhần\nChủ đề\nĐọc trước\nBài tập / Kiểm tra\n\n\n\n\n1\nI\nGiới thiệu môn học và bản chất QLKT\nĐỗ-Mai Ch.1\n—\n\n\n2\nI\nLịch sử tư tưởng QLKT\nĐỗ-Mai Ch.2; Acemoglu-Robinson Ch.1–2\n—\n\n\n3\nI\nQuy luật khách quan và vận dụng\nĐỗ-Mai Ch.3\nPS-01 giao\n\n\n4\nI\nHệ thống quản lý kinh tế\nĐỗ-Mai Ch.4\nPS-01 nộp\n\n\n5\nII\nChức năng quản lý kinh tế\nĐỗ-Mai Ch.5\n—\n\n\n6\nII\nCơ cấu tổ chức QLKT\nĐỗ-Mai Ch.6\nPS-02 giao\n\n\n7\nII\nPhương pháp quản lý kinh tế\nĐỗ-Mai Ch.7\n—\n\n\n8\nII\nCán bộ và thông tin trong QLKT\nĐỗ-Mai Ch.8\n⚠️ Kiểm tra giữa kỳ + PS-02 nộp\n\n\n9\nIII\nQuản lý nhà nước về kinh tế\nPhan Huy Đường Ch.1–2\n—\n\n\n10\nIII\nChính sách tài khóa\nPhan Huy Đường Ch.3; Luật NSNN\nPS-03 giao\n\n\n11\nIII\nChính sách tiền tệ\nPhan Huy Đường Ch.4\n—\n\n\n12\nIII\nThương mại — đầu tư — công nghiệp\nRodrik Ch.4–5\nPS-03 nộp\n\n\n13\nIV\nĐặc thù QLKT Việt Nam\nVăn kiện Đại hội XIII\n—\n\n\n14\nIV\nHội nhập kinh tế quốc tế\nWorld Bank VDR\nĐăng ký nhóm thuyết trình\n\n\n15\nIV\nTổng ôn và thuyết trình nhóm\n—\n🎤 Thuyết trình nhóm\n\n\nThi\n—\nThi cuối kỳ (90 phút, tự luận)\nToàn bộ\n⚠️ Thi cuối kỳ"
+  },
+  {
+    "objectID": "schedule.html#mốc-thời-gian-quan-trọng",
+    "href": "schedule.html#mốc-thời-gian-quan-trọng",
+    "title": "Lịch học 15 tuần",
+    "section": "Mốc thời gian quan trọng",
+    "text": "Mốc thời gian quan trọng\n\n\n\n\n\n\nWarningCác mốc bắt buộc\n\n\n\n\nTuần 3: Phát Problem Set 01.\nTuần 4: Hạn nộp Problem Set 01.\nTuần 6: Phát Problem Set 02.\nTuần 8: Kiểm tra giữa kỳ + Hạn nộp Problem Set 02.\nTuần 10: Phát Problem Set 03.\nTuần 12: Hạn nộp Problem Set 03.\nTuần 14: Hạn đăng ký nhóm thuyết trình.\nTuần 15: Thuyết trình nhóm trên lớp.\nTuần thi: Thi cuối kỳ (lịch thi do nhà trường công bố)."
+  },
+  {
+    "objectID": "schedule.html#khối-lượng-học-tập-kỳ-vọng",
+    "href": "schedule.html#khối-lượng-học-tập-kỳ-vọng",
+    "title": "Lịch học 15 tuần",
+    "section": "Khối lượng học tập kỳ vọng",
+    "text": "Khối lượng học tập kỳ vọng\nTheo chuẩn 1 tín chỉ = 15 tiết lên lớp + 30 giờ tự học, môn 3 tín chỉ kỳ vọng:\n\n\n\nHoạt động\nGiờ/tuần\n\n\n\n\nLên lớp\n3\n\n\nĐọc tài liệu trước giờ học\n3\n\n\nLàm bài tập\n2\n\n\nÔn tập, đọc mở rộng\n1\n\n\nTổng/tuần\n~9\n\n\n\nTrên 15 tuần ≈ 135 giờ học tập cho môn này."
+  },
+  {
+    "objectID": "schedule.html#buổi-học-bù",
+    "href": "schedule.html#buổi-học-bù",
+    "title": "Lịch học 15 tuần",
+    "section": "Buổi học bù",
+    "text": "Buổi học bù\nNếu có buổi học bù do nghỉ lễ hoặc giảng viên đi công tác, lịch bù sẽ được công bố ở trang này.\nLần cập nhật cuối: cuối tháng 5/2026"
+  },
+  {
+    "objectID": "exams/index.html",
+    "href": "exams/index.html",
+    "title": "Đề thi mẫu",
+    "section": "",
+    "text": "Thời gian: 60 phút.\nHình thức: 50% trắc nghiệm khách quan + 50% tự luận ngắn.\nPhạm vi: Tuần 1–8 (Phần I và Phần II).\nTài liệu: Không sử dụng tài liệu.\n\n\n\n\n\nThời gian: 90 phút.\nHình thức: Tự luận (3–4 câu).\nPhạm vi: Toàn bộ chương trình.\nTài liệu: Không sử dụng tài liệu."
+  },
+  {
+    "objectID": "exams/index.html#cấu-trúc-thi",
+    "href": "exams/index.html#cấu-trúc-thi",
+    "title": "Đề thi mẫu",
+    "section": "",
+    "text": "Thời gian: 60 phút.\nHình thức: 50% trắc nghiệm khách quan + 50% tự luận ngắn.\nPhạm vi: Tuần 1–8 (Phần I và Phần II).\nTài liệu: Không sử dụng tài liệu.\n\n\n\n\n\nThời gian: 90 phút.\nHình thức: Tự luận (3–4 câu).\nPhạm vi: Toàn bộ chương trình.\nTài liệu: Không sử dụng tài liệu."
+  },
+  {
+    "objectID": "exams/index.html#đề-mẫu-giữa-kỳ",
+    "href": "exams/index.html#đề-mẫu-giữa-kỳ",
+    "title": "Đề thi mẫu",
+    "section": "Đề mẫu giữa kỳ",
+    "text": "Đề mẫu giữa kỳ\n\n\n\n\n\n\nNote\n\n\n\nĐề mẫu sẽ được phát ở Tuần 7 để sinh viên ôn tập. File PDF đính kèm khi sẵn sàng.\n\n\n\nCấu trúc đề mẫu (gợi ý)\nPhần I — Trắc nghiệm (5 điểm, 20 câu × 0.25đ)\nCác câu hỏi về khái niệm, định nghĩa, phân loại. Ví dụ:\n\nCâu nào KHÔNG phải là chức năng cơ bản của quản lý kinh tế?\nA. Kế hoạch hóa B. Tổ chức C. Lãnh đạo D. Tiêu dùng ✓ E. Kiểm soát\n\nPhần II — Tự luận ngắn (5 điểm, 2 câu × 2.5đ)\n\nCâu 1: Trình bày 2–3 phương pháp quản lý kinh tế chính, đưa ví dụ.\nCâu 2: Phân tích một trường hợp cụ thể qua khung hệ thống quản lý kinh tế."
+  },
+  {
+    "objectID": "exams/index.html#đề-mẫu-cuối-kỳ",
+    "href": "exams/index.html#đề-mẫu-cuối-kỳ",
+    "title": "Đề thi mẫu",
+    "section": "Đề mẫu cuối kỳ",
+    "text": "Đề mẫu cuối kỳ\n\n\n\n\n\n\nNote\n\n\n\nĐề mẫu cuối kỳ sẽ phát ở Tuần 14.\n\n\n\nCấu trúc đề mẫu (gợi ý)\nCâu 1 (3 điểm) — Phân tích khái niệm\nMột câu hỏi yêu cầu trình bày + phân biệt các khái niệm cốt lõi. Ví dụ:\n\nPhân biệt quản lý nhà nước về kinh tế và quản trị kinh doanh. Cho biết vì sao cả hai đều quan trọng trong nền kinh tế thị trường.\n\nCâu 2 (3 điểm) — Phân tích chính sách\nMột câu hỏi vận dụng khung lý luận vào tình huống thực tế.\n\nPhân tích chính sách tài khóa của Việt Nam trong giai đoạn 2020–2024 dưới tác động của đại dịch Covid-19. Đánh giá hiệu quả qua khung 4 chức năng QLKT.\n\nCâu 3 (2 điểm) — Lập luận\nCâu hỏi mở yêu cầu lập luận cá nhân có căn cứ.\n\n“Trong nền kinh tế thị trường định hướng XHCN, vai trò của Nhà nước nên giảm dần theo thời gian.” Bạn đồng ý hay không? Lập luận của bạn.\n\nCâu 4 (2 điểm) — Liên hệ thực tiễn\n\nLựa chọn một vấn đề quản lý kinh tế nổi bật của Việt Nam trong 12 tháng qua. Phân tích nguyên nhân, đề xuất giải pháp."
+  },
+  {
+    "objectID": "exams/index.html#tiêu-chí-chấm-tự-luận",
+    "href": "exams/index.html#tiêu-chí-chấm-tự-luận",
+    "title": "Đề thi mẫu",
+    "section": "Tiêu chí chấm tự luận",
+    "text": "Tiêu chí chấm tự luận\n\n\n\nTiêu chí\nTrọng số\n\n\n\n\nĐúng khái niệm cốt lõi\n30%\n\n\nCó ví dụ thực tế cụ thể\n25%\n\n\nLập luận logic, có cấu trúc\n25%\n\n\nVăn phong học thuật, ít lỗi\n10%\n\n\nLiên hệ với tài liệu đã học (sách, bài đọc)\n10%"
+  },
+  {
+    "objectID": "exams/index.html#đề-thi-các-năm-trước",
+    "href": "exams/index.html#đề-thi-các-năm-trước",
+    "title": "Đề thi mẫu",
+    "section": "Đề thi các năm trước",
+    "text": "Đề thi các năm trước\n\n\n\n\n\n\nKhi có đề thi các năm trước, sẽ cập nhật ở mục này dưới dạng PDF download.\n\n\n\n\n(chưa có)"
+  },
+  {
+    "objectID": "lectures/week-15.html",
+    "href": "lectures/week-15.html",
+    "title": "Tuần 15 — Tổng ôn và thuyết trình nhóm",
+    "section": "",
+    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: — ôn tập 14 tuần — thuyết trình nhóm —.\nVận dụng được khung phân tích của tuần 15 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần IV — QLKT Việt Nam",
+      "Tuần 15 — Tổng ôn và thuyết trình nhóm"
+    ]
+  },
+  {
+    "objectID": "lectures/week-15.html#dàn-ý-dự-kiến",
+    "href": "lectures/week-15.html#dàn-ý-dự-kiến",
+    "title": "Tuần 15 — Tổng ôn và thuyết trình nhóm",
+    "section": "Dàn ý dự kiến",
+    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần IV — QLKT Việt Nam",
+      "Tuần 15 — Tổng ôn và thuyết trình nhóm"
+    ]
+  },
+  {
+    "objectID": "lectures/week-15.html#khái-niệm-cốt-lõi-sẽ-học",
+    "href": "lectures/week-15.html#khái-niệm-cốt-lõi-sẽ-học",
+    "title": "Tuần 15 — Tổng ôn và thuyết trình nhóm",
+    "section": "Khái niệm cốt lõi sẽ học",
+    "text": "Khái niệm cốt lõi sẽ học\n\n— ôn tập 14 tuần — thuyết trình nhóm —",
+    "crumbs": [
+      "Trang chủ",
+      "Phần IV — QLKT Việt Nam",
+      "Tuần 15 — Tổng ôn và thuyết trình nhóm"
+    ]
+  },
+  {
+    "objectID": "lectures/week-15.html#đọc-trước",
+    "href": "lectures/week-15.html#đọc-trước",
+    "title": "Tuần 15 — Tổng ôn và thuyết trình nhóm",
+    "section": "Đọc trước",
+    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần IV — QLKT Việt Nam",
+      "Tuần 15 — Tổng ôn và thuyết trình nhóm"
+    ]
+  },
+  {
+    "objectID": "lectures/week-15.html#tự-kiểm-tra",
+    "href": "lectures/week-15.html#tự-kiểm-tra",
+    "title": "Tuần 15 — Tổng ôn và thuyết trình nhóm",
+    "section": "Tự kiểm tra",
+    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 15 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 14 | Đây là tuần cuối của môn học.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần IV — QLKT Việt Nam",
+      "Tuần 15 — Tổng ôn và thuyết trình nhóm"
+    ]
+  },
+  {
+    "objectID": "lectures/week-01.html",
+    "href": "lectures/week-01.html",
+    "title": "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế",
+    "section": "",
+    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được định nghĩa, đối tượng và phương pháp nghiên cứu của môn Nguyên lý Quản lý Kinh tế.\nPhân biệt quản lý kinh tế với các môn liên quan: kinh tế học, quản trị kinh doanh, quản lý nhà nước.\nGiải thích vì sao QLKT vừa mang tính khoa học vừa mang tính nghệ thuật.\nMô tả cấu trúc 15 tuần của môn học và yêu cầu đối với sinh viên.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần I — Cơ sở lý luận",
+      "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-01.html#quản-lý-kinh-tế-là-gì",
+    "href": "lectures/week-01.html#quản-lý-kinh-tế-là-gì",
+    "title": "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế",
+    "section": "1.1 Quản lý kinh tế là gì?",
+    "text": "1.1 Quản lý kinh tế là gì?\n\nĐịnh nghĩa\nQuản lý kinh tế là quá trình tác động có ý thức, có tổ chức và có hướng đích của chủ thể quản lý lên đối tượng bị quản lý — tức là các hoạt động kinh tế và các nguồn lực kinh tế — nhằm đạt được những mục tiêu kinh tế và xã hội nhất định trong những điều kiện môi trường cụ thể.\nĐịnh nghĩa này gồm năm thành tố cần ghi nhớ:\n\nChủ thể quản lý — người ra quyết định (cá nhân, tập thể, tổ chức, Nhà nước).\nĐối tượng quản lý — hoạt động kinh tế và các nguồn lực (nhân lực, vốn, tài nguyên, công nghệ).\nMục tiêu — kết quả kinh tế và xã hội mong muốn.\nCông cụ và phương pháp — cách thức tác động.\nMôi trường — bối cảnh kinh tế, chính trị, xã hội, công nghệ.\n\n\n\nKhác biệt với các môn liên quan\n\n\n\n\n\n\n\n\nMôn học\nTrọng tâm\nCâu hỏi điển hình\n\n\n\n\nKinh tế học\nMô tả và giải thích các quy luật kinh tế\nVì sao giá tăng khi cầu vượt cung?\n\n\nQuản trị kinh doanh\nQuản lý ở cấp doanh nghiệp\nLàm sao tối đa hóa lợi nhuận của doanh nghiệp X?\n\n\nQuản lý nhà nước về kinh tế\nVai trò Nhà nước trong điều tiết\nChính sách nào giúp ổn định lạm phát?\n\n\nNguyên lý QLKT\nKhung lý luận tổng quát về quản lý các hoạt động kinh tế ở mọi cấp\nQuản lý kinh tế phải dựa trên những nguyên tắc nào?\n\n\n\nQLKT nằm ở vị trí cầu nối: lấy các quy luật từ kinh tế học làm nền, nhưng quan tâm đến việc vận dụng các quy luật đó để quản lý — gần với khoa học quản lý hơn là khoa học mô tả.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần I — Cơ sở lý luận",
+      "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-01.html#đối-tượng-và-phương-pháp-nghiên-cứu",
+    "href": "lectures/week-01.html#đối-tượng-và-phương-pháp-nghiên-cứu",
+    "title": "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế",
+    "section": "1.2 Đối tượng và phương pháp nghiên cứu",
+    "text": "1.2 Đối tượng và phương pháp nghiên cứu\n\nĐối tượng nghiên cứu\nĐối tượng nghiên cứu của môn Nguyên lý QLKT là các quy luật, nguyên tắc, chức năng, phương pháp và công cụ trong quản lý các quá trình kinh tế ở tầm vĩ mô và trung mô, đặc biệt là:\n\nMối quan hệ giữa chủ thể quản lý (Nhà nước, các tổ chức) và đối tượng quản lý (nền kinh tế, các ngành, các vùng).\nHệ thống công cụ điều tiết kinh tế (chính sách, pháp luật, kế hoạch, đòn bẩy kinh tế).\nQuá trình ra quyết định kinh tế ở các cấp.\n\n\n\nPhương pháp nghiên cứu\nMôn học sử dụng tổng hợp ba nhóm phương pháp:\n\nPhương pháp duy vật biện chứng và duy vật lịch sử — đặt vấn đề quản lý kinh tế trong bối cảnh lịch sử cụ thể, thấy rõ tính phát triển và mâu thuẫn.\nPhương pháp trừu tượng hóa khoa học — gạt bỏ những yếu tố ngẫu nhiên để rút ra bản chất chung.\nPhương pháp định lượng và mô hình hóa — sử dụng số liệu thống kê, phân tích kinh tế lượng cơ bản.\n\n\n\n\n\n\n\nTip💡 Trong môn này\n\n\n\nChúng ta sẽ sử dụng Stata ở những tuần có nội dung định lượng. Sinh viên không cần là chuyên gia Stata — chỉ cần đọc hiểu được code và biết tự chạy lại được các ví dụ.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần I — Cơ sở lý luận",
+      "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-01.html#vai-trò-của-qlkt-trong-khoa-học-và-thực-tiễn",
+    "href": "lectures/week-01.html#vai-trò-của-qlkt-trong-khoa-học-và-thực-tiễn",
+    "title": "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế",
+    "section": "1.3 Vai trò của QLKT trong khoa học và thực tiễn",
+    "text": "1.3 Vai trò của QLKT trong khoa học và thực tiễn\n\nVai trò khoa học\nQLKT đóng vai trò hợp lưu giữa khoa học quản lý và khoa học kinh tế:\n\nCung cấp khung phân tích chung cho mọi nghiên cứu sâu hơn về quản lý ngành, quản lý vùng, quản lý dự án.\nĐặt nền tảng tư duy hệ thống cho người làm chính sách và quản lý.\n\n\n\nVai trò thực tiễn\nĐối với một sinh viên kinh tế năm 3–4, môn này có ba giá trị thực tiễn:\n\nĐọc hiểu chính sách. Sau môn học, bạn có thể đọc một thông tư hay một đề án chính sách và hiểu vì sao nó được thiết kế như vậy.\nTư duy hệ thống. Khi đứng trước một vấn đề thực tế, biết phân biệt đâu là vấn đề của quy luật (không thể đổi), đâu là vấn đề của cách quản lý (có thể đổi).\nNền cho các môn sau. Quản lý ngân sách, Quản lý dự án công, Phân tích chính sách — tất cả đều dựa trên khung của môn này.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần I — Cơ sở lý luận",
+      "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-01.html#tính-khoa-học-và-tính-nghệ-thuật",
+    "href": "lectures/week-01.html#tính-khoa-học-và-tính-nghệ-thuật",
+    "title": "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế",
+    "section": "1.4 Tính khoa học và tính nghệ thuật",
+    "text": "1.4 Tính khoa học và tính nghệ thuật\nMột câu hỏi cổ điển: Quản lý là khoa học hay nghệ thuật? Trả lời: cả hai.\n\n\nTính khoa học\n\nDựa trên quy luật khách quan (cung-cầu, giá trị, năng suất…).\nCó hệ thống khái niệm, nguyên tắc, phương pháp được kiểm chứng.\nCó thể học, truyền đạt và đo lường được phần lớn.\n\n\n\nTính nghệ thuật\n\nVận dụng quy luật vào hoàn cảnh cụ thể — đòi hỏi phán đoán.\nBao gồm trực giác, kinh nghiệm, và cảm nhận về con người.\nKhông thể truyền đạt hết bằng sách vở — cần thực hành.\n\n\n\nMột nhà quản lý kinh tế giỏi phải có cả hai. Học sách giúp bạn không phạm sai lầm cơ bản. Kinh nghiệm giúp bạn ra quyết định đúng trong hoàn cảnh khó.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần I — Cơ sở lý luận",
+      "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-01.html#ví-dụ-minh-họa-với-dữ-liệu-việt-nam",
+    "href": "lectures/week-01.html#ví-dụ-minh-họa-với-dữ-liệu-việt-nam",
+    "title": "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế",
+    "section": "1.5 Ví dụ minh họa với dữ liệu Việt Nam",
+    "text": "1.5 Ví dụ minh họa với dữ liệu Việt Nam\nĐể cảm nhận quy mô và động thái của nền kinh tế Việt Nam — đối tượng quản lý chính của môn này — hãy nhìn vào dữ liệu GDP thực tế từ Đổi mới (1986) đến nay.\n\n\n\n\n\n\nNote📊 Stata exercise — chạy thử ở nhà\n\n\n\nTải bộ dữ liệu vn_gdp_1986_2024.csv từ thư mục data/ (sẽ phát ở tuần này). Chạy lệnh sau:\n\n\n\n* Đọc dữ liệu GDP thực tế Việt Nam 1986-2024\nimport delimited \"../data/vn_gdp_1986_2024.csv\", clear case(lower)\n\n* Khai báo dữ liệu chuỗi thời gian\ntsset year\n\n* Tóm tắt\nsummarize gdp_growth\n\n* Vẽ biểu đồ tăng trưởng GDP qua các giai đoạn\ntwoway (line gdp_growth year), ///\n    title(\"Tăng trưởng GDP Việt Nam, 1986-2024\") ///\n    ytitle(\"Tăng trưởng GDP thực (%)\") ///\n    xtitle(\"Năm\") ///\n    xlabel(1986(4)2024) ///\n    yline(0, lcolor(red))\n\n* Tính tăng trưởng trung bình từng giai đoạn\ngen period = .\nreplace period = 1 if year &gt;= 1986 & year &lt;= 1996  // Đầu Đổi mới\nreplace period = 2 if year &gt;= 1997 & year &lt;= 2006  // Hậu khủng hoảng châu Á\nreplace period = 3 if year &gt;= 2007 & year &lt;= 2019  // Gia nhập WTO\nreplace period = 4 if year &gt;= 2020 & year &lt;= 2024  // Covid và phục hồi\n\nlabel define p 1 \"1986-1996 Đầu Đổi mới\" ///\n               2 \"1997-2006 Hậu KH châu Á\" ///\n               3 \"2007-2019 Gia nhập WTO\" ///\n               4 \"2020-2024 Covid + phục hồi\"\nlabel values period p\n\ntabstat gdp_growth, by(period) stat(mean sd min max n) format(%6.2f)\n\n\n\n\n\n. * Đọc dữ liệu GDP thực tế Việt Nam 1986-2024\n. import delimited \"../data/vn_gdp_1986_2024.csv\", clear case(lower)\n(encoding automatically selected: UTF-8)\n(3 vars, 39 obs)\n\n. \n. * Khai báo dữ liệu chuỗi thời gian\n. tsset year\n\nTime variable: year, 1986 to 2024\n        Delta: 1 unit\n\n. \n. * Tóm tắt\n. summarize gdp_growth\n\n    Variable |        Obs        Mean    Std. dev.       Min        Max\n-------------+---------------------------------------------------------\n  gdp_growth |         39    6.362564    1.662904       2.58       9.54\n\n. \n. * Vẽ biểu đồ tăng trưởng GDP qua các giai đoạn\n. twoway (line gdp_growth year), ///\n&gt;     title(\"Tăng trưởng GDP Việt Nam, 1986-2024\") ///\n&gt;     ytitle(\"Tăng trưởng GDP thực (%)\") ///\n&gt;     xtitle(\"Năm\") ///\n&gt;     xlabel(1986(4)2024) ///\n&gt;     yline(0, lcolor(red))\n\n. \n. * Tính tăng trưởng trung bình từng giai đoạn\n. gen period = .\n(39 missing values generated)\n\n. replace period = 1 if year &gt;= 1986 & year &lt;= 1996  // Đầu Đổi mới\n(11 real changes made)\n\n. replace period = 2 if year &gt;= 1997 & year &lt;= 2006  // Hậu khủng hoảng châu Á\n(10 real changes made)\n\n. replace period = 3 if year &gt;= 2007 & year &lt;= 2019  // Gia nhập WTO\n(13 real changes made)\n\n. replace period = 4 if year &gt;= 2020 & year &lt;= 2024  // Covid và phục hồi\n(5 real changes made)\n\n. \n. label define p 1 \"1986-1996 Đầu Đổi mới\" ///\n&gt;                2 \"1997-2006 Hậu KH châu Á\" ///\n&gt;                3 \"2007-2019 Gia nhập WTO\" ///\n&gt;                4 \"2020-2024 Covid + phục hồi\"\n\n. label values period p\n\n. \n. tabstat gdp_growth, by(period) stat(mean sd min max n) format(%6.2f)\n\nSummary for variables: gdp_growth\nGroup variable: period \n\n          period |      Mean        SD       Min       Max         N\n-----------------+--------------------------------------------------\n1986-1996 Đầu Đổ |      6.75      2.38      2.79      9.54     11.00\n1997-2006 Hậu KH |      6.70      0.98      4.77      8.15     10.00\n2007-2019 Gia nh |      6.25      0.67      5.25      7.13     13.00\n2020-2024 Covid  |      5.13      2.43      2.58      8.02      5.00\n-----------------+--------------------------------------------------\n           Total |      6.36      1.66      2.58      9.54     39.00\n--------------------------------------------------------------------\n\n. \n\n\n\n\n\n\n\n\n\nQuan sát điển hình (sẽ thảo luận trên lớp):\n\nGiai đoạn nào tăng trưởng cao nhất? Vì sao?\nCó sự kiện chính sách hoặc cú sốc bên ngoài nào ứng với từng giai đoạn?\nTăng trưởng có chậm lại theo thời gian không? Nếu có, đó là vấn đề quản lý hay vấn đề quy luật (mức GDP đầu người đã cao hơn)?",
+    "crumbs": [
+      "Trang chủ",
+      "Phần I — Cơ sở lý luận",
+      "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-01.html#cấu-trúc-môn-học-và-kỳ-vọng",
+    "href": "lectures/week-01.html#cấu-trúc-môn-học-và-kỳ-vọng",
+    "title": "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế",
+    "section": "1.6 Cấu trúc môn học và kỳ vọng",
+    "text": "1.6 Cấu trúc môn học và kỳ vọng\nNhư đã trình bày ở trang Đề cương:\n\n15 tuần × 3 tiết = 45 tiết lên lớp.\nĐọc trước mỗi buổi 1 chương giáo trình.\n3 bài tập (Tuần 3-4, 6-8, 10-12).\nKiểm tra giữa kỳ tuần 8, thuyết trình nhóm tuần 15, thi cuối kỳ.\n\n\n\n\n\n\n\nWarning⚠️ Khuyến nghị thực tế\n\n\n\nMôn này nhiều khái niệm trừu tượng. Nếu chỉ “học thuộc” sẽ rất khó nhớ và khó dùng. Hãy:\n\nĐọc trước mỗi buổi — đừng đến lớp với đầu trống.\nLiên hệ thực tế — mỗi khái niệm thử nghĩ ra 1 ví dụ Việt Nam đương đại.\nĐặt câu hỏi — không hiểu thì hỏi ngay, đừng đợi đến kiểm tra.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần I — Cơ sở lý luận",
+      "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-01.html#tự-kiểm-tra",
+    "href": "lectures/week-01.html#tự-kiểm-tra",
+    "title": "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế",
+    "section": "1.7 Tự kiểm tra",
+    "text": "1.7 Tự kiểm tra\n\nCâu hỏi tự luận ngắn\n\nPhân biệt quản lý kinh tế với quản trị kinh doanh. Đưa ra một ví dụ cho mỗi loại.\nTại sao nói quản lý kinh tế vừa là khoa học vừa là nghệ thuật? Liệt kê 2 ví dụ cho mỗi vế.\nVai trò của môn Nguyên lý QLKT với người sẽ làm việc tại cơ quan nhà nước về kinh tế là gì?\n\n\n\nBài tập nhỏ\nChọn một chính sách kinh tế gần đây của Việt Nam (vd: gói hỗ trợ Covid 2021, giảm thuế VAT 2024, v.v.) — phân tích bằng năm thành tố của quản lý kinh tế (chủ thể, đối tượng, mục tiêu, công cụ, môi trường). Viết ngắn 300–400 từ.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần I — Cơ sở lý luận",
+      "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-01.html#đọc-thêm",
+    "href": "lectures/week-01.html#đọc-thêm",
+    "title": "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế",
+    "section": "Đọc thêm",
+    "text": "Đọc thêm\n\nĐỗ Hoàng Toàn, Mai Văn Bưu (chủ biên). Giáo trình Quản lý kinh tế, Chương 1.\nAcemoglu, D., & Robinson, J. A. (2012). Why Nations Fail, Chương 3: “The making of prosperity and poverty”.\nVăn kiện Đại hội Đảng XIII, mục III.2: “Hoàn thiện toàn diện, đồng bộ thể chế phát triển nền kinh tế thị trường định hướng XHCN”.\n\n\nTuần tiếp theo: Tuần 2 — Lịch sử tư tưởng quản lý kinh tế →",
+    "crumbs": [
+      "Trang chủ",
+      "Phần I — Cơ sở lý luận",
+      "Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-07.html",
+    "href": "lectures/week-07.html",
+    "title": "Tuần 07 — Phương pháp quản lý kinh tế",
+    "section": "",
+    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Đòn bẩy kinh tế; mệnh lệnh hành chính; thuyết phục; kết hợp linh hoạt.\nVận dụng được khung phân tích của tuần 07 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần II — Hệ thống QLKT",
+      "Tuần 07 — Phương pháp quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-07.html#dàn-ý-dự-kiến",
+    "href": "lectures/week-07.html#dàn-ý-dự-kiến",
+    "title": "Tuần 07 — Phương pháp quản lý kinh tế",
+    "section": "Dàn ý dự kiến",
+    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần II — Hệ thống QLKT",
+      "Tuần 07 — Phương pháp quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-07.html#khái-niệm-cốt-lõi-sẽ-học",
+    "href": "lectures/week-07.html#khái-niệm-cốt-lõi-sẽ-học",
+    "title": "Tuần 07 — Phương pháp quản lý kinh tế",
+    "section": "Khái niệm cốt lõi sẽ học",
+    "text": "Khái niệm cốt lõi sẽ học\n\nĐòn bẩy kinh tế\nmệnh lệnh hành chính\nthuyết phục\nkết hợp linh hoạt",
+    "crumbs": [
+      "Trang chủ",
+      "Phần II — Hệ thống QLKT",
+      "Tuần 07 — Phương pháp quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-07.html#đọc-trước",
+    "href": "lectures/week-07.html#đọc-trước",
+    "title": "Tuần 07 — Phương pháp quản lý kinh tế",
+    "section": "Đọc trước",
+    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần II — Hệ thống QLKT",
+      "Tuần 07 — Phương pháp quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-07.html#tự-kiểm-tra",
+    "href": "lectures/week-07.html#tự-kiểm-tra",
+    "title": "Tuần 07 — Phương pháp quản lý kinh tế",
+    "section": "Tự kiểm tra",
+    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 07 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 6 | Tuần tiếp theo: Tuần 8 →",
+    "crumbs": [
+      "Trang chủ",
+      "Phần II — Hệ thống QLKT",
+      "Tuần 07 — Phương pháp quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-08.html",
+    "href": "lectures/week-08.html",
+    "title": "Tuần 08 — Cán bộ và thông tin trong QLKT",
+    "section": "",
+    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Năng lực lãnh đạo; quy hoạch cán bộ; thông tin bất cân xứng; quyết định trong điều kiện rủi ro.\nVận dụng được khung phân tích của tuần 08 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần II — Hệ thống QLKT",
+      "Tuần 08 — Cán bộ và thông tin trong QLKT"
+    ]
+  },
+  {
+    "objectID": "lectures/week-08.html#dàn-ý-dự-kiến",
+    "href": "lectures/week-08.html#dàn-ý-dự-kiến",
+    "title": "Tuần 08 — Cán bộ và thông tin trong QLKT",
+    "section": "Dàn ý dự kiến",
+    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần II — Hệ thống QLKT",
+      "Tuần 08 — Cán bộ và thông tin trong QLKT"
+    ]
+  },
+  {
+    "objectID": "lectures/week-08.html#khái-niệm-cốt-lõi-sẽ-học",
+    "href": "lectures/week-08.html#khái-niệm-cốt-lõi-sẽ-học",
+    "title": "Tuần 08 — Cán bộ và thông tin trong QLKT",
+    "section": "Khái niệm cốt lõi sẽ học",
+    "text": "Khái niệm cốt lõi sẽ học\n\nNăng lực lãnh đạo\nquy hoạch cán bộ\nthông tin bất cân xứng\nquyết định trong điều kiện rủi ro",
+    "crumbs": [
+      "Trang chủ",
+      "Phần II — Hệ thống QLKT",
+      "Tuần 08 — Cán bộ và thông tin trong QLKT"
+    ]
+  },
+  {
+    "objectID": "lectures/week-08.html#đọc-trước",
+    "href": "lectures/week-08.html#đọc-trước",
+    "title": "Tuần 08 — Cán bộ và thông tin trong QLKT",
+    "section": "Đọc trước",
+    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần II — Hệ thống QLKT",
+      "Tuần 08 — Cán bộ và thông tin trong QLKT"
+    ]
+  },
+  {
+    "objectID": "lectures/week-08.html#tự-kiểm-tra",
+    "href": "lectures/week-08.html#tự-kiểm-tra",
+    "title": "Tuần 08 — Cán bộ và thông tin trong QLKT",
+    "section": "Tự kiểm tra",
+    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 08 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 7 | Tuần tiếp theo: Tuần 9 →",
+    "crumbs": [
+      "Trang chủ",
+      "Phần II — Hệ thống QLKT",
+      "Tuần 08 — Cán bộ và thông tin trong QLKT"
+    ]
+  },
+  {
+    "objectID": "lectures/week-14.html",
+    "href": "lectures/week-14.html",
+    "title": "Tuần 14 — Hội nhập kinh tế quốc tế",
+    "section": "",
+    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Hội nhập tài chính; cam kết WTO; FTA thế hệ mới; chủ quyền chính sách.\nVận dụng được khung phân tích của tuần 14 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần IV — QLKT Việt Nam",
+      "Tuần 14 — Hội nhập kinh tế quốc tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-14.html#dàn-ý-dự-kiến",
+    "href": "lectures/week-14.html#dàn-ý-dự-kiến",
+    "title": "Tuần 14 — Hội nhập kinh tế quốc tế",
+    "section": "Dàn ý dự kiến",
+    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần IV — QLKT Việt Nam",
+      "Tuần 14 — Hội nhập kinh tế quốc tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-14.html#khái-niệm-cốt-lõi-sẽ-học",
+    "href": "lectures/week-14.html#khái-niệm-cốt-lõi-sẽ-học",
+    "title": "Tuần 14 — Hội nhập kinh tế quốc tế",
+    "section": "Khái niệm cốt lõi sẽ học",
+    "text": "Khái niệm cốt lõi sẽ học\n\nHội nhập tài chính\ncam kết WTO\nFTA thế hệ mới\nchủ quyền chính sách",
+    "crumbs": [
+      "Trang chủ",
+      "Phần IV — QLKT Việt Nam",
+      "Tuần 14 — Hội nhập kinh tế quốc tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-14.html#đọc-trước",
+    "href": "lectures/week-14.html#đọc-trước",
+    "title": "Tuần 14 — Hội nhập kinh tế quốc tế",
+    "section": "Đọc trước",
+    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần IV — QLKT Việt Nam",
+      "Tuần 14 — Hội nhập kinh tế quốc tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-14.html#ví-dụ-định-lượng-với-stata",
+    "href": "lectures/week-14.html#ví-dụ-định-lượng-với-stata",
+    "title": "Tuần 14 — Hội nhập kinh tế quốc tế",
+    "section": "Ví dụ định lượng với Stata",
+    "text": "Ví dụ định lượng với Stata\nTrong tuần này, một ví dụ phân tích chính sách bằng dữ liệu Việt Nam sẽ được phát kèm. Code mẫu (sẽ chi tiết hóa):\n* Đọc dữ liệu liên quan tới chủ đề tuần 14\nimport delimited \"data/topic-week-14.csv\", clear case(lower)\nsummarize\n* (chi tiết phân tích — sẽ bổ sung)",
+    "crumbs": [
+      "Trang chủ",
+      "Phần IV — QLKT Việt Nam",
+      "Tuần 14 — Hội nhập kinh tế quốc tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-14.html#tự-kiểm-tra",
+    "href": "lectures/week-14.html#tự-kiểm-tra",
+    "title": "Tuần 14 — Hội nhập kinh tế quốc tế",
+    "section": "Tự kiểm tra",
+    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 14 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 13 | Tuần tiếp theo: Tuần 15 →",
+    "crumbs": [
+      "Trang chủ",
+      "Phần IV — QLKT Việt Nam",
+      "Tuần 14 — Hội nhập kinh tế quốc tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-06.html",
+    "href": "lectures/week-06.html",
+    "title": "Tuần 06 — Cơ cấu tổ chức quản lý kinh tế",
+    "section": "",
+    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Tập trung-phân cấp; mô hình trực tuyến; ma trận; hỗn hợp.\nVận dụng được khung phân tích của tuần 06 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần II — Hệ thống QLKT",
+      "Tuần 06 — Cơ cấu tổ chức quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-06.html#dàn-ý-dự-kiến",
+    "href": "lectures/week-06.html#dàn-ý-dự-kiến",
+    "title": "Tuần 06 — Cơ cấu tổ chức quản lý kinh tế",
+    "section": "Dàn ý dự kiến",
+    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần II — Hệ thống QLKT",
+      "Tuần 06 — Cơ cấu tổ chức quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-06.html#khái-niệm-cốt-lõi-sẽ-học",
+    "href": "lectures/week-06.html#khái-niệm-cốt-lõi-sẽ-học",
+    "title": "Tuần 06 — Cơ cấu tổ chức quản lý kinh tế",
+    "section": "Khái niệm cốt lõi sẽ học",
+    "text": "Khái niệm cốt lõi sẽ học\n\nTập trung-phân cấp\nmô hình trực tuyến\nma trận\nhỗn hợp",
+    "crumbs": [
+      "Trang chủ",
+      "Phần II — Hệ thống QLKT",
+      "Tuần 06 — Cơ cấu tổ chức quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-06.html#đọc-trước",
+    "href": "lectures/week-06.html#đọc-trước",
+    "title": "Tuần 06 — Cơ cấu tổ chức quản lý kinh tế",
+    "section": "Đọc trước",
+    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần II — Hệ thống QLKT",
+      "Tuần 06 — Cơ cấu tổ chức quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-06.html#tự-kiểm-tra",
+    "href": "lectures/week-06.html#tự-kiểm-tra",
+    "title": "Tuần 06 — Cơ cấu tổ chức quản lý kinh tế",
+    "section": "Tự kiểm tra",
+    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 06 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 5 | Tuần tiếp theo: Tuần 7 →",
+    "crumbs": [
+      "Trang chủ",
+      "Phần II — Hệ thống QLKT",
+      "Tuần 06 — Cơ cấu tổ chức quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-03.html",
+    "href": "lectures/week-03.html",
+    "title": "Tuần 03 — Quy luật khách quan và nguyên tắc vận dụng",
+    "section": "",
+    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Quy luật giá trị; cung-cầu; cạnh tranh; tiết kiệm thời gian lao động xã hội.\nVận dụng được khung phân tích của tuần 03 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần I — Cơ sở lý luận",
+      "Tuần 03 — Quy luật khách quan và nguyên tắc vận dụng"
+    ]
+  },
+  {
+    "objectID": "lectures/week-03.html#dàn-ý-dự-kiến",
+    "href": "lectures/week-03.html#dàn-ý-dự-kiến",
+    "title": "Tuần 03 — Quy luật khách quan và nguyên tắc vận dụng",
+    "section": "Dàn ý dự kiến",
+    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần I — Cơ sở lý luận",
+      "Tuần 03 — Quy luật khách quan và nguyên tắc vận dụng"
+    ]
+  },
+  {
+    "objectID": "lectures/week-03.html#khái-niệm-cốt-lõi-sẽ-học",
+    "href": "lectures/week-03.html#khái-niệm-cốt-lõi-sẽ-học",
+    "title": "Tuần 03 — Quy luật khách quan và nguyên tắc vận dụng",
+    "section": "Khái niệm cốt lõi sẽ học",
+    "text": "Khái niệm cốt lõi sẽ học\n\nQuy luật giá trị\ncung-cầu\ncạnh tranh\ntiết kiệm thời gian lao động xã hội",
+    "crumbs": [
+      "Trang chủ",
+      "Phần I — Cơ sở lý luận",
+      "Tuần 03 — Quy luật khách quan và nguyên tắc vận dụng"
+    ]
+  },
+  {
+    "objectID": "lectures/week-03.html#đọc-trước",
+    "href": "lectures/week-03.html#đọc-trước",
+    "title": "Tuần 03 — Quy luật khách quan và nguyên tắc vận dụng",
+    "section": "Đọc trước",
+    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần I — Cơ sở lý luận",
+      "Tuần 03 — Quy luật khách quan và nguyên tắc vận dụng"
+    ]
+  },
+  {
+    "objectID": "lectures/week-03.html#tự-kiểm-tra",
+    "href": "lectures/week-03.html#tự-kiểm-tra",
+    "title": "Tuần 03 — Quy luật khách quan và nguyên tắc vận dụng",
+    "section": "Tự kiểm tra",
+    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 03 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 2 | Tuần tiếp theo: Tuần 4 →",
+    "crumbs": [
+      "Trang chủ",
+      "Phần I — Cơ sở lý luận",
+      "Tuần 03 — Quy luật khách quan và nguyên tắc vận dụng"
+    ]
+  },
+  {
+    "objectID": "lectures/week-02.html",
+    "href": "lectures/week-02.html",
+    "title": "Tuần 02 — Lịch sử tư tưởng quản lý kinh tế",
+    "section": "",
+    "text": "Note🎯 Mục tiêu bài học\n\n\n\nSau bài này, sinh viên có khả năng:\n\nTrình bày được các khái niệm cốt lõi: Trường phái cổ điển; Marxist; Keynes; tân cổ điển; thể chế mới.\nVận dụng được khung phân tích của tuần 02 vào một tình huống thực tế Việt Nam.\nĐặt được câu hỏi nghiên cứu và lựa chọn nguồn dữ liệu phù hợp để trả lời.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần I — Cơ sở lý luận",
+      "Tuần 02 — Lịch sử tư tưởng quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-02.html#dàn-ý-dự-kiến",
+    "href": "lectures/week-02.html#dàn-ý-dự-kiến",
+    "title": "Tuần 02 — Lịch sử tư tưởng quản lý kinh tế",
+    "section": "Dàn ý dự kiến",
+    "text": "Dàn ý dự kiến\n\nGiới thiệu chủ đề — đặt vấn đề và liên hệ với các tuần trước.\nKhái niệm cốt lõi — định nghĩa, phân loại, phân biệt.\nCơ chế hoạt động — quá trình, tác nhân, kết quả.\nỨng dụng tại Việt Nam — ít nhất một ví dụ thực tế đương đại.\nBài tập tự kiểm tra — câu hỏi tự luận và một bài tập nhỏ.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần I — Cơ sở lý luận",
+      "Tuần 02 — Lịch sử tư tưởng quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-02.html#khái-niệm-cốt-lõi-sẽ-học",
+    "href": "lectures/week-02.html#khái-niệm-cốt-lõi-sẽ-học",
+    "title": "Tuần 02 — Lịch sử tư tưởng quản lý kinh tế",
+    "section": "Khái niệm cốt lõi sẽ học",
+    "text": "Khái niệm cốt lõi sẽ học\n\nTrường phái cổ điển\nMarxist\nKeynes\ntân cổ điển\nthể chế mới",
+    "crumbs": [
+      "Trang chủ",
+      "Phần I — Cơ sở lý luận",
+      "Tuần 02 — Lịch sử tư tưởng quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-02.html#đọc-trước",
+    "href": "lectures/week-02.html#đọc-trước",
+    "title": "Tuần 02 — Lịch sử tư tưởng quản lý kinh tế",
+    "section": "Đọc trước",
+    "text": "Đọc trước\n\nGiáo trình QLKT (Đỗ Hoàng Toàn & Mai Văn Bưu), chương tương ứng — sẽ chỉ định cụ thể.\nTài liệu đọc thêm — sẽ bổ sung.",
+    "crumbs": [
+      "Trang chủ",
+      "Phần I — Cơ sở lý luận",
+      "Tuần 02 — Lịch sử tư tưởng quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "lectures/week-02.html#tự-kiểm-tra",
+    "href": "lectures/week-02.html#tự-kiểm-tra",
+    "title": "Tuần 02 — Lịch sử tư tưởng quản lý kinh tế",
+    "section": "Tự kiểm tra",
+    "text": "Tự kiểm tra\n\nTrình bày khái niệm/quy luật chính của tuần 02 bằng lời của bạn.\nCho một ví dụ thực tế Việt Nam minh họa khái niệm trên.\n(Mở rộng) Bạn thấy khung lý thuyết của tuần này còn hạn chế gì khi áp dụng vào thực tiễn?\n\n\n← Tuần trước: Tuần 1 | Tuần tiếp theo: Tuần 3 →",
+    "crumbs": [
+      "Trang chủ",
+      "Phần I — Cơ sở lý luận",
+      "Tuần 02 — Lịch sử tư tưởng quản lý kinh tế"
+    ]
+  },
+  {
+    "objectID": "syllabus.html",
+    "href": "syllabus.html",
+    "title": "Đề cương môn học",
+    "section": "",
+    "text": "Mục\nNội dung\n\n\n\n\nTên môn học\nNguyên lý Quản lý Kinh tế\n\n\nMã môn\ncập nhật mã môn theo chương trình\n\n\nSố tín chỉ\n3\n\n\nTổng thời lượng\n45 tiết lên lớp + ~90 giờ tự học\n\n\nHọc kỳ\ncập nhật\n\n\nĐối tượng\nSinh viên cử nhân năm 3-4, các ngành Kinh tế / Quản lý\n\n\nĐiều kiện tiên quyết\nKinh tế Vi mô, Kinh tế Vĩ mô, Thống kê\n\n\nHình thức\nTrực tiếp kết hợp tự học có hướng dẫn"
+  },
+  {
+    "objectID": "syllabus.html#thông-tin-chung",
+    "href": "syllabus.html#thông-tin-chung",
+    "title": "Đề cương môn học",
+    "section": "",
+    "text": "Mục\nNội dung\n\n\n\n\nTên môn học\nNguyên lý Quản lý Kinh tế\n\n\nMã môn\ncập nhật mã môn theo chương trình\n\n\nSố tín chỉ\n3\n\n\nTổng thời lượng\n45 tiết lên lớp + ~90 giờ tự học\n\n\nHọc kỳ\ncập nhật\n\n\nĐối tượng\nSinh viên cử nhân năm 3-4, các ngành Kinh tế / Quản lý\n\n\nĐiều kiện tiên quyết\nKinh tế Vi mô, Kinh tế Vĩ mô, Thống kê\n\n\nHình thức\nTrực tiếp kết hợp tự học có hướng dẫn"
+  },
+  {
+    "objectID": "syllabus.html#mô-tả-môn-học",
+    "href": "syllabus.html#mô-tả-môn-học",
+    "title": "Đề cương môn học",
+    "section": "2. Mô tả môn học",
+    "text": "2. Mô tả môn học\nMôn học cung cấp hệ thống tri thức nền tảng về quản lý nền kinh tế quốc dân, bao gồm: bản chất, đặc điểm và quy luật khách quan của quản lý kinh tế; hệ thống quản lý kinh tế và các thành tố cấu thành; chức năng, phương pháp và công cụ quản lý; các chính sách kinh tế chủ yếu của Nhà nước; và đặc thù quản lý kinh tế trong điều kiện Việt Nam — nền kinh tế thị trường định hướng xã hội chủ nghĩa và quá trình hội nhập kinh tế quốc tế."
+  },
+  {
+    "objectID": "syllabus.html#mục-tiêu-môn-học",
+    "href": "syllabus.html#mục-tiêu-môn-học",
+    "title": "Đề cương môn học",
+    "section": "3. Mục tiêu môn học",
+    "text": "3. Mục tiêu môn học\nSau khi hoàn thành môn học, sinh viên có khả năng:\n\nVề kiến thức (K)\n\nK1. Trình bày được bản chất, đặc trưng và các quy luật khách quan của quản lý kinh tế.\nK2. Phân tích được cấu trúc của hệ thống quản lý kinh tế và mối quan hệ giữa các thành tố.\nK3. Hiểu rõ các chức năng, phương pháp và công cụ quản lý kinh tế của Nhà nước.\nK4. Đánh giá được vai trò và đặc thù của Nhà nước Việt Nam trong quản lý nền kinh tế.\n\n\n\nVề kỹ năng (S)\n\nS1. Vận dụng được khung phân tích QLKT để mổ xẻ một vấn đề chính sách thực tế.\nS2. Đọc hiểu được các báo cáo kinh tế và tài liệu chính sách của Chính phủ.\nS3. Sử dụng được công cụ định lượng cơ bản (Stata) để phân tích dữ liệu kinh tế vĩ mô.\nS4. Trình bày một vấn đề QLKT có cấu trúc khoa học, bằng cả văn bản và thuyết trình.\n\n\n\nVề thái độ (A)\n\nA1. Có thái độ khách quan, dựa trên bằng chứng khi phân tích vấn đề kinh tế.\nA2. Có ý thức trách nhiệm với các vấn đề phát triển kinh tế của Việt Nam."
+  },
+  {
+    "objectID": "syllabus.html#đánh-giá",
+    "href": "syllabus.html#đánh-giá",
+    "title": "Đề cương môn học",
+    "section": "4. Đánh giá",
+    "text": "4. Đánh giá\n\n\n\n\n\n\n\n\nHình thức\nTỷ trọng\nMô tả\n\n\n\n\nChuyên cần\n10%\nTham gia đầy đủ, tích cực trong giờ học\n\n\nBài tập về nhà\n15%\n3 bài tập / học kỳ, có sử dụng dữ liệu thực\n\n\nKiểm tra giữa kỳ\n25%\nTuần 8, trắc nghiệm + tự luận, 60 phút\n\n\nThuyết trình nhóm\n20%\nTuần 15, nhóm 3–5 sinh viên, đề tài tự chọn từ danh mục\n\n\nThi cuối kỳ\n30%\nTự luận, 90 phút, không dùng tài liệu\n\n\nTổng\n100%\n\n\n\n\n\nTiêu chí đánh giá thuyết trình nhóm\n\n\n\nTiêu chí\nĐiểm\n\n\n\n\nNội dung học thuật (sử dụng đúng khái niệm, có bằng chứng)\n40%\n\n\nCấu trúc và logic trình bày\n20%\n\n\nSử dụng dữ liệu định lượng (có Stata code, biểu đồ)\n20%\n\n\nKỹ năng trình bày và phản biện\n20%"
+  },
+  {
+    "objectID": "syllabus.html#tài-liệu",
+    "href": "syllabus.html#tài-liệu",
+    "title": "Đề cương môn học",
+    "section": "5. Tài liệu",
+    "text": "5. Tài liệu\n\nGiáo trình chính\n\n\n\n\n\n\nPhần này cần cập nhật cho phù hợp với chương trình của trường bạn.\n\n\n\n\nĐỗ Hoàng Toàn, Mai Văn Bưu (chủ biên). Giáo trình Quản lý kinh tế. Nhà xuất bản Đại học Kinh tế Quốc dân. (Cập nhật phiên bản mới nhất)\n\n\n\nTài liệu tham khảo bắt buộc\n\nVũ Đình Bách (chủ biên). Quản lý nhà nước về kinh tế. NXB Lao động.\nPhan Huy Đường. Quản lý nhà nước về kinh tế. NXB Đại học Quốc gia Hà Nội.\n\n\n\nTài liệu tham khảo mở rộng (tiếng Anh)\n\nAcemoglu, D., & Robinson, J. A. (2012). Why Nations Fail: The Origins of Power, Prosperity, and Poverty. Crown Business.\nStiglitz, J. E. (2015). The Great Divide. W. W. Norton.\nRodrik, D. (2007). One Economics, Many Recipes. Princeton University Press.\nWorld Bank. Vietnam Development Report (cập nhật hàng năm). worldbank.org/vietnam\n\n\n\nVăn bản pháp luật và chính sách\n\nHiến pháp 2013 (Điều 50–54 về chế độ kinh tế).\nVăn kiện Đại hội Đảng XIII (mục Định hướng phát triển kinh tế).\nLuật Quản lý nợ công (sửa đổi).\nLuật Ngân sách Nhà nước.\n\n\n\nPhần mềm sử dụng\n\nStata (bản từ 14 trở lên) cho phân tích dữ liệu vĩ mô.\nExcel hoặc Google Sheets cho bài tập cơ bản.\n(Tùy chọn) R hoặc Python — cho sinh viên muốn mở rộng."
+  },
+  {
+    "objectID": "syllabus.html#quy-định-lớp-học",
+    "href": "syllabus.html#quy-định-lớp-học",
+    "title": "Đề cương môn học",
+    "section": "6. Quy định lớp học",
+    "text": "6. Quy định lớp học\n\nChuyên cần\n\nVắng quá 20% số tiết → không đủ điều kiện dự thi cuối kỳ.\nĐến muộn 15 phút trở lên tính là vắng tiết.\n\n\n\nBài tập về nhà\n\nNộp đúng hạn — chậm 1 ngày trừ 10%, chậm trên 7 ngày không nhận.\nBài tập có sử dụng Stata phải nộp kèm file .do và .log.\n\n\n\nLiêm chính học thuật\n\nKhông sao chép. Phát hiện đạo văn → điểm 0 cho cấu phần đó, có thể bị xử lý kỷ luật.\nSử dụng AI (ChatGPT, Claude…) được khuyến khích cho nghiên cứu và học tập, nhưng phải ghi nhận minh bạch: ghi rõ phần nào do AI hỗ trợ, prompt sử dụng. Không khai báo = đạo văn."
+  },
+  {
+    "objectID": "syllabus.html#lịch-học-tóm-tắt",
+    "href": "syllabus.html#lịch-học-tóm-tắt",
+    "title": "Đề cương môn học",
+    "section": "7. Lịch học tóm tắt",
+    "text": "7. Lịch học tóm tắt\nXem trang Lịch học để có bảng 15 tuần đầy đủ."
+  },
+  {
+    "objectID": "syllabus.html#cập-nhật",
+    "href": "syllabus.html#cập-nhật",
+    "title": "Đề cương môn học",
+    "section": "8. Cập nhật",
+    "text": "8. Cập nhật\nĐề cương này có thể được điều chỉnh trong quá trình giảng dạy. Mọi thay đổi được công bố trong tuần kế tiếp.\nPhiên bản đề cương: cập nhật cuối"
+  },
+  {
+    "objectID": "problem-sets/ps-01.html",
+    "href": "problem-sets/ps-01.html",
+    "title": "Problem Set 01 — Khái niệm và hệ thống QLKT",
+    "section": "",
+    "text": "WarningHạn nộp\n\n\n\n23:59, Chủ nhật cuối Tuần 4 — qua email giảng viên với tiêu đề: PS01-MSSV-HọTên"
+  },
+  {
+    "objectID": "problem-sets/ps-01.html#phần-a-tự-luận-40-điểm",
+    "href": "problem-sets/ps-01.html#phần-a-tự-luận-40-điểm",
+    "title": "Problem Set 01 — Khái niệm và hệ thống QLKT",
+    "section": "Phần A — Tự luận (40 điểm)",
+    "text": "Phần A — Tự luận (40 điểm)\n\nCâu 1 (15đ)\nPhân biệt quản lý kinh tế với quản trị kinh doanh. Cho 2 ví dụ thực tế cho mỗi loại để minh họa.\nYêu cầu: 250–350 từ, có dẫn chiếu khái niệm từ giáo trình.\n\n\nCâu 2 (15đ)\nTrình bày năm thành tố của một hệ thống quản lý kinh tế (chủ thể, đối tượng, mục tiêu, công cụ, môi trường). Lấy một chính sách kinh tế gần đây của Việt Nam (ví dụ: gói hỗ trợ doanh nghiệp Covid 2021–2022; giảm thuế VAT 2024; chính sách năng lượng tái tạo…) và phân tích nó qua năm thành tố trên.\nYêu cầu: 350–500 từ.\n\n\nCâu 3 (10đ)\nTại sao nói “quản lý kinh tế vừa là khoa học vừa là nghệ thuật”? Theo bạn, yếu tố nào khiến quản lý kinh tế trong điều kiện Việt Nam đặc biệt cần “tính nghệ thuật”?\nYêu cầu: 200–300 từ."
+  },
+  {
+    "objectID": "problem-sets/ps-01.html#phần-b-định-lượng-với-stata-40-điểm",
+    "href": "problem-sets/ps-01.html#phần-b-định-lượng-với-stata-40-điểm",
+    "title": "Problem Set 01 — Khái niệm và hệ thống QLKT",
+    "section": "Phần B — Định lượng với Stata (40 điểm)",
+    "text": "Phần B — Định lượng với Stata (40 điểm)\n\nBài B1 (20đ) — Phân tích tăng trưởng GDP Việt Nam\nSử dụng bộ dữ liệu vn_gdp_1986_2024.csv (tải từ thư mục data/).\nYêu cầu:\n\nĐọc dữ liệu và mô tả tổng quan (mean, sd, min, max của tốc độ tăng GDP).\nVẽ biểu đồ tăng trưởng GDP qua các năm.\nChia thành 4 giai đoạn: 1986–1996, 1997–2006, 2007–2019, 2020–2024. Tính tăng trưởng trung bình mỗi giai đoạn.\nBình luận: giai đoạn nào tăng trưởng cao nhất? Vì sao? Có chính sách hoặc cú sốc nào ứng với từng giai đoạn?\n\nNộp kèm:\n\nFile .do chứa code đầy đủ, có comment tiếng Việt.\nFile .log chứa output.\nBiểu đồ xuất ra dạng .png hoặc .pdf.\nFile .docx bình luận ~300 từ.\n\nCode khởi đầu (bạn mở rộng thêm):\n* PS01 - B1: Phân tích tăng trưởng GDP Việt Nam 1986-2024\n* Họ tên: ...\n* MSSV: ...\n\nclear all\nset more off\ncd \"đường-dẫn-thư-mục-của-bạn\"\n\nimport delimited \"../data/vn_gdp_1986_2024.csv\", clear case(lower)\ntsset year\n\n* Câu 1: Mô tả tổng quan\nsummarize gdp_growth\n\n* Câu 2: Biểu đồ\ntwoway (line gdp_growth year), ///\n    title(\"Tăng trưởng GDP Việt Nam, 1986-2024\") ///\n    ytitle(\"Tăng trưởng (%)\") xtitle(\"Năm\")\n\n* Câu 3: Theo giai đoạn (bạn tự viết)\n* gen period = ...\n\n* Câu 4: Bình luận trong file .docx riêng\n\n\nBài B2 (20đ) — So sánh quy mô khu vực kinh tế\nSử dụng bộ vn_sector_share.csv chứa tỷ trọng GDP của 3 khu vực (Nông nghiệp, Công nghiệp-Xây dựng, Dịch vụ) qua các năm.\nYêu cầu:\n\nVẽ biểu đồ chồng (stacked area) thể hiện tỷ trọng 3 khu vực theo thời gian.\nTính sự thay đổi tỷ trọng từng khu vực qua 10 năm gần nhất.\nLiên hệ kết quả với quá trình chuyển dịch cơ cấu kinh tế."
+  },
+  {
+    "objectID": "problem-sets/ps-01.html#phần-c-đọc-và-bình-luận-20-điểm",
+    "href": "problem-sets/ps-01.html#phần-c-đọc-và-bình-luận-20-điểm",
+    "title": "Problem Set 01 — Khái niệm và hệ thống QLKT",
+    "section": "Phần C — Đọc và bình luận (20 điểm)",
+    "text": "Phần C — Đọc và bình luận (20 điểm)\nĐọc một trong các tài liệu sau:\n\nVăn kiện Đại hội Đảng XIII, mục III.2 về thể chế kinh tế thị trường định hướng XHCN.\nWorld Bank, Vietnam Development Report (phiên bản mới nhất), chương Tổng quan.\nAcemoglu & Robinson (2012), Why Nations Fail, Chapter 1: “So Close and Yet So Different” (cập nhật bản dịch tiếng Việt nếu có).\n\nViết bình luận 300 từ trả lời: tác giả/văn bản đang nói gì? Bạn có đồng ý không? Áp dụng vào Việt Nam như thế nào?"
+  },
+  {
+    "objectID": "problem-sets/ps-01.html#tiêu-chí-chấm",
+    "href": "problem-sets/ps-01.html#tiêu-chí-chấm",
+    "title": "Problem Set 01 — Khái niệm và hệ thống QLKT",
+    "section": "Tiêu chí chấm",
+    "text": "Tiêu chí chấm\n\n\n\nTiêu chí\nTrọng số\n\n\n\n\nĐúng khái niệm, đúng phương pháp\n40%\n\n\nVí dụ và bằng chứng cụ thể, có dẫn nguồn\n25%\n\n\nLogic và cấu trúc lập luận\n20%\n\n\nTrình bày sạch, code chạy được, có comment\n15%"
+  }
+]

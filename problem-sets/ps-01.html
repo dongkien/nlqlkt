@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Nguyên lý Quản lý Kinh tế</title>
+<title>Problem Set 01 — Khái niệm và hệ thống QLKT – Nguyên lý Quản lý Kinh tế</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -23,25 +23,60 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-3a25ebfbbb03e529eea34e993f2a5140.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-44fb2a9de40de98efce28c89c6896243.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-3a25ebfbbb03e529eea34e993f2a5140.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-44fb2a9de40de98efce28c89c6896243.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": true,
@@ -74,14 +109,14 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles/custom.css">
 </head>
 
-<body class="nav-sidebar docked nav-fixed quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Nguyên lý Quản lý Kinh tế</span>
     </a>
   </div>
@@ -92,27 +127,27 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Trang chủ</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./syllabus.html"> 
+    <a class="nav-link" href="../syllabus.html"> 
 <span class="menu-text">Đề cương</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./schedule.html"> 
+    <a class="nav-link" href="../schedule.html"> 
 <span class="menu-text">Lịch học</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./lectures/index.html"> 
+    <a class="nav-link" href="../lectures/index.html"> 
 <span class="menu-text">Bài giảng</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./problem-sets/index.html"> 
+    <a class="nav-link" href="../problem-sets/index.html"> 
 <span class="menu-text">Bài tập</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./exams/index.html"> 
+    <a class="nav-link" href="../exams/index.html"> 
 <span class="menu-text">Đề thi mẫu</span></a>
   </li>  
 </ul>
@@ -121,183 +156,52 @@ ul.task-list li input[type="checkbox"] {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">← Trang chủ</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">← Trang chủ</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Phần I — Cơ sở lý luận</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./lectures/week-01.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tuần 1 — Giới thiệu môn học và bản chất quản lý kinh tế</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./lectures/week-02.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tuần 02 — Lịch sử tư tưởng quản lý kinh tế</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./lectures/week-03.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tuần 03 — Quy luật khách quan và nguyên tắc vận dụng</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./lectures/week-04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tuần 04 — Hệ thống quản lý kinh tế</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Phần II — Hệ thống QLKT</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./lectures/week-05.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tuần 05 — Chức năng quản lý kinh tế</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./lectures/week-06.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tuần 06 — Cơ cấu tổ chức quản lý kinh tế</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./lectures/week-07.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tuần 07 — Phương pháp quản lý kinh tế</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./lectures/week-08.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tuần 08 — Cán bộ và thông tin trong QLKT</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
- <span class="menu-text">Phần III — Công cụ chính sách</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./lectures/week-09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tuần 09 — Quản lý nhà nước về kinh tế</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./lectures/week-10.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tuần 10 — Chính sách tài khóa</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./lectures/week-11.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tuần 11 — Chính sách tiền tệ</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./lectures/week-12.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tuần 12 — Chính sách thương mại — đầu tư — công nghiệp</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
- <span class="menu-text">Phần IV — QLKT Việt Nam</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./lectures/week-13.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tuần 13 — Đặc thù QLKT Việt Nam</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./lectures/week-14.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tuần 14 — Hội nhập kinh tế quốc tế</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./lectures/week-15.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Tuần 15 — Tổng ôn và thuyết trình nhóm</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Trong bài</h2>
+   
+  <ul>
+  <li><a href="#phần-a-tự-luận-40-điểm" id="toc-phần-a-tự-luận-40-điểm" class="nav-link active" data-scroll-target="#phần-a-tự-luận-40-điểm">Phần A — Tự luận (40 điểm)</a>
+  <ul class="collapse">
+  <li><a href="#câu-1-15đ" id="toc-câu-1-15đ" class="nav-link" data-scroll-target="#câu-1-15đ">Câu 1 (15đ)</a></li>
+  <li><a href="#câu-2-15đ" id="toc-câu-2-15đ" class="nav-link" data-scroll-target="#câu-2-15đ">Câu 2 (15đ)</a></li>
+  <li><a href="#câu-3-10đ" id="toc-câu-3-10đ" class="nav-link" data-scroll-target="#câu-3-10đ">Câu 3 (10đ)</a></li>
+  </ul></li>
+  <li><a href="#phần-b-định-lượng-với-stata-40-điểm" id="toc-phần-b-định-lượng-với-stata-40-điểm" class="nav-link" data-scroll-target="#phần-b-định-lượng-với-stata-40-điểm">Phần B — Định lượng với Stata (40 điểm)</a>
+  <ul class="collapse">
+  <li><a href="#bài-b1-20đ-phân-tích-tăng-trưởng-gdp-việt-nam" id="toc-bài-b1-20đ-phân-tích-tăng-trưởng-gdp-việt-nam" class="nav-link" data-scroll-target="#bài-b1-20đ-phân-tích-tăng-trưởng-gdp-việt-nam">Bài B1 (20đ) — Phân tích tăng trưởng GDP Việt Nam</a></li>
+  <li><a href="#bài-b2-20đ-so-sánh-quy-mô-khu-vực-kinh-tế" id="toc-bài-b2-20đ-so-sánh-quy-mô-khu-vực-kinh-tế" class="nav-link" data-scroll-target="#bài-b2-20đ-so-sánh-quy-mô-khu-vực-kinh-tế">Bài B2 (20đ) — So sánh quy mô khu vực kinh tế</a></li>
+  </ul></li>
+  <li><a href="#phần-c-đọc-và-bình-luận-20-điểm" id="toc-phần-c-đọc-và-bình-luận-20-điểm" class="nav-link" data-scroll-target="#phần-c-đọc-và-bình-luận-20-điểm">Phần C — Đọc và bình luận (20 điểm)</a></li>
+  <li><a href="#tiêu-chí-chấm" id="toc-tiêu-chí-chấm" class="nav-link" data-scroll-target="#tiêu-chí-chấm">Tiêu chí chấm</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content page-columns page-full column-body" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Nguyên lý Quản lý Kinh tế</h1>
-<p class="subtitle lead">Học liệu mở cho sinh viên cử nhân</p>
+<h1 class="title">Problem Set 01 — Khái niệm và hệ thống QLKT</h1>
+<p class="subtitle lead">Bao quát Tuần 1–4. Phát: Tuần 3. Hạn nộp: cuối Tuần 4.</p>
 </div>
 
 
 
-<div class="quarto-title-meta column-body">
+<div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">15 tháng 9, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -307,126 +211,130 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="column-page">
-<section id="về-môn-học" class="level2">
-<h2 class="anchored" data-anchor-id="về-môn-học">Về môn học</h2>
-<p><strong>Nguyên lý quản lý kinh tế</strong> là môn học nền tảng cung cấp hệ thống tri thức cơ bản về <em>bản chất, đặc điểm, nguyên tắc, chức năng, phương pháp và công cụ</em> quản lý nền kinh tế. Sinh viên sau khi hoàn thành môn học có thể phân tích các vấn đề quản lý kinh tế ở tầm vĩ mô và đối chiếu với thực tiễn Việt Nam.</p>
-<div class="grid">
-<div class="g-col-12 g-col-md-8">
-<section id="đối-tượng-và-yêu-cầu" class="level3">
-<h3 class="anchored" data-anchor-id="đối-tượng-và-yêu-cầu">Đối tượng và yêu cầu</h3>
-<p>Học liệu được biên soạn cho <strong>sinh viên cử nhân năm 3–4</strong> thuộc các ngành Kinh tế, Quản lý Kinh tế, Quản trị Kinh doanh và các ngành liên quan. Sinh viên cần đã học qua <em>Kinh tế vi mô</em>, <em>Kinh tế vĩ mô</em> và <em>Thống kê</em> trước khi vào môn này.</p>
-<p>Môn được tổ chức theo <strong>15 tuần × 3 tiết</strong>, tổng 45 tiết lên lớp, kèm khối lượng tự học tương đương ~3× thời lượng lên lớp theo chuẩn tín chỉ.</p>
-</section>
-<section id="bốn-phần-lớn-của-chương-trình" class="level3">
-<h3 class="anchored" data-anchor-id="bốn-phần-lớn-của-chương-trình">Bốn phần lớn của chương trình</h3>
-<ol type="1">
-<li><strong>Cơ sở lý luận</strong> (Tuần 1–4) — bản chất, lịch sử tư tưởng, quy luật, hệ thống QLKT.</li>
-<li><strong>Các yếu tố của hệ thống QLKT</strong> (Tuần 5–8) — chức năng, cơ cấu, phương pháp, cán bộ.</li>
-<li><strong>Công cụ và chính sách QLKT</strong> (Tuần 9–12) — quản lý nhà nước, tài khóa, tiền tệ, thương mại–đầu tư.</li>
-<li><strong>QLKT trong thực tiễn Việt Nam</strong> (Tuần 13–15) — kinh tế thị trường định hướng XHCN, hội nhập, tổng ôn.</li>
-</ol>
-</section>
-</div>
-<div class="g-col-12 g-col-md-4">
-<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>📚 Bắt đầu nhanh
+<span class="screen-reader-only">Warning</span>Hạn nộp
 </div>
 </div>
 <div class="callout-body-container callout-body">
+<p><strong>23:59, Chủ nhật cuối Tuần 4</strong> — qua email giảng viên với tiêu đề: <em>PS01-MSSV-HọTên</em></p>
+</div>
+</div>
+<section id="phần-a-tự-luận-40-điểm" class="level2">
+<h2 class="anchored" data-anchor-id="phần-a-tự-luận-40-điểm">Phần A — Tự luận (40 điểm)</h2>
+<section id="câu-1-15đ" class="level3">
+<h3 class="anchored" data-anchor-id="câu-1-15đ">Câu 1 (15đ)</h3>
+<p>Phân biệt <strong>quản lý kinh tế</strong> với <strong>quản trị kinh doanh</strong>. Cho 2 ví dụ thực tế cho mỗi loại để minh họa.</p>
+<p>Yêu cầu: 250–350 từ, có dẫn chiếu khái niệm từ giáo trình.</p>
+</section>
+<section id="câu-2-15đ" class="level3">
+<h3 class="anchored" data-anchor-id="câu-2-15đ">Câu 2 (15đ)</h3>
+<p>Trình bày <em>năm thành tố</em> của một hệ thống quản lý kinh tế (chủ thể, đối tượng, mục tiêu, công cụ, môi trường). Lấy một <strong>chính sách kinh tế gần đây của Việt Nam</strong> (ví dụ: gói hỗ trợ doanh nghiệp Covid 2021–2022; giảm thuế VAT 2024; chính sách năng lượng tái tạo…) và <strong>phân tích nó qua năm thành tố</strong> trên.</p>
+<p>Yêu cầu: 350–500 từ.</p>
+</section>
+<section id="câu-3-10đ" class="level3">
+<h3 class="anchored" data-anchor-id="câu-3-10đ">Câu 3 (10đ)</h3>
+<p>Tại sao nói “quản lý kinh tế vừa là khoa học vừa là nghệ thuật”? Theo bạn, <em>yếu tố nào</em> khiến quản lý kinh tế trong điều kiện Việt Nam đặc biệt cần “tính nghệ thuật”?</p>
+<p>Yêu cầu: 200–300 từ.</p>
+</section>
+</section>
+<section id="phần-b-định-lượng-với-stata-40-điểm" class="level2">
+<h2 class="anchored" data-anchor-id="phần-b-định-lượng-với-stata-40-điểm">Phần B — Định lượng với Stata (40 điểm)</h2>
+<section id="bài-b1-20đ-phân-tích-tăng-trưởng-gdp-việt-nam" class="level3">
+<h3 class="anchored" data-anchor-id="bài-b1-20đ-phân-tích-tăng-trưởng-gdp-việt-nam">Bài B1 (20đ) — Phân tích tăng trưởng GDP Việt Nam</h3>
+<p>Sử dụng bộ dữ liệu <code>vn_gdp_1986_2024.csv</code> (tải từ thư mục <code>data/</code>).</p>
+<p><strong>Yêu cầu</strong>:</p>
+<ol type="1">
+<li>Đọc dữ liệu và mô tả tổng quan (mean, sd, min, max của tốc độ tăng GDP).</li>
+<li>Vẽ biểu đồ tăng trưởng GDP qua các năm.</li>
+<li>Chia thành 4 giai đoạn: 1986–1996, 1997–2006, 2007–2019, 2020–2024. Tính tăng trưởng trung bình mỗi giai đoạn.</li>
+<li>Bình luận: giai đoạn nào tăng trưởng cao nhất? Vì sao? Có chính sách hoặc cú sốc nào ứng với từng giai đoạn?</li>
+</ol>
+<p>Nộp kèm:</p>
 <ul>
-<li>📋 <a href="./syllabus.html">Đề cương chi tiết</a></li>
-<li>📅 <a href="./schedule.html">Lịch học 15 tuần</a></li>
-<li>🎓 <a href="./lectures/index.html">Tất cả bài giảng</a></li>
-<li>✏️ <a href="./problem-sets/index.html">Bài tập</a></li>
-<li>📝 <a href="./exams/index.html">Đề thi mẫu</a></li>
+<li>File <code>.do</code> chứa code đầy đủ, có comment tiếng Việt.</li>
+<li>File <code>.log</code> chứa output.</li>
+<li>Biểu đồ xuất ra dạng <code>.png</code> hoặc <code>.pdf</code>.</li>
+<li>File <code>.docx</code> bình luận ~300 từ.</li>
 </ul>
-</div>
-</div>
-</div>
-</div>
+<p><strong>Code khởi đầu</strong> (bạn mở rộng thêm):</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* PS01 - B1: Phân tích tăng trưởng GDP Việt Nam 1986-2024</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>* Họ tên: ...</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>* MSSV: ...</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span> <span class="ot">all</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">more</span> <span class="kw">off</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>cd <span class="st">"đường-dẫn-thư-mục-của-bạn"</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>import delimited <span class="st">"../data/vn_gdp_1986_2024.csv"</span>, <span class="kw">clear</span> <span class="kw">case</span>(<span class="fu">lower</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">tsset</span> <span class="fu">year</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>* Câu 1: Mô tả tổng quan</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="kw">summarize</span> gdp_growth</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>* Câu 2: Biểu đồ</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="kw">twoway</span> (<span class="kw">line</span> gdp_growth <span class="fu">year</span>), <span class="co">///</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="bn">title</span>(<span class="st">"Tăng trưởng GDP Việt Nam, 1986-2024"</span>) <span class="co">///</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="bn">ytitle</span>(<span class="st">"Tăng trưởng (%)"</span>) <span class="bn">xtitle</span>(<span class="st">"Năm"</span>)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>* Câu 3: Theo giai đoạn (bạn tự viết)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>* <span class="kw">gen</span> period = ...</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>* Câu 4: Bình luận trong file .docx riêng</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="phan-i" class="level2">
-<h2 class="anchored" data-anchor-id="phan-i">Phần I — Cơ sở lý luận</h2>
-<div class="week-card">
-<p><span class="week-num">Tuần 1</span> · <a href="./lectures/week-01.html" class="h4">Giới thiệu môn học và bản chất QLKT</a></p>
-<p>Đối tượng, phương pháp, vai trò của Nguyên lý quản lý kinh tế. Vị trí trong khoa học quản lý và khoa học kinh tế.</p>
-</div>
-<div class="week-card">
-<p><span class="week-num">Tuần 2</span> · <a href="./lectures/week-02.html" class="h4">Lịch sử tư tưởng QLKT</a></p>
-<p>Từ trường phái cổ điển (Smith, Marx) đến hiện đại (Keynes, Coase, Williamson). Vận dụng vào quản lý kinh tế.</p>
-</div>
-<div class="week-card">
-<p><span class="week-num">Tuần 3</span> · <a href="./lectures/week-03.html" class="h4">Quy luật khách quan và vận dụng</a></p>
-<p>Các quy luật kinh tế khách quan và nguyên tắc vận dụng trong quản lý. Tính khoa học và tính nghệ thuật.</p>
-</div>
-<div class="week-card">
-<p><span class="week-num">Tuần 4</span> · <a href="./lectures/week-04.html" class="h4">Hệ thống quản lý kinh tế</a></p>
-<p>Chủ thể quản lý, đối tượng quản lý, các bộ phận cấu thành. Mối quan hệ giữa các thành tố.</p>
-</div>
+<section id="bài-b2-20đ-so-sánh-quy-mô-khu-vực-kinh-tế" class="level3">
+<h3 class="anchored" data-anchor-id="bài-b2-20đ-so-sánh-quy-mô-khu-vực-kinh-tế">Bài B2 (20đ) — So sánh quy mô khu vực kinh tế</h3>
+<p>Sử dụng bộ <code>vn_sector_share.csv</code> chứa tỷ trọng GDP của 3 khu vực (Nông nghiệp, Công nghiệp-Xây dựng, Dịch vụ) qua các năm.</p>
+<p><strong>Yêu cầu</strong>:</p>
+<ol type="1">
+<li>Vẽ biểu đồ chồng (stacked area) thể hiện tỷ trọng 3 khu vực theo thời gian.</li>
+<li>Tính sự thay đổi tỷ trọng từng khu vực qua 10 năm gần nhất.</li>
+<li>Liên hệ kết quả với quá trình chuyển dịch cơ cấu kinh tế.</li>
+</ol>
 </section>
-<section id="phan-ii" class="level2">
-<h2 class="anchored" data-anchor-id="phan-ii">Phần II — Hệ thống quản lý kinh tế</h2>
-<div class="week-card">
-<p><span class="week-num">Tuần 5</span> · <a href="./lectures/week-05.html" class="h4">Chức năng quản lý kinh tế</a></p>
-<p>Bốn chức năng cơ bản: kế hoạch, tổ chức, lãnh đạo, kiểm soát. Vận hành liên hoàn.</p>
-</div>
-<div class="week-card">
-<p><span class="week-num">Tuần 6</span> · <a href="./lectures/week-06.html" class="h4">Cơ cấu tổ chức QLKT</a></p>
-<p>Phân cấp, phân quyền, ủy quyền. Các mô hình cơ cấu tổ chức quản lý.</p>
-</div>
-<div class="week-card">
-<p><span class="week-num">Tuần 7</span> · <a href="./lectures/week-07.html" class="h4">Phương pháp quản lý kinh tế</a></p>
-<p>Phương pháp kinh tế, hành chính, giáo dục. Phối hợp các phương pháp.</p>
-</div>
-<div class="week-card">
-<p><span class="week-num">Tuần 8</span> · <a href="./lectures/week-08.html" class="h4">Cán bộ và thông tin trong QLKT</a></p>
-<p>Yêu cầu phẩm chất, kỹ năng của cán bộ quản lý. Hệ thống thông tin và quyết định.</p>
-</div>
 </section>
-<section id="phan-iii" class="level2">
-<h2 class="anchored" data-anchor-id="phan-iii">Phần III — Công cụ và chính sách</h2>
-<div class="week-card">
-<p><span class="week-num">Tuần 9</span> · <a href="./lectures/week-09.html" class="h4">Quản lý nhà nước về kinh tế</a></p>
-<p>Chức năng, công cụ của Nhà nước trong quản lý nền kinh tế thị trường.</p>
-</div>
-<div class="week-card">
-<p><span class="week-num">Tuần 10</span> · <a href="./lectures/week-10.html" class="h4">Chính sách tài khóa</a></p>
-<p>Quản lý ngân sách, chi tiêu công, nợ công. Vai trò ổn định và phân phối.</p>
-</div>
-<div class="week-card">
-<p><span class="week-num">Tuần 11</span> · <a href="./lectures/week-11.html" class="h4">Chính sách tiền tệ</a></p>
-<p>Ngân hàng trung ương, công cụ tiền tệ, quản lý hệ thống tài chính.</p>
-</div>
-<div class="week-card">
-<p><span class="week-num">Tuần 12</span> · <a href="./lectures/week-12.html" class="h4">Chính sách thương mại — đầu tư — công nghiệp</a></p>
-<p>Quản lý xuất nhập khẩu, FDI, chính sách công nghiệp hóa.</p>
-</div>
+<section id="phần-c-đọc-và-bình-luận-20-điểm" class="level2">
+<h2 class="anchored" data-anchor-id="phần-c-đọc-và-bình-luận-20-điểm">Phần C — Đọc và bình luận (20 điểm)</h2>
+<p>Đọc một trong các tài liệu sau:</p>
+<ul>
+<li><strong>Văn kiện Đại hội Đảng XIII</strong>, mục III.2 về thể chế kinh tế thị trường định hướng XHCN.</li>
+<li><strong>World Bank, Vietnam Development Report</strong> (phiên bản mới nhất), chương Tổng quan.</li>
+<li><strong>Acemoglu &amp; Robinson (2012),</strong> <em>Why Nations Fail</em>, Chapter 1: “So Close and Yet So Different” (cập nhật bản dịch tiếng Việt nếu có).</li>
+</ul>
+<p>Viết bình luận <strong>300 từ</strong> trả lời: tác giả/văn bản đang nói gì? Bạn có đồng ý không? Áp dụng vào Việt Nam như thế nào?</p>
 </section>
-<section id="phan-iv" class="level2">
-<h2 class="anchored" data-anchor-id="phan-iv">Phần IV — Thực tiễn Việt Nam</h2>
-<div class="week-card">
-<p><span class="week-num">Tuần 13</span> · <a href="./lectures/week-13.html" class="h4">Đặc thù QLKT Việt Nam</a></p>
-<p>Kinh tế thị trường định hướng xã hội chủ nghĩa. Vai trò Nhà nước, kinh tế tư nhân, doanh nghiệp nhà nước.</p>
-</div>
-<div class="week-card">
-<p><span class="week-num">Tuần 14</span> · <a href="./lectures/week-14.html" class="h4">Hội nhập kinh tế quốc tế</a></p>
-<p>WTO, FTA, CPTPP. Áp lực hội nhập với quản lý kinh tế trong nước.</p>
-</div>
-<div class="week-card">
-<p><span class="week-num">Tuần 15</span> · <a href="./lectures/week-15.html" class="h4">Tổng ôn và thuyết trình</a></p>
-<p>Hệ thống hóa kiến thức. Thuyết trình nhóm về một vấn đề QLKT đương đại.</p>
-</div>
-</section>
-</div>
-<section id="học-liệu-mở" class="level2">
-<h2 class="anchored" data-anchor-id="học-liệu-mở">Học liệu mở</h2>
-<p>Bộ học liệu này được phát hành theo giấy phép <strong>Creative Commons BY-NC-SA 4.0</strong>: bạn được tự do sao chép, chia sẻ và chỉnh sửa cho mục đích phi thương mại, miễn dẫn nguồn và giữ giấy phép tương tự.</p>
+<section id="tiêu-chí-chấm" class="level2">
+<h2 class="anchored" data-anchor-id="tiêu-chí-chấm">Tiêu chí chấm</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Tiêu chí</th>
+<th>Trọng số</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Đúng khái niệm, đúng phương pháp</td>
+<td>40%</td>
+</tr>
+<tr class="even">
+<td>Ví dụ và bằng chứng cụ thể, có dẫn nguồn</td>
+<td>25%</td>
+</tr>
+<tr class="odd">
+<td>Logic và cấu trúc lập luận</td>
+<td>20%</td>
+</tr>
+<tr class="even">
+<td>Trình bày sạch, code chạy được, có comment</td>
+<td>15%</td>
+</tr>
+</tbody>
+</table>
 
 
 </section>
@@ -857,5 +765,5 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<script src="site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

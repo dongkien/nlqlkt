@@ -1,0 +1,28 @@
+[
+  {
+    "listing": "/problem-sets/index.html",
+    "items": [
+      "/problem-sets/ps-01.html"
+    ]
+  },
+  {
+    "listing": "/lectures/index.html",
+    "items": [
+      "/lectures/week-01.html",
+      "/lectures/week-02.html",
+      "/lectures/week-03.html",
+      "/lectures/week-04.html",
+      "/lectures/week-05.html",
+      "/lectures/week-06.html",
+      "/lectures/week-07.html",
+      "/lectures/week-08.html",
+      "/lectures/week-09.html",
+      "/lectures/week-10.html",
+      "/lectures/week-11.html",
+      "/lectures/week-12.html",
+      "/lectures/week-13.html",
+      "/lectures/week-14.html",
+      "/lectures/week-15.html"
+    ]
+  }
+]
