@@ -1,72 +1,214 @@
 ---
-title: "Lab 05 — DNNN vs Tư nhân vs FDI"
-subtitle: "Tương ứng Buổi 5: Quản trị doanh nghiệp và 3 thành phần"
-reading-time: "~20 phút"
+title: "Lab 5 — DNNN vs KTTN vs FDI"
+subtitle: "Tương ứng Buổi 5: So sánh hiệu suất 3 thành phần kinh tế"
+reading-time: "~25 phút"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Liên kết với Buổi 5
 
-Bài này áp dụng khái niệm chính từ [Buổi 5](../lectures/buoi-05.qmd) vào dữ liệu thực tế Việt Nam.
+Bài này áp dụng khung **ba thành phần kinh tế** từ [Buổi 5](../lectures/buoi-05.qmd): DNNN (chủ đạo), KTTN (động lực quan trọng nhất), FDI (xuất khẩu + công nghệ). Bạn sẽ so sánh hiệu suất bằng dữ liệu mô phỏng trên ROE, ROA, năng suất lao động, R&D.
 
-**Khái niệm Stata học**: `tabulate, summarize by group`
+Sau Lab 5, bạn có thể:
+
+- Tạo dataset doanh nghiệp phân theo 3 loại sở hữu
+- Tính thống kê mô tả **by group**
+- So sánh trung bình giữa các nhóm bằng `tabulate, summarize` và `ttest`
+- Vẽ box plot so sánh đa nhóm
+- Liên hệ kết quả với *vấn đề Principal-Agent* (Buổi 4)
+
+**Khái niệm Stata học**: `input`, `tabulate, summarize`, `ttest`, `graph box`, `by var: stat`
 :::
 
-::: {.callout-warning appearance="simple"}
-## 🚧 Lab đang biên soạn
+## 1. Tạo dataset mô phỏng 60 doanh nghiệp
 
-Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 05. Cấu trúc cố định theo template chuẩn của 16 lab.
-:::
-
-## Khung Lab 05
-
-### 1. Bài toán
-
-So sánh ROE, ROA, năng suất lao động giữa 3 loại
-
-### 2. Dữ liệu cần
-
-Dataset top 500 DN VN từ VietnamReport hoặc FortuneVN
-
-### 3. Lệnh Stata trọng tâm
-
-Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):
+Mở do-file mới:
 
 ```stata
-* Lab 05 — DTU301
+* Lab 5 — DTU301 — So sánh DNNN vs KTTN vs FDI
 * Họ tên: <điền>, MSSV: <điền>
 
 clear all
 set more off
+set seed 12345
 log using "lab05_<ten>.log", replace text
 
-* === Tải dữ liệu ===
-* (sẽ chi tiết khi có dataset thật)
+* === Tạo dataset 60 DN (20 mỗi loại) ===
+clear
+set obs 60
 
-* === Phân tích ===
-* Sử dụng: tabulate, summarize by group
+generate id = _n
+generate loai = "DNNN"  if id <= 20
+replace loai = "KTTN"   if id >= 21 & id <= 40
+replace loai = "FDI"    if id >= 41
 
-* === Đóng log ===
+* Mô phỏng ROE (%) — DNNN trung bình thấp, KTTN cao, FDI cao
+generate ROE = .
+replace ROE = 8 + 4 * rnormal()    if loai == "DNNN"
+replace ROE = 14 + 5 * rnormal()   if loai == "KTTN"
+replace ROE = 16 + 4 * rnormal()   if loai == "FDI"
+
+* Mô phỏng ROA (%) — tương tự
+generate ROA = .
+replace ROA = 4 + 2 * rnormal()    if loai == "DNNN"
+replace ROA = 8 + 3 * rnormal()    if loai == "KTTN"
+replace ROA = 9 + 2.5 * rnormal()  if loai == "FDI"
+
+* Mô phỏng năng suất lao động (triệu đồng/người/năm)
+generate nslđ = .
+replace nslđ = 250 + 80 * rnormal()  if loai == "DNNN"
+replace nslđ = 320 + 100 * rnormal() if loai == "KTTN"
+replace nslđ = 450 + 120 * rnormal() if loai == "FDI"
+
+* Mô phỏng tỷ lệ R&D / doanh thu (%)
+generate rd = .
+replace rd = 0.3 + 0.5 * runiform()  if loai == "DNNN"
+replace rd = 0.5 + 1.5 * runiform()  if loai == "KTTN"
+replace rd = 1.5 + 2.0 * runiform()  if loai == "FDI"
+
+label variable ROE "ROE (%)"
+label variable ROA "ROA (%)"
+label variable nslđ "Năng suất LĐ (tr/người)"
+label variable rd "R&D / Doanh thu (%)"
+
+list id loai ROE ROA nslđ rd in 1/10
+```
+
+::: {.callout-warning appearance="simple"}
+**Dữ liệu mô phỏng** dựa trên xu hướng quan sát thực tế. Số liệu thực tế từng năm có thể khác. Trong bài tập thật, bạn nên dùng dữ liệu từ:
+
+- **Tổng cục Thống kê (GSO)** — Niên giám thống kê DN
+- **VietnamReport, VPBI** — top 500 DN
+- **CIEM** — báo cáo về DNNN
+:::
+
+## 2. Thống kê mô tả theo nhóm
+
+```stata
+* === Thống kê mô tả theo loại DN ===
+display "=== ROE ==="
+tabulate loai, summarize(ROE)
+
+display "=== ROA ==="
+tabulate loai, summarize(ROA)
+
+display "=== Năng suất lao động ==="
+tabulate loai, summarize(nslđ)
+
+display "=== R&D ==="
+tabulate loai, summarize(rd)
+```
+
+Bạn sẽ thấy các bảng kiểu:
+
+| loai | Mean ROE | Std Dev |
+|---|:---:|:---:|
+| DNNN | ~8% | ~4 |
+| FDI | ~16% | ~4 |
+| KTTN | ~14% | ~5 |
+
+**Câu hỏi 1**: Loại DN nào có ROE/ROA cao nhất? Loại nào có năng suất lao động cao nhất? Có khớp với *Buổi 5* không?
+
+## 3. So sánh trung bình bằng t-test
+
+Liệu sự khác biệt ROE giữa DNNN và KTTN có **ý nghĩa thống kê** hay chỉ do ngẫu nhiên?
+
+```stata
+* === T-test so sánh trung bình ===
+display "=== ROE: DNNN vs KTTN ==="
+ttest ROE if loai != "FDI", by(loai)
+
+display "=== ROE: DNNN vs FDI ==="
+ttest ROE if loai != "KTTN", by(loai)
+
+display "=== ROE: KTTN vs FDI ==="
+ttest ROE if loai != "DNNN", by(loai)
+```
+
+**Câu hỏi 2**: Mức ý nghĩa (p-value) bao nhiêu cho mỗi cặp so sánh? Sự khác biệt có ý nghĩa thống kê ở mức 5% không?
+
+## 4. Box plot — trực quan hoá phân bố
+
+```stata
+* === Box plot ROE theo loại DN ===
+graph box ROE, over(loai, sort(1)) ///
+    box(1, color("114 47 55")) ///
+    title("Phân bố ROE theo loại doanh nghiệp") ///
+    ytitle("ROE (%)") ///
+    graphregion(color(white))
+
+graph export "box_roe.png", replace width(1200)
+
+* === Box plot năng suất lao động ===
+graph box nslđ, over(loai, sort(1)) ///
+    box(1, color("0 88 163")) ///
+    title("Phân bố năng suất lao động theo loại DN") ///
+    ytitle("Năng suất (triệu VND/người/năm)") ///
+    graphregion(color(white))
+
+graph export "box_nslđ.png", replace width(1200)
+
+* === Box plot R&D ===
+graph box rd, over(loai, sort(1)) ///
+    box(1, color("46 125 80")) ///
+    title("Phân bố tỷ lệ R&D / Doanh thu theo loại DN") ///
+    ytitle("R&D / Doanh thu (%)") ///
+    graphregion(color(white))
+
+graph export "box_rd.png", replace width(1200)
+```
+
+**Câu hỏi 3**: Box plot cho thấy **độ biến thiên** trong mỗi nhóm. Nhóm nào *đồng nhất* hơn (box hẹp)? Nhóm nào *đa dạng* hơn (box rộng)?
+
+## 5. Tổng hợp bảng so sánh đa chỉ số
+
+```stata
+* === Bảng tổng hợp 4 chỉ số ===
+display "=== BẢNG SO SÁNH TỔNG HỢP ==="
+table loai, statistic(mean ROE ROA nslđ rd) ///
+    statistic(sd ROE ROA nslđ rd) ///
+    nformat(%9.2f)
+```
+
+Hoặc đơn giản hơn:
+
+```stata
+foreach v in ROE ROA nslđ rd {
+    display "--- `v' ---"
+    bysort loai: summarize `v'
+}
+```
+
+**Câu hỏi 4**: Theo các chỉ số trên, *xếp hạng* 3 loại DN theo hiệu suất. Có khớp với mô tả của Buổi 5 (KTTN + FDI cao hơn DNNN) không?
+
+## 6. Liên hệ với vấn đề Principal-Agent
+
+**Câu hỏi 5** (suy nghĩ + viết, 400 từ):
+
+Buổi 4 đã trình bày *vấn đề Principal-Agent* và *moral hazard*. Buổi 5 cho thấy DNNN có hiệu suất TB thấp hơn KTTN và FDI.
+
+Hãy phân tích:
+
+- Tại sao **DNNN dễ gặp vấn đề Principal-Agent hơn** KTTN? (Gợi ý: ai là Principal? Ai là Agent? Cơ chế giám sát ra sao?)
+- Tại sao **DNNN ít đầu tư R&D hơn** mặc dù có thể có nguồn vốn lớn hơn?
+- Việt Nam đã thử các giải pháp nào để giảm chi phí đại diện trong DNNN? (gợi ý: SCIC, cổ phần hoá, hội đồng thành viên độc lập)
+- Bạn có **đề xuất chính sách nào** để DNNN tiệm cận hiệu suất KTTN/FDI?
+
+## 7. Đóng log
+
+```stata
 log close
 ```
 
-### 4. Câu hỏi suy nghĩ (sẽ chi tiết)
+## Deliverable Lab 5
 
-1. Câu hỏi mô tả dữ liệu
-2. Câu hỏi so sánh / xu hướng
-3. Câu hỏi liên hệ với lý thuyết
-4. Câu hỏi liên hệ với chính sách Việt Nam
-5. Câu hỏi mở rộng / phản biện
-
-## Deliverable Lab 05
-
-Nộp 3 file (như các lab trước):
+Nộp 3 file:
 
 | File | Nội dung |
 |---|---|
-| `lab05_<tên>.do` | Code + comment |
-| `lab05_<tên>.log` | Output |
-| `lab05_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
+| `lab05_<tên>.do` | Code đầy đủ + comment tiếng Việt |
+| `lab05_<tên>.log` | Output Stata |
+| `lab05_<tên>.pdf` (2-3 trang) | Trả lời 5 câu hỏi + 3 box plot |
 
 **Tiêu đề email**: `DTU301-LAB05-MSSV-HọTên`
 
@@ -74,11 +216,22 @@ Nộp 3 file (như các lab trước):
 
 | Tiêu chí | Điểm |
 |---|:---:|
-| Code chạy đúng, có log | 30% |
-| Vận dụng đúng khái niệm Stata mới của bài | 25% |
-| Biểu đồ / bảng kết quả rõ ràng | 20% |
-| Trả lời câu hỏi sâu, có liên hệ thực tiễn | 25% |
+| Code chạy đúng, có log | 25% |
+| Hiểu được ý nghĩa thống kê + t-test | 25% |
+| Box plot rõ ràng, có chú thích | 15% |
+| Liên hệ Principal-Agent sâu sắc | 25% |
+| Đề xuất chính sách thực tế | 10% |
+
+::: {.callout-tip}
+## 🚀 Mở rộng (tự chọn, không tính điểm)
+
+Nếu bạn có thời gian:
+
+- Thử **dataset thật**: tải báo cáo của VietnamReport top 500 DN, phân loại lại theo sở hữu, chạy lại các phân tích trên.
+- Thêm **biến ngành** (chế biến, dịch vụ, công nghệ) và so sánh xem khác biệt loại DN có còn rõ khi kiểm soát ngành.
+- Thử hồi quy: `regress ROE i.loai i.nganh` để xem hiệu ứng "loại" sau khi kiểm soát ngành.
+:::
 
 ---
 
-← *Lab trước*: [Lab 4](lab-04.qmd) | *Lab tiếp theo*: [Lab 6](lab-06.qmd) →
+← *Lab trước*: [Lab 4 — Mô phỏng thuế Pigou](lab-04.qmd) | *Lab tiếp theo*: [Lab 6 — Cobb-Douglas cho Việt Nam](lab-06.qmd) →

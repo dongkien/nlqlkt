@@ -1,54 +1,295 @@
 ---
-title: "Buổi 05 — Quản trị doanh nghiệp và case Việt Nam"
-subtitle: "DNNN, kinh tế tư nhân, FDI; case viễn thông, Formosa, ô tô/bán dẫn"
-reading-time: "Chương 2"
+title: "Buổi 5 — Chính sách công nghiệp, Đổi mới sáng tạo và Quản trị doanh nghiệp"
+subtitle: "Hai trường phái CSCN · Schumpeter & NIC · DNNN/KTTN/FDI · Case ô tô và bán dẫn"
+reading-time: "Chương 2 · ~55 phút đọc"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Đóng góp CLO
 
-**CLO1, CLO2 — Phân tích vai trò các thành phần kinh tế**
+**CLO1, CLO2** — Vận dụng khung chính sách công nghiệp, đổi mới sáng tạo và quản trị doanh nghiệp vào tình huống Việt Nam.
+
+Buổi 5 đóng lại Chương 2 — chuyển từ phân tích **thị trường** (Buổi 3) và **thất bại thị trường** (Buổi 4) sang câu hỏi: **Nhà nước nên chủ động định hướng ngành nào**, và **làm thế nào tổ chức ba thành phần kinh tế (DNNN, KTTN, FDI)** cho hiệu quả.
 :::
 
-## Nội dung lý thuyết (thuyết giảng)
+## Lộ trình Buổi 5
 
-**2.5. Quản trị doanh nghiệp**
+| Phần | Nội dung |
+|:---:|---|
+| **A** | Chính sách công nghiệp — hai trường phái và công cụ |
+| **B** | Đổi mới sáng tạo và Hệ thống ĐMST quốc gia (NIC) |
+| **C** | Quản trị doanh nghiệp — DNNN, KTTN, FDI |
+| **D** | Case Việt Nam — ô tô và bán dẫn |
 
-- Vai trò **DNNN** trong nền KTTT định hướng XHCN
-- **Kinh tế tư nhân** — vai trò ngày càng tăng
-- **FDI** và liên kết với doanh nghiệp trong nước
+## A. Chính sách công nghiệp
 
-**2.6. Case Việt Nam**
+### A.1. Khái niệm
 
-- Ngành viễn thông
-- Formosa Hà Tĩnh
-- Công nghiệp ô tô / bán dẫn
+**Chính sách công nghiệp (CSCN)** là tập hợp các biện pháp của Nhà nước nhằm **định hướng ngành ưu tiên**, hỗ trợ cho phát triển chúng. Mục tiêu cuối: **tạo lợi thế cạnh tranh quốc gia**.
 
-## Thực hành / Thảo luận
+CSCN khác với **chính sách cạnh tranh** đã học ở Buổi 3:
 
-Phân tích **chuỗi cung ứng** trong một case (vd: Samsung Việt Nam); thảo luận **liên kết FDI – nội địa**.
+| | Chính sách cạnh tranh (Buổi 3) | Chính sách công nghiệp (Buổi 5) |
+|---|---|---|
+| Mục tiêu | *Duy trì* sự lành mạnh thị trường | *Định hướng* phát triển ngành |
+| Logic | Phòng chống độc quyền | Tạo lợi thế chiến lược |
+| Công cụ | Luật Cạnh tranh, NCC | Thuế ưu đãi, tín dụng, R&D, bảo hộ |
 
-## Bài tập lớn / Tiểu luận
+**Tranh luận cốt lõi**: *Nhà nước có nên "chọn người thắng" (picking winners)?*
 
-**Bài tập tổng hợp Chương 1–2** — phục vụ đánh giá giữa kỳ. Phạm vi: chính sách quản lý một ngành cụ thể qua các khung của Chương 1–2.
+Một bên cho rằng đây là can thiệp quá mức, dễ thất bại. Bên kia chỉ ra rằng các nước Đông Á đã thành công nhờ chủ động chọn ngành.
 
-## Tự học có hướng dẫn
+CSCN hiệu quả khi nào? Thường khi có **thất bại thị trường** rõ ràng:
+- Ngoại tác dương từ R&D (tư nhân đầu tư dưới mức xã hội mong muốn)
+- Liên kết ngành (industry linkages) tạo lợi ích chéo
+- Quy mô lớn tới hạn (network effects, scale economies)
 
-1. Tỷ trọng DNNN trong GDP Việt Nam còn phù hợp không?
-2. Khi nào FDI có hại nhiều hơn lợi?
-3. Tại sao Việt Nam chưa có công nghiệp ô tô mạnh?
+### A.2. Hai trường phái
+
+**Trường phái 1 — Laissez-faire (Để thị trường tự chọn)**
+
+- **Friedrich Hayek** và **Milton Friedman** là đại diện tiêu biểu.
+- Quan điểm: **Nhà nước không biết tốt hơn thị trường** ngành nào sẽ thắng. Mọi nỗ lực "chọn người thắng" đều có nguy cơ thất bại do *thông tin* và *động cơ chính trị*.
+- Vai trò Nhà nước: chỉ tạo môi trường (luật, hạ tầng cơ bản, giáo dục), để thị trường tự quyết định.
+
+**Trường phái 2 — Ưu tiên ngành (Strategic industrial policy)**
+
+- **Dani Rodrik**, **Mariana Mazzucato** là đại diện tiêu biểu.
+- Quan điểm: Nhà nước có thể (và nên) đóng vai trò **nhà đầu tư mạo hiểm chiến lược**, đặc biệt cho công nghệ mới có rủi ro cao + lợi ích xã hội lan tỏa.
+- Mazzucato chứng minh: nhiều công nghệ "Mỹ phát minh" (Internet, GPS, Touch screen, Siri) thực ra do *DARPA*, *NIH*, *NSF* tài trợ từ giai đoạn rủi ro nhất.
+
+**Bằng chứng Đông Á**: Nhật Bản (MITI), Hàn Quốc (chaebol policy), Đài Loan (HSIE), Trung Quốc (Made in China 2025) đều áp dụng CSCN tích cực và đạt thành công kinh tế đáng kể.
+
+### A.3. Công cụ chính sách công nghiệp
+
+| Nhóm công cụ | Cơ chế | Ví dụ Việt Nam |
+|---|---|---|
+| **Thuế ưu đãi** | Giảm thuế TNDN cho ngành mục tiêu | Thuế ưu đãi cho DN công nghệ cao (10% vs 20%); KCN; Khu kinh tế |
+| **Tín dụng ưu đãi** | Ngân hàng Chính sách + bảo lãnh tín dụng | Quỹ Phát triển DNNVV; Quỹ ĐMST |
+| **Hạ tầng + đào tạo** | KCN, KCX, đào tạo nghề, R&D công | Khu công nghệ cao Hòa Lạc, NIC (Trung tâm ĐMST Quốc gia) |
+| **Bảo hộ** | Thuế nhập khẩu, hàng rào kỹ thuật | Ô tô (đến 2018), nông sản |
+| **Mua sắm công** | Ưu tiên hàng nội địa | Quy định "Buy Vietnamese" trong gói thầu công |
+
+**Lưu ý quan trọng**: WTO và các FTA hạn chế nhiều công cụ truyền thống (bảo hộ, trợ cấp xuất khẩu). VN phải dùng công cụ "WTO-compatible" — chủ yếu thuế ưu đãi, R&D công, hạ tầng.
+
+## B. Đổi mới sáng tạo và Hệ thống ĐMST quốc gia
+
+### B.1. Schumpeter — Phá huỷ sáng tạo
+
+**Joseph Schumpeter (1942)** — *Capitalism, Socialism and Democracy*:
+
+> Tư duy cách mạng: **doanh nhân (entrepreneur)** là trung tâm của đổi mới sáng tạo, và đổi mới là cơ chế chính của *tiến bộ kinh tế*.
+
+Khái niệm cốt lõi:
+
+| Khái niệm | Nội dung |
+|---|---|
+| **Phá huỷ sáng tạo (creative destruction)** | Đổi mới = phá vỡ trật tự cũ để tạo trật tự mới |
+| **Cạnh tranh sáng tạo** | Cạnh tranh thực sự không phải về giá, mà về *sản phẩm/quy trình mới* |
+| **Độc quyền tạm thời** | Phần thưởng cho ĐMST — DN tiên phong hưởng lợi nhuận siêu ngạch ngắn hạn |
+| **TFP** | ĐMST là động lực chính của *tổng năng suất các nhân tố* (sẽ học kỹ ở Buổi 6) |
+
+Schumpeter giải thích vì sao **độc quyền không phải lúc nào cũng xấu** — đôi khi đó là *động lực* khuyến khích DN đổi mới. Bằng sáng chế là ví dụ: tạo độc quyền tạm thời để khuyến khích R&D.
+
+### B.2. Hệ thống Đổi mới sáng tạo Quốc gia (NIC/NIS)
+
+Khái niệm **National Innovation System (NIS)** do **Bengt-Åke Lundvall (1992)** và **Christopher Freeman (1995)** phát triển:
+
+> NIS = **hệ thống tổ chức và thể chế** tương tác với nhau để **tạo ra, lan tỏa và ứng dụng tri thức kinh tế** trong một quốc gia.
+
+Năm thành phần chính của NIS:
+
+1. **Doanh nghiệp** — đặc biệt DN có R&D
+2. **Viện nghiên cứu** — công và tư
+3. **Đại học** — đào tạo nhân lực + nghiên cứu cơ bản
+4. **Nhà nước** — tài trợ, chính sách, IP
+5. **Vốn** — quỹ đầu tư mạo hiểm, ngân hàng đầu tư
+
+**Mô hình Triple Helix** (Etzkowitz & Leydesdorff 2000): Doanh nghiệp – Đại học – Chính phủ là **ba vòng xoắn**, chỉ khi đan xen chặt mới tạo nên ĐMST hiệu quả.
+
+**Hiện trạng Việt Nam**: NIS còn yếu. Một số chỉ số:
+
+- **R&D / GDP** ≈ 0,5% — thấp hơn nhiều so với Hàn Quốc (4,8%), Trung Quốc (2,4%), Singapore (1,9%)
+- **Số bằng sáng chế** quốc tế còn ít
+- **Liên kết doanh nghiệp – đại học** rời rạc
+
+→ Đây là lý do chính phủ thành lập **NIC** (Trung tâm Đổi mới sáng tạo Quốc gia, 2019) — cố gắng kiến tạo NIS chủ động.
+
+### B.3. Bốn chuyển đổi theo Đại hội XIV
+
+Đại hội Đảng XIV (2026) đặt **bốn chuyển đổi** làm trục chính cho chính sách công nghiệp 2026–2030:
+
+| # | Chuyển đổi | Trọng tâm | Ví dụ chính sách |
+|---|---|---|---|
+| **1** | Chuyển đổi **số** | Kinh tế dữ liệu, AI, nền tảng số | Luật Giao dịch điện tử, Chiến lược dữ liệu quốc gia |
+| **2** | Chuyển đổi **xanh** | Kinh tế tuần hoàn, giảm phát thải | Cam kết Net Zero 2050, NĐ 06/2022 |
+| **3** | Chuyển đổi **năng lượng** | Tái tạo (mặt trời, gió, biomass) | Quy hoạch điện VIII, ưu đãi điện gió ngoài khơi |
+| **4** | Chuyển đổi **nhân lực** | Kỹ năng số + xanh + STEM | Đề án Phát triển nguồn nhân lực CNTT, kỹ năng số trong giáo dục |
+
+Đại hội XIV cũng **nâng KTTN thành "động lực quan trọng nhất"** — sự thay đổi đáng kể so với các đại hội trước.
+
+## C. Quản trị doanh nghiệp
+
+### C.1. Khung OECD Corporate Governance
+
+**OECD Principles of Corporate Governance** là chuẩn quốc tế cho quản trị doanh nghiệp. Năm nguyên tắc cốt lõi:
+
+| Nguyên tắc | Nội dung |
+|---|---|
+| **1. Quyền cổ đông** | Bảo vệ quyền cơ bản: bầu HĐQT, tham gia ĐHCĐ, chia lợi nhuận |
+| **2. Đối xử công bằng** | Cổ đông thiểu số và đa số được đối xử bình đẳng |
+| **3. Vai trò bên liên quan** | Nhận diện quyền lợi của *stakeholders* (NLĐ, khách hàng, cộng đồng) |
+| **4. Minh bạch** | Công bố thông tin tài chính, quản trị, rủi ro |
+| **5. Trách nhiệm HĐQT** | HĐQT giám sát hiệu quả Ban điều hành |
+
+Đây là **chuẩn quốc tế** mà DN Việt Nam, đặc biệt **DN niêm yết**, phải dần tiệm cận để thu hút vốn quốc tế.
+
+### C.2. DNNN Việt Nam
+
+**Doanh nghiệp Nhà nước (DNNN)** trong KTTT định hướng XHCN:
+
+- **Vai trò hiến định**: Hiến pháp 2013 (Điều 51) xác định "**Kinh tế nhà nước giữ vai trò chủ đạo**".
+- **Lịch sử cải cách**: Đổi mới 1986 → cổ phần hoá từ 1992 → SCIC (Tổng công ty Đầu tư và Kinh doanh vốn Nhà nước) → giảm dần số DNNN.
+- **Mục tiêu kép**: vừa *hiệu quả kinh doanh*, vừa *thực thi chiến lược Nhà nước* (an ninh năng lượng, viễn thông quốc gia, hạ tầng).
+
+**Thách thức**:
+
+- **Minh bạch** — báo cáo tài chính, công bố thông tin chưa đồng đều.
+- **Quản trị** — vấn đề Principal-Agent (xem Buổi 4): cổ đông là "toàn dân" — chủ rất nhiều, kiểm soát yếu.
+- **Hiệu suất** — TFP của DNNN trung bình thấp hơn KTTN và FDI.
+
+**SCIC** đại diện chủ sở hữu Nhà nước tại các DN có vốn Nhà nước, hướng tới mô hình quản lý vốn hiệu quả hơn (theo mô hình Temasek Singapore).
+
+### C.3. KTTN và FDI Việt Nam
+
+**Kinh tế tư nhân (KTTN)** — sau Đại hội XIV được khẳng định là **"động lực quan trọng nhất"**:
+
+- **Tập đoàn tư nhân lớn**: Vingroup, Sun Group, Hoà Phát, Masan, Thaco, FPT...
+- Quy mô đa dạng: từ vài startup công nghệ tới các tập đoàn đa ngành.
+- Quản trị thị trường, mục tiêu lợi nhuận → linh hoạt và sáng tạo.
+
+**FDI** — đóng góp đặc biệt cho kinh tế Việt Nam:
+
+- **~20% GDP**
+- **~70% kim ngạch xuất khẩu**
+- Đại diện: Samsung (điện thoại), Intel (chip), LG (gia dụng), Honda/Toyota (ô tô)
+
+**FDI tạo nên chuỗi giá trị toàn cầu** tại VN — nhưng cũng đặt ra thách thức:
+
+- **Chuyển giao công nghệ** thực chất còn hạn chế
+- **Liên kết với DN nội địa** rời rạc — phần lớn linh kiện nhập khẩu, giá trị gia tăng nội địa thấp
+
+Đây là vấn đề "**enclave economy**" — FDI là một "ốc đảo" tách biệt với phần còn lại của nền kinh tế.
+
+### C.4. DNNN vs KTTN — đối chiếu
+
+| | **DNNN** | **KTTN** |
+|---|---|---|
+| Vai trò trong KTTT XHCN | Chủ đạo | Động lực quan trọng nhất |
+| Quy mô | Lớn, tập trung | Đa dạng (vi/nhỏ/vừa/lớn) |
+| Quản trị | Bởi Nhà nước (thông qua đại diện) | Theo cơ chế thị trường |
+| Mục tiêu | Kép (hiệu quả + chiến lược) | Lợi nhuận |
+| Đặc điểm nổi bật | Quy mô, an toàn | Linh hoạt, sáng tạo |
+| Hiệu suất TB | Thấp hơn | Cao hơn |
+
+Cải cách DNNN VN luôn tìm cách **kết hợp ưu của cả hai**: giữ vai trò chiến lược + tăng tính thị trường (cổ phần hoá, SCIC, quản trị độc lập).
+
+## D. Case Việt Nam — Ô tô và bán dẫn
+
+### D.1. Công nghiệp ô tô VN
+
+**Bối cảnh**:
+
+- Đã bảo hộ thuế nhập khẩu cao **đến 2018** (~70% xe ngoại khối ASEAN).
+- AFTA bãi bỏ thuế NK ASEAN từ 2018 — áp lực cạnh tranh tăng vọt.
+- **Tỷ lệ nội địa hoá còn thấp** (~10–20% với hầu hết mẫu xe lắp ráp).
+
+**Các DN chính**:
+
+| DN | Loại | Đặc điểm |
+|---|---|---|
+| **Thaco (Trường Hải)** | Nội địa | Lắp ráp Kia, Mazda, Peugeot, BMW; tỷ trọng thị phần lớn nhất |
+| **VinFast** | Nội địa | Ô tô điện; *xuất khẩu Mỹ* từ 2023 |
+| **Toyota, Honda, Hyundai, Mitsubishi** | FDI | Lắp ráp truyền thống |
+
+**Kết quả CSCN ô tô VN**:
+
+- Không đều — bảo hộ kéo dài 30 năm chưa tạo được công nghiệp phụ trợ mạnh.
+- VinFast là *điểm sáng* về EV nhưng chưa rõ tính bền vững.
+- **Bài học**: bảo hộ mà không kèm áp lực cạnh tranh + R&D → khó tạo lợi thế thực sự.
+
+### D.2. Công nghiệp bán dẫn VN
+
+**Bối cảnh quốc tế**: bán dẫn = **ngành chiến lược toàn cầu** mới nhất. Mỹ, EU, Hàn Quốc, Đài Loan, Nhật Bản, Trung Quốc đều có **chiến lược quốc gia về bán dẫn** với ngân sách tỷ USD.
+
+**Vị trí Việt Nam trong chuỗi giá trị**:
+
+| Khâu | Hiện trạng VN |
+|---|---|
+| **Thiết kế chip** (front-end) | Bước đầu — Marvell, Synopsys có R&D tại VN |
+| **Sản xuất wafer** (fab) | Chưa có |
+| **Đóng gói + kiểm thử** (back-end) | Mạnh — Samsung, Intel, Amkor |
+
+**Đầu tư FDI lớn**: Samsung (Bắc Ninh, Thái Nguyên), Intel (TP.HCM), Amkor — chủ yếu khâu back-end.
+
+**Chính sách**: **Chiến lược Phát triển công nghiệp bán dẫn VN đến 2030, tầm nhìn 2050** (ban hành 2024) — xác định:
+
+- 50.000 kỹ sư bán dẫn đến 2030
+- Đầu tư hạ tầng KCN bán dẫn
+- Ưu đãi đầu tư cho DN thiết kế chip
+
+### D.3. Ba bài học CSCN từ Việt Nam
+
+| Bài học | Nội dung |
+|---|---|
+| **1. Chọn ngành ưu tiên** | Phải dựa trên *lợi thế thực tế* + *cơ hội thị trường*. Không chọn vì *ý chí chính trị*. |
+| **2. Liên kết FDI – nội địa** | Chính sách phải *buộc chuyển giao công nghệ*, không chỉ ưu đãi đầu tư. Ví dụ: yêu cầu nội địa hoá, R&D nội địa. |
+| **3. NIC + đào tạo** | Hỗ trợ R&D + nhân lực chất lượng cao là *điều kiện cần*. Bán dẫn không thể thành công nếu không có 50.000 kỹ sư. |
+
+::: {.callout-warning}
+## ✋ Bài tập thảo luận trên lớp
+
+Chọn **một ngành chiến lược** của Việt Nam (bán dẫn, EV, nông nghiệp công nghệ cao, AI, hoặc khác). Phân tích:
+
+1. Việt Nam có **lợi thế cụ thể nào** trong ngành này?
+2. **Công cụ CSCN** nào phù hợp nhất? (thuế ưu đãi / tín dụng / hạ tầng / bảo hộ?)
+3. **NIS** của ngành này hiện đang ở mức nào? Cần cải thiện gì?
+4. Nguy cơ chính của *picking winners* trong ngành này là gì?
+:::
+
+## Tổng kết Buổi 5 — Năm điểm cốt lõi
+
+1. **CSCN có hai trường phái**: laissez-faire (Hayek, Friedman) vs ưu tiên ngành (Rodrik, Mazzucato). Đông Á đã chứng minh CSCN chủ động có thể thành công.
+2. **ĐMST**: Schumpeter "phá huỷ sáng tạo"; NIC + Triple Helix là khung phổ biến nhất cho phân tích năng lực ĐMST.
+3. **Đại hội XIV** nâng KTTN thành "động lực quan trọng nhất" + 4 chuyển đổi (số / xanh / năng lượng / nhân lực).
+4. **Quản trị DN** ba thành phần: DNNN (chủ đạo), KTTN (động lực chính), FDI (xuất khẩu + công nghệ).
+5. **Case ô tô + bán dẫn** cho thấy: bảo hộ đơn thuần không hiệu quả; cần kết hợp công cụ và xây NIS để có CSCN thực sự thành công.
+
+## Bài tập về nhà (chuẩn bị Buổi 6 — mở Chương 3)
+
+1. **Đọc** Mankiw, chương về **tăng trưởng dài hạn** (Production function, Solow model).
+2. **Tự đọc** về 4 mục tiêu vĩ mô.
+3. **Chuẩn bị 1 ví dụ CSCN thành công trên thế giới** — Đài Loan với TSMC? Hàn Quốc với Samsung? Phần Lan với Nokia?
+4. **Đọc thêm** về 4 chuyển đổi của Đại hội XIV và liên hệ với CSCN.
+
+::: {.callout-tip}
+## 🔧 Stata Lab 5 (bonus 5%)
+
+Bài này có lab phân tích **so sánh hiệu suất DNNN vs KTTN vs FDI** trong Stata dùng dữ liệu cấp DN: ROE, ROA, năng suất lao động, đầu tư R&D. Bạn sẽ học `by-group statistics`, `t-test` so sánh trung bình.
+
+→ [**Bắt đầu Lab 5 — DNNN vs KTTN vs FDI**](../stata-lab/lab-05.qmd) *(~25 phút)*
+:::
 
 ## Đọc thêm
 
-- Mankiw, *Kinh tế học vi mô*, chương 22.
-- Báo cáo VBR — World Bank, phiên bản mới nhất.
-
-::: {.callout-warning appearance="simple"}
-## 🚧 Nội dung đang biên soạn
-
-Bài giảng buổi 05 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
-:::
+- Mankiw, *Kinh tế học vi mô* (2026), chương về chính sách công nghiệp.
+- **Rodrik, D.** (2007), *One Economics, Many Recipes*, Princeton University Press.
+- **Mazzucato, M.** (2013), *The Entrepreneurial State*, Anthem Press.
+- **Lundvall, B.-Å.** (1992), *National Systems of Innovation*, Pinter.
+- **OECD Principles of Corporate Governance** (phiên bản mới nhất).
+- Văn kiện Đại hội Đảng XIV — mục về 4 chuyển đổi và KTTN.
+- *Chiến lược Phát triển công nghiệp bán dẫn VN đến 2030, tầm nhìn 2050* (2024).
 
 ---
 
-← *Buổi trước*: [Buổi 4](buoi-04.qmd) *Buổi tiếp theo*: [Buổi 6](buoi-06.qmd) →
+← *Buổi trước*: [Buổi 4 — Thất bại thị trường và Cơ chế điều tiết](buoi-04.qmd) | *Buổi tiếp theo*: [Buổi 6 — Mục tiêu vĩ mô và Tăng trưởng dài hạn](buoi-06.qmd) →
