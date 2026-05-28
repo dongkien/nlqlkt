@@ -129,7 +129,7 @@ Thang điểm: **10**.
 |---|---|---|:---:|---|
 | **Đánh giá quá trình** | Chuyên cần + bài kiểm tra ngắn + tham gia thảo luận | Liên tục | **10%** | CLO1, CLO4 |
 | **Đánh giá giữa kỳ** | Hình thức do giảng viên quyết định (thi viết, thuyết trình, hoặc kết hợp) | Chương 1–2 | **30%** | CLO1, CLO2 |
-| **Đánh giá cuối kỳ** | Hình thức do giảng viên quyết định (thi viết, thuyết trình, tiểu luận, hoặc kết hợp tại Seminar Buổi 14–15) | Toàn bộ học phần | **60%** | CLO2, CLO3, CLO4, CLO5 |
+| **Đánh giá cuối kỳ** | **Thi tự luận đóng** (không dùng tài liệu). Cấu trúc đề do **Bộ môn quyết định đầu kỳ**. Hiện hành: **20 câu trắc nghiệm + 2 câu tự luận** (tương ứng 2 mức Bloom khác nhau) | Toàn bộ học phần | **60%** | CLO2, CLO3, CLO4, CLO5 |
 | | | | **100%** | |
 
 ### Tiêu chí đánh giá đề nghị

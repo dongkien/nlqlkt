@@ -12,7 +12,7 @@ Thang điểm **10**. Học phần đánh giá qua **3 cấu phần**:
 |---|:---:|---|---|---|
 | **Đánh giá quá trình** | **10%** | Điểm danh + bài kiểm tra ngắn + chất lượng thảo luận | Liên tục | CLO1, CLO4 |
 | **Đánh giá giữa kỳ** | **30%** | Thi viết, mini-case, thuyết trình, hoặc kết hợp (giảng viên quyết định) | Chương 1–2 | CLO1, CLO2 |
-| **Đánh giá cuối kỳ** | **60%** | Thi viết, thuyết trình, tiểu luận, hoặc kết hợp tại **Seminar Buổi 14–15** | Toàn bộ học phần | CLO2, CLO3, CLO4, CLO5 |
+| **Đánh giá cuối kỳ** | **60%** | **Thi tự luận đóng** — cấu trúc đề do **Bộ môn quyết định đầu kỳ**. Hiện hành: **20 trắc nghiệm + 2 tự luận** (2 mức Bloom khác nhau) | Toàn bộ học phần | CLO2, CLO3, CLO4, CLO5 |
 
 ::: {.callout-warning}
 *Lưu ý*: Hình thức thi và hoạt động gắn kết thực tiễn trong học phần có thể **linh hoạt do Bộ môn quyết định** phụ thuộc vào tình hình thực tế.
@@ -43,36 +43,76 @@ Thang điểm **10**. Học phần đánh giá qua **3 cấu phần**:
 
 ## 3. Đánh giá cuối kỳ (60%)
 
-**Diễn ra**: trong Seminar Buổi 14–15
+**Diễn ra**: cuối học kỳ, theo lịch thi do Trường ban hành
 
-**Phạm vi**: **toàn bộ học phần**
+**Phạm vi**: **toàn bộ học phần** (Chương 1 → Chương 5 và nội dung Seminar)
 
-**Hình thức**: thi viết, thuyết trình, tiểu luận, hoặc kết hợp. Tại Seminar có thể bao gồm:
-- Thuyết trình nhóm về một vấn đề chính sách kinh tế tổng hợp
-- Phản biện chéo giữa các nhóm
-- Tiểu luận cá nhân nộp sau Seminar
+**Hình thức**: **thi tự luận đóng** (không sử dụng tài liệu)
 
-**Tiêu chí**:
-- Phân tích chính sách
-- Vận dụng dữ liệu
-- Phản biện
-- Đề xuất
-- Làm việc nhóm
-- Sử dụng có trách nhiệm công cụ số
+**Cấu trúc đề thi**: do **Bộ môn quyết định đầu kỳ**. Cấu trúc hiện hành gồm **2 phần**:
 
-### Khung câu hỏi mẫu (tự luận)
+| Phần | Hình thức | Số câu | Thang Bloom | Mục đích |
+|:---:|---|:---:|---|---|
+| **Phần 1** | Trắc nghiệm khách quan | **20 câu** | Nhớ — Hiểu — Vận dụng (cấp thấp) | Kiểm tra kiến thức nền và nhận biết khung lý thuyết qua 5 chương |
+| **Phần 2** | Tự luận | **2 câu** | **2 mức Bloom khác nhau** (vd: Vận dụng + Phân tích, hoặc Phân tích + Đánh giá) | Kiểm tra năng lực vận dụng và phân tích phối hợp chính sách |
 
-**Câu 1** *(Phân tích — CLO3)*
+::: {.callout-note}
+Cấu trúc 20+2 trên là **cấu trúc hiện hành** do Bộ môn quyết định cho học kỳ này. Trong các học kỳ sau, **Bộ môn có thể điều chỉnh** số lượng câu, tỷ trọng giữa hai phần, hoặc các mức Bloom được kiểm tra. Sinh viên nên xác nhận với giảng viên đầu kỳ.
+:::
 
-> Phân tích **phối hợp tài khoá – tiền tệ** của Việt Nam giai đoạn 2020–2024 qua khung **AD-AS** và **Phillips**. Đánh giá hiệu quả và đề xuất hướng điều chỉnh.
+### Phân bổ điểm đề nghị
 
-**Câu 2** *(Vận dụng — CLO2)*
+| Phần | Số câu | Điểm/câu | Tổng |
+|:---:|:---:|:---:|:---:|
+| Phần 1 — Trắc nghiệm | 20 | 0.2 | 4.0 |
+| Phần 2 — Tự luận (Câu 1) | 1 | 3.0 | 3.0 |
+| Phần 2 — Tự luận (Câu 2) | 1 | 3.0 | 3.0 |
+| **Tổng** | | | **10.0** |
 
-> Áp dụng **Bộ ba bất khả thi (Trilemma)** để phân tích vị trí hiện tại của Việt Nam trong tam giác. Bài học nào từ **Khủng hoảng châu Á 1997** vẫn còn áp dụng?
+*Phân bổ trên là gợi ý; trọng số cụ thể do Bộ môn quyết định trong ma trận đề thi đầu kỳ.*
 
-**Câu 3** *(Tổng hợp + đề xuất — CLO3, CLO5)*
+### Khung câu hỏi mẫu
 
-> Đề xuất **chiến lược phát triển kinh tế** cho một tỉnh/vùng cụ thể (chọn 1 trong 6 vùng KT-XH) sau cải cách 2025. Sử dụng số liệu **PCI / PAPI / PAR Index** ba năm gần nhất, có dẫn nguồn chính thống.
+#### Phần 1 — Trắc nghiệm khách quan (20 câu)
+
+Phủ đều 5 chương + nội dung Seminar. Một số dạng câu thường gặp:
+
+> **Ví dụ 1** — Yếu tố nào KHÔNG phải là một trong **ba vai trò Nhà nước** trong nền kinh tế thị trường?
+>
+> A. Chủ sở hữu  B. Quản lý  C. Sản xuất ✓  D. Điều tiết
+
+> **Ví dụ 2** — Theo hàm sản xuất Cobb-Douglas \\(Y = AK^\\alpha L^{1-\\alpha}\\), nếu \\(\\alpha = 0.3\\) và \\(K\\) tăng 10%, sản lượng \\(Y\\) tăng xấp xỉ:
+>
+> A. 1%  B. 3% ✓  C. 7%  D. 10%
+
+> **Ví dụ 3** — **Bộ ba bất khả thi** nói rằng một quốc gia không thể đồng thời đạt được:
+>
+> A. Tăng trưởng cao, lạm phát thấp, thất nghiệp thấp
+> B. Ổn định tỷ giá, tự do dòng vốn, độc lập tiền tệ ✓
+> C. Tài khoá cân bằng, tiền tệ độc lập, tỷ giá cố định
+> D. Cán cân vãng lai, dự trữ ngoại hối, tỷ giá thả nổi
+
+#### Phần 2 — Tự luận (2 câu)
+
+Hai câu được thiết kế ở **2 mức Bloom khác nhau** để vừa kiểm tra năng lực vận dụng vừa kiểm tra năng lực phân tích / đánh giá.
+
+**Câu 1 — Vận dụng (CLO2)** *(ví dụ)*
+
+> Áp dụng khung **AD-AS** và **đường Phillips** để giải thích phản ứng chính sách của Việt Nam trước cú sốc lạm phát 2022–2023. Hãy chỉ rõ: (a) bản chất cú sốc (cung/cầu), (b) công cụ chính sách đã sử dụng, (c) đánh đổi giữa các mục tiêu vĩ mô. (~600 từ)
+
+**Câu 2 — Phân tích (CLO3)** *(ví dụ)*
+
+> Phân tích **đánh đổi chính sách** mà Ngân hàng Nhà nước phải đối mặt khi Fed tăng lãi suất 200 bps, trong bối cảnh Việt Nam có **cán cân vãng lai gần cân bằng** nhưng **dòng vốn FDI biến động**. Áp dụng **Bộ ba bất khả thi** để chỉ ra ba phương án và phương án phù hợp nhất. (~700 từ)
+
+### Tiêu chí chấm Phần 2
+
+| Tiêu chí | Trọng số |
+|---|:---:|
+| Đúng khái niệm cốt lõi, đúng khung lý thuyết | 30% |
+| Vận dụng dữ liệu / số liệu có nguồn chính thống | 20% |
+| Logic và cấu trúc lập luận | 20% |
+| Phân tích, phản biện, đề xuất khả thi | 20% |
+| Văn phong học thuật, trích dẫn đúng chuẩn | 10% |
 
 ## 4. Tiêu chí chấm chung
 
