@@ -1,0 +1,151 @@
+---
+title: "Nguyên lý Quản lý Kinh tế"
+subtitle: "Học liệu mở cho sinh viên cử nhân"
+toc: false
+page-layout: full
+---
+
+::: {.column-page}
+
+## Về môn học
+
+**Nguyên lý quản lý kinh tế** là môn học nền tảng cung cấp hệ thống tri thức cơ bản về *bản chất, đặc điểm, nguyên tắc, chức năng, phương pháp và công cụ* quản lý nền kinh tế. Sinh viên sau khi hoàn thành môn học có thể phân tích các vấn đề quản lý kinh tế ở tầm vĩ mô và đối chiếu với thực tiễn Việt Nam.
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-8}
+
+### Đối tượng và yêu cầu
+
+Học liệu được biên soạn cho **sinh viên cử nhân năm 3–4** thuộc các ngành Kinh tế, Quản lý Kinh tế, Quản trị Kinh doanh và các ngành liên quan. Sinh viên cần đã học qua *Kinh tế vi mô*, *Kinh tế vĩ mô* và *Thống kê* trước khi vào môn này.
+
+Môn được tổ chức theo **15 tuần × 3 tiết**, tổng 45 tiết lên lớp, kèm khối lượng tự học tương đương ~3× thời lượng lên lớp theo chuẩn tín chỉ.
+
+### Bốn phần lớn của chương trình
+
+1. **Cơ sở lý luận** (Tuần 1–4) — bản chất, lịch sử tư tưởng, quy luật, hệ thống QLKT.
+2. **Các yếu tố của hệ thống QLKT** (Tuần 5–8) — chức năng, cơ cấu, phương pháp, cán bộ.
+3. **Công cụ và chính sách QLKT** (Tuần 9–12) — quản lý nhà nước, tài khóa, tiền tệ, thương mại–đầu tư.
+4. **QLKT trong thực tiễn Việt Nam** (Tuần 13–15) — kinh tế thị trường định hướng XHCN, hội nhập, tổng ôn.
+
+:::
+
+::: {.g-col-12 .g-col-md-4}
+
+::: {.callout-note appearance="simple"}
+## 📚 Bắt đầu nhanh
+
+- 📋 [Đề cương chi tiết](syllabus.qmd)
+- 📅 [Lịch học 15 tuần](schedule.qmd)
+- 🎓 [Tất cả bài giảng](lectures/index.qmd)
+- ✏️ [Bài tập](problem-sets/index.qmd)
+- 📝 [Đề thi mẫu](exams/index.qmd)
+:::
+
+:::
+
+:::
+
+## Phần I — Cơ sở lý luận {#phan-i}
+
+::: {.week-card}
+[Tuần 1]{.week-num} · [Giới thiệu môn học và bản chất QLKT](lectures/week-01.qmd){.h4}
+
+Đối tượng, phương pháp, vai trò của Nguyên lý quản lý kinh tế. Vị trí trong khoa học quản lý và khoa học kinh tế.
+:::
+
+::: {.week-card}
+[Tuần 2]{.week-num} · [Lịch sử tư tưởng QLKT](lectures/week-02.qmd){.h4}
+
+Từ trường phái cổ điển (Smith, Marx) đến hiện đại (Keynes, Coase, Williamson). Vận dụng vào quản lý kinh tế.
+:::
+
+::: {.week-card}
+[Tuần 3]{.week-num} · [Quy luật khách quan và vận dụng](lectures/week-03.qmd){.h4}
+
+Các quy luật kinh tế khách quan và nguyên tắc vận dụng trong quản lý. Tính khoa học và tính nghệ thuật.
+:::
+
+::: {.week-card}
+[Tuần 4]{.week-num} · [Hệ thống quản lý kinh tế](lectures/week-04.qmd){.h4}
+
+Chủ thể quản lý, đối tượng quản lý, các bộ phận cấu thành. Mối quan hệ giữa các thành tố.
+:::
+
+## Phần II — Hệ thống quản lý kinh tế {#phan-ii}
+
+::: {.week-card}
+[Tuần 5]{.week-num} · [Chức năng quản lý kinh tế](lectures/week-05.qmd){.h4}
+
+Bốn chức năng cơ bản: kế hoạch, tổ chức, lãnh đạo, kiểm soát. Vận hành liên hoàn.
+:::
+
+::: {.week-card}
+[Tuần 6]{.week-num} · [Cơ cấu tổ chức QLKT](lectures/week-06.qmd){.h4}
+
+Phân cấp, phân quyền, ủy quyền. Các mô hình cơ cấu tổ chức quản lý.
+:::
+
+::: {.week-card}
+[Tuần 7]{.week-num} · [Phương pháp quản lý kinh tế](lectures/week-07.qmd){.h4}
+
+Phương pháp kinh tế, hành chính, giáo dục. Phối hợp các phương pháp.
+:::
+
+::: {.week-card}
+[Tuần 8]{.week-num} · [Cán bộ và thông tin trong QLKT](lectures/week-08.qmd){.h4}
+
+Yêu cầu phẩm chất, kỹ năng của cán bộ quản lý. Hệ thống thông tin và quyết định.
+:::
+
+## Phần III — Công cụ và chính sách {#phan-iii}
+
+::: {.week-card}
+[Tuần 9]{.week-num} · [Quản lý nhà nước về kinh tế](lectures/week-09.qmd){.h4}
+
+Chức năng, công cụ của Nhà nước trong quản lý nền kinh tế thị trường.
+:::
+
+::: {.week-card}
+[Tuần 10]{.week-num} · [Chính sách tài khóa](lectures/week-10.qmd){.h4}
+
+Quản lý ngân sách, chi tiêu công, nợ công. Vai trò ổn định và phân phối.
+:::
+
+::: {.week-card}
+[Tuần 11]{.week-num} · [Chính sách tiền tệ](lectures/week-11.qmd){.h4}
+
+Ngân hàng trung ương, công cụ tiền tệ, quản lý hệ thống tài chính.
+:::
+
+::: {.week-card}
+[Tuần 12]{.week-num} · [Chính sách thương mại — đầu tư — công nghiệp](lectures/week-12.qmd){.h4}
+
+Quản lý xuất nhập khẩu, FDI, chính sách công nghiệp hóa.
+:::
+
+## Phần IV — Thực tiễn Việt Nam {#phan-iv}
+
+::: {.week-card}
+[Tuần 13]{.week-num} · [Đặc thù QLKT Việt Nam](lectures/week-13.qmd){.h4}
+
+Kinh tế thị trường định hướng xã hội chủ nghĩa. Vai trò Nhà nước, kinh tế tư nhân, doanh nghiệp nhà nước.
+:::
+
+::: {.week-card}
+[Tuần 14]{.week-num} · [Hội nhập kinh tế quốc tế](lectures/week-14.qmd){.h4}
+
+WTO, FTA, CPTPP. Áp lực hội nhập với quản lý kinh tế trong nước.
+:::
+
+::: {.week-card}
+[Tuần 15]{.week-num} · [Tổng ôn và thuyết trình](lectures/week-15.qmd){.h4}
+
+Hệ thống hóa kiến thức. Thuyết trình nhóm về một vấn đề QLKT đương đại.
+:::
+
+:::
+
+## Học liệu mở
+
+Bộ học liệu này được phát hành theo giấy phép **Creative Commons BY-NC-SA 4.0**: bạn được tự do sao chép, chia sẻ và chỉnh sửa cho mục đích phi thương mại, miễn dẫn nguồn và giữ giấy phép tương tự.

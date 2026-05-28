@@ -1,0 +1,27 @@
+# Quarto build outputs — chỉ giữ source, không commit output
+_site/
+.quarto/
+
+# Python venv riêng cho project (lớn, không commit)
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Stata
+*.log
+*.smcl
+
+# Editor
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# OS
+Thumbs.db
+
+# Quarto execute cache — GIỮ LẠI để rebuild được không cần Stata
+# _freeze/   ← commented out: ta MUỐN commit cái này

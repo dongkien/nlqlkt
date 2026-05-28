@@ -1,0 +1,179 @@
+/*-- scss:defaults --*/
+
+// Bảng màu — học thuật trang trọng kiểu university crest
+$primary:       #722f37;   // maroon đậm
+$secondary:     #c19a4d;   // gold
+$body-bg:       #fbfaf6;   // cream nhạt
+$body-color:    #1a1f2e;   // gần đen
+$link-color:    #722f37;
+$link-hover-color: #c19a4d;
+
+// Typography
+$font-family-sans-serif: "Be Vietnam Pro", -apple-system, system-ui, sans-serif;
+$font-family-serif:      "Lora", Georgia, "Times New Roman", serif;
+$font-family-monospace:  "JetBrains Mono", ui-monospace, monospace;
+$headings-font-family:   $font-family-sans-serif;
+$headings-font-weight:   700;
+$headings-color:         #1a1f2e;
+$headings-letter-spacing: -0.01em;
+
+$navbar-bg:             $primary;
+$navbar-fg:             #fbfaf6;
+$sidebar-bg:            #f5f0e3;
+
+/*-- scss:rules --*/
+
+// Import Google Fonts (đẹp cho tiếng Việt)
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+// ---- Body ----
+body {
+  font-family: $font-family-serif;
+  line-height: 1.75;
+  background: $body-bg;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+h1.title {
+  border-bottom: 3px solid $secondary;
+  padding-bottom: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  border-bottom: 1px solid #e5dfd0;
+  padding-bottom: .4rem;
+  margin-top: 2.6rem;
+}
+
+// ---- Navbar ----
+.navbar {
+  border-bottom: 3px solid $secondary;
+  font-family: $font-family-sans-serif;
+}
+.navbar-brand, .nav-link {
+  font-weight: 600 !important;
+  letter-spacing: 0.01em;
+}
+
+// ---- Sidebar ----
+.sidebar {
+  font-family: $font-family-sans-serif;
+  font-size: 0.93rem;
+}
+.sidebar .sidebar-item-section > .sidebar-link {
+  color: $primary;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.78rem;
+}
+.sidebar nav .sidebar-link:hover {
+  color: $secondary !important;
+}
+.sidebar nav .active {
+  font-weight: 700;
+  border-left: 3px solid $secondary;
+}
+
+// ---- Code blocks ----
+pre.sourceCode {
+  background: #2b2120 !important;     // warm dark
+  border-radius: 6px;
+  border-left: 3px solid $secondary;
+}
+pre.sourceCode code {
+  color: #f5f0e3;
+}
+code {
+  color: $primary;
+  background: rgba(193, 154, 77, 0.12);
+  padding: 0.12em 0.4em;
+  border-radius: 3px;
+}
+pre.sourceCode code {
+  background: transparent;
+  color: #f5f0e3;
+}
+
+// Stata language label
+div.sourceCode.stata::before {
+  content: "Stata";
+  display: block;
+  background: $secondary;
+  color: $body-color;
+  font-family: $font-family-sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.25rem 0.7rem;
+  border-radius: 6px 6px 0 0;
+}
+
+// ---- Callouts ----
+.callout {
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+.callout-note   { border-left-color: $primary !important; }
+.callout-tip    { border-left-color: #2e7d4f !important; }
+.callout-warning{ border-left-color: $secondary !important; }
+.callout-important { border-left-color: $primary !important; }
+
+// ---- Tables ----
+table {
+  font-family: $font-family-sans-serif;
+}
+table thead tr {
+  background: $primary;
+  color: #fbfaf6;
+}
+table thead th {
+  font-weight: 600;
+  border: none !important;
+}
+
+// ---- Footer ----
+.nav-footer {
+  font-family: $font-family-sans-serif;
+  font-size: 0.85rem;
+  border-top: 1px solid #e5dfd0;
+  padding: 1rem 0;
+}
+
+// ---- Card style for week summaries ----
+.week-card {
+  background: #fff;
+  border: 1px solid #e5dfd0;
+  border-radius: 8px;
+  padding: 1.4rem;
+  margin: 1rem 0;
+  transition: border-color .2s, box-shadow .2s;
+}
+.week-card:hover {
+  border-color: $primary;
+  box-shadow: 0 4px 12px rgba(114, 47, 55, 0.08);
+}
+.week-card .week-num {
+  display: inline-block;
+  background: $primary;
+  color: #fff;
+  font-family: $font-family-sans-serif;
+  font-weight: 700;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.5rem;
+}
+
+// ---- Print-friendly ----
+@media print {
+  .navbar, .sidebar, .nav-footer, .toc-active { display: none !important; }
+}

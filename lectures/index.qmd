@@ -1,0 +1,24 @@
+---
+title: "Bài giảng"
+subtitle: "15 tuần học liệu môn Nguyên lý Quản lý Kinh tế"
+listing:
+  contents: "week-*.qmd"
+  type: table
+  sort: "filename asc"
+  fields: [title, subtitle, reading-time]
+  field-display-names:
+    title: "Bài giảng"
+    subtitle: "Nội dung chính"
+    reading-time: "Thời lượng đọc"
+  sort-ui: false
+  filter-ui: true
+  page-size: 20
+toc: false
+---
+
+Toàn bộ 15 bài giảng được tổ chức theo bốn phần lớn của môn học. Mỗi bài có cấu trúc thống nhất: **mục tiêu bài học**, **khái niệm cốt lõi**, **phân tích chi tiết**, **ví dụ thực tiễn Việt Nam**, và **bài tập tự kiểm tra**.
+
+::: {.callout-tip}
+## Cách đọc hiệu quả
+Trước mỗi buổi, đọc lướt phần *Mục tiêu* và *Khái niệm cốt lõi*. Sau buổi học, quay lại đọc kỹ phần *Phân tích chi tiết* và làm phần *Tự kiểm tra*.
+:::

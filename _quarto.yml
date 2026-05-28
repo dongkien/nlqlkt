@@ -1,0 +1,125 @@
+# ============================================================
+# Nguyên lý Quản lý Kinh tế — Học liệu mở
+# Quarto Website project
+# ============================================================
+
+project:
+  type: website
+  output-dir: _site
+  resources:
+    - "data/"
+
+execute:
+  freeze: auto      # không re-run code chưa đổi → render nhanh
+  echo: true        # mặc định hiện code cho sinh viên đọc
+  warning: false
+
+# Stata code chạy với cwd = thư mục project (để paths như "data/..." hoạt động)
+execute-dir: project
+
+# ----- Site config -----
+website:
+  title: "Nguyên lý Quản lý Kinh tế"
+  description: "Học liệu mở cho sinh viên cử nhân năm 3-4. Bài giảng, slide, bài tập và đề thi mẫu."
+  search:
+    location: navbar
+    type: overlay
+    copy-button: true
+
+  navbar:
+    background: primary
+    pinned: true
+    logo-alt: "Nguyên lý QLKT"
+    left:
+      - href: index.qmd
+        text: "Trang chủ"
+      - href: syllabus.qmd
+        text: "Đề cương"
+      - href: schedule.qmd
+        text: "Lịch học"
+      - href: lectures/index.qmd
+        text: "Bài giảng"
+      - href: problem-sets/index.qmd
+        text: "Bài tập"
+      - href: exams/index.qmd
+        text: "Đề thi mẫu"
+
+  sidebar:
+    - title: "Bài giảng"
+      style: docked
+      align: left
+      collapse-level: 2
+      contents:
+        - text: "← Trang chủ"
+          href: index.qmd
+        - section: "Phần I — Cơ sở lý luận"
+          contents:
+            - lectures/week-01.qmd
+            - lectures/week-02.qmd
+            - lectures/week-03.qmd
+            - lectures/week-04.qmd
+        - section: "Phần II — Hệ thống QLKT"
+          contents:
+            - lectures/week-05.qmd
+            - lectures/week-06.qmd
+            - lectures/week-07.qmd
+            - lectures/week-08.qmd
+        - section: "Phần III — Công cụ chính sách"
+          contents:
+            - lectures/week-09.qmd
+            - lectures/week-10.qmd
+            - lectures/week-11.qmd
+            - lectures/week-12.qmd
+        - section: "Phần IV — QLKT Việt Nam"
+          contents:
+            - lectures/week-13.qmd
+            - lectures/week-14.qmd
+            - lectures/week-15.qmd
+
+  page-footer:
+    border: true
+    background: light
+    left: |
+      © 2026 — Học liệu mở · [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.vi)
+    center: "Giảng viên: *cập nhật tên tại đây*"
+    right: "Tạo bằng [Quarto](https://quarto.org/)"
+
+# ----- Format -----
+format:
+  html:
+    theme:
+      light: [cosmo, styles/custom.scss]
+    css: styles/custom.css
+    toc: true
+    toc-depth: 3
+    toc-title: "Trong bài"
+    toc-location: right
+    number-sections: false
+    code-fold: false
+    code-tools: false
+    code-link: false
+    code-copy: true
+    code-overflow: wrap
+    smooth-scroll: true
+    link-external-newwindow: true
+    link-external-icon: true
+    anchor-sections: true
+    fig-cap-location: bottom
+    tbl-cap-location: top
+    citations-hover: true
+    footnotes-hover: true
+    lang: vi
+    mainfont: "Lora, Georgia, serif"
+    monofont: "JetBrains Mono, ui-monospace, monospace"
+    fontsize: "1.05rem"
+    linestretch: 1.7
+    grid:
+      sidebar-width: 280px
+      body-width: 800px
+      margin-width: 220px
+
+lang: vi
+
+# Bibliography setup (sẽ thêm file refs.bib sau)
+# bibliography: refs.bib
+# csl: apa.csl

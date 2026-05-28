@@ -1,0 +1,70 @@
+---
+title: "Lịch học 15 tuần"
+subtitle: "Bảng tiến độ chi tiết và mốc thời gian quan trọng"
+toc: true
+---
+
+## Tổng quan tiến độ
+
+```{=html}
+<div style="overflow-x:auto;">
+```
+
+| Tuần | Phần | Chủ đề | Đọc trước | Bài tập / Kiểm tra |
+|:---:|:---:|---|---|---|
+| **1** | I | [Giới thiệu môn học và bản chất QLKT](lectures/week-01.qmd) | Đỗ-Mai Ch.1 | — |
+| **2** | I | [Lịch sử tư tưởng QLKT](lectures/week-02.qmd) | Đỗ-Mai Ch.2; Acemoglu-Robinson Ch.1–2 | — |
+| **3** | I | [Quy luật khách quan và vận dụng](lectures/week-03.qmd) | Đỗ-Mai Ch.3 | **PS-01** giao |
+| **4** | I | [Hệ thống quản lý kinh tế](lectures/week-04.qmd) | Đỗ-Mai Ch.4 | **PS-01** nộp |
+| **5** | II | [Chức năng quản lý kinh tế](lectures/week-05.qmd) | Đỗ-Mai Ch.5 | — |
+| **6** | II | [Cơ cấu tổ chức QLKT](lectures/week-06.qmd) | Đỗ-Mai Ch.6 | **PS-02** giao |
+| **7** | II | [Phương pháp quản lý kinh tế](lectures/week-07.qmd) | Đỗ-Mai Ch.7 | — |
+| **8** | II | [Cán bộ và thông tin trong QLKT](lectures/week-08.qmd) | Đỗ-Mai Ch.8 | ⚠️ **Kiểm tra giữa kỳ** + PS-02 nộp |
+| **9** | III | [Quản lý nhà nước về kinh tế](lectures/week-09.qmd) | Phan Huy Đường Ch.1–2 | — |
+| **10** | III | [Chính sách tài khóa](lectures/week-10.qmd) | Phan Huy Đường Ch.3; Luật NSNN | **PS-03** giao |
+| **11** | III | [Chính sách tiền tệ](lectures/week-11.qmd) | Phan Huy Đường Ch.4 | — |
+| **12** | III | [Thương mại — đầu tư — công nghiệp](lectures/week-12.qmd) | Rodrik Ch.4–5 | **PS-03** nộp |
+| **13** | IV | [Đặc thù QLKT Việt Nam](lectures/week-13.qmd) | Văn kiện Đại hội XIII | — |
+| **14** | IV | [Hội nhập kinh tế quốc tế](lectures/week-14.qmd) | World Bank VDR | Đăng ký nhóm thuyết trình |
+| **15** | IV | [Tổng ôn và thuyết trình nhóm](lectures/week-15.qmd) | — | 🎤 **Thuyết trình nhóm** |
+| **Thi** | — | Thi cuối kỳ (90 phút, tự luận) | Toàn bộ | ⚠️ **Thi cuối kỳ** |
+
+```{=html}
+</div>
+```
+
+## Mốc thời gian quan trọng
+
+::: {.callout-warning}
+## Các mốc bắt buộc
+
+- **Tuần 3**: Phát Problem Set 01.
+- **Tuần 4**: Hạn nộp Problem Set 01.
+- **Tuần 6**: Phát Problem Set 02.
+- **Tuần 8**: **Kiểm tra giữa kỳ** + Hạn nộp Problem Set 02.
+- **Tuần 10**: Phát Problem Set 03.
+- **Tuần 12**: Hạn nộp Problem Set 03.
+- **Tuần 14**: Hạn đăng ký nhóm thuyết trình.
+- **Tuần 15**: Thuyết trình nhóm trên lớp.
+- **Tuần thi**: Thi cuối kỳ (lịch thi do nhà trường công bố).
+:::
+
+## Khối lượng học tập kỳ vọng
+
+Theo chuẩn 1 tín chỉ = 15 tiết lên lớp + 30 giờ tự học, môn 3 tín chỉ kỳ vọng:
+
+| Hoạt động | Giờ/tuần |
+|---|---:|
+| Lên lớp | 3 |
+| Đọc tài liệu trước giờ học | 3 |
+| Làm bài tập | 2 |
+| Ôn tập, đọc mở rộng | 1 |
+| **Tổng/tuần** | **~9** |
+
+Trên 15 tuần ≈ **135 giờ học tập** cho môn này.
+
+## Buổi học bù
+
+Nếu có buổi học bù do nghỉ lễ hoặc giảng viên đi công tác, lịch bù sẽ được công bố ở trang này.
+
+*Lần cập nhật cuối: cuối tháng 5/2026*

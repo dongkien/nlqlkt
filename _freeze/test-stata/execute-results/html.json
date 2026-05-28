@@ -1,0 +1,16 @@
+{
+  "hash": "0733a01f1228c6f812274b81987842f2",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Test Stata 19 MP qua Quarto\"\njupyter: nbstata\n---\n\n# Kiểm tra Stata edition\n\n::: {#4655b083 .cell execution_count=1}\n``` {.stata .cell-code}\ndisplay \"Hello AcLab+ từ Quarto\"\ndisplay \"Edition: \" c(edition)\ndisplay \"Cores: \" c(processors)\n```\n\n::: {.cell-output .cell-output-display}\n```{=html}\n<style>div.jp-Notebook .datagrid-container {min-height: 448px; }</style>\n```\n:::\n\n::: {.cell-output .cell-output-stdout}\n```\n\n. display \"Hello AcLab+ từ Quarto\"\nHello AcLab+ từ Quarto\n\n. display \"Edition: \" c(edition)\nEdition: BE\n\n. display \"Cores: \" c(processors)\nCores: 2\n\n. \n```\n:::\n:::\n\n\n# Đọc dữ liệu GDP Việt Nam\n\n::: {#fb6a24a2 .cell execution_count=2}\n``` {.stata .cell-code}\nimport delimited \"data/vn_gdp_1986_2024.csv\", clear case(lower)\nsummarize gdp_growth\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n\n. import delimited \"data/vn_gdp_1986_2024.csv\", clear case(lower)\n(encoding automatically selected: UTF-8)\n(3 vars, 39 obs)\n\n. summarize gdp_growth\n\n    Variable |        Obs        Mean    Std. dev.       Min        Max\n-------------+---------------------------------------------------------\n  gdp_growth |         39    6.362564    1.662904       2.58       9.54\n\n. \n```\n:::\n:::\n\n\n",
+    "supporting": [
+      "test-stata_files"
+    ],
+    "filters": [],
+    "includes": {
+      "include-in-header": [
+        "<script src=\"https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js\" integrity=\"sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx\" crossorigin=\"anonymous\"></script>\n<script src=\"https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js\" integrity=\"sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2\" crossorigin=\"anonymous\" data-relocate-top=\"true\"></script>\n<script type=\"application/javascript\">define('jquery', [],function() {return window.jQuery;})</script>\n"
+      ]
+    }
+  }
+}

@@ -1,0 +1,125 @@
+---
+title: "Đề cương môn học"
+subtitle: "Nguyên lý Quản lý Kinh tế · 3 tín chỉ · 45 tiết"
+date: last-modified
+author: "Giảng viên: *cập nhật tại đây*"
+---
+
+## 1. Thông tin chung
+
+| Mục | Nội dung |
+|---|---|
+| **Tên môn học** | Nguyên lý Quản lý Kinh tế |
+| **Mã môn** | *cập nhật mã môn theo chương trình* |
+| **Số tín chỉ** | 3 |
+| **Tổng thời lượng** | 45 tiết lên lớp + ~90 giờ tự học |
+| **Học kỳ** | *cập nhật* |
+| **Đối tượng** | Sinh viên cử nhân năm 3-4, các ngành Kinh tế / Quản lý |
+| **Điều kiện tiên quyết** | Kinh tế Vi mô, Kinh tế Vĩ mô, Thống kê |
+| **Hình thức** | Trực tiếp kết hợp tự học có hướng dẫn |
+
+## 2. Mô tả môn học
+
+Môn học cung cấp hệ thống tri thức nền tảng về quản lý nền kinh tế quốc dân, bao gồm: bản chất, đặc điểm và quy luật khách quan của quản lý kinh tế; hệ thống quản lý kinh tế và các thành tố cấu thành; chức năng, phương pháp và công cụ quản lý; các chính sách kinh tế chủ yếu của Nhà nước; và đặc thù quản lý kinh tế trong điều kiện Việt Nam — nền kinh tế thị trường định hướng xã hội chủ nghĩa và quá trình hội nhập kinh tế quốc tế.
+
+## 3. Mục tiêu môn học
+
+Sau khi hoàn thành môn học, sinh viên có khả năng:
+
+### Về kiến thức (K)
+
+- **K1.** Trình bày được bản chất, đặc trưng và các quy luật khách quan của quản lý kinh tế.
+- **K2.** Phân tích được cấu trúc của hệ thống quản lý kinh tế và mối quan hệ giữa các thành tố.
+- **K3.** Hiểu rõ các chức năng, phương pháp và công cụ quản lý kinh tế của Nhà nước.
+- **K4.** Đánh giá được vai trò và đặc thù của Nhà nước Việt Nam trong quản lý nền kinh tế.
+
+### Về kỹ năng (S)
+
+- **S1.** Vận dụng được khung phân tích QLKT để mổ xẻ một vấn đề chính sách thực tế.
+- **S2.** Đọc hiểu được các báo cáo kinh tế và tài liệu chính sách của Chính phủ.
+- **S3.** Sử dụng được công cụ định lượng cơ bản (Stata) để phân tích dữ liệu kinh tế vĩ mô.
+- **S4.** Trình bày một vấn đề QLKT có cấu trúc khoa học, bằng cả văn bản và thuyết trình.
+
+### Về thái độ (A)
+
+- **A1.** Có thái độ khách quan, dựa trên bằng chứng khi phân tích vấn đề kinh tế.
+- **A2.** Có ý thức trách nhiệm với các vấn đề phát triển kinh tế của Việt Nam.
+
+## 4. Đánh giá
+
+| Hình thức | Tỷ trọng | Mô tả |
+|---|---:|---|
+| Chuyên cần | 10% | Tham gia đầy đủ, tích cực trong giờ học |
+| Bài tập về nhà | 15% | 3 bài tập / học kỳ, có sử dụng dữ liệu thực |
+| Kiểm tra giữa kỳ | 25% | Tuần 8, trắc nghiệm + tự luận, 60 phút |
+| Thuyết trình nhóm | 20% | Tuần 15, nhóm 3–5 sinh viên, đề tài tự chọn từ danh mục |
+| Thi cuối kỳ | 30% | Tự luận, 90 phút, không dùng tài liệu |
+| **Tổng** | **100%** |  |
+
+### Tiêu chí đánh giá thuyết trình nhóm
+
+| Tiêu chí | Điểm |
+|---|---:|
+| Nội dung học thuật (sử dụng đúng khái niệm, có bằng chứng) | 40% |
+| Cấu trúc và logic trình bày | 20% |
+| Sử dụng dữ liệu định lượng (có Stata code, biểu đồ) | 20% |
+| Kỹ năng trình bày và phản biện | 20% |
+
+## 5. Tài liệu
+
+### Giáo trình chính
+
+::: {.callout-note appearance="simple"}
+*Phần này cần cập nhật cho phù hợp với chương trình của trường bạn.*
+:::
+
+- Đỗ Hoàng Toàn, Mai Văn Bưu (chủ biên). *Giáo trình Quản lý kinh tế.* Nhà xuất bản Đại học Kinh tế Quốc dân. (Cập nhật phiên bản mới nhất)
+
+### Tài liệu tham khảo bắt buộc
+
+- Vũ Đình Bách (chủ biên). *Quản lý nhà nước về kinh tế.* NXB Lao động.
+- Phan Huy Đường. *Quản lý nhà nước về kinh tế.* NXB Đại học Quốc gia Hà Nội.
+
+### Tài liệu tham khảo mở rộng (tiếng Anh)
+
+- Acemoglu, D., & Robinson, J. A. (2012). *Why Nations Fail: The Origins of Power, Prosperity, and Poverty.* Crown Business.
+- Stiglitz, J. E. (2015). *The Great Divide.* W. W. Norton.
+- Rodrik, D. (2007). *One Economics, Many Recipes.* Princeton University Press.
+- World Bank. *Vietnam Development Report* (cập nhật hàng năm). [worldbank.org/vietnam](https://worldbank.org/vietnam)
+
+### Văn bản pháp luật và chính sách
+
+- Hiến pháp 2013 (Điều 50–54 về chế độ kinh tế).
+- Văn kiện Đại hội Đảng XIII (mục Định hướng phát triển kinh tế).
+- Luật Quản lý nợ công (sửa đổi).
+- Luật Ngân sách Nhà nước.
+
+### Phần mềm sử dụng
+
+- **Stata** (bản từ 14 trở lên) cho phân tích dữ liệu vĩ mô.
+- Excel hoặc Google Sheets cho bài tập cơ bản.
+- (Tùy chọn) R hoặc Python — cho sinh viên muốn mở rộng.
+
+## 6. Quy định lớp học
+
+### Chuyên cần
+- Vắng quá 20% số tiết → không đủ điều kiện dự thi cuối kỳ.
+- Đến muộn 15 phút trở lên tính là vắng tiết.
+
+### Bài tập về nhà
+- Nộp đúng hạn — chậm 1 ngày trừ 10%, chậm trên 7 ngày không nhận.
+- Bài tập có sử dụng Stata phải nộp kèm file `.do` và `.log`.
+
+### Liêm chính học thuật
+- Không sao chép. Phát hiện đạo văn → điểm 0 cho cấu phần đó, có thể bị xử lý kỷ luật.
+- Sử dụng AI (ChatGPT, Claude…) **được khuyến khích** cho nghiên cứu và học tập, nhưng phải **ghi nhận minh bạch**: ghi rõ phần nào do AI hỗ trợ, prompt sử dụng. Không khai báo = đạo văn.
+
+## 7. Lịch học tóm tắt
+
+Xem [trang Lịch học](schedule.qmd) để có bảng 15 tuần đầy đủ.
+
+## 8. Cập nhật
+
+Đề cương này có thể được điều chỉnh trong quá trình giảng dạy. Mọi thay đổi được công bố trong tuần kế tiếp.
+
+*Phiên bản đề cương: cập nhật cuối*

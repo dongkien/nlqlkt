@@ -1,0 +1,30 @@
+---
+title: "Bài tập"
+subtitle: "3 Problem sets cho học kỳ"
+toc: false
+listing:
+  contents: "ps-*.qmd"
+  type: default
+  sort: "filename asc"
+  fields: [title, subtitle, date]
+  sort-ui: false
+  filter-ui: false
+---
+
+## Quy định chung
+
+- Mỗi học kỳ có **3 Problem Sets**, mỗi PS chiếm 5% tổng điểm.
+- Hạn nộp ghi rõ trong mỗi PS. Chậm 1 ngày trừ 10%, chậm trên 7 ngày không nhận.
+- Bài có sử dụng Stata **phải nộp kèm** file `.do` (code) và `.log` (kết quả chạy).
+- Khuyến khích thảo luận nhóm nhưng **viết bài độc lập**. Nộp bài giống nhau (kể cả 50%+ trùng lặp) tính là đạo văn.
+- Sử dụng AI (ChatGPT, Claude…) cần khai báo rõ ràng phần nào do AI hỗ trợ.
+
+## Cấu trúc một Problem Set
+
+Mỗi PS bao gồm:
+
+1. **Phần A — Tự luận** (40%): 2–3 câu phân tích, 200–400 từ mỗi câu.
+2. **Phần B — Tính toán / Định lượng** (40%): bài tập với dữ liệu thực, viết code Stata.
+3. **Phần C — Đọc và bình luận** (20%): đọc 1 bài báo / chính sách và bình luận ngắn 300 từ.
+
+## Danh sách bài tập
