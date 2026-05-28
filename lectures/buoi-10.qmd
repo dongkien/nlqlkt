@@ -1,0 +1,56 @@
+---
+title: "Buổi 10 — Mô hình Mundell-Fleming"
+subtitle: "Ba phương trình IS-LM-BP; case Hong Kong LERS, Reaganomics, ERM 1992"
+reading-time: "Chương 4"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Đóng góp CLO
+
+**CLO2, CLO3 — Phân tích chính sách dưới các chế độ tỷ giá**
+:::
+
+## Nội dung lý thuyết (thuyết giảng)
+
+**4.2. Mô hình Mundell-Fleming**
+
+- Ba phương trình: IS, LM, BP
+- Điều kiện **Marshall-Lerner**
+- Tác động chính sách tài khoá, tiền tệ và thương mại dưới:
+  - Tỷ giá cố định
+  - Tỷ giá thả nổi
+
+**Cases lịch sử**
+
+- **Hong Kong LERS** (Linked Exchange Rate System)
+- **Reaganomics** đầu thập kỷ 1980
+- **ERM 1992** — Black Wednesday và sự rút lui của Anh
+
+## Thực hành / Thảo luận
+
+Phân tích **chính sách tỷ giá Việt Nam 2022–2024** qua khung Mundell-Fleming; **mô phỏng quyết định NHNN** trước cú sốc Fed tăng lãi suất 200 bps.
+
+## Bài tập lớn / Tiểu luận
+
+Báo cáo phân tích chính sách về một vấn đề tỷ giá / dòng vốn VN (Phần 2): áp dụng Mundell-Fleming.
+
+## Tự học có hướng dẫn
+
+1. Tại sao Hong Kong vẫn giữ được peg sau bao năm?
+2. Reaganomics: bài học nào còn áp dụng được?
+3. ERM 1992: nguyên nhân cốt lõi nào dẫn đến đổ vỡ?
+
+## Đọc thêm
+
+- Mankiw, *Kinh tế học vĩ mô*, chương 20.
+- Blanchard (2020), chương 19–20.
+
+::: {.callout-warning appearance="simple"}
+## 🚧 Nội dung đang biên soạn
+
+Bài giảng buổi 10 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
+:::
+
+---
+
+← *Buổi trước*: [Buổi 9](buoi-09.qmd) *Buổi tiếp theo*: [Buổi 11](buoi-11.qmd) →

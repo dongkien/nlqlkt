@@ -1,0 +1,65 @@
+---
+title: "Buổi 13 — Phát triển kinh tế vùng"
+subtitle: "Marshall, Krugman; 6 vùng KT-XH, 4 vùng KTTĐ; 4 cực động lực, 6 siêu dự án XIV"
+reading-time: "Chương 5"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Đóng góp CLO
+
+**CLO3, CLO4 — Phân tích phát triển vùng và phối hợp liên vùng**
+:::
+
+## Nội dung lý thuyết (thuyết giảng)
+
+**5.2. Phát triển kinh tế vùng**
+
+- Khái niệm vùng và cơ chế tạo chênh lệch
+- Lý thuyết kinh tế vùng:
+  - **Marshall** — agglomeration economies
+  - **Krugman** — New Economic Geography
+
+**Phân vùng kinh tế Việt Nam**
+
+- **Sáu vùng KT-XH**: TDMNPB, ĐBSH, BTB-DHMT, Tây Nguyên, ĐNB, ĐBSCL
+- **Bốn vùng KTTĐ**: Bắc Bộ, miền Trung, phía Nam, ĐBSCL
+- Hành lang kinh tế
+
+**Định hướng Đại hội XIV**
+
+- **Bốn cực động lực**
+- **Sáu siêu dự án** trọng điểm
+
+**Phát triển bền vững vùng**
+
+- Case **ĐNB**, **ĐBSCL**, **Tây Nguyên**, **BTB-DHMT**
+
+## Thực hành / Thảo luận
+
+Đối chiếu **PCI / PAPI / PAR Index** cho 3 tỉnh thuộc 3 vùng khác nhau; thảo luận về **chênh lệch vùng** và bài học chính sách.
+
+## Bài tập lớn / Tiểu luận
+
+Đề xuất chiến lược phát triển cho một tỉnh/vùng (Phần 2 — đề xuất cụ thể với số liệu).
+
+## Tự học có hướng dẫn
+
+1. Bốn cực động lực có tạo ra chênh lệch vùng mới không?
+2. ĐBSCL: ưu tiên thích ứng biến đổi khí hậu hay tăng trưởng?
+3. Marshall vs Krugman: khung nào phù hợp VN hơn?
+
+## Đọc thêm
+
+- HCMA (2021), chương 6.
+- Văn kiện Đại hội XIV — chiến lược phát triển vùng.
+- Báo cáo World Bank về phát triển vùng VN.
+
+::: {.callout-warning appearance="simple"}
+## 🚧 Nội dung đang biên soạn
+
+Bài giảng buổi 13 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
+:::
+
+---
+
+← *Buổi trước*: [Buổi 12](buoi-12.qmd) *Buổi tiếp theo*: [Buổi 14](buoi-14.qmd) →

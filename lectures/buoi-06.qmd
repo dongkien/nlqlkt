@@ -1,0 +1,57 @@
+---
+title: "Buổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn"
+subtitle: "4 mục tiêu vĩ mô; Cobb-Douglas, phân rã Solow, growth accounting Việt Nam"
+reading-time: "Chương 3"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Đóng góp CLO
+
+**CLO2, CLO3 — Phân tích các đánh đổi giữa mục tiêu vĩ mô**
+:::
+
+## Nội dung lý thuyết (thuyết giảng)
+
+**3.1. Bốn mục tiêu vĩ mô**
+
+- Tăng trưởng kinh tế
+- Việc làm đầy đủ
+- Ổn định giá cả (kiểm soát lạm phát)
+- Cân bằng cán cân thanh toán
+
+Phân phối thu nhập; phát triển bền vững.
+
+**Tăng trưởng dài hạn**
+
+- Hàm sản xuất **Cobb-Douglas**: \(Y = AK^\alpha L^{1-\alpha}\)
+- **Phân rã Solow**: đóng góp K, L, TFP
+- **Growth accounting** Việt Nam giai đoạn 2010–2024
+
+## Thực hành / Thảo luận
+
+Tính **growth accounting** cho Việt Nam giai đoạn 5 năm gần nhất: đóng góp của vốn, lao động và TFP. Thảo luận hàm ý chính sách.
+
+## Bài tập lớn / Tiểu luận
+
+Báo cáo phân tích **một mục tiêu vĩ mô** của Việt Nam giai đoạn 2020–2024 (Phần 1).
+
+## Tự học có hướng dẫn
+
+1. Bốn mục tiêu vĩ mô mâu thuẫn nhau ở đâu?
+2. TFP đóng góp bao nhiêu % vào tăng trưởng VN?
+3. Khi nào tăng trưởng đi đôi với bất bình đẳng tăng?
+
+## Đọc thêm
+
+- Mankiw, *Kinh tế học vĩ mô*, chương 7–8.
+- Blanchard (2020), chương 11–13.
+
+::: {.callout-warning appearance="simple"}
+## 🚧 Nội dung đang biên soạn
+
+Bài giảng buổi 06 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
+:::
+
+---
+
+← *Buổi trước*: [Buổi 5](buoi-05.qmd) *Buổi tiếp theo*: [Buổi 7](buoi-07.qmd) →

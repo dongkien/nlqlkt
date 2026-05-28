@@ -1,6 +1,6 @@
 ---
-title: "Lịch học 15 tuần"
-subtitle: "Bảng tiến độ chi tiết và mốc thời gian quan trọng"
+title: "Lịch học 15 buổi"
+subtitle: "Tiến độ chi tiết theo 5 chương + Seminar tổng hợp"
 toc: true
 ---
 
@@ -10,58 +10,58 @@ toc: true
 <div style="overflow-x:auto;">
 ```
 
-| Tuần | Phần | Chủ đề | Đọc trước | Bài tập / Kiểm tra |
-|:---:|:---:|---|---|---|
-| **1** | I | [Giới thiệu môn học và bản chất QLKT](lectures/week-01.qmd) | Đỗ-Mai Ch.1 | — |
-| **2** | I | [Lịch sử tư tưởng QLKT](lectures/week-02.qmd) | Đỗ-Mai Ch.2; Acemoglu-Robinson Ch.1–2 | — |
-| **3** | I | [Quy luật khách quan và vận dụng](lectures/week-03.qmd) | Đỗ-Mai Ch.3 | **PS-01** giao |
-| **4** | I | [Hệ thống quản lý kinh tế](lectures/week-04.qmd) | Đỗ-Mai Ch.4 | **PS-01** nộp |
-| **5** | II | [Chức năng quản lý kinh tế](lectures/week-05.qmd) | Đỗ-Mai Ch.5 | — |
-| **6** | II | [Cơ cấu tổ chức QLKT](lectures/week-06.qmd) | Đỗ-Mai Ch.6 | **PS-02** giao |
-| **7** | II | [Phương pháp quản lý kinh tế](lectures/week-07.qmd) | Đỗ-Mai Ch.7 | — |
-| **8** | II | [Cán bộ và thông tin trong QLKT](lectures/week-08.qmd) | Đỗ-Mai Ch.8 | ⚠️ **Kiểm tra giữa kỳ** + PS-02 nộp |
-| **9** | III | [Quản lý nhà nước về kinh tế](lectures/week-09.qmd) | Phan Huy Đường Ch.1–2 | — |
-| **10** | III | [Chính sách tài khóa](lectures/week-10.qmd) | Phan Huy Đường Ch.3; Luật NSNN | **PS-03** giao |
-| **11** | III | [Chính sách tiền tệ](lectures/week-11.qmd) | Phan Huy Đường Ch.4 | — |
-| **12** | III | [Thương mại — đầu tư — công nghiệp](lectures/week-12.qmd) | Rodrik Ch.4–5 | **PS-03** nộp |
-| **13** | IV | [Đặc thù QLKT Việt Nam](lectures/week-13.qmd) | Văn kiện Đại hội XIII | — |
-| **14** | IV | [Hội nhập kinh tế quốc tế](lectures/week-14.qmd) | World Bank VDR | Đăng ký nhóm thuyết trình |
-| **15** | IV | [Tổng ôn và thuyết trình nhóm](lectures/week-15.qmd) | — | 🎤 **Thuyết trình nhóm** |
-| **Thi** | — | Thi cuối kỳ (90 phút, tự luận) | Toàn bộ | ⚠️ **Thi cuối kỳ** |
+| Buổi | Chương | Chủ đề | Mục chính | CLO |
+|:---:|:---:|---|---|:---:|
+| **1** | I | [Tổng quan QLKT (1)](lectures/buoi-01.qmd) | Cơ sở khoa học kinh tế; triết lý chính sách (Bentham CBA, Kant, Rawls) | CLO1 |
+| **2** | I | [Tổng quan QLKT (2)](lectures/buoi-02.qmd) | Khái niệm QLKT; 5 chức năng; 3 nhóm công cụ; 3 vai trò Nhà nước | CLO1 |
+| **3** | II | [Ngành & DN (1)](lectures/buoi-03.qmd) | Cấu trúc thị trường; Lerner, HHI; thất bại thị trường | CLO1, CLO2 |
+| **4** | II | [Ngành & DN (2)](lectures/buoi-04.qmd) | Cơ chế điều tiết: Pigou, Coase, cap-and-trade; chính sách công nghiệp | CLO1, CLO2 |
+| **5** | II | [Ngành & DN (3)](lectures/buoi-05.qmd) | Quản trị doanh nghiệp; DNNN, tư nhân, FDI; case Việt Nam | CLO1, CLO2 |
+| **6** | III | [Vĩ mô đóng (1)](lectures/buoi-06.qmd) | Mục tiêu vĩ mô; tăng trưởng dài hạn: Cobb-Douglas, Solow, growth accounting | CLO2, CLO3 |
+| **7** | III | [Vĩ mô đóng (2)](lectures/buoi-07.qmd) | Mô hình IS-LM; crowding out; bẫy thanh khoản | CLO2, CLO3 |
+| **8** | III | [Vĩ mô đóng (3)](lectures/buoi-08.qmd) | AD-AS; Phillips ngắn hạn + kỳ vọng; phối hợp tài khoá–tiền tệ VN | CLO2, CLO3 |
+| **9** | IV | [Vĩ mô mở (1)](lectures/buoi-09.qmd) | BoP, tỷ giá (NEER, REER), PPP, UIP, CIP, dự trữ ngoại hối | CLO2, CLO3 |
+| **10** | IV | [Vĩ mô mở (2)](lectures/buoi-10.qmd) | Mundell-Fleming; Marshall-Lerner; case Hong Kong LERS, Reaganomics, ERM 1992 | CLO2, CLO3 |
+| **11** | IV | [Vĩ mô mở (3)](lectures/buoi-11.qmd) | Bộ ba bất khả thi; sterilization; Việt Nam trong Trilemma; KH châu Á 1997 | CLO2, CLO3 |
+| **12** | V | [Địa phương](lectures/buoi-12.qmd) | Phân cấp tài khoá; cải cách 2025 (34 tỉnh, 2 cấp); PCI, PAPI, PAR Index | CLO3 |
+| **13** | V | [Vùng kinh tế](lectures/buoi-13.qmd) | 6 vùng KT-XH, 4 vùng KTTĐ; 4 cực động lực, 6 siêu dự án Đại hội XIV | CLO3 |
+| **14** | Seminar | [Chia sẻ thực tiễn](lectures/buoi-14.qmd) | Chuyên gia chia sẻ; thảo luận chính sách; vận dụng nhóm | CLO2-CLO5 |
+| **15** | Seminar | [Tổng kết](lectures/buoi-15.qmd) | Thuyết trình sinh viên; phản biện chéo; đánh giá tổng kết | CLO2-CLO5 |
 
 ```{=html}
 </div>
 ```
 
-## Mốc thời gian quan trọng
+## Mốc đánh giá
 
 ::: {.callout-warning}
 ## Các mốc bắt buộc
 
-- **Tuần 3**: Phát Problem Set 01.
-- **Tuần 4**: Hạn nộp Problem Set 01.
-- **Tuần 6**: Phát Problem Set 02.
-- **Tuần 8**: **Kiểm tra giữa kỳ** + Hạn nộp Problem Set 02.
-- **Tuần 10**: Phát Problem Set 03.
-- **Tuần 12**: Hạn nộp Problem Set 03.
-- **Tuần 14**: Hạn đăng ký nhóm thuyết trình.
-- **Tuần 15**: Thuyết trình nhóm trên lớp.
-- **Tuần thi**: Thi cuối kỳ (lịch thi do nhà trường công bố).
+- **Sau Buổi 5** *(hết Chương 1–2)*: **Đánh giá giữa kỳ (30%)** — hình thức do giảng viên quyết định: thi viết, thuyết trình, mini-case, hoặc kết hợp.
+- **Buổi 14–15** *(Seminar)*: **Đánh giá cuối kỳ (60%)** — thuyết trình, tiểu luận hoặc thi viết, phạm vi toàn bộ học phần.
+- **Liên tục**: **Đánh giá quá trình (10%)** — chuyên cần, bài kiểm tra ngắn, tham gia thảo luận.
 :::
 
 ## Khối lượng học tập kỳ vọng
 
-Theo chuẩn 1 tín chỉ = 15 tiết lên lớp + 30 giờ tự học, môn 3 tín chỉ kỳ vọng:
-
-| Hoạt động | Giờ/tuần |
+| Hoạt động | Tổng giờ |
 |---|---:|
-| Lên lớp | 3 |
-| Đọc tài liệu trước giờ học | 3 |
-| Làm bài tập | 2 |
-| Ôn tập, đọc mở rộng | 1 |
-| **Tổng/tuần** | **~9** |
+| Lý thuyết (thuyết giảng) | 30 |
+| Thực hành, thảo luận trên lớp | 15 |
+| Tiểu luận, bài tập lớn, thực tế | 25 |
+| Tự học có hướng dẫn | 80 |
+| **Tổng cộng** | **150** |
 
-Trên 15 tuần ≈ **135 giờ học tập** cho môn này.
+Tỷ lệ tự học : thực hành : thuyết giảng ≈ **80 : 40 : 30** — học phần đòi hỏi cao về tự học và áp dụng.
+
+## Khung tự học (gợi ý cho mỗi buổi)
+
+| Hoạt động | Thời lượng |
+|---|---|
+| Đọc trước Mankiw / Buchholz | 1–2 giờ |
+| Đọc văn bản pháp luật / Văn kiện XIV (theo chương) | 1 giờ |
+| Làm bài tập, mini-case sau buổi | 1–2 giờ |
+| Chuẩn bị thảo luận buổi sau | 30–60 phút |
 
 ## Buổi học bù
 

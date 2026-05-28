@@ -1,0 +1,55 @@
+---
+title: "Buổi 03 — Cấu trúc thị trường và thất bại thị trường"
+subtitle: "4 loại cấu trúc; Lerner, HHI; hàng hoá công, ngoại tác, độc quyền, thông tin bất cân xứng"
+reading-time: "Chương 2"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Đóng góp CLO
+
+**CLO1, CLO2 — Vận dụng khung phân tích vào tình huống điển hình**
+:::
+
+## Nội dung lý thuyết (thuyết giảng)
+
+**2.1. Cấu trúc thị trường**
+
+- Bốn loại: cạnh tranh hoàn hảo, độc quyền, độc quyền nhóm, cạnh tranh độc quyền
+- Chỉ số **Lerner**, chỉ số **HHI**
+- Luật Cạnh tranh Việt Nam
+
+**2.2. Thất bại thị trường**
+
+- Hàng hoá công
+- Ngoại tác (externalities)
+- Độc quyền tự nhiên
+- Thông tin bất cân xứng
+
+## Thực hành / Thảo luận
+
+Tính HHI cho một ngành Việt Nam (vd: viễn thông, ngân hàng); thảo luận **mức độ tập trung** và hàm ý cho chính sách cạnh tranh.
+
+## Bài tập lớn / Tiểu luận
+
+Bài tập phân tích **vai trò của quyền sở hữu và thể chế** trong giải quyết một thất bại thị trường ở Việt Nam (Phần 1).
+
+## Tự học có hướng dẫn
+
+1. Bốn nguồn thất bại thị trường?
+2. HHI < 1500: thị trường có cạnh tranh không?
+3. Thông tin bất cân xứng tạo ra vấn đề gì cho QLKT?
+
+## Đọc thêm
+
+- Mankiw, *Kinh tế học vi mô*, chương 14–17.
+- Stiglitz & Rosengard (2015), *Economics of the Public Sector*, chương 4–6.
+
+::: {.callout-warning appearance="simple"}
+## 🚧 Nội dung đang biên soạn
+
+Bài giảng buổi 03 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
+:::
+
+---
+
+← *Buổi trước*: [Buổi 2](buoi-02.qmd) *Buổi tiếp theo*: [Buổi 4](buoi-04.qmd) →

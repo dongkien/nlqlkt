@@ -1,5 +1,5 @@
 # ============================================================
-# Nguyên lý Quản lý Kinh tế — Học liệu mở
+# Nguyên lý Quản lý Kinh tế (DTU301) — Học liệu mở FTU
 # Quarto Website project
 # ============================================================
 
@@ -14,13 +14,13 @@ execute:
   echo: true        # mặc định hiện code cho sinh viên đọc
   warning: false
 
-# Stata code chạy với cwd = thư mục project (để paths như "data/..." hoạt động)
+# Stata code chạy với cwd = thư mục project
 execute-dir: project
 
 # ----- Site config -----
 website:
-  title: "Nguyên lý Quản lý Kinh tế"
-  description: "Học liệu mở cho sinh viên cử nhân năm 3-4. Bài giảng, slide, bài tập và đề thi mẫu."
+  title: "Nguyên lý Quản lý Kinh tế (DTU301)"
+  description: "Học liệu mở môn DTU301 — Nguyên lý Quản lý Kinh tế. Bộ môn Kinh tế và Quản lý, Viện Kinh tế và Kinh doanh Quốc tế, Trường ĐH Ngoại Thương."
   search:
     location: navbar
     type: overlay
@@ -29,7 +29,6 @@ website:
   navbar:
     background: primary
     pinned: true
-    logo-alt: "Nguyên lý QLKT"
     left:
       - href: index.qmd
         text: "Trang chủ"
@@ -40,9 +39,9 @@ website:
       - href: lectures/index.qmd
         text: "Bài giảng"
       - href: problem-sets/index.qmd
-        text: "Bài tập"
+        text: "Tiểu luận / Bài tập"
       - href: exams/index.qmd
-        text: "Đề thi mẫu"
+        text: "Đánh giá"
 
   sidebar:
     - title: "Bài giảng"
@@ -52,36 +51,40 @@ website:
       contents:
         - text: "← Trang chủ"
           href: index.qmd
-        - section: "Phần I — Cơ sở lý luận"
+        - section: "Chương 1 — Tổng quan QLKT"
           contents:
-            - lectures/week-01.qmd
-            - lectures/week-02.qmd
-            - lectures/week-03.qmd
-            - lectures/week-04.qmd
-        - section: "Phần II — Hệ thống QLKT"
+            - lectures/buoi-01.qmd
+            - lectures/buoi-02.qmd
+        - section: "Chương 2 — Ngành và doanh nghiệp"
           contents:
-            - lectures/week-05.qmd
-            - lectures/week-06.qmd
-            - lectures/week-07.qmd
-            - lectures/week-08.qmd
-        - section: "Phần III — Công cụ chính sách"
+            - lectures/buoi-03.qmd
+            - lectures/buoi-04.qmd
+            - lectures/buoi-05.qmd
+        - section: "Chương 3 — Vĩ mô (KT đóng)"
           contents:
-            - lectures/week-09.qmd
-            - lectures/week-10.qmd
-            - lectures/week-11.qmd
-            - lectures/week-12.qmd
-        - section: "Phần IV — QLKT Việt Nam"
+            - lectures/buoi-06.qmd
+            - lectures/buoi-07.qmd
+            - lectures/buoi-08.qmd
+        - section: "Chương 4 — Vĩ mô (KT mở)"
           contents:
-            - lectures/week-13.qmd
-            - lectures/week-14.qmd
-            - lectures/week-15.qmd
+            - lectures/buoi-09.qmd
+            - lectures/buoi-10.qmd
+            - lectures/buoi-11.qmd
+        - section: "Chương 5 — Địa phương + Vùng"
+          contents:
+            - lectures/buoi-12.qmd
+            - lectures/buoi-13.qmd
+        - section: "Seminar tổng hợp"
+          contents:
+            - lectures/buoi-14.qmd
+            - lectures/buoi-15.qmd
 
   page-footer:
     border: true
     background: light
     left: |
-      © 2026 — Học liệu mở · [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.vi)
-    center: "Giảng viên: *cập nhật tên tại đây*"
+      © 2026 — Bộ môn Kinh tế và Quản lý, Viện Kinh tế và Kinh doanh Quốc tế, ĐH Ngoại Thương · [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.vi)
+    center: "TS. Đỗ Ngọc Kiên — Trưởng Bộ môn"
     right: "Tạo bằng [Quarto](https://quarto.org/)"
 
 # ----- Format -----
@@ -119,7 +122,3 @@ format:
       margin-width: 220px
 
 lang: vi
-
-# Bibliography setup (sẽ thêm file refs.bib sau)
-# bibliography: refs.bib
-# csl: apa.csl

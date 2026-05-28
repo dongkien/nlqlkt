@@ -1,32 +1,34 @@
 ---
 title: "Nguyên lý Quản lý Kinh tế"
-subtitle: "Học liệu mở cho sinh viên cử nhân"
+subtitle: "DTU301 · 3 tín chỉ · Bộ môn Kinh tế và Quản lý, Viện KT&KDQT, ĐH Ngoại Thương"
 toc: false
 page-layout: full
 ---
 
 ::: {.column-page}
 
-## Về môn học
+## Về học phần
 
-**Nguyên lý quản lý kinh tế** là môn học nền tảng cung cấp hệ thống tri thức cơ bản về *bản chất, đặc điểm, nguyên tắc, chức năng, phương pháp và công cụ* quản lý nền kinh tế. Sinh viên sau khi hoàn thành môn học có thể phân tích các vấn đề quản lý kinh tế ở tầm vĩ mô và đối chiếu với thực tiễn Việt Nam.
+**Nguyên lý Quản lý Kinh tế (DTU301)** cung cấp khung tư duy về cách **Nhà nước điều hành nền kinh tế thị trường hiện đại**, tiếp cận theo **bốn cấp độ liên kết**: quản lý kinh tế ngành, vĩ mô đóng, vĩ mô mở, và quản trị địa phương kết hợp phát triển kinh tế vùng.
 
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-8}
 
-### Đối tượng và yêu cầu
+### Cách tiếp cận
 
-Học liệu được biên soạn cho **sinh viên cử nhân năm 3–4** thuộc các ngành Kinh tế, Quản lý Kinh tế, Quản trị Kinh doanh và các ngành liên quan. Sinh viên cần đã học qua *Kinh tế vi mô*, *Kinh tế vĩ mô* và *Thống kê* trước khi vào môn này.
+Các khung lý thuyết được minh hoạ bằng **tình huống chính sách Việt Nam và quốc tế**. Phương pháp giảng dạy ưu tiên *thảo luận tình huống, mô phỏng chính sách, làm việc nhóm* và *sử dụng có trách nhiệm các công cụ số và trí tuệ nhân tạo*.
 
-Môn được tổ chức theo **15 tuần × 3 tiết**, tổng 45 tiết lên lớp, kèm khối lượng tự học tương đương ~3× thời lượng lên lớp theo chuẩn tín chỉ.
+### Cấu trúc học phần (15 buổi)
 
-### Bốn phần lớn của chương trình
-
-1. **Cơ sở lý luận** (Tuần 1–4) — bản chất, lịch sử tư tưởng, quy luật, hệ thống QLKT.
-2. **Các yếu tố của hệ thống QLKT** (Tuần 5–8) — chức năng, cơ cấu, phương pháp, cán bộ.
-3. **Công cụ và chính sách QLKT** (Tuần 9–12) — quản lý nhà nước, tài khóa, tiền tệ, thương mại–đầu tư.
-4. **QLKT trong thực tiễn Việt Nam** (Tuần 13–15) — kinh tế thị trường định hướng XHCN, hội nhập, tổng ôn.
+| Chương | Buổi | Trọng tâm |
+|---|:---:|---|
+| **I** — Tổng quan QLKT | 1–2 | Cơ sở khoa học, triết lý chính sách, 5 chức năng, 3 nhóm công cụ |
+| **II** — Ngành & doanh nghiệp | 3–5 | Cấu trúc thị trường, thất bại thị trường, điều tiết, công nghiệp hoá |
+| **III** — Vĩ mô đóng | 6–8 | Cobb-Douglas, IS-LM, AD-AS, Phillips, phối hợp tài khoá–tiền tệ |
+| **IV** — Vĩ mô mở | 9–11 | BoP, tỷ giá, Mundell-Fleming, Bộ ba bất khả thi |
+| **V** — Địa phương + Vùng | 12–13 | Phân cấp tài khoá, 4 cực động lực, PCI/PAPI/PAR Index |
+| **Seminar** | 14–15 | Chia sẻ chuyên gia, thuyết trình, phản biện chéo |
 
 :::
 
@@ -35,113 +37,125 @@ Môn được tổ chức theo **15 tuần × 3 tiết**, tổng 45 tiết lên 
 ::: {.callout-note appearance="simple"}
 ## 📚 Bắt đầu nhanh
 
-- 📋 [Đề cương chi tiết](syllabus.qmd)
-- 📅 [Lịch học 15 tuần](schedule.qmd)
+- 📋 [Đề cương DTU301](syllabus.qmd)
+- 📅 [Lịch học 15 buổi](schedule.qmd)
 - 🎓 [Tất cả bài giảng](lectures/index.qmd)
-- ✏️ [Bài tập](problem-sets/index.qmd)
-- 📝 [Đề thi mẫu](exams/index.qmd)
+- ✏️ [Tiểu luận / Bài tập](problem-sets/index.qmd)
+- 📝 [Đánh giá](exams/index.qmd)
+:::
+
+::: {.callout-tip appearance="simple"}
+## 🎯 Đánh giá
+
+- Quá trình **10%**
+- Giữa kỳ **30%** (Ch.1–2)
+- Cuối kỳ **60%** (toàn bộ)
 :::
 
 :::
 
 :::
 
-## Phần I — Cơ sở lý luận {#phan-i}
+## Chương 1 — Tổng quan về quản lý kinh tế {#chuong-1}
 
 ::: {.week-card}
-[Tuần 1]{.week-num} · [Giới thiệu môn học và bản chất QLKT](lectures/week-01.qmd){.h4}
+[Buổi 1]{.week-num} · [Cơ sở khoa học và triết lý chính sách](lectures/buoi-01.qmd){.h4}
 
-Đối tượng, phương pháp, vai trò của Nguyên lý quản lý kinh tế. Vị trí trong khoa học quản lý và khoa học kinh tế.
-:::
-
-::: {.week-card}
-[Tuần 2]{.week-num} · [Lịch sử tư tưởng QLKT](lectures/week-02.qmd){.h4}
-
-Từ trường phái cổ điển (Smith, Marx) đến hiện đại (Keynes, Coase, Williamson). Vận dụng vào quản lý kinh tế.
-:::
-
-::: {.week-card}
-[Tuần 3]{.week-num} · [Quy luật khách quan và vận dụng](lectures/week-03.qmd){.h4}
-
-Các quy luật kinh tế khách quan và nguyên tắc vận dụng trong quản lý. Tính khoa học và tính nghệ thuật.
+Khan hiếm, chi phí cơ hội, thực chứng vs chuẩn tắc. Triết lý chính sách: Bentham và Cost-Benefit Analysis (trọng tâm); Kant và Rawls (so sánh khung).
 :::
 
 ::: {.week-card}
-[Tuần 4]{.week-num} · [Hệ thống quản lý kinh tế](lectures/week-04.qmd){.h4}
+[Buổi 2]{.week-num} · [Khái niệm, chức năng và công cụ QLKT](lectures/buoi-02.qmd){.h4}
 
-Chủ thể quản lý, đối tượng quản lý, các bộ phận cấu thành. Mối quan hệ giữa các thành tố.
+Đối tượng và phạm vi QLKT. Năm chức năng: hoạch định, tổ chức, chỉ đạo, kiểm soát, điều tiết. Ba nhóm công cụ. Ba vai trò Nhà nước: chủ sở hữu, quản lý, điều tiết.
 :::
 
-## Phần II — Hệ thống quản lý kinh tế {#phan-ii}
+## Chương 2 — Quản lý kinh tế ngành và doanh nghiệp {#chuong-2}
 
 ::: {.week-card}
-[Tuần 5]{.week-num} · [Chức năng quản lý kinh tế](lectures/week-05.qmd){.h4}
+[Buổi 3]{.week-num} · [Cấu trúc thị trường và thất bại thị trường](lectures/buoi-03.qmd){.h4}
 
-Bốn chức năng cơ bản: kế hoạch, tổ chức, lãnh đạo, kiểm soát. Vận hành liên hoàn.
-:::
-
-::: {.week-card}
-[Tuần 6]{.week-num} · [Cơ cấu tổ chức QLKT](lectures/week-06.qmd){.h4}
-
-Phân cấp, phân quyền, ủy quyền. Các mô hình cơ cấu tổ chức quản lý.
+Bốn loại cấu trúc thị trường; chỉ số Lerner, HHI; Luật Cạnh tranh Việt Nam. Thất bại thị trường: hàng hoá công, ngoại tác, độc quyền tự nhiên, thông tin bất cân xứng.
 :::
 
 ::: {.week-card}
-[Tuần 7]{.week-num} · [Phương pháp quản lý kinh tế](lectures/week-07.qmd){.h4}
+[Buổi 4]{.week-num} · [Cơ chế điều tiết và chính sách công nghiệp](lectures/buoi-04.qmd){.h4}
 
-Phương pháp kinh tế, hành chính, giáo dục. Phối hợp các phương pháp.
+Thuế Pigou, định lý Coase, cap-and-trade, điều tiết độc quyền tự nhiên. Chính sách công nghiệp và đổi mới sáng tạo; Hệ thống ĐMST quốc gia; bốn chuyển đổi theo Đại hội XIV.
 :::
 
 ::: {.week-card}
-[Tuần 8]{.week-num} · [Cán bộ và thông tin trong QLKT](lectures/week-08.qmd){.h4}
+[Buổi 5]{.week-num} · [Quản trị doanh nghiệp + Case Việt Nam](lectures/buoi-05.qmd){.h4}
 
-Yêu cầu phẩm chất, kỹ năng của cán bộ quản lý. Hệ thống thông tin và quyết định.
+Vai trò DNNN, kinh tế tư nhân, FDI và liên kết. Case Việt Nam: viễn thông, Formosa Hà Tĩnh, công nghiệp ô tô / bán dẫn.
 :::
 
-## Phần III — Công cụ và chính sách {#phan-iii}
+## Chương 3 — Quản lý kinh tế vĩ mô (nền kinh tế đóng) {#chuong-3}
 
 ::: {.week-card}
-[Tuần 9]{.week-num} · [Quản lý nhà nước về kinh tế](lectures/week-09.qmd){.h4}
+[Buổi 6]{.week-num} · [Mục tiêu vĩ mô và tăng trưởng dài hạn](lectures/buoi-06.qmd){.h4}
 
-Chức năng, công cụ của Nhà nước trong quản lý nền kinh tế thị trường.
-:::
-
-::: {.week-card}
-[Tuần 10]{.week-num} · [Chính sách tài khóa](lectures/week-10.qmd){.h4}
-
-Quản lý ngân sách, chi tiêu công, nợ công. Vai trò ổn định và phân phối.
+Bốn mục tiêu vĩ mô; phân phối thu nhập; phát triển bền vững. Tăng trưởng dài hạn: hàm Cobb-Douglas, phân rã Solow, growth accounting Việt Nam.
 :::
 
 ::: {.week-card}
-[Tuần 11]{.week-num} · [Chính sách tiền tệ](lectures/week-11.qmd){.h4}
+[Buổi 7]{.week-num} · [Mô hình IS-LM](lectures/buoi-07.qmd){.h4}
 
-Ngân hàng trung ương, công cụ tiền tệ, quản lý hệ thống tài chính.
+Đường IS, đường LM, cân bằng đồng thời, crowding out, bẫy thanh khoản.
 :::
 
 ::: {.week-card}
-[Tuần 12]{.week-num} · [Chính sách thương mại — đầu tư — công nghiệp](lectures/week-12.qmd){.h4}
+[Buổi 8]{.week-num} · [AD-AS, Phillips và phối hợp chính sách](lectures/buoi-08.qmd){.h4}
 
-Quản lý xuất nhập khẩu, FDI, chính sách công nghiệp hóa.
+Mô hình AD-AS; đường Phillips ngắn hạn và phiên bản kỳ vọng; chính sách tài khoá; chính sách tiền tệ; phối hợp tài khoá–tiền tệ Việt Nam 2020–2024.
 :::
 
-## Phần IV — Thực tiễn Việt Nam {#phan-iv}
+## Chương 4 — Quản lý kinh tế vĩ mô trong nền kinh tế mở {#chuong-4}
 
 ::: {.week-card}
-[Tuần 13]{.week-num} · [Đặc thù QLKT Việt Nam](lectures/week-13.qmd){.h4}
+[Buổi 9]{.week-num} · [Cán cân thanh toán và tỷ giá](lectures/buoi-09.qmd){.h4}
 
-Kinh tế thị trường định hướng xã hội chủ nghĩa. Vai trò Nhà nước, kinh tế tư nhân, doanh nghiệp nhà nước.
-:::
-
-::: {.week-card}
-[Tuần 14]{.week-num} · [Hội nhập kinh tế quốc tế](lectures/week-14.qmd){.h4}
-
-WTO, FTA, CPTPP. Áp lực hội nhập với quản lý kinh tế trong nước.
+Cấu trúc CA, FA; đồng nhất CA = S − I; BoP Việt Nam. Tỷ giá: danh nghĩa, thực, NEER, REER. Các chế độ tỷ giá theo IMF. Lý thuyết PPP, UIP, CIP; carry trade. Dự trữ ngoại hối.
 :::
 
 ::: {.week-card}
-[Tuần 15]{.week-num} · [Tổng ôn và thuyết trình](lectures/week-15.qmd){.h4}
+[Buổi 10]{.week-num} · [Mô hình Mundell-Fleming](lectures/buoi-10.qmd){.h4}
 
-Hệ thống hóa kiến thức. Thuyết trình nhóm về một vấn đề QLKT đương đại.
+Ba phương trình IS, LM, BP; điều kiện Marshall-Lerner; tác động chính sách tài khoá, tiền tệ và thương mại dưới tỷ giá cố định và thả nổi. Case: Hong Kong LERS, Reaganomics, ERM 1992.
+:::
+
+::: {.week-card}
+[Buổi 11]{.week-num} · [Bộ ba bất khả thi và Khủng hoảng châu Á 1997](lectures/buoi-11.qmd){.h4}
+
+Phát biểu và chứng minh; sterilization. Việt Nam trong Trilemma; định hướng theo Đại hội XIV. Khủng hoảng châu Á 1997 và bài học cho Việt Nam.
+:::
+
+## Chương 5 — Quản trị địa phương và phát triển kinh tế vùng {#chuong-5}
+
+::: {.week-card}
+[Buổi 12]{.week-num} · [Quản trị địa phương và phân cấp tài khoá](lectures/buoi-12.qmd){.h4}
+
+Phân cấp / phân quyền / tản quyền. Lý thuyết Tiebout, Oates, Musgrave. **Cải cách 2025**: chính quyền 2 cấp tỉnh–xã (Luật 72/2025); 34 tỉnh/thành (NQ 202/2025); Luật NSNN 89/2025. Đánh giá: PCI, PAPI, PAR Index.
+:::
+
+::: {.week-card}
+[Buổi 13]{.week-num} · [Phát triển kinh tế vùng](lectures/buoi-13.qmd){.h4}
+
+Lý thuyết Marshall, Krugman. Sáu vùng KT-XH, bốn vùng KTTĐ, hành lang kinh tế. **Bốn cực động lực** và **sáu siêu dự án** trọng điểm theo Đại hội XIV. Case: ĐNB, ĐBSCL, Tây Nguyên, BTB-DHMT.
+:::
+
+## Seminar tổng hợp và ứng dụng {#seminar}
+
+::: {.week-card}
+[Buổi 14]{.week-num} · [Chia sẻ thực tiễn](lectures/buoi-14.qmd){.h4}
+
+Mời chuyên gia bên ngoài (nhà hoạch định chính sách, lãnh đạo địa phương, chuyên gia tổ chức quốc tế) chia sẻ thực tiễn. Thảo luận chính sách. Hoạt động vận dụng theo nhóm.
+:::
+
+::: {.week-card}
+[Buổi 15]{.week-num} · [Tổng kết và đánh giá](lectures/buoi-15.qmd){.h4}
+
+Thuyết trình và phản biện của sinh viên về các vấn đề chính sách kinh tế. Phản biện chéo giữa các nhóm. Đánh giá tổng kết theo hình thức do giảng viên quyết định.
 :::
 
 :::
@@ -149,3 +163,5 @@ Hệ thống hóa kiến thức. Thuyết trình nhóm về một vấn đề QL
 ## Học liệu mở
 
 Bộ học liệu này được phát hành theo giấy phép **Creative Commons BY-NC-SA 4.0**: bạn được tự do sao chép, chia sẻ và chỉnh sửa cho mục đích phi thương mại, miễn dẫn nguồn và giữ giấy phép tương tự.
+
+Trưởng Bộ môn: **TS. Đỗ Ngọc Kiên** · Viện trưởng: **PGS. TS. Bùi Thị Lý**.

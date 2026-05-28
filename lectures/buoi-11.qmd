@@ -1,0 +1,60 @@
+---
+title: "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997"
+subtitle: "Trilemma; sterilization; VN trong Trilemma; định hướng XIV; bài học 1997"
+reading-time: "Chương 4"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Đóng góp CLO
+
+**CLO2, CLO3 — Phân tích các đánh đổi chính sách trong KT mở**
+:::
+
+## Nội dung lý thuyết (thuyết giảng)
+
+**4.3. Bộ ba bất khả thi (Impossible Trinity / Trilemma)**
+
+- Phát biểu và chứng minh
+- Ba góc: ổn định tỷ giá, tự do dòng vốn, độc lập tiền tệ
+- **Sterilization** — và giới hạn của nó
+
+**Việt Nam trong Trilemma**
+
+- Vị trí hiện tại của Việt Nam trong tam giác
+- Định hướng theo **Đại hội XIV**
+
+**Khủng hoảng châu Á 1997**
+
+- Nguyên nhân: bộ ba bất khả thi + thanh khoản ngoại tệ
+- Diễn biến tại Thái Lan, Indonesia, Hàn Quốc
+- **Bài học cho Việt Nam**
+
+## Thực hành / Thảo luận
+
+**Mô phỏng** quyết định NHNN trong 3 vòng: cố giữ peg → sterilization → thả nổi. Mỗi vòng có cú sốc mới, sinh viên quyết định.
+
+## Bài tập lớn / Tiểu luận
+
+Hoàn thiện báo cáo phân tích chính sách tỷ giá / dòng vốn (Phần 3 — kết luận và khuyến nghị).
+
+## Tự học có hướng dẫn
+
+1. Bộ ba bất khả thi giải thích điều gì cho VN?
+2. Bài học từ khủng hoảng Á 1997?
+3. Khi nào nên thả nổi tỷ giá VND?
+
+## Đọc thêm
+
+- Mankiw, *Kinh tế học vĩ mô*, chương 20.
+- Blanchard (2020), chương 21.
+- World Bank report on Asian Financial Crisis.
+
+::: {.callout-warning appearance="simple"}
+## 🚧 Nội dung đang biên soạn
+
+Bài giảng buổi 11 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
+:::
+
+---
+
+← *Buổi trước*: [Buổi 10](buoi-10.qmd) *Buổi tiếp theo*: [Buổi 12](buoi-12.qmd) →

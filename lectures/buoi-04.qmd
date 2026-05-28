@@ -1,0 +1,54 @@
+---
+title: "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp"
+subtitle: "Pigou, Coase, cap-and-trade, ĐMST quốc gia, 4 chuyển đổi XIV"
+reading-time: "Chương 2"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Đóng góp CLO
+
+**CLO1, CLO2 — Vận dụng khung điều tiết và chính sách công nghiệp**
+:::
+
+## Nội dung lý thuyết (thuyết giảng)
+
+**2.3. Cơ chế điều tiết**
+
+- Thuế Pigou
+- Định lý Coase
+- Cap-and-trade
+- Điều tiết độc quyền tự nhiên
+
+**2.4. Chính sách công nghiệp và đổi mới sáng tạo**
+
+- Hệ thống Đổi mới sáng tạo quốc gia (National Innovation System)
+- **Bốn chuyển đổi** theo Đại hội XIV: chuyển đổi xanh, chuyển đổi số, chuyển đổi năng lượng, chuyển đổi mô hình tăng trưởng
+
+## Thực hành / Thảo luận
+
+Phân tích **Formosa Hà Tĩnh** qua khung Pigou/Coase: thuế hay đàm phán? Mô phỏng **đấu giá quyền phát thải** (cap-and-trade game).
+
+## Bài tập lớn / Tiểu luận
+
+Bài tập phân tích vai trò của quyền sở hữu và thể chế trong giải quyết một thất bại thị trường ở Việt Nam (Phần 2).
+
+## Tự học có hướng dẫn
+
+1. Khi nào điều tiết bằng giá hiệu quả hơn quy chuẩn?
+2. Chính sách công nghiệp Việt Nam hậu Đại hội XIV?
+3. Điều kiện để cap-and-trade hiệu quả là gì?
+
+## Đọc thêm
+
+- Mankiw, *Kinh tế học vi mô*, chương 10 (ngoại tác).
+- Văn kiện Đại hội Đảng XIV — mục về 4 chuyển đổi.
+
+::: {.callout-warning appearance="simple"}
+## 🚧 Nội dung đang biên soạn
+
+Bài giảng buổi 04 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
+:::
+
+---
+
+← *Buổi trước*: [Buổi 3](buoi-03.qmd) *Buổi tiếp theo*: [Buổi 5](buoi-05.qmd) →

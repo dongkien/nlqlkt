@@ -1,0 +1,50 @@
+---
+title: "Buổi 14 — Chia sẻ thực tiễn"
+subtitle: "Mời chuyên gia chia sẻ; thảo luận chính sách; vận dụng nhóm"
+reading-time: "Chương Seminar"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Đóng góp CLO
+
+**CLO2, CLO3, CLO4, CLO5 — Tổng hợp xuyên suốt 5 chương**
+:::
+
+## Nội dung lý thuyết (thuyết giảng)
+
+**Mục tiêu**: Tổng hợp xuyên suốt năm chương; tổ chức không gian phản biện học thuật cuối kỳ.
+
+**Cấu trúc Buổi 14 — Chia sẻ thực tiễn**
+
+- Mời **chuyên gia bên ngoài** (nhà hoạch định chính sách, lãnh đạo địa phương, chuyên gia tổ chức quốc tế) chia sẻ thực tiễn
+- **Thảo luận chính sách** với chuyên gia
+- **Hoạt động vận dụng theo nhóm** dưới hướng dẫn của giảng viên
+
+## Thực hành / Thảo luận
+
+Q&A với chuyên gia; thảo luận chính sách mở; phân công nhóm chuẩn bị thuyết trình Buổi 15.
+
+## Bài tập lớn / Tiểu luận
+
+**Sản phẩm nhóm** cho Buổi 15: bản đề cương thuyết trình + tài liệu phản biện chéo.
+
+## Tự học có hướng dẫn
+
+1. Chuẩn bị nội dung thuyết trình theo chủ đề giảng viên giao.
+2. Đọc bổ sung tài liệu chuyên đề.
+3. Tổng hợp kiến thức xuyên 5 chương.
+
+## Đọc thêm
+
+- Tài liệu giảng viên cung cấp tại lớp.
+- Bài đọc bổ sung theo chủ đề nhóm.
+
+::: {.callout-warning appearance="simple"}
+## 🚧 Nội dung đang biên soạn
+
+Bài giảng buổi 14 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
+:::
+
+---
+
+← *Buổi trước*: [Buổi 13](buoi-13.qmd) *Buổi tiếp theo*: [Buổi 15](buoi-15.qmd) →

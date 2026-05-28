@@ -1,0 +1,64 @@
+---
+title: "Buổi 02 — Khái niệm, chức năng và công cụ QLKT"
+subtitle: "5 chức năng, 3 nhóm công cụ, 3 vai trò Nhà nước trong nền KTTT"
+reading-time: "Chương 1"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Đóng góp CLO
+
+**CLO1 — Giải thích vai trò và công cụ QLNN về kinh tế**
+:::
+
+## Nội dung lý thuyết (thuyết giảng)
+
+**1.3. Khái niệm, đối tượng và phạm vi quản lý kinh tế**
+
+**1.4. Năm chức năng QLKT**
+
+- Hoạch định
+- Tổ chức
+- Chỉ đạo
+- Kiểm soát
+- Điều tiết
+
+**1.5. Ba nhóm công cụ**
+
+- Hành chính – pháp lý
+- Kinh tế – tài chính
+- Thông tin – giáo dục
+
+**1.6. Ba vai trò Nhà nước trong nền kinh tế thị trường**
+
+- Chủ sở hữu
+- Quản lý
+- Điều tiết
+
+## Thực hành / Thảo luận
+
+Thảo luận: phân biệt 3 vai trò Nhà nước qua **một ví dụ** (vd: ngành điện, ngành ngân hàng) — phân tích cách Nhà nước thể hiện cả 3 vai trò trong cùng một ngành.
+
+## Bài tập lớn / Tiểu luận
+
+Tiếp tục bài tập Buổi 1: bổ sung phân tích chức năng và công cụ Nhà nước đã sử dụng trong chính sách bạn chọn.
+
+## Tự học có hướng dẫn
+
+1. Khi nào nên dùng công cụ hành chính, khi nào dùng công cụ kinh tế?
+2. Năm chức năng QLKT có thứ tự bắt buộc không?
+3. Vai trò 'điều tiết' khác 'quản lý' ở điểm nào?
+
+## Đọc thêm
+
+- Mankiw, *Kinh tế học vi mô*, chương 10–11.
+- HCMA (2021), *Giáo trình Quản lý nhà nước về kinh tế*, chương 1–2.
+
+::: {.callout-warning appearance="simple"}
+## 🚧 Nội dung đang biên soạn
+
+Bài giảng buổi 02 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
+:::
+
+---
+
+← *Buổi trước*: [Buổi 1](buoi-01.qmd) *Buổi tiếp theo*: [Buổi 3](buoi-03.qmd) →

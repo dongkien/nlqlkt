@@ -25,3 +25,6 @@ Thumbs.db
 
 # Quarto execute cache — GIỮ LẠI để rebuild được không cần Stata
 # _freeze/   ← commented out: ta MUỐN commit cái này
+
+/.quarto/
+**/*.quarto_ipynb

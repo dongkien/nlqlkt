@@ -1,0 +1,50 @@
+---
+title: "Buổi 07 — Mô hình IS-LM"
+subtitle: "Đường IS, LM, cân bằng, crowding out, bẫy thanh khoản"
+reading-time: "Chương 3"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Đóng góp CLO
+
+**CLO2, CLO3 — Vận dụng IS-LM phân tích chính sách**
+:::
+
+## Nội dung lý thuyết (thuyết giảng)
+
+**3.2. Mô hình IS-LM**
+
+- Đường **IS**: cân bằng thị trường hàng hoá
+- Đường **LM**: cân bằng thị trường tiền tệ
+- Cân bằng đồng thời
+- **Crowding out** — hiệu ứng lấn át
+- **Bẫy thanh khoản** (liquidity trap)
+
+## Thực hành / Thảo luận
+
+Vẽ IS-LM cho **phản ứng NHNN trước cú sốc cung 2022** (giá xăng tăng). Mô phỏng **Bộ Tài chính** và **NHNN** ra quyết định trong 3 vòng kịch bản.
+
+## Bài tập lớn / Tiểu luận
+
+Báo cáo phân tích một mục tiêu vĩ mô VN giai đoạn 2020–2024 (Phần 2): bổ sung IS-LM.
+
+## Tự học có hướng dẫn
+
+1. Khi nào CSTK hiệu quả hơn CSTT?
+2. Việt Nam có ở bẫy thanh khoản không?
+3. Crowding out có quan trọng ở nền kinh tế nhỏ mở?
+
+## Đọc thêm
+
+- Mankiw, *Kinh tế học vĩ mô*, chương 11–12.
+- Blanchard (2020), chương 5.
+
+::: {.callout-warning appearance="simple"}
+## 🚧 Nội dung đang biên soạn
+
+Bài giảng buổi 07 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
+:::
+
+---
+
+← *Buổi trước*: [Buổi 6](buoi-06.qmd) *Buổi tiếp theo*: [Buổi 8](buoi-08.qmd) →

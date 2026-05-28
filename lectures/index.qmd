@@ -1,24 +1,33 @@
 ---
 title: "Bài giảng"
-subtitle: "15 tuần học liệu môn Nguyên lý Quản lý Kinh tế"
+subtitle: "15 buổi học liệu môn DTU301 — Nguyên lý Quản lý Kinh tế"
 listing:
-  contents: "week-*.qmd"
+  contents: "buoi-*.qmd"
   type: table
   sort: "filename asc"
   fields: [title, subtitle, reading-time]
   field-display-names:
-    title: "Bài giảng"
+    title: "Buổi"
     subtitle: "Nội dung chính"
-    reading-time: "Thời lượng đọc"
+    reading-time: "Thuộc chương"
   sort-ui: false
   filter-ui: true
   page-size: 20
 toc: false
 ---
 
-Toàn bộ 15 bài giảng được tổ chức theo bốn phần lớn của môn học. Mỗi bài có cấu trúc thống nhất: **mục tiêu bài học**, **khái niệm cốt lõi**, **phân tích chi tiết**, **ví dụ thực tiễn Việt Nam**, và **bài tập tự kiểm tra**.
+Toàn bộ 15 buổi tổ chức theo **5 chương + Seminar tổng hợp**. Mỗi buổi có cấu trúc thống nhất theo đề cương DTU301:
+
+- **Nội dung lý thuyết** (thuyết giảng)
+- **Thực hành / Thảo luận** trên lớp
+- **Bài tập lớn / Tiểu luận**
+- **Tự học có hướng dẫn** (kèm 3 câu hỏi định hướng)
+- **Đọc thêm** (Mankiw, Buchholz, HCMA 2021, văn kiện XIV...)
 
 ::: {.callout-tip}
 ## Cách đọc hiệu quả
-Trước mỗi buổi, đọc lướt phần *Mục tiêu* và *Khái niệm cốt lõi*. Sau buổi học, quay lại đọc kỹ phần *Phân tích chi tiết* và làm phần *Tự kiểm tra*.
+
+1. **Trước buổi**: đọc *Đọc thêm* và trả lời các câu hỏi *Tự học có hướng dẫn*.
+2. **Sau buổi**: hoàn thiện *Bài tập lớn / Tiểu luận* được giao.
+3. **Đối chiếu CLO**: mỗi buổi đóng góp vào những CLO khác nhau — xem header bài giảng.
 :::

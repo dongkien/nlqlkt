@@ -1,30 +1,46 @@
 ---
-title: "Bài tập"
-subtitle: "3 Problem sets cho học kỳ"
+title: "Tiểu luận và bài tập lớn"
+subtitle: "Theo cấu trúc đánh giá DTU301"
 toc: false
-listing:
-  contents: "ps-*.qmd"
-  type: default
-  sort: "filename asc"
-  fields: [title, subtitle, date]
-  sort-ui: false
-  filter-ui: false
 ---
 
-## Quy định chung
+## Cấu trúc đánh giá
 
-- Mỗi học kỳ có **3 Problem Sets**, mỗi PS chiếm 5% tổng điểm.
-- Hạn nộp ghi rõ trong mỗi PS. Chậm 1 ngày trừ 10%, chậm trên 7 ngày không nhận.
-- Bài có sử dụng Stata **phải nộp kèm** file `.do` (code) và `.log` (kết quả chạy).
-- Khuyến khích thảo luận nhóm nhưng **viết bài độc lập**. Nộp bài giống nhau (kể cả 50%+ trùng lặp) tính là đạo văn.
-- Sử dụng AI (ChatGPT, Claude…) cần khai báo rõ ràng phần nào do AI hỗ trợ.
+Theo đề cương DTU301, đánh giá học phần gồm **3 cấu phần**:
 
-## Cấu trúc một Problem Set
+| Hình thức | Trọng số | Phạm vi | CLO |
+|---|:---:|---|---|
+| **Đánh giá quá trình** | 10% | Liên tục | CLO1, CLO4 |
+| **Đánh giá giữa kỳ** | 30% | Chương 1–2 | CLO1, CLO2 |
+| **Đánh giá cuối kỳ** | 60% | Toàn bộ học phần (tại Seminar Buổi 14–15) | CLO2, CLO3, CLO4, CLO5 |
 
-Mỗi PS bao gồm:
+## Bài tập lớn theo chương
 
-1. **Phần A — Tự luận** (40%): 2–3 câu phân tích, 200–400 từ mỗi câu.
-2. **Phần B — Tính toán / Định lượng** (40%): bài tập với dữ liệu thực, viết code Stata.
-3. **Phần C — Đọc và bình luận** (20%): đọc 1 bài báo / chính sách và bình luận ngắn 300 từ.
+Mỗi chương có **bài tập lớn** đi kèm, phục vụ vừa đánh giá quá trình vừa chuẩn bị cho giữa kỳ / cuối kỳ:
 
-## Danh sách bài tập
+| Chương | Buổi | Bài tập lớn | Liên kết |
+|:---:|:---:|---|---|
+| **1** | 1–2 | Phân tích vai trò Nhà nước qua **3 lăng kính đạo đức** (Bentham / Kant / Rawls) | [Buổi 1](../lectures/buoi-01.qmd) |
+| **2** | 3–5 | Phân tích **thất bại thị trường** và vai trò **quyền sở hữu, thể chế** tại Việt Nam | [Buổi 5](../lectures/buoi-05.qmd) |
+| **3** | 6–8 | Đánh giá chính sách vĩ mô VN 2020–2024 qua khung **AD-AS, Phillips** | [Buổi 8](../lectures/buoi-08.qmd) |
+| **4** | 9–11 | Phân tích chính sách **tỷ giá / dòng vốn** Việt Nam, 4–6 trang | [Buổi 11](../lectures/buoi-11.qmd) |
+| **5** | 12–13 | Đề xuất **chiến lược phát triển kinh tế** cho 1 tỉnh / vùng, đối chiếu **PCI/PAPI/PAR Index** | [Buổi 13](../lectures/buoi-13.qmd) |
+
+## Quy định nộp bài
+
+- **Tiêu đề email**: `DTU301-MSSV-HọTên-Bài[số]`
+- **Định dạng**: PDF (Word convert) + file dữ liệu kèm theo nếu có
+- **Hạn nộp**: giảng viên thông báo cụ thể từng bài
+- **Liêm chính học thuật**: bài giống nhau **đến 50%** trừ 1/2 số điểm; **trên 50%** bị điểm 0
+- **Sử dụng AI**: được phép nhưng phải **công bố phạm vi sử dụng** khi giảng viên yêu cầu; tự kiểm chứng dữ liệu; không sao chép trực tiếp đầu ra AI
+
+## Tiêu chí chấm chung
+
+| Tiêu chí | Trọng số |
+|---|:---:|
+| Cấu trúc và logic lập luận | 20% |
+| Chất lượng nội dung học thuật | 25% |
+| Sử dụng số liệu có nguồn chính thống, ghi rõ trích dẫn | 15% |
+| Phân tích và phản biện | 15% |
+| Đề xuất khả thi cho Việt Nam | 15% |
+| Sử dụng AI có trách nhiệm + liêm chính học thuật | 10% |

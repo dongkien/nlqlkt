@@ -1,0 +1,59 @@
+---
+title: "Buổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ"
+subtitle: "AD-AS; Phillips ngắn hạn + kỳ vọng; phối hợp 2020-2024 VN"
+reading-time: "Chương 3"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Đóng góp CLO
+
+**CLO2, CLO3 — Phân tích phối hợp chính sách**
+:::
+
+## Nội dung lý thuyết (thuyết giảng)
+
+**3.3. Mô hình AD-AS**
+
+- Đường tổng cầu (AD)
+- Đường tổng cung ngắn hạn (SRAS) và dài hạn (LRAS)
+
+**Đường Phillips**
+
+- Phillips ngắn hạn
+- Phiên bản kỳ vọng (expectations-augmented)
+- NAIRU
+
+**Chính sách**
+
+- Tài khoá: chi tiêu, thuế, chuyển giao
+- Tiền tệ: lãi suất chính sách, OMO, dự trữ bắt buộc
+- **Phối hợp tài khoá – tiền tệ Việt Nam 2020–2024**
+
+## Thực hành / Thảo luận
+
+Phân tích **gói hỗ trợ Covid 2021–2022** qua khung AD-AS: cú sốc cầu hay cú sốc cung? Hiệu quả tài khoá vs tiền tệ?
+
+## Bài tập lớn / Tiểu luận
+
+**Tiểu luận giữa kỳ** — đánh giá chính sách vĩ mô Việt Nam 2020–2024 qua khung AD-AS và Phillips.
+
+## Tự học có hướng dẫn
+
+1. Hạn mức tín dụng: giữ hay bỏ?
+2. Phillips có còn áp dụng được ở VN sau 2008?
+3. Khi nào lạm phát mục tiêu là chính sách tốt cho VN?
+
+## Đọc thêm
+
+- Mankiw, *Kinh tế học vĩ mô*, chương 14–15.
+- Báo cáo IMF Article IV về Việt Nam, phiên bản mới nhất.
+
+::: {.callout-warning appearance="simple"}
+## 🚧 Nội dung đang biên soạn
+
+Bài giảng buổi 08 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
+:::
+
+---
+
+← *Buổi trước*: [Buổi 7](buoi-07.qmd) *Buổi tiếp theo*: [Buổi 9](buoi-09.qmd) →

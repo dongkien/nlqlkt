@@ -1,0 +1,52 @@
+---
+title: "Buổi 01 — Cơ sở khoa học kinh tế và triết lý chính sách"
+subtitle: "Khan hiếm, chi phí cơ hội, thực chứng vs chuẩn tắc; Bentham/Kant/Rawls"
+reading-time: "Chương 1"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Đóng góp CLO
+
+**CLO1 — Giải thích vai trò và công cụ QLNN về kinh tế**
+:::
+
+## Nội dung lý thuyết (thuyết giảng)
+
+**1.1. Cơ sở khoa học kinh tế**
+
+- Khan hiếm và chi phí cơ hội
+- Phát biểu thực chứng vs chuẩn tắc
+
+**1.2. Triết lý chính sách**
+
+- Bentham và **Cost-Benefit Analysis** (trọng tâm)
+- Kant và Rawls (giới thiệu để so sánh khung)
+
+## Thực hành / Thảo luận
+
+Thảo luận phân loại phát biểu thực chứng vs chuẩn tắc; áp dụng **ba lăng kính Bentham / Kant / Rawls** cho một chính sách Việt Nam.
+
+## Bài tập lớn / Tiểu luận
+
+Bài tập: phân tích vai trò Nhà nước trong **một chính sách kinh tế cụ thể** qua ba lăng kính đạo đức.
+
+## Tự học có hướng dẫn
+
+1. Khái niệm về quản lý và quản lý kinh tế?
+2. Đặc điểm của quản lý kinh tế?
+3. Vai trò và chức năng của quản lý kinh tế?
+
+## Đọc thêm
+
+- Mankiw, *Kinh tế học vi mô*, chương 1.
+- Buchholz, *Ý tưởng mới từ các Kinh tế gia tiền bối*, chương 1.
+
+::: {.callout-warning appearance="simple"}
+## 🚧 Nội dung đang biên soạn
+
+Bài giảng buổi 01 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
+:::
+
+---
+
+ *Buổi tiếp theo*: [Buổi 2](buoi-02.qmd) →

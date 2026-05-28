@@ -1,0 +1,68 @@
+---
+title: "Buổi 12 — Quản trị địa phương và phân cấp tài khoá"
+subtitle: "Phân cấp; Tiebout, Oates, Musgrave; cải cách 2025 (34 tỉnh, 2 cấp); PCI, PAPI, PAR Index"
+reading-time: "Chương 5"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Đóng góp CLO
+
+**CLO3 — Phân tích phối hợp chính sách giữa các cấp**
+:::
+
+## Nội dung lý thuyết (thuyết giảng)
+
+**5.1. Quản trị địa phương và phân cấp tài khoá**
+
+- **Phân cấp / phân quyền / tản quyền / uỷ quyền**
+- Lý thuyết phân cấp:
+  - **Tiebout** — voting with feet
+  - **Oates** — Decentralization Theorem
+  - **Musgrave** — ba chức năng của Nhà nước
+
+**Bộ máy QLNN ở Việt Nam SAU cải cách 2025**
+
+- **Chính quyền hai cấp** tỉnh – xã (Luật 72/2025/QH15)
+- **34 tỉnh/thành** sau sắp xếp (NQ 202/2025/QH15)
+- **Luật NSNN 89/2025/QH15** — phân cấp nguồn thu, nhiệm vụ chi, trợ cấp cân đối
+
+**Đánh giá quản trị địa phương**
+
+- **PCI** (Provincial Competitiveness Index — VCCI)
+- **PAPI** (Public Administration Performance Index — UNDP)
+- **PAR Index** (Public Administration Reform Index — Bộ Nội vụ)
+
+**Cơ chế đặc thù**
+
+- **NQ 98/2023** cho TP.HCM
+- Case **Quảng Ninh**
+
+## Thực hành / Thảo luận
+
+**Trò chơi phân cấp ngân sách** theo Luật NSNN 89/2025: 3 vai (TW – Tỉnh A đầu tàu – Tỉnh B kém phát triển). Mỗi tỉnh có nguồn thu khác nhau; thảo luận trợ cấp cân đối.
+
+## Bài tập lớn / Tiểu luận
+
+Đề xuất **chiến lược phát triển cho một tỉnh/vùng** cụ thể (Phần 1 — cấu trúc đề xuất).
+
+## Tự học có hướng dẫn
+
+1. Tại sao phân cấp cần đi cùng phân quyền tài khoá?
+2. Có nên dùng PCI làm KPI cho bí thư tỉnh?
+3. Mô hình 34 tỉnh: ưu nhược điểm so với 63 tỉnh cũ?
+
+## Đọc thêm
+
+- HCMA (2021), *Giáo trình Quản lý nhà nước về kinh tế*, chương 5.
+- Tài liệu chuyên đề do giảng viên cung cấp.
+- Luật 72/2025/QH15, Luật 89/2025/QH15, NQ 202/2025/QH15.
+
+::: {.callout-warning appearance="simple"}
+## 🚧 Nội dung đang biên soạn
+
+Bài giảng buổi 12 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
+:::
+
+---
+
+← *Buổi trước*: [Buổi 11](buoi-11.qmd) *Buổi tiếp theo*: [Buổi 13](buoi-13.qmd) →

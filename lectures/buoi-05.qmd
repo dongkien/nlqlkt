@@ -1,0 +1,54 @@
+---
+title: "Buổi 05 — Quản trị doanh nghiệp và case Việt Nam"
+subtitle: "DNNN, kinh tế tư nhân, FDI; case viễn thông, Formosa, ô tô/bán dẫn"
+reading-time: "Chương 2"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Đóng góp CLO
+
+**CLO1, CLO2 — Phân tích vai trò các thành phần kinh tế**
+:::
+
+## Nội dung lý thuyết (thuyết giảng)
+
+**2.5. Quản trị doanh nghiệp**
+
+- Vai trò **DNNN** trong nền KTTT định hướng XHCN
+- **Kinh tế tư nhân** — vai trò ngày càng tăng
+- **FDI** và liên kết với doanh nghiệp trong nước
+
+**2.6. Case Việt Nam**
+
+- Ngành viễn thông
+- Formosa Hà Tĩnh
+- Công nghiệp ô tô / bán dẫn
+
+## Thực hành / Thảo luận
+
+Phân tích **chuỗi cung ứng** trong một case (vd: Samsung Việt Nam); thảo luận **liên kết FDI – nội địa**.
+
+## Bài tập lớn / Tiểu luận
+
+**Bài tập tổng hợp Chương 1–2** — phục vụ đánh giá giữa kỳ. Phạm vi: chính sách quản lý một ngành cụ thể qua các khung của Chương 1–2.
+
+## Tự học có hướng dẫn
+
+1. Tỷ trọng DNNN trong GDP Việt Nam còn phù hợp không?
+2. Khi nào FDI có hại nhiều hơn lợi?
+3. Tại sao Việt Nam chưa có công nghiệp ô tô mạnh?
+
+## Đọc thêm
+
+- Mankiw, *Kinh tế học vi mô*, chương 22.
+- Báo cáo VBR — World Bank, phiên bản mới nhất.
+
+::: {.callout-warning appearance="simple"}
+## 🚧 Nội dung đang biên soạn
+
+Bài giảng buổi 05 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
+:::
+
+---
+
+← *Buổi trước*: [Buổi 4](buoi-04.qmd) *Buổi tiếp theo*: [Buổi 6](buoi-06.qmd) →

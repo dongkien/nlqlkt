@@ -1,94 +1,111 @@
 ---
-title: "Đề thi mẫu"
-subtitle: "Đề thi giữa kỳ và cuối kỳ — bản tham khảo"
-toc: false
+title: "Đánh giá học phần"
+subtitle: "Cấu trúc thi giữa kỳ, cuối kỳ và đánh giá quá trình theo DTU301"
+toc: true
 ---
 
-## Cấu trúc thi
+## 1. Tổng quan đánh giá
 
-### Kiểm tra giữa kỳ (Tuần 8)
+Thang điểm **10**. Học phần đánh giá qua **3 cấu phần**:
 
-- **Thời gian**: 60 phút.
-- **Hình thức**: 50% trắc nghiệm khách quan + 50% tự luận ngắn.
-- **Phạm vi**: Tuần 1–8 (Phần I và Phần II).
-- **Tài liệu**: Không sử dụng tài liệu.
+| Hình thức | Trọng số | Hình thức cụ thể | Phạm vi | CLO |
+|---|:---:|---|---|---|
+| **Đánh giá quá trình** | **10%** | Điểm danh + bài kiểm tra ngắn + chất lượng thảo luận | Liên tục | CLO1, CLO4 |
+| **Đánh giá giữa kỳ** | **30%** | Thi viết, mini-case, thuyết trình, hoặc kết hợp (giảng viên quyết định) | Chương 1–2 | CLO1, CLO2 |
+| **Đánh giá cuối kỳ** | **60%** | Thi viết, thuyết trình, tiểu luận, hoặc kết hợp tại **Seminar Buổi 14–15** | Toàn bộ học phần | CLO2, CLO3, CLO4, CLO5 |
 
-### Thi cuối kỳ
-
-- **Thời gian**: 90 phút.
-- **Hình thức**: Tự luận (3–4 câu).
-- **Phạm vi**: Toàn bộ chương trình.
-- **Tài liệu**: Không sử dụng tài liệu.
-
-## Đề mẫu giữa kỳ
-
-::: {.callout-note}
-Đề mẫu sẽ được phát ở Tuần 7 để sinh viên ôn tập. File PDF đính kèm khi sẵn sàng.
+::: {.callout-warning}
+*Lưu ý*: Hình thức thi và hoạt động gắn kết thực tiễn trong học phần có thể **linh hoạt do Bộ môn quyết định** phụ thuộc vào tình hình thực tế.
 :::
 
-### Cấu trúc đề mẫu (gợi ý)
+## 2. Đánh giá giữa kỳ (30%)
 
-**Phần I — Trắc nghiệm (5 điểm, 20 câu × 0.25đ)**
+**Diễn ra**: sau Buổi 5 (hết Chương 1–2)
 
-Các câu hỏi về khái niệm, định nghĩa, phân loại. Ví dụ:
+**Phạm vi**: Chương 1 + Chương 2 — *Tổng quan QLKT* và *Quản lý kinh tế ngành và doanh nghiệp*
 
-> *Câu nào KHÔNG phải là chức năng cơ bản của quản lý kinh tế?*
->
-> A. Kế hoạch hóa
-> B. Tổ chức
-> C. Lãnh đạo
-> D. **Tiêu dùng** ✓
-> E. Kiểm soát
+**Hình thức**: giảng viên quyết định, có thể là:
+- Đề tự luận
+- Mini-case (phân tích tình huống chính sách)
+- Thuyết trình theo chủ đề
 
-**Phần II — Tự luận ngắn (5 điểm, 2 câu × 2.5đ)**
+**Tiêu chí**: kiến thức nền, vận dụng khung lý thuyết, ví dụ Việt Nam.
 
-- Câu 1: Trình bày 2–3 phương pháp quản lý kinh tế chính, đưa ví dụ.
-- Câu 2: Phân tích một trường hợp cụ thể qua khung *hệ thống quản lý kinh tế*.
+### Khung câu hỏi mẫu
 
-## Đề mẫu cuối kỳ
+**Dạng tự luận**
 
-::: {.callout-note}
-Đề mẫu cuối kỳ sẽ phát ở Tuần 14.
-:::
+> Phân biệt vai trò **chủ sở hữu**, **quản lý** và **điều tiết** của Nhà nước trong nền kinh tế thị trường. Lấy một ngành cụ thể tại Việt Nam để minh hoạ cả ba vai trò.
 
-### Cấu trúc đề mẫu (gợi ý)
+**Dạng mini-case**
 
-**Câu 1 (3 điểm)** — Phân tích khái niệm
+> *Formosa Hà Tĩnh, 2016*: Phân tích **thất bại thị trường** trong tình huống này. Áp dụng khung **thuế Pigou** và **định lý Coase**, đề xuất phương án điều tiết phù hợp với bối cảnh Việt Nam.
 
-Một câu hỏi yêu cầu *trình bày + phân biệt* các khái niệm cốt lõi. Ví dụ:
+## 3. Đánh giá cuối kỳ (60%)
 
-> Phân biệt *quản lý nhà nước về kinh tế* và *quản trị kinh doanh*. Cho biết vì sao cả hai đều quan trọng trong nền kinh tế thị trường.
+**Diễn ra**: trong Seminar Buổi 14–15
 
-**Câu 2 (3 điểm)** — Phân tích chính sách
+**Phạm vi**: **toàn bộ học phần**
 
-Một câu hỏi vận dụng khung lý luận vào tình huống thực tế.
+**Hình thức**: thi viết, thuyết trình, tiểu luận, hoặc kết hợp. Tại Seminar có thể bao gồm:
+- Thuyết trình nhóm về một vấn đề chính sách kinh tế tổng hợp
+- Phản biện chéo giữa các nhóm
+- Tiểu luận cá nhân nộp sau Seminar
 
-> Phân tích chính sách tài khóa của Việt Nam trong giai đoạn 2020–2024 dưới tác động của đại dịch Covid-19. Đánh giá hiệu quả qua khung *4 chức năng QLKT*.
+**Tiêu chí**:
+- Phân tích chính sách
+- Vận dụng dữ liệu
+- Phản biện
+- Đề xuất
+- Làm việc nhóm
+- Sử dụng có trách nhiệm công cụ số
 
-**Câu 3 (2 điểm)** — Lập luận
+### Khung câu hỏi mẫu (tự luận)
 
-Câu hỏi mở yêu cầu lập luận cá nhân có căn cứ.
+**Câu 1** *(Phân tích — CLO3)*
 
-> "Trong nền kinh tế thị trường định hướng XHCN, vai trò của Nhà nước nên giảm dần theo thời gian." Bạn đồng ý hay không? Lập luận của bạn.
+> Phân tích **phối hợp tài khoá – tiền tệ** của Việt Nam giai đoạn 2020–2024 qua khung **AD-AS** và **Phillips**. Đánh giá hiệu quả và đề xuất hướng điều chỉnh.
 
-**Câu 4 (2 điểm)** — Liên hệ thực tiễn
+**Câu 2** *(Vận dụng — CLO2)*
 
-> Lựa chọn một vấn đề quản lý kinh tế nổi bật của Việt Nam trong 12 tháng qua. Phân tích nguyên nhân, đề xuất giải pháp.
+> Áp dụng **Bộ ba bất khả thi (Trilemma)** để phân tích vị trí hiện tại của Việt Nam trong tam giác. Bài học nào từ **Khủng hoảng châu Á 1997** vẫn còn áp dụng?
 
-## Tiêu chí chấm tự luận
+**Câu 3** *(Tổng hợp + đề xuất — CLO3, CLO5)*
+
+> Đề xuất **chiến lược phát triển kinh tế** cho một tỉnh/vùng cụ thể (chọn 1 trong 6 vùng KT-XH) sau cải cách 2025. Sử dụng số liệu **PCI / PAPI / PAR Index** ba năm gần nhất, có dẫn nguồn chính thống.
+
+## 4. Tiêu chí chấm chung
 
 | Tiêu chí | Trọng số |
-|---|---|
-| Đúng khái niệm cốt lõi | 30% |
-| Có ví dụ thực tế cụ thể | 25% |
-| Lập luận logic, có cấu trúc | 25% |
-| Văn phong học thuật, ít lỗi | 10% |
-| Liên hệ với tài liệu đã học (sách, bài đọc) | 10% |
+|---|:---:|
+| Cấu trúc và logic lập luận | 20% |
+| Chất lượng nội dung học thuật | 25% |
+| Sử dụng số liệu có nguồn chính thống, ghi rõ trích dẫn | 15% |
+| Phân tích và phản biện | 15% |
+| Đề xuất khả thi cho Việt Nam | 15% |
+| Sử dụng AI có trách nhiệm + liêm chính học thuật | 10% |
 
-## Đề thi các năm trước
+## 5. Quy định liêm chính học thuật
+
+::: {.callout-important}
+- Bài tập / tiểu luận **giống nhau đến 50%** trừ 1/2 số điểm.
+- Bài giống nhau **trên 50%** bị **điểm 0**.
+- Sinh viên không tham gia bài tập lớn, thuyết trình, không nộp tiểu luận đều **bị điểm 0** phần đánh giá tương ứng.
+- Vi phạm **liêm chính học thuật** (đạo văn, bịa số liệu, dùng AI không khai báo) bị xử lý theo quy chế Trường.
+:::
+
+### Quy định sử dụng AI
+
+- Sử dụng AI và công cụ số **được khuyến khích** cho mục đích học tập và nghiên cứu.
+- Phải **công bố phạm vi sử dụng** khi giảng viên yêu cầu.
+- Phải **tự kiểm chứng dữ liệu** AI cung cấp.
+- **Không sao chép trực tiếp** đầu ra AI mà không xử lý lại.
+- Không khai báo = đạo văn → xử lý theo quy chế.
+
+## 6. Đề thi các năm trước
 
 ::: {.callout-note appearance="simple"}
 Khi có đề thi các năm trước, sẽ cập nhật ở mục này dưới dạng PDF download.
 :::
 
-- *(chưa có)*
+*(chưa có)*

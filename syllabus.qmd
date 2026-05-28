@@ -1,125 +1,169 @@
 ---
-title: "Đề cương môn học"
-subtitle: "Nguyên lý Quản lý Kinh tế · 3 tín chỉ · 45 tiết"
+title: "Đề cương chi tiết học phần"
+subtitle: "DTU301 — Nguyên lý Quản lý Kinh tế · 3 tín chỉ"
 date: last-modified
-author: "Giảng viên: *cập nhật tại đây*"
 ---
+
+::: {.callout-note appearance="simple"}
+*Đề cương ban hành kèm theo Quyết định của Hiệu trưởng Trường Đại học Ngoại Thương. Phiên bản v1.1 — học liệu mở.*
+:::
 
 ## 1. Thông tin chung
 
 | Mục | Nội dung |
 |---|---|
-| **Tên môn học** | Nguyên lý Quản lý Kinh tế |
-| **Mã môn** | *cập nhật mã môn theo chương trình* |
+| **Tên học phần** | Nguyên lý Quản lý Kinh tế (*Principles of Economic Management*) |
+| **Mã học phần** | DTU301 |
+| **Bộ môn phụ trách** | Kinh tế và Quản lý |
+| **Viện** | Kinh tế và Kinh doanh Quốc tế |
 | **Số tín chỉ** | 3 |
-| **Tổng thời lượng** | 45 tiết lên lớp + ~90 giờ tự học |
-| **Học kỳ** | *cập nhật* |
-| **Đối tượng** | Sinh viên cử nhân năm 3-4, các ngành Kinh tế / Quản lý |
-| **Điều kiện tiên quyết** | Kinh tế Vi mô, Kinh tế Vĩ mô, Thống kê |
-| **Hình thức** | Trực tiếp kết hợp tự học có hướng dẫn |
+| **Điều kiện tiên quyết** | Không |
+| **Ngôn ngữ giảng dạy** | Tiếng Việt |
+| **Tổng thời lượng** | 30 tiết lý thuyết + 15 tiết thực hành + 25 tiết bài tập + 80 giờ tự học |
 
-## 2. Mô tả môn học
+## 2. Đội ngũ giảng viên
 
-Môn học cung cấp hệ thống tri thức nền tảng về quản lý nền kinh tế quốc dân, bao gồm: bản chất, đặc điểm và quy luật khách quan của quản lý kinh tế; hệ thống quản lý kinh tế và các thành tố cấu thành; chức năng, phương pháp và công cụ quản lý; các chính sách kinh tế chủ yếu của Nhà nước; và đặc thù quản lý kinh tế trong điều kiện Việt Nam — nền kinh tế thị trường định hướng xã hội chủ nghĩa và quá trình hội nhập kinh tế quốc tế.
+| STT | Họ và tên | Email FTU | Trụ sở |
+|:---:|---|---|:---:|
+| 1 | TS. Nguyễn Thị Việt Hoa | ntvthoa@ftu.edu.vn | HN |
+| 2 | ThS. Đinh Hoàng Minh | hoangminh007@ftu.edu.vn | HN |
+| 3 | **TS. Đỗ Ngọc Kiên** *(Trưởng Bộ môn)* | dongockien@ftu.edu.vn | HN |
+| 4 | TS. Trần Thanh Phương | Phuong.tranthanh@ftu.edu.vn | HN |
+| 5 | PGS. TS. Trần Thị Ngọc Quyên | quyenttn@ftu.edu.vn | HN |
+| 6 | TS. Cao Thị Hồng Vinh | caovinhftu@ftu.edu.vn | HN |
+| 7 | TS. Hoàng Hương Giang | hoanghuonggiang@ftu.edu.vn | HN |
+| 8 | PGS. TS. Nguyễn Thị Thùy Vinh | vinhntt@ftu.edu.vn | HN |
+| 9 | TS. Nguyễn Quỳnh Hương | nguyenquynhhuong.cs2@ftu.edu.vn | CS II |
+| 10 | ThS. Trương Bích Phương | truongbichphuong.cs2@ftu.edu.vn | CS II |
+| 11 | ThS. Phạm Thanh Dung | phamthanhdung.cs2@ftu.edu.vn | CS II |
 
-## 3. Mục tiêu môn học
+## 3. Mô tả học phần
 
-Sau khi hoàn thành môn học, sinh viên có khả năng:
+Học phần **Nguyên lý Quản lý Kinh tế** cung cấp khung tư duy về cách **Nhà nước điều hành nền kinh tế thị trường hiện đại**, tiếp cận theo **bốn cấp độ liên kết**:
 
-### Về kiến thức (K)
+1. **Quản lý kinh tế ngành** — cấu trúc thị trường, thất bại thị trường và điều tiết.
+2. **Quản lý kinh tế vĩ mô trong nền kinh tế đóng** — mục tiêu, công cụ tài khoá và tiền tệ.
+3. **Quản lý kinh tế trong nền kinh tế mở** — cán cân thanh toán, tỷ giá, phối hợp chính sách trong hội nhập.
+4. **Quản trị địa phương cùng phát triển kinh tế vùng**.
 
-- **K1.** Trình bày được bản chất, đặc trưng và các quy luật khách quan của quản lý kinh tế.
-- **K2.** Phân tích được cấu trúc của hệ thống quản lý kinh tế và mối quan hệ giữa các thành tố.
-- **K3.** Hiểu rõ các chức năng, phương pháp và công cụ quản lý kinh tế của Nhà nước.
-- **K4.** Đánh giá được vai trò và đặc thù của Nhà nước Việt Nam trong quản lý nền kinh tế.
+Các khung lý thuyết được minh hoạ bằng **tình huống chính sách Việt Nam và quốc tế**. Phương pháp giảng dạy ưu tiên *thảo luận tình huống, mô phỏng chính sách, làm việc nhóm* và *sử dụng có trách nhiệm các công cụ số và trí tuệ nhân tạo*.
 
-### Về kỹ năng (S)
+## 4. Chuẩn đầu ra (CLO)
 
-- **S1.** Vận dụng được khung phân tích QLKT để mổ xẻ một vấn đề chính sách thực tế.
-- **S2.** Đọc hiểu được các báo cáo kinh tế và tài liệu chính sách của Chính phủ.
-- **S3.** Sử dụng được công cụ định lượng cơ bản (Stata) để phân tích dữ liệu kinh tế vĩ mô.
-- **S4.** Trình bày một vấn đề QLKT có cấu trúc khoa học, bằng cả văn bản và thuyết trình.
+Mỗi chuẩn đầu ra dùng một động từ Bloom đo lường được.
 
-### Về thái độ (A)
+| Mã | Cấp độ Bloom | Nội dung |
+|---|---|---|
+| **CLO 1** | Giải thích | Giải thích vai trò, chức năng và công cụ quản lý nhà nước về kinh tế trong nền kinh tế thị trường hiện đại |
+| **CLO 2** | Vận dụng | Vận dụng các mô hình kinh tế và khung lý thuyết quản lý kinh tế vào các tình huống chính sách điển hình trong nước và quốc tế |
+| **CLO 3** | Phân tích | Phân tích sự phối hợp giữa các cấp và loại chính sách kinh tế cùng các đánh đổi và rủi ro chính sách trong tình huống cụ thể |
+| **CLO 4** | Phối hợp | Phối hợp hiệu quả trong nhóm khi tham gia thảo luận, mô phỏng và phân tích các vấn đề chính sách kinh tế |
+| **CLO 5** | Sử dụng | Sử dụng có trách nhiệm công cụ số và trí tuệ nhân tạo trong học tập và phân tích chính sách, tuân thủ chuẩn mực liêm chính học thuật |
 
-- **A1.** Có thái độ khách quan, dựa trên bằng chứng khi phân tích vấn đề kinh tế.
-- **A2.** Có ý thức trách nhiệm với các vấn đề phát triển kinh tế của Việt Nam.
+### Ma trận đóng góp CLO → PLO
 
-## 4. Đánh giá
+*Thang đánh giá 3 mức của FTU: 1 = Giới thiệu, 2 = Vận dụng, 3 = Thành thạo, A = đánh giá tổng kết.*
 
-| Hình thức | Tỷ trọng | Mô tả |
-|---|---:|---|
-| Chuyên cần | 10% | Tham gia đầy đủ, tích cực trong giờ học |
-| Bài tập về nhà | 15% | 3 bài tập / học kỳ, có sử dụng dữ liệu thực |
-| Kiểm tra giữa kỳ | 25% | Tuần 8, trắc nghiệm + tự luận, 60 phút |
-| Thuyết trình nhóm | 20% | Tuần 15, nhóm 3–5 sinh viên, đề tài tự chọn từ danh mục |
-| Thi cuối kỳ | 30% | Tự luận, 90 phút, không dùng tài liệu |
-| **Tổng** | **100%** |  |
+Học phần **đánh giá tổng kết ở mức Master** cho **PLO2** (qua đánh giá giữa kỳ) và **PLO3** (qua đánh giá cuối kỳ); đóng góp ở mức Develop cho PLO4, PLO5 và PLO9; giới thiệu cho PLO8.
 
-### Tiêu chí đánh giá thuyết trình nhóm
+| CLO | PLO2 | PLO3 | PLO4 | PLO5 | PLO8 | PLO9 |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| CLO1 | 1 | | | | | |
+| CLO2 | **3, A** | | | | | |
+| CLO3 | | **3, A** | | | | |
+| CLO4 | | | 2 | 2 | | |
+| CLO5 | | | | | 1 | 2 |
+| **Tổng** | **3, A** | **3, A** | 2 | 2 | 1 | 2 |
 
-| Tiêu chí | Điểm |
-|---|---:|
-| Nội dung học thuật (sử dụng đúng khái niệm, có bằng chứng) | 40% |
-| Cấu trúc và logic trình bày | 20% |
-| Sử dụng dữ liệu định lượng (có Stata code, biểu đồ) | 20% |
-| Kỹ năng trình bày và phản biện | 20% |
+## 5. Học liệu
 
-## 5. Tài liệu
+### 5.1. Tài liệu bắt buộc
 
-### Giáo trình chính
+1. Mankiw, N. Gregory (2026). *Kinh tế học vi mô* (bản dịch tiếng Việt). NXB Hồng Đức.
+2. Mankiw, N. Gregory (2026). *Kinh tế học vĩ mô* (bản dịch tiếng Việt). NXB Hồng Đức.
+3. Buchholz, G. Todd (2007). *Ý tưởng mới từ các Kinh tế gia tiền bối*. NXB Tri thức.
 
-::: {.callout-note appearance="simple"}
-*Phần này cần cập nhật cho phù hợp với chương trình của trường bạn.*
-:::
+### 5.2. Tài liệu tham khảo tự chọn
 
-- Đỗ Hoàng Toàn, Mai Văn Bưu (chủ biên). *Giáo trình Quản lý kinh tế.* Nhà xuất bản Đại học Kinh tế Quốc dân. (Cập nhật phiên bản mới nhất)
+4. Mankiw, N. Gregory (2021). *Principles of Microeconomics*, 9th edition. Cengage Learning.
+5. Mankiw, N. Gregory (2021). *Principles of Macroeconomics*, 9th edition. Cengage Learning.
+6. Blanchard, Olivier (2020). *Macroeconomics*, Global Edition, 8th Edition. Pearson.
+7. Stiglitz, J. E. & Rosengard, J. K. (2015). *Economics of the Public Sector*, 4th edition. W. W. Norton.
+8. Học viện Chính trị quốc gia Hồ Chí Minh (2021). *Giáo trình Quản lý nhà nước về kinh tế*. NXB Lý luận Chính trị.
 
-### Tài liệu tham khảo bắt buộc
+### 5.3. Văn kiện chính thức và văn bản pháp luật
 
-- Vũ Đình Bách (chủ biên). *Quản lý nhà nước về kinh tế.* NXB Lao động.
-- Phan Huy Đường. *Quản lý nhà nước về kinh tế.* NXB Đại học Quốc gia Hà Nội.
+9. Văn kiện Đại hội đại biểu toàn quốc lần thứ XIV của Đảng Cộng sản Việt Nam (2026) — Báo cáo chính trị, Nghị quyết, Chiến lược phát triển KT-XH 2026–2030.
+10. Quốc hội (2025). *Luật Tổ chức chính quyền địa phương* số 72/2025/QH15.
+11. Quốc hội (2025). *Luật Ngân sách nhà nước* số 89/2025/QH15 (hiệu lực từ năm ngân sách 2026).
+12. Quốc hội (2025). *Nghị quyết* số 202/2025/QH15 về sắp xếp đơn vị hành chính cấp tỉnh.
 
-### Tài liệu tham khảo mở rộng (tiếng Anh)
+### 5.4. Báo cáo định kỳ
 
-- Acemoglu, D., & Robinson, J. A. (2012). *Why Nations Fail: The Origins of Power, Prosperity, and Poverty.* Crown Business.
-- Stiglitz, J. E. (2015). *The Great Divide.* W. W. Norton.
-- Rodrik, D. (2007). *One Economics, Many Recipes.* Princeton University Press.
-- World Bank. *Vietnam Development Report* (cập nhật hàng năm). [worldbank.org/vietnam](https://worldbank.org/vietnam)
+13. Báo cáo **PCI** hàng năm (VCCI); **PAPI** (UNDP); **PAR Index** (Bộ Nội vụ).
+14. **World Bank**, **IMF**, **ADB** — Báo cáo cập nhật Kinh tế Việt Nam, phiên bản mới nhất.
 
-### Văn bản pháp luật và chính sách
+### 5.5. Tài liệu chuyên đề
 
-- Hiến pháp 2013 (Điều 50–54 về chế độ kinh tế).
-- Văn kiện Đại hội Đảng XIII (mục Định hướng phát triển kinh tế).
-- Luật Quản lý nợ công (sửa đổi).
-- Luật Ngân sách Nhà nước.
+15. Tài liệu chuyên đề về quản trị địa phương, phân cấp tài khoá và phát triển kinh tế vùng do giảng viên biên soạn và cung cấp tại lớp (cho Chương 5).
 
-### Phần mềm sử dụng
+## 6. Phân bổ tiết theo chương
 
-- **Stata** (bản từ 14 trở lên) cho phân tích dữ liệu vĩ mô.
-- Excel hoặc Google Sheets cho bài tập cơ bản.
-- (Tùy chọn) R hoặc Python — cho sinh viên muốn mở rộng.
+| Buổi | Nội dung | Lý thuyết | Thực hành | Bài tập | Tự học | CLO |
+|:---:|---|:---:|:---:|:---:|:---:|:---:|
+| 1–2 | **Chương 1**: Tổng quan về quản lý kinh tế | 5 | 1 | 3 | 9 | CLO1 |
+| 3–5 | **Chương 2**: Quản lý kinh tế ngành và doanh nghiệp | 5 | 2 | 4 | 13 | CLO1, CLO2 |
+| 6–8 | **Chương 3**: Quản lý kinh tế vĩ mô (nền kinh tế đóng) | 5 | 2 | 4 | 13 | CLO2, CLO3 |
+| 9–11 | **Chương 4**: Quản lý kinh tế vĩ mô trong nền kinh tế mở | 5 | 3 | 4 | 13 | CLO2, CLO3 |
+| 12–13 | **Chương 5**: Quản trị địa phương và phát triển kinh tế vùng | 5 | 2 | 4 | 9 | CLO3, CLO4 |
+| 14–15 | **Seminar** tổng hợp và ứng dụng | 5 | 5 | 6 | 23 | CLO3, CLO4, CLO5 |
+| **Tổng** | | **30** | **15** | **25** | **80** | |
 
-## 6. Quy định lớp học
+Chi tiết nội dung từng buổi: xem [Lịch học](schedule.qmd) và các trang [Bài giảng](lectures/index.qmd).
 
-### Chuyên cần
-- Vắng quá 20% số tiết → không đủ điều kiện dự thi cuối kỳ.
-- Đến muộn 15 phút trở lên tính là vắng tiết.
+## 7. Phương pháp và hình thức kiểm tra đánh giá
 
-### Bài tập về nhà
-- Nộp đúng hạn — chậm 1 ngày trừ 10%, chậm trên 7 ngày không nhận.
-- Bài tập có sử dụng Stata phải nộp kèm file `.do` và `.log`.
+Thang điểm: **10**.
 
-### Liêm chính học thuật
-- Không sao chép. Phát hiện đạo văn → điểm 0 cho cấu phần đó, có thể bị xử lý kỷ luật.
-- Sử dụng AI (ChatGPT, Claude…) **được khuyến khích** cho nghiên cứu và học tập, nhưng phải **ghi nhận minh bạch**: ghi rõ phần nào do AI hỗ trợ, prompt sử dụng. Không khai báo = đạo văn.
+| Hình thức | Nội dung | Phạm vi | Trọng số | CLO |
+|---|---|---|:---:|---|
+| **Đánh giá quá trình** | Chuyên cần + bài kiểm tra ngắn + tham gia thảo luận | Liên tục | **10%** | CLO1, CLO4 |
+| **Đánh giá giữa kỳ** | Hình thức do giảng viên quyết định (thi viết, thuyết trình, hoặc kết hợp) | Chương 1–2 | **30%** | CLO1, CLO2 |
+| **Đánh giá cuối kỳ** | Hình thức do giảng viên quyết định (thi viết, thuyết trình, tiểu luận, hoặc kết hợp tại Seminar Buổi 14–15) | Toàn bộ học phần | **60%** | CLO2, CLO3, CLO4, CLO5 |
+| | | | **100%** | |
 
-## 7. Lịch học tóm tắt
+### Tiêu chí đánh giá đề nghị
 
-Xem [trang Lịch học](schedule.qmd) để có bảng 15 tuần đầy đủ.
+| Tiêu chí | Trọng số |
+|---|:---:|
+| Cấu trúc và logic lập luận | 20% |
+| Chất lượng nội dung học thuật | 25% |
+| Sử dụng số liệu có nguồn chính thống, ghi rõ trích dẫn | 15% |
+| Phân tích và phản biện | 15% |
+| Đề xuất khả thi cho Việt Nam | 15% |
+| Sử dụng AI có trách nhiệm + liêm chính học thuật | 10% |
 
-## 8. Cập nhật
+*Lưu ý: Hình thức thi và hoạt động gắn kết thực tiễn trong học phần có thể linh hoạt do Bộ môn quyết định phụ thuộc vào tình hình thực tế.*
 
-Đề cương này có thể được điều chỉnh trong quá trình giảng dạy. Mọi thay đổi được công bố trong tuần kế tiếp.
+## 8. Quy định đối với học phần
 
-*Phiên bản đề cương: cập nhật cuối*
+### 8.1. Nhiệm vụ của sinh viên
+
+- Nghiên cứu tài liệu và **chuẩn bị bài trước mỗi buổi học**.
+- Tham gia tích cực các hoạt động thảo luận, bài tập trên lớp và làm việc nhóm.
+- Hoàn thành đầy đủ các bài tập và sản phẩm học tập theo tiến độ.
+- **Sử dụng AI và công cụ số có trách nhiệm**: công bố phạm vi sử dụng khi giảng viên yêu cầu; tự kiểm chứng dữ liệu; không sao chép trực tiếp đầu ra AI mà không xử lý lại.
+
+### 8.2. Quy định thi cử và học vụ
+
+- Sinh viên phải **dự lớp đầy đủ** theo quy định hiện hành.
+- Bài tập / tiểu luận **giống nhau đến 50%** trừ 1/2 số điểm; **trên 50%** bị điểm không.
+- Sinh viên không tham gia bài tập lớn, thuyết trình, không nộp tiểu luận đều **bị điểm 0** phần đánh giá tương ứng.
+- Vi phạm **liêm chính học thuật** (đạo văn, bịa số liệu, dùng AI không khai báo) bị xử lý theo quy chế Trường.
+
+## 9. Phê duyệt
+
+| | |
+|---|---|
+| **Trưởng Bộ môn** | TS. Đỗ Ngọc Kiên |
+| **Viện trưởng** | PGS. TS. Bùi Thị Lý |

@@ -1,0 +1,63 @@
+---
+title: "Buổi 09 — Cán cân thanh toán và tỷ giá"
+subtitle: "BoP, NEER, REER, chế độ tỷ giá, PPP, UIP, CIP, dự trữ ngoại hối"
+reading-time: "Chương 4"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Đóng góp CLO
+
+**CLO2, CLO3 — Vận dụng khung tỷ giá**
+:::
+
+## Nội dung lý thuyết (thuyết giảng)
+
+**4.1. Cán cân thanh toán (BoP)**
+
+- Cấu trúc: tài khoản vãng lai (CA), tài khoản tài chính (FA)
+- Đồng nhất: \(CA = S - I\)
+- BoP Việt Nam
+
+**Tỷ giá**
+
+- Danh nghĩa vs thực
+- **NEER** (nominal effective exchange rate)
+- **REER** (real effective exchange rate)
+- Các chế độ tỷ giá theo IMF
+
+**Lý thuyết**
+
+- **PPP** (purchasing power parity)
+- **UIP** (uncovered interest parity)
+- **CIP** (covered interest parity)
+- Carry trade
+- Dự trữ ngoại hối — vai trò
+
+## Thực hành / Thảo luận
+
+Tính **NEER và REER VND** từ dữ liệu mới nhất; thảo luận VND có bị **định giá quá cao/thấp** so với rổ tiền tệ chính.
+
+## Bài tập lớn / Tiểu luận
+
+Báo cáo phân tích chính sách (4–6 trang) về **một vấn đề tỷ giá hoặc dòng vốn** Việt Nam (Phần 1).
+
+## Tự học có hướng dẫn
+
+1. CA = S − I — hàm ý gì cho VN có thâm hụt CA?
+2. Tại sao PPP thường không nắm trong ngắn hạn?
+3. Dự trữ ngoại hối VN mức nào là đủ?
+
+## Đọc thêm
+
+- Mankiw, *Kinh tế học vĩ mô*, chương 19.
+- Blanchard (2020), chương 17–18.
+
+::: {.callout-warning appearance="simple"}
+## 🚧 Nội dung đang biên soạn
+
+Bài giảng buổi 09 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
+:::
+
+---
+
+← *Buổi trước*: [Buổi 8](buoi-08.qmd) *Buổi tiếp theo*: [Buổi 10](buoi-10.qmd) →

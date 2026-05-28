@@ -1,0 +1,49 @@
+---
+title: "Buổi 15 — Tổng kết và đánh giá"
+subtitle: "Thuyết trình sinh viên; phản biện chéo; đánh giá tổng kết cuối kỳ"
+reading-time: "Chương Seminar"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Đóng góp CLO
+
+**CLO2, CLO3, CLO4, CLO5 — Đánh giá tổng kết toàn học phần**
+:::
+
+## Nội dung lý thuyết (thuyết giảng)
+
+**Cấu trúc Buổi 15 — Tổng kết và đánh giá**
+
+- **Thuyết trình và phản biện** của sinh viên về các vấn đề chính sách kinh tế
+- **Phản biện chéo** giữa các nhóm
+- **Đánh giá tổng kết** theo hình thức do giảng viên quyết định
+
+## Thực hành / Thảo luận
+
+Thuyết trình nhóm (15–20 phút/nhóm) + phản biện 10 phút. Mỗi nhóm phản biện ít nhất 2 nhóm khác.
+
+## Bài tập lớn / Tiểu luận
+
+**Đánh giá cuối kỳ (60%)** — diễn ra trong Buổi 14–15 hoặc theo lịch riêng của giảng viên. Tiêu chí xem mục [Đánh giá](../exams/index.qmd).
+
+## Tự học có hướng dẫn
+
+1. Tổng hợp khung tư duy đã học qua 5 chương vào một sơ đồ.
+2. Chuẩn bị 3 câu hỏi phản biện sắc sảo cho các nhóm khác.
+3. Tự đánh giá đóng góp của mình trong nhóm theo CLO4.
+
+## Đọc thêm
+
+- Toàn bộ tài liệu học phần.
+- Báo cáo PCI / PAPI / PAR Index phiên bản mới nhất.
+- Báo cáo cập nhật kinh tế VN mới nhất từ WB / IMF / ADB.
+
+::: {.callout-warning appearance="simple"}
+## 🚧 Nội dung đang biên soạn
+
+Bài giảng buổi 15 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
+:::
+
+---
+
+← *Buổi trước*: [Buổi 14](buoi-14.qmd) *Đây là buổi cuối của học phần.*
