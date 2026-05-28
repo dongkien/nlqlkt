@@ -1,54 +1,290 @@
 ---
-title: "Buổi 04 — Cơ chế điều tiết và chính sách công nghiệp"
-subtitle: "Pigou, Coase, cap-and-trade, ĐMST quốc gia, 4 chuyển đổi XIV"
-reading-time: "Chương 2"
+title: "Buổi 4 — Thất bại thị trường và Cơ chế điều tiết"
+subtitle: "Bốn nguồn thất bại · Pigou & Coase · Điều tiết độc quyền tự nhiên · Thông tin bất cân xứng"
+reading-time: "Chương 2 · ~55 phút đọc"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Đóng góp CLO
 
-**CLO1, CLO2 — Vận dụng khung điều tiết và chính sách công nghiệp**
+**CLO1, CLO2** — Vận dụng khung thất bại thị trường vào tình huống Việt Nam và quốc tế.
+
+Buổi 3 mô tả *thị trường vận hành ra sao* trong các cấu trúc khác nhau. Buổi 4 trả lời câu hỏi tiếp theo: **khi nào thị trường thất bại** và **Nhà nước nên can thiệp bằng cách nào**. Đây là lõi của *Chức năng Điều tiết* — chức năng thứ 5 của QLKT đã giới thiệu ở Buổi 2.
 :::
 
-## Nội dung lý thuyết (thuyết giảng)
+## Lộ trình Buổi 4
 
-**2.3. Cơ chế điều tiết**
+| Phần | Nội dung |
+|:---:|---|
+| **A** | Bốn nguồn thất bại thị trường — khái niệm chung |
+| **B** | Pigou và Coase — hai cách xử lý ngoại tác |
+| **C** | Điều tiết độc quyền tự nhiên — ba phương án |
+| **D** | Thông tin bất cân xứng — Akerlof và Principal-Agent |
 
-- Thuế Pigou
-- Định lý Coase
-- Cap-and-trade
-- Điều tiết độc quyền tự nhiên
+## A. Bốn nguồn thất bại thị trường
 
-**2.4. Chính sách công nghiệp và đổi mới sáng tạo**
+### A.1. Khái niệm
 
-- Hệ thống Đổi mới sáng tạo quốc gia (National Innovation System)
-- **Bốn chuyển đổi** theo Đại hội XIV: chuyển đổi xanh, chuyển đổi số, chuyển đổi năng lượng, chuyển đổi mô hình tăng trưởng
+**Thất bại thị trường (market failure)** xảy ra khi phân bổ nguồn lực **không đạt tối ưu Pareto** — tức có thể cải thiện tình trạng của một người mà không làm tệ đi cho ai khác.
 
-## Thực hành / Thảo luận
+Trong các trường hợp này, **thị trường tự do KHÔNG dẫn đến hiệu quả xã hội**. Đây chính là cơ sở lý luận để Nhà nước can thiệp (xem nguyên lý 7 của Mankiw ở Buổi 1: "Chính phủ ĐÔI KHI cải thiện kết quả thị trường").
 
-Phân tích **Formosa Hà Tĩnh** qua khung Pigou/Coase: thuế hay đàm phán? Mô phỏng **đấu giá quyền phát thải** (cap-and-trade game).
+Bốn nguồn cần Nhà nước can thiệp, chia thành **hai nhóm**:
 
-## Bài tập lớn / Tiểu luận
+| Nhóm | Nguồn thất bại |
+|---|---|
+| **Phân loại 1: tính chất hàng hoá** | 1. Hàng hoá công; 2. Ngoại tác |
+| **Phân loại 2: cấu trúc thị trường + thông tin** | 3. Độc quyền tự nhiên; 4. Thông tin bất cân xứng |
 
-Bài tập phân tích vai trò của quyền sở hữu và thể chế trong giải quyết một thất bại thị trường ở Việt Nam (Phần 2).
+### A.2. Hàng hoá công và Ngoại tác
 
-## Tự học có hướng dẫn
+#### Hàng hoá công (Public goods)
 
-1. Khi nào điều tiết bằng giá hiệu quả hơn quy chuẩn?
-2. Chính sách công nghiệp Việt Nam hậu Đại hội XIV?
-3. Điều kiện để cap-and-trade hiệu quả là gì?
+Hai đặc tính:
+
+| Đặc tính | Ý nghĩa |
+|---|---|
+| **Không loại trừ** (non-excludable) | Không thể ngăn ai khỏi sử dụng |
+| **Không tranh giành** (non-rival) | Một người dùng không làm giảm cho người khác |
+
+**Vấn đề**: free-rider — ai cũng muốn dùng miễn phí → tư nhân không sản xuất đủ → thị trường thất bại.
+
+**Ví dụ**:
+
+- **Quốc phòng** — không thể bảo vệ chỉ một số công dân
+- **Đèn biển** — tàu nào cũng dùng được, không loại trừ
+- **Không khí sạch** — không thể bán riêng cho từng người
+- **Tri thức cơ bản** — công thức toán học không cạn kiệt khi dùng
+
+→ Nhà nước cần **trực tiếp cung cấp** hoặc **tài trợ** sản xuất.
+
+#### Ngoại tác (Externalities)
+
+**Ngoại tác** = tác động của hoạt động một bên lên bên thứ ba **không phản ánh trong giá**.
+
+Hai loại:
+
+| Loại | Mô tả | Ví dụ |
+|---|---|---|
+| **Ngoại tác âm** | Hành động A gây thiệt hại cho B mà A không trả | Ô nhiễm, tiếng ồn, ùn tắc giao thông |
+| **Ngoại tác dương** | Hành động A có lợi cho B mà A không thu được | Tiêm vắc-xin, R&D, giáo dục |
+
+**Kết quả**: ngoại tác âm → sản xuất *quá nhiều* so với mức xã hội mong muốn. Ngoại tác dương → sản xuất *quá ít*.
+
+Phần B sẽ trình bày *hai cách* xử lý ngoại tác: Pigou và Coase.
+
+### A.3. Độc quyền tự nhiên và Thông tin bất cân xứng
+
+#### Độc quyền tự nhiên (Natural monopoly)
+
+**ATC giảm dần liên tục** trên dải sản lượng — nghĩa là một DN làm tất cả sẽ rẻ hơn nhiều DN chia nhỏ.
+
+Nguyên nhân: **chi phí cố định lớn + chi phí biên thấp**.
+
+**Ví dụ**:
+
+- Điện (truyền tải)
+- Nước
+- Đường sắt (hạ tầng)
+- Viễn thông cố định (mạng vật lý)
+
+Trong các ngành này, "cạnh tranh trực tiếp" thực tế gây *lãng phí* (mỗi DN phải xây hạ tầng riêng).
+
+Phần C sẽ trình bày *ba cách* điều tiết ĐQTN.
+
+#### Thông tin bất cân xứng (Asymmetric information)
+
+Một bên giao dịch biết nhiều hơn bên kia → thị trường vận hành kém hoặc sụp đổ.
+
+**Akerlof (1970)** — *The Market for Lemons* — được giải Nobel Kinh tế 2001 cùng với Spence và Stiglitz.
+
+Phần D sẽ phân tích chi tiết.
+
+## B. Pigou và Coase — Hai cách xử lý ngoại tác
+
+### B.1. Thuế Pigou
+
+**Arthur Cecil Pigou (1920)** — *The Economics of Welfare*:
+
+> Nếu hoạt động sản xuất gây ngoại tác âm, **đánh thuế** = chi phí ngoại tác biên (MEC) sẽ khiến DN "nội hoá" ngoại tác.
+
+Cơ chế:
+
+$$\text{MSC (xã hội)} = \text{MPC (DN)} + \text{MEC (ngoại tác)}$$
+
+Khi thuế Pigou = MEC, **giá thị trường = giá xã hội đúng**, sản lượng tối ưu.
+
+**Ví dụ**:
+
+- **Thuế carbon** trên CO₂ thải
+- **Phí xả thải** đối với nước thải công nghiệp
+- **Thuế tiêu thụ đặc biệt** với rượu, thuốc lá (ngoại tác âm về sức khoẻ)
+
+**Ngoại tác dương**: làm ngược lại — **trợ cấp** = lợi ích biên xã hội. Vd: trợ cấp R&D, miễn phí vắc-xin.
+
+### B.2. Định lý Coase
+
+**Ronald Coase (1960)** — *The Problem of Social Cost* (Nobel Kinh tế 1991):
+
+> Nếu **chi phí giao dịch ≈ 0** và **quyền sở hữu rõ ràng**, các bên sẽ **tự đàm phán** để đạt kết quả tối ưu. Phân bổ quyền sở hữu *không* ảnh hưởng đến hiệu quả (chỉ ảnh hưởng phân phối thu nhập).
+
+**Vai trò Nhà nước theo Coase**: *không* can thiệp bằng thuế — chỉ **thiết lập quyền sở hữu rõ ràng** và **giảm chi phí giao dịch**.
+
+**Ví dụ kinh điển**: một nhà máy thải khói lên hộ gia đình bên cạnh. Theo Coase:
+
+- Nếu nhà máy có quyền thải → hộ gia đình **trả tiền** để nhà máy giảm thải.
+- Nếu hộ gia đình có quyền không khí sạch → nhà máy **trả tiền** để được thải.
+- Trong cả hai trường hợp, *mức ô nhiễm tối ưu giống nhau* — chỉ khác chuyện ai trả tiền.
+
+### B.3. Pigou vs Coase — đối chiếu
+
+| | **PIGOU (1920)** | **COASE (1960)** |
+|---|---|---|
+| Cách tiếp cận | Can thiệp bằng thuế và trợ cấp | Đàm phán giữa các bên |
+| Vai trò NN | **Chủ động** can thiệp | **Thiết lập luật**, giảm chi phí giao dịch |
+| Yêu cầu | Biết MEC chính xác | Chi phí giao dịch ≈ 0 |
+| Phù hợp khi | Nhiều người bị ảnh hưởng, khó đàm phán | Ít bên liên quan, quyền rõ ràng |
+| Ví dụ | Thuế carbon | Trao đổi đất nông nghiệp với khu công nghiệp |
+
+**Kết luận thực tế**: thường **kết hợp cả hai** — Nhà nước thiết lập luật + đánh thuế khi đàm phán quá tốn kém.
+
+### B.4. Cap-and-Trade — Coase quy mô lớn
+
+**Cap-and-Trade** = hệ thống lai giữa Pigou và Coase:
+
+1. **Nhà nước đặt cap (giới hạn tổng)** — tổng quota phát thải toàn ngành.
+2. **DN trao đổi quota** trên thị trường — DN nào giảm thải dễ thì bán quota cho DN giảm thải khó.
+
+**Ưu điểm**: hiệu quả khi *chi phí giảm thải khác nhau giữa các DN*. Đảm bảo mục tiêu môi trường (cap cố định) đồng thời tối thiểu hoá chi phí.
+
+**Ví dụ thực tế**:
+
+- **EU ETS** (European Emissions Trading System) — từ 2005, thị trường carbon lớn nhất thế giới.
+- **Việt Nam**: thí điểm thị trường carbon theo **Nghị định 06/2022/NĐ-CP** — chuẩn bị vận hành chính thức 2028.
+
+## C. Điều tiết độc quyền tự nhiên
+
+### C.1. Vì sao có độc quyền tự nhiên?
+
+**Đặc trưng**: ATC giảm liên tục trên dải sản lượng → chi phí cố định lớn + chi phí biên thấp.
+
+**Hậu quả**: nếu hai DN cùng làm, tổng chi phí *cao hơn* một DN làm.
+
+**Ngành điển hình**:
+
+| Ngành | Vì sao là ĐQTN |
+|---|---|
+| Điện (truyền tải) | Lưới điện trùng lặp = lãng phí khủng khiếp |
+| Nước | Ống cấp nước cố định, không thể "cạnh tranh trên đường ống" |
+| Đường sắt | Đường ray cố định |
+| Viễn thông cố định | Cáp đồng/cáp quang đến từng nhà |
+
+**Không thể có cạnh tranh trực tiếp hiệu quả** trong các ngành này — phải có cơ chế điều tiết.
+
+### C.2. Ba phương án điều tiết ĐQTN
+
+| Phương án | Cơ chế | Ưu | Nhược |
+|---|---|---|---|
+| **Price cap** | NN đặt $P = MC$ hoặc $P = ATC$ | Đơn giản, dễ thực thi | $P = MC$ làm DN lỗ (vì ATC > MC); $P = ATC$ làm DN không có động lực cải tiến |
+| **Rate of return** | Cho phép tỷ suất lợi nhuận hợp lý (vd: 10%/năm trên vốn) | DN có động lực đầu tư | Khuyến khích đầu tư *quá nhiều* (Averch-Johnson effect) |
+| **Ramsey pricing** | Frank Ramsey 1927: giá theo **độ nhạy cầu** — đánh giá cao hơn vào nhóm cầu kém co dãn | Tối ưu phúc lợi với ràng buộc cân đối tài chính | Phức tạp, đòi hỏi biết độ co giãn cầu |
+
+### C.3. Điều tiết ĐQTN ở Việt Nam
+
+| Ngành | Cơ chế hiện hành |
+|---|---|
+| **Điện (EVN)** | ĐQTN truyền tải; **tách phát điện + bán lẻ** thí điểm; **giá điện do Nhà nước quyết định** |
+| **Viễn thông** | Đã *bỏ ĐQTN* cố định nhờ chuyển sang di động; cạnh tranh hiệu quả giữa VNPT, Viettel, MobiFone |
+| **Đường sắt** | ĐQTN cơ sở hạ tầng (Tổng công ty Đường sắt VN); **cần cải cách** để tách hạ tầng và vận hành |
+
+**Bài học chính sách**: trong những ngành mà công nghệ cho phép, **chia tách "phần ĐQTN cứng" (hạ tầng) và "phần có thể cạnh tranh" (dịch vụ)** — đây là cách EU và Anh đã làm với đường sắt và điện.
+
+## D. Thông tin bất cân xứng
+
+### D.1. Akerlof và thị trường lemons
+
+**George Akerlof (1970)** — *The Market for Lemons: Quality Uncertainty and the Market Mechanism*. Nobel Kinh tế 2001.
+
+**Ví dụ kinh điển: thị trường xe cũ ở Mỹ**
+
+- Người **bán** biết chất lượng xe (có phải "lemon" — xe hỏng vặt không).
+- Người **mua** *không biết*.
+
+**Hậu quả — Adverse Selection (lựa chọn ngược)**:
+
+1. Người mua không biết, sẵn sàng trả giá *trung bình* cho cả xe tốt và xe lemon.
+2. Người bán xe *tốt* không bán được giá xứng đáng → rút khỏi thị trường.
+3. Còn lại chủ yếu xe lemon.
+4. Người mua nhận ra → trả giá thấp hơn nữa.
+5. Vòng xoáy tiếp tục → **thị trường thu hẹp dần, có thể sụp đổ**.
+
+**Áp dụng tại Việt Nam**:
+
+- **Thị trường BHYT**: người có sức khoẻ kém có động lực mua bảo hiểm hơn người khoẻ → công ty bảo hiểm phải tính phí cao → người khoẻ rút khỏi thị trường → BHYT toàn dân *bắt buộc* là giải pháp.
+- **Thị trường lao động**: nhà tuyển dụng không biết năng lực ứng viên → dùng *bằng cấp* làm tín hiệu (signaling — đóng góp của Spence).
+
+### D.2. Principal-Agent và moral hazard
+
+**Jensen-Meckling (1976)** — lý thuyết về **chi phí đại diện (agency cost)**:
+
+- **Principal (người chủ)**: cổ đông, người bầu cử, người mua bảo hiểm
+- **Agent (đại diện)**: CEO, đại biểu Quốc hội, người được bảo hiểm
+
+**Vấn đề**: lợi ích của Principal và Agent **không giống nhau** + Principal khó *quan sát* hành động của Agent.
+
+**Hậu quả — Moral hazard (rủi ro đạo đức)**: agent hành xử *không tối ưu cho principal* sau khi giao dịch xong.
+
+**Ví dụ**:
+
+- CEO chi tiêu phung phí (private jet, văn phòng sang) vì *cổ đông trả tiền*, không phải CEO.
+- Người có BHYT đi khám nhiều hơn cần thiết vì *bảo hiểm trả*, không phải mình.
+
+**Bốn giải pháp chính**:
+
+| Giải pháp | Bản chất | Ví dụ |
+|---|---|---|
+| **Signaling** | Bên có thông tin tự gửi tín hiệu đáng tin | Bằng cấp, chứng chỉ, bảo hành |
+| **Screening** | Bên thiếu thông tin thiết kế cơ chế phân loại | Hợp đồng nhiều lựa chọn (deductible) |
+| **Hợp đồng khuyến khích** | Gắn lương với hiệu suất | Stock options, hoa hồng |
+| **Giám sát + kiểm toán** | Trực tiếp đo hành vi | Kiểm toán độc lập, thanh tra |
+
+**Áp dụng tại Việt Nam**:
+
+- **Quản trị DNNN** — vấn đề kinh điển: đại diện quản lý không tương đồng lợi ích với "chủ sở hữu Nhà nước". Cải cách DNNN luôn xoay quanh giảm chi phí đại diện.
+- **BHYT** — đồng chi trả (co-payment) là cơ chế *screening* + giảm moral hazard.
+- **Ngân hàng** — bắt buộc dự phòng rủi ro, basel III, là cơ chế giảm moral hazard sau "too big to fail".
+
+## Tổng kết Buổi 4 — Năm điểm cốt lõi
+
+1. **Bốn nguồn thất bại thị trường** cần Nhà nước can thiệp: hàng hoá công, ngoại tác, độc quyền tự nhiên, thông tin bất cân xứng.
+2. **Pigou**: đánh thuế ngoại tác biên (MEC); **Coase**: thiết lập quyền sở hữu + đàm phán giữa các bên.
+3. **Cap-and-trade**: Coase quy mô lớn — NN đặt cap, DN trao đổi quota. VN thí điểm theo NĐ 06/2022.
+4. **Điều tiết ĐQTN**: 3 phương án chính — price cap, rate of return, Ramsey pricing.
+5. **Thông tin bất cân xứng**: Akerlof (adverse selection) + Principal-Agent (moral hazard). Giải pháp: signaling, screening, hợp đồng, giám sát.
+
+## Bài tập về nhà (chuẩn bị Buổi 5)
+
+1. **Đọc** Mankiw, chương về chính sách công nghiệp.
+2. **Tự đọc** về Quản trị doanh nghiệp.
+3. **Chuẩn bị 1 case chính sách ngành tại VN** — vd: chính sách bán dẫn 2024, ưu đãi thuế cho doanh nghiệp công nghệ cao, gói hỗ trợ DN nhỏ.
+4. **Đọc thêm** về Hệ thống Đổi mới sáng tạo quốc gia (NIS).
+
+::: {.callout-tip}
+## 🔧 Stata Lab 4 (bonus 5%)
+
+Bài này có lab thực hành **mô phỏng thuế Pigou** trong Stata: tạo dataset cung-cầu, tìm cân bằng trước và sau khi áp thuế, đo *deadweight loss (DWL)* và tổng phúc lợi. Áp dụng cho case **thuế carbon Việt Nam**.
+
+→ [**Bắt đầu Lab 4 — Mô phỏng thuế Pigou**](../stata-lab/lab-04.qmd) *(~25 phút)*
+:::
 
 ## Đọc thêm
 
-- Mankiw, *Kinh tế học vi mô*, chương 10 (ngoại tác).
-- Văn kiện Đại hội Đảng XIV — mục về 4 chuyển đổi.
-
-::: {.callout-warning appearance="simple"}
-## 🚧 Nội dung đang biên soạn
-
-Bài giảng buổi 04 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
-:::
+- Mankiw, *Kinh tế học vi mô* (2026), chương 10 (Externalities) và 11 (Public Goods).
+- Stiglitz, J. E. & Rosengard, J. K. (2015), *Economics of the Public Sector*, chương 4–6.
+- **Coase, R.** (1960), *The Problem of Social Cost* — bài báo gốc.
+- **Akerlof, G.** (1970), *The Market for Lemons* — bài báo gốc.
+- Nghị định 06/2022/NĐ-CP về giảm phát thải khí nhà kính và bảo vệ tầng ozon (cơ sở pháp lý cho thị trường carbon VN).
 
 ---
 
-← *Buổi trước*: [Buổi 3](buoi-03.qmd) *Buổi tiếp theo*: [Buổi 5](buoi-05.qmd) →
+← *Buổi trước*: [Buổi 3 — Cấu trúc thị trường và Luật Cạnh tranh](buoi-03.qmd) | *Buổi tiếp theo*: [Buổi 5 — Chính sách công nghiệp và Quản trị doanh nghiệp](buoi-05.qmd) →

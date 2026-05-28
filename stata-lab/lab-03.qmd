@@ -1,72 +1,213 @@
 ---
-title: "Lab 03 — Tính HHI cho 5 ngành Việt Nam"
-subtitle: "Tương ứng Buổi 3: Cấu trúc thị trường và chỉ số tập trung"
-reading-time: "~20 phút"
+title: "Lab 3 — Tính HHI cho 5 ngành Việt Nam"
+subtitle: "Tương ứng Buổi 3: Cấu trúc thị trường và đo lường sức mạnh thị trường"
+reading-time: "~25 phút"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Liên kết với Buổi 3
 
-Bài này áp dụng khái niệm chính từ [Buổi 3](../lectures/buoi-03.qmd) vào dữ liệu thực tế Việt Nam.
+Bài này áp dụng **chỉ số HHI** từ [Buổi 3](../lectures/buoi-03.qmd) vào 5 ngành thực tế Việt Nam: viễn thông, ngân hàng, bia, bán lẻ hiện đại, hàng không.
 
-**Khái niệm Stata học**: `egen, sort, ranking`
+Sau Lab 3, bạn có thể:
+
+- Nhập dữ liệu thị phần thủ công vào Stata
+- Tính HHI bằng `egen` và `gen`
+- So sánh mức độ tập trung giữa các ngành
+- Liên hệ HHI với *vị trí thống lĩnh thị trường* (Luật Cạnh tranh 2018)
+
+**Khái niệm Stata học**: `input`, `egen total`, `gen`, `gsort`, `replace`, `preserve/restore`, biểu đồ bar
 :::
 
-::: {.callout-warning appearance="simple"}
-## 🚧 Lab đang biên soạn
+## 1. Tạo dataset 5 ngành Việt Nam
 
-Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 03. Cấu trúc cố định theo template chuẩn của 16 lab.
-:::
-
-## Khung Lab 03
-
-### 1. Bài toán
-
-Viễn thông: Viettel/VNPT/MobiFone/Vietnamobile; Ngân hàng: VCB/BID/CTG/TCB; Bán lẻ: BHX/WCM/Coopmart
-
-### 2. Dữ liệu cần
-
-Dataset thị phần 5 doanh nghiệp lớn nhất từng ngành
-
-### 3. Lệnh Stata trọng tâm
-
-Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):
+Mở do-file mới, gõ:
 
 ```stata
-* Lab 03 — DTU301
+* Lab 3 — DTU301 — HHI 5 ngành Việt Nam
 * Họ tên: <điền>, MSSV: <điền>
 
 clear all
 set more off
 log using "lab03_<ten>.log", replace text
 
-* === Tải dữ liệu ===
-* (sẽ chi tiết khi có dataset thật)
+* === Tạo dataset thị phần (% — ước lượng từ báo cáo ngành) ===
+clear
+input str20 nganh str20 doanh_nghiep thi_phan
+"Viễn thông"      "Viettel"          54
+"Viễn thông"      "VinaPhone"        18
+"Viễn thông"      "MobiFone"         19
+"Viễn thông"      "Vietnamobile"      4
+"Viễn thông"      "Khác"              5
+"Ngân hàng"       "Agribank"         11
+"Ngân hàng"       "BIDV"             11
+"Ngân hàng"       "VietinBank"       10
+"Ngân hàng"       "Vietcombank"      10
+"Ngân hàng"       "Techcombank"       5
+"Ngân hàng"       "Khác"             53
+"Bia"             "Heineken"         39
+"Bia"             "Sabeco"           33
+"Bia"             "Habeco"           11
+"Bia"             "Carlsberg"        10
+"Bia"             "Khác"              7
+"Bán lẻ"          "BHX"              18
+"Bán lẻ"          "WinMart"          16
+"Bán lẻ"          "Coopmart"         10
+"Bán lẻ"          "Aeon"              7
+"Bán lẻ"          "Khác"             49
+"Hàng không"      "Vietnam Airlines" 35
+"Hàng không"      "Vietjet"          40
+"Hàng không"      "Bamboo"           15
+"Hàng không"      "Vietravel"         5
+"Hàng không"      "Khác"              5
+end
 
-* === Phân tích ===
-* Sử dụng: egen, sort, ranking
+list, sepby(nganh)
+```
 
-* === Đóng log ===
+::: {.callout-warning appearance="simple"}
+Số liệu là **ước lượng tham khảo** để minh hoạ quy trình. Trước khi nộp bài, hãy **kiểm chứng** bằng số liệu mới nhất từ:
+
+- Báo cáo của VietnamReport, Statista, VIRAC
+- Báo cáo thường niên của từng DN
+- Số liệu của Bộ Công Thương, NHNN, Cục Hàng không VN
+:::
+
+## 2. Tính HHI cho từng ngành
+
+```stata
+* === Tính bình phương thị phần ===
+generate thi_phan_sq = thi_phan ^ 2
+
+* === Tổng bình phương theo ngành = HHI ===
+egen HHI = total(thi_phan_sq), by(nganh)
+
+* Xem kết quả: in mỗi ngành 1 dòng
+preserve
+    duplicates drop nganh, force
+    keep nganh HHI
+    gsort -HHI
+    list, separator(0) noobs
+restore
+```
+
+Bạn sẽ thấy bảng kiểu:
+
+| nganh | HHI |
+|---|:---:|
+| Viễn thông | ~3,602 |
+| Ngân hàng | ~3,242 |
+| Bia | ~2,940 |
+| Hàng không | ~2,930 |
+| Bán lẻ | ~889 |
+
+**Câu hỏi 1**: Ngành nào tập trung nhất? Ngành nào ít tập trung nhất? Có mấy ngành có HHI > 2500 (cao)?
+
+## 3. Phân loại theo chuẩn quốc tế
+
+```stata
+* === Gán nhãn mức độ tập trung ===
+generate muc_tap_trung = ""
+replace muc_tap_trung = "Thấp"        if HHI < 1500
+replace muc_tap_trung = "Trung bình"  if HHI >= 1500 & HHI <= 2500
+replace muc_tap_trung = "Cao"         if HHI > 2500
+
+* Hiển thị
+preserve
+    duplicates drop nganh, force
+    keep nganh HHI muc_tap_trung
+    gsort -HHI
+    list, separator(0) noobs
+restore
+```
+
+**Câu hỏi 2**: Áp dụng chuẩn của Mỹ (DOJ) và EU, bao nhiêu trong 5 ngành được xếp loại "tập trung cao"?
+
+## 4. Tìm doanh nghiệp có vị trí thống lĩnh
+
+Theo Luật Cạnh tranh VN 2018, DN có **thị phần > 30%** được coi là có *vị trí thống lĩnh thị trường*.
+
+```stata
+* === Tìm DN có thị phần > 30% ===
+generate thong_linh = (thi_phan > 30)
+list nganh doanh_nghiep thi_phan if thong_linh == 1, noobs
+```
+
+**Câu hỏi 3**: Có những DN nào có vị trí thống lĩnh trong 5 ngành? DN nào có thị phần cao nhất?
+
+## 5. Mô phỏng tác động M&A
+
+Giả sử 2 DN lớn nhất ngành **Bia** đề xuất sáp nhập. NCC có nên duyệt không? Hãy tính HHI **sau M&A**:
+
+```stata
+* === Mô phỏng M&A: Heineken + Sabeco trong ngành Bia ===
+preserve
+    keep if nganh == "Bia"
+    egen HHI_truoc = total(thi_phan_sq)
+    display "HHI trước M&A: " HHI_truoc[1]
+
+    * Sau M&A: cộng thị phần Heineken + Sabeco
+    replace thi_phan = 39 + 33 if doanh_nghiep == "Heineken"
+    drop if doanh_nghiep == "Sabeco"
+
+    generate thi_phan_sq_moi = thi_phan ^ 2
+    egen HHI_sau = total(thi_phan_sq_moi)
+    display "HHI sau M&A : " HHI_sau[1]
+    display "Thay đổi    : " HHI_sau[1] - HHI_truoc[1]
+restore
+```
+
+**Câu hỏi 4**: HHI tăng bao nhiêu sau M&A? Theo chuẩn DOJ (thay đổi HHI > 200 tại ngành tập trung cao thường bị từ chối), NCC có nên duyệt?
+
+## 6. Vẽ biểu đồ so sánh 5 ngành
+
+```stata
+* === Biểu đồ HHI 5 ngành ===
+preserve
+    duplicates drop nganh, force
+    keep nganh HHI
+    gsort -HHI
+
+    graph bar HHI, over(nganh, sort(HHI) descending) ///
+        bar(1, color("114 47 55")) ///
+        title("Chỉ số HHI — 5 ngành Việt Nam") ///
+        subtitle("Đường ngang: chuẩn 1500 (TB) và 2500 (Cao)") ///
+        yline(1500, lcolor(orange) lpattern(dash)) ///
+        yline(2500, lcolor(red) lpattern(dash)) ///
+        ylabel(0(1000)5000) ///
+        graphregion(color(white))
+
+    graph export "hhi_5nganh.png", replace width(1400)
+restore
+```
+
+## 7. Liên hệ với Buổi 3
+
+**Câu hỏi 5** (suy nghĩ + viết, 300 từ):
+
+Đặt 5 ngành đã tính HHI vào *bốn cấu trúc thị trường* đã học ở Buổi 3:
+
+- Ngành nào gần *cạnh tranh hoàn hảo* (HHI thấp)?
+- Ngành nào gần *độc quyền* (HHI rất cao + 1 DN chiếm > 50%)?
+- Ngành nào là *Oligopoly* điển hình?
+
+Theo bạn, **Uỷ ban Cạnh tranh Quốc gia (NCC)** nên ưu tiên giám sát ngành nào nhất? Vì sao?
+
+## 8. Đóng log
+
+```stata
 log close
 ```
 
-### 4. Câu hỏi suy nghĩ (sẽ chi tiết)
+## Deliverable Lab 3
 
-1. Câu hỏi mô tả dữ liệu
-2. Câu hỏi so sánh / xu hướng
-3. Câu hỏi liên hệ với lý thuyết
-4. Câu hỏi liên hệ với chính sách Việt Nam
-5. Câu hỏi mở rộng / phản biện
-
-## Deliverable Lab 03
-
-Nộp 3 file (như các lab trước):
+Nộp 3 file:
 
 | File | Nội dung |
 |---|---|
-| `lab03_<tên>.do` | Code + comment |
-| `lab03_<tên>.log` | Output |
-| `lab03_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
+| `lab03_<tên>.do` | Code đầy đủ + comment tiếng Việt |
+| `lab03_<tên>.log` | Output Stata |
+| `lab03_<tên>.pdf` (2 trang) | Trả lời 5 câu hỏi + biểu đồ HHI 5 ngành |
 
 **Tiêu đề email**: `DTU301-LAB03-MSSV-HọTên`
 
@@ -74,11 +215,11 @@ Nộp 3 file (như các lab trước):
 
 | Tiêu chí | Điểm |
 |---|:---:|
-| Code chạy đúng, có log | 30% |
-| Vận dụng đúng khái niệm Stata mới của bài | 25% |
-| Biểu đồ / bảng kết quả rõ ràng | 20% |
-| Trả lời câu hỏi sâu, có liên hệ thực tiễn | 25% |
+| Code chạy đúng, có log | 25% |
+| HHI tính đúng + phân loại chuẩn | 25% |
+| Mô phỏng M&A và bình luận hợp lý | 20% |
+| Biểu đồ rõ ràng + liên hệ Luật Cạnh tranh 2018 | 30% |
 
 ---
 
-← *Lab trước*: [Lab 2](lab-02.qmd) | *Lab tiếp theo*: [Lab 4](lab-04.qmd) →
+← *Lab trước*: [Lab 2 — Phân tích chi tiêu công VN](lab-02.qmd) | *Lab tiếp theo*: [Lab 4 — Mô phỏng thuế Pigou](lab-04.qmd) →

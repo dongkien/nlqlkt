@@ -81,32 +81,50 @@ h2 {
   border-left: 3px solid $secondary;
 }
 
-// ---- Code blocks ----
+// ---- Code blocks (light academic theme) ----
 pre.sourceCode {
-  background: #2b2120 !important;     // warm dark
+  background: #f8f4ea !important;     // cream nhạt — đồng bộ với palette
   border-radius: 6px;
-  border-left: 3px solid $secondary;
+  border-left: 3px solid $secondary;  // gold accent
+  border: 1px solid #e5dfd0;
+  padding: 0.9rem 1rem;
 }
 pre.sourceCode code {
-  color: #f5f0e3;
-}
-code {
-  color: $primary;
-  background: rgba(193, 154, 77, 0.12);
-  padding: 0.12em 0.4em;
-  border-radius: 3px;
-}
-pre.sourceCode code {
+  color: #1a1f2e;                     // dark ink text — tương phản mạnh trên kem
   background: transparent;
-  color: #f5f0e3;
+  font-size: 0.95rem;
+  line-height: 1.55;
 }
 
-// Stata language label
+// Inline code
+code:not(pre code) {
+  color: $primary;                    // maroon đậm
+  background: rgba(193, 154, 77, 0.15);
+  padding: 0.12em 0.4em;
+  border-radius: 3px;
+  font-size: 0.92em;
+}
+
+// ---- Pandoc syntax highlight color overrides (light theme) ----
+// Đảm bảo các token được tô màu rõ ràng trên nền kem
+pre.sourceCode {
+  .co, .cm  { color: #6a737d; font-style: italic; }       // comment — xám
+  .kw, .cf  { color: #8a2b2b; font-weight: 600; }          // keyword — maroon
+  .st, .vs  { color: #2a7d4e; }                            // string — xanh lá đậm
+  .dv, .bn, .fl, .ch { color: #0058a3; }                   // number — xanh lam
+  .va, .at  { color: #1a4d7a; }                            // variable / attribute
+  .fu, .bu  { color: #663399; font-weight: 600; }          // function — tím
+  .op       { color: #1a1f2e; }                            // operator — đen
+  .er       { color: #c0392b; font-weight: 700; }          // error — đỏ
+  .cn       { color: #b35900; }                            // constant
+}
+
+// Stata language label (gold tab phía trên)
 div.sourceCode.stata::before {
   content: "Stata";
   display: block;
   background: $secondary;
-  color: $body-color;
+  color: #1a1f2e;
   font-family: $font-family-sans-serif;
   font-size: 0.7rem;
   font-weight: 700;
@@ -114,6 +132,10 @@ div.sourceCode.stata::before {
   text-transform: uppercase;
   padding: 0.25rem 0.7rem;
   border-radius: 6px 6px 0 0;
+}
+div.sourceCode.stata pre.sourceCode {
+  border-radius: 0 0 6px 6px;
+  margin-top: 0;
 }
 
 // ---- Callouts ----

@@ -1,72 +1,207 @@
 ---
-title: "Lab 04 — Mô phỏng thuế Pigou"
-subtitle: "Tương ứng Buổi 4: Cơ chế điều tiết ngoại tác"
-reading-time: "~20 phút"
+title: "Lab 4 — Mô phỏng thuế Pigou"
+subtitle: "Tương ứng Buổi 4: Cơ chế điều tiết ngoại tác và tính toán DWL"
+reading-time: "~25 phút"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Liên kết với Buổi 4
 
-Bài này áp dụng khái niệm chính từ [Buổi 4](../lectures/buoi-04.qmd) vào dữ liệu thực tế Việt Nam.
+Bài này áp dụng khái niệm **thuế Pigou** từ [Buổi 4](../lectures/buoi-04.qmd) vào một ngành có ngoại tác âm điển hình tại Việt Nam: **xi măng (phát thải CO₂)**.
 
-**Khái niệm Stata học**: `gen, đường cung-cầu, equilibrium`
+Sau Lab 4, bạn có thể:
+
+- Tạo dataset cung-cầu trong Stata
+- Tìm điểm cân bằng thị trường (giao điểm S, D)
+- So sánh **MPC** (chi phí tư nhân biên) và **MSC** (chi phí xã hội biên)
+- Áp thuế Pigou = MEC và tìm cân bằng mới
+- Tính **DWL** (deadweight loss) trước và sau thuế
+
+**Khái niệm Stata học**: `set obs`, `generate`, mô phỏng đại số, `twoway` nhiều layer
 :::
 
-::: {.callout-warning appearance="simple"}
-## 🚧 Lab đang biên soạn
+## 1. Bài toán
 
-Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 04. Cấu trúc cố định theo template chuẩn của 16 lab.
-:::
+Ngành xi măng VN có:
 
-## Khung Lab 04
+- **Đường cầu**: $Q_D = 100 - P$
+- **Đường cung tư nhân (MPC)**: $P = 20 + 0.5Q$
+- **Chi phí ngoại tác biên (MEC)** từ phát thải CO₂: $\text{MEC} = 0.5Q$
+- **Chi phí xã hội biên (MSC)** = MPC + MEC = $20 + Q$
 
-### 1. Bài toán
+Câu hỏi:
 
-So sánh equilibrium trước và sau thuế Pigou
+1. Cân bằng thị trường tự do (không thuế) ở đâu?
+2. Cân bằng xã hội tối ưu (có MSC) ở đâu?
+3. Thuế Pigou bằng bao nhiêu?
+4. DWL trước thuế là bao nhiêu?
 
-### 2. Dữ liệu cần
-
-Dữ liệu giả định về ngành xi măng có ngoại tác CO2
-
-### 3. Lệnh Stata trọng tâm
-
-Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):
+## 2. Tạo dataset cung-cầu
 
 ```stata
-* Lab 04 — DTU301
+* Lab 4 — DTU301 — Mô phỏng thuế Pigou cho ngành xi măng
 * Họ tên: <điền>, MSSV: <điền>
 
 clear all
 set more off
 log using "lab04_<ten>.log", replace text
 
-* === Tải dữ liệu ===
-* (sẽ chi tiết khi có dataset thật)
+* === Tạo lưới Q từ 0 đến 100 ===
+clear
+set obs 101
+generate Q = _n - 1
 
-* === Phân tích ===
-* Sử dụng: gen, đường cung-cầu, equilibrium
+* === Tính các đường ===
+generate P_D = 100 - Q                    // Cầu: P = 100 - Q
+generate P_MPC = 20 + 0.5 * Q             // Cung tư nhân (Marginal Private Cost)
+generate P_MEC = 0.5 * Q                  // Chi phí ngoại tác biên
+generate P_MSC = P_MPC + P_MEC            // Chi phí xã hội biên = MPC + MEC
 
-* === Đóng log ===
+label variable P_D "Cầu D"
+label variable P_MPC "Cung tư nhân (MPC)"
+label variable P_MEC "Chi phí ngoại tác (MEC)"
+label variable P_MSC "Chi phí xã hội (MSC)"
+
+list Q P_D P_MPC P_MSC in 1/10
+```
+
+## 3. Tìm cân bằng thị trường tự do
+
+Cân bằng khi $P_D = P_{MPC}$:
+
+$$100 - Q = 20 + 0.5Q \Rightarrow Q^* = 53.33,\, P^* = 46.67$$
+
+Kiểm tra bằng Stata:
+
+```stata
+* === Cân bằng thị trường tự do (không có thuế) ===
+generate dif_tu_do = abs(P_D - P_MPC)
+sort dif_tu_do
+display "Q* tự do  ≈ " Q[1]
+display "P* tự do  ≈ " P_D[1]
+
+* Lưu giá trị
+scalar Q_tu_do = Q[1]
+scalar P_tu_do = P_D[1]
+sort Q
+```
+
+**Câu hỏi 1**: Cân bằng thị trường tự do ở Q ≈ ? và P ≈ ?
+
+## 4. Tìm cân bằng xã hội tối ưu
+
+Khi tính cả ngoại tác, cân bằng đúng là khi $P_D = P_{MSC}$:
+
+$$100 - Q = 20 + Q \Rightarrow Q^{**} = 40,\, P^{**} = 60$$
+
+```stata
+* === Cân bằng xã hội tối ưu (có ngoại tác) ===
+generate dif_xa_hoi = abs(P_D - P_MSC)
+sort dif_xa_hoi
+display "Q** xã hội ≈ " Q[1]
+display "P** xã hội ≈ " P_D[1]
+
+scalar Q_xh = Q[1]
+scalar P_xh = P_D[1]
+sort Q
+```
+
+**Câu hỏi 2**: Cân bằng xã hội ở Q ≈ ? và P ≈ ? So với tự do: **sản lượng giảm** bao nhiêu? **Giá tăng** bao nhiêu?
+
+## 5. Thuế Pigou — bằng MEC tại điểm tối ưu
+
+```stata
+* === Thuế Pigou tại Q_xh ===
+* Pigou tax = MEC khi Q = Q**
+sort Q
+scalar pigou_tax = 0.5 * Q_xh
+display "Thuế Pigou = MEC tại Q** = " pigou_tax
+
+* Kiểm tra: cung sau thuế = MPC + thuế = MSC
+generate P_MPC_co_thue = P_MPC + pigou_tax
+
+* Cân bằng mới: D = MPC + thuế
+generate dif_sau_thue = abs(P_D - P_MPC_co_thue)
+sort dif_sau_thue
+display "Q sau thuế ≈ " Q[1]
+display "P sau thuế ≈ " P_D[1]
+sort Q
+```
+
+**Câu hỏi 3**: Thuế Pigou bằng bao nhiêu? Sau khi áp thuế, cân bằng có *trùng* với cân bằng xã hội tối ưu (Q** = 40, P** = 60) không?
+
+## 6. Tính DWL (Deadweight Loss)
+
+**DWL** = diện tích tam giác mất phúc lợi do thị trường tự do sản xuất quá nhiều.
+
+Hình tam giác có:
+
+- Đáy: $\Delta Q = Q^* - Q^{**} = 53.33 - 40 = 13.33$
+- Chiều cao: chênh lệch MSC – MPC tại $Q^*$ = $0.5 \times 53.33 = 26.67$
+
+$$\text{DWL} = \frac{1}{2} \times 13.33 \times 26.67 \approx 177.8$$
+
+Tính bằng Stata:
+
+```stata
+* === Tính DWL ===
+scalar delta_Q = Q_tu_do - Q_xh
+scalar MEC_at_Qfree = 0.5 * Q_tu_do
+scalar DWL = 0.5 * delta_Q * MEC_at_Qfree
+display "Đáy ΔQ = " delta_Q
+display "Cao MEC = " MEC_at_Qfree
+display "DWL = " DWL
+```
+
+**Câu hỏi 4**: DWL bằng bao nhiêu? Nếu tăng được thuế Pigou đúng, *toàn bộ DWL có được loại bỏ* không?
+
+## 7. Vẽ biểu đồ tổng hợp
+
+```stata
+* === Biểu đồ 4 đường + đánh dấu hai cân bằng ===
+twoway (line P_D Q,   lcolor("114 47 55") lwidth(thick)) ///
+       (line P_MPC Q, lcolor("46 125 80") lwidth(medium)) ///
+       (line P_MSC Q, lcolor("0 88 163")  lwidth(medium) lpattern(dash)) ///
+       (line P_MEC Q, lcolor("193 154 77") lwidth(medium)) ///
+       , ///
+       title("Thuế Pigou cho ngành xi măng VN") ///
+       subtitle("MSC = MPC + MEC; Q* tự do vs Q** xã hội") ///
+       xtitle("Sản lượng Q") ytitle("Giá P") ///
+       legend(label(1 "Cầu D") label(2 "MPC (tư nhân)") ///
+              label(3 "MSC (xã hội)") label(4 "MEC (ngoại tác)") ///
+              position(2) ring(0) cols(1)) ///
+       xline(40, lpattern(dot) lcolor(gray)) ///
+       xline(53.33, lpattern(dot) lcolor(gray)) ///
+       graphregion(color(white))
+
+graph export "pigou_tax.png", replace width(1400)
+```
+
+## 8. Liên hệ thực tiễn — Thuế carbon Việt Nam
+
+**Câu hỏi 5** (suy nghĩ + viết, 300-400 từ):
+
+Việt Nam đang chuẩn bị **thị trường carbon** theo NĐ 06/2022/NĐ-CP (vận hành chính thức 2028). Theo bạn:
+
+- Mô phỏng Pigou ở trên *đơn giản hoá* thực tế ở những điểm nào? (Gợi ý: cầu xi măng có cứng nhắc không? MEC có biết chính xác không?)
+- **Cap-and-Trade** (như EU ETS) là phiên bản nào của Coase? Có ưu điểm gì so với thuế Pigou cố định?
+- Việt Nam nên chọn *thuế carbon trực tiếp* hay *cap-and-trade* trước? Lập luận của bạn.
+
+## 9. Đóng log
+
+```stata
 log close
 ```
 
-### 4. Câu hỏi suy nghĩ (sẽ chi tiết)
+## Deliverable Lab 4
 
-1. Câu hỏi mô tả dữ liệu
-2. Câu hỏi so sánh / xu hướng
-3. Câu hỏi liên hệ với lý thuyết
-4. Câu hỏi liên hệ với chính sách Việt Nam
-5. Câu hỏi mở rộng / phản biện
-
-## Deliverable Lab 04
-
-Nộp 3 file (như các lab trước):
+Nộp 3 file:
 
 | File | Nội dung |
 |---|---|
-| `lab04_<tên>.do` | Code + comment |
-| `lab04_<tên>.log` | Output |
-| `lab04_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
+| `lab04_<tên>.do` | Code đầy đủ + comment tiếng Việt |
+| `lab04_<tên>.log` | Output Stata |
+| `lab04_<tên>.pdf` (2-3 trang) | Trả lời 5 câu hỏi + biểu đồ Pigou |
 
 **Tiêu đề email**: `DTU301-LAB04-MSSV-HọTên`
 
@@ -74,11 +209,12 @@ Nộp 3 file (như các lab trước):
 
 | Tiêu chí | Điểm |
 |---|:---:|
-| Code chạy đúng, có log | 30% |
-| Vận dụng đúng khái niệm Stata mới của bài | 25% |
-| Biểu đồ / bảng kết quả rõ ràng | 20% |
-| Trả lời câu hỏi sâu, có liên hệ thực tiễn | 25% |
+| Code chạy đúng, có log | 25% |
+| Tìm cân bằng tự do và xã hội chính xác | 20% |
+| Tính thuế Pigou và DWL đúng | 25% |
+| Biểu đồ rõ ràng, có chú thích | 15% |
+| Liên hệ thực tiễn (carbon VN, cap-and-trade) | 15% |
 
 ---
 
-← *Lab trước*: [Lab 3](lab-03.qmd) | *Lab tiếp theo*: [Lab 5](lab-05.qmd) →
+← *Lab trước*: [Lab 3 — Tính HHI cho 5 ngành VN](lab-03.qmd) | *Lab tiếp theo*: [Lab 5 — DNNN vs Tư nhân vs FDI](lab-05.qmd) →

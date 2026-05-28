@@ -125,6 +125,7 @@ format:
     theme:
       light: [cosmo, styles/custom.scss]
     css: styles/custom.css
+    highlight-style: arrow      # Light syntax theme — readable on cream bg
     toc: true
     toc-depth: 3
     toc-title: "Trong bài"
