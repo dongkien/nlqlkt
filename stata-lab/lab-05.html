@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lab 05 — DNNN vs Tư nhân vs FDI – Nguyên lý Quản lý Kinh tế (DTU301)</title>
+<title>Lab 5 — DNNN vs KTTN vs FDI – Nguyên lý Quản lý Kinh tế (DTU301)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -165,7 +165,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-05.html">Lab 05 — DNNN vs Tư nhân vs FDI</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-05.html">Lab 5 — DNNN vs KTTN vs FDI</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -242,7 +242,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../stata-lab/lab-05.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Lab 05 — DNNN vs Tư nhân vs FDI</span></a>
+ <span class="menu-text">Lab 5 — DNNN vs KTTN vs FDI</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -317,14 +317,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Trong bài</h2>
    
   <ul>
-  <li><a href="#khung-lab-05" id="toc-khung-lab-05" class="nav-link active" data-scroll-target="#khung-lab-05">Khung Lab 05</a>
-  <ul class="collapse">
-  <li><a href="#bài-toán" id="toc-bài-toán" class="nav-link" data-scroll-target="#bài-toán">1. Bài toán</a></li>
-  <li><a href="#dữ-liệu-cần" id="toc-dữ-liệu-cần" class="nav-link" data-scroll-target="#dữ-liệu-cần">2. Dữ liệu cần</a></li>
-  <li><a href="#lệnh-stata-trọng-tâm" id="toc-lệnh-stata-trọng-tâm" class="nav-link" data-scroll-target="#lệnh-stata-trọng-tâm">3. Lệnh Stata trọng tâm</a></li>
-  <li><a href="#câu-hỏi-suy-nghĩ-sẽ-chi-tiết" id="toc-câu-hỏi-suy-nghĩ-sẽ-chi-tiết" class="nav-link" data-scroll-target="#câu-hỏi-suy-nghĩ-sẽ-chi-tiết">4. Câu hỏi suy nghĩ (sẽ chi tiết)</a></li>
-  </ul></li>
-  <li><a href="#deliverable-lab-05" id="toc-deliverable-lab-05" class="nav-link" data-scroll-target="#deliverable-lab-05">Deliverable Lab 05</a></li>
+  <li><a href="#tạo-dataset-mô-phỏng-60-doanh-nghiệp" id="toc-tạo-dataset-mô-phỏng-60-doanh-nghiệp" class="nav-link active" data-scroll-target="#tạo-dataset-mô-phỏng-60-doanh-nghiệp">1. Tạo dataset mô phỏng 60 doanh nghiệp</a></li>
+  <li><a href="#thống-kê-mô-tả-theo-nhóm" id="toc-thống-kê-mô-tả-theo-nhóm" class="nav-link" data-scroll-target="#thống-kê-mô-tả-theo-nhóm">2. Thống kê mô tả theo nhóm</a></li>
+  <li><a href="#so-sánh-trung-bình-bằng-t-test" id="toc-so-sánh-trung-bình-bằng-t-test" class="nav-link" data-scroll-target="#so-sánh-trung-bình-bằng-t-test">3. So sánh trung bình bằng t-test</a></li>
+  <li><a href="#box-plot-trực-quan-hoá-phân-bố" id="toc-box-plot-trực-quan-hoá-phân-bố" class="nav-link" data-scroll-target="#box-plot-trực-quan-hoá-phân-bố">4. Box plot — trực quan hoá phân bố</a></li>
+  <li><a href="#tổng-hợp-bảng-so-sánh-đa-chỉ-số" id="toc-tổng-hợp-bảng-so-sánh-đa-chỉ-số" class="nav-link" data-scroll-target="#tổng-hợp-bảng-so-sánh-đa-chỉ-số">5. Tổng hợp bảng so sánh đa chỉ số</a></li>
+  <li><a href="#liên-hệ-với-vấn-đề-principal-agent" id="toc-liên-hệ-với-vấn-đề-principal-agent" class="nav-link" data-scroll-target="#liên-hệ-với-vấn-đề-principal-agent">6. Liên hệ với vấn đề Principal-Agent</a></li>
+  <li><a href="#đóng-log" id="toc-đóng-log" class="nav-link" data-scroll-target="#đóng-log">7. Đóng log</a></li>
+  <li><a href="#deliverable-lab-5" id="toc-deliverable-lab-5" class="nav-link" data-scroll-target="#deliverable-lab-5">Deliverable Lab 5</a></li>
   <li><a href="#tiêu-chí-chấm" id="toc-tiêu-chí-chấm" class="nav-link" data-scroll-target="#tiêu-chí-chấm">Tiêu chí chấm</a></li>
   </ul>
 </nav>
@@ -332,10 +332,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-05.html">Lab 05 — DNNN vs Tư nhân vs FDI</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-05.html">Lab 5 — DNNN vs KTTN vs FDI</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Lab 05 — DNNN vs Tư nhân vs FDI</h1>
-<p class="subtitle lead">Tương ứng Buổi 5: Quản trị doanh nghiệp và 3 thành phần</p>
+<h1 class="title">Lab 5 — DNNN vs KTTN vs FDI</h1>
+<p class="subtitle lead">Tương ứng Buổi 5: So sánh hiệu suất 3 thành phần kinh tế</p>
 </div>
 
 
@@ -362,66 +362,204 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Bài này áp dụng khái niệm chính từ <a href="../lectures/buoi-05.html">Buổi 5</a> vào dữ liệu thực tế Việt Nam.</p>
-<p><strong>Khái niệm Stata học</strong>: <code>tabulate, summarize by group</code></p>
+<p>Bài này áp dụng khung <strong>ba thành phần kinh tế</strong> từ <a href="../lectures/buoi-05.html">Buổi 5</a>: DNNN (chủ đạo), KTTN (động lực quan trọng nhất), FDI (xuất khẩu + công nghệ). Bạn sẽ so sánh hiệu suất bằng dữ liệu mô phỏng trên ROE, ROA, năng suất lao động, R&amp;D.</p>
+<p>Sau Lab 5, bạn có thể:</p>
+<ul>
+<li>Tạo dataset doanh nghiệp phân theo 3 loại sở hữu</li>
+<li>Tính thống kê mô tả <strong>by group</strong></li>
+<li>So sánh trung bình giữa các nhóm bằng <code>tabulate, summarize</code> và <code>ttest</code></li>
+<li>Vẽ box plot so sánh đa nhóm</li>
+<li>Liên hệ kết quả với <em>vấn đề Principal-Agent</em> (Buổi 4)</li>
+</ul>
+<p><strong>Khái niệm Stata học</strong>: <code>input</code>, <code>tabulate, summarize</code>, <code>ttest</code>, <code>graph box</code>, <code>by var: stat</code></p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>🚧 Lab đang biên soạn
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 05. Cấu trúc cố định theo template chuẩn của 16 lab.</p>
-</div>
-</div>
-<section id="khung-lab-05" class="level2">
-<h2 class="anchored" data-anchor-id="khung-lab-05">Khung Lab 05</h2>
-<section id="bài-toán" class="level3">
-<h3 class="anchored" data-anchor-id="bài-toán">1. Bài toán</h3>
-<p>So sánh ROE, ROA, năng suất lao động giữa 3 loại</p>
-</section>
-<section id="dữ-liệu-cần" class="level3">
-<h3 class="anchored" data-anchor-id="dữ-liệu-cần">2. Dữ liệu cần</h3>
-<p>Dataset top 500 DN VN từ VietnamReport hoặc FortuneVN</p>
-</section>
-<section id="lệnh-stata-trọng-tâm" class="level3">
-<h3 class="anchored" data-anchor-id="lệnh-stata-trọng-tâm">3. Lệnh Stata trọng tâm</h3>
-<p>Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 05 — DTU301</span>
+<section id="tạo-dataset-mô-phỏng-60-doanh-nghiệp" class="level2">
+<h2 class="anchored" data-anchor-id="tạo-dataset-mô-phỏng-60-doanh-nghiệp">1. Tạo dataset mô phỏng 60 doanh nghiệp</h2>
+<p>Mở do-file mới:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 5 — DTU301 — So sánh DNNN vs KTTN vs FDI</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>* Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span> <span class="ot">all</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">more</span> <span class="kw">off</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">using</span> <span class="st">"lab05_&lt;ten&gt;.log"</span>, <span class="kw">replace</span> <span class="bn">text</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>* === Tải dữ liệu ===</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>* (sẽ chi tiết khi có dataset thật)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>* === Phân tích ===</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>* Sử dụng: <span class="kw">tabulate</span>, <span class="kw">summarize</span> <span class="kw">by</span> <span class="fu">group</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>* === Đóng <span class="fu">log</span> ===</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">close</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="dv">seed</span> 12345</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">using</span> <span class="st">"lab05_&lt;ten&gt;.log"</span>, <span class="kw">replace</span> <span class="bn">text</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>* === Tạo dataset 60 DN (20 mỗi loại) ===</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">obs</span> 60</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> id = <span class="dt">_n</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> loai = <span class="st">"DNNN"</span>  <span class="kw">if</span> id &lt;= 20</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> loai = <span class="st">"KTTN"</span>   <span class="kw">if</span> id &gt;= 21 &amp; id &lt;= 40</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> loai = <span class="st">"FDI"</span>    <span class="kw">if</span> id &gt;= 41</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>* Mô phỏng ROE (%) — DNNN trung bình thấp, KTTN cao, FDI cao</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> ROE = .</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> ROE = 8 + 4 * rnormal()    <span class="kw">if</span> loai == <span class="st">"DNNN"</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> ROE = 14 + 5 * rnormal()   <span class="kw">if</span> loai == <span class="st">"KTTN"</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> ROE = 16 + 4 * rnormal()   <span class="kw">if</span> loai == <span class="st">"FDI"</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>* Mô phỏng ROA (%) — tương tự</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> ROA = .</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> ROA = 4 + 2 * rnormal()    <span class="kw">if</span> loai == <span class="st">"DNNN"</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> ROA = 8 + 3 * rnormal()    <span class="kw">if</span> loai == <span class="st">"KTTN"</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> ROA = 9 + 2.5 * rnormal()  <span class="kw">if</span> loai == <span class="st">"FDI"</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>* Mô phỏng năng suất lao động (triệu đồng/người/năm)</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> nslđ = .</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> nslđ = 250 + 80 * rnormal()  <span class="kw">if</span> loai == <span class="st">"DNNN"</span></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> nslđ = 320 + 100 * rnormal() <span class="kw">if</span> loai == <span class="st">"KTTN"</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> nslđ = 450 + 120 * rnormal() <span class="kw">if</span> loai == <span class="st">"FDI"</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>* Mô phỏng tỷ lệ R&amp;D / doanh thu (%)</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> rd = .</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> rd = 0.3 + 0.5 * runiform()  <span class="kw">if</span> loai == <span class="st">"DNNN"</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> rd = 0.5 + 1.5 * runiform()  <span class="kw">if</span> loai == <span class="st">"KTTN"</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> rd = 1.5 + 2.0 * runiform()  <span class="kw">if</span> loai == <span class="st">"FDI"</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="kw">label</span> <span class="kw">variable</span> ROE <span class="st">"ROE (%)"</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="kw">label</span> <span class="kw">variable</span> ROA <span class="st">"ROA (%)"</span></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="kw">label</span> <span class="kw">variable</span> nslđ <span class="st">"Năng suất LĐ (tr/người)"</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a><span class="kw">label</span> <span class="kw">variable</span> rd <span class="st">"R&amp;D / Doanh thu (%)"</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="ot">list</span> id loai ROE ROA nslđ rd <span class="kw">in</span> 1/10</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-simple callout-warning">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Dữ liệu mô phỏng</strong> dựa trên xu hướng quan sát thực tế. Số liệu thực tế từng năm có thể khác. Trong bài tập thật, bạn nên dùng dữ liệu từ:</p>
+<ul>
+<li><strong>Tổng cục Thống kê (GSO)</strong> — Niên giám thống kê DN</li>
+<li><strong>VietnamReport, VPBI</strong> — top 500 DN</li>
+<li><strong>CIEM</strong> — báo cáo về DNNN</li>
+</ul>
+</div>
+</div>
+</div>
 </section>
-<section id="câu-hỏi-suy-nghĩ-sẽ-chi-tiết" class="level3">
-<h3 class="anchored" data-anchor-id="câu-hỏi-suy-nghĩ-sẽ-chi-tiết">4. Câu hỏi suy nghĩ (sẽ chi tiết)</h3>
-<ol type="1">
-<li>Câu hỏi mô tả dữ liệu</li>
-<li>Câu hỏi so sánh / xu hướng</li>
-<li>Câu hỏi liên hệ với lý thuyết</li>
-<li>Câu hỏi liên hệ với chính sách Việt Nam</li>
-<li>Câu hỏi mở rộng / phản biện</li>
-</ol>
+<section id="thống-kê-mô-tả-theo-nhóm" class="level2">
+<h2 class="anchored" data-anchor-id="thống-kê-mô-tả-theo-nhóm">2. Thống kê mô tả theo nhóm</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>* === Thống kê mô tả theo loại DN ===</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"=== ROE ==="</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">tabulate</span> loai, <span class="kw">summarize</span>(ROE)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"=== ROA ==="</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="kw">tabulate</span> loai, <span class="kw">summarize</span>(ROA)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"=== Năng suất lao động ==="</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="kw">tabulate</span> loai, <span class="kw">summarize</span>(nslđ)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"=== R&amp;D ==="</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="kw">tabulate</span> loai, <span class="kw">summarize</span>(rd)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Bạn sẽ thấy các bảng kiểu:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>loai</th>
+<th style="text-align: center;">Mean ROE</th>
+<th style="text-align: center;">Std Dev</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>DNNN</td>
+<td style="text-align: center;">~8%</td>
+<td style="text-align: center;">~4</td>
+</tr>
+<tr class="even">
+<td>FDI</td>
+<td style="text-align: center;">~16%</td>
+<td style="text-align: center;">~4</td>
+</tr>
+<tr class="odd">
+<td>KTTN</td>
+<td style="text-align: center;">~14%</td>
+<td style="text-align: center;">~5</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Câu hỏi 1</strong>: Loại DN nào có ROE/ROA cao nhất? Loại nào có năng suất lao động cao nhất? Có khớp với <em>Buổi 5</em> không?</p>
 </section>
+<section id="so-sánh-trung-bình-bằng-t-test" class="level2">
+<h2 class="anchored" data-anchor-id="so-sánh-trung-bình-bằng-t-test">3. So sánh trung bình bằng t-test</h2>
+<p>Liệu sự khác biệt ROE giữa DNNN và KTTN có <strong>ý nghĩa thống kê</strong> hay chỉ do ngẫu nhiên?</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>* === T-<span class="kw">test</span> so sánh trung bình ===</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"=== ROE: DNNN vs KTTN ==="</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">ttest</span> ROE <span class="kw">if</span> loai != <span class="st">"FDI"</span>, <span class="kw">by</span>(loai)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"=== ROE: DNNN vs FDI ==="</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="kw">ttest</span> ROE <span class="kw">if</span> loai != <span class="st">"KTTN"</span>, <span class="kw">by</span>(loai)</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"=== ROE: KTTN vs FDI ==="</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="kw">ttest</span> ROE <span class="kw">if</span> loai != <span class="st">"DNNN"</span>, <span class="kw">by</span>(loai)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 2</strong>: Mức ý nghĩa (p-value) bao nhiêu cho mỗi cặp so sánh? Sự khác biệt có ý nghĩa thống kê ở mức 5% không?</p>
 </section>
-<section id="deliverable-lab-05" class="level2">
-<h2 class="anchored" data-anchor-id="deliverable-lab-05">Deliverable Lab 05</h2>
-<p>Nộp 3 file (như các lab trước):</p>
+<section id="box-plot-trực-quan-hoá-phân-bố" class="level2">
+<h2 class="anchored" data-anchor-id="box-plot-trực-quan-hoá-phân-bố">4. Box plot — trực quan hoá phân bố</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>* === Box plot ROE theo loại DN ===</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> box ROE, <span class="bn">over</span>(loai, <span class="kw">sort</span>(1)) <span class="co">///</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    box(1, <span class="kw">color</span>(<span class="st">"114 47 55"</span>)) <span class="co">///</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="bn">title</span>(<span class="st">"Phân bố ROE theo loại doanh nghiệp"</span>) <span class="co">///</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    <span class="bn">ytitle</span>(<span class="st">"ROE (%)"</span>) <span class="co">///</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    graphregion(<span class="kw">color</span>(<span class="bn">white</span>))</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">export</span> <span class="st">"box_roe.png"</span>, <span class="kw">replace</span> <span class="kw">width</span>(1200)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>* === Box plot năng suất lao động ===</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> box nslđ, <span class="bn">over</span>(loai, <span class="kw">sort</span>(1)) <span class="co">///</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    box(1, <span class="kw">color</span>(<span class="st">"0 88 163"</span>)) <span class="co">///</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    <span class="bn">title</span>(<span class="st">"Phân bố năng suất lao động theo loại DN"</span>) <span class="co">///</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    <span class="bn">ytitle</span>(<span class="st">"Năng suất (triệu VND/người/năm)"</span>) <span class="co">///</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    graphregion(<span class="kw">color</span>(<span class="bn">white</span>))</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">export</span> <span class="st">"box_nslđ.png"</span>, <span class="kw">replace</span> <span class="kw">width</span>(1200)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>* === Box plot R&amp;D ===</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> box rd, <span class="bn">over</span>(loai, <span class="kw">sort</span>(1)) <span class="co">///</span></span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>    box(1, <span class="kw">color</span>(<span class="st">"46 125 80"</span>)) <span class="co">///</span></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>    <span class="bn">title</span>(<span class="st">"Phân bố tỷ lệ R&amp;D / Doanh thu theo loại DN"</span>) <span class="co">///</span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>    <span class="bn">ytitle</span>(<span class="st">"R&amp;D / Doanh thu (%)"</span>) <span class="co">///</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>    graphregion(<span class="kw">color</span>(<span class="bn">white</span>))</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">export</span> <span class="st">"box_rd.png"</span>, <span class="kw">replace</span> <span class="kw">width</span>(1200)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 3</strong>: Box plot cho thấy <strong>độ biến thiên</strong> trong mỗi nhóm. Nhóm nào <em>đồng nhất</em> hơn (box hẹp)? Nhóm nào <em>đa dạng</em> hơn (box rộng)?</p>
+</section>
+<section id="tổng-hợp-bảng-so-sánh-đa-chỉ-số" class="level2">
+<h2 class="anchored" data-anchor-id="tổng-hợp-bảng-so-sánh-đa-chỉ-số">5. Tổng hợp bảng so sánh đa chỉ số</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>* === Bảng tổng hợp 4 chỉ số ===</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"=== BẢNG SO SÁNH TỔNG HỢP ==="</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="kw">table</span> loai, statistic(<span class="kw">mean</span> ROE ROA nslđ rd) <span class="co">///</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    statistic(<span class="fu">sd</span> ROE ROA nslđ rd) <span class="co">///</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    nformat(%9.2f)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Hoặc đơn giản hơn:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">foreach</span> v <span class="kw">in</span> ROE ROA nslđ rd {</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">display</span> <span class="st">"--- `v' ---"</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">bysort</span> loai: <span class="kw">summarize</span> <span class="ot">`v'</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 4</strong>: Theo các chỉ số trên, <em>xếp hạng</em> 3 loại DN theo hiệu suất. Có khớp với mô tả của Buổi 5 (KTTN + FDI cao hơn DNNN) không?</p>
+</section>
+<section id="liên-hệ-với-vấn-đề-principal-agent" class="level2">
+<h2 class="anchored" data-anchor-id="liên-hệ-với-vấn-đề-principal-agent">6. Liên hệ với vấn đề Principal-Agent</h2>
+<p><strong>Câu hỏi 5</strong> (suy nghĩ + viết, 400 từ):</p>
+<p>Buổi 4 đã trình bày <em>vấn đề Principal-Agent</em> và <em>moral hazard</em>. Buổi 5 cho thấy DNNN có hiệu suất TB thấp hơn KTTN và FDI.</p>
+<p>Hãy phân tích:</p>
+<ul>
+<li>Tại sao <strong>DNNN dễ gặp vấn đề Principal-Agent hơn</strong> KTTN? (Gợi ý: ai là Principal? Ai là Agent? Cơ chế giám sát ra sao?)</li>
+<li>Tại sao <strong>DNNN ít đầu tư R&amp;D hơn</strong> mặc dù có thể có nguồn vốn lớn hơn?</li>
+<li>Việt Nam đã thử các giải pháp nào để giảm chi phí đại diện trong DNNN? (gợi ý: SCIC, cổ phần hoá, hội đồng thành viên độc lập)</li>
+<li>Bạn có <strong>đề xuất chính sách nào</strong> để DNNN tiệm cận hiệu suất KTTN/FDI?</li>
+</ul>
+</section>
+<section id="đóng-log" class="level2">
+<h2 class="anchored" data-anchor-id="đóng-log">7. Đóng log</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">close</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="deliverable-lab-5" class="level2">
+<h2 class="anchored" data-anchor-id="deliverable-lab-5">Deliverable Lab 5</h2>
+<p>Nộp 3 file:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
@@ -432,15 +570,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td><code>lab05_&lt;tên&gt;.do</code></td>
-<td>Code + comment</td>
+<td>Code đầy đủ + comment tiếng Việt</td>
 </tr>
 <tr class="even">
 <td><code>lab05_&lt;tên&gt;.log</code></td>
-<td>Output</td>
+<td>Output Stata</td>
 </tr>
 <tr class="odd">
-<td><code>lab05_&lt;tên&gt;.pdf</code> (1-2 trang)</td>
-<td>Trả lời câu hỏi + biểu đồ</td>
+<td><code>lab05_&lt;tên&gt;.pdf</code> (2-3 trang)</td>
+<td>Trả lời 5 câu hỏi + 3 box plot</td>
 </tr>
 </tbody>
 </table>
@@ -458,24 +596,46 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <tbody>
 <tr class="odd">
 <td>Code chạy đúng, có log</td>
-<td style="text-align: center;">30%</td>
+<td style="text-align: center;">25%</td>
 </tr>
 <tr class="even">
-<td>Vận dụng đúng khái niệm Stata mới của bài</td>
+<td>Hiểu được ý nghĩa thống kê + t-test</td>
 <td style="text-align: center;">25%</td>
 </tr>
 <tr class="odd">
-<td>Biểu đồ / bảng kết quả rõ ràng</td>
-<td style="text-align: center;">20%</td>
+<td>Box plot rõ ràng, có chú thích</td>
+<td style="text-align: center;">15%</td>
 </tr>
 <tr class="even">
-<td>Trả lời câu hỏi sâu, có liên hệ thực tiễn</td>
+<td>Liên hệ Principal-Agent sâu sắc</td>
 <td style="text-align: center;">25%</td>
+</tr>
+<tr class="odd">
+<td>Đề xuất chính sách thực tế</td>
+<td style="text-align: center;">10%</td>
 </tr>
 </tbody>
 </table>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>🚀 Mở rộng (tự chọn, không tính điểm)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Nếu bạn có thời gian:</p>
+<ul>
+<li>Thử <strong>dataset thật</strong>: tải báo cáo của VietnamReport top 500 DN, phân loại lại theo sở hữu, chạy lại các phân tích trên.</li>
+<li>Thêm <strong>biến ngành</strong> (chế biến, dịch vụ, công nghệ) và so sánh xem khác biệt loại DN có còn rõ khi kiểm soát ngành.</li>
+<li>Thử hồi quy: <code>regress ROE i.loai i.nganh</code> để xem hiệu ứng “loại” sau khi kiểm soát ngành.</li>
+</ul>
+</div>
+</div>
 <hr>
-<p>← <em>Lab trước</em>: <a href="../stata-lab/lab-04.html">Lab 4</a> | <em>Lab tiếp theo</em>: <a href="../stata-lab/lab-06.html">Lab 6</a> →</p>
+<p>← <em>Lab trước</em>: <a href="../stata-lab/lab-04.html">Lab 4 — Mô phỏng thuế Pigou</a> | <em>Lab tiếp theo</em>: <a href="../stata-lab/lab-06.html">Lab 6 — Cobb-Douglas cho Việt Nam</a> →</p>
 
 
 </section>
