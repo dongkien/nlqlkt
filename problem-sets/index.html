@@ -238,7 +238,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1789405200000" data-listing-file-modified-sort="1779988530357" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="597">
+<div class="quarto-post image-right" data-index="0" data-listing-date-sort="1789405200000" data-listing-file-modified-sort="1779988783214" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="597">
 <div class="body">
 <h3 class="no-anchor listing-title">
 <a href="../problem-sets/ps-01.html" class="no-external">Problem Set 01 — Khái niệm và hệ thống QLKT</a>
@@ -331,7 +331,7 @@ window.Quarto = {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/dongkien\.github\.io\/material-building\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
