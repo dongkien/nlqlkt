@@ -1,72 +1,264 @@
 ---
-title: "Lab 06 — Ước lượng Cobb-Douglas cho Việt Nam"
-subtitle: "Tương ứng Buổi 6: Tăng trưởng dài hạn và growth accounting"
-reading-time: "~20 phút"
+title: "Lab 6 — Ước lượng Cobb-Douglas cho Việt Nam"
+subtitle: "Tương ứng Buổi 6: Hồi quy log-linear, ước lượng α và TFP residual"
+reading-time: "~30 phút"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Liên kết với Buổi 6
 
-Bài này áp dụng khái niệm chính từ [Buổi 6](../lectures/buoi-06.qmd) vào dữ liệu thực tế Việt Nam.
+Bài này áp dụng **hàm Cobb-Douglas** $Y = AK^\alpha L^{1-\alpha}$ từ [Buổi 6](../lectures/buoi-06.qmd) để ước lượng đóng góp của vốn, lao động, và TFP vào tăng trưởng GDP Việt Nam.
 
-**Khái niệm Stata học**: `regress, log, t-stat, R-squared`
+Sau Lab 6, bạn có thể:
+
+- Tạo dataset mô phỏng GDP – vốn – lao động VN
+- Hồi quy **OLS log-linear** để ước lượng α
+- Tính **TFP residual** theo cách Solow (1957)
+- So sánh đóng góp K, L, TFP vào tăng trưởng
+- Liên hệ kết quả với mục tiêu Đại hội XIV (TFP >55%)
+
+**Khái niệm Stata học**: `set obs`, `generate`, `log`, `regress`, robust SE, residual analysis, post-estimation `predict`
 :::
 
-::: {.callout-warning appearance="simple"}
-## 🚧 Lab đang biên soạn
-
-Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 06. Cấu trúc cố định theo template chuẩn của 16 lab.
-:::
-
-## Khung Lab 06
-
-### 1. Bài toán
-
-Ước lượng alpha và TFP residual
-
-### 2. Dữ liệu cần
-
-Dataset Y K L của VN 2000-2024 (WB hoặc Penn World Tables)
-
-### 3. Lệnh Stata trọng tâm
-
-Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):
+## 1. Tạo dataset GDP – K – L Việt Nam (mô phỏng)
 
 ```stata
-* Lab 06 — DTU301
+* Lab 6 — DTU301 — Cobb-Douglas cho Việt Nam
 * Họ tên: <điền>, MSSV: <điền>
 
 clear all
 set more off
+set seed 42
 log using "lab06_<ten>.log", replace text
 
-* === Tải dữ liệu ===
-* (sẽ chi tiết khi có dataset thật)
+* === Tạo dataset 15 năm (2010-2024) ===
+clear
+set obs 15
+generate year = 2010 + _n - 1
 
-* === Phân tích ===
-* Sử dụng: regress, log, t-stat, R-squared
+* === GDP thực (tỷ USD) — ước lượng từ WB ===
+generate GDP = .
+replace GDP = 147 if year == 2010
+replace GDP = 172 if year == 2011
+replace GDP = 196 if year == 2012
+replace GDP = 213 if year == 2013
+replace GDP = 233 if year == 2014
+replace GDP = 239 if year == 2015
+replace GDP = 257 if year == 2016
+replace GDP = 281 if year == 2017
+replace GDP = 310 if year == 2018
+replace GDP = 334 if year == 2019
+replace GDP = 343 if year == 2020
+replace GDP = 366 if year == 2021
+replace GDP = 408 if year == 2022
+replace GDP = 430 if year == 2023
+replace GDP = 470 if year == 2024
 
-* === Đóng log ===
+* === Vốn cố định (Capital stock, K) — ước lượng (tỷ USD) ===
+generate K = .
+replace K = 380  if year == 2010
+replace K = 432  if year == 2011
+replace K = 490  if year == 2012
+replace K = 552  if year == 2013
+replace K = 620  if year == 2014
+replace K = 695  if year == 2015
+replace K = 778  if year == 2016
+replace K = 870  if year == 2017
+replace K = 970  if year == 2018
+replace K = 1080 if year == 2019
+replace K = 1190 if year == 2020
+replace K = 1310 if year == 2021
+replace K = 1450 if year == 2022
+replace K = 1600 if year == 2023
+replace K = 1770 if year == 2024
+
+* === Lao động (triệu người) — TCTK ===
+generate L = .
+replace L = 50.4 if year == 2010
+replace L = 51.4 if year == 2011
+replace L = 52.3 if year == 2012
+replace L = 52.9 if year == 2013
+replace L = 53.7 if year == 2014
+replace L = 54.5 if year == 2015
+replace L = 54.9 if year == 2016
+replace L = 55.1 if year == 2017
+replace L = 55.4 if year == 2018
+replace L = 55.7 if year == 2019
+replace L = 54.8 if year == 2020
+replace L = 50.5 if year == 2021
+replace L = 51.7 if year == 2022
+replace L = 52.4 if year == 2023
+replace L = 52.7 if year == 2024
+
+label variable year "Năm"
+label variable GDP "GDP thực (tỷ USD)"
+label variable K "Vốn cố định (tỷ USD)"
+label variable L "Lao động (triệu người)"
+
+list, sepby(year)
+```
+
+::: {.callout-warning appearance="simple"}
+**Dữ liệu mô phỏng** ước lượng từ World Bank và GSO để minh hoạ phương pháp. Số liệu thực tế có thể khác. Trong bài tập thật, hãy tải từ:
+
+- **World Bank Open Data** (data.worldbank.org)
+- **Penn World Tables** (rug.nl/ggdc/productivity/pwt)
+- **GSO** (gso.gov.vn) — Niên giám thống kê
+:::
+
+## 2. Biến đổi log
+
+Hàm Cobb-Douglas: $Y = AK^\alpha L^{1-\alpha}$
+
+Lấy log hai vế:
+
+$$\ln Y = \ln A + \alpha \ln K + (1-\alpha) \ln L$$
+
+```stata
+* === Tạo các biến log ===
+generate ln_Y = log(GDP)
+generate ln_K = log(K)
+generate ln_L = log(L)
+
+list year ln_Y ln_K ln_L
+```
+
+## 3. Hồi quy OLS — ước lượng α
+
+```stata
+* === Hồi quy log-linear ===
+* ln(Y) = const + alpha * ln(K) + beta * ln(L)
+* Trong Cobb-Douglas constant returns: alpha + beta = 1
+
+regress ln_Y ln_K ln_L, robust
+```
+
+Output mong đợi:
+
+```
+                  Robust
+   ln_Y |    Coef.   Std. Err.    t    P>|t|
+--------+----------------------------------
+   ln_K |   0.456     0.063    7.24    0.000
+   ln_L |   0.412     0.221    1.86    0.087
+  _cons |   ...
+```
+
+**Câu hỏi 1**: Hệ số α (đóng góp của K) ước lượng được bao nhiêu? Có nằm trong khoảng 0.3-0.4 (chuẩn quốc tế) không? Hệ số (1-α) (đóng góp của L) có ý nghĩa thống kê không?
+
+**Câu hỏi 2**: $\alpha + (1-\alpha)$ có gần 1 không? Nếu không, có giả định *constant returns to scale* nào bị vi phạm?
+
+## 4. Áp đặt CRS — Ước lượng cùng α=0.4 (chuẩn)
+
+Theo chuẩn thực nghiệm cho VN, thường lấy α = 0.4 cố định:
+
+```stata
+* === Tính TFP theo cách Solow (1957) ===
+scalar alpha = 0.4
+
+* TFP = Y / (K^alpha * L^(1-alpha))
+generate TFP = GDP / (K^alpha * L^(1-alpha))
+generate ln_TFP = log(TFP)
+
+list year GDP K L TFP
+```
+
+## 5. Phân rã tăng trưởng (Growth accounting)
+
+Lấy đạo hàm log của Cobb-Douglas:
+
+$$\frac{\Delta Y}{Y} = \alpha \cdot \frac{\Delta K}{K} + (1-\alpha) \cdot \frac{\Delta L}{L} + \frac{\Delta A}{A}$$
+
+```stata
+* === Tính tỷ lệ tăng trưởng (%) ===
+sort year
+generate g_Y = (GDP / GDP[_n-1] - 1) * 100
+generate g_K = (K / K[_n-1] - 1) * 100
+generate g_L = (L / L[_n-1] - 1) * 100
+
+* === Đóng góp của mỗi yếu tố ===
+generate contrib_K = alpha * g_K
+generate contrib_L = (1 - alpha) * g_L
+generate contrib_TFP = g_Y - contrib_K - contrib_L
+
+list year g_Y g_K g_L contrib_K contrib_L contrib_TFP
+```
+
+**Câu hỏi 3**: Trung bình giai đoạn 2010-2024:
+- Tăng trưởng GDP bao nhiêu %?
+- Đóng góp của K, L, TFP từng %?
+- TFP đóng góp ~25-30% có giống ước lượng VEPR/CIEM không?
+
+## 6. Trực quan hoá đóng góp
+
+```stata
+* === Bảng tỷ trọng đóng góp ===
+generate share_K = (contrib_K / g_Y) * 100
+generate share_L = (contrib_L / g_Y) * 100
+generate share_TFP = (contrib_TFP / g_Y) * 100
+
+list year g_Y share_K share_L share_TFP, noobs
+
+* === Tính trung bình theo 2 giai đoạn ===
+generate giai_doan = "2010-2019" if year <= 2019
+replace  giai_doan = "2020-2024" if year >= 2020
+
+tabulate giai_doan, summarize(share_K)
+tabulate giai_doan, summarize(share_TFP)
+```
+
+**Câu hỏi 4**: Tỷ trọng đóng góp của TFP **trước Covid** (2010-2019) so với **sau Covid** (2020-2024) như thế nào? Có giảm không? Vì sao?
+
+## 7. Biểu đồ stacked area
+
+```stata
+* === Biểu đồ thanh chồng — đóng góp ===
+graph bar contrib_K contrib_L contrib_TFP, over(year) stack ///
+    title("Phân rã tăng trưởng GDP Việt Nam, 2010-2024") ///
+    ytitle("Đóng góp vào tăng trưởng GDP (%)") ///
+    legend(label(1 "Vốn (K)") label(2 "Lao động (L)") label(3 "TFP") ///
+           rows(1)) ///
+    graphregion(color(white))
+
+graph export "growth_accounting.png", replace width(1400)
+```
+
+## 8. Mục tiêu Đại hội XIV
+
+**Đại hội XIV** đặt mục tiêu TFP đóng góp **>55%** vào 2030 (hiện tại ~20-25%).
+
+```stata
+* === Để TFP chiếm 55% với tăng trưởng GDP 10%, TFP phải tăng ===
+display "Đóng góp TFP cần thiết = 55% × 10% = " 0.55 * 10 "%"
+display "TFP hiện tại đóng góp ~ 1.5-2 %"
+display "Yêu cầu: TFP đóng góp gấp 2.5-3 lần hiện tại"
+```
+
+**Câu hỏi 5** (suy nghĩ + viết, 400 từ):
+
+Mục tiêu **TFP >55% vào 2030** của Đại hội XIV có khả thi không?
+
+- *Bằng chứng ủng hộ*: Hàn Quốc, Nhật Bản (giai đoạn cất cánh) đạt 35-45% TFP — VN có thể học mô hình.
+- *Bằng chứng phản đối*: R&D/GDP VN chỉ 0.5% (Hàn 4.8%, TQ 2.4%); thể chế đại học còn yếu; liên kết DN-đại học rời rạc.
+
+Theo bạn:
+- Khả năng đạt mục tiêu trong 5 năm là cao/trung bình/thấp?
+- 3 cải cách cụ thể nào sẽ giúp tăng TFP nhanh nhất?
+- Có nguy cơ nào nếu *cố ép* TFP cao bằng *tăng vốn cho R&D* mà không cải cách thể chế?
+
+## 9. Đóng log
+
+```stata
 log close
 ```
 
-### 4. Câu hỏi suy nghĩ (sẽ chi tiết)
-
-1. Câu hỏi mô tả dữ liệu
-2. Câu hỏi so sánh / xu hướng
-3. Câu hỏi liên hệ với lý thuyết
-4. Câu hỏi liên hệ với chính sách Việt Nam
-5. Câu hỏi mở rộng / phản biện
-
-## Deliverable Lab 06
-
-Nộp 3 file (như các lab trước):
+## Deliverable Lab 6
 
 | File | Nội dung |
 |---|---|
-| `lab06_<tên>.do` | Code + comment |
-| `lab06_<tên>.log` | Output |
-| `lab06_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
+| `lab06_<tên>.do` | Code + comment tiếng Việt |
+| `lab06_<tên>.log` | Output Stata |
+| `lab06_<tên>.pdf` (2-3 trang) | 5 câu hỏi + biểu đồ growth accounting |
 
 **Tiêu đề email**: `DTU301-LAB06-MSSV-HọTên`
 
@@ -74,11 +266,20 @@ Nộp 3 file (như các lab trước):
 
 | Tiêu chí | Điểm |
 |---|:---:|
-| Code chạy đúng, có log | 30% |
-| Vận dụng đúng khái niệm Stata mới của bài | 25% |
-| Biểu đồ / bảng kết quả rõ ràng | 20% |
-| Trả lời câu hỏi sâu, có liên hệ thực tiễn | 25% |
+| Code chạy đúng, có log | 20% |
+| Hồi quy log-linear đúng + giải thích hệ số | 25% |
+| Growth accounting chính xác | 25% |
+| Liên hệ TFP với mục tiêu XIV | 20% |
+| Đề xuất cải cách | 10% |
+
+::: {.callout-tip}
+## 🚀 Mở rộng (tự chọn)
+
+- Thay dữ liệu mô phỏng bằng **Penn World Tables** thật.
+- So sánh phân rã VN với Hàn Quốc cùng giai đoạn.
+- Thêm biến *vốn nhân lực* (human capital) — Mincer style.
+:::
 
 ---
 
-← *Lab trước*: [Lab 5](lab-05.qmd) | *Lab tiếp theo*: [Lab 7](lab-07.qmd) →
+← *Lab trước*: [Lab 5 — DNNN vs KTTN vs FDI](lab-05.qmd) | *Lab tiếp theo*: [Lab 7 — Mô phỏng IS-LM](lab-07.qmd) →

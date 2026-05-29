@@ -1,72 +1,263 @@
 ---
-title: "Lab 07 — Cân bằng IS-LM bằng số"
-subtitle: "Tương ứng Buổi 7: IS-LM dưới dạng đại số"
-reading-time: "~20 phút"
+title: "Lab 7 — Mô phỏng cân bằng IS-LM"
+subtitle: "Tương ứng Buổi 7: Tìm (Y*, r*) bằng số và mô phỏng chính sách"
+reading-time: "~25 phút"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Liên kết với Buổi 7
 
-Bài này áp dụng khái niệm chính từ [Buổi 7](../lectures/buoi-07.qmd) vào dữ liệu thực tế Việt Nam.
+Bài này mô phỏng **mô hình IS-LM** từ [Buổi 7](../lectures/buoi-07.qmd) bằng Stata: xây dựng IS và LM bằng số, tìm cân bằng $(Y^*, r^*)$, mô phỏng tác động của tăng $G$ (CSTK) và tăng $M$ (CSTT).
 
-**Khái niệm Stata học**: `display, scalar, equation solving`
+Sau Lab 7, bạn có thể:
+
+- Tạo đường IS và LM bằng dạng tham số
+- Tìm điểm cân bằng đồng thời $(Y^*, r^*)$
+- Mô phỏng dịch IS khi $G$ tăng (CSTK)
+- Mô phỏng dịch LM khi $M$ tăng (CSTT)
+- Đo *crowding out* — so sánh tăng Y so với số nhân Keynesian thuần
+
+**Khái niệm Stata học**: `set obs`, `generate`, `scalar`, `display`, hệ phương trình tuyến tính, `twoway` nhiều layer
 :::
 
-::: {.callout-warning appearance="simple"}
-## 🚧 Lab đang biên soạn
+## 1. Mô hình IS-LM tham số hoá
 
-Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 07. Cấu trúc cố định theo template chuẩn của 16 lab.
-:::
+Bắt đầu với mô hình đơn giản:
 
-## Khung Lab 07
+**Đường IS** (KT đóng):
+$$Y = C_0 + c(Y - T) + I_0 - br + G$$
 
-### 1. Bài toán
+Giải ra:
+$$Y = \frac{C_0 + I_0 + G - cT - br}{1 - c} \quad \Rightarrow \quad \text{IS: } r = \frac{C_0 + I_0 + G - cT - (1-c)Y}{b}$$
 
-Tìm Y* và r* cân bằng; phân tích shock
+**Đường LM**:
+$$\frac{M}{P} = kY - hr$$
 
-### 2. Dữ liệu cần
+Giải ra:
+$$\text{LM: } r = \frac{kY - M/P}{h}$$
 
-Tham số IS và LM giả định
+**Tham số mặc định**:
 
-### 3. Lệnh Stata trọng tâm
+| Tham số | Giá trị | Ý nghĩa |
+|---|:---:|---|
+| $C_0$ | 100 | Tiêu dùng tự định |
+| $c$ (MPC) | 0.6 | Xu hướng tiêu dùng biên |
+| $I_0$ | 200 | Đầu tư tự định |
+| $b$ | 500 | Độ nhạy đầu tư với $r$ |
+| $G$ | 100 | Chi tiêu chính phủ |
+| $T$ | 100 | Thuế |
+| $M/P$ | 200 | Cung tiền thực |
+| $k$ | 0.5 | Độ nhạy cầu tiền với $Y$ |
+| $h$ | 1000 | Độ nhạy cầu tiền với $r$ |
 
-Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):
+## 2. Thiết lập tham số trong Stata
 
 ```stata
-* Lab 07 — DTU301
+* Lab 7 — DTU301 — Mô phỏng IS-LM
 * Họ tên: <điền>, MSSV: <điền>
 
 clear all
 set more off
 log using "lab07_<ten>.log", replace text
 
-* === Tải dữ liệu ===
-* (sẽ chi tiết khi có dataset thật)
+* === Tham số ===
+scalar C0 = 100      // Tiêu dùng tự định
+scalar c  = 0.6      // MPC
+scalar I0 = 200      // Đầu tư tự định
+scalar b  = 500      // Độ nhạy I theo r
+scalar G  = 100      // Chi tiêu CP
+scalar T  = 100      // Thuế
+scalar M  = 200      // Cung tiền thực
+scalar k  = 0.5      // Độ nhạy cầu tiền theo Y
+scalar h  = 1000     // Độ nhạy cầu tiền theo r
+```
 
-* === Phân tích ===
-* Sử dụng: display, scalar, equation solving
+## 3. Tìm cân bằng (Y*, r*) bằng số
 
-* === Đóng log ===
+Giải hệ:
+- IS: $(1-c)Y + br = C_0 + I_0 + G - cT$
+- LM: $kY - hr = M$
+
+```stata
+* === Giải bằng đại số (substitution) ===
+* IS: r = [C0 + I0 + G - cT - (1-c)Y] / b
+* LM: r = (kY - M) / h
+* Đặt 2 vế bằng nhau, giải Y:
+
+scalar A_is = C0 + I0 + G - c*T          // Hằng số IS
+scalar Y_star = (A_is/b + M/h) / ((1-c)/b + k/h)
+scalar r_star = (k*Y_star - M) / h
+
+display "=== Cân bằng ban đầu ==="
+display "Y* = " Y_star
+display "r* = " r_star
+```
+
+**Câu hỏi 1**: Cân bằng ở đâu? Y* và r* bao nhiêu?
+
+## 4. Vẽ IS-LM
+
+```stata
+* === Tạo lưới Y để vẽ ===
+clear
+set obs 101
+generate Y = 200 + 8 * (_n - 1)        // Y từ 200 đến 1000
+
+* Tham số (gọi lại từ scalars trên — phải re-set vì clear all)
+scalar C0 = 100
+scalar c  = 0.6
+scalar I0 = 200
+scalar b  = 500
+scalar G  = 100
+scalar T  = 100
+scalar M  = 200
+scalar k  = 0.5
+scalar h  = 1000
+
+* === Đường IS ===
+generate r_IS = (C0 + I0 + G - c*T - (1-c)*Y) / b
+
+* === Đường LM ===
+generate r_LM = (k*Y - M) / h
+
+* === Vẽ ===
+twoway (line r_IS Y, lcolor("114 47 55") lwidth(thick)) ///
+       (line r_LM Y, lcolor("0 88 163") lwidth(thick)), ///
+       title("Mô hình IS-LM — Cân bằng ban đầu") ///
+       xtitle("Sản lượng Y") ytitle("Lãi suất r") ///
+       legend(label(1 "IS") label(2 "LM") position(2) ring(0) cols(1)) ///
+       graphregion(color(white)) ///
+       ylabel(0(0.05)0.5)
+
+graph export "is_lm_initial.png", replace width(1400)
+```
+
+## 5. Mô phỏng CSTK — Tăng G
+
+Giả sử $G$ tăng từ 100 lên 200 (tăng 100 = 10% GDP ban đầu).
+
+```stata
+* === Tính cân bằng mới sau tăng G ===
+scalar G_new = 200
+scalar A_is_new = C0 + I0 + G_new - c*T
+scalar Y_star_new = (A_is_new/b + M/h) / ((1-c)/b + k/h)
+scalar r_star_new = (k*Y_star_new - M) / h
+
+display "=== Cân bằng sau khi G: 100 → 200 ==="
+display "Y_mới = " Y_star_new "  (tăng " Y_star_new - 333.33 ")"
+display "r_mới = " r_star_new
+
+* === Vẽ IS mới + LM cũ ===
+generate r_IS_new = (C0 + I0 + G_new - c*T - (1-c)*Y) / b
+
+twoway (line r_IS Y,     lcolor("114 47 55") lwidth(medium) lpattern(dash)) ///
+       (line r_IS_new Y, lcolor("114 47 55") lwidth(thick)) ///
+       (line r_LM Y,     lcolor("0 88 163") lwidth(thick)), ///
+       title("CSTK: Tăng G → IS dịch phải") ///
+       xtitle("Sản lượng Y") ytitle("Lãi suất r") ///
+       legend(label(1 "IS cũ") label(2 "IS mới") label(3 "LM") ///
+              position(2) ring(0) cols(1)) ///
+       graphregion(color(white)) ///
+       ylabel(0(0.05)0.5)
+
+graph export "is_lm_cstk.png", replace width(1400)
+```
+
+**Câu hỏi 2**: Tăng G làm Y tăng bao nhiêu? r tăng bao nhiêu? Đây có phải là tác động đúng theo dự đoán của Buổi 7?
+
+## 6. Đo crowding out
+
+**Số nhân Keynesian** (giả sử r cố định):
+$$\Delta Y_{\text{Keynesian}} = \frac{\Delta G}{1 - c}$$
+
+```stata
+* === So sánh: tăng Y thực tế vs số nhân Keynesian ===
+scalar deltaG = G_new - G
+scalar deltaY_actual = Y_star_new - Y_star
+scalar multiplier_keynes = deltaG / (1 - c)
+scalar crowding_out_pct = (multiplier_keynes - deltaY_actual) / multiplier_keynes * 100
+
+display "=== Crowding out ==="
+display "ΔG = " deltaG
+display "ΔY thực tế (IS-LM) = " deltaY_actual
+display "ΔY theo Keynesian thuần = " multiplier_keynes
+display "% crowding out = " crowding_out_pct "%"
+```
+
+**Câu hỏi 3**: Crowding out bao nhiêu %? Lý do tại sao tác động thực tế nhỏ hơn số nhân Keynesian?
+
+## 7. Mô phỏng CSTT — Tăng M
+
+Giả sử $M/P$ tăng từ 200 lên 300.
+
+```stata
+* === Cân bằng mới sau tăng M ===
+scalar M_new = 300
+scalar A_is_old = C0 + I0 + G - c*T          // Quay về G = 100
+scalar Y_star_m = (A_is_old/b + M_new/h) / ((1-c)/b + k/h)
+scalar r_star_m = (k*Y_star_m - M_new) / h
+
+display "=== Cân bằng sau khi M: 200 → 300 ==="
+display "Y_mới = " Y_star_m
+display "r_mới = " r_star_m
+
+* === Vẽ LM mới + IS cũ ===
+generate r_LM_new = (k*Y - M_new) / h
+
+twoway (line r_IS Y,     lcolor("114 47 55") lwidth(thick)) ///
+       (line r_LM Y,     lcolor("0 88 163") lwidth(medium) lpattern(dash)) ///
+       (line r_LM_new Y, lcolor("0 88 163") lwidth(thick)), ///
+       title("CSTT: Tăng M → LM dịch phải") ///
+       xtitle("Sản lượng Y") ytitle("Lãi suất r") ///
+       legend(label(1 "IS") label(2 "LM cũ") label(3 "LM mới") ///
+              position(2) ring(0) cols(1)) ///
+       graphregion(color(white)) ///
+       ylabel(0(0.05)0.5)
+
+graph export "is_lm_cstt.png", replace width(1400)
+```
+
+**Câu hỏi 4**: Tăng M làm Y tăng bao nhiêu? r thay đổi như thế nào? So sánh hiệu quả CSTT vs CSTK trong mô hình này.
+
+## 8. Bẫy thanh khoản — LM nằm ngang
+
+Khi $r \approx 0$, LM gần như nằm ngang. Mô phỏng bằng cách đặt $h$ rất lớn:
+
+```stata
+* === Bẫy thanh khoản: h rất lớn ===
+scalar h_trap = 10000
+
+* Trong bẫy thanh khoản, tăng M không ảnh hưởng Y nhiều
+scalar Y_trap_M = (A_is_old/b + M_new/h_trap) / ((1-c)/b + k/h_trap)
+display "Trong bẫy thanh khoản, tăng M chỉ làm Y tăng tới: " Y_trap_M
+
+* Nhưng CSTK rất hiệu quả
+scalar Y_trap_G = (A_is_new/b + M/h_trap) / ((1-c)/b + k/h_trap)
+display "Trong bẫy thanh khoản, tăng G làm Y tăng tới: " Y_trap_G
+```
+
+**Câu hỏi 5** (suy nghĩ + viết, 300 từ):
+
+Liên hệ kết quả mô phỏng với **case Việt Nam 2022-2024**:
+
+- VN *không* trong bẫy thanh khoản (lãi suất NHNN vẫn dương ~4-6%). Vậy CSTT *vẫn có hiệu quả*.
+- Tuy nhiên 2022, NHNN *thắt chặt* CSTT mặc dù VN cần kích cầu. Theo bạn, vì sao?
+- Đây có phải là *trade-off độc đáo của VN* mà mô hình IS-LM đóng không bắt được?
+- Chương 4 sẽ mở ra khung Mundell-Fleming (KT mở) — bạn nghĩ khung đó sẽ giải thích được tại sao NHNN VN phải thắt chặt 2022 không?
+
+## 9. Đóng log
+
+```stata
 log close
 ```
 
-### 4. Câu hỏi suy nghĩ (sẽ chi tiết)
-
-1. Câu hỏi mô tả dữ liệu
-2. Câu hỏi so sánh / xu hướng
-3. Câu hỏi liên hệ với lý thuyết
-4. Câu hỏi liên hệ với chính sách Việt Nam
-5. Câu hỏi mở rộng / phản biện
-
-## Deliverable Lab 07
-
-Nộp 3 file (như các lab trước):
+## Deliverable Lab 7
 
 | File | Nội dung |
 |---|---|
-| `lab07_<tên>.do` | Code + comment |
-| `lab07_<tên>.log` | Output |
-| `lab07_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
+| `lab07_<tên>.do` | Code + comment tiếng Việt |
+| `lab07_<tên>.log` | Output Stata |
+| `lab07_<tên>.pdf` (2-3 trang) | 5 câu hỏi + 3 biểu đồ IS-LM |
 
 **Tiêu đề email**: `DTU301-LAB07-MSSV-HọTên`
 
@@ -74,11 +265,12 @@ Nộp 3 file (như các lab trước):
 
 | Tiêu chí | Điểm |
 |---|:---:|
-| Code chạy đúng, có log | 30% |
-| Vận dụng đúng khái niệm Stata mới của bài | 25% |
-| Biểu đồ / bảng kết quả rõ ràng | 20% |
-| Trả lời câu hỏi sâu, có liên hệ thực tiễn | 25% |
+| Code chạy đúng + tìm cân bằng đúng | 25% |
+| Mô phỏng CSTK + đo crowding out | 25% |
+| Mô phỏng CSTT + so sánh hiệu quả | 20% |
+| Biểu đồ IS-LM rõ ràng | 15% |
+| Liên hệ case VN 2022-2024 | 15% |
 
 ---
 
-← *Lab trước*: [Lab 6](lab-06.qmd) | *Lab tiếp theo*: [Lab 8](lab-08.qmd) →
+← *Lab trước*: [Lab 6 — Cobb-Douglas cho VN](lab-06.qmd) | *Lab tiếp theo*: [Lab 8 — Đường Phillips Việt Nam](lab-08.qmd) →

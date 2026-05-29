@@ -1,57 +1,299 @@
 ---
-title: "Buổi 06 — Mục tiêu vĩ mô và tăng trưởng dài hạn"
-subtitle: "4 mục tiêu vĩ mô; Cobb-Douglas, phân rã Solow, growth accounting Việt Nam"
-reading-time: "Chương 3"
+title: "Buổi 6 — Mục tiêu vĩ mô và Tăng trưởng dài hạn"
+subtitle: "Bốn mục tiêu · Phân phối thu nhập · PTBV · Cobb-Douglas + Solow + TFP"
+reading-time: "Chương 3 · ~55 phút đọc"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Đóng góp CLO
 
-**CLO2, CLO3 — Phân tích các đánh đổi giữa mục tiêu vĩ mô**
+**CLO2, CLO3** — Vận dụng khung mục tiêu vĩ mô và mô hình tăng trưởng dài hạn vào phân tích chính sách Việt Nam.
+
+Buổi 6 mở Chương 3 với câu hỏi nền tảng: **Nhà nước theo đuổi gì khi quản lý nền kinh tế quốc dân?** Bốn mục tiêu cổ điển + ba phép thử hiện đại (phân phối, bền vững, năng suất) định hình toàn bộ tư duy chính sách vĩ mô.
 :::
 
-## Nội dung lý thuyết (thuyết giảng)
+## Lộ trình Buổi 6
 
-**3.1. Bốn mục tiêu vĩ mô**
+| Phần | Nội dung |
+|:---:|---|
+| **A** | Bốn mục tiêu vĩ mô — tăng trưởng, giá cả, việc làm, BoP |
+| **B** | Phân phối thu nhập — Gini, Lorenz, chính sách phân phối lại |
+| **C** | Phát triển bền vững — SDGs, ESG, định hướng XIV |
+| **D** | Tăng trưởng dài hạn — Cobb-Douglas + Solow + TFP |
 
-- Tăng trưởng kinh tế
-- Việc làm đầy đủ
-- Ổn định giá cả (kiểm soát lạm phát)
-- Cân bằng cán cân thanh toán
+## A. Bốn mục tiêu vĩ mô
 
-Phân phối thu nhập; phát triển bền vững.
+### A.1. Tổng quan bốn mục tiêu
 
-**Tăng trưởng dài hạn**
+Nhà nước trong vai trò quản lý vĩ mô theo đuổi **bốn mục tiêu cổ điển**:
 
-- Hàm sản xuất **Cobb-Douglas**: \(Y = AK^\alpha L^{1-\alpha}\)
-- **Phân rã Solow**: đóng góp K, L, TFP
-- **Growth accounting** Việt Nam giai đoạn 2010–2024
+| # | Mục tiêu | Đo lường |
+|---|---|---|
+| **1** | Tăng trưởng kinh tế | GDP, GDP/đầu người, tốc độ tăng trưởng |
+| **2** | Ổn định giá cả | CPI, GDP deflator, PCE |
+| **3** | Việc làm đầy đủ | Tỷ lệ thất nghiệp, tỷ lệ tham gia LLLĐ |
+| **4** | Cân bằng cán cân thanh toán | BoP (sẽ học Chương 4) |
 
-## Thực hành / Thảo luận
+**Điểm cốt lõi**: bốn mục tiêu **mâu thuẫn nhau ở ngắn hạn**. Kích cầu mạnh để tăng trưởng có thể đẩy lạm phát. Thắt chặt để ổn định giá có thể tăng thất nghiệp. Đây là *nguồn gốc của trade-off chính sách* — chủ đề xuyên suốt Chương 3.
 
-Tính **growth accounting** cho Việt Nam giai đoạn 5 năm gần nhất: đóng góp của vốn, lao động và TFP. Thảo luận hàm ý chính sách.
+### A.2. Tăng trưởng kinh tế
 
-## Bài tập lớn / Tiểu luận
+**Cách đo**:
+- **GDP danh nghĩa** — theo giá hiện hành
+- **GDP thực** — đã trừ lạm phát (so sánh được qua các năm)
+- **GDP/đầu người** — tốt hơn cho so sánh mức sống
 
-Báo cáo phân tích **một mục tiêu vĩ mô** của Việt Nam giai đoạn 2020–2024 (Phần 1).
+**Mankiw Nguyên lý 8**: *Mức sống phụ thuộc vào năng suất*. Đây là chìa khoá để hiểu khác biệt giữa **tăng trưởng dài hạn** (do năng suất + tích luỹ vốn + dân số) và **chu kỳ ngắn hạn** (do cú sốc cầu, cung).
 
-## Tự học có hướng dẫn
+**Mục tiêu Đại hội XIV**: tăng trưởng ≥ **10%/năm** giai đoạn 2026-2030. Đây là mục tiêu *rất tham vọng* — VN giai đoạn 2010-2024 trung bình chỉ đạt ~6.3%. Để đạt 10%, không thể chỉ tích luỹ vốn — **phải tăng năng suất (TFP)**.
 
-1. Bốn mục tiêu vĩ mô mâu thuẫn nhau ở đâu?
-2. TFP đóng góp bao nhiêu % vào tăng trưởng VN?
-3. Khi nào tăng trưởng đi đôi với bất bình đẳng tăng?
+### A.3. Ổn định giá cả
+
+**Lạm phát** = tốc độ tăng mức giá chung. Đo bằng:
+
+| Chỉ số | Tính bằng | Đặc điểm |
+|---|---|---|
+| **CPI** (Consumer Price Index) | Rổ hàng tiêu dùng | Sát với người dân |
+| **GDP deflator** | Tỷ lệ GDP danh nghĩa/thực | Bao quát toàn nền KT |
+| **PCE** | Chi tiêu cá nhân (Fed dùng) | Linh hoạt theo thay đổi tiêu dùng |
+
+**Tại Việt Nam**: TCTK tính CPI dựa trên **rổ 752 mặt hàng** chia thành **11 nhóm** (lương thực, nhà ở, y tế, giao thông...).
+
+**Mục tiêu lạm phát VN**: vùng an toàn **2–4%**. Lạm phát quá cao → bất ổn xã hội + giảm tiết kiệm + biến dạng tín hiệu giá. Lạm phát quá thấp (thậm chí âm) → giảm phát, doanh nghiệp chần chừ đầu tư.
+
+### A.4. Việc làm và thất nghiệp
+
+**Định nghĩa**: thất nghiệp = người *đang tìm việc* + *không có việc*. Người không tìm việc (sinh viên, nội trợ, nghỉ hưu) không tính.
+
+**Ba loại thất nghiệp**:
+
+| Loại | Nguyên nhân |
+|---|---|
+| **Ma sát** (frictional) | Thời gian tìm việc giữa hai công việc — không tránh được |
+| **Cơ cấu** (structural) | Kỹ năng người LĐ không khớp với cầu thị trường — chuyển dịch ngành |
+| **Chu kỳ** (cyclical) | Suy thoái kinh tế — cần CSTK/CSTT can thiệp |
+
+**NAIRU (Friedman 1968)**: *Non-Accelerating Inflation Rate of Unemployment* — **tỷ lệ thất nghiệp tự nhiên**, dưới đó lạm phát có xu hướng tăng. Cố đẩy thất nghiệp dưới NAIRU dài hạn → chỉ tăng lạm phát.
+
+**Việt Nam**: tỷ lệ thất nghiệp chính thức ~**2.3%** — thấp nhưng cần đọc kèm chỉ số **tỷ lệ thiếu việc làm** (underemployment) để hiểu toàn cảnh thị trường lao động.
+
+### A.5. Cán cân thanh toán (BoP)
+
+**BoP** = *dòng tiền giữa Việt Nam và phần còn lại của thế giới*.
+
+Cấu trúc gồm 2 phần chính:
+
+- **Tài khoản vãng lai (CA)** — thương mại + dịch vụ + thu nhập + chuyển giao
+- **Tài khoản tài chính (FA)** — FDI + đầu tư danh mục + vay nợ
+
+Đồng nhất kế toán kép: **CA + FA + sai số = 0**.
+
+Chi tiết BoP sẽ học ở **Chương 4 (Buổi 9-11)**. Ở Chương 3, ta giả định nền KT đóng (NX = 0) để tập trung vào tương tác CSTK – CSTT.
+
+**Mục tiêu**: BoP cân bằng ổn định, tránh khủng hoảng cán cân (như Thái Lan 1997).
+
+## B. Phân phối thu nhập
+
+### B.1. Đo phân phối — Đường Lorenz và Hệ số Gini
+
+**Đường Lorenz** (Max Lorenz, 1905): vẽ tỷ lệ % thu nhập tích luỹ theo tỷ lệ % dân số (xếp từ nghèo đến giàu).
+
+| Vị trí đường | Ý nghĩa |
+|---|---|
+| **Đường thẳng 45°** | Bình đẳng hoàn hảo (mọi người có thu nhập như nhau) |
+| **Lorenz cong xa 45°** | Bất bình đẳng càng cao |
+| **Lorenz trùng với cạnh dưới + cạnh phải** | Một người chiếm hết thu nhập |
+
+**Hệ số Gini** = 2 × diện tích giữa đường 45° và đường Lorenz. Phạm vi 0 (bình đẳng tuyệt đối) đến 1 (bất bình đẳng tuyệt đối).
+
+**So sánh quốc tế**:
+
+| Quốc gia / vùng | Gini gần đây |
+|---|---|
+| Bắc Âu (Đan Mạch, Thuỵ Điển, Na Uy) | 0.25–0.28 |
+| **Việt Nam** | **~0.36** (trung bình khu vực, đang giảm) |
+| Trung Quốc | ~0.38 |
+| Mỹ | ~0.41 |
+| Brazil, Nam Phi | 0.50+ |
+
+VN có Gini trung bình so với khu vực — không quá cao, nhưng cần chú ý xu hướng vùng và nông thôn – thành thị.
+
+### B.2. Chính sách phân phối lại
+
+Bốn nhóm công cụ chính:
+
+| Nhóm | Cơ chế | Ví dụ VN |
+|---|---|---|
+| **Thuế lũy tiến** | Người thu nhập cao đóng tỷ lệ cao hơn | Thuế TNCN (bậc 5–35%), thuế tài sản (đang xây dựng) |
+| **Chi tiêu xã hội** | Chuyển giao trực tiếp | BHYT, BHXH, trợ cấp cho người nghèo |
+| **Lương tối thiểu** | Đặt sàn cho lương | Lương tối thiểu vùng được điều chỉnh hàng năm |
+| **Cung cấp dịch vụ công** | Giáo dục, y tế công | Phổ cập giáo dục tiểu học, BHYT toàn dân |
+
+**Tranh luận kinh điển**: phân phối lại có *giảm tăng trưởng* không?
+
+- *Lập luận giảm*: thuế cao làm giảm khuyến khích làm việc và đầu tư
+- *Lập luận không*: nhiều nghiên cứu (IMF, OECD) cho thấy mức phân phối lại vừa phải *không* giảm tăng trưởng dài hạn, và có thể tăng vì tăng năng suất lao động (giáo dục, y tế cho mọi tầng lớp)
+
+**Việt Nam**: **BHXH toàn dân** là mục tiêu chiến lược — Luật BHXH 2024 mở rộng đối tượng, hướng tới phổ cập đầy đủ vào 2030.
+
+## C. Phát triển bền vững
+
+### C.1. SDGs — 17 mục tiêu Phát triển bền vững
+
+**SDGs** (Sustainable Development Goals) — Liên Hợp Quốc thông qua 9/2015, thay thế MDGs cũ.
+
+- **17 mục tiêu**, **169 chỉ tiêu**, đến **2030**
+- Bao quát: nghèo, đói, sức khoẻ, giáo dục, bình đẳng giới, nước sạch, năng lượng, việc làm, hạ tầng, bất bình đẳng, thành phố bền vững, sản xuất – tiêu dùng có trách nhiệm, khí hậu, đại dương, đất liền, công lý, hợp tác
+
+**Việt Nam tham gia tích cực**: VNR (Voluntary National Review) định kỳ; SDG VN có hệ thống chỉ tiêu thống kê quốc gia.
+
+### C.2. ESG và Kinh tế xanh
+
+**ESG** = **E**nvironmental (môi trường) – **S**ocial (xã hội) – **G**overnance (quản trị) — bộ ba tiêu chuẩn đánh giá đầu tư có trách nhiệm.
+
+| Trụ cột | Đo lường |
+|---|---|
+| **E** | Phát thải, sử dụng năng lượng, tài nguyên |
+| **S** | Quan hệ NLĐ, an toàn, đa dạng |
+| **G** | HĐQT độc lập, minh bạch, chống tham nhũng |
+
+**Kinh tế xanh** = tăng trưởng *không huỷ hoại môi trường*.
+**Kinh tế tuần hoàn** = tái sử dụng, tái chế — giảm thải tới đầu vào nguồn.
+
+**Trái phiếu xanh** (green bond) phát triển nhanh toàn cầu — Việt Nam có thị trường sơ khai, ASEAN+3 hỗ trợ.
+
+### C.3. Việt Nam — PTBV và Đại hội XIV
+
+| Cam kết | Nội dung |
+|---|---|
+| **Net Zero 2050** | Cam kết tại COP26 (Glasgow 2021) |
+| **Chiến lược Tăng trưởng xanh 2021–2030** | Lộ trình giảm phát thải, mở rộng năng lượng tái tạo |
+| **NĐ 06/2022** | Thị trường carbon thí điểm, vận hành chính thức 2028 |
+
+**Bốn loại kinh tế mới của Đại hội XIV**:
+1. Kinh tế **dữ liệu**
+2. Kinh tế **số**
+3. Kinh tế **xanh**
+4. Kinh tế **tuần hoàn**
+
+→ PTBV gắn chặt với Chiến lược phát triển KT-XH 2026–2030.
+
+## D. Tăng trưởng dài hạn — Cobb-Douglas + Solow + TFP
+
+### D.1. Hàm sản xuất Cobb-Douglas
+
+$$Y = A \cdot K^\alpha \cdot L^{1-\alpha}$$
+
+Trong đó:
+
+| Ký hiệu | Ý nghĩa |
+|---|---|
+| **Y** | Sản lượng (GDP) |
+| **A** | TFP (Total Factor Productivity) — năng suất tổng |
+| **K** | Vốn (capital) |
+| **L** | Lao động |
+| **α** | Tỷ phần vốn trong sản lượng (thường 0.3–0.4) |
+
+**Phân rã tăng trưởng** (lấy log, lấy đạo hàm theo thời gian):
+
+$$\frac{\Delta Y}{Y} = \alpha \cdot \frac{\Delta K}{K} + (1-\alpha) \cdot \frac{\Delta L}{L} + \frac{\Delta A}{A}$$
+
+→ Tăng trưởng GDP = đóng góp K + đóng góp L + **đóng góp TFP (phần dư Solow)**.
+
+### D.2. Phân rã Solow — phát hiện sốc
+
+**Robert Solow (1957)**, *Technical Change and the Aggregate Production Function* (Nobel 1987):
+
+- Lấy số liệu Mỹ 1909–1949
+- Tính đóng góp của K và L vào tăng trưởng
+- **Phát hiện sốc**: chỉ ~15% tăng trưởng do K và L; **~50–60% là TFP (phần dư)**
+
+**Bài học cho QLKT**:
+
+- **Vốn (K)** là điều kiện cần, *không đủ*. Đầu tư cao không tự động tạo tăng trưởng nhanh.
+- **TFP** mới quan trọng dài hạn — *cách dùng* vốn và lao động hiệu quả ra sao.
+- **Nguồn TFP**: công nghệ, giáo dục, thể chế (institutions).
+
+### D.3. Growth accounting Việt Nam
+
+**Đóng góp vào tăng trưởng VN 2010–2024** (ước tính):
+
+| Yếu tố | Đóng góp |
+|---|---|
+| Vốn (K) | ~50–55% |
+| Lao động (L) | ~25–30% |
+| **TFP** | **~20–25%** |
+
+So sánh:
+
+| Nền KT | TFP đóng góp |
+|---|---|
+| Việt Nam 2010–2024 | ~20–25% |
+| Hàn Quốc, Nhật Bản (giai đoạn cất cánh) | 35–45% |
+| Mỹ thế kỷ XX | 50–60% |
+
+**VN dựa quá nhiều vào K**: đầu tư cao (≥30% GDP) nhưng *hiệu suất sử dụng vốn còn hạn chế* (ICOR cao).
+
+### D.4. Mục tiêu TFP của Đại hội XIV
+
+| Đại hội | Mục tiêu TFP đóng góp |
+|---|---|
+| **XIII (2021)** | ~50% (đến 2025) |
+| **XIV (2026)** | **>55%** (đến 2030) |
+
+**Yêu cầu thực tế**: phải **nâng năng suất gấp đôi hiện tại** trong 5 năm. Đây là mục tiêu *rất tham vọng*.
+
+**Điều kiện cần để đạt**:
+
+- **ĐMST** mạnh (xem Buổi 5)
+- **NIC** hoạt động hiệu quả
+- Đầu tư **R&D** tăng từ 0.5% lên 1.5–2% GDP
+- Cải cách thể chế — đặc biệt giáo dục đại học và liên kết DN–đại học
+
+**Tranh luận**: mục tiêu TFP >55% có khả thi không? Một số nhà kinh tế (vd Trần Văn Thọ) cho rằng quá tham vọng nếu không có cải cách thể chế mạnh.
+
+::: {.callout-warning}
+## ✋ Bài tập thảo luận trên lớp
+
+Áp dụng phân rã Solow cho Việt Nam giai đoạn 2015–2019 (trước Covid):
+
+1. Giả định α = 0.4, ước lượng ΔK/K và ΔL/L từ dữ liệu GSO/WB.
+2. Tính ΔA/A (phần dư TFP).
+3. So sánh với mục tiêu Đại hội XIV (TFP >55% vào 2030).
+4. Theo bạn, cải cách nào sẽ giúp đẩy TFP tăng nhanh nhất?
+:::
+
+## Tổng kết Buổi 6 — Năm điểm cốt lõi
+
+1. **Bốn mục tiêu vĩ mô** mâu thuẫn nhau ở ngắn hạn — đây là *nguồn gốc của trade-off chính sách*.
+2. **Phân phối thu nhập**: Gini + Lorenz; bốn nhóm công cụ phân phối lại. Việt Nam Gini ~0.36, đang giảm dần.
+3. **PTBV**: SDGs (17 mục tiêu, 2030), ESG, 4 chuyển đổi Đại hội XIV, NetZero 2050.
+4. **Tăng trưởng dài hạn**: Cobb-Douglas (Y=AK^αL^(1-α)) + phân rã Solow (TFP là phần dư).
+5. **TFP VN ~20–25%** hiện tại; **mục tiêu XIV >55% vào 2030** — tham vọng, cần cải cách thể chế mạnh.
+
+## Bài tập về nhà (chuẩn bị Buổi 7)
+
+1. **Đọc** Mankiw chương về **mô hình IS-LM**.
+2. **Tự ôn** lại **Keynesian Cross** (Y = C + I + G).
+3. **Chuẩn bị 1 ví dụ chính sách tài khoá VN** — vd gói đầu tư công 2020-2024, giảm VAT 2%.
+4. **Đọc thêm** về Solow growth accounting tại Việt Nam.
+
+::: {.callout-tip}
+## 🔧 Stata Lab 6 (bonus 5%)
+
+Bài này có lab thực hành **ước lượng Cobb-Douglas cho Việt Nam** trong Stata: lấy dữ liệu Y, K, L từ Penn World Tables, hồi quy log-linear, ước lượng α và TFP residual. Bạn sẽ học `regress`, `log`, robust SE, residual analysis.
+
+→ [**Bắt đầu Lab 6 — Ước lượng Cobb-Douglas VN**](../stata-lab/lab-06.qmd) *(~30 phút)*
+:::
 
 ## Đọc thêm
 
-- Mankiw, *Kinh tế học vĩ mô*, chương 7–8.
-- Blanchard (2020), chương 11–13.
-
-::: {.callout-warning appearance="simple"}
-## 🚧 Nội dung đang biên soạn
-
-Bài giảng buổi 06 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
-:::
+- Mankiw, *Kinh tế học vĩ mô* (2026), Chương 7–8 (Growth, Productivity).
+- **Solow, R.** (1957), *Technical Change and the Aggregate Production Function*, *Review of Economics and Statistics* — bài báo gốc.
+- **Friedman, M.** (1968), *The Role of Monetary Policy* — về NAIRU.
+- Báo cáo VNR Việt Nam — định kỳ về SDGs.
+- Văn kiện Đại hội XIV — mục tăng trưởng và TFP.
 
 ---
 
-← *Buổi trước*: [Buổi 5](buoi-05.qmd) *Buổi tiếp theo*: [Buổi 7](buoi-07.qmd) →
+← *Buổi trước*: [Buổi 5 — Chính sách công nghiệp và Quản trị DN](buoi-05.qmd) | *Buổi tiếp theo*: [Buổi 7 — Mô hình IS-LM](buoi-07.qmd) →

@@ -1,72 +1,223 @@
 ---
-title: "Lab 08 — Đường Phillips Việt Nam 2010-2024"
-subtitle: "Tương ứng Buổi 8: Mối quan hệ thất nghiệp - lạm phát"
-reading-time: "~20 phút"
+title: "Lab 8 — Đường Phillips Việt Nam 2010-2024"
+subtitle: "Tương ứng Buổi 8: Ước lượng OLS, so sánh ngắn hạn từng giai đoạn"
+reading-time: "~25 phút"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Liên kết với Buổi 8
 
-Bài này áp dụng khái niệm chính từ [Buổi 8](../lectures/buoi-08.qmd) vào dữ liệu thực tế Việt Nam.
+Bài này áp dụng **đường Phillips** từ [Buổi 8](../lectures/buoi-08.qmd) vào dữ liệu Việt Nam 2010-2024. Bạn sẽ kiểm tra: *Phillips có còn tồn tại ở VN không?* và *Liệu kỳ vọng có làm dịch chuyển Phillips ngắn hạn?*
 
-**Khái niệm Stata học**: `twoway scatter, fitted line, regress`
+Sau Lab 8, bạn có thể:
+
+- Tạo dataset lạm phát + thất nghiệp VN
+- Vẽ scatter Phillips
+- Ước lượng OLS độ dốc Phillips
+- So sánh Phillips trước Covid (2010-2019) vs sau (2020-2024)
+- Liên hệ với mô hình kỳ vọng Friedman-Phelps
+
+**Khái niệm Stata học**: scatter + fitted line, `regress` by group, `if` condition, twoway combine
 :::
 
-::: {.callout-warning appearance="simple"}
-## 🚧 Lab đang biên soạn
-
-Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 08. Cấu trúc cố định theo template chuẩn của 16 lab.
-:::
-
-## Khung Lab 08
-
-### 1. Bài toán
-
-Vẽ đường Phillips và ước lượng độ dốc
-
-### 2. Dữ liệu cần
-
-Dữ liệu CPI và unemployment VN 2010-2024 (GSO)
-
-### 3. Lệnh Stata trọng tâm
-
-Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):
+## 1. Dataset CPI và thất nghiệp Việt Nam
 
 ```stata
-* Lab 08 — DTU301
+* Lab 8 — DTU301 — Đường Phillips Việt Nam 2010-2024
 * Họ tên: <điền>, MSSV: <điền>
 
 clear all
 set more off
 log using "lab08_<ten>.log", replace text
 
-* === Tải dữ liệu ===
-* (sẽ chi tiết khi có dataset thật)
+* === Dữ liệu lạm phát + thất nghiệp VN ===
+* Nguồn: TCTK (CPI YoY), ước lượng tỷ lệ thất nghiệp khu vực thành thị
+clear
+set obs 15
 
-* === Phân tích ===
-* Sử dụng: twoway scatter, fitted line, regress
+generate year = 2010 + _n - 1
 
-* === Đóng log ===
+* Lạm phát (CPI YoY, %) - ước lượng
+generate inflation = .
+replace inflation = 9.2  if year == 2010
+replace inflation = 18.7 if year == 2011  // sốc lạm phát
+replace inflation = 9.1  if year == 2012
+replace inflation = 6.6  if year == 2013
+replace inflation = 4.1  if year == 2014
+replace inflation = 0.6  if year == 2015
+replace inflation = 2.7  if year == 2016
+replace inflation = 3.5  if year == 2017
+replace inflation = 3.5  if year == 2018
+replace inflation = 2.8  if year == 2019
+replace inflation = 3.2  if year == 2020  // Covid
+replace inflation = 1.8  if year == 2021
+replace inflation = 3.2  if year == 2022
+replace inflation = 3.3  if year == 2023
+replace inflation = 3.6  if year == 2024
+
+* Thất nghiệp khu vực thành thị (%) - ước lượng
+generate unemployment = .
+replace unemployment = 4.4  if year == 2010
+replace unemployment = 3.6  if year == 2011
+replace unemployment = 3.2  if year == 2012
+replace unemployment = 3.6  if year == 2013
+replace unemployment = 3.4  if year == 2014
+replace unemployment = 3.4  if year == 2015
+replace unemployment = 3.2  if year == 2016
+replace unemployment = 3.2  if year == 2017
+replace unemployment = 3.1  if year == 2018
+replace unemployment = 3.0  if year == 2019
+replace unemployment = 3.9  if year == 2020  // Covid
+replace unemployment = 4.4  if year == 2021
+replace unemployment = 3.0  if year == 2022
+replace unemployment = 2.8  if year == 2023
+replace unemployment = 2.6  if year == 2024
+
+label variable year "Năm"
+label variable inflation "Lạm phát CPI YoY (%)"
+label variable unemployment "Tỷ lệ thất nghiệp thành thị (%)"
+
+list
+```
+
+::: {.callout-warning appearance="simple"}
+**Dữ liệu mô phỏng** xấp xỉ thực tế. Nguồn chính thức:
+- **TCTK** (gso.gov.vn) — CPI và Bảng KSDN
+- **Bộ LĐ-TB-XH** — Báo cáo thị trường LĐ
+- **WB Vietnam Development Report**
+:::
+
+## 2. Vẽ scatter Phillips toàn giai đoạn
+
+```stata
+* === Phillips scatter cơ bản ===
+twoway (scatter inflation unemployment, mlabel(year) mlabsize(small) ///
+        msize(medium) mcolor("114 47 55")) ///
+       (lfit inflation unemployment, lcolor("0 88 163") lwidth(medium)), ///
+       title("Đường Phillips Việt Nam, 2010-2024") ///
+       xtitle("Tỷ lệ thất nghiệp (%)") ///
+       ytitle("Lạm phát (%)") ///
+       legend(off) ///
+       graphregion(color(white))
+
+graph export "phillips_full.png", replace width(1400)
+```
+
+**Câu hỏi 1**: Đường fitted có dốc xuống (Phillips tồn tại) hay dốc lên (Phillips bị phá vỡ)? 2011 là outlier hay đại diện?
+
+## 3. Ước lượng độ dốc Phillips toàn giai đoạn
+
+```stata
+* === OLS toàn giai đoạn ===
+display "=== Phillips 2010-2024 toàn giai đoạn ==="
+regress inflation unemployment, robust
+```
+
+**Câu hỏi 2**: Hệ số `unemployment` ước lượng được bao nhiêu? Có ý nghĩa thống kê 5% không? Theo lý thuyết Phillips, kỳ vọng dấu âm — có đúng không?
+
+## 4. So sánh hai giai đoạn
+
+Theo Friedman-Phelps, kỳ vọng làm dịch Phillips. Liệu Phillips 2010-2019 có *khác* Phillips 2020-2024?
+
+```stata
+* === Tạo biến giai đoạn ===
+generate giai_doan = ""
+replace giai_doan = "2010-2019" if year <= 2019
+replace giai_doan = "2020-2024" if year >= 2020
+
+* === Regress theo 2 giai đoạn ===
+display "=== Phillips 2010-2019 (trước Covid) ==="
+regress inflation unemployment if year <= 2019, robust
+
+display "=== Phillips 2020-2024 (sau Covid) ==="
+regress inflation unemployment if year >= 2020, robust
+```
+
+**Câu hỏi 3**: Độ dốc Phillips hai giai đoạn có khác nhau không? Giai đoạn nào dốc hơn? Ý nghĩa?
+
+## 5. Vẽ scatter có phân biệt giai đoạn
+
+```stata
+* === Scatter có màu theo giai đoạn ===
+twoway (scatter inflation unemployment if year <= 2019, mcolor("114 47 55") ///
+        mlabel(year) mlabsize(small) msize(medium)) ///
+       (scatter inflation unemployment if year >= 2020, mcolor("0 88 163") ///
+        mlabel(year) mlabsize(small) msize(medium)) ///
+       (lfit inflation unemployment if year <= 2019, lcolor("114 47 55") ///
+        lwidth(medium) lpattern(dash)) ///
+       (lfit inflation unemployment if year >= 2020, lcolor("0 88 163") ///
+        lwidth(medium) lpattern(dash)), ///
+       title("Phillips VN: 2010-2019 vs 2020-2024") ///
+       xtitle("Tỷ lệ thất nghiệp (%)") ytitle("Lạm phát (%)") ///
+       legend(label(1 "2010-2019") label(2 "2020-2024") ///
+              order(1 2) position(2) ring(0) cols(1)) ///
+       graphregion(color(white))
+
+graph export "phillips_2periods.png", replace width(1400)
+```
+
+## 6. Phillips kỳ vọng — đơn giản
+
+Theo Friedman-Phelps:
+$$\pi_t = \pi^e_t - \beta(U_t - U^N)$$
+
+Một cách đơn giản: kỳ vọng = lạm phát năm trước.
+
+```stata
+* === Lagged inflation làm proxy cho expectations ===
+sort year
+generate inflation_lag = inflation[_n-1]
+generate inflation_expected = inflation_lag    // Naive expectations
+
+* === Phillips expectation-augmented ===
+regress inflation unemployment inflation_lag if year >= 2011, robust
+```
+
+**Câu hỏi 4**: Khi thêm `inflation_lag` (proxy cho kỳ vọng), độ dốc của `unemployment` có thay đổi không? Có gần với NAIRU lý thuyết hơn không?
+
+## 7. Tính NAIRU ước lượng
+
+Theo công thức:
+$$U^N = U - \frac{\pi - \pi^e}{\beta}$$
+
+Với β = độ dốc Phillips, $\pi^e$ = inflation_lag:
+
+```stata
+* === Ước lượng NAIRU ===
+* Lấy beta từ hồi quy vừa rồi
+local beta = -_b[unemployment]
+display "Beta = " `beta'
+
+generate NAIRU = unemployment - (inflation - inflation_lag) / `beta'
+
+* Trung bình NAIRU
+summarize NAIRU, detail
+display "NAIRU trung bình = " r(mean) "%"
+```
+
+**Câu hỏi 5** (suy nghĩ + viết, 400 từ):
+
+NAIRU của Việt Nam trung bình bao nhiêu? Có hợp lý không? (gợi ý: tỷ lệ thất nghiệp chính thức VN luôn rất thấp ~2-4%, có thể NAIRU cũng vậy.)
+
+Theo bạn, **Phillips có còn áp dụng được ở Việt Nam** sau giai đoạn 2010 không? Lập luận của bạn dựa trên:
+
+- Cú sốc cung 2022 (Nga-Ukraine) làm lạm phát tăng nhưng thất nghiệp không giảm — đây có phải bằng chứng Phillips bị phá vỡ?
+- Năm 2011 lạm phát cực cao (18.7%) nhưng thất nghiệp vẫn thấp — vì sao?
+- Số liệu thất nghiệp VN có *chính xác* không? (gợi ý: kinh tế phi chính thức, thiếu việc làm)
+
+## 8. Đóng log
+
+```stata
 log close
 ```
 
-### 4. Câu hỏi suy nghĩ (sẽ chi tiết)
-
-1. Câu hỏi mô tả dữ liệu
-2. Câu hỏi so sánh / xu hướng
-3. Câu hỏi liên hệ với lý thuyết
-4. Câu hỏi liên hệ với chính sách Việt Nam
-5. Câu hỏi mở rộng / phản biện
-
-## Deliverable Lab 08
-
-Nộp 3 file (như các lab trước):
+## Deliverable Lab 8
 
 | File | Nội dung |
 |---|---|
-| `lab08_<tên>.do` | Code + comment |
-| `lab08_<tên>.log` | Output |
-| `lab08_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
+| `lab08_<tên>.do` | Code + comment tiếng Việt |
+| `lab08_<tên>.log` | Output Stata |
+| `lab08_<tên>.pdf` (2-3 trang) | 5 câu hỏi + 2 biểu đồ Phillips |
 
 **Tiêu đề email**: `DTU301-LAB08-MSSV-HọTên`
 
@@ -74,11 +225,20 @@ Nộp 3 file (như các lab trước):
 
 | Tiêu chí | Điểm |
 |---|:---:|
-| Code chạy đúng, có log | 30% |
-| Vận dụng đúng khái niệm Stata mới của bài | 25% |
-| Biểu đồ / bảng kết quả rõ ràng | 20% |
-| Trả lời câu hỏi sâu, có liên hệ thực tiễn | 25% |
+| Code chạy + scatter Phillips | 20% |
+| Hồi quy OLS có ý nghĩa thống kê | 20% |
+| So sánh 2 giai đoạn đúng | 20% |
+| Phillips kỳ vọng + NAIRU | 20% |
+| Phản biện về Phillips ở VN | 20% |
+
+::: {.callout-tip}
+## 🚀 Mở rộng (tự chọn)
+
+- Lấy **dữ liệu thật từ TCTK** (CPI tháng, thay vì năm) để có nhiều quan sát hơn.
+- Thử **Phillips kỳ vọng adaptive** với $\pi^e = \rho \pi_{t-1} + (1-\rho) \pi^e_{t-1}$.
+- So sánh VN với **Singapore hoặc Thái Lan** cùng giai đoạn.
+:::
 
 ---
 
-← *Lab trước*: [Lab 7](lab-07.qmd) | *Lab tiếp theo*: [Lab 9](lab-09.qmd) →
+← *Lab trước*: [Lab 7 — Mô phỏng IS-LM](lab-07.qmd) | *Lab tiếp theo*: [Lab 9 — Tính NEER/REER VND](lab-09.qmd) →

@@ -1,59 +1,302 @@
 ---
-title: "Buổi 08 — AD-AS, Phillips và phối hợp tài khoá–tiền tệ"
-subtitle: "AD-AS; Phillips ngắn hạn + kỳ vọng; phối hợp 2020-2024 VN"
-reading-time: "Chương 3"
+title: "Buổi 8 — AD-AS, Phillips và Phối hợp chính sách tài khoá–tiền tệ"
+subtitle: "Mô hình AD-AS · Đường Phillips · CSTK và CSTT · Case VN 2020–2024"
+reading-time: "Chương 3 · ~55 phút đọc"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Đóng góp CLO
 
-**CLO2, CLO3 — Phân tích phối hợp chính sách**
+**CLO2, CLO3** — Phân tích phối hợp chính sách tài khoá – tiền tệ qua khung AD-AS và Phillips, vận dụng vào tình huống Việt Nam 2020–2024.
+
+Buổi 8 đóng lại Chương 3 với câu hỏi tổng hợp: **làm thế nào Nhà nước phối hợp tài khoá và tiền tệ** trước cú sốc thực tế, đặc biệt trong bối cảnh **4 cú sốc liên tiếp 2020–2024** mà Việt Nam vừa trải qua.
 :::
 
-## Nội dung lý thuyết (thuyết giảng)
+## Lộ trình Buổi 8
 
-**3.3. Mô hình AD-AS**
+| Phần | Nội dung |
+|:---:|---|
+| **A** | Mô hình AD-AS — đường AD, LRAS, SRAS, cú sốc |
+| **B** | Đường Phillips — ngắn hạn vs dài hạn, NAIRU, stagflation |
+| **C** | Chính sách CSTK + CSTT — công cụ, số nhân, IT, Taylor rule |
+| **D** | Case Việt Nam — 4 cú sốc và policy mix 2022–2024 |
 
-- Đường tổng cầu (AD)
-- Đường tổng cung ngắn hạn (SRAS) và dài hạn (LRAS)
+## A. Mô hình AD-AS
 
-**Đường Phillips**
+### A.1. Đường tổng cầu (AD)
 
-- Phillips ngắn hạn
-- Phiên bản kỳ vọng (expectations-augmented)
-- NAIRU
+**AD** = tổng cầu nền kinh tế = $C + I + G + NX$ (trong KT đóng: $NX = 0$).
 
-**Chính sách**
+AD **dốc xuống** theo mức giá $P$ — ngược với đường cầu vi mô (cho 1 hàng hoá).
 
-- Tài khoá: chi tiêu, thuế, chuyển giao
-- Tiền tệ: lãi suất chính sách, OMO, dự trữ bắt buộc
-- **Phối hợp tài khoá – tiền tệ Việt Nam 2020–2024**
+**Ba kênh** AD dốc xuống:
 
-## Thực hành / Thảo luận
+| Kênh | Cơ chế |
+|---|---|
+| **Tiền tệ** (Keynes) | $P$ tăng → $M/P$ giảm → $r$ tăng → $I$ giảm |
+| **Tài sản** (Pigou) | $P$ tăng → giá trị thực của tài sản giảm → $C$ giảm |
+| **Xuất khẩu** (Mundell-Fleming) | $P$ tăng → hàng VN đắt hơn so với nước ngoài → $NX$ giảm |
 
-Phân tích **gói hỗ trợ Covid 2021–2022** qua khung AD-AS: cú sốc cầu hay cú sốc cung? Hiệu quả tài khoá vs tiền tệ?
+AD = **mở rộng IS-LM cho mức giá thay đổi**. Khi $P$ thay đổi, LM dịch (vì $M/P$ thay đổi), kéo theo $(Y, r)$ thay đổi → tổng hợp lại thành quan hệ $P–Y$ chính là đường AD.
 
-## Bài tập lớn / Tiểu luận
+### A.2. LRAS — Tổng cung dài hạn (cổ điển)
 
-**Tiểu luận giữa kỳ** — đánh giá chính sách vĩ mô Việt Nam 2020–2024 qua khung AD-AS và Phillips.
+**LRAS** (Long-Run Aggregate Supply) — **thẳng đứng** tại sản lượng tiềm năng $Y^*$.
 
-## Tự học có hướng dẫn
+**Quan điểm cổ điển**: trong dài hạn, mọi thị trường điều chỉnh hoàn hảo. $P$ và $W$ (lương) linh hoạt. Sản lượng tiềm năng $Y^*$ phụ thuộc:
 
-1. Hạn mức tín dụng: giữ hay bỏ?
-2. Phillips có còn áp dụng được ở VN sau 2008?
-3. Khi nào lạm phát mục tiêu là chính sách tốt cho VN?
+- Vốn $K$
+- Lao động $L$
+- Công nghệ $A$
+
+(Chính là các yếu tố trong Cobb-Douglas — đã học Buổi 6.)
+
+### A.3. SRAS — Tổng cung ngắn hạn (Keynes)
+
+**SRAS** (Short-Run Aggregate Supply) — **dốc lên**: $P$ tăng → $Y$ tăng (trong ngắn hạn).
+
+**Ba lý thuyết** giải thích SRAS dốc lên:
+
+| Lý thuyết | Cơ chế |
+|---|---|
+| **Sticky price** (Keynesian) | DN không thể điều chỉnh giá ngay (chi phí menu, hợp đồng) |
+| **Sticky wage** (Keynesian) | Lương cứng nhắc (hợp đồng dài, thoả thuận công đoàn) |
+| **Misperception** (Lucas) | DN nhầm tăng giá chung với tăng giá riêng → tăng sản xuất nhầm |
+
+**Hệ quả**: trong ngắn hạn, $P$ và $W$ cứng nhắc, $Y$ có thể *lệch* khỏi $Y^*$ — đây là chỗ chính sách kinh tế có *không gian tác động*.
+
+### A.4. Cân bằng AD-AS
+
+**Ngắn hạn**: AD và SRAS cắt nhau → $(P_1, Y_1)$.
+**Dài hạn**: AD và LRAS cắt nhau → $(P_2, Y^*)$.
+
+**Cân bằng dài hạn**: ba đường AD + SRAS + LRAS cùng giao tại $Y^*$.
+
+**Quá trình điều chỉnh**: nếu nền KT lệch khỏi $Y^*$, lực thị trường (lương và giá điều chỉnh dần) sẽ đưa về. Trong quá trình đó, $P$ và $Y$ biến động.
+
+### A.5. Cú sốc cầu và Cú sốc cung
+
+| Loại cú sốc | Nguyên nhân | Tác động ngắn hạn |
+|---|---|---|
+| **Cú sốc cầu** | AD dịch — do $C$, $I$, $G$, $M$ | $P$ và $Y$ cùng chiều |
+| **Cú sốc cung** | SRAS dịch — do giá đầu vào, năng suất | $P$ và $Y$ ngược chiều |
+
+**Ví dụ kinh điển**:
+
+- **Cú sốc cầu âm**: khủng hoảng tài chính 2008 → AD dịch trái → cả $P$ và $Y$ giảm.
+- **Cú sốc cung âm**: OPEC 1973-1979 → SRAS dịch trái → $P$ tăng, $Y$ giảm → **stagflation** (lạm phát + thất nghiệp cùng cao).
+
+**Stagflation** là *thách thức khó nhất* cho chính sách: chống lạm phát cần thắt chặt (làm thất nghiệp tệ hơn), kích cầu cần nới lỏng (làm lạm phát tệ hơn). Không có phương án "đẹp".
+
+## B. Đường Phillips
+
+### B.1. Phillips 1958
+
+**A. W. Phillips (1958)** — *The Relation between Unemployment and the Rate of Change of Money Wage Rates in the United Kingdom, 1861–1957*:
+
+- Nghiên cứu dữ liệu Anh **gần 100 năm** (1861–1957)
+- Phát hiện **tương quan ngược**: tỷ lệ thất nghiệp ↔ tốc độ tăng lương danh nghĩa
+- Sau này mở rộng: thất nghiệp ↔ lạm phát
+
+**Cơ sở lý thuyết**: thị trường lao động ngắn hạn.
+
+- Khi $U$ (thất nghiệp) thấp → khan hiếm LĐ → lương tăng → giá tăng (do chi phí tăng) → lạm phát cao
+- Khi $U$ cao → LĐ dư thừa → lương ổn định/giảm → lạm phát thấp
+
+**Hàm ý chính sách những năm 1960**: Nhà nước có thể *chọn* điểm trên đường Phillips — chấp nhận lạm phát cao để thất nghiệp thấp, hoặc ngược lại.
+
+### B.2. Phillips kỳ vọng — Friedman, Phelps
+
+**Milton Friedman (1968)** và **Edmund Phelps (1967)** đặt vấn đề: lựa chọn đó *chỉ tồn tại ngắn hạn*, do người LĐ và DN có *kỳ vọng lạm phát* $\pi^e$.
+
+**Đường Phillips mở rộng**:
+
+$$\pi = \pi^e - \beta(U - U^N)$$
+
+Trong đó $U^N$ = **NAIRU** (Non-Accelerating Inflation Rate of Unemployment) = thất nghiệp tự nhiên.
+
+**Khi $\pi^e$ thay đổi, Phillips ngắn hạn dịch**:
+
+- Nhà nước in tiền để giảm $U$ tạm thời → nhưng người dân học được → $\pi^e$ tăng → Phillips dịch lên
+- Để giữ $U$ thấp tiếp tục, phải in tiền nhiều hơn → lạm phát tăng tốc → mất kiểm soát
+
+**Phillips dài hạn**: **thẳng đứng tại NAIRU**.
+
+→ Không thể dùng lạm phát để giảm thất nghiệp dài hạn. **Tín nhiệm NHTW** là then chốt: nếu NHTW cam kết giữ lạm phát thấp và *được tin*, kỳ vọng giảm, Phillips ngắn hạn dịch xuống.
+
+### B.3. Stagflation và bài học chính sách
+
+**Stagflation 1970s** = lạm phát cao + thất nghiệp cao + tăng trưởng thấp.
+
+**Nguyên nhân**:
+
+- **Cú sốc cung dầu** (OPEC 1973, 1979) → SRAS dịch trái
+- **Chính sách kéo dài** kích cầu khi không nên — vì tin sai vào Phillips ổn định
+
+**Paul Volcker (Fed 1979-1987)**:
+
+- Nâng $r$ Fed Funds lên ~20% → suy thoái 1980-82 (thất nghiệp 10%+)
+- Nhưng *thành công kéo lạm phát từ 14% xuống 3%*
+- **Bài học**: chấp nhận đau ngắn hạn để tái lập tín nhiệm
+
+**Khung Inflation Targeting (IT)** ra đời từ đó (New Zealand 1989 tiên phong, lan rộng):
+- NHTW công khai mục tiêu lạm phát (vd: 2%)
+- Cam kết minh bạch, có thể bị giám sát
+- Giúp neo $\pi^e$ ở mức thấp ổn định
+
+## C. Chính sách tài khoá và tiền tệ
+
+### C.1. CSTK — công cụ và số nhân
+
+**Công cụ chính**: $G$ (chi tiêu công) và $T$ (thuế).
+
+**Tác động qua AD**:
+
+- Tăng $G$ → AD dịch phải
+- Giảm $T$ → $C$ tăng → AD dịch phải
+
+**Số nhân lý thuyết** (Keynesian Cross): $\frac{1}{1-\text{MPC}} \approx 2-4$.
+
+**Số nhân thực nghiệm**: thường thấp hơn, **0.5–1.5**. Lý do:
+
+| Yếu tố | Cơ chế giảm hiệu lực |
+|---|---|
+| **Crowding out** | $r$ tăng → $I$ giảm (đã học Buổi 7) |
+| **Ricardian equivalence** | Hộ gia đình tăng tiết kiệm để trả thuế tương lai (xem C.2) |
+| **Đầu tư công kém hiệu quả** | Lãng phí, tham nhũng làm $G$ không tạo cầu thực |
+| **Nhập khẩu** | Một phần $G$ chi cho hàng nhập → rò rỉ ra ngoài (chỉ trong KT mở) |
+
+### C.2. Ricardian equivalence và Ổn định tự động
+
+**Robert Barro (1974)** — *Are Government Bonds Net Wealth?* — đề xuất **Ricardian equivalence**:
+
+> Nếu hộ gia đình duy lý, họ biết rằng *nợ công ngày nay = thuế ngày mai*. Họ tăng tiết kiệm hôm nay để trả thuế tương lai → $C$ không tăng → CSTK kích cầu không hiệu quả.
+
+**Thực tế**: Ricardian equivalence không hoàn toàn đúng vì:
+- Hộ gia đình không hoàn toàn duy lý
+- Hạn chế thanh khoản (không thể vay/cho vay tự do)
+- Không bận tâm thế hệ sau
+
+Nhưng *hiệu ứng Ricardian* có tồn tại — giải thích phần nào vì sao số nhân thực thấp hơn lý thuyết.
+
+**Ổn định tự động (automatic stabilizers)**:
+
+- Thuế thu nhập lũy tiến: suy thoái → $Y$ giảm → thuế thu thấp hơn → cầu giữ được
+- BHXH, trợ cấp thất nghiệp: suy thoái → trợ cấp tăng → cầu giữ được
+
+**Việt Nam**: bộ ổn định tự động **yếu** — BHXH chưa phổ cập, thuế TNCN tỷ trọng nhỏ. Đây là lý do khi suy thoái, VN phải dùng *discretionary policy* mạnh hơn các nước phát triển.
+
+### C.3. CSTT — ba công cụ và Inflation Targeting
+
+**Mục tiêu chính của CSTT** (theo IT chuẩn): **ổn định giá cả**.
+
+**Ba công cụ truyền thống**:
+
+| Công cụ | Cơ chế |
+|---|---|
+| **OMO** (Open Market Operations) | NHTW mua/bán trái phiếu CP → tăng/giảm $M$ |
+| **Dự trữ bắt buộc** | Tỷ lệ % gửi tiền NHTW — tăng → giảm tín dụng |
+| **r chiết khấu** (discount rate) | $r$ NHTW cho NHTM vay |
+
+**Inflation Targeting**:
+
+- NHTW công bố **mục tiêu lạm phát** cụ thể (vd 2%)
+- **Neo kỳ vọng** $\pi^e$ → Phillips ngắn hạn ở vị trí thấp
+- **Minh bạch**: công bố biên bản họp, dự báo
+
+**Taylor rule** (John Taylor, 1993):
+
+$$i = \pi + 0.5(\pi - \pi^*) + 0.5(Y - Y^*)$$
+
+Quy tắc khuyến nghị $r$ chính sách dựa trên *độ lệch lạm phát* và *độ lệch sản lượng*. Đây là *guidance* cho NHTW hiện đại.
+
+### C.4. Đặc thù CSTT Việt Nam
+
+**NHNN Việt Nam** dùng **5 công cụ** (theo HCMA 2021):
+
+- Ba công cụ truyền thống (OMO, dự trữ bắt buộc, r chiết khấu)
+- **+ Hạn mức tín dụng** (room tín dụng)
+- **+ Chính sách tỷ giá** (sẽ học kỹ Chương 4)
+
+**Khác Fed (Mỹ)**: Fed có **dual mandate** — ổn định giá + tối đa hoá việc làm.
+**Khác ECB (EU)**: ECB có **single mandate** — chỉ ổn định giá.
+**NHNN VN**: **đa mục tiêu** — giá + tăng trưởng + tỷ giá → khó cân bằng.
+
+**Tranh luận lớn 2023–2025**: *có nên bỏ hạn mức tín dụng?*
+- Ủng hộ giữ: cần kiểm soát chất lượng tín dụng, phòng bong bóng tài sản
+- Ủng hộ bỏ: bóp méo cạnh tranh giữa NHTM, hạn chế hiệu lực CSTT chuẩn
+
+## D. Case Việt Nam 2020–2024
+
+### D.1. Bốn cú sốc liên tiếp
+
+| # | Năm | Cú sốc | Phân loại |
+|---|:---:|---|---|
+| **1** | 2020-2021 | **COVID-19** | Cú sốc cầu lớn (giảm tiêu dùng, đầu tư) |
+| **2** | 2022 | **Nga–Ukraine** → giá dầu, khí, thực phẩm | Cú sốc cung |
+| **3** | 2022-2023 | **Fed tăng r quyết liệt** (~5pp trong 18 tháng) | Áp lực tỷ giá VND, dòng vốn |
+| **4** | 2022-2024 | **Suy giảm bất động sản** | Cú sốc tài chính + cầu nội địa |
+
+Đây là **chuỗi cú sốc dài nhất kể từ 1997** mà nền kinh tế VN phải đối phó.
+
+### D.2. Policy mix Việt Nam 2022–2024
+
+| Trục | Hướng | Công cụ |
+|---|---|---|
+| **Tài khoá** | **Mở rộng** | Đầu tư công lớn (gói 350.000 tỷ), giảm VAT 2%, hỗ trợ DN |
+| **Tiền tệ** | **Thắt chặt nửa cuối 2022, nới dần 2023-2024** | Tăng lãi suất chính sách, can thiệp tỷ giá |
+
+**Đặc điểm**: phối hợp **expansion + tightening** — *không chuẩn sách giáo khoa* (sách thường khuyên cùng hướng).
+
+**Lý do phù hợp với VN**:
+- **Tài khoá mở rộng**: chống suy giảm cầu nội địa (BĐS, tiêu dùng)
+- **Tiền tệ thắt chặt**: bảo vệ tỷ giá VND trước Fed tăng r — tránh dòng vốn rút mạnh
+
+Đây là một bài học chính sách quan trọng: *khung lý thuyết là chuẩn, nhưng vận dụng phải đọc đúng bối cảnh*.
+
+::: {.callout-warning}
+## ✋ Bài tập thảo luận trên lớp
+
+Sử dụng khung **AD-AS** và **Phillips** để phân tích **gói hỗ trợ Covid 2021–2022** của Việt Nam:
+
+1. Cú sốc Covid là cú sốc cầu hay cung? AD/SRAS dịch hướng nào?
+2. Gói hỗ trợ là CSTK hay CSTT?
+3. Có hiệu quả hơn ở Việt Nam (Ricardian yếu, ổn định tự động yếu) so với Mỹ?
+4. So sánh quy mô gói VN (~5% GDP) với Mỹ (~30% GDP) và EU (~10% GDP). Bài học?
+:::
+
+## Tổng kết Buổi 8 — Năm điểm cốt lõi
+
+1. **AD-AS**: khung tổng hợp ngắn hạn vs dài hạn. SRAS dốc lên (cứng nhắc), LRAS thẳng đứng (cổ điển).
+2. **Phillips**: trade-off $U–\pi$ chỉ ngắn hạn. Dài hạn thẳng đứng tại NAIRU. Tín nhiệm NHTW then chốt.
+3. **CSTK**: kích cầu qua $G$, $T$; số nhân thực ~0.5–1.5 do crowding out + Ricardian.
+4. **CSTT**: 3 công cụ + IT + Taylor rule. NHNN VN có 5 công cụ và đa mục tiêu.
+5. **VN 2022-2024**: policy mix expansion + tightening — không chuẩn sách giáo khoa, phù hợp bối cảnh đa cú sốc.
+
+## Bài tập về nhà (chuẩn bị Buổi 9 — mở Chương 4)
+
+1. **Đọc** Mankiw chương về **kinh tế mở**.
+2. **Tự đọc** về **cán cân thanh toán (BoP)**.
+3. **Chuẩn bị 1 ví dụ chế độ tỷ giá VN** — neo theo USD, NEER VND, can thiệp 2022.
+4. **Đọc thêm** về **Mundell-Fleming**.
+
+::: {.callout-tip}
+## 🔧 Stata Lab 8 (bonus 5%)
+
+Bài này có lab **ước lượng đường Phillips Việt Nam 2010-2024** trong Stata: lấy dữ liệu CPI và unemployment từ GSO, vẽ scatter, ước lượng OLS, so sánh Phillips ngắn hạn từng giai đoạn.
+
+→ [**Bắt đầu Lab 8 — Đường Phillips Việt Nam**](../stata-lab/lab-08.qmd) *(~25 phút)*
+:::
 
 ## Đọc thêm
 
-- Mankiw, *Kinh tế học vĩ mô*, chương 14–15.
-- Báo cáo IMF Article IV về Việt Nam, phiên bản mới nhất.
-
-::: {.callout-warning appearance="simple"}
-## 🚧 Nội dung đang biên soạn
-
-Bài giảng buổi 08 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
-:::
+- Mankiw, *Kinh tế học vĩ mô* (2026), Chương 14–15 (AD-AS, Phillips).
+- **Phillips, A. W.** (1958) — bài báo gốc.
+- **Friedman, M.** (1968), *The Role of Monetary Policy*.
+- **Taylor, J. B.** (1993), *Discretion versus Policy Rules in Practice*.
+- Báo cáo **IMF Article IV** về Việt Nam — phiên bản mới nhất.
+- Báo cáo NHNN — chính sách tiền tệ 2022–2024.
 
 ---
 
-← *Buổi trước*: [Buổi 7](buoi-07.qmd) *Buổi tiếp theo*: [Buổi 9](buoi-09.qmd) →
+← *Buổi trước*: [Buổi 7 — Mô hình IS-LM](buoi-07.qmd) | *Buổi tiếp theo*: [Buổi 9 — Cán cân thanh toán và Tỷ giá](buoi-09.qmd) →

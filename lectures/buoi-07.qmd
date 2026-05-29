@@ -1,50 +1,260 @@
 ---
-title: "Buổi 07 — Mô hình IS-LM"
-subtitle: "Đường IS, LM, cân bằng, crowding out, bẫy thanh khoản"
-reading-time: "Chương 3"
+title: "Buổi 7 — Mô hình IS-LM"
+subtitle: "Hicks 1937 · Đường IS · Đường LM · Crowding out · Bẫy thanh khoản"
+reading-time: "Chương 3 · ~50 phút đọc"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Đóng góp CLO
 
-**CLO2, CLO3 — Vận dụng IS-LM phân tích chính sách**
+**CLO2, CLO3** — Vận dụng khung IS-LM để phân tích phối hợp chính sách tài khoá và tiền tệ.
+
+Buổi 6 trình bày *mục tiêu* vĩ mô. Buổi 7 giới thiệu **khung phân tích cốt lõi** để hiểu cách *chính sách* tác động lên các mục tiêu đó. Đây là **xương sống** của Chương 3.
 :::
 
-## Nội dung lý thuyết (thuyết giảng)
+## Lộ trình Buổi 7
 
-**3.2. Mô hình IS-LM**
+| Phần | Nội dung |
+|:---:|---|
+| **A** | Ôn Keynesian Cross — vì sao cần IS-LM |
+| **B** | Đường IS — thị trường hàng hoá |
+| **C** | Đường LM — thị trường tiền tệ |
+| **D** | Cân bằng IS-LM và tác động chính sách |
 
-- Đường **IS**: cân bằng thị trường hàng hoá
-- Đường **LM**: cân bằng thị trường tiền tệ
-- Cân bằng đồng thời
-- **Crowding out** — hiệu ứng lấn át
-- **Bẫy thanh khoản** (liquidity trap)
+## A. Mở rộng từ Keynesian Cross
 
-## Thực hành / Thảo luận
+### A.1. Ôn Keynesian Cross
 
-Vẽ IS-LM cho **phản ứng NHNN trước cú sốc cung 2022** (giá xăng tăng). Mô phỏng **Bộ Tài chính** và **NHNN** ra quyết định trong 3 vòng kịch bản.
+Mô hình Keynesian Cross (đã học ở Kinh tế Vĩ mô) giả định lãi suất $r$ **cố định**. Trong nền kinh tế đóng:
 
-## Bài tập lớn / Tiểu luận
+$$Y = C + I + G$$
 
-Báo cáo phân tích một mục tiêu vĩ mô VN giai đoạn 2020–2024 (Phần 2): bổ sung IS-LM.
+Với hàm tiêu dùng tuyến tính:
 
-## Tự học có hướng dẫn
+$$C = C_0 + \text{MPC} \cdot (Y - T)$$
 
-1. Khi nào CSTK hiệu quả hơn CSTT?
-2. Việt Nam có ở bẫy thanh khoản không?
-3. Crowding out có quan trọng ở nền kinh tế nhỏ mở?
+Trong đó **MPC** = Marginal Propensity to Consume (xu hướng tiêu dùng biên).
+
+**Số nhân chi tiêu (multiplier)** = $\frac{1}{1 - \text{MPC}}$.
+
+Ví dụ với MPC = 0.6: số nhân = $\frac{1}{0.4} = 2.5$. Tăng G thêm 100 → Y tăng 250.
+
+### A.2. Vì sao cần IS-LM?
+
+Hạn chế của Keynesian Cross: **giả định r cố định**.
+
+Trong thực tế:
+
+- $r$ thay đổi khi $Y$ thay đổi (cầu tiền)
+- $r$ thay đổi → $I$ thay đổi → AD thay đổi
+- Vòng phản hồi này không có trong Keynesian Cross
+
+**John Hicks (1937)** — *Mr. Keynes and the Classics: A Suggested Interpretation* — đề xuất khung IS-LM tổng hợp hai thị trường:
+
+- **Thị trường hàng hoá** → đường **IS** (Investment-Saving)
+- **Thị trường tiền tệ** → đường **LM** (Liquidity-Money)
+
+Khung này trở thành **xương sống của vĩ mô học** cho đến tận hôm nay — dù đã có nhiều mô hình hiện đại hơn (DSGE, New Keynesian), IS-LM vẫn là *ngôn ngữ chung* để bàn về chính sách.
+
+## B. Đường IS — Thị trường hàng hoá
+
+### B.1. Cầu thay đổi khi lãi suất thay đổi
+
+**Đầu tư I = f(r)** — phụ thuộc *âm* vào lãi suất:
+
+- $r$ tăng → chi phí vay tăng → $I$ giảm
+- $r$ giảm → chi phí vay giảm → $I$ tăng
+
+Vì $I$ là một thành phần của AD:
+
+$$AD = C + I(r) + G$$
+
+→ Quan hệ $r$ và $Y$ ngược chiều: **đường IS dốc xuống** trong mặt phẳng $(Y, r)$.
+
+### B.2. Suy ra đường IS
+
+Bắt đầu từ cân bằng thị trường hàng hoá:
+
+$$Y = C(Y - T) + I(r) + G$$
+
+**Cách suy ra**:
+
+- Tại $r_1$ (thấp): $I_1$ cao → cầu cao → $Y_1$ cao
+- Tại $r_2$ (cao): $I_2$ thấp → cầu thấp → $Y_2$ thấp
+- Nối các điểm $(Y_1, r_1)$, $(Y_2, r_2)$, ... → **đường IS dốc xuống**
+
+**Ý nghĩa**: mỗi điểm trên IS là một cặp $(Y, r)$ tại đó **thị trường hàng hoá cân bằng** (tổng cầu = tổng cung).
+
+### B.3. Trượt dọc IS vs Dịch chuyển IS
+
+| Loại | Nguyên nhân | Tác động |
+|---|---|---|
+| **Trượt dọc IS** | $r$ thay đổi → $I$ thay đổi → $Y$ thay đổi | Di chuyển dọc đường IS hiện có |
+| **Dịch IS sang phải** | $G$ tăng *hoặc* $T$ giảm *hoặc* $I_0$ tăng tự định | Kích thích cầu, $Y$ tăng tại mọi mức $r$ |
+| **Dịch IS sang trái** | $G$ giảm *hoặc* $T$ tăng *hoặc* niềm tin DN suy giảm | Thắt chặt tài khoá, $Y$ giảm tại mọi mức $r$ |
+
+**Lưu ý**: thay đổi $G$, $T$ = **chính sách tài khoá (CSTK)** → tác động qua IS.
+
+## C. Đường LM — Thị trường tiền tệ
+
+### C.1. Cân bằng cung-cầu tiền
+
+**Cầu tiền** $L(Y, r)$ — phụ thuộc:
+
+- $Y$ tăng → giao dịch nhiều hơn → cầu tiền $L$ tăng
+- $r$ tăng → chi phí cơ hội của giữ tiền tăng → $L$ giảm (chuyển sang tài sản sinh lãi)
+
+**Cung tiền** = $M/P$ — do NHTW quyết định (giả định $P$ cố định ngắn hạn).
+
+**Cân bằng thị trường tiền tệ**:
+
+$$\frac{M}{P} = L(Y, r)$$
+
+### C.2. Suy ra đường LM
+
+**Cách suy ra**:
+
+- Tại $r_1$ (thấp): cầu tiền cao → cần $Y_1$ (thấp) để cân bằng với cung cố định
+- Tại $r_2$ (cao hơn): cầu tiền giảm → cần $Y_2$ (cao hơn) bù lại
+- Nối các điểm → **đường LM dốc lên**
+
+**Logic**: lãi suất cao làm cầu tiền giảm — cần thu nhập cao hơn để bù lại sao cho cầu tiền = cung tiền cố định.
+
+**Ý nghĩa**: mỗi điểm trên LM là một cặp $(Y, r)$ tại đó **thị trường tiền tệ cân bằng**.
+
+### C.3. Trượt dọc LM vs Dịch chuyển LM
+
+| Loại | Nguyên nhân | Tác động |
+|---|---|---|
+| **Trượt dọc LM** | $Y$ thay đổi → $r$ thay đổi | Di chuyển dọc đường LM hiện có |
+| **Dịch LM sang phải** | $M$ tăng (CSTT mở rộng) | $r$ giảm tại mọi mức $Y$ |
+| **Dịch LM sang trái** | $M$ giảm (CSTT thắt chặt) | $r$ tăng tại mọi mức $Y$ |
+
+**Lưu ý**: thay đổi $M$ = **chính sách tiền tệ (CSTT)** → tác động qua LM.
+
+## D. Cân bằng IS-LM và tác động chính sách
+
+### D.1. Cân bằng đồng thời
+
+Giao điểm IS và LM xác định $(Y^*, r^*)$ — tại đó **cả hai thị trường cùng cân bằng**.
+
+- $Y^*$: sản lượng cân bằng đồng thời
+- $r^*$: lãi suất cân bằng đồng thời
+
+Đây là khung phân tích **phản ứng chính sách** — bất kỳ thay đổi nào (CSTK, CSTT, cú sốc) đều dịch IS hoặc LM, dẫn đến $(Y^{**}, r^{**})$ mới.
+
+### D.2. Chính sách tài khoá (CSTK)
+
+**Tăng G** (chi tiêu chính phủ) → IS dịch sang phải.
+
+| Tác động | Cơ chế |
+|---|---|
+| $Y^*$ tăng | Cầu tăng (kích thích) |
+| $r^*$ tăng | Cầu tiền tăng (vì $Y$ tăng) → $r$ phải tăng để cân bằng cung tiền cố định |
+
+**Crowding out** = $r$ tăng → $I$ tư nhân *giảm* → tác động ròng của tăng G *yếu hơn* số nhân Keynesian Cross.
+
+> **Hệ quả thực tiễn**: 1 đồng chi tiêu công không tạo ra 1 đồng GDP — mà ít hơn, vì một phần đầu tư tư nhân bị "lấn át".
+
+### D.3. Chính sách tiền tệ (CSTT)
+
+**Tăng M** (cung tiền) → LM dịch sang phải.
+
+| Tác động | Cơ chế |
+|---|---|
+| $Y^*$ tăng | Đầu tư tăng (qua $r$ giảm) |
+| $r^*$ giảm | Cung tiền dồi dào |
+
+**Khác CSTK**: **không có crowding out**. CSTT kích thích đầu tư tư nhân thông qua hạ $r$.
+
+> **Hệ quả thực tiễn**: CSTT hoạt động *qua kênh đầu tư*. Hiệu quả phụ thuộc DN có **muốn vay** hay không (phụ thuộc niềm tin và cơ hội kinh doanh).
+
+### D.4. Crowding out — phân tích sâu
+
+**Mức độ crowding out** phụ thuộc **độ dốc của LM**:
+
+| Độ dốc LM | Crowding out |
+|---|---|
+| **LM dốc đứng** (cầu tiền cứng nhắc theo $r$) | Hoàn toàn — Y không tăng, chỉ r tăng |
+| **LM thoải** | Một phần — Y tăng nhưng ít hơn số nhân lý thuyết |
+| **LM nằm ngang** (bẫy thanh khoản — xem D.5) | Không có — Y tăng đầy đủ theo số nhân |
+
+**Bài học QLKT**: hiệu quả CSTK phụ thuộc *bối cảnh tiền tệ*. Khi LM ngang (lãi suất ≈ 0), CSTK *cực kỳ hiệu quả*. Khi LM dốc đứng, CSTK *gần như vô nghĩa*.
+
+### D.5. Bẫy thanh khoản (Liquidity Trap)
+
+Khi $r \approx 0$ và không thể âm (zero lower bound):
+
+- LM **nằm ngang**
+- Tăng $M$ → không hạ $r$ thêm được nữa → **CSTT mất tác dụng**
+- Tiền dư thừa được giữ dưới dạng tiền mặt thay vì tài sản sinh lãi
+
+**Lịch sử**:
+
+| Trường hợp | Bối cảnh |
+|---|---|
+| **Nhật Bản 1990s** | Krugman (1998) — *"It's Baaack: Japan's Slump and the Return of the Liquidity Trap"* |
+| **Mỹ, EU sau 2008** | Khủng hoảng tài chính → r chính sách = 0 |
+| **Mỹ, EU 2020–2021** | COVID-19 |
+
+**Giải pháp** trong bẫy thanh khoản:
+
+1. **CSTK mở rộng mạnh** (kích cầu tài khoá vì CSTT không có tác dụng)
+2. **CSTT phi truyền thống**: QE (Quantitative Easing — mua tài sản lâu hạn), forward guidance, mục tiêu lạm phát cao hơn để giảm $r$ thực
+
+### D.6. CSTK vs CSTT — bảng đối chiếu
+
+| | **CSTK (IS dịch)** | **CSTT (LM dịch)** |
+|---|---|---|
+| Công cụ | $G$, $T$ | $M$, $r$ chính sách |
+| Tác động $Y$ | Tăng | Tăng |
+| Tác động $r$ | Tăng | Giảm |
+| Crowding out | Có | Không |
+| Kênh tác động | Trực tiếp qua cầu | Gián tiếp qua đầu tư |
+| Hạn chế chính | Nợ công | Bẫy thanh khoản |
+| Tốc độ tác động | Chậm (cần lập kế hoạch, thông qua Quốc hội) | Nhanh (NHTW quyết định) |
+
+::: {.callout-warning}
+## ✋ Bài tập thảo luận trên lớp
+
+Phân tích **phản ứng NHNN trước cú sốc cung giá xăng dầu 2022** bằng khung IS-LM:
+
+1. Cú sốc cung tác động lên đường nào (IS hay LM)?
+2. NHNN có nên tăng $r$ (LM dịch trái) hay giảm $r$ (LM dịch phải)?
+3. Tác động lên $Y$ và lạm phát?
+4. So sánh với phản ứng của Fed cùng thời điểm.
+:::
+
+## Tổng kết Buổi 7 — Năm điểm cốt lõi
+
+1. **IS-LM (Hicks 1937)**: khung phân tích vĩ mô cốt lõi, kết hợp thị trường hàng hoá và thị trường tiền tệ.
+2. **Đường IS dốc xuống** — phản ánh trade-off giữa $r$ và $Y$ trên thị trường hàng hoá.
+3. **Đường LM dốc lên** — phản ánh quan hệ thuận $Y$–$r$ trên thị trường tiền tệ với cung tiền cố định.
+4. **CSTK**: $Y$ và $r$ cùng tăng; có **crowding out**.
+5. **CSTT**: $Y$ tăng, $r$ giảm; hạn chế bởi **bẫy thanh khoản** khi $r \approx 0$.
+
+## Bài tập về nhà (chuẩn bị Buổi 8)
+
+1. **Đọc** Mankiw, chương về **AD-AS**.
+2. **Tự đọc** về đường Phillips và NAIRU.
+3. **Chuẩn bị phân tích 1 chính sách vĩ mô VN** giai đoạn 2020-2024 (gói hỗ trợ Covid, đầu tư công, lãi suất chính sách).
+4. **Đọc thêm** về crowding out và bẫy thanh khoản (Krugman 1998 về Nhật Bản).
+
+::: {.callout-tip}
+## 🔧 Stata Lab 7 (bonus 5%)
+
+Bài này có lab **mô phỏng cân bằng IS-LM bằng số** trong Stata: cài tham số, vẽ hai đường, tìm $(Y^*, r^*)$, mô phỏng tác động của tăng $G$ và tăng $M$.
+
+→ [**Bắt đầu Lab 7 — Mô phỏng IS-LM**](../stata-lab/lab-07.qmd) *(~25 phút)*
+:::
 
 ## Đọc thêm
 
-- Mankiw, *Kinh tế học vĩ mô*, chương 11–12.
-- Blanchard (2020), chương 5.
-
-::: {.callout-warning appearance="simple"}
-## 🚧 Nội dung đang biên soạn
-
-Bài giảng buổi 07 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
-:::
+- Mankiw, *Kinh tế học vĩ mô* (2026), Chương 11–12 (IS-LM).
+- Blanchard (2020), Chương 5.
+- **Hicks, J. R.** (1937), *Mr. Keynes and the Classics* — bài báo gốc.
+- **Krugman, P.** (1998), *It's Baaack: Japan's Slump and the Return of the Liquidity Trap*.
 
 ---
 
-← *Buổi trước*: [Buổi 6](buoi-06.qmd) *Buổi tiếp theo*: [Buổi 8](buoi-08.qmd) →
+← *Buổi trước*: [Buổi 6 — Mục tiêu vĩ mô và Tăng trưởng dài hạn](buoi-06.qmd) | *Buổi tiếp theo*: [Buổi 8 — AD-AS, Phillips và Phối hợp chính sách](buoi-08.qmd) →
