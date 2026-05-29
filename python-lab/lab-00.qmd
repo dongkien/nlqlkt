@@ -62,10 +62,10 @@ Nếu không muốn cài gì:
 
 ## 2. Cài thêm các package cho kinh tế
 
-Mở **Jupyter Lab** → tạo notebook mới → trong cell đầu:
+**Trong Jupyter Lab** → tạo notebook mới → trong cell đầu:
 
 ```python
-# Cài package (chỉ chạy 1 lần)
+# Cài package (chỉ chạy 1 lần — chỉ dùng trong Jupyter)
 %pip install pandas numpy matplotlib seaborn statsmodels scikit-learn
 %pip install openpyxl       # đọc Excel .xlsx
 %pip install pyreadstat     # đọc Stata .dta
@@ -73,7 +73,15 @@ Mở **Jupyter Lab** → tạo notebook mới → trong cell đầu:
 %pip install wbdata         # World Bank API
 ```
 
-`%pip install ...` là cú pháp đặc biệt cho Jupyter — chạy `pip install` trong môi trường đúng.
+`%pip install ...` là **Jupyter magic command** — chạy `pip install` trong môi trường đúng. *Chỉ hoạt động trong notebook (`.ipynb`)*, không hoạt động trong file `.py` thuần.
+
+::: {.callout-tip appearance="simple"}
+**Nếu chạy từ Terminal** (file `.py`): dùng `pip install` trực tiếp trong bash (không phải Python):
+
+```bash
+pip install pandas numpy matplotlib seaborn statsmodels scikit-learn openpyxl pyreadstat linearmodels wbdata
+```
+:::
 
 Đợi vài phút. Sau khi cài xong, **restart kernel** (Kernel > Restart).
 
