@@ -266,7 +266,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../stata-lab/lab-09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab 09 — Tính NEER và REER VND</span></a>
+ <span class="menu-text">Lab 9 — Tính NEER và REER VND</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -296,7 +296,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../stata-lab/lab-14.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab 14 — Capstone — phân tích 1 chính sách</span></a>
+ <span class="menu-text">Lab 14 — Capstone: Phân tích 1 chính sách</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -317,15 +317,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Trong bài</h2>
    
   <ul>
-  <li><a href="#khung-lab-15" id="toc-khung-lab-15" class="nav-link active" data-scroll-target="#khung-lab-15">Khung Lab 15</a>
-  <ul class="collapse">
-  <li><a href="#bài-toán" id="toc-bài-toán" class="nav-link" data-scroll-target="#bài-toán">1. Bài toán</a></li>
-  <li><a href="#dữ-liệu-cần" id="toc-dữ-liệu-cần" class="nav-link" data-scroll-target="#dữ-liệu-cần">2. Dữ liệu cần</a></li>
-  <li><a href="#lệnh-stata-trọng-tâm" id="toc-lệnh-stata-trọng-tâm" class="nav-link" data-scroll-target="#lệnh-stata-trọng-tâm">3. Lệnh Stata trọng tâm</a></li>
-  <li><a href="#câu-hỏi-suy-nghĩ-sẽ-chi-tiết" id="toc-câu-hỏi-suy-nghĩ-sẽ-chi-tiết" class="nav-link" data-scroll-target="#câu-hỏi-suy-nghĩ-sẽ-chi-tiết">4. Câu hỏi suy nghĩ (sẽ chi tiết)</a></li>
-  </ul></li>
-  <li><a href="#deliverable-lab-15" id="toc-deliverable-lab-15" class="nav-link" data-scroll-target="#deliverable-lab-15">Deliverable Lab 15</a></li>
-  <li><a href="#tiêu-chí-chấm" id="toc-tiêu-chí-chấm" class="nav-link" data-scroll-target="#tiêu-chí-chấm">Tiêu chí chấm</a></li>
+  <li><a href="#cài-đặt-packages" id="toc-cài-đặt-packages" class="nav-link active" data-scroll-target="#cài-đặt-packages">1. Cài đặt packages</a></li>
+  <li><a href="#hồi-quy-mẫu" id="toc-hồi-quy-mẫu" class="nav-link" data-scroll-target="#hồi-quy-mẫu">2. Hồi quy mẫu</a></li>
+  <li><a href="#xuất-bảng-hồi-quy-bằng-outreg2" id="toc-xuất-bảng-hồi-quy-bằng-outreg2" class="nav-link" data-scroll-target="#xuất-bảng-hồi-quy-bằng-outreg2">3. Xuất bảng hồi quy bằng outreg2</a></li>
+  <li><a href="#xuất-bảng-bằng-esttab-đẹp-hơn" id="toc-xuất-bảng-bằng-esttab-đẹp-hơn" class="nav-link" data-scroll-target="#xuất-bảng-bằng-esttab-đẹp-hơn">4. Xuất bảng bằng esttab (đẹp hơn)</a></li>
+  <li><a href="#coefficient-plot-forest-plot" id="toc-coefficient-plot-forest-plot" class="nav-link" data-scroll-target="#coefficient-plot-forest-plot">5. Coefficient plot (forest plot)</a></li>
+  <li><a href="#xuất-bảng-descriptive-bằng-tabout" id="toc-xuất-bảng-descriptive-bằng-tabout" class="nav-link" data-scroll-target="#xuất-bảng-descriptive-bằng-tabout">6. Xuất bảng descriptive bằng tabout</a></li>
+  <li><a href="#vẽ-biểu-đồ-chuyên-nghiệp" id="toc-vẽ-biểu-đồ-chuyên-nghiệp" class="nav-link" data-scroll-target="#vẽ-biểu-đồ-chuyên-nghiệp">7. Vẽ biểu đồ chuyên nghiệp</a></li>
+  <li><a href="#xuất-ra-excel-bằng-putexcel" id="toc-xuất-ra-excel-bằng-putexcel" class="nav-link" data-scroll-target="#xuất-ra-excel-bằng-putexcel">8. Xuất ra Excel bằng putexcel</a></li>
+  <li><a href="#mẹo-trình-bày-kết-quả-stata" id="toc-mẹo-trình-bày-kết-quả-stata" class="nav-link" data-scroll-target="#mẹo-trình-bày-kết-quả-stata">9. Mẹo trình bày kết quả Stata</a></li>
+  <li><a href="#liên-hệ-thuyết-trình-buổi-15" id="toc-liên-hệ-thuyết-trình-buổi-15" class="nav-link" data-scroll-target="#liên-hệ-thuyết-trình-buổi-15">10. Liên hệ thuyết trình Buổi 15</a></li>
+  <li><a href="#kết-thúc-16-lab-dtu301" id="toc-kết-thúc-16-lab-dtu301" class="nav-link" data-scroll-target="#kết-thúc-16-lab-dtu301">🎉 Kết thúc 16 lab DTU301</a></li>
   </ul>
 </nav>
     </div>
@@ -335,7 +337,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-15.html">Lab 15 — Xuất bảng + biểu đồ cho thuyết trình</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Lab 15 — Xuất bảng + biểu đồ cho thuyết trình</h1>
-<p class="subtitle lead">Tương ứng Buổi 15: Trình bày kết quả</p>
+<p class="subtitle lead">Tương ứng Buổi 15: outreg2, coefplot, esttab — chuyên nghiệp hoá kết quả</p>
 </div>
 
 
@@ -362,120 +364,192 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Bài này áp dụng khái niệm chính từ <a href="../lectures/buoi-15.html">Buổi 15</a> vào dữ liệu thực tế Việt Nam.</p>
-<p><strong>Khái niệm Stata học</strong>: <code>outreg2, coefplot, esttab, putexcel</code></p>
+<p>Lab cuối cùng: xuất kết quả Stata ra <strong>Word/LaTeX/Excel</strong> đẹp dùng cho thuyết trình. Đây là kỹ năng <em>bắt buộc</em> khi viết khoá luận hoặc paper học thuật.</p>
+<p><strong>Khái niệm Stata học</strong>: <code>outreg2</code>, <code>esttab</code>, <code>coefplot</code>, <code>putexcel</code>, <code>tabout</code></p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>🚧 Lab đang biên soạn
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 15. Cấu trúc cố định theo template chuẩn của 16 lab.</p>
-</div>
-</div>
-<section id="khung-lab-15" class="level2">
-<h2 class="anchored" data-anchor-id="khung-lab-15">Khung Lab 15</h2>
-<section id="bài-toán" class="level3">
-<h3 class="anchored" data-anchor-id="bài-toán">1. Bài toán</h3>
-<p>Xuất kết quả ra Word/Excel/PDF format chuẩn</p>
+<section id="cài-đặt-packages" class="level2">
+<h2 class="anchored" data-anchor-id="cài-đặt-packages">1. Cài đặt packages</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 15 — DTU301 — Xuất bảng + biểu đồ</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span> <span class="ot">all</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">more</span> <span class="kw">off</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">using</span> <span class="st">"lab15_&lt;ten&gt;.log"</span>, <span class="kw">replace</span> <span class="bn">text</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>* Cài packages (chỉ chạy 1 lần)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="kw">ssc</span> install outreg2, <span class="kw">replace</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="kw">ssc</span> install estout, <span class="kw">replace</span>          <span class="co">// bao gồm esttab</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="kw">ssc</span> install coefplot, <span class="kw">replace</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">ssc</span> install tabout, <span class="kw">replace</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="dữ-liệu-cần" class="level3">
-<h3 class="anchored" data-anchor-id="dữ-liệu-cần">2. Dữ liệu cần</h3>
-<p>Dữ liệu từ Lab Capstone</p>
+<section id="hồi-quy-mẫu" class="level2">
+<h2 class="anchored" data-anchor-id="hồi-quy-mẫu">2. Hồi quy mẫu</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>* Dùng dataset auto có sẵn</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">sysuse</span> auto, <span class="kw">clear</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>* === 3 hồi quy ===</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">regress</span> price mpg</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="kw">estimates</span> <span class="kw">store</span> m1</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="kw">regress</span> price mpg <span class="kw">weight</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="kw">estimates</span> <span class="kw">store</span> m2</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="kw">regress</span> price mpg <span class="kw">weight</span> foreign</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="kw">estimates</span> <span class="kw">store</span> m3</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="lệnh-stata-trọng-tâm" class="level3">
-<h3 class="anchored" data-anchor-id="lệnh-stata-trọng-tâm">3. Lệnh Stata trọng tâm</h3>
-<p>Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 15 — DTU301</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>* Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span> <span class="ot">all</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">more</span> <span class="kw">off</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">using</span> <span class="st">"lab15_&lt;ten&gt;.log"</span>, <span class="kw">replace</span> <span class="bn">text</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>* === Tải dữ liệu ===</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>* (sẽ chi tiết khi có dataset thật)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>* === Phân tích ===</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>* Sử dụng: outreg2, coefplot, esttab, putexcel</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>* === Đóng <span class="fu">log</span> ===</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">close</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="xuất-bảng-hồi-quy-bằng-outreg2" class="level2">
+<h2 class="anchored" data-anchor-id="xuất-bảng-hồi-quy-bằng-outreg2">3. Xuất bảng hồi quy bằng outreg2</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>* === outreg2: xuất ra Word/LaTeX ===</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>outreg2 [m1 m2 m3] <span class="kw">using</span> <span class="st">"regression_results.doc"</span>, <span class="kw">replace</span> <span class="co">///</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="bn">title</span>(<span class="st">"Hồi quy giá xe theo các biến"</span>) <span class="co">///</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    addnote(<span class="st">"*** p&lt;0.01, ** p&lt;0.05, * p&lt;0.1"</span>) <span class="co">///</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">label</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Output: file <code>regression_results.doc</code> mở được bằng Word, bảng chuẩn học thuật.</p>
 </section>
-<section id="câu-hỏi-suy-nghĩ-sẽ-chi-tiết" class="level3">
-<h3 class="anchored" data-anchor-id="câu-hỏi-suy-nghĩ-sẽ-chi-tiết">4. Câu hỏi suy nghĩ (sẽ chi tiết)</h3>
-<ol type="1">
-<li>Câu hỏi mô tả dữ liệu</li>
-<li>Câu hỏi so sánh / xu hướng</li>
-<li>Câu hỏi liên hệ với lý thuyết</li>
-<li>Câu hỏi liên hệ với chính sách Việt Nam</li>
-<li>Câu hỏi mở rộng / phản biện</li>
-</ol>
+<section id="xuất-bảng-bằng-esttab-đẹp-hơn" class="level2">
+<h2 class="anchored" data-anchor-id="xuất-bảng-bằng-esttab-đẹp-hơn">4. Xuất bảng bằng esttab (đẹp hơn)</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>* === esttab: chuẩn LaTeX/HTML ===</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>esttab m1 m2 m3 <span class="kw">using</span> <span class="st">"regression_esttab.rtf"</span>, <span class="kw">replace</span> <span class="co">///</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>    <span class="bn">title</span>(<span class="st">"Hồi quy giá xe — esttab style"</span>) <span class="co">///</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    cells(b(<span class="kw">star</span> fmt(3)) se(par fmt(3))) <span class="co">///</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    starlevels(* 0.10 ** 0.05 *** 0.01) <span class="co">///</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">stats</span>(r2 <span class="kw">N</span>, labels(<span class="st">"R-squared"</span> <span class="st">"N"</span>)) <span class="co">///</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    <span class="kw">label</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 1</strong>: So sánh outreg2 vs esttab — bạn thấy bảng nào dễ đọc hơn?</p>
 </section>
+<section id="coefficient-plot-forest-plot" class="level2">
+<h2 class="anchored" data-anchor-id="coefficient-plot-forest-plot">5. Coefficient plot (forest plot)</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>* === coefplot: biểu đồ hệ số ===</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>coefplot m1 m2 m3, <span class="co">///</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">drop</span>(<span class="dt">_cons</span>) <span class="co">///</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="bn">title</span>(<span class="st">"Coefficient Plot — 3 mô hình hồi quy"</span>) <span class="co">///</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="bn">xtitle</span>(<span class="st">"Hệ số"</span>) <span class="co">///</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="bn">xline</span>(0, lcolor(<span class="kw">red</span>)) <span class="co">///</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="bn">legend</span>(<span class="bn">rows</span>(1)) <span class="co">///</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    graphregion(<span class="kw">color</span>(<span class="bn">white</span>))</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">export</span> <span class="st">"coefplot.png"</span>, <span class="kw">replace</span> <span class="kw">width</span>(1400)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 2</strong>: Coefficient plot có lợi gì so với bảng truyền thống?</p>
 </section>
-<section id="deliverable-lab-15" class="level2">
-<h2 class="anchored" data-anchor-id="deliverable-lab-15">Deliverable Lab 15</h2>
-<p>Nộp 3 file (như các lab trước):</p>
+<section id="xuất-bảng-descriptive-bằng-tabout" class="level2">
+<h2 class="anchored" data-anchor-id="xuất-bảng-descriptive-bằng-tabout">6. Xuất bảng descriptive bằng tabout</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>* === tabout: xuất <span class="kw">tabulate</span> ra file ===</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>tabout foreign <span class="kw">using</span> <span class="st">"tab_foreign.html"</span>, <span class="kw">replace</span> <span class="co">///</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    cells(freq col) <span class="kw">format</span>(0 1) <span class="co">///</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    style(html) <span class="co">///</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    h1(Nguồn gốc xe)</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>* Hoặc summary <span class="kw">stats</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="kw">tabstat</span> price mpg <span class="kw">weight</span>, <span class="kw">statistics</span>(<span class="kw">mean</span> <span class="fu">sd</span> <span class="fu">min</span> <span class="fu">max</span>) <span class="co">///</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    <span class="kw">columns</span>(<span class="kw">statistics</span>) <span class="co">///</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">save</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="vẽ-biểu-đồ-chuyên-nghiệp" class="level2">
+<h2 class="anchored" data-anchor-id="vẽ-biểu-đồ-chuyên-nghiệp">7. Vẽ biểu đồ chuyên nghiệp</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>* === Theme và style đẹp ===</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="dv">scheme</span> s2color</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>* Hoặc: <span class="kw">set</span> <span class="dv">scheme</span> white2 (cho slide thuyết trình)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>* === Scatter với marker tùy chỉnh ===</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="kw">twoway</span> (<span class="kw">scatter</span> price mpg <span class="kw">if</span> foreign == 0, <span class="co">///</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>        mcolor(<span class="st">"114 47 55"</span>) <span class="bn">msymbol</span>(<span class="bn">circle</span>)) <span class="co">///</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>       (<span class="kw">scatter</span> price mpg <span class="kw">if</span> foreign == 1, <span class="co">///</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>        mcolor(<span class="st">"0 88 163"</span>) <span class="bn">msymbol</span>(triangle)) <span class="co">///</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>       (<span class="kw">lfit</span> price mpg, lcolor(<span class="st">"46 125 80"</span>)), <span class="co">///</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>       <span class="bn">title</span>(<span class="st">"Giá xe theo MPG"</span>, <span class="kw">size</span>(medium)) <span class="co">///</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>       <span class="bn">subtitle</span>(<span class="st">"Phân biệt nội địa vs nhập khẩu"</span>, <span class="kw">size</span>(small)) <span class="co">///</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>       <span class="bn">xtitle</span>(<span class="st">"Mile per gallon"</span>) <span class="co">///</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>       <span class="bn">ytitle</span>(<span class="st">"Giá (USD)"</span>) <span class="co">///</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>       <span class="bn">legend</span>(<span class="kw">label</span>(1 <span class="st">"Nội địa"</span>) <span class="kw">label</span>(2 <span class="st">"Nhập khẩu"</span>) <span class="kw">label</span>(3 <span class="st">"OLS fit"</span>) <span class="co">///</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>              <span class="bn">position</span>(2) <span class="bn">ring</span>(0) <span class="bn">cols</span>(1)) <span class="co">///</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>       graphregion(<span class="kw">color</span>(<span class="bn">white</span>)) <span class="co">///</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>       <span class="bn">plotregion</span>(<span class="bn">margin</span>(small))</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">export</span> <span class="st">"scatter_final.png"</span>, <span class="kw">replace</span> <span class="kw">width</span>(1400)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="xuất-ra-excel-bằng-putexcel" class="level2">
+<h2 class="anchored" data-anchor-id="xuất-ra-excel-bằng-putexcel">8. Xuất ra Excel bằng putexcel</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>* === Tạo file Excel có nhiều sheets ===</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>putexcel <span class="kw">set</span> <span class="st">"results.xlsx"</span>, <span class="kw">replace</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>putexcel A1 = <span class="st">"Kết quả phân tích DTU301"</span>, bold</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>putexcel A2 = <span class="st">"Lab 15 — Họ tên: &lt;điền&gt;"</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>* Sheet <span class="st">"Descriptive"</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>putexcel <span class="kw">set</span> <span class="st">"results.xlsx"</span>, sheet(<span class="st">"Descriptive"</span>) modify</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>putexcel A1 = (<span class="st">"Biến"</span>, <span class="st">"Mean"</span>, <span class="st">"SD"</span>, <span class="st">"Min"</span>, <span class="st">"Max"</span>), bold</span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>putexcel A2 = <span class="st">"Price"</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>putexcel B2 = formula(<span class="st">"=AVERAGE(...)"</span>)</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>* ... v.v</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="mẹo-trình-bày-kết-quả-stata" class="level2">
+<h2 class="anchored" data-anchor-id="mẹo-trình-bày-kết-quả-stata">9. Mẹo trình bày kết quả Stata</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>File</th>
-<th>Nội dung</th>
+<th>#</th>
+<th>Mẹo</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>lab15_&lt;tên&gt;.do</code></td>
-<td>Code + comment</td>
+<td>1</td>
+<td><strong>Bảng chỉ giữ kết quả quan trọng</strong> — không xuất tất cả output</td>
 </tr>
 <tr class="even">
-<td><code>lab15_&lt;tên&gt;.log</code></td>
-<td>Output</td>
+<td>2</td>
+<td><strong>Số liệu thập phân</strong>: 2-3 chữ số là đủ, đừng quá chi tiết</td>
 </tr>
 <tr class="odd">
-<td><code>lab15_&lt;tên&gt;.pdf</code> (1-2 trang)</td>
-<td>Trả lời câu hỏi + biểu đồ</td>
+<td>3</td>
+<td><strong>Sao biểu thị mức ý nghĩa</strong>: dùng quy ước rõ ràng</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><strong>Notes dưới bảng</strong>: ghi rõ standard errors, mức ý nghĩa</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><strong>Biểu đồ phải có</strong>: tiêu đề, nhãn trục, đơn vị, nguồn</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td><strong>Font + cỡ</strong>: đồng nhất trong toàn báo cáo</td>
+</tr>
+<tr class="odd">
+<td>7</td>
+<td><strong>Màu sắc</strong>: tối đa 3-4 màu — quá nhiều gây rối</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Tiêu đề email</strong>: <code>DTU301-LAB15-MSSV-HọTên</code></p>
 </section>
-<section id="tiêu-chí-chấm" class="level2">
-<h2 class="anchored" data-anchor-id="tiêu-chí-chấm">Tiêu chí chấm</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Tiêu chí</th>
-<th style="text-align: center;">Điểm</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Code chạy đúng, có log</td>
-<td style="text-align: center;">30%</td>
-</tr>
-<tr class="even">
-<td>Vận dụng đúng khái niệm Stata mới của bài</td>
-<td style="text-align: center;">25%</td>
-</tr>
-<tr class="odd">
-<td>Biểu đồ / bảng kết quả rõ ràng</td>
-<td style="text-align: center;">20%</td>
-</tr>
-<tr class="even">
-<td>Trả lời câu hỏi sâu, có liên hệ thực tiễn</td>
-<td style="text-align: center;">25%</td>
-</tr>
-</tbody>
-</table>
+<section id="liên-hệ-thuyết-trình-buổi-15" class="level2">
+<h2 class="anchored" data-anchor-id="liên-hệ-thuyết-trình-buổi-15">10. Liên hệ thuyết trình Buổi 15</h2>
+<p><strong>Câu hỏi 3-5</strong> (suy nghĩ + viết, 300 từ):</p>
+<ul>
+<li>Bạn dùng <code>outreg2</code> hay <code>esttab</code> cho slide thuyết trình? Tại sao?</li>
+<li>Trong slide chỉ có 5-10 giây để đọc — bảng nên <em>tối đa</em> bao nhiêu hàng/cột?</li>
+<li>Biểu đồ tốt cho slide khác biểu đồ tốt cho báo cáo — khác ở đâu?</li>
+<li>Có nên dùng <em>interactive plot</em> (plotly)? Khi nào?</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">close</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
-<p>← <em>Lab trước</em>: <a href="../stata-lab/lab-14.html">Lab 14</a> | <em>Đây là lab cuối.</em></p>
+</section>
+<section id="kết-thúc-16-lab-dtu301" class="level2">
+<h2 class="anchored" data-anchor-id="kết-thúc-16-lab-dtu301">🎉 Kết thúc 16 lab DTU301</h2>
+<p>Bạn đã hoàn thành <strong>Lab 0 → 15</strong> — học từ basics đến advanced. Tài sản kỹ năng:</p>
+<ul>
+<li>Cài Stata + do-file workflow</li>
+<li>Đọc/ghi/xử lý dữ liệu</li>
+<li>Phân tích descriptive + regression</li>
+<li>Mô phỏng (IS-LM, Pigou, PPF)</li>
+<li>Time series + panel</li>
+<li>Event study + before/after</li>
+<li>Xuất bảng + biểu đồ chuẩn học thuật</li>
+</ul>
+<p>Đây là <strong>hành trang kỹ năng dài hạn</strong> cho khoá luận, công việc, hoặc cao học.</p>
+<p><strong>Lời chia tay</strong>: Stata không phải mục đích — nó là <em>công cụ</em>. Mục đích là <em>hỏi câu hỏi tốt</em> và <em>trả lời bằng dữ liệu</em>.</p>
+<p>Chúc bạn thành công trong nghiên cứu và công việc về sau! 🎓</p>
+<hr>
+<p>← <em>Lab trước</em>: <a href="../stata-lab/lab-14.html">Lab 14 — Capstone</a> | <em>Đây là lab cuối của khoá học.</em></p>
 
 
 </section>

@@ -109,51 +109,84 @@
     "href": "lectures/buoi-10.html",
     "title": "Buổi 10 — Mô hình Mundell-Fleming",
     "section": "",
-    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO2, CLO3 — Phân tích chính sách dưới các chế độ tỷ giá",
+    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO2, CLO3 — Vận dụng Mundell-Fleming để phân tích chính sách dưới các chế độ tỷ giá.\nBuổi 7 trình bày IS-LM cho kinh tế đóng. Buổi 10 mở rộng cho kinh tế mở: thêm thị trường ngoại hối + dòng vốn quốc tế. Đây là khung cốt lõi để hiểu vì sao chính sách tài khoá và tiền tệ có hiệu lực khác nhau dưới hai chế độ tỷ giá.",
     "crumbs": [
       "Chương 4 — Vĩ mô (KT mở)",
       "Buổi 10 — Mô hình Mundell-Fleming"
     ]
   },
   {
-    "objectID": "lectures/buoi-10.html#nội-dung-lý-thuyết-thuyết-giảng",
-    "href": "lectures/buoi-10.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "objectID": "lectures/buoi-10.html#lộ-trình-buổi-10",
+    "href": "lectures/buoi-10.html#lộ-trình-buổi-10",
     "title": "Buổi 10 — Mô hình Mundell-Fleming",
-    "section": "Nội dung lý thuyết (thuyết giảng)",
-    "text": "Nội dung lý thuyết (thuyết giảng)\n4.2. Mô hình Mundell-Fleming\n\nBa phương trình: IS, LM, BP\nĐiều kiện Marshall-Lerner\nTác động chính sách tài khoá, tiền tệ và thương mại dưới:\n\nTỷ giá cố định\nTỷ giá thả nổi\n\n\nCases lịch sử\n\nHong Kong LERS (Linked Exchange Rate System)\nReaganomics đầu thập kỷ 1980\nERM 1992 — Black Wednesday và sự rút lui của Anh",
+    "section": "Lộ trình Buổi 10",
+    "text": "Lộ trình Buổi 10\n\n\n\nPhần\nNội dung\n\n\n\n\nA\nKhung Mundell-Fleming — lịch sử và 3 phương trình\n\n\nB\nIS-LM-BP cho kinh tế mở\n\n\nC\nTỷ giá cố định — hiệu lực CSTK vs CSTT\n\n\nD\nTỷ giá thả nổi + Case Hong Kong, Reagan, ERM 1992",
     "crumbs": [
       "Chương 4 — Vĩ mô (KT mở)",
       "Buổi 10 — Mô hình Mundell-Fleming"
     ]
   },
   {
-    "objectID": "lectures/buoi-10.html#thực-hành-thảo-luận",
-    "href": "lectures/buoi-10.html#thực-hành-thảo-luận",
+    "objectID": "lectures/buoi-10.html#a.-khung-mundell-fleming",
+    "href": "lectures/buoi-10.html#a.-khung-mundell-fleming",
     "title": "Buổi 10 — Mô hình Mundell-Fleming",
-    "section": "Thực hành / Thảo luận",
-    "text": "Thực hành / Thảo luận\nPhân tích chính sách tỷ giá Việt Nam 2022–2024 qua khung Mundell-Fleming; mô phỏng quyết định NHNN trước cú sốc Fed tăng lãi suất 200 bps.",
+    "section": "A. Khung Mundell-Fleming",
+    "text": "A. Khung Mundell-Fleming\n\nA.1. Vì sao cần Mundell-Fleming?\nHicks (1937) với IS-LM giải thích kinh tế đóng. Nhưng thực tế, mọi nền KT đều mở — có thương mại + dòng vốn quốc tế. IS-LM thuần không bắt được:\n\nTác động tỷ giá lên xuất khẩu ròng (NX)\nDòng vốn vào/ra theo chênh lệch lãi suất\nKhác biệt giữa các chế độ tỷ giá\n\nRobert Mundell và J. Marcus Fleming (1960s) phát triển khung MF kết hợp IS-LM với cán cân thanh toán (BP). Mundell sau này nhận Nobel Kinh tế 1999 vì đóng góp này.\nKhung MF là xương sống của vĩ mô kinh tế mở.\n\n\nA.2. Ba phương trình MF\n\\[\\begin{cases}\n\\text{IS}: \\quad Y = C(Y-T) + I(r) + G + NX(e) \\\\\n\\text{LM}: \\quad \\frac{M}{P} = L(Y, r) \\\\\n\\text{BP}: \\quad NX(e) + KA(r - r^*) = 0\n\\end{cases}\\]\nBa biến nội sinh: \\(Y\\) (sản lượng), \\(r\\) (lãi suất), \\(e\\) (tỷ giá).\nKhác IS-LM đóng:\n\nIS có thêm \\(NX(e)\\) — xuất khẩu ròng phụ thuộc tỷ giá thực\nBP là phương trình mới — cân bằng cán cân thanh toán\n\nCân bằng đồng thời ba thị trường: hàng hoá (IS) + tiền tệ (LM) + thanh toán (BP).\n\n\nA.3. Điều kiện Marshall-Lerner\nĐiều kiện Marshall-Lerner: tỷ giá tăng (devaluation) chỉ làm \\(NX\\) tăng nếu:\n\\[|\\eta_X| + |\\eta_M| &gt; 1\\]\nTrong đó: - \\(\\eta_X\\) = độ co dãn cầu nước ngoài cho XK - \\(\\eta_M\\) = độ co dãn cầu nội địa cho NK\nLogic: nếu cầu cứng nhắc, tăng giá NK không làm giảm NK đáng kể → NX xấu đi ngay sau devaluation. Phải đợi cầu điều chỉnh.\nJ-curve effect: NX ngắn hạn giảm trước, tăng sau. Hình dạng giống chữ J.\nViệt Nam: phụ thuộc NK nguyên liệu lớn (~60% nội địa hoá ô tô là NK). Marshall-Lerner có thể không nắm trong ngắn hạn — devaluation VND chưa chắc cải thiện thương mại nhanh.\n(Sinh viên cử nhân: học khái niệm, không cần derivation chi tiết.)",
     "crumbs": [
       "Chương 4 — Vĩ mô (KT mở)",
       "Buổi 10 — Mô hình Mundell-Fleming"
     ]
   },
   {
-    "objectID": "lectures/buoi-10.html#bài-tập-lớn-tiểu-luận",
-    "href": "lectures/buoi-10.html#bài-tập-lớn-tiểu-luận",
+    "objectID": "lectures/buoi-10.html#b.-is-lm-bp-cho-kinh-tế-mở",
+    "href": "lectures/buoi-10.html#b.-is-lm-bp-cho-kinh-tế-mở",
     "title": "Buổi 10 — Mô hình Mundell-Fleming",
-    "section": "Bài tập lớn / Tiểu luận",
-    "text": "Bài tập lớn / Tiểu luận\nBáo cáo phân tích chính sách về một vấn đề tỷ giá / dòng vốn VN (Phần 2): áp dụng Mundell-Fleming.",
+    "section": "B. IS-LM-BP cho kinh tế mở",
+    "text": "B. IS-LM-BP cho kinh tế mở\n\nB.1. Đường IS mở rộng\n\\[Y = C(Y-T) + I(r) + G + NX(e, Y)\\]\nSo với IS đóng, thêm \\(NX\\):\n\n\\(e\\) tăng → NX tăng (nếu Marshall-Lerner nắm) → đẩy IS sang phải\n\\(Y\\) tăng → NK tăng → NX giảm → tạo flatten cho IS\n\nIS mở dốc hơn IS đóng vì có “rò rỉ” qua nhập khẩu.\n\n\nB.2. Đường LM mở rộng\nLM hình thức giống đóng: \\(M/P = L(Y, r)\\).\nNhưng có khác biệt then chốt:\n\n\n\n\n\n\n\nChế độ tỷ giá\n\\(M\\)\n\n\n\n\nThả nổi\n\\(M\\) độc lập — NHTW quyết định\n\n\nCố định\n\\(M\\) nội sinh — NHTW phải mua/bán USD để giữ tỷ giá → \\(M\\) thay đổi\n\n\n\nĐây là điểm then chốt của Mundell-Fleming — chế độ tỷ giá quyết định NHTW có quyền tự chủ tiền tệ hay không.\n\n\nB.3. Đường BP\nBP = 0: cán cân thanh toán cân bằng — không có dòng tiền ròng vào/ra:\n\\[NX(e, Y) + KA(r - r^*) = 0\\]\nĐộ luân chuyển vốn \\(\\kappa\\) quyết định độ dốc BP:\n\n\n\n\n\n\n\n\n\\(\\kappa\\)\nMô tả\nĐộ dốc BP\n\n\n\n\n\\(\\kappa \\approx 0\\)\nVốn không di chuyển (kiểm soát chặt)\nBP dốc đứng\n\n\n\\(\\kappa\\) trung bình\nVốn di chuyển hạn chế\nBP nghiêng\n\n\n\\(\\kappa \\approx \\infty\\)\nVốn tự do hoàn toàn\nBP nằm ngang tại \\(r = r^*\\)\n\n\n\nMankiw đơn giản hoá: giả định \\(\\kappa \\approx \\infty\\) → BP nằm ngang. Sinh viên cử nhân học theo giả định này.\n\n\nB.4. Cân bằng IS-LM-BP\nBa đường giao tại một điểm \\((Y^*, r^*)\\):\n\nCân bằng nội: IS ∩ LM (thị trường hàng hoá + tiền tệ)\nCân bằng ngoại: BP = 0\nCùng cân bằng: ba đường cùng giao\n\nCơ chế tự động: nếu lệch khỏi BP, dòng tiền vào/ra làm \\(M\\) thay đổi (chế độ cố định) hoặc \\(e\\) thay đổi (thả nổi), kéo IS-LM về cân bằng BP.",
     "crumbs": [
       "Chương 4 — Vĩ mô (KT mở)",
       "Buổi 10 — Mô hình Mundell-Fleming"
     ]
   },
   {
-    "objectID": "lectures/buoi-10.html#tự-học-có-hướng-dẫn",
-    "href": "lectures/buoi-10.html#tự-học-có-hướng-dẫn",
+    "objectID": "lectures/buoi-10.html#c.-tỷ-giá-cố-định-hiệu-lực-chính-sách",
+    "href": "lectures/buoi-10.html#c.-tỷ-giá-cố-định-hiệu-lực-chính-sách",
     "title": "Buổi 10 — Mô hình Mundell-Fleming",
-    "section": "Tự học có hướng dẫn",
-    "text": "Tự học có hướng dẫn\n\nTại sao Hong Kong vẫn giữ được peg sau bao năm?\nReaganomics: bài học nào còn áp dụng được?\nERM 1992: nguyên nhân cốt lõi nào dẫn đến đổ vỡ?",
+    "section": "C. Tỷ giá cố định — Hiệu lực chính sách",
+    "text": "C. Tỷ giá cố định — Hiệu lực chính sách\n\nC.1. Đặc điểm chế độ cố định\nNHTW cam kết duy trì tỷ giá \\(e\\) ở mức nhất định. Khi có áp lực:\n\n\\(e\\) muốn tăng (VND yếu) → NHTW bán USD mua VND → \\(M\\) giảm\n\\(e\\) muốn giảm (VND mạnh) → NHTW mua USD bán VND → \\(M\\) tăng\n\nHệ quả: \\(M\\) nội sinh — không tự chủ.\n\n\nC.2. Hiệu lực CSTK dưới tỷ giá cố định\nTăng G → IS dịch phải → \\(Y\\) tăng, \\(r\\) tăng → vốn vào → áp lực \\(e\\) giảm (VND mạnh) → NHTW mua USD → \\(M\\) tăng → LM dịch phải → \\(r\\) về \\(r^*\\).\nKết quả:\n\n\\(Y\\) tăng mạnh (cả IS dịch + LM dịch)\n\\(r\\) không đổi (về \\(r^*\\))\n\\(e\\) giữ nguyên\n\\(M\\) tăng\n\n→ CSTK rất hiệu quả dưới tỷ giá cố định (không có crowding out).\n\n\nC.3. Hiệu lực CSTT dưới tỷ giá cố định\nTăng M → LM dịch phải → \\(r\\) giảm → vốn ra → áp lực \\(e\\) tăng (VND yếu) → NHTW bán USD mua VND → \\(M\\) giảm trở lại → LM dịch trái về ban đầu.\nKết quả:\n\n\\(Y\\) không đổi\n\\(r\\) về \\(r^*\\)\n\\(M\\) về ban đầu\n\n→ CSTT vô hiệu dưới tỷ giá cố định — NHTW mất tự chủ tiền tệ.\nĐây là tiền đề của Bộ ba bất khả thi (Buổi 11).",
+    "crumbs": [
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 10 — Mô hình Mundell-Fleming"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-10.html#d.-tỷ-giá-thả-nổi-cases-lịch-sử",
+    "href": "lectures/buoi-10.html#d.-tỷ-giá-thả-nổi-cases-lịch-sử",
+    "title": "Buổi 10 — Mô hình Mundell-Fleming",
+    "section": "D. Tỷ giá thả nổi + Cases lịch sử",
+    "text": "D. Tỷ giá thả nổi + Cases lịch sử\n\nD.1. Hiệu lực chính sách dưới tỷ giá thả nổi\n\n\n\n\n\n\n\n\n\nCSTK (Tăng G)\nCSTT (Tăng M)\n\n\n\n\nHiệu ứng đầu\nIS dịch phải, r tăng\nLM dịch phải, r giảm\n\n\nDòng vốn\nVào → e giảm (VND mạnh)\nRa → e tăng (VND yếu)\n\n\nNX\nGiảm (cancel out IS)\nTăng (reinforce LM)\n\n\nKết quả Y\nKhông đổi (crowded out hoàn toàn)\nTăng mạnh\n\n\n\nĐảo ngược so với tỷ giá cố định:\n\nThả nổi: CSTT mạnh, CSTK yếu\nCố định: CSTK mạnh, CSTT yếu\n\n\n\nD.2. Case 1 — Hong Kong LERS (Linked Exchange Rate System)\nBối cảnh: HKD peg cứng với USD từ 1983 (1 USD = 7.8 HKD).\nCơ chế: HKMA (Hong Kong Monetary Authority) cam kết mua/bán USD ở tỷ giá cố định. Dự trữ ngoại hối ~3x M3 — đảm bảo cam kết.\nHệ quả: HK mất hoàn toàn tự chủ tiền tệ — \\(r\\) HKD = \\(r\\) USD. Khi Fed tăng r, HK phải theo.\nBài học: peg cứng + vốn tự do = mất CSTT. HK chấp nhận trade-off này để duy trì vị thế trung tâm tài chính quốc tế.\n\n\nD.3. Case 2 — Reaganomics đầu 1980s\nBối cảnh: Mỹ chế độ thả nổi. Reagan đề xuất:\n\nCSTK mở rộng: giảm thuế lớn, tăng chi quốc phòng\nCSTT thắt chặt (Volcker): chống lạm phát stagflation\n\nKết quả MF dự đoán:\n\nCSTK mở rộng → IS dịch phải → r tăng → USD lên giá mạnh\nUSD mạnh → NX giảm (deficit thương mại lớn)\nCSTK vô hiệu một phần do crowding out qua NX\n\nThực tế: đúng như MF dự đoán. USD lên giá ~50% so với rổ chính 1980-1985. Twin deficits (CA + budget) xuất hiện.\nPlaza Accord (1985): G5 thoả thuận làm yếu USD có phối hợp.\n\n\nD.4. Case 3 — ERM 1992 (Black Wednesday)\nBối cảnh: European Exchange Rate Mechanism (1979) — các nước EU peg tỷ giá với nhau, mục tiêu cuối là Euro.\n1992: Đức tăng r mạnh (sau khi tái thống nhất) → các nước EU phải theo để giữ peg → nhưng kinh tế của họ cần r thấp hơn.\nAnh: George Soros và quỹ Quantum tin Anh không thể giữ peg lâu → bán khống GBP với quy mô khổng lồ. Bank of England cố chống, mất hàng tỷ GBP dự trữ trong 1 ngày.\nKết quả “Black Wednesday” 16/9/1992: - Anh rút khỏi ERM, GBP thả nổi và mất giá - Soros lãi ~1 tỷ USD trong 1 ngày - Italy cũng rút theo\nBài học: peg + vốn tự do + chính sách độc lập = không tồn tại lâu nếu thị trường nghi ngờ. Đây là tiền đề thực nghiệm cho Trilemma.\n\n\n\n\n\n\nWarning✋ Bài tập thảo luận trên lớp\n\n\n\nPhân tích chính sách tỷ giá Việt Nam 2022 qua khung Mundell-Fleming:\n\nVN crawl-like ≈ tỷ giá cố định mềm.\nFed tăng r 200 bps → áp lực gì với VND?\nNHNN bán USD bảo vệ tỷ giá → \\(M\\) thay đổi ra sao?\nCSTT VN có còn tự chủ năm 2022 không?",
+    "crumbs": [
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 10 — Mô hình Mundell-Fleming"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-10.html#tổng-kết-buổi-10-năm-điểm-cốt-lõi",
+    "href": "lectures/buoi-10.html#tổng-kết-buổi-10-năm-điểm-cốt-lõi",
+    "title": "Buổi 10 — Mô hình Mundell-Fleming",
+    "section": "Tổng kết Buổi 10 — Năm điểm cốt lõi",
+    "text": "Tổng kết Buổi 10 — Năm điểm cốt lõi\n\nMundell-Fleming = IS-LM-BP, ba phương trình, ba biến nội sinh (Y, r, e).\nMarshall-Lerner: \\(|\\eta_X| + |\\eta_M| &gt; 1\\) để devaluation cải thiện NX. VN có thể không thoả ngắn hạn.\nTỷ giá cố định: CSTK rất hiệu quả, CSTT vô hiệu.\nTỷ giá thả nổi: CSTT rất hiệu quả, CSTK bị crowding out qua NX.\nCases: HK LERS (mất tự chủ tiền tệ để giữ peg), Reaganomics (twin deficits), ERM 1992 (Soros vs BoE).",
+    "crumbs": [
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 10 — Mô hình Mundell-Fleming"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-10.html#bài-tập-về-nhà-chuẩn-bị-buổi-11",
+    "href": "lectures/buoi-10.html#bài-tập-về-nhà-chuẩn-bị-buổi-11",
+    "title": "Buổi 10 — Mô hình Mundell-Fleming",
+    "section": "Bài tập về nhà (chuẩn bị Buổi 11)",
+    "text": "Bài tập về nhà (chuẩn bị Buổi 11)\n\nĐọc Mankiw chương về Bộ ba bất khả thi (Trilemma).\nTự đọc về Mundell 1963 và sterilization.\nChuẩn bị 1 ví dụ về vị trí Việt Nam trong Trilemma.\nĐọc thêm về Khủng hoảng châu Á 1997.\n\n\n\n\n\n\n\nTip🔧 Stata Lab 10 (bonus 5%)\n\n\n\nBài này có lab phân tích Mundell-Fleming bằng dữ liệu lịch sử: Hong Kong, Mỹ thời Reagan, Anh ERM 1992. Tính BoP, tỷ giá, đo tác động của các cú sốc.\n→ Bắt đầu Lab 10 — Mundell-Fleming bằng dữ liệu lịch sử (~25 phút)",
     "crumbs": [
       "Chương 4 — Vĩ mô (KT mở)",
       "Buổi 10 — Mô hình Mundell-Fleming"
@@ -164,7 +197,7 @@
     "href": "lectures/buoi-10.html#đọc-thêm",
     "title": "Buổi 10 — Mô hình Mundell-Fleming",
     "section": "Đọc thêm",
-    "text": "Đọc thêm\n\nMankiw, Kinh tế học vĩ mô, chương 20.\nBlanchard (2020), chương 19–20.\n\n\n\n\n\n\n\nWarning🚧 Nội dung đang biên soạn\n\n\n\nBài giảng buổi 10 hiện ở dạng dàn ý theo đề cương DTU301. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.\n\n\n\n← Buổi trước: Buổi 9 Buổi tiếp theo: Buổi 11 →",
+    "text": "Đọc thêm\n\nMankiw, Kinh tế học vĩ mô, chương 20 (Mundell-Fleming).\nBlanchard (2020), chương 19–20.\nMundell, R. (1963), Capital Mobility and Stabilization Policy under Fixed and Flexible Exchange Rates.\nKrugman, P. (1979), A Model of Balance of Payments Crises.\nInside the Black Box: Currency Crises — review về Soros và ERM.\n\n\n← Buổi trước: Buổi 9 — BoP và Tỷ giá | Buổi tiếp theo: Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997 →",
     "crumbs": [
       "Chương 4 — Vĩ mô (KT mở)",
       "Buổi 10 — Mô hình Mundell-Fleming"
@@ -274,7 +307,7 @@
     "href": "lectures/index.html",
     "title": "Bài giảng",
     "section": "",
-    "text": "Toàn bộ 15 buổi tổ chức theo 5 chương + Seminar tổng hợp. Mỗi buổi có cấu trúc thống nhất theo đề cương DTU301:\n\nNội dung lý thuyết (thuyết giảng)\nThực hành / Thảo luận trên lớp\nBài tập lớn / Tiểu luận\nTự học có hướng dẫn (kèm 3 câu hỏi định hướng)\nĐọc thêm (Mankiw, Buchholz, HCMA 2021, văn kiện XIV…)\n\n\n\n\n\n\n\nTipCách đọc hiệu quả\n\n\n\n\nTrước buổi: đọc Đọc thêm và trả lời các câu hỏi Tự học có hướng dẫn.\nSau buổi: hoàn thiện Bài tập lớn / Tiểu luận được giao.\nĐối chiếu CLO: mỗi buổi đóng góp vào những CLO khác nhau — xem header bài giảng.\n\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\nBuổi\n\n\n\nNội dung chính\n\n\n\nThuộc chương\n\n\n\n\n\n\n\n\nBuổi 1 — Nền tảng kinh tế học: Cơ sở khoa học và Triết lý chính sách\n\n\nKhan hiếm, PPF, thực chứng vs chuẩn tắc, ba triết lý Bentham–Kant–Rawls\n\n\n18 min\n\n\n\n\n\n\nBuổi 2 — Chức năng và Công cụ Quản lý Kinh tế\n\n\nKhái niệm · Năm chức năng · Ba nhóm công cụ · Vai trò Nhà nước · KTTT định hướng XHCN\n\n\n16 min\n\n\n\n\n\n\nBuổi 3 — Cấu trúc thị trường và Luật Cạnh tranh\n\n\nLược sử tư tưởng kinh tế · 4 cấu trúc thị trường · Lerner & HHI · Luật Cạnh tranh VN 2018\n\n\n12 min\n\n\n\n\n\n\nBuổi 4 — Thất bại thị trường và Cơ chế điều tiết\n\n\nBốn nguồn thất bại · Pigou & Coase · Điều tiết độc quyền tự nhiên · Thông tin bất cân xứng\n\n\n12 min\n\n\n\n\n\n\nBuổi 5 — Chính sách công nghiệp, Đổi mới sáng tạo và Quản trị doanh nghiệp\n\n\nHai trường phái CSCN · Schumpeter & NIC · DNNN/KTTN/FDI · Case ô tô và bán dẫn\n\n\n14 min\n\n\n\n\n\n\nBuổi 6 — Mục tiêu vĩ mô và Tăng trưởng dài hạn\n\n\nBốn mục tiêu · Phân phối thu nhập · PTBV · Cobb-Douglas + Solow + TFP\n\n\n12 min\n\n\n\n\n\n\nBuổi 7 — Mô hình IS-LM\n\n\nHicks 1937 · Đường IS · Đường LM · Crowding out · Bẫy thanh khoản\n\n\n9 min\n\n\n\n\n\n\nBuổi 8 — AD-AS, Phillips và Phối hợp chính sách tài khoá–tiền tệ\n\n\nMô hình AD-AS · Đường Phillips · CSTK và CSTT · Case VN 2020–2024\n\n\n12 min\n\n\n\n\n\n\nBuổi 09 — Cán cân thanh toán và tỷ giá\n\n\nBoP, NEER, REER, chế độ tỷ giá, PPP, UIP, CIP, dự trữ ngoại hối\n\n\n2 min\n\n\n\n\n\n\nBuổi 10 — Mô hình Mundell-Fleming\n\n\nBa phương trình IS-LM-BP; case Hong Kong LERS, Reaganomics, ERM 1992\n\n\n2 min\n\n\n\n\n\n\nBuổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997\n\n\nTrilemma; sterilization; VN trong Trilemma; định hướng XIV; bài học 1997\n\n\n2 min\n\n\n\n\n\n\nBuổi 12 — Quản trị địa phương và phân cấp tài khoá\n\n\nPhân cấp; Tiebout, Oates, Musgrave; cải cách 2025 (34 tỉnh, 2 cấp); PCI, PAPI, PAR Index\n\n\n2 min\n\n\n\n\n\n\nBuổi 13 — Phát triển kinh tế vùng\n\n\nMarshall, Krugman; 6 vùng KT-XH, 4 vùng KTTĐ; 4 cực động lực, 6 siêu dự án XIV\n\n\n2 min\n\n\n\n\n\n\nBuổi 14 — Chia sẻ thực tiễn\n\n\nMời chuyên gia chia sẻ; thảo luận chính sách; vận dụng nhóm\n\n\n2 min\n\n\n\n\n\n\nBuổi 15 — Tổng kết và đánh giá\n\n\nThuyết trình sinh viên; phản biện chéo; đánh giá tổng kết cuối kỳ\n\n\n2 min\n\n\n\n\n\n\nNo matching items"
+    "text": "Toàn bộ 15 buổi tổ chức theo 5 chương + Seminar tổng hợp. Mỗi buổi có cấu trúc thống nhất theo đề cương DTU301:\n\nNội dung lý thuyết (thuyết giảng)\nThực hành / Thảo luận trên lớp\nBài tập lớn / Tiểu luận\nTự học có hướng dẫn (kèm 3 câu hỏi định hướng)\nĐọc thêm (Mankiw, Buchholz, HCMA 2021, văn kiện XIV…)\n\n\n\n\n\n\n\nTipCách đọc hiệu quả\n\n\n\n\nTrước buổi: đọc Đọc thêm và trả lời các câu hỏi Tự học có hướng dẫn.\nSau buổi: hoàn thiện Bài tập lớn / Tiểu luận được giao.\nĐối chiếu CLO: mỗi buổi đóng góp vào những CLO khác nhau — xem header bài giảng.\n\n\n\n\n\n\n\n\n\n    \n      \n      \n    \n\n\n\n\n\n\nBuổi\n\n\n\nNội dung chính\n\n\n\nThuộc chương\n\n\n\n\n\n\n\n\nBuổi 1 — Nền tảng kinh tế học: Cơ sở khoa học và Triết lý chính sách\n\n\nKhan hiếm, PPF, thực chứng vs chuẩn tắc, ba triết lý Bentham–Kant–Rawls\n\n\n18 min\n\n\n\n\n\n\nBuổi 2 — Chức năng và Công cụ Quản lý Kinh tế\n\n\nKhái niệm · Năm chức năng · Ba nhóm công cụ · Vai trò Nhà nước · KTTT định hướng XHCN\n\n\n16 min\n\n\n\n\n\n\nBuổi 3 — Cấu trúc thị trường và Luật Cạnh tranh\n\n\nLược sử tư tưởng kinh tế · 4 cấu trúc thị trường · Lerner & HHI · Luật Cạnh tranh VN 2018\n\n\n12 min\n\n\n\n\n\n\nBuổi 4 — Thất bại thị trường và Cơ chế điều tiết\n\n\nBốn nguồn thất bại · Pigou & Coase · Điều tiết độc quyền tự nhiên · Thông tin bất cân xứng\n\n\n12 min\n\n\n\n\n\n\nBuổi 5 — Chính sách công nghiệp, Đổi mới sáng tạo và Quản trị doanh nghiệp\n\n\nHai trường phái CSCN · Schumpeter & NIC · DNNN/KTTN/FDI · Case ô tô và bán dẫn\n\n\n14 min\n\n\n\n\n\n\nBuổi 6 — Mục tiêu vĩ mô và Tăng trưởng dài hạn\n\n\nBốn mục tiêu · Phân phối thu nhập · PTBV · Cobb-Douglas + Solow + TFP\n\n\n12 min\n\n\n\n\n\n\nBuổi 7 — Mô hình IS-LM\n\n\nHicks 1937 · Đường IS · Đường LM · Crowding out · Bẫy thanh khoản\n\n\n9 min\n\n\n\n\n\n\nBuổi 8 — AD-AS, Phillips và Phối hợp chính sách tài khoá–tiền tệ\n\n\nMô hình AD-AS · Đường Phillips · CSTK và CSTT · Case VN 2020–2024\n\n\n12 min\n\n\n\n\n\n\nBuổi 9 — Cán cân thanh toán và Tỷ giá hối đoái\n\n\nBoP · NEER/REER · PPP, UIP, CIP · Chế độ tỷ giá IMF · Dự trữ ngoại hối VN\n\n\n10 min\n\n\n\n\n\n\nBuổi 10 — Mô hình Mundell-Fleming\n\n\nIS-LM-BP · Marshall-Lerner · Tỷ giá cố định vs thả nổi · Case HK, Reagan, ERM 1992\n\n\n9 min\n\n\n\n\n\n\nBuổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997\n\n\nTrilemma · Sterilization · Việt Nam trong tam giác · Bài học 1997\n\n\n10 min\n\n\n\n\n\n\nBuổi 12 — Quản trị địa phương và Phân cấp tài khoá\n\n\nKhái niệm · Tiebout-Oates-Musgrave · Cải cách 2025 · PCI, PAPI, PAR Index\n\n\n10 min\n\n\n\n\n\n\nBuổi 13 — Phát triển kinh tế vùng\n\n\nKhái niệm vùng · Lý thuyết NEG (Marshall, Krugman, FKV) · 6 vùng KT-XH · 4 cực động lực ĐH XIV\n\n\n10 min\n\n\n\n\n\n\nBuổi 14 — Seminar: Chia sẻ chuyên gia + Workshop\n\n\nChuyên gia thực tiễn · Thảo luận chính sách · Workshop nhóm\n\n\n8 min\n\n\n\n\n\n\nBuổi 15 — Thuyết trình + Tổng kết học phần\n\n\nTổng hợp 5 chương · Thuyết trình nhóm · Phản biện chéo · Bài học cuối khoá\n\n\n9 min\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "lectures/buoi-06.html",
@@ -488,133 +521,199 @@
   {
     "objectID": "lectures/buoi-09.html",
     "href": "lectures/buoi-09.html",
-    "title": "Buổi 09 — Cán cân thanh toán và tỷ giá",
+    "title": "Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái",
     "section": "",
-    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO2, CLO3 — Vận dụng khung tỷ giá",
+    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO2, CLO3 — Vận dụng khung BoP và lý thuyết tỷ giá vào tình huống Việt Nam.\nChương 4 mở rộng phân tích sang kinh tế mở. Buổi 9 đặt nền tảng: làm thế nào đo lường dòng tiền giữa Việt Nam và thế giới (BoP), và các quy luật chi phối tỷ giá (PPP, UIP, CIP).",
     "crumbs": [
       "Chương 4 — Vĩ mô (KT mở)",
-      "Buổi 09 — Cán cân thanh toán và tỷ giá"
+      "Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái"
     ]
   },
   {
-    "objectID": "lectures/buoi-09.html#nội-dung-lý-thuyết-thuyết-giảng",
-    "href": "lectures/buoi-09.html#nội-dung-lý-thuyết-thuyết-giảng",
-    "title": "Buổi 09 — Cán cân thanh toán và tỷ giá",
-    "section": "Nội dung lý thuyết (thuyết giảng)",
-    "text": "Nội dung lý thuyết (thuyết giảng)\n4.1. Cán cân thanh toán (BoP)\n\nCấu trúc: tài khoản vãng lai (CA), tài khoản tài chính (FA)\nĐồng nhất: (CA = S - I)\nBoP Việt Nam\n\nTỷ giá\n\nDanh nghĩa vs thực\nNEER (nominal effective exchange rate)\nREER (real effective exchange rate)\nCác chế độ tỷ giá theo IMF\n\nLý thuyết\n\nPPP (purchasing power parity)\nUIP (uncovered interest parity)\nCIP (covered interest parity)\nCarry trade\nDự trữ ngoại hối — vai trò",
+    "objectID": "lectures/buoi-09.html#lộ-trình-buổi-9",
+    "href": "lectures/buoi-09.html#lộ-trình-buổi-9",
+    "title": "Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái",
+    "section": "Lộ trình Buổi 9",
+    "text": "Lộ trình Buổi 9\n\n\n\nPhần\nNội dung\n\n\n\n\nA\nCán cân thanh toán — CA, FA, đồng nhất kế toán\n\n\nB\nTỷ giá hối đoái — danh nghĩa, thực, NEER, REER\n\n\nC\nCác quy luật ngang giá — PPP, UIP, CIP\n\n\nD\nDự trữ ngoại hối và chế độ tỷ giá IMF",
     "crumbs": [
       "Chương 4 — Vĩ mô (KT mở)",
-      "Buổi 09 — Cán cân thanh toán và tỷ giá"
+      "Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái"
     ]
   },
   {
-    "objectID": "lectures/buoi-09.html#thực-hành-thảo-luận",
-    "href": "lectures/buoi-09.html#thực-hành-thảo-luận",
-    "title": "Buổi 09 — Cán cân thanh toán và tỷ giá",
-    "section": "Thực hành / Thảo luận",
-    "text": "Thực hành / Thảo luận\nTính NEER và REER VND từ dữ liệu mới nhất; thảo luận VND có bị định giá quá cao/thấp so với rổ tiền tệ chính.",
+    "objectID": "lectures/buoi-09.html#a.-cán-cân-thanh-toán-bop",
+    "href": "lectures/buoi-09.html#a.-cán-cân-thanh-toán-bop",
+    "title": "Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái",
+    "section": "A. Cán cân thanh toán (BoP)",
+    "text": "A. Cán cân thanh toán (BoP)\n\nA.1. Khái niệm\nBalance of Payments (BoP) = ghi nhận tất cả giao dịch giữa cư dân Việt Nam và phần còn lại của thế giới trong một kỳ.\nTheo IMF BPM6 (Balance of Payments Manual, 6th edition):\n\nĐơn vị: tỷ USD/năm\nBa phần: Tài khoản vãng lai (CA) + Tài khoản tài chính (FA) + Sai số\nĐồng nhất kế toán kép: CA + FA + sai số = 0\n\nMọi giao dịch ghi hai lần — bên có và bên nợ — giống kế toán doanh nghiệp.\nViệt Nam 2024: thặng dư CA khoảng 4 tỷ USD (~1% GDP).\n\n\nA.2. Cấu trúc CA và FA\nTài khoản vãng lai (CA):\n\n\n\nMục\nNội dung\n\n\n\n\nThương mại hàng hoá\nXK − NK\n\n\nDịch vụ\nDu lịch, vận tải, dịch vụ tài chính\n\n\nThu nhập\nLương + lợi tức đầu tư\n\n\nChuyển giao\nKiều hối, viện trợ\n\n\n\nTài khoản tài chính (FA):\n\n\n\nMục\nNội dung\n\n\n\n\nFDI\nĐầu tư trực tiếp\n\n\nFPI\nĐầu tư danh mục (cổ phiếu, trái phiếu)\n\n\nOI\nĐầu tư khác (vay, tiền gửi)\n\n\nDự trữ ngoại hối\nThay đổi của NHTW\n\n\n\nĐồng nhất quan trọng: \\(FA + \\Delta\\text{Dự trữ} = -CA\\) — thặng dư CA phải được “đầu tư ra ngoài” hoặc tích trữ dự trữ.\n\n\nA.3. Đồng nhất CA = S − I\nTừ đẳng thức GDP: \\(Y = C + I + G + NX\\)\nSau khi sắp xếp lại (với \\(S = Y - C - G\\)):\n\\[\\boxed{S - I = NX}\\]\nTrong kinh tế mở, \\(NX \\approx CA\\). Vậy:\n\nCA dương = quốc gia tiết kiệm &gt; đầu tư → cho vay ròng ra nước ngoài\nCA âm = quốc gia đầu tư &gt; tiết kiệm → vay ròng từ nước ngoài\n\nViệt Nam: hiện CA dương ổn định → VN là người cho vay ròng. Điều này có vẻ ngược lý: VN cần vốn để phát triển — sao lại cho vay ra?\nLý do: VN tích trữ dự trữ ngoại hối nhanh + kiều hối lớn + xuất khẩu vượt nhập (nhờ FDI export-oriented).\n\n\nA.4. BoP Việt Nam 2020-2024\n\n\n\nYếu tố\nQuy mô gần đây\n\n\n\n\nCA / GDP\n+1% đến +4%\n\n\nXuất khẩu hàng hoá\n350–400 tỷ USD/năm\n\n\nNhập khẩu hàng hoá\n320–370 tỷ USD/năm\n\n\nFDI thực tế giải ngân\n20–25 tỷ USD/năm\n\n\nKiều hối\n15–19 tỷ USD/năm\n\n\nDự trữ NH\n~90–100 tỷ USD (đang giảm sau 2022)\n\n\n\nLưu ý: dự trữ NH giảm năm 2022–2023 do NHNN can thiệp bảo vệ tỷ giá VND trước Fed tăng r — đây là chi phí của chế độ tỷ giá quản lý.",
     "crumbs": [
       "Chương 4 — Vĩ mô (KT mở)",
-      "Buổi 09 — Cán cân thanh toán và tỷ giá"
+      "Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái"
     ]
   },
   {
-    "objectID": "lectures/buoi-09.html#bài-tập-lớn-tiểu-luận",
-    "href": "lectures/buoi-09.html#bài-tập-lớn-tiểu-luận",
-    "title": "Buổi 09 — Cán cân thanh toán và tỷ giá",
-    "section": "Bài tập lớn / Tiểu luận",
-    "text": "Bài tập lớn / Tiểu luận\nBáo cáo phân tích chính sách (4–6 trang) về một vấn đề tỷ giá hoặc dòng vốn Việt Nam (Phần 1).",
+    "objectID": "lectures/buoi-09.html#b.-tỷ-giá-hối-đoái",
+    "href": "lectures/buoi-09.html#b.-tỷ-giá-hối-đoái",
+    "title": "Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái",
+    "section": "B. Tỷ giá hối đoái",
+    "text": "B. Tỷ giá hối đoái\n\nB.1. Tỷ giá danh nghĩa\nTỷ giá danh nghĩa \\(E\\) = số đơn vị nội tệ đổi 1 đơn vị ngoại tệ.\nVí dụ Việt Nam 2024: \\(E = 25.000\\) VND/USD.\nQuy ước:\n\n\n\nThuật ngữ\nÝ nghĩa\n\n\n\n\nAppreciation (lên giá)\n\\(E\\) giảm — VND mạnh hơn\n\n\nDepreciation (mất giá)\n\\(E\\) tăng — VND yếu hơn\n\n\nRevaluation\nNHTW chính thức nâng giá (chế độ peg)\n\n\nDevaluation\nNHTW chính thức hạ giá (chế độ peg)\n\n\n\nNHTW can thiệp qua mua bán ngoại tệ — mua USD đẩy VND yếu, bán USD đẩy VND mạnh.\n\n\nB.2. Tỷ giá thực\nTỷ giá thực đo sức cạnh tranh hàng XK:\n\\[q = E \\cdot \\frac{P^*}{P}\\]\nTrong đó: - \\(E\\) = tỷ giá danh nghĩa - \\(P^*\\) = mức giá nước ngoài - \\(P\\) = mức giá trong nước\nDiễn giải:\n\n\n\nThay đổi\nTác động\n\n\n\n\n\\(q\\) tăng (real depreciation)\nHàng VN rẻ hơn → XK tăng\n\n\n\\(q\\) giảm (real appreciation)\nHàng VN đắt hơn → XK giảm\n\n\n\nTỷ giá thực quan trọng hơn danh nghĩa khi đánh giá cạnh tranh thương mại dài hạn.\n\n\nB.3. NEER và REER\nMột quốc gia giao thương với nhiều đối tác — đo tỷ giá với 1 đồng tiền (vd VND/USD) chưa đủ.\nNEER (Nominal Effective Exchange Rate): tỷ giá danh nghĩa hiệu dụng — trung bình có trọng số với rổ đối tác thương mại.\n\\[\\text{NEER} = \\prod_i E_i^{w_i}\\]\nREER (Real Effective Exchange Rate): NEER điều chỉnh theo chênh lệch giá:\n\\[\\text{REER} = \\text{NEER} \\cdot \\frac{P^*_{\\text{weighted}}}{P}\\]\nTại sao quan trọng: tránh phụ thuộc vào một đồng tiền (như USD). USD lên giá khắp thế giới không có nghĩa VND yếu với tất cả đối tác.\nViệt Nam: BIS tính REER theo 27 đối tác thương mại. Đây là chỉ số chuẩn để đánh giá VND đắt/rẻ.\n\n\nB.4. Chế độ tỷ giá theo IMF AREAER 2024\nIMF AREAER (Annual Report on Exchange Arrangements) phân loại các nước thành 10 chế độ, chia 3 nhóm:\n\n\n\n\n\n\n\n\nNhóm\nChế độ\nĐặc điểm\n\n\n\n\nCứng\nDollarization\nDùng ngoại tệ làm tiền tệ chính (Ecuador, Panama)\n\n\n\nCurrency board\nCam kết tỷ giá cố định + dự trữ 100% (HK với USD)\n\n\nMềm\nPeg cố định\nTỷ giá cố định với 1 đồng tiền\n\n\n\nCrawling peg\nTỷ giá điều chỉnh dần\n\n\n\nCrawl-like\nTỷ giá biến động trong dải hẹp, có xu hướng — Việt Nam thuộc nhóm này\n\n\n\nStabilized arrangement\nDao động ≤ 2% trong 6 tháng\n\n\nThả nổi\nManaged float\nNHTW can thiệp không định kỳ\n\n\n\nFree float\nHoàn toàn thị trường\n\n\n\nViệt Nam: theo AREAER 2024, VN được phân loại crawl-like — VND biến động trong biên độ hẹp (≤ ±5%), có xu hướng yếu dần so với USD, NHNN can thiệp khi cần.",
     "crumbs": [
       "Chương 4 — Vĩ mô (KT mở)",
-      "Buổi 09 — Cán cân thanh toán và tỷ giá"
+      "Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái"
     ]
   },
   {
-    "objectID": "lectures/buoi-09.html#tự-học-có-hướng-dẫn",
-    "href": "lectures/buoi-09.html#tự-học-có-hướng-dẫn",
-    "title": "Buổi 09 — Cán cân thanh toán và tỷ giá",
-    "section": "Tự học có hướng dẫn",
-    "text": "Tự học có hướng dẫn\n\nCA = S − I — hàm ý gì cho VN có thâm hụt CA?\nTại sao PPP thường không nắm trong ngắn hạn?\nDự trữ ngoại hối VN mức nào là đủ?",
+    "objectID": "lectures/buoi-09.html#c.-các-quy-luật-ngang-giá-ppp-uip-cip",
+    "href": "lectures/buoi-09.html#c.-các-quy-luật-ngang-giá-ppp-uip-cip",
+    "title": "Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái",
+    "section": "C. Các quy luật ngang giá — PPP, UIP, CIP",
+    "text": "C. Các quy luật ngang giá — PPP, UIP, CIP\n\nC.1. Purchasing Power Parity (PPP)\nPPP (Cassel 1916, 1922): trong dài hạn, tỷ giá điều chỉnh sao cho cùng một rổ hàng hoá có cùng giá khi quy về 1 đồng tiền.\nPPP tuyệt đối: \\[E = \\frac{P}{P^*} \\implies q = 1\\]\nPPP tương đối: thay đổi tỷ giá = chênh lệch lạm phát.\n\\[\\frac{\\Delta E}{E} = \\pi - \\pi^*\\]\nThực tế: PPP hiếm khi nắm trong ngắn hạn (vài năm) do: - Hàng phi mậu dịch (haircut, nhà ở) - Chi phí vận chuyển, thuế - Sản phẩm không hoàn toàn đồng nhất\nNhưng PPP xu hướng đúng dài hạn (10+ năm). Một biến thể đơn giản: Big Mac Index (The Economist) — so giá Big Mac toàn cầu.\n\n\nC.2. Uncovered Interest Parity (UIP)\nUIP: chênh lệch lãi suất giữa hai đồng tiền ≈ kỳ vọng thay đổi tỷ giá.\n\\[r - r^* = \\frac{E^e_{t+1} - E_t}{E_t}\\]\nLogic: nếu lãi suất VND cao hơn USD 5%, kỳ vọng VND mất giá 5% — nếu không, sẽ có arbitrage.\nThực tế: UIP cũng không nắm chặt — gọi là Forward Premium Puzzle. Carry trade tận dụng chính sự lệch này.\n\n\nC.3. Covered Interest Parity (CIP)\nCIP (Keynes 1923): chênh lệch lãi suất = chênh lệch forward rate và spot rate.\n\\[r - r^* = \\frac{F_t - E_t}{E_t}\\]\nTrong đó \\(F_t\\) = tỷ giá forward.\nLogic: nếu CIP không đúng → arbitrage không rủi ro (covered = đã bảo hiểm tỷ giá). Tốt cho mọi điều kiện thị trường.\nThực tế: CIP nắm rất chặt trước 2008. Sau khủng hoảng tài chính 2008, có CIP deviations do liquidity premium và balance sheet constraints của ngân hàng.\n\n\nC.4. Carry trade\nCarry trade = mượn đồng tiền lãi suất thấp (vd JPY), đầu tư đồng tiền lãi suất cao (vd AUD, BRL).\n\nKhi yên ổn: lãi carry differential + chêch tỷ giá ổn định.\nKhi có cú sốc: tỷ giá unwind nhanh, mất tiền lớn — gọi là carry crash.\n\nCarry trade quy mô lớn được coi là một nguồn của bất ổn tài chính toàn cầu.",
     "crumbs": [
       "Chương 4 — Vĩ mô (KT mở)",
-      "Buổi 09 — Cán cân thanh toán và tỷ giá"
+      "Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-09.html#d.-dự-trữ-ngoại-hối-vai-trò-và-việt-nam",
+    "href": "lectures/buoi-09.html#d.-dự-trữ-ngoại-hối-vai-trò-và-việt-nam",
+    "title": "Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái",
+    "section": "D. Dự trữ ngoại hối — Vai trò và Việt Nam",
+    "text": "D. Dự trữ ngoại hối — Vai trò và Việt Nam\n\nD.1. Vai trò dự trữ NH\nDự trữ ngoại hối (NHTW nắm giữ) có ba vai trò chính:\n\n\n\nVai trò\nCơ chế\n\n\n\n\nBảo vệ tỷ giá\nBán USD khi VND yếu, mua khi VND mạnh\n\n\nBuffer khủng hoảng\nĐảm bảo thanh khoản trong cú sốc\n\n\nTín hiệu thị trường\nDự trữ lớn → niềm tin nhà đầu tư\n\n\n\n\n\nD.2. Tiêu chuẩn đầy đủ dự trữ\nCác tiêu chuẩn quốc tế:\n\n\n\nTiêu chuẩn\nNội dung\n\n\n\n\n3 tháng nhập khẩu\nMức “tối thiểu cổ điển” (IMF guideline)\n\n\nARA Metric (IMF)\nTính theo XK + nợ ngắn hạn + M2\n\n\n100% nợ ngắn hạn\nGreenspan-Guidotti rule\n\n\n\nViệt Nam hiện tại (~90-100 tỷ USD):\n\n~3 tháng NK: đạt\nARA: khoảng 80-100% — vùng adequate nhưng không dư\nSo với TQ, HK, Singapore: tỷ lệ thấp hơn\n\nSau 2022, NHNN bán dự trữ để bảo vệ VND → dự trữ giảm ~15-20 tỷ USD trong 1 năm.\n\n\nD.3. Bài học chính sách\nTrade-off: - Dự trữ quá thấp → dễ tổn thương khủng hoảng (Thái Lan 1997) - Dự trữ quá cao → chi phí cơ hội lớn (Trung Quốc)\nVN cần cân bằng: vừa đảm bảo buffer, vừa không “khoá vốn” quá nhiều.\n\n\n\n\n\n\nWarning✋ Bài tập thảo luận trên lớp\n\n\n\nTính NEER VND năm 2024 từ dữ liệu 5 đối tác thương mại lớn nhất:\n\nTải dữ liệu tỷ giá VND/USD, EUR, JPY, CNY, KRW.\nTính trọng số theo kim ngạch XNK với mỗi đối tác.\nTính NEER = trung bình có trọng số.\nSo sánh với báo cáo của BIS — kết quả có gần không?",
+    "crumbs": [
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-09.html#tổng-kết-buổi-9-năm-điểm-cốt-lõi",
+    "href": "lectures/buoi-09.html#tổng-kết-buổi-9-năm-điểm-cốt-lõi",
+    "title": "Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái",
+    "section": "Tổng kết Buổi 9 — Năm điểm cốt lõi",
+    "text": "Tổng kết Buổi 9 — Năm điểm cốt lõi\n\nBoP ghi nhận giao dịch VN ↔︎ thế giới: CA + FA + sai số = 0.\nCA = S − I: VN thặng dư CA dương = cho vay ròng, dù là KT đang phát triển.\nNEER/REER: đo tỷ giá hiệu dụng theo rổ đối tác — quan trọng hơn VND/USD đơn lẻ.\nPPP, UIP, CIP: ba quy luật ngang giá; PPP chỉ nắm dài hạn, UIP có puzzle, CIP nắm tốt.\nVN crawl-like theo AREAER 2024, dự trữ ~90-100 tỷ USD (~3 tháng NK).",
+    "crumbs": [
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-09.html#bài-tập-về-nhà-chuẩn-bị-buổi-10",
+    "href": "lectures/buoi-09.html#bài-tập-về-nhà-chuẩn-bị-buổi-10",
+    "title": "Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái",
+    "section": "Bài tập về nhà (chuẩn bị Buổi 10)",
+    "text": "Bài tập về nhà (chuẩn bị Buổi 10)\n\nĐọc Mankiw chương về Mundell-Fleming.\nTự đọc về điều kiện Marshall-Lerner.\nChuẩn bị 1 ví dụ chính sách tỷ giá Việt Nam 2022 (can thiệp bảo vệ VND).\nĐọc thêm case Hong Kong LERS, Reaganomics, ERM 1992.\n\n\n\n\n\n\n\nTip🔧 Stata Lab 9 (bonus 5%)\n\n\n\nBài này có lab tính NEER và REER VND 2015-2024 trong Stata: tải dữ liệu tỷ giá song phương + CPI, tính trọng số rổ, tính NEER REER.\n→ Bắt đầu Lab 9 — NEER/REER VND (~30 phút)",
+    "crumbs": [
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái"
     ]
   },
   {
     "objectID": "lectures/buoi-09.html#đọc-thêm",
     "href": "lectures/buoi-09.html#đọc-thêm",
-    "title": "Buổi 09 — Cán cân thanh toán và tỷ giá",
+    "title": "Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái",
     "section": "Đọc thêm",
-    "text": "Đọc thêm\n\nMankiw, Kinh tế học vĩ mô, chương 19.\nBlanchard (2020), chương 17–18.\n\n\n\n\n\n\n\nWarning🚧 Nội dung đang biên soạn\n\n\n\nBài giảng buổi 09 hiện ở dạng dàn ý theo đề cương DTU301. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.\n\n\n\n← Buổi trước: Buổi 8 Buổi tiếp theo: Buổi 10 →",
+    "text": "Đọc thêm\n\nMankiw, Kinh tế học vĩ mô, chương 19 (BoP, Tỷ giá).\nIMF AREAER 2024 — danh mục chế độ tỷ giá toàn cầu.\nBIS — REER cho VND và các đồng tiền chính.\nNHNN — Báo cáo thường niên về thị trường ngoại hối.\nVietnam IMF Article IV — đánh giá khung tỷ giá VN.\n\n\n← Buổi trước: Buổi 8 — AD-AS, Phillips và Phối hợp chính sách | Buổi tiếp theo: Buổi 10 — Mô hình Mundell-Fleming →",
     "crumbs": [
       "Chương 4 — Vĩ mô (KT mở)",
-      "Buổi 09 — Cán cân thanh toán và tỷ giá"
+      "Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái"
     ]
   },
   {
     "objectID": "lectures/buoi-14.html",
     "href": "lectures/buoi-14.html",
-    "title": "Buổi 14 — Chia sẻ thực tiễn",
+    "title": "Buổi 14 — Seminar: Chia sẻ chuyên gia + Workshop",
     "section": "",
-    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO2, CLO3, CLO4, CLO5 — Tổng hợp xuyên suốt 5 chương",
+    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO3, CLO4, CLO5 — Tổng hợp xuyên 5 chương + làm việc nhóm + sử dụng có trách nhiệm công cụ số.\nBuổi 14 mở Seminar tổng hợp — chuyển từ học sang vận dụng. Sinh viên gặp chuyên gia thực tiễn, thảo luận chính sách, và chuẩn bị cho thuyết trình ở Buổi 15.",
     "crumbs": [
       "Seminar tổng hợp",
-      "Buổi 14 — Chia sẻ thực tiễn"
+      "Buổi 14 — Seminar: Chia sẻ chuyên gia + Workshop"
     ]
   },
   {
-    "objectID": "lectures/buoi-14.html#nội-dung-lý-thuyết-thuyết-giảng",
-    "href": "lectures/buoi-14.html#nội-dung-lý-thuyết-thuyết-giảng",
-    "title": "Buổi 14 — Chia sẻ thực tiễn",
-    "section": "Nội dung lý thuyết (thuyết giảng)",
-    "text": "Nội dung lý thuyết (thuyết giảng)\nMục tiêu: Tổng hợp xuyên suốt năm chương; tổ chức không gian phản biện học thuật cuối kỳ.\nCấu trúc Buổi 14 — Chia sẻ thực tiễn\n\nMời chuyên gia bên ngoài (nhà hoạch định chính sách, lãnh đạo địa phương, chuyên gia tổ chức quốc tế) chia sẻ thực tiễn\nThảo luận chính sách với chuyên gia\nHoạt động vận dụng theo nhóm dưới hướng dẫn của giảng viên",
+    "objectID": "lectures/buoi-14.html#lộ-trình-buổi-14",
+    "href": "lectures/buoi-14.html#lộ-trình-buổi-14",
+    "title": "Buổi 14 — Seminar: Chia sẻ chuyên gia + Workshop",
+    "section": "Lộ trình Buổi 14",
+    "text": "Lộ trình Buổi 14\n\n\n\nPhần\nNội dung\n\n\n\n\nA\nMục tiêu Seminar và cấu trúc 2 buổi\n\n\nB\nChia sẻ chuyên gia — profile, chủ đề, Q&A\n\n\nC\nThảo luận chính sách — quy tắc, khung phân tích\n\n\nD\nWorkshop nhóm — bố cục, đề tài, sản phẩm",
     "crumbs": [
       "Seminar tổng hợp",
-      "Buổi 14 — Chia sẻ thực tiễn"
+      "Buổi 14 — Seminar: Chia sẻ chuyên gia + Workshop"
     ]
   },
   {
-    "objectID": "lectures/buoi-14.html#thực-hành-thảo-luận",
-    "href": "lectures/buoi-14.html#thực-hành-thảo-luận",
-    "title": "Buổi 14 — Chia sẻ thực tiễn",
-    "section": "Thực hành / Thảo luận",
-    "text": "Thực hành / Thảo luận\nQ&A với chuyên gia; thảo luận chính sách mở; phân công nhóm chuẩn bị thuyết trình Buổi 15.",
+    "objectID": "lectures/buoi-14.html#a.-mục-tiêu-seminar",
+    "href": "lectures/buoi-14.html#a.-mục-tiêu-seminar",
+    "title": "Buổi 14 — Seminar: Chia sẻ chuyên gia + Workshop",
+    "section": "A. Mục tiêu Seminar",
+    "text": "A. Mục tiêu Seminar\n\nA.1. Bốn mục tiêu cốt lõi\n\n\n\n#\nMục tiêu\nCLO liên quan\n\n\n\n\n1\nTổng hợp 5 chương đã học\nTất cả\n\n\n2\nĐo lường năng lực phân tích\nCLO3\n\n\n3\nĐo lường năng lực phối hợp nhóm\nCLO4\n\n\n4\nĐo lường năng lực sử dụng AI có trách nhiệm\nCLO5\n\n\n\nTinh thần: Seminar = nơi kết nối lý thuyết với thực tiễn Việt Nam. Không phải ôn tập thuộc lòng.\n\n\nA.2. Cấu trúc 2 buổi Seminar\n\n\n\n\n\n\n\n\n\nBuổi 14\nBuổi 15\n\n\n\n\nChủ đề\nChia sẻ chuyên gia + Workshop nhóm\nThuyết trình + Tổng kết\n\n\nThời lượng\n5h LT + 5h thực hành\n5h LT + 5h thực hành\n\n\nHoạt động\nChuyên gia chia sẻ, Q&A, workshop\nThuyết trình, phản biện chéo, tổng kết\n\n\nVai trò\nHấp thu\nTrình bày\n\n\n\nPhân nhóm: chia 4–6 nhóm, mỗi nhóm 4–6 sinh viên. Đề tài do giảng viên phân công đầu kỳ.",
     "crumbs": [
       "Seminar tổng hợp",
-      "Buổi 14 — Chia sẻ thực tiễn"
+      "Buổi 14 — Seminar: Chia sẻ chuyên gia + Workshop"
     ]
   },
   {
-    "objectID": "lectures/buoi-14.html#bài-tập-lớn-tiểu-luận",
-    "href": "lectures/buoi-14.html#bài-tập-lớn-tiểu-luận",
-    "title": "Buổi 14 — Chia sẻ thực tiễn",
-    "section": "Bài tập lớn / Tiểu luận",
-    "text": "Bài tập lớn / Tiểu luận\nSản phẩm nhóm cho Buổi 15: bản đề cương thuyết trình + tài liệu phản biện chéo.",
+    "objectID": "lectures/buoi-14.html#b.-chia-sẻ-chuyên-gia",
+    "href": "lectures/buoi-14.html#b.-chia-sẻ-chuyên-gia",
+    "title": "Buổi 14 — Seminar: Chia sẻ chuyên gia + Workshop",
+    "section": "B. Chia sẻ chuyên gia",
+    "text": "B. Chia sẻ chuyên gia\n\nB.1. Profile chuyên gia mời\nTiêu chí lựa chọn chuyên gia:\n\nCó thực tiễn 5+ năm trong lĩnh vực QLKT\nCó khả năng truyền đạt và đối thoại với sinh viên\nĐại diện cho bốn nguồn khác nhau:\n\n\n\n\n\n\n\n\nNguồn\nVí dụ\n\n\n\n\nNhà nước\nCán bộ NHNN, Bộ KH-ĐT, Bộ Tài chính, lãnh đạo tỉnh\n\n\nDoanh nghiệp\nCEO/CFO tập đoàn lớn (Vingroup, FPT, Thaco), DN khởi nghiệp\n\n\nViện nghiên cứu\nVEPR, CIEM, NEU, HCMA, Fulbright\n\n\nTổ chức quốc tế\nWB, IMF, ADB, UNDP tại VN\n\n\n\nGiảng viên gửi profile chuyên gia đến sinh viên trước 1 tuần — để chuẩn bị câu hỏi.\n\n\nB.2. Năm chủ đề gợi ý\nMột số chủ đề thực tiễn phù hợp với 5 chương đã học:\n\n\n\n#\nChủ đề\nLiên kết chương\n\n\n\n\n1\nĐiều hành chính sách vĩ mô thực tế (NHNN, MoF)\nChương 3, 4\n\n\n2\nCải cách thể chế 2025 (NQ 202, Luật 72/89)\nChương 5\n\n\n3\nHội nhập kinh tế và Trilemma VN\nChương 4\n\n\n4\nPhát triển vùng + 4 cực Đại hội XIV\nChương 5\n\n\n5\nAI và chính sách công\nCLO5\n\n\n\nMỗi chuyên gia chia sẻ ~45 phút, sau đó Q&A 30 phút.\n\n\nB.3. Hoạt động Q&A\nQuy tắc Q&A:\n\nMỗi nhóm chuẩn bị 2 câu hỏi\nCâu hỏi mở (không yes/no)\nLiên kết lý thuyết – thực tiễn\nTránh câu hỏi chung chung\n\nVí dụ câu hỏi tốt:\n\n“Anh/chị áp dụng khung Trilemma ở NHNN như thế nào khi Fed tăng r 200bps năm 2022? Quyết định nào khó nhất?”\n\nVí dụ câu hỏi yếu:\n\n“Anh/chị nghĩ gì về kinh tế Việt Nam?” — quá chung chung, không có hướng trả lời cụ thể.",
     "crumbs": [
       "Seminar tổng hợp",
-      "Buổi 14 — Chia sẻ thực tiễn"
+      "Buổi 14 — Seminar: Chia sẻ chuyên gia + Workshop"
     ]
   },
   {
-    "objectID": "lectures/buoi-14.html#tự-học-có-hướng-dẫn",
-    "href": "lectures/buoi-14.html#tự-học-có-hướng-dẫn",
-    "title": "Buổi 14 — Chia sẻ thực tiễn",
-    "section": "Tự học có hướng dẫn",
-    "text": "Tự học có hướng dẫn\n\nChuẩn bị nội dung thuyết trình theo chủ đề giảng viên giao.\nĐọc bổ sung tài liệu chuyên đề.\nTổng hợp kiến thức xuyên 5 chương.",
+    "objectID": "lectures/buoi-14.html#c.-thảo-luận-chính-sách",
+    "href": "lectures/buoi-14.html#c.-thảo-luận-chính-sách",
+    "title": "Buổi 14 — Seminar: Chia sẻ chuyên gia + Workshop",
+    "section": "C. Thảo luận chính sách",
+    "text": "C. Thảo luận chính sách\n\nC.1. Năm quy tắc thảo luận\n\n\n\n\n\n\n\n\n#\nQuy tắc\nÝ nghĩa\n\n\n\n\n1\nTôn trọng đa quan điểm\nKhông có “đáp án đúng duy nhất” cho chính sách\n\n\n2\nCó dữ liệu, có dẫn chứng\nKhông lập luận cảm tính\n\n\n3\nPhân biệt thực chứng vs chuẩn tắc\nBuổi 1: là chuyện sự kiện hay giá trị?\n\n\n4\nSẵn sàng thay đổi quan điểm\nKhi gặp bằng chứng tốt hơn\n\n\n5\nKhông phán xét cá nhân\nPhản biện ý kiến, không công kích người\n\n\n\nĐây là chuẩn mực học thuật — sinh viên nên rèn từ giờ để chuẩn bị cho nghiên cứu, làm việc trong DN, hoặc cơ quan nhà nước.\n\n\nC.2. Khung phân tích chính sách 5 bước\nKhi phân tích một vấn đề chính sách trong thảo luận hoặc thuyết trình, áp dụng khung 5 bước:\n\n\n\n\n\n\n\n\nBước\nNội dung\nCâu hỏi cốt lõi\n\n\n\n\n1\nNhận diện vấn đề\nĐây là vấn đề gì? Tại sao quan trọng?\n\n\n2\nLý thuyết áp dụng\nKhung lý thuyết nào trong 5 chương phù hợp?\n\n\n3\nDữ liệu thực tế\nSố liệu cập nhật từ nguồn chính thống?\n\n\n4\nĐánh giá đánh đổi và rủi ro\nMỗi lựa chọn có cái mất gì?\n\n\n5\nĐề xuất giải pháp\nKhuyến nghị cụ thể, khả thi cho VN?\n\n\n\nLưu ý: Bước 4 quan trọng nhất — phân tích chính sách khác cổ vũ chính sách. Mọi chính sách đều có trade-off.",
     "crumbs": [
       "Seminar tổng hợp",
-      "Buổi 14 — Chia sẻ thực tiễn"
+      "Buổi 14 — Seminar: Chia sẻ chuyên gia + Workshop"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-14.html#d.-workshop-nhóm",
+    "href": "lectures/buoi-14.html#d.-workshop-nhóm",
+    "title": "Buổi 14 — Seminar: Chia sẻ chuyên gia + Workshop",
+    "section": "D. Workshop nhóm",
+    "text": "D. Workshop nhóm\n\nD.1. Bố cục workshop\nSau chuyên gia, sinh viên làm việc nhóm để chuẩn bị thuyết trình cho Buổi 15.\nThời lượng: ~3 giờ workshop.\nHoạt động:\n\n\n\nThời gian\nHoạt động\n\n\n\n\n30 phút\nBrainstorm: vấn đề chính sách hấp dẫn cho nhóm\n\n\n30 phút\nKhung lý thuyết: áp dụng nội dung 5 chương nào\n\n\n60 phút\nThu thập dữ liệu: tìm số liệu từ TCTK, WB, IMF, NHNN\n\n\n30 phút\nSoạn outline thuyết trình\n\n\n30 phút\nPhân công thành viên + đóng góp\n\n\n\n\n\nD.2. Đề tài gợi ý cho nhóm\n\n\n\nĐề tài\nChương chính\n\n\n\n\nPhân tích chính sách kiểm soát giá điện 2024\n2, 3\n\n\nĐánh giá NQ 98 cho TP.HCM\n5\n\n\nPhối hợp tài khoá – tiền tệ 2020–2024\n3\n\n\nTrilemma và VN trước Fed 2022\n4\n\n\n4 cực động lực Đại hội XIV — khả thi?\n5\n\n\nAI và quản lý kinh tế — cơ hội + rủi ro\n5, CLO5\n\n\nCải cách 2025 (34 tỉnh, 2 cấp) — kỳ vọng vs thách thức\n5\n\n\nChiến lược bán dẫn VN — bài học Đông Á\n2, 5\n\n\n\nMỗi nhóm chọn 1 đề tài (không trùng nhau).\n\n\nD.3. Sản phẩm nhóm\nMỗi nhóm cuối Workshop nộp:\n\n\n\nSản phẩm\nĐịnh dạng\nYêu cầu\n\n\n\n\nOutline thuyết trình\nPowerPoint hoặc Quarto\n10–15 slide\n\n\nTài liệu phản biện\nWord/PDF\n2–3 trang tóm tắt\n\n\nPhân công nhóm\nBảng\nAi làm gì, ai trình bày phần nào\n\n\n\nĐây là cơ sở cho thuyết trình ở Buổi 15.\n\n\nD.4. Hướng dẫn dùng AI có trách nhiệm\nCho phép:\n\nTóm tắt tài liệu dài\nĐặt câu hỏi để hiểu khái niệm\nBrainstorm ý tưởng\nKiểm tra ngữ pháp, văn phong\n\nCấm:\n\nSao chép trực tiếp output AI vào bài\nĐể AI viết toàn bộ bài\nKhông khai báo phạm vi sử dụng AI\n\nBắt buộc:\n\nKhai báo phạm vi dùng AI trong báo cáo (vd: “Đoạn 2.3 dùng ChatGPT để brainstorm và đã edit lại”)\nKiểm chứng số liệu AI cung cấp — AI có thể hallucinate\nTrích dẫn nguồn gốc\n\n\n\n\n\n\n\nWarning✋ Hoạt động cuối Buổi 14\n\n\n\nMỗi nhóm cuối buổi nộp outline thuyết trình (1 trang) gồm:\n\nĐề tài và câu hỏi nghiên cứu chính\nKhung lý thuyết áp dụng\nNguồn dữ liệu dự kiến\nKhuyến nghị sơ bộ\nPhân công thành viên",
+    "crumbs": [
+      "Seminar tổng hợp",
+      "Buổi 14 — Seminar: Chia sẻ chuyên gia + Workshop"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-14.html#tổng-kết-buổi-14-năm-điểm-cốt-lõi",
+    "href": "lectures/buoi-14.html#tổng-kết-buổi-14-năm-điểm-cốt-lõi",
+    "title": "Buổi 14 — Seminar: Chia sẻ chuyên gia + Workshop",
+    "section": "Tổng kết Buổi 14 — Năm điểm cốt lõi",
+    "text": "Tổng kết Buổi 14 — Năm điểm cốt lõi\n\nMục tiêu Seminar: tổng hợp 5 chương + đo CLO3 (phân tích) + CLO4 (nhóm) + CLO5 (AI có trách nhiệm).\nChuyên gia mời từ 4 nguồn: Nhà nước / DN / Viện NC / Tổ chức quốc tế.\nQuy tắc thảo luận: tôn trọng đa quan điểm + có dữ liệu + phân biệt thực chứng/chuẩn tắc + sẵn sàng đổi quan điểm + không phán xét cá nhân.\nKhung phân tích 5 bước: nhận diện → lý thuyết → dữ liệu → đánh đổi → đề xuất.\nWorkshop = chuẩn bị thuyết trình Buổi 15. AI được dùng có khai báo và có kiểm chứng.",
+    "crumbs": [
+      "Seminar tổng hợp",
+      "Buổi 14 — Seminar: Chia sẻ chuyên gia + Workshop"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-14.html#bài-tập-về-nhà-chuẩn-bị-buổi-15",
+    "href": "lectures/buoi-14.html#bài-tập-về-nhà-chuẩn-bị-buổi-15",
+    "title": "Buổi 14 — Seminar: Chia sẻ chuyên gia + Workshop",
+    "section": "Bài tập về nhà (chuẩn bị Buổi 15)",
+    "text": "Bài tập về nhà (chuẩn bị Buổi 15)\n\nHoàn thiện thuyết trình theo outline đã làm.\nTổng hợp kiến thức xuyên 5 chương.\nChuẩn bị phản biện 1 nhóm khác (bốc thăm).\nTự đánh giá đóng góp cá nhân trong nhóm.\n\n\n\n\n\n\n\nTip🔧 Stata Lab 14 (bonus 5%)\n\n\n\nBài này có lab Capstone — phân tích 1 chính sách bằng Stata, tổng hợp các kỹ năng đã học từ Lab 0-13.\n→ Bắt đầu Lab 14 — Capstone (tự chọn thời lượng)",
+    "crumbs": [
+      "Seminar tổng hợp",
+      "Buổi 14 — Seminar: Chia sẻ chuyên gia + Workshop"
     ]
   },
   {
     "objectID": "lectures/buoi-14.html#đọc-thêm",
     "href": "lectures/buoi-14.html#đọc-thêm",
-    "title": "Buổi 14 — Chia sẻ thực tiễn",
+    "title": "Buổi 14 — Seminar: Chia sẻ chuyên gia + Workshop",
     "section": "Đọc thêm",
-    "text": "Đọc thêm\n\nTài liệu giảng viên cung cấp tại lớp.\nBài đọc bổ sung theo chủ đề nhóm.\n\n\n\n\n\n\n\nWarning🚧 Nội dung đang biên soạn\n\n\n\nBài giảng buổi 14 hiện ở dạng dàn ý theo đề cương DTU301. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.\n\n\n\n← Buổi trước: Buổi 13 Buổi tiếp theo: Buổi 15 →",
+    "text": "Đọc thêm\n\nCác báo cáo chuyên đề do giảng viên cung cấp.\nWorld Bank, IMF, ADB — báo cáo Vietnam updates mới nhất.\nVietnam Economic Times, Saigon Times Daily — tham khảo case study.\nHCMA, Bộ Tư liệu QLKT — case Việt Nam.\n\n\n← Buổi trước: Buổi 13 — Phát triển kinh tế vùng | Buổi tiếp theo: Buổi 15 — Thuyết trình + Tổng kết →",
     "crumbs": [
       "Seminar tổng hợp",
-      "Buổi 14 — Chia sẻ thực tiễn"
+      "Buổi 14 — Seminar: Chia sẻ chuyên gia + Workshop"
     ]
   },
   {
@@ -622,51 +721,84 @@
     "href": "lectures/buoi-13.html",
     "title": "Buổi 13 — Phát triển kinh tế vùng",
     "section": "",
-    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO3, CLO4 — Phân tích phát triển vùng và phối hợp liên vùng",
+    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO3, CLO4 — Phân tích phát triển vùng và phối hợp liên vùng trong bối cảnh Việt Nam.\nBuổi 12 phân tích quản trị theo cấp (TW – tỉnh – xã). Buổi 13 phân tích theo vùng (6 vùng KT-XH, 4 vùng KTTĐ). Cộng lại, Chương 5 cho khung tư duy đầy đủ về chiều địa phương trong QLKT.",
     "crumbs": [
       "Chương 5 — Địa phương + Vùng",
       "Buổi 13 — Phát triển kinh tế vùng"
     ]
   },
   {
-    "objectID": "lectures/buoi-13.html#nội-dung-lý-thuyết-thuyết-giảng",
-    "href": "lectures/buoi-13.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "objectID": "lectures/buoi-13.html#lộ-trình-buổi-13",
+    "href": "lectures/buoi-13.html#lộ-trình-buổi-13",
     "title": "Buổi 13 — Phát triển kinh tế vùng",
-    "section": "Nội dung lý thuyết (thuyết giảng)",
-    "text": "Nội dung lý thuyết (thuyết giảng)\n5.2. Phát triển kinh tế vùng\n\nKhái niệm vùng và cơ chế tạo chênh lệch\nLý thuyết kinh tế vùng:\n\nMarshall — agglomeration economies\nKrugman — New Economic Geography\n\n\nPhân vùng kinh tế Việt Nam\n\nSáu vùng KT-XH: TDMNPB, ĐBSH, BTB-DHMT, Tây Nguyên, ĐNB, ĐBSCL\nBốn vùng KTTĐ: Bắc Bộ, miền Trung, phía Nam, ĐBSCL\nHành lang kinh tế\n\nĐịnh hướng Đại hội XIV\n\nBốn cực động lực\nSáu siêu dự án trọng điểm\n\nPhát triển bền vững vùng\n\nCase ĐNB, ĐBSCL, Tây Nguyên, BTB-DHMT",
+    "section": "Lộ trình Buổi 13",
+    "text": "Lộ trình Buổi 13\n\n\n\nPhần\nNội dung\n\n\n\n\nA\nKhái niệm vùng và bốn cơ chế chênh lệch\n\n\nB\nLý thuyết NEG — Marshall, Krugman, FKV\n\n\nC\nPhân vùng kinh tế Việt Nam\n\n\nD\nĐịnh hướng Đại hội XIV — 4 cực động lực và 6 siêu dự án",
     "crumbs": [
       "Chương 5 — Địa phương + Vùng",
       "Buổi 13 — Phát triển kinh tế vùng"
     ]
   },
   {
-    "objectID": "lectures/buoi-13.html#thực-hành-thảo-luận",
-    "href": "lectures/buoi-13.html#thực-hành-thảo-luận",
+    "objectID": "lectures/buoi-13.html#a.-khái-niệm-vùng",
+    "href": "lectures/buoi-13.html#a.-khái-niệm-vùng",
     "title": "Buổi 13 — Phát triển kinh tế vùng",
-    "section": "Thực hành / Thảo luận",
-    "text": "Thực hành / Thảo luận\nĐối chiếu PCI / PAPI / PAR Index cho 3 tỉnh thuộc 3 vùng khác nhau; thảo luận về chênh lệch vùng và bài học chính sách.",
+    "section": "A. Khái niệm vùng",
+    "text": "A. Khái niệm vùng\n\nA.1. Ba cách hiểu vùng\nVùng = nhóm địa phương có liên kết kinh tế. Có ba cách hiểu khác nhau:\n\n\n\n\n\n\n\n\nLoại\nCơ sở phân định\nVí dụ VN\n\n\n\n\nVùng địa lý\nĐặc điểm tự nhiên\nVùng núi phía Bắc, Đồng bằng sông Cửu Long\n\n\nVùng hành chính\nĐơn vị HC\nTỉnh, vùng KT-XH theo QĐ Chính phủ\n\n\nVùng chức năng\nLiên kết kinh tế thực tế\nVùng đô thị, vùng công nghiệp, hành lang KT\n\n\n\nCác tổ chức quốc tế (UNDP 2009, OECD 2020, HCMA 2021) ngày càng nhấn mạnh vùng chức năng — vì vùng kinh tế thực tế không trùng đơn vị hành chính.\nViệt Nam: chính thức có 6 vùng KT-XH theo QĐ 943/QĐ-TTg/2024 (phần C).\n\n\nA.2. Bốn cơ chế tạo chênh lệch vùng\nVì sao một số vùng giàu hơn vùng khác? Bốn cơ chế chính:\n\n\n\n\n\n\n\n\n#\nCơ chế\nCơ chế hoạt động\n\n\n\n\n1\nLợi thế ban đầu (initial advantage)\nVị trí địa lý: cảng biển, đồng bằng, tài nguyên\n\n\n2\nHiệu ứng tích tụ (agglomeration)\nDN tập trung → năng suất cao → thu hút DN mới\n\n\n3\nVốn nhân lực + năng suất\nVùng giàu thu hút LĐ chất lượng → vòng phản hồi tích cực\n\n\n4\nThể chế + chính sách\nChất lượng QLĐP (PCI, PAPI) — chính sách ưu đãi\n\n\n\n→ Bốn cơ chế tạo phân hoá vùng giàu – vùng nghèo. Đây là quy luật chung, không riêng VN.\n\n\nA.3. Convergence vùng — Có hay không?\nCâu hỏi cốt lõi: vùng nghèo bắt kịp vùng giàu không?\nHai khái niệm:\n\n\n\nLoại\nĐịnh nghĩa\n\n\n\n\nβ-convergence\nVùng nghèo tăng nhanh hơn vùng giàu\n\n\nσ-convergence\nSự phân tán thu nhập vùng giảm qua thời gian\n\n\n\nLý thuyết Solow: dự đoán hội tụ có điều kiện — vùng nghèo có vốn ít → MPK cao → tăng trưởng cao → bắt kịp.\nQuah (1996) — Twin Peaks: thực tế quan sát thấy không hội tụ — các vùng phân thành hai cụm (giàu / nghèo) ổn định.\nViệt Nam: σ-convergence chậm — chênh lệch ĐNB và Tây Nguyên không thu hẹp nhanh. Cần can thiệp chính sách.",
     "crumbs": [
       "Chương 5 — Địa phương + Vùng",
       "Buổi 13 — Phát triển kinh tế vùng"
     ]
   },
   {
-    "objectID": "lectures/buoi-13.html#bài-tập-lớn-tiểu-luận",
-    "href": "lectures/buoi-13.html#bài-tập-lớn-tiểu-luận",
+    "objectID": "lectures/buoi-13.html#b.-lý-thuyết-neg-marshall-krugman-fkv",
+    "href": "lectures/buoi-13.html#b.-lý-thuyết-neg-marshall-krugman-fkv",
     "title": "Buổi 13 — Phát triển kinh tế vùng",
-    "section": "Bài tập lớn / Tiểu luận",
-    "text": "Bài tập lớn / Tiểu luận\nĐề xuất chiến lược phát triển cho một tỉnh/vùng (Phần 2 — đề xuất cụ thể với số liệu).",
+    "section": "B. Lý thuyết NEG — Marshall, Krugman, FKV",
+    "text": "B. Lý thuyết NEG — Marshall, Krugman, FKV\n\nB.1. Marshall (1890) — Nguyên tắc Agglomeration\nAlfred Marshall (1890) — Principles of Economics:\n\nCác ngành kinh tế tự nhiên tập trung về một vùng do ba nguồn ngoại tác tích cực:\n\n\n\n\n\n\n\n\nNguồn\nCơ chế\n\n\n\n\nLabor pooling\nTích tụ LĐ kỹ năng cao → DN tìm được người, người tìm được việc\n\n\nIntermediate goods\nNhà cung cấp đầu vào tập trung → chi phí giao dịch giảm\n\n\nKnowledge spillover\nTri thức lan toả qua tiếp xúc → đổi mới nhanh\n\n\n\nVí dụ kinh điển: - Silicon Valley (Mỹ): tích tụ công nghệ - Khu công nghiệp Bắc Ninh (VN): tích tụ điện tử quanh Samsung - Detroit (Mỹ trước 1990): tích tụ ô tô\nMarshall là cơ sở của mọi lý thuyết NEG hiện đại.\n\n\nB.2. Krugman (1991) — NEG chính thức hoá\nPaul Krugman (1991) — Geography and Trade. Nobel Kinh tế 2008.\nKrugman mô hình hoá ý tưởng Marshall thành mô hình toán học:\nMô hình Core-Periphery:\n\nHai vùng: Core (trung tâm) và Periphery (ngoại vi)\nHai trạng thái cân bằng: tập trung (mọi sản xuất ở Core) hoặc phân tán\nTrạng thái phụ thuộc chi phí vận chuyển τ:\n\nτ rất cao → tự cấp tự túc (phân tán)\nτ rất thấp → tập trung (lợi thế quy mô vượt chi phí)\nτ trung bình → có thể có cả hai cân bằng (path-dependence)\n\n\nHệ quả chính sách: cải thiện hạ tầng giao thông có thể dẫn tới tập trung mạnh hơn — phản trực giác.\n\n\nB.3. FKV (1999) — Spatial Economy\nFujita-Krugman-Venables (1999) — The Spatial Economy: Cities, Regions, and International Trade:\nMở rộng NEG với:\n\nNhiều khu vực (không chỉ Core-Periphery)\nPhân tích đô thị + thương mại quốc tế đồng thời\nKhung quy hoạch được sử dụng rộng rãi trong chính sách phát triển vùng\n\nBài học chính sách: - Phát triển vùng không thể chỉ dựa vào thị trường — cần can thiệp - Can thiệp nên targeting (hướng đối tượng): chọn vùng có lợi thế thực tế - Hạ tầng kết nối là quan trọng nhất — vì giảm τ trong mô hình",
     "crumbs": [
       "Chương 5 — Địa phương + Vùng",
       "Buổi 13 — Phát triển kinh tế vùng"
     ]
   },
   {
-    "objectID": "lectures/buoi-13.html#tự-học-có-hướng-dẫn",
-    "href": "lectures/buoi-13.html#tự-học-có-hướng-dẫn",
+    "objectID": "lectures/buoi-13.html#c.-phân-vùng-kinh-tế-việt-nam",
+    "href": "lectures/buoi-13.html#c.-phân-vùng-kinh-tế-việt-nam",
     "title": "Buổi 13 — Phát triển kinh tế vùng",
-    "section": "Tự học có hướng dẫn",
-    "text": "Tự học có hướng dẫn\n\nBốn cực động lực có tạo ra chênh lệch vùng mới không?\nĐBSCL: ưu tiên thích ứng biến đổi khí hậu hay tăng trưởng?\nMarshall vs Krugman: khung nào phù hợp VN hơn?",
+    "section": "C. Phân vùng kinh tế Việt Nam",
+    "text": "C. Phân vùng kinh tế Việt Nam\n\nC.1. Sáu vùng KT-XH (QĐ 943/QĐ-TTg/2024)\n\n\n\n\n\n\n\n\n#\nVùng\nĐặc trưng\n\n\n\n\n1\nTrung du miền núi phía Bắc\nNúi cao, khoáng sản, biên giới\n\n\n2\nĐồng bằng sông Hồng\nHà Nội — đầu não chính trị, dân số đông\n\n\n3\nBắc Trung Bộ & DH miền Trung\nDải dài, dễ bão lũ\n\n\n4\nTây Nguyên\nCao nguyên, cà phê, hồ tiêu\n\n\n5\nĐông Nam Bộ (ĐNB)\nTP.HCM — đầu não kinh tế, GRDP cao nhất\n\n\n6\nĐồng bằng sông Cửu Long (ĐBSCL)\nLúa gạo, thuỷ sản, đe doạ BĐKH\n\n\n\nChênh lệch lớn: GRDP/đầu người ĐNB ~10x Tây Nguyên (ước tính).\n\n\nC.2. Bốn vùng kinh tế trọng điểm (KTTĐ)\nKhác 6 vùng KT-XH, có 4 vùng KTTĐ — tập trung cực tăng trưởng:\n\n\n\n#\nVùng KTTĐ\nTrung tâm\n\n\n\n\n1\nBắc Bộ\nHà Nội, Hải Phòng, Quảng Ninh\n\n\n2\nMiền Trung\nĐà Nẵng, Quảng Nam, Quảng Ngãi\n\n\n3\nPhía Nam\nTP.HCM, Bình Dương, Đồng Nai, BR-VT\n\n\n4\nĐBSCL\nCần Thơ, An Giang\n\n\n\nCác vùng KTTĐ được ưu tiên đầu tư hạ tầng và cơ chế đặc thù.\n\n\nC.3. Hành lang kinh tế\nVN xác định nhiều hành lang kinh tế liên kết các đô thị:\n\nHành lang ven biển: HP – Đà Nẵng – TP.HCM\nHành lang Lào Cai – Hà Nội – Hải Phòng (đường sắt)\nHành lang TP.HCM – Phnom Penh – Bangkok\nHành lang Đông – Tây miền Trung\n\nHành lang = trục giao thông + đô thị + công nghiệp dọc theo. Đây là vũ khí mạnh để giảm chi phí vận chuyển τ — khuyến khích tập trung kinh tế (theo Krugman).",
+    "crumbs": [
+      "Chương 5 — Địa phương + Vùng",
+      "Buổi 13 — Phát triển kinh tế vùng"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-13.html#d.-đại-hội-xiv-4-cực-động-lực-và-6-siêu-dự-án",
+    "href": "lectures/buoi-13.html#d.-đại-hội-xiv-4-cực-động-lực-và-6-siêu-dự-án",
+    "title": "Buổi 13 — Phát triển kinh tế vùng",
+    "section": "D. Đại hội XIV — 4 cực động lực và 6 siêu dự án",
+    "text": "D. Đại hội XIV — 4 cực động lực và 6 siêu dự án\n\nD.1. Bốn cực động lực\nĐại hội XIV (2026) xác định 4 cực động lực phát triển:\n\n\n\n\n\n\n\n\nCực\nLõi\nChiến lược\n\n\n\n\n1. Hà Nội\nĐầu não chính trị + tài chính phía Bắc\nĐô thị thông minh, công nghệ cao\n\n\n2. TP.HCM\nĐầu não kinh tế + tài chính phía Nam\nTrung tâm tài chính quốc tế, NQ 98\n\n\n3. Đà Nẵng\nTrung tâm miền Trung\nDu lịch, công nghệ, logistics\n\n\n4. Cần Thơ\nTrung tâm ĐBSCL\nNông nghiệp công nghệ cao, ứng phó BĐKH\n\n\n\nTranh luận: 4 cực có tạo ra chênh lệch vùng mới? Theo NEG: có thể — nếu đầu tư tập trung quá mạnh, vùng còn lại bị bỏ rơi.\nGiảm thiểu: cần chính sách cân đối: cực mạnh nhưng có hành lang kết nối với vùng còn lại + trợ cấp cân đối ngân sách.\n\n\nD.2. Sáu siêu dự án trọng điểm\nĐại hội XIV xác định 6 siêu dự án ưu tiên:\n\n\n\nSiêu dự án\nĐặc điểm\n\n\n\n\nĐường sắt cao tốc Bắc – Nam\n~67 tỷ USD, kết nối 4 cực\n\n\nSân bay Long Thành\nHoàn thành GĐ 1 đến 2026, mở rộng tới 2050\n\n\nHệ thống đường cao tốc\nHoàn thiện 5.000+ km\n\n\nMở rộng cảng biển trung tâm\nHP, Đà Nẵng, Cái Mép – Thị Vải\n\n\nCảng quốc tế Cần Giờ\nCảng nước sâu cho tàu siêu lớn\n\n\nTrung tâm tài chính quốc tế TP.HCM\nNQ 98/2023 mở rộng\n\n\n\nCác siêu dự án này nhằm giảm chi phí vận chuyển τ → khuyến khích tập trung kinh tế (Krugman) → tăng năng suất.\n\n\nD.3. Phát triển bền vững vùng\nMỗi vùng có thách thức riêng:\n\n\n\nVùng\nThách thức\n\n\n\n\nĐNB\nQuá tải đô thị, ô nhiễm, BĐKH ven biển\n\n\nĐBSCL\nNước mặn xâm nhập, sụt lún, lũ + hạn cực đoan\n\n\nTây Nguyên\nPhá rừng, suy thoái đất, hạ tầng yếu\n\n\nBTB-DHMT\nThiên tai (bão, lũ), nghèo dải dài\n\n\n\nBài toán: phát triển bền vững + giảm chênh lệch + chống BĐKH — đòi hỏi chính sách vùng có chiều kích lớn.\n\n\n\n\n\n\nWarning✋ Bài tập thảo luận trên lớp\n\n\n\nPhân tích chiến lược phát triển ĐBSCL 2026-2030 qua khung NEG:\n\nĐBSCL có cơ chế chênh lệch nào (4 cơ chế phần A)?\nÁp dụng NEG: ĐBSCL nên tập trung sản xuất ở Cần Thơ, hay phân tán qua 13 tỉnh?\n6 siêu dự án có ảnh hưởng gì đến ĐBSCL?\nCần chính sách gì để vừa phát triển vừa chống BĐKH?",
+    "crumbs": [
+      "Chương 5 — Địa phương + Vùng",
+      "Buổi 13 — Phát triển kinh tế vùng"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-13.html#tổng-kết-buổi-13-năm-điểm-cốt-lõi",
+    "href": "lectures/buoi-13.html#tổng-kết-buổi-13-năm-điểm-cốt-lõi",
+    "title": "Buổi 13 — Phát triển kinh tế vùng",
+    "section": "Tổng kết Buổi 13 — Năm điểm cốt lõi",
+    "text": "Tổng kết Buổi 13 — Năm điểm cốt lõi\n\nVùng có 3 cách hiểu (địa lý, hành chính, chức năng); 4 cơ chế chênh lệch (lợi thế ban đầu, tích tụ, vốn nhân lực, thể chế).\nNEG: Marshall (1890) → Krugman (1991) Core-Periphery → FKV (1999) — chứng minh tập trung là kết quả tự nhiên của thị trường.\nVN: 6 vùng KT-XH + 4 vùng KTTĐ + nhiều hành lang kinh tế. Chênh lệch lớn nhất giữa ĐNB và Tây Nguyên.\nĐại hội XIV: 4 cực động lực (HN, TP.HCM, ĐN, CT) + 6 siêu dự án — giảm τ, khuyến khích tập trung.\nPTBV vùng: mỗi vùng có thách thức riêng; ĐBSCL đặc biệt với BĐKH.",
+    "crumbs": [
+      "Chương 5 — Địa phương + Vùng",
+      "Buổi 13 — Phát triển kinh tế vùng"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-13.html#bài-tập-về-nhà-chuẩn-bị-buổi-14-seminar",
+    "href": "lectures/buoi-13.html#bài-tập-về-nhà-chuẩn-bị-buổi-14-seminar",
+    "title": "Buổi 13 — Phát triển kinh tế vùng",
+    "section": "Bài tập về nhà (chuẩn bị Buổi 14 — Seminar)",
+    "text": "Bài tập về nhà (chuẩn bị Buổi 14 — Seminar)\n\nĐọc lại toàn bộ 5 chương (Buổi 1-13).\nTự đọc các báo cáo chuyên đề về 1 chủ đề chính sách yêu thích.\nChuẩn bị 3 câu hỏi sắc cho buổi gặp chuyên gia.\nĐọc thêm về các quy hoạch vùng (vd Quy hoạch ĐBSCL 2021-2030).\n\n\n\n\n\n\n\nTip🔧 Stata Lab 13 (bonus 5%)\n\n\n\nBài này có lab so sánh 6 vùng KT-XH trong Stata: tính GRDP/đầu người, chênh lệch vùng, box plot.\n→ Bắt đầu Lab 13 — So sánh 6 vùng KT-XH (~25 phút)",
     "crumbs": [
       "Chương 5 — Địa phương + Vùng",
       "Buổi 13 — Phát triển kinh tế vùng"
@@ -677,7 +809,7 @@
     "href": "lectures/buoi-13.html#đọc-thêm",
     "title": "Buổi 13 — Phát triển kinh tế vùng",
     "section": "Đọc thêm",
-    "text": "Đọc thêm\n\nHCMA (2021), chương 6.\nVăn kiện Đại hội XIV — chiến lược phát triển vùng.\nBáo cáo World Bank về phát triển vùng VN.\n\n\n\n\n\n\n\nWarning🚧 Nội dung đang biên soạn\n\n\n\nBài giảng buổi 13 hiện ở dạng dàn ý theo đề cương DTU301. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.\n\n\n\n← Buổi trước: Buổi 12 Buổi tiếp theo: Buổi 14 →",
+    "text": "Đọc thêm\n\nMarshall, A. (1890), Principles of Economics.\nKrugman, P. (1991), Geography and Trade.\nFujita, Krugman, Venables (1999), The Spatial Economy.\nQuyết định 943/QĐ-TTg/2024 (6 vùng KT-XH).\nVăn kiện Đại hội XIV — định hướng phát triển vùng và 4 cực động lực.\nWorld Bank — Vietnam Spatial Development Report.\n\n\n← Buổi trước: Buổi 12 — Quản trị địa phương và Phân cấp tài khoá | Buổi tiếp theo: Buổi 14 — Seminar: Chia sẻ chuyên gia →",
     "crumbs": [
       "Chương 5 — Địa phương + Vùng",
       "Buổi 13 — Phát triển kinh tế vùng"
@@ -1683,49 +1815,97 @@
   {
     "objectID": "stata-lab/lab-14.html",
     "href": "stata-lab/lab-14.html",
-    "title": "Lab 14 — Capstone — phân tích 1 chính sách",
+    "title": "Lab 14 — Capstone: Phân tích 1 chính sách",
     "section": "",
-    "text": "Note🎯 Liên kết với Buổi 14\n\n\n\nBài này áp dụng khái niệm chính từ Buổi 14 vào dữ liệu thực tế Việt Nam.\nKhái niệm Stata học: tự chọn",
+    "text": "Note🎯 Lab Capstone\n\n\n\nĐây là lab cuối kỳ tổng hợp. Bạn tự chọn 1 chính sách Việt Nam, áp dụng toàn bộ kỹ năng Stata từ Lab 0-13 để phân tích sâu.\nKhái niệm Stata học: tự chọn — tùy đề tài, có thể là OLS, panel, time series, event study, hoặc combinations.",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "Lab 14 — Capstone — phân tích 1 chính sách"
+      "Lab 14 — Capstone: Phân tích 1 chính sách"
     ]
   },
   {
-    "objectID": "stata-lab/lab-14.html#khung-lab-14",
-    "href": "stata-lab/lab-14.html#khung-lab-14",
-    "title": "Lab 14 — Capstone — phân tích 1 chính sách",
-    "section": "Khung Lab 14",
-    "text": "Khung Lab 14\n\n1. Bài toán\nÁp dụng toàn bộ kỹ năng Stata đã học\n\n\n2. Dữ liệu cần\nDữ liệu tự chọn theo chủ đề nhóm\n\n\n3. Lệnh Stata trọng tâm\nBài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):\n* Lab 14 — DTU301\n* Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nclear all\nset more off\nlog using \"lab14_&lt;ten&gt;.log\", replace text\n\n* === Tải dữ liệu ===\n* (sẽ chi tiết khi có dataset thật)\n\n* === Phân tích ===\n* Sử dụng: tự chọn\n\n* === Đóng log ===\nlog close\n\n\n4. Câu hỏi suy nghĩ (sẽ chi tiết)\n\nCâu hỏi mô tả dữ liệu\nCâu hỏi so sánh / xu hướng\nCâu hỏi liên hệ với lý thuyết\nCâu hỏi liên hệ với chính sách Việt Nam\nCâu hỏi mở rộng / phản biện",
+    "objectID": "stata-lab/lab-14.html#yêu-cầu",
+    "href": "stata-lab/lab-14.html#yêu-cầu",
+    "title": "Lab 14 — Capstone: Phân tích 1 chính sách",
+    "section": "1. Yêu cầu",
+    "text": "1. Yêu cầu\nMục tiêu: phân tích 1 chính sách kinh tế Việt Nam giai đoạn 2020-2025 bằng dữ liệu thật.\nQuy mô:\n\nĐặt vấn đề: 1 câu hỏi nghiên cứu chính + 2-3 câu hỏi phụ\nKhung lý thuyết: vận dụng 1-2 khung từ 5 chương đã học\nDữ liệu: ≥ 1 nguồn chính thống (GSO, NHNN, WB, IMF)\nPhân tích: ≥ 3 kỹ thuật Stata (descriptive, regression, plot, …)\nKhuyến nghị: 3 đề xuất cho VN",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "Lab 14 — Capstone — phân tích 1 chính sách"
+      "Lab 14 — Capstone: Phân tích 1 chính sách"
     ]
   },
   {
-    "objectID": "stata-lab/lab-14.html#deliverable-lab-14",
-    "href": "stata-lab/lab-14.html#deliverable-lab-14",
-    "title": "Lab 14 — Capstone — phân tích 1 chính sách",
-    "section": "Deliverable Lab 14",
-    "text": "Deliverable Lab 14\nNộp 3 file (như các lab trước):\n\n\n\nFile\nNội dung\n\n\n\n\nlab14_&lt;tên&gt;.do\nCode + comment\n\n\nlab14_&lt;tên&gt;.log\nOutput\n\n\nlab14_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: DTU301-LAB14-MSSV-HọTên",
+    "objectID": "stata-lab/lab-14.html#đề-tài-gợi-ý",
+    "href": "stata-lab/lab-14.html#đề-tài-gợi-ý",
+    "title": "Lab 14 — Capstone: Phân tích 1 chính sách",
+    "section": "2. Đề tài gợi ý",
+    "text": "2. Đề tài gợi ý\nChọn 1 trong các đề tài sau (hoặc tự đề xuất, xin GV duyệt):\n\n\n\n\n\n\n\n\nĐề tài\nKhung\nKỹ thuật Stata\n\n\n\n\nĐánh giá gói hỗ trợ Covid 2021-2022\nAD-AS + IS-LM\nTime series, before/after\n\n\nPhân tích Phillips VN 2010-2024\nPhillips + NAIRU\nOLS, fitted line\n\n\nKiểm chứng growth accounting VN\nCobb-Douglas\nlog regression, residual\n\n\nPhân tích tỷ giá VND 2022\nMundell-Fleming\nevent study, panel\n\n\nSo sánh PCI 34 tỉnh trước/sau cải cách\nQuản trị địa phương\nranking, t-test\n\n\nĐánh giá hiệu quả siêu dự án\nNEG + CBA\ndescriptive + scatter\n\n\nBán dẫn VN — case study NIS\nSchumpeter + NIS\ndescriptive\n\n\nTác động NQ 98 lên TP.HCM\nPhân cấp + NEG\ndifference-in-differences",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "Lab 14 — Capstone — phân tích 1 chính sách"
+      "Lab 14 — Capstone: Phân tích 1 chính sách"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-14.html#cấu-trúc-do-file",
+    "href": "stata-lab/lab-14.html#cấu-trúc-do-file",
+    "title": "Lab 14 — Capstone: Phân tích 1 chính sách",
+    "section": "3. Cấu trúc do-file",
+    "text": "3. Cấu trúc do-file\n* Lab 14 Capstone — DTU301\n* Đề tài: &lt;tên đề tài&gt;\n* Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nclear all\nset more off\nlog using \"lab14_&lt;ten&gt;.log\", replace text\n\n*-------------------------------\n* PHẦN 1: ĐẶT VẤN ĐỀ\n*-------------------------------\ndisplay \"=== Capstone DTU301 ===\"\ndisplay \"Đề tài: &lt;tên&gt;\"\ndisplay \"Câu hỏi nghiên cứu chính: &lt;ghi vào đây&gt;\"\n\n*-------------------------------\n* PHẦN 2: TẢI DỮ LIỆU\n*-------------------------------\n* (nguồn: GSO, NHNN, WB, ...)\n\n*-------------------------------\n* PHẦN 3: THỐNG KÊ MÔ TẢ\n*-------------------------------\n* summarize, tabulate, list\n\n*-------------------------------\n* PHẦN 4: PHÂN TÍCH CHÍNH\n*-------------------------------\n* regression, plot, event study, ...\n\n*-------------------------------\n* PHẦN 5: KIỂM CHỨNG\n*-------------------------------\n* robustness check\n\n*-------------------------------\n* PHẦN 6: KHUYẾN NGHỊ\n*-------------------------------\n* 3 đề xuất cụ thể\n\nlog close",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 14 — Capstone: Phân tích 1 chính sách"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-14.html#yêu-cầu-báo-cáo",
+    "href": "stata-lab/lab-14.html#yêu-cầu-báo-cáo",
+    "title": "Lab 14 — Capstone: Phân tích 1 chính sách",
+    "section": "4. Yêu cầu báo cáo",
+    "text": "4. Yêu cầu báo cáo\nBáo cáo (5-7 trang Word/PDF) gồm:\n\n\n\nMục\nNội dung\n\n\n\n\n1. Đặt vấn đề\nCâu hỏi nghiên cứu + tại sao quan trọng\n\n\n2. Khung lý thuyết\n1-2 khung từ 5 chương + tại sao chọn\n\n\n3. Dữ liệu\nNguồn, biến, kỳ\n\n\n4. Phương pháp\nKỹ thuật Stata sử dụng\n\n\n5. Kết quả\nBảng + biểu đồ + diễn giải\n\n\n6. Thảo luận\nHạn chế, đánh đổi, rủi ro\n\n\n7. Khuyến nghị\n3 đề xuất khả thi cho VN\n\n\nTài liệu tham khảo\nAPA 7th",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 14 — Capstone: Phân tích 1 chính sách"
     ]
   },
   {
     "objectID": "stata-lab/lab-14.html#tiêu-chí-chấm",
     "href": "stata-lab/lab-14.html#tiêu-chí-chấm",
-    "title": "Lab 14 — Capstone — phân tích 1 chính sách",
-    "section": "Tiêu chí chấm",
-    "text": "Tiêu chí chấm\n\n\n\nTiêu chí\nĐiểm\n\n\n\n\nCode chạy đúng, có log\n30%\n\n\nVận dụng đúng khái niệm Stata mới của bài\n25%\n\n\nBiểu đồ / bảng kết quả rõ ràng\n20%\n\n\nTrả lời câu hỏi sâu, có liên hệ thực tiễn\n25%\n\n\n\n\n← Lab trước: Lab 13 | Lab tiếp theo: Lab 15 →",
+    "title": "Lab 14 — Capstone: Phân tích 1 chính sách",
+    "section": "5. Tiêu chí chấm",
+    "text": "5. Tiêu chí chấm\n\n\n\nTiêu chí\nTrọng số\n\n\n\n\nCâu hỏi nghiên cứu rõ ràng + ý nghĩa\n15%\n\n\nKhung lý thuyết phù hợp\n15%\n\n\nDữ liệu chất lượng (nguồn chính thống)\n15%\n\n\nCode Stata sạch, có comment\n20%\n\n\nDiễn giải kết quả sâu\n15%\n\n\nKhuyến nghị cụ thể, khả thi\n15%\n\n\nTrích dẫn + format đẹp\n5%",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "Lab 14 — Capstone — phân tích 1 chính sách"
+      "Lab 14 — Capstone: Phân tích 1 chính sách"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-14.html#khuyến-nghị-dùng-ai-có-trách-nhiệm",
+    "href": "stata-lab/lab-14.html#khuyến-nghị-dùng-ai-có-trách-nhiệm",
+    "title": "Lab 14 — Capstone: Phân tích 1 chính sách",
+    "section": "6. Khuyến nghị: dùng AI có trách nhiệm",
+    "text": "6. Khuyến nghị: dùng AI có trách nhiệm\n\nCho phép: ChatGPT/Claude tóm tắt tài liệu, debug code Stata, brainstorm ý tưởng\nBắt buộc khai báo: phần nào dùng AI, prompt gì\nKiểm chứng: mọi số liệu phải verify từ nguồn gốc\nKhông sao chép: phải viết lại bằng giọng văn của bạn",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 14 — Capstone: Phân tích 1 chính sách"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-14.html#mở-rộng-tự-chọn",
+    "href": "stata-lab/lab-14.html#mở-rộng-tự-chọn",
+    "title": "Lab 14 — Capstone: Phân tích 1 chính sách",
+    "section": "7. Mở rộng (tự chọn)",
+    "text": "7. Mở rộng (tự chọn)\n\nHọc Quarto + Stata để tạo báo cáo có code chạy thật\nThử Python + statsmodels để so sánh với Stata\nTham gia VEPR, CIEM seminars để nghe nhà nghiên cứu thảo luận\n\n\n← Lab trước: Lab 13 — 6 vùng KT-XH | Lab tiếp theo: Lab 15 — Xuất bảng + biểu đồ →",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 14 — Capstone: Phân tích 1 chính sách"
     ]
   },
   {
@@ -1877,7 +2057,7 @@
     "href": "stata-lab/lab-12.html",
     "title": "Lab 12 — PCI / PAPI / PAR Index theo tỉnh",
     "section": "",
-    "text": "Note🎯 Liên kết với Buổi 12\n\n\n\nBài này áp dụng khái niệm chính từ Buổi 12 vào dữ liệu thực tế Việt Nam.\nKhái niệm Stata học: merge, scatter, correlation",
+    "text": "Note🎯 Liên kết với Buổi 12\n\n\n\nSo sánh PCI (DN) – PAPI (người dân) – PAR (Nhà nước) cho 12 tỉnh điển hình. Liên hệ chất lượng QLĐP với thu hút đầu tư và hài lòng người dân.\nKhái niệm Stata học: correlate, scatter matrix, ranking, percentile",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
@@ -1885,11 +2065,11 @@
     ]
   },
   {
-    "objectID": "stata-lab/lab-12.html#khung-lab-12",
-    "href": "stata-lab/lab-12.html#khung-lab-12",
+    "objectID": "stata-lab/lab-12.html#dataset-12-tỉnh",
+    "href": "stata-lab/lab-12.html#dataset-12-tỉnh",
     "title": "Lab 12 — PCI / PAPI / PAR Index theo tỉnh",
-    "section": "Khung Lab 12",
-    "text": "Khung Lab 12\n\n1. Bài toán\nSo sánh 34 tỉnh sau cải cách 2025\n\n\n2. Dữ liệu cần\nDữ liệu PCI (VCCI), PAPI (UNDP), PAR Index (Bộ Nội vụ)\n\n\n3. Lệnh Stata trọng tâm\nBài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):\n* Lab 12 — DTU301\n* Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nclear all\nset more off\nlog using \"lab12_&lt;ten&gt;.log\", replace text\n\n* === Tải dữ liệu ===\n* (sẽ chi tiết khi có dataset thật)\n\n* === Phân tích ===\n* Sử dụng: merge, scatter, correlation\n\n* === Đóng log ===\nlog close\n\n\n4. Câu hỏi suy nghĩ (sẽ chi tiết)\n\nCâu hỏi mô tả dữ liệu\nCâu hỏi so sánh / xu hướng\nCâu hỏi liên hệ với lý thuyết\nCâu hỏi liên hệ với chính sách Việt Nam\nCâu hỏi mở rộng / phản biện",
+    "section": "1. Dataset 12 tỉnh",
+    "text": "1. Dataset 12 tỉnh\n* Lab 12 — DTU301 — PCI/PAPI/PAR comparison\nclear all\nset more off\nlog using \"lab12_&lt;ten&gt;.log\", replace text\n\nclear\ninput str20 tinh float PCI float PAPI float PAR float GRDP_pc\n\"Quảng Ninh\"     71.0  47.2  91.5  9500\n\"Hải Phòng\"      70.4  46.5  93.2  8800\n\"Đà Nẵng\"        69.8  45.8  91.2  7500\n\"Bình Dương\"     67.8  43.5  90.0  10200\n\"TP.HCM\"         67.5  42.8  89.5  9100\n\"Hà Nội\"         67.0  42.0  90.5  7800\n\"Bắc Ninh\"       66.5  42.5  87.0  8500\n\"Đồng Nai\"       66.0  43.0  86.5  7200\n\"Khánh Hoà\"      65.0  42.0  85.0  4500\n\"Cần Thơ\"        64.5  41.5  84.5  4000\n\"Nghệ An\"        63.0  40.0  82.0  2800\n\"Tây Ninh\"       62.5  39.5  81.0  3500\nend\n\nlabel variable PCI \"PCI (VCCI)\"\nlabel variable PAPI \"PAPI (UNDP)\"\nlabel variable PAR \"PAR Index (Bộ Nội vụ)\"\nlabel variable GRDP_pc \"GRDP/đầu người (USD)\"\n\nlist, sepby(tinh)",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
@@ -1897,11 +2077,11 @@
     ]
   },
   {
-    "objectID": "stata-lab/lab-12.html#deliverable-lab-12",
-    "href": "stata-lab/lab-12.html#deliverable-lab-12",
+    "objectID": "stata-lab/lab-12.html#correlation-3-chỉ-số",
+    "href": "stata-lab/lab-12.html#correlation-3-chỉ-số",
     "title": "Lab 12 — PCI / PAPI / PAR Index theo tỉnh",
-    "section": "Deliverable Lab 12",
-    "text": "Deliverable Lab 12\nNộp 3 file (như các lab trước):\n\n\n\nFile\nNội dung\n\n\n\n\nlab12_&lt;tên&gt;.do\nCode + comment\n\n\nlab12_&lt;tên&gt;.log\nOutput\n\n\nlab12_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: DTU301-LAB12-MSSV-HọTên",
+    "section": "2. Correlation 3 chỉ số",
+    "text": "2. Correlation 3 chỉ số\ncorrelate PCI PAPI PAR\n\n* Có cao nhất giữa PCI–PAR hay PCI–PAPI?\nCâu hỏi 1: 3 chỉ số có tương quan cao không? Cặp nào tương quan cao nhất? Ý nghĩa?",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
@@ -1909,11 +2089,35 @@
     ]
   },
   {
-    "objectID": "stata-lab/lab-12.html#tiêu-chí-chấm",
-    "href": "stata-lab/lab-12.html#tiêu-chí-chấm",
+    "objectID": "stata-lab/lab-12.html#scatter-và-ranking",
+    "href": "stata-lab/lab-12.html#scatter-và-ranking",
     "title": "Lab 12 — PCI / PAPI / PAR Index theo tỉnh",
-    "section": "Tiêu chí chấm",
-    "text": "Tiêu chí chấm\n\n\n\nTiêu chí\nĐiểm\n\n\n\n\nCode chạy đúng, có log\n30%\n\n\nVận dụng đúng khái niệm Stata mới của bài\n25%\n\n\nBiểu đồ / bảng kết quả rõ ràng\n20%\n\n\nTrả lời câu hỏi sâu, có liên hệ thực tiễn\n25%\n\n\n\n\n← Lab trước: Lab 11 | Lab tiếp theo: Lab 13 →",
+    "section": "3. Scatter và ranking",
+    "text": "3. Scatter và ranking\n* === Scatter PCI vs GRDP ===\ntwoway (scatter GRDP_pc PCI, mlabel(tinh) mlabsize(small) ///\n        mcolor(\"114 47 55\")) ///\n       (lfit GRDP_pc PCI, lcolor(\"0 88 163\")), ///\n       title(\"PCI và GRDP/đầu người — 12 tỉnh\") ///\n       xtitle(\"PCI\") ytitle(\"GRDP/đầu người (USD)\") ///\n       legend(off) ///\n       graphregion(color(white))\n\ngraph export \"pci_grdp.png\", replace width(1400)\nCâu hỏi 2: PCI cao có đi đôi với GRDP cao? Outlier nào? Tại sao?",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 12 — PCI / PAPI / PAR Index theo tỉnh"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-12.html#tổng-hợp-3-chỉ-số",
+    "href": "stata-lab/lab-12.html#tổng-hợp-3-chỉ-số",
+    "title": "Lab 12 — PCI / PAPI / PAR Index theo tỉnh",
+    "section": "4. Tổng hợp 3 chỉ số",
+    "text": "4. Tổng hợp 3 chỉ số\n* Chuẩn hoá về 0-100\negen PCI_norm  = std(PCI)\negen PAPI_norm = std(PAPI)\negen PAR_norm  = std(PAR)\n\n* Tổng hợp\ngenerate composite = (PCI_norm + PAPI_norm + PAR_norm) / 3\n\n* Ranking\ngsort -composite\ngenerate rank = _n\n\nlist tinh PCI PAPI PAR composite rank, noobs\nCâu hỏi 3: Top 3 tỉnh quản trị tốt nhất theo composite? Bottom 3?",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 12 — PCI / PAPI / PAR Index theo tỉnh"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-12.html#liên-hệ-chính-sách",
+    "href": "stata-lab/lab-12.html#liên-hệ-chính-sách",
+    "title": "Lab 12 — PCI / PAPI / PAR Index theo tỉnh",
+    "section": "5. Liên hệ chính sách",
+    "text": "5. Liên hệ chính sách\nCâu hỏi 4 + 5 (suy nghĩ + viết, 400 từ):\n\nSau cải cách 2025 (34 tỉnh), 12 tỉnh trên có còn tồn tại không? (Một số sẽ sáp nhập)\nTỉnh nào sẽ là trung tâm sau sáp nhập? Quản trị tốt có giữ được không?\nÁp dụng khung Oates: cải cách 2025 là phân cấp hay tập trung hơn?\nBài học nào từ Quảng Ninh có thể chia sẻ cho các tỉnh khác?\n\nlog close\n\n← Lab trước: Lab 11 — Event study 1997 | Lab tiếp theo: Lab 13 — 6 vùng KT-XH →",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
@@ -1925,7 +2129,7 @@
     "href": "stata-lab/lab-13.html",
     "title": "Lab 13 — So sánh 6 vùng KT-XH",
     "section": "",
-    "text": "Note🎯 Liên kết với Buổi 13\n\n\n\nBài này áp dụng khái niệm chính từ Buổi 13 vào dữ liệu thực tế Việt Nam.\nKhái niệm Stata học: collapse, group statistics, box plot",
+    "text": "Note🎯 Liên kết với Buổi 13\n\n\n\nSo sánh 6 vùng KT-XH Việt Nam về GRDP, dân số, FDI, hạ tầng — đo chênh lệch vùng và liên hệ với NEG.\nKhái niệm Stata học: collapse, group statistics, box plot, ranking",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
@@ -1933,11 +2137,11 @@
     ]
   },
   {
-    "objectID": "stata-lab/lab-13.html#khung-lab-13",
-    "href": "stata-lab/lab-13.html#khung-lab-13",
+    "objectID": "stata-lab/lab-13.html#dataset-6-vùng-kt-xh",
+    "href": "stata-lab/lab-13.html#dataset-6-vùng-kt-xh",
     "title": "Lab 13 — So sánh 6 vùng KT-XH",
-    "section": "Khung Lab 13",
-    "text": "Khung Lab 13\n\n1. Bài toán\nTính GRDP per capita 6 vùng và chênh lệch\n\n\n2. Dữ liệu cần\nGDP theo tỉnh + phân loại vùng KT-XH\n\n\n3. Lệnh Stata trọng tâm\nBài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):\n* Lab 13 — DTU301\n* Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nclear all\nset more off\nlog using \"lab13_&lt;ten&gt;.log\", replace text\n\n* === Tải dữ liệu ===\n* (sẽ chi tiết khi có dataset thật)\n\n* === Phân tích ===\n* Sử dụng: collapse, group statistics, box plot\n\n* === Đóng log ===\nlog close\n\n\n4. Câu hỏi suy nghĩ (sẽ chi tiết)\n\nCâu hỏi mô tả dữ liệu\nCâu hỏi so sánh / xu hướng\nCâu hỏi liên hệ với lý thuyết\nCâu hỏi liên hệ với chính sách Việt Nam\nCâu hỏi mở rộng / phản biện",
+    "section": "1. Dataset 6 vùng KT-XH",
+    "text": "1. Dataset 6 vùng KT-XH\n* Lab 13 — DTU301 — 6 vùng KT-XH\nclear all\nset more off\nlog using \"lab13_&lt;ten&gt;.log\", replace text\n\nclear\ninput str30 vung float GRDP_pc float dan_so float FDI float ti_le_TLĐ\n\"Trung du miền núi phía Bắc\"  2200  13.5  3.5   65\n\"Đồng bằng sông Hồng\"         5800  22.5  18.2  80\n\"Bắc Trung Bộ & DH miền Trung\" 3500  20.5  6.2   72\n\"Tây Nguyên\"                  2100   6.0  1.0   75\n\"Đông Nam Bộ\"                 8500  18.5  35.5  90\n\"Đồng bằng sông Cửu Long\"     3200  18.5  3.8   68\nend\n\nlabel variable GRDP_pc \"GRDP/đầu người (USD)\"\nlabel variable dan_so \"Dân số (triệu)\"\nlabel variable FDI \"FDI cumulative (tỷ USD)\"\nlabel variable ti_le_TLĐ \"Tỷ lệ LĐ qua đào tạo (%)\"\n\nlist",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
@@ -1945,11 +2149,11 @@
     ]
   },
   {
-    "objectID": "stata-lab/lab-13.html#deliverable-lab-13",
-    "href": "stata-lab/lab-13.html#deliverable-lab-13",
+    "objectID": "stata-lab/lab-13.html#so-sánh-xếp-hạng",
+    "href": "stata-lab/lab-13.html#so-sánh-xếp-hạng",
     "title": "Lab 13 — So sánh 6 vùng KT-XH",
-    "section": "Deliverable Lab 13",
-    "text": "Deliverable Lab 13\nNộp 3 file (như các lab trước):\n\n\n\nFile\nNội dung\n\n\n\n\nlab13_&lt;tên&gt;.do\nCode + comment\n\n\nlab13_&lt;tên&gt;.log\nOutput\n\n\nlab13_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: DTU301-LAB13-MSSV-HọTên",
+    "section": "2. So sánh + xếp hạng",
+    "text": "2. So sánh + xếp hạng\n* Ranking theo GRDP\npreserve\n    gsort -GRDP_pc\n    generate rank_grdp = _n\n    list vung GRDP_pc rank_grdp, noobs\nrestore\n\n* Tính tỷ lệ GRDP vùng cao nhất vs thấp nhất\nsummarize GRDP_pc\ndisplay \"Chênh lệch GRDP cao/thấp = \" r(max)/r(min) \" lần\"\nCâu hỏi 1: Vùng giàu nhất / nghèo nhất? Chênh lệch GRDP cao/thấp bao nhiêu lần?",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
@@ -1957,11 +2161,35 @@
     ]
   },
   {
-    "objectID": "stata-lab/lab-13.html#tiêu-chí-chấm",
-    "href": "stata-lab/lab-13.html#tiêu-chí-chấm",
+    "objectID": "stata-lab/lab-13.html#box-plot-và-scatter",
+    "href": "stata-lab/lab-13.html#box-plot-và-scatter",
     "title": "Lab 13 — So sánh 6 vùng KT-XH",
-    "section": "Tiêu chí chấm",
-    "text": "Tiêu chí chấm\n\n\n\nTiêu chí\nĐiểm\n\n\n\n\nCode chạy đúng, có log\n30%\n\n\nVận dụng đúng khái niệm Stata mới của bài\n25%\n\n\nBiểu đồ / bảng kết quả rõ ràng\n20%\n\n\nTrả lời câu hỏi sâu, có liên hệ thực tiễn\n25%\n\n\n\n\n← Lab trước: Lab 12 | Lab tiếp theo: Lab 14 →",
+    "section": "3. Box plot và scatter",
+    "text": "3. Box plot và scatter\n* Bar chart GRDP\ngraph bar GRDP_pc, over(vung, label(angle(45) labsize(small))) ///\n    bar(1, color(\"114 47 55\")) ///\n    title(\"GRDP/đầu người — 6 vùng KT-XH Việt Nam\") ///\n    ytitle(\"USD\") ///\n    graphregion(color(white))\n\ngraph export \"grdp_6vung.png\", replace width(1400)\n\n* Scatter FDI vs GRDP\ntwoway (scatter GRDP_pc FDI, mlabel(vung) mlabsize(small) ///\n        mcolor(\"114 47 55\")) ///\n       (lfit GRDP_pc FDI, lcolor(\"0 88 163\")), ///\n       title(\"FDI và GRDP/đầu người — 6 vùng\") ///\n       graphregion(color(white))\n\ngraph export \"fdi_grdp.png\", replace width(1400)\nCâu hỏi 2: FDI cao có đi đôi với GRDP cao? ĐNB là điểm sáng hay outlier?",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 13 — So sánh 6 vùng KT-XH"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-13.html#phân-tích-hội-tụ-convergence",
+    "href": "stata-lab/lab-13.html#phân-tích-hội-tụ-convergence",
+    "title": "Lab 13 — So sánh 6 vùng KT-XH",
+    "section": "4. Phân tích hội tụ (convergence)",
+    "text": "4. Phân tích hội tụ (convergence)\n* σ-convergence: độ biến thiên giảm theo thời gian\n* Ở đây chỉ có 1 năm — không tính σ-conv được\n* Nhưng có thể tính độ phân tán\n\nsummarize GRDP_pc, detail\ndisplay \"Coefficient of variation = \" r(sd)/r(mean) * 100 \"%\"\nCâu hỏi 3: CV cao thể hiện bất bình đẳng vùng lớn. So với các nước phát triển (CV ~20-30%), VN ở mức nào?",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 13 — So sánh 6 vùng KT-XH"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-13.html#lý-thuyết-neg-krugman",
+    "href": "stata-lab/lab-13.html#lý-thuyết-neg-krugman",
+    "title": "Lab 13 — So sánh 6 vùng KT-XH",
+    "section": "5. Lý thuyết NEG Krugman",
+    "text": "5. Lý thuyết NEG Krugman\nCâu hỏi 4 + 5 (suy nghĩ + viết, 400 từ):\nÁp dụng Mô hình Core-Periphery (Krugman 1991) cho VN:\n\nĐNB là Core — tại sao? (3 nguồn ngoại tác Marshall)\nTây Nguyên là Periphery — vì sao bị kẹt?\n6 siêu dự án Đại hội XIV làm giảm chi phí vận chuyển τ. Theo Krugman, kết quả sẽ là tập trung hơn hay phân tán?\nCần chính sách bổ sung gì để các vùng nghèo không bị bỏ rơi?\n\nlog close\n\n← Lab trước: Lab 12 — PCI/PAPI/PAR | Lab tiếp theo: Lab 14 — Capstone →",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
@@ -1973,7 +2201,7 @@
     "href": "stata-lab/lab-11.html",
     "title": "Lab 11 — Event study Khủng hoảng châu Á 1997",
     "section": "",
-    "text": "Note🎯 Liên kết với Buổi 11\n\n\n\nBài này áp dụng khái niệm chính từ Buổi 11 vào dữ liệu thực tế Việt Nam.\nKhái niệm Stata học: rolling regression, event dummy",
+    "text": "Note🎯 Liên kết với Buổi 11\n\n\n\nEvent study Khủng hoảng châu Á 1997: tác động lên Thái Lan, Indonesia, Hàn Quốc, Philippines. So sánh với Việt Nam — vì sao VN tránh được khủng hoảng?\nKhái niệm Stata học: event dummy, before/after comparison, panel",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
@@ -1981,11 +2209,11 @@
     ]
   },
   {
-    "objectID": "stata-lab/lab-11.html#khung-lab-11",
-    "href": "stata-lab/lab-11.html#khung-lab-11",
+    "objectID": "stata-lab/lab-11.html#dataset-5-nền-kinh-tế-1995-2000",
+    "href": "stata-lab/lab-11.html#dataset-5-nền-kinh-tế-1995-2000",
     "title": "Lab 11 — Event study Khủng hoảng châu Á 1997",
-    "section": "Khung Lab 11",
-    "text": "Khung Lab 11\n\n1. Bài toán\nĐo phản ứng GDP, tỷ giá, lạm phát quanh 7/1997\n\n\n2. Dữ liệu cần\nDữ liệu macro Thái/Indo/Hàn/VN 1995-2000\n\n\n3. Lệnh Stata trọng tâm\nBài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):\n* Lab 11 — DTU301\n* Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nclear all\nset more off\nlog using \"lab11_&lt;ten&gt;.log\", replace text\n\n* === Tải dữ liệu ===\n* (sẽ chi tiết khi có dataset thật)\n\n* === Phân tích ===\n* Sử dụng: rolling regression, event dummy\n\n* === Đóng log ===\nlog close\n\n\n4. Câu hỏi suy nghĩ (sẽ chi tiết)\n\nCâu hỏi mô tả dữ liệu\nCâu hỏi so sánh / xu hướng\nCâu hỏi liên hệ với lý thuyết\nCâu hỏi liên hệ với chính sách Việt Nam\nCâu hỏi mở rộng / phản biện",
+    "section": "1. Dataset 5 nền kinh tế 1995-2000",
+    "text": "1. Dataset 5 nền kinh tế 1995-2000\n* Lab 11 — DTU301 — Asian Crisis Event Study\nclear all\nset more off\nlog using \"lab11_&lt;ten&gt;.log\", replace text\n\nclear\ninput str10 country int year float GDP_growth float FX_change\n\"Thailand\"    1995  9.2   0\n\"Thailand\"    1996  5.9   0\n\"Thailand\"    1997 -1.4   55\n\"Thailand\"    1998 -10.5  20\n\"Thailand\"    1999  4.4  -5\n\"Thailand\"    2000  4.5  -3\n\"Indonesia\"   1995  8.2   0\n\"Indonesia\"   1996  7.8   0\n\"Indonesia\"   1997  4.7   75\n\"Indonesia\"   1998 -13.1  150\n\"Indonesia\"   1999  0.8  -10\n\"Indonesia\"   2000  4.9  -8\n\"Korea\"       1995  9.6   0\n\"Korea\"       1996  7.6   0\n\"Korea\"       1997  5.9   60\n\"Korea\"       1998 -5.5   45\n\"Korea\"       1999 11.3  -25\n\"Korea\"       2000  8.9  -8\n\"Philippines\" 1995  4.7   0\n\"Philippines\" 1996  5.8   0\n\"Philippines\" 1997  5.2   30\n\"Philippines\" 1998 -0.6   15\n\"Philippines\" 1999  3.4  -3\n\"Philippines\" 2000  4.4  -5\n\"Vietnam\"     1995  9.5   0\n\"Vietnam\"     1996  9.3   0\n\"Vietnam\"     1997  8.2   8\n\"Vietnam\"     1998  5.8   12\n\"Vietnam\"     1999  4.8   2\n\"Vietnam\"     2000  6.8   1\nend\n\nlist, sepby(country)",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
@@ -1993,11 +2221,11 @@
     ]
   },
   {
-    "objectID": "stata-lab/lab-11.html#deliverable-lab-11",
-    "href": "stata-lab/lab-11.html#deliverable-lab-11",
+    "objectID": "stata-lab/lab-11.html#event-dummy-và-phân-tích",
+    "href": "stata-lab/lab-11.html#event-dummy-và-phân-tích",
     "title": "Lab 11 — Event study Khủng hoảng châu Á 1997",
-    "section": "Deliverable Lab 11",
-    "text": "Deliverable Lab 11\nNộp 3 file (như các lab trước):\n\n\n\nFile\nNội dung\n\n\n\n\nlab11_&lt;tên&gt;.do\nCode + comment\n\n\nlab11_&lt;tên&gt;.log\nOutput\n\n\nlab11_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: DTU301-LAB11-MSSV-HọTên",
+    "section": "2. Event dummy và phân tích",
+    "text": "2. Event dummy và phân tích\n* Event: 7/1997 → dummy cho năm sau khủng hoảng\ngenerate crisis = (year &gt;= 1997)\ngenerate post_crisis = (year &gt;= 1998)\n\n* So sánh GDP trước/sau với 4 nước bị khủng hoảng (loại VN)\ndisplay \"=== GDP growth trước vs sau crisis (4 nước Tiger) ===\"\ntabulate post_crisis if country != \"Vietnam\", summarize(GDP_growth)\n\n* VN\ndisplay \"=== Vietnam ===\"\ntabulate post_crisis if country == \"Vietnam\", summarize(GDP_growth)\nCâu hỏi 1: GDP TB của 4 Tiger giảm bao nhiêu sau crisis? VN giảm bao nhiêu?",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
@@ -2005,11 +2233,23 @@
     ]
   },
   {
-    "objectID": "stata-lab/lab-11.html#tiêu-chí-chấm",
-    "href": "stata-lab/lab-11.html#tiêu-chí-chấm",
+    "objectID": "stata-lab/lab-11.html#biểu-đồ-panel",
+    "href": "stata-lab/lab-11.html#biểu-đồ-panel",
     "title": "Lab 11 — Event study Khủng hoảng châu Á 1997",
-    "section": "Tiêu chí chấm",
-    "text": "Tiêu chí chấm\n\n\n\nTiêu chí\nĐiểm\n\n\n\n\nCode chạy đúng, có log\n30%\n\n\nVận dụng đúng khái niệm Stata mới của bài\n25%\n\n\nBiểu đồ / bảng kết quả rõ ràng\n20%\n\n\nTrả lời câu hỏi sâu, có liên hệ thực tiễn\n25%\n\n\n\n\n← Lab trước: Lab 10 | Lab tiếp theo: Lab 12 →",
+    "section": "3. Biểu đồ panel",
+    "text": "3. Biểu đồ panel\ntwoway (line GDP_growth year if country == \"Thailand\",    lcolor(\"114 47 55\")) ///\n       (line GDP_growth year if country == \"Indonesia\",   lcolor(\"0 88 163\")) ///\n       (line GDP_growth year if country == \"Korea\",       lcolor(\"46 125 80\")) ///\n       (line GDP_growth year if country == \"Philippines\", lcolor(\"193 154 77\")) ///\n       (line GDP_growth year if country == \"Vietnam\",     lcolor(\"46 0 100\") lwidth(thick)), ///\n       title(\"Tăng trưởng GDP 1995-2000 — Khủng hoảng châu Á\") ///\n       xline(1997, lpattern(dash) lcolor(red)) ///\n       legend(label(1 \"Thailand\") label(2 \"Indonesia\") label(3 \"Korea\") ///\n              label(4 \"Philippines\") label(5 \"Vietnam\") position(6)) ///\n       graphregion(color(white))\n\ngraph export \"asian_crisis.png\", replace width(1400)\nCâu hỏi 2: Năm 1998, Indonesia GDP -13% — sâu nhất. Vì sao Indonesia bị nặng nhất? (Gợi ý: chính trị, nợ ngoại tệ DN, IMF)",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 11 — Event study Khủng hoảng châu Á 1997"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-11.html#vì-sao-việt-nam-tránh-được",
+    "href": "stata-lab/lab-11.html#vì-sao-việt-nam-tránh-được",
+    "title": "Lab 11 — Event study Khủng hoảng châu Á 1997",
+    "section": "4. Vì sao Việt Nam tránh được?",
+    "text": "4. Vì sao Việt Nam tránh được?\nCâu hỏi 3-5 (suy nghĩ + viết, 500 từ):\n\nVN 1997 cũng peg + tăng trưởng cao + nợ ngoại tệ DN — sao không bị?\nHai lý do chính (kiểm soát vốn + tài chính chưa mở) đủ để bảo vệ không?\nNăm 2025, VN tự do hoá vốn nhiều hơn 1997. Nếu có “Khủng hoảng 2.0”, VN có an toàn không?\n5 bài học từ 1997 nào VN nên áp dụng ngay?\n\nlog close\n\n← Lab trước: Lab 10 — Mundell-Fleming | Lab tiếp theo: Lab 12 — PCI/PAPI/PAR →",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
@@ -2019,49 +2259,109 @@
   {
     "objectID": "stata-lab/lab-09.html",
     "href": "stata-lab/lab-09.html",
-    "title": "Lab 09 — Tính NEER và REER VND",
+    "title": "Lab 9 — Tính NEER và REER VND",
     "section": "",
-    "text": "Note🎯 Liên kết với Buổi 9\n\n\n\nBài này áp dụng khái niệm chính từ Buổi 9 vào dữ liệu thực tế Việt Nam.\nKhái niệm Stata học: weighted average, log, time series",
+    "text": "Note🎯 Liên kết với Buổi 9\n\n\n\nBài này tính NEER và REER VND từ tỷ giá song phương với 5 đối tác lớn (USD, EUR, JPY, CNY, KRW) và CPI tương ứng.\nKhái niệm Stata học: weighted average, normalization, time series plotting, growth rates",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "Lab 09 — Tính NEER và REER VND"
+      "Lab 9 — Tính NEER và REER VND"
     ]
   },
   {
-    "objectID": "stata-lab/lab-09.html#khung-lab-09",
-    "href": "stata-lab/lab-09.html#khung-lab-09",
-    "title": "Lab 09 — Tính NEER và REER VND",
-    "section": "Khung Lab 09",
-    "text": "Khung Lab 09\n\n1. Bài toán\nTính NEER REER VND 2015-2024\n\n\n2. Dữ liệu cần\nDữ liệu tỷ giá VND/USD, EUR, JPY, CNY + CPI VN và đối tác\n\n\n3. Lệnh Stata trọng tâm\nBài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):\n* Lab 09 — DTU301\n* Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nclear all\nset more off\nlog using \"lab09_&lt;ten&gt;.log\", replace text\n\n* === Tải dữ liệu ===\n* (sẽ chi tiết khi có dataset thật)\n\n* === Phân tích ===\n* Sử dụng: weighted average, log, time series\n\n* === Đóng log ===\nlog close\n\n\n4. Câu hỏi suy nghĩ (sẽ chi tiết)\n\nCâu hỏi mô tả dữ liệu\nCâu hỏi so sánh / xu hướng\nCâu hỏi liên hệ với lý thuyết\nCâu hỏi liên hệ với chính sách Việt Nam\nCâu hỏi mở rộng / phản biện",
+    "objectID": "stata-lab/lab-09.html#dataset-tỷ-giá-cpi",
+    "href": "stata-lab/lab-09.html#dataset-tỷ-giá-cpi",
+    "title": "Lab 9 — Tính NEER và REER VND",
+    "section": "1. Dataset tỷ giá + CPI",
+    "text": "1. Dataset tỷ giá + CPI\n* Lab 9 — DTU301 — NEER/REER VND\nclear all\nset more off\nlog using \"lab09_&lt;ten&gt;.log\", replace text\n\n* Dataset hàng năm 2015-2024 (mô phỏng từ số liệu thực)\nclear\nset obs 10\ngenerate year = 2014 + _n\n\n* Tỷ giá song phương (VND/foreign currency)\ngenerate VND_USD = .\nreplace VND_USD = 21800 if year == 2015\nreplace VND_USD = 22300 if year == 2016\nreplace VND_USD = 22700 if year == 2017\nreplace VND_USD = 23200 if year == 2018\nreplace VND_USD = 23200 if year == 2019\nreplace VND_USD = 23200 if year == 2020\nreplace VND_USD = 22800 if year == 2021\nreplace VND_USD = 24200 if year == 2022\nreplace VND_USD = 24300 if year == 2023\nreplace VND_USD = 25000 if year == 2024\n\ngenerate VND_EUR = .\nreplace VND_EUR = 24000 if year == 2015\nreplace VND_EUR = 24500 if year == 2016\nreplace VND_EUR = 25500 if year == 2017\nreplace VND_EUR = 27000 if year == 2018\nreplace VND_EUR = 26000 if year == 2019\nreplace VND_EUR = 26500 if year == 2020\nreplace VND_EUR = 27000 if year == 2021\nreplace VND_EUR = 25400 if year == 2022\nreplace VND_EUR = 26300 if year == 2023\nreplace VND_EUR = 27000 if year == 2024\n\ngenerate VND_JPY = .\nreplace VND_JPY = 182 if year == 2015\nreplace VND_JPY = 200 if year == 2016\nreplace VND_JPY = 205 if year == 2017\nreplace VND_JPY = 210 if year == 2018\nreplace VND_JPY = 215 if year == 2019\nreplace VND_JPY = 218 if year == 2020\nreplace VND_JPY = 200 if year == 2021\nreplace VND_JPY = 185 if year == 2022\nreplace VND_JPY = 170 if year == 2023\nreplace VND_JPY = 165 if year == 2024\n\ngenerate VND_CNY = .\nreplace VND_CNY = 3500 if year == 2015\nreplace VND_CNY = 3350 if year == 2016\nreplace VND_CNY = 3450 if year == 2017\nreplace VND_CNY = 3370 if year == 2018\nreplace VND_CNY = 3350 if year == 2019\nreplace VND_CNY = 3500 if year == 2020\nreplace VND_CNY = 3550 if year == 2021\nreplace VND_CNY = 3450 if year == 2022\nreplace VND_CNY = 3400 if year == 2023\nreplace VND_CNY = 3450 if year == 2024\n\ngenerate VND_KRW = .\nreplace VND_KRW = 19.0 if year == 2015\nreplace VND_KRW = 19.2 if year == 2016\nreplace VND_KRW = 20.1 if year == 2017\nreplace VND_KRW = 21.0 if year == 2018\nreplace VND_KRW = 20.0 if year == 2019\nreplace VND_KRW = 21.0 if year == 2020\nreplace VND_KRW = 19.0 if year == 2021\nreplace VND_KRW = 18.5 if year == 2022\nreplace VND_KRW = 18.6 if year == 2023\nreplace VND_KRW = 18.4 if year == 2024\n\n* CPI (Index, 2015=100)\ngenerate CPI_VN  = 100 + 3*(year - 2015)   // Mô phỏng đơn giản\ngenerate CPI_US  = 100 + 2*(year - 2015)\ngenerate CPI_EU  = 100 + 1.5*(year - 2015)\ngenerate CPI_JP  = 100 + 0.5*(year - 2015)\ngenerate CPI_CN  = 100 + 2*(year - 2015)\ngenerate CPI_KR  = 100 + 2*(year - 2015)\n\nlist year VND_USD VND_EUR VND_JPY",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "Lab 09 — Tính NEER và REER VND"
+      "Lab 9 — Tính NEER và REER VND"
     ]
   },
   {
-    "objectID": "stata-lab/lab-09.html#deliverable-lab-09",
-    "href": "stata-lab/lab-09.html#deliverable-lab-09",
-    "title": "Lab 09 — Tính NEER và REER VND",
-    "section": "Deliverable Lab 09",
-    "text": "Deliverable Lab 09\nNộp 3 file (như các lab trước):\n\n\n\nFile\nNội dung\n\n\n\n\nlab09_&lt;tên&gt;.do\nCode + comment\n\n\nlab09_&lt;tên&gt;.log\nOutput\n\n\nlab09_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: DTU301-LAB09-MSSV-HọTên",
+    "objectID": "stata-lab/lab-09.html#trọng-số-rổ-thương-mại-ước-lượng",
+    "href": "stata-lab/lab-09.html#trọng-số-rổ-thương-mại-ước-lượng",
+    "title": "Lab 9 — Tính NEER và REER VND",
+    "section": "2. Trọng số rổ thương mại (ước lượng)",
+    "text": "2. Trọng số rổ thương mại (ước lượng)\n\n\n\nĐối tác\nTrọng số (%)\n\n\n\n\nUSD (Mỹ + thị trường USD)\n28\n\n\nCNY (Trung Quốc)\n30\n\n\nKRW (Hàn Quốc)\n18\n\n\nJPY (Nhật Bản)\n14\n\n\nEUR (EU)\n10\n\n\n\nscalar w_usd = 0.28\nscalar w_cny = 0.30\nscalar w_krw = 0.18\nscalar w_jpy = 0.14\nscalar w_eur = 0.10",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "Lab 09 — Tính NEER và REER VND"
+      "Lab 9 — Tính NEER và REER VND"
     ]
   },
   {
-    "objectID": "stata-lab/lab-09.html#tiêu-chí-chấm",
-    "href": "stata-lab/lab-09.html#tiêu-chí-chấm",
-    "title": "Lab 09 — Tính NEER và REER VND",
-    "section": "Tiêu chí chấm",
-    "text": "Tiêu chí chấm\n\n\n\nTiêu chí\nĐiểm\n\n\n\n\nCode chạy đúng, có log\n30%\n\n\nVận dụng đúng khái niệm Stata mới của bài\n25%\n\n\nBiểu đồ / bảng kết quả rõ ràng\n20%\n\n\nTrả lời câu hỏi sâu, có liên hệ thực tiễn\n25%\n\n\n\n\n← Lab trước: Lab 8 | Lab tiếp theo: Lab 10 →",
+    "objectID": "stata-lab/lab-09.html#chuẩn-hoá-tỷ-giá-2015-100",
+    "href": "stata-lab/lab-09.html#chuẩn-hoá-tỷ-giá-2015-100",
+    "title": "Lab 9 — Tính NEER và REER VND",
+    "section": "3. Chuẩn hoá tỷ giá (2015 = 100)",
+    "text": "3. Chuẩn hoá tỷ giá (2015 = 100)\n* Tính chỉ số tỷ giá (base 2015 = 100)\nforeach v in USD EUR JPY CNY KRW {\n    generate idx_`v' = VND_`v' / VND_`v'[1] * 100\n}\nlist year idx_USD idx_EUR idx_JPY idx_CNY idx_KRW",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
-      "Lab 09 — Tính NEER và REER VND"
+      "Lab 9 — Tính NEER và REER VND"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-09.html#tính-neer-geometric-mean",
+    "href": "stata-lab/lab-09.html#tính-neer-geometric-mean",
+    "title": "Lab 9 — Tính NEER và REER VND",
+    "section": "4. Tính NEER (geometric mean)",
+    "text": "4. Tính NEER (geometric mean)\nNEER là bình quân hình học có trọng số của các tỷ giá song phương:\n\\[\\text{NEER} = \\prod_i \\text{idx}_i^{w_i}\\]\ngenerate NEER = exp( ///\n    w_usd * log(idx_USD) + ///\n    w_eur * log(idx_EUR) + ///\n    w_jpy * log(idx_JPY) + ///\n    w_cny * log(idx_CNY) + ///\n    w_krw * log(idx_KRW) ///\n)\n\nlist year NEER\nCâu hỏi 1: NEER VND năm 2024 so với 2015 thay đổi bao nhiêu %? VND có lên giá hay mất giá theo rổ này?",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 9 — Tính NEER và REER VND"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-09.html#tính-reer",
+    "href": "stata-lab/lab-09.html#tính-reer",
+    "title": "Lab 9 — Tính NEER và REER VND",
+    "section": "5. Tính REER",
+    "text": "5. Tính REER\n\\[\\text{REER} = \\text{NEER} \\cdot \\frac{\\text{CPI}_{\\text{foreign,weighted}}}{\\text{CPI}_{\\text{VN}}}\\]\n* CPI foreign weighted (geometric mean)\ngenerate CPI_foreign = exp( ///\n    w_usd * log(CPI_US) + ///\n    w_eur * log(CPI_EU) + ///\n    w_jpy * log(CPI_JP) + ///\n    w_cny * log(CPI_CN) + ///\n    w_krw * log(CPI_KR) ///\n)\n\ngenerate REER = NEER * CPI_foreign / CPI_VN\n\nlist year NEER REER\nCâu hỏi 2: REER khác NEER ở chỗ nào? Trong giai đoạn 2015-2024, REER tăng hay giảm nhiều hơn NEER? Ý nghĩa?",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 9 — Tính NEER và REER VND"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-09.html#vẽ-biểu-đồ-neer-và-reer",
+    "href": "stata-lab/lab-09.html#vẽ-biểu-đồ-neer-và-reer",
+    "title": "Lab 9 — Tính NEER và REER VND",
+    "section": "6. Vẽ biểu đồ NEER và REER",
+    "text": "6. Vẽ biểu đồ NEER và REER\ntwoway (line NEER year, lcolor(\"114 47 55\") lwidth(thick)) ///\n       (line REER year, lcolor(\"0 88 163\") lwidth(thick) lpattern(dash)), ///\n       title(\"NEER và REER VND, 2015-2024\") ///\n       subtitle(\"Base year 2015 = 100\") ///\n       xtitle(\"Năm\") ytitle(\"Index\") ///\n       yline(100, lcolor(gray) lpattern(dot)) ///\n       legend(label(1 \"NEER\") label(2 \"REER\") position(2) ring(0) cols(1)) ///\n       graphregion(color(white))\n\ngraph export \"neer_reer.png\", replace width(1400)\nCâu hỏi 3: Năm nào VND real depreciation nhiều nhất? Có trùng với năm Fed tăng lãi suất mạnh (2022) không?",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 9 — Tính NEER và REER VND"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-09.html#liên-hệ-chính-sách",
+    "href": "stata-lab/lab-09.html#liên-hệ-chính-sách",
+    "title": "Lab 9 — Tính NEER và REER VND",
+    "section": "7. Liên hệ chính sách",
+    "text": "7. Liên hệ chính sách\nCâu hỏi 4 + 5 (suy nghĩ + viết, 400 từ):\n\nVND có bị định giá quá cao (overvalued) theo REER không?\nSo sánh REER VN với REER Trung Quốc, Thái Lan cùng giai đoạn — ai cạnh tranh hơn?\nNếu REER tăng (VND lên giá thực), tác động đến XK Việt Nam ra sao?\nNHNN nên tiếp tục crawl-like hay chuyển sang managed float dài hạn?\n\nlog close",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 9 — Tính NEER và REER VND"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-09.html#deliverable-tiêu-chí-chấm",
+    "href": "stata-lab/lab-09.html#deliverable-tiêu-chí-chấm",
+    "title": "Lab 9 — Tính NEER và REER VND",
+    "section": "Deliverable + Tiêu chí chấm",
+    "text": "Deliverable + Tiêu chí chấm\n\n\n\nTiêu chí\nĐiểm\n\n\n\n\nCode chạy + tính NEER REER đúng\n30%\n\n\nBiểu đồ rõ ràng\n25%\n\n\nTrả lời 5 câu hỏi sâu\n30%\n\n\nLiên hệ thực tiễn 2022-2024\n15%\n\n\n\n\n← Lab trước: Lab 8 — Phillips VN | Lab tiếp theo: Lab 10 — Mundell-Fleming →",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 9 — Tính NEER và REER VND"
     ]
   },
   {
@@ -2201,7 +2501,7 @@
     "href": "stata-lab/lab-10.html",
     "title": "Lab 10 — Mundell-Fleming bằng dữ liệu lịch sử",
     "section": "",
-    "text": "Note🎯 Liên kết với Buổi 10\n\n\n\nBài này áp dụng khái niệm chính từ Buổi 10 vào dữ liệu thực tế Việt Nam.\nKhái niệm Stata học: panel data, time fixed effects",
+    "text": "Note🎯 Liên kết với Buổi 10\n\n\n\nPhân tích 3 case lịch sử bằng dữ liệu macro: Hong Kong LERS (peg cứng), Reaganomics 1980s (twin deficits), ERM 1992 (Black Wednesday).\nKhái niệm Stata học: panel data setup, time-varying analysis, conditional statements",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
@@ -2209,11 +2509,11 @@
     ]
   },
   {
-    "objectID": "stata-lab/lab-10.html#khung-lab-10",
-    "href": "stata-lab/lab-10.html#khung-lab-10",
+    "objectID": "stata-lab/lab-10.html#tạo-dataset-3-nền-kinh-tế",
+    "href": "stata-lab/lab-10.html#tạo-dataset-3-nền-kinh-tế",
     "title": "Lab 10 — Mundell-Fleming bằng dữ liệu lịch sử",
-    "section": "Khung Lab 10",
-    "text": "Khung Lab 10\n\n1. Bài toán\nPhân tích case Hong Kong LERS, Reaganomics, ERM 1992\n\n\n2. Dữ liệu cần\nDữ liệu BoP, tỷ giá, lãi suất Hong Kong / Mỹ / Anh\n\n\n3. Lệnh Stata trọng tâm\nBài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):\n* Lab 10 — DTU301\n* Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nclear all\nset more off\nlog using \"lab10_&lt;ten&gt;.log\", replace text\n\n* === Tải dữ liệu ===\n* (sẽ chi tiết khi có dataset thật)\n\n* === Phân tích ===\n* Sử dụng: panel data, time fixed effects\n\n* === Đóng log ===\nlog close\n\n\n4. Câu hỏi suy nghĩ (sẽ chi tiết)\n\nCâu hỏi mô tả dữ liệu\nCâu hỏi so sánh / xu hướng\nCâu hỏi liên hệ với lý thuyết\nCâu hỏi liên hệ với chính sách Việt Nam\nCâu hỏi mở rộng / phản biện",
+    "section": "1. Tạo dataset 3 nền kinh tế",
+    "text": "1. Tạo dataset 3 nền kinh tế\n* Lab 10 — DTU301 — Mundell-Fleming historical cases\nclear all\nset more off\nlog using \"lab10_&lt;ten&gt;.log\", replace text\n\nclear\nset obs 30                      // 3 nước × 10 năm\ngenerate id = ceil(_n/10)       // 1=HK, 2=Mỹ Reagan, 3=Anh ERM\ngenerate year = mod(_n-1, 10)\n\n* === HK 2015-2024 ===\nreplace year = 2015 + year if id == 1\n* === Mỹ 1980-1989 ===\nreplace year = 1980 + year if id == 2\n* === Anh 1985-1994 ===\nreplace year = 1985 + year if id == 3\n\ngenerate country = \"\"\nreplace country = \"Hong Kong\" if id == 1\nreplace country = \"USA\"       if id == 2\nreplace country = \"UK\"        if id == 3\n\n* Tỷ giá thực\ngenerate REER = .\n* Hong Kong: ổn định nhờ peg\nreplace REER = 100 + 2*(year - 2015) if id == 1\n\n* Mỹ thời Reagan: lên giá mạnh\nreplace REER = 100             if id == 2 & year == 1980\nreplace REER = 110             if id == 2 & year == 1981\nreplace REER = 125             if id == 2 & year == 1982\nreplace REER = 140             if id == 2 & year == 1983\nreplace REER = 155             if id == 2 & year == 1984\nreplace REER = 150             if id == 2 & year == 1985\nreplace REER = 130             if id == 2 & year == 1986\nreplace REER = 115             if id == 2 & year == 1987\nreplace REER = 105             if id == 2 & year == 1988\nreplace REER = 102             if id == 2 & year == 1989\n\n* Anh ERM: cao trước 1992, sụp 1992\nreplace REER = 100             if id == 3 & year == 1985\nreplace REER = 102             if id == 3 & year == 1986\nreplace REER = 105             if id == 3 & year == 1987\nreplace REER = 108             if id == 3 & year == 1988\nreplace REER = 110             if id == 3 & year == 1989\nreplace REER = 113             if id == 3 & year == 1990\nreplace REER = 115             if id == 3 & year == 1991\nreplace REER = 85              if id == 3 & year == 1992\nreplace REER = 80              if id == 3 & year == 1993\nreplace REER = 78              if id == 3 & year == 1994\n\n* CA / GDP (%)\ngenerate CA = .\nreplace CA = 5  if id == 1                                  // HK luôn thặng dư\nreplace CA = -1 if id == 2 & year == 1980\nreplace CA = -1 if id == 2 & year == 1981\nreplace CA = -2 if id == 2 & year == 1982\nreplace CA = -3 if id == 2 & year == 1983\nreplace CA = -3 if id == 2 & year == 1984\nreplace CA = -3 if id == 2 & year == 1985\nreplace CA = -3 if id == 2 & year == 1986\nreplace CA = -3 if id == 2 & year == 1987\nreplace CA = -2 if id == 2 & year == 1988\nreplace CA = -2 if id == 2 & year == 1989\nreplace CA = -2 if id == 3                                  // Anh\nreplace CA = -4 if id == 3 & year &gt;= 1989 & year &lt;= 1991\nreplace CA = -1 if id == 3 & year &gt;= 1993\n\nlist, sepby(country)",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
@@ -2221,11 +2521,11 @@
     ]
   },
   {
-    "objectID": "stata-lab/lab-10.html#deliverable-lab-10",
-    "href": "stata-lab/lab-10.html#deliverable-lab-10",
+    "objectID": "stata-lab/lab-10.html#phân-tích-case-by-case",
+    "href": "stata-lab/lab-10.html#phân-tích-case-by-case",
     "title": "Lab 10 — Mundell-Fleming bằng dữ liệu lịch sử",
-    "section": "Deliverable Lab 10",
-    "text": "Deliverable Lab 10\nNộp 3 file (như các lab trước):\n\n\n\nFile\nNội dung\n\n\n\n\nlab10_&lt;tên&gt;.do\nCode + comment\n\n\nlab10_&lt;tên&gt;.log\nOutput\n\n\nlab10_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: DTU301-LAB10-MSSV-HọTên",
+    "section": "2. Phân tích case-by-case",
+    "text": "2. Phân tích case-by-case\n* === Hong Kong: peg + tỷ giá ổn định ===\ndisplay \"=== Hong Kong LERS ===\"\nsummarize REER if country == \"Hong Kong\"\ndisplay \"REER std dev rất thấp do peg cứng\"\n\n* === Mỹ Reaganomics ===\ndisplay \"=== Reaganomics ===\"\nsummarize REER if country == \"USA\"\ndisplay \"REER lên giá ~55% giữa 1980-1985 → twin deficits\"\n\n* === ERM 1992 ===\ndisplay \"=== ERM 1992 — Anh ===\"\nsummarize REER if country == \"UK\"\ndisplay \"REER giảm mạnh 1992 → Black Wednesday\"\nCâu hỏi 1: REER HK ổn định nhất do cơ chế nào? (Gợi ý: peg cứng + dự trữ 3x M3)\nCâu hỏi 2: Mỹ Reagan REER tăng 55% trong 5 năm — phản ánh CSTK + CSTT phối hợp như thế nào?\nCâu hỏi 3: Anh ERM REER giảm 30% năm 1992 trong 1 ngày — Soros bán khống GBP với quy mô bao nhiêu?",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
@@ -2233,11 +2533,23 @@
     ]
   },
   {
-    "objectID": "stata-lab/lab-10.html#tiêu-chí-chấm",
-    "href": "stata-lab/lab-10.html#tiêu-chí-chấm",
+    "objectID": "stata-lab/lab-10.html#vẽ-biểu-đồ-so-sánh",
+    "href": "stata-lab/lab-10.html#vẽ-biểu-đồ-so-sánh",
     "title": "Lab 10 — Mundell-Fleming bằng dữ liệu lịch sử",
-    "section": "Tiêu chí chấm",
-    "text": "Tiêu chí chấm\n\n\n\nTiêu chí\nĐiểm\n\n\n\n\nCode chạy đúng, có log\n30%\n\n\nVận dụng đúng khái niệm Stata mới của bài\n25%\n\n\nBiểu đồ / bảng kết quả rõ ràng\n20%\n\n\nTrả lời câu hỏi sâu, có liên hệ thực tiễn\n25%\n\n\n\n\n← Lab trước: Lab 9 | Lab tiếp theo: Lab 11 →",
+    "section": "3. Vẽ biểu đồ so sánh",
+    "text": "3. Vẽ biểu đồ so sánh\ntwoway (line REER year if country == \"Hong Kong\", lcolor(\"114 47 55\") lwidth(thick)) ///\n       (line REER year if country == \"USA\",       lcolor(\"0 88 163\") lwidth(thick)) ///\n       (line REER year if country == \"UK\",        lcolor(\"46 125 80\") lwidth(thick)), ///\n       title(\"REER 3 case Mundell-Fleming\") ///\n       legend(label(1 \"HK LERS\") label(2 \"USA Reagan\") label(3 \"UK ERM\") ///\n              position(2) ring(0) cols(1)) ///\n       graphregion(color(white))\n\ngraph export \"mf_3cases.png\", replace width(1400)",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 10 — Mundell-Fleming bằng dữ liệu lịch sử"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-10.html#liên-hệ-việt-nam",
+    "href": "stata-lab/lab-10.html#liên-hệ-việt-nam",
+    "title": "Lab 10 — Mundell-Fleming bằng dữ liệu lịch sử",
+    "section": "4. Liên hệ Việt Nam",
+    "text": "4. Liên hệ Việt Nam\nCâu hỏi 4 + 5 (suy nghĩ + viết, 400 từ):\n\nVN giống HK (peg), Mỹ (thả nổi), hay Anh (cố gắng peg)?\nBài học nào từ ERM 1992 cho VN khi muốn duy trì crawl-like trong môi trường vốn ngày càng tự do?\nNếu VN bị tấn công tỷ giá kiểu Soros, NHNN có thể bảo vệ được không?\n\nlog close\n\n← Lab trước: Lab 9 — NEER/REER VND | Lab tiếp theo: Lab 11 — Event study KH châu Á 1997 →",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
@@ -2337,7 +2649,7 @@
     "href": "stata-lab/lab-15.html",
     "title": "Lab 15 — Xuất bảng + biểu đồ cho thuyết trình",
     "section": "",
-    "text": "Note🎯 Liên kết với Buổi 15\n\n\n\nBài này áp dụng khái niệm chính từ Buổi 15 vào dữ liệu thực tế Việt Nam.\nKhái niệm Stata học: outreg2, coefplot, esttab, putexcel",
+    "text": "Note🎯 Liên kết với Buổi 15\n\n\n\nLab cuối cùng: xuất kết quả Stata ra Word/LaTeX/Excel đẹp dùng cho thuyết trình. Đây là kỹ năng bắt buộc khi viết khoá luận hoặc paper học thuật.\nKhái niệm Stata học: outreg2, esttab, coefplot, putexcel, tabout",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
@@ -2345,11 +2657,11 @@
     ]
   },
   {
-    "objectID": "stata-lab/lab-15.html#khung-lab-15",
-    "href": "stata-lab/lab-15.html#khung-lab-15",
+    "objectID": "stata-lab/lab-15.html#cài-đặt-packages",
+    "href": "stata-lab/lab-15.html#cài-đặt-packages",
     "title": "Lab 15 — Xuất bảng + biểu đồ cho thuyết trình",
-    "section": "Khung Lab 15",
-    "text": "Khung Lab 15\n\n1. Bài toán\nXuất kết quả ra Word/Excel/PDF format chuẩn\n\n\n2. Dữ liệu cần\nDữ liệu từ Lab Capstone\n\n\n3. Lệnh Stata trọng tâm\nBài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):\n* Lab 15 — DTU301\n* Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;\n\nclear all\nset more off\nlog using \"lab15_&lt;ten&gt;.log\", replace text\n\n* === Tải dữ liệu ===\n* (sẽ chi tiết khi có dataset thật)\n\n* === Phân tích ===\n* Sử dụng: outreg2, coefplot, esttab, putexcel\n\n* === Đóng log ===\nlog close\n\n\n4. Câu hỏi suy nghĩ (sẽ chi tiết)\n\nCâu hỏi mô tả dữ liệu\nCâu hỏi so sánh / xu hướng\nCâu hỏi liên hệ với lý thuyết\nCâu hỏi liên hệ với chính sách Việt Nam\nCâu hỏi mở rộng / phản biện",
+    "section": "1. Cài đặt packages",
+    "text": "1. Cài đặt packages\n* Lab 15 — DTU301 — Xuất bảng + biểu đồ\nclear all\nset more off\nlog using \"lab15_&lt;ten&gt;.log\", replace text\n\n* Cài packages (chỉ chạy 1 lần)\nssc install outreg2, replace\nssc install estout, replace          // bao gồm esttab\nssc install coefplot, replace\nssc install tabout, replace",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
@@ -2357,11 +2669,11 @@
     ]
   },
   {
-    "objectID": "stata-lab/lab-15.html#deliverable-lab-15",
-    "href": "stata-lab/lab-15.html#deliverable-lab-15",
+    "objectID": "stata-lab/lab-15.html#hồi-quy-mẫu",
+    "href": "stata-lab/lab-15.html#hồi-quy-mẫu",
     "title": "Lab 15 — Xuất bảng + biểu đồ cho thuyết trình",
-    "section": "Deliverable Lab 15",
-    "text": "Deliverable Lab 15\nNộp 3 file (như các lab trước):\n\n\n\nFile\nNội dung\n\n\n\n\nlab15_&lt;tên&gt;.do\nCode + comment\n\n\nlab15_&lt;tên&gt;.log\nOutput\n\n\nlab15_&lt;tên&gt;.pdf (1-2 trang)\nTrả lời câu hỏi + biểu đồ\n\n\n\nTiêu đề email: DTU301-LAB15-MSSV-HọTên",
+    "section": "2. Hồi quy mẫu",
+    "text": "2. Hồi quy mẫu\n* Dùng dataset auto có sẵn\nsysuse auto, clear\n\n* === 3 hồi quy ===\nregress price mpg\nestimates store m1\n\nregress price mpg weight\nestimates store m2\n\nregress price mpg weight foreign\nestimates store m3",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
@@ -2369,11 +2681,107 @@
     ]
   },
   {
-    "objectID": "stata-lab/lab-15.html#tiêu-chí-chấm",
-    "href": "stata-lab/lab-15.html#tiêu-chí-chấm",
+    "objectID": "stata-lab/lab-15.html#xuất-bảng-hồi-quy-bằng-outreg2",
+    "href": "stata-lab/lab-15.html#xuất-bảng-hồi-quy-bằng-outreg2",
     "title": "Lab 15 — Xuất bảng + biểu đồ cho thuyết trình",
-    "section": "Tiêu chí chấm",
-    "text": "Tiêu chí chấm\n\n\n\nTiêu chí\nĐiểm\n\n\n\n\nCode chạy đúng, có log\n30%\n\n\nVận dụng đúng khái niệm Stata mới của bài\n25%\n\n\nBiểu đồ / bảng kết quả rõ ràng\n20%\n\n\nTrả lời câu hỏi sâu, có liên hệ thực tiễn\n25%\n\n\n\n\n← Lab trước: Lab 14 | Đây là lab cuối.",
+    "section": "3. Xuất bảng hồi quy bằng outreg2",
+    "text": "3. Xuất bảng hồi quy bằng outreg2\n* === outreg2: xuất ra Word/LaTeX ===\noutreg2 [m1 m2 m3] using \"regression_results.doc\", replace ///\n    title(\"Hồi quy giá xe theo các biến\") ///\n    addnote(\"*** p&lt;0.01, ** p&lt;0.05, * p&lt;0.1\") ///\n    label\nOutput: file regression_results.doc mở được bằng Word, bảng chuẩn học thuật.",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 15 — Xuất bảng + biểu đồ cho thuyết trình"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-15.html#xuất-bảng-bằng-esttab-đẹp-hơn",
+    "href": "stata-lab/lab-15.html#xuất-bảng-bằng-esttab-đẹp-hơn",
+    "title": "Lab 15 — Xuất bảng + biểu đồ cho thuyết trình",
+    "section": "4. Xuất bảng bằng esttab (đẹp hơn)",
+    "text": "4. Xuất bảng bằng esttab (đẹp hơn)\n* === esttab: chuẩn LaTeX/HTML ===\nesttab m1 m2 m3 using \"regression_esttab.rtf\", replace ///\n    title(\"Hồi quy giá xe — esttab style\") ///\n    cells(b(star fmt(3)) se(par fmt(3))) ///\n    starlevels(* 0.10 ** 0.05 *** 0.01) ///\n    stats(r2 N, labels(\"R-squared\" \"N\")) ///\n    label\nCâu hỏi 1: So sánh outreg2 vs esttab — bạn thấy bảng nào dễ đọc hơn?",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 15 — Xuất bảng + biểu đồ cho thuyết trình"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-15.html#coefficient-plot-forest-plot",
+    "href": "stata-lab/lab-15.html#coefficient-plot-forest-plot",
+    "title": "Lab 15 — Xuất bảng + biểu đồ cho thuyết trình",
+    "section": "5. Coefficient plot (forest plot)",
+    "text": "5. Coefficient plot (forest plot)\n* === coefplot: biểu đồ hệ số ===\ncoefplot m1 m2 m3, ///\n    drop(_cons) ///\n    title(\"Coefficient Plot — 3 mô hình hồi quy\") ///\n    xtitle(\"Hệ số\") ///\n    xline(0, lcolor(red)) ///\n    legend(rows(1)) ///\n    graphregion(color(white))\n\ngraph export \"coefplot.png\", replace width(1400)\nCâu hỏi 2: Coefficient plot có lợi gì so với bảng truyền thống?",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 15 — Xuất bảng + biểu đồ cho thuyết trình"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-15.html#xuất-bảng-descriptive-bằng-tabout",
+    "href": "stata-lab/lab-15.html#xuất-bảng-descriptive-bằng-tabout",
+    "title": "Lab 15 — Xuất bảng + biểu đồ cho thuyết trình",
+    "section": "6. Xuất bảng descriptive bằng tabout",
+    "text": "6. Xuất bảng descriptive bằng tabout\n* === tabout: xuất tabulate ra file ===\ntabout foreign using \"tab_foreign.html\", replace ///\n    cells(freq col) format(0 1) ///\n    style(html) ///\n    h1(Nguồn gốc xe)\n\n* Hoặc summary stats\ntabstat price mpg weight, statistics(mean sd min max) ///\n    columns(statistics) ///\n    save",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 15 — Xuất bảng + biểu đồ cho thuyết trình"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-15.html#vẽ-biểu-đồ-chuyên-nghiệp",
+    "href": "stata-lab/lab-15.html#vẽ-biểu-đồ-chuyên-nghiệp",
+    "title": "Lab 15 — Xuất bảng + biểu đồ cho thuyết trình",
+    "section": "7. Vẽ biểu đồ chuyên nghiệp",
+    "text": "7. Vẽ biểu đồ chuyên nghiệp\n* === Theme và style đẹp ===\nset scheme s2color\n* Hoặc: set scheme white2 (cho slide thuyết trình)\n\n* === Scatter với marker tùy chỉnh ===\ntwoway (scatter price mpg if foreign == 0, ///\n        mcolor(\"114 47 55\") msymbol(circle)) ///\n       (scatter price mpg if foreign == 1, ///\n        mcolor(\"0 88 163\") msymbol(triangle)) ///\n       (lfit price mpg, lcolor(\"46 125 80\")), ///\n       title(\"Giá xe theo MPG\", size(medium)) ///\n       subtitle(\"Phân biệt nội địa vs nhập khẩu\", size(small)) ///\n       xtitle(\"Mile per gallon\") ///\n       ytitle(\"Giá (USD)\") ///\n       legend(label(1 \"Nội địa\") label(2 \"Nhập khẩu\") label(3 \"OLS fit\") ///\n              position(2) ring(0) cols(1)) ///\n       graphregion(color(white)) ///\n       plotregion(margin(small))\n\ngraph export \"scatter_final.png\", replace width(1400)",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 15 — Xuất bảng + biểu đồ cho thuyết trình"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-15.html#xuất-ra-excel-bằng-putexcel",
+    "href": "stata-lab/lab-15.html#xuất-ra-excel-bằng-putexcel",
+    "title": "Lab 15 — Xuất bảng + biểu đồ cho thuyết trình",
+    "section": "8. Xuất ra Excel bằng putexcel",
+    "text": "8. Xuất ra Excel bằng putexcel\n* === Tạo file Excel có nhiều sheets ===\nputexcel set \"results.xlsx\", replace\nputexcel A1 = \"Kết quả phân tích DTU301\", bold\nputexcel A2 = \"Lab 15 — Họ tên: &lt;điền&gt;\"\n\n* Sheet \"Descriptive\"\nputexcel set \"results.xlsx\", sheet(\"Descriptive\") modify\nputexcel A1 = (\"Biến\", \"Mean\", \"SD\", \"Min\", \"Max\"), bold\nputexcel A2 = \"Price\"\nputexcel B2 = formula(\"=AVERAGE(...)\")\n* ... v.v",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 15 — Xuất bảng + biểu đồ cho thuyết trình"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-15.html#mẹo-trình-bày-kết-quả-stata",
+    "href": "stata-lab/lab-15.html#mẹo-trình-bày-kết-quả-stata",
+    "title": "Lab 15 — Xuất bảng + biểu đồ cho thuyết trình",
+    "section": "9. Mẹo trình bày kết quả Stata",
+    "text": "9. Mẹo trình bày kết quả Stata\n\n\n\n#\nMẹo\n\n\n\n\n1\nBảng chỉ giữ kết quả quan trọng — không xuất tất cả output\n\n\n2\nSố liệu thập phân: 2-3 chữ số là đủ, đừng quá chi tiết\n\n\n3\nSao biểu thị mức ý nghĩa: dùng quy ước rõ ràng\n\n\n4\nNotes dưới bảng: ghi rõ standard errors, mức ý nghĩa\n\n\n5\nBiểu đồ phải có: tiêu đề, nhãn trục, đơn vị, nguồn\n\n\n6\nFont + cỡ: đồng nhất trong toàn báo cáo\n\n\n7\nMàu sắc: tối đa 3-4 màu — quá nhiều gây rối",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 15 — Xuất bảng + biểu đồ cho thuyết trình"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-15.html#liên-hệ-thuyết-trình-buổi-15",
+    "href": "stata-lab/lab-15.html#liên-hệ-thuyết-trình-buổi-15",
+    "title": "Lab 15 — Xuất bảng + biểu đồ cho thuyết trình",
+    "section": "10. Liên hệ thuyết trình Buổi 15",
+    "text": "10. Liên hệ thuyết trình Buổi 15\nCâu hỏi 3-5 (suy nghĩ + viết, 300 từ):\n\nBạn dùng outreg2 hay esttab cho slide thuyết trình? Tại sao?\nTrong slide chỉ có 5-10 giây để đọc — bảng nên tối đa bao nhiêu hàng/cột?\nBiểu đồ tốt cho slide khác biểu đồ tốt cho báo cáo — khác ở đâu?\nCó nên dùng interactive plot (plotly)? Khi nào?\n\nlog close",
+    "crumbs": [
+      "Trang chủ",
+      "Lab theo buổi",
+      "Lab 15 — Xuất bảng + biểu đồ cho thuyết trình"
+    ]
+  },
+  {
+    "objectID": "stata-lab/lab-15.html#kết-thúc-16-lab-dtu301",
+    "href": "stata-lab/lab-15.html#kết-thúc-16-lab-dtu301",
+    "title": "Lab 15 — Xuất bảng + biểu đồ cho thuyết trình",
+    "section": "🎉 Kết thúc 16 lab DTU301",
+    "text": "🎉 Kết thúc 16 lab DTU301\nBạn đã hoàn thành Lab 0 → 15 — học từ basics đến advanced. Tài sản kỹ năng:\n\nCài Stata + do-file workflow\nĐọc/ghi/xử lý dữ liệu\nPhân tích descriptive + regression\nMô phỏng (IS-LM, Pigou, PPF)\nTime series + panel\nEvent study + before/after\nXuất bảng + biểu đồ chuẩn học thuật\n\nĐây là hành trang kỹ năng dài hạn cho khoá luận, công việc, hoặc cao học.\nLời chia tay: Stata không phải mục đích — nó là công cụ. Mục đích là hỏi câu hỏi tốt và trả lời bằng dữ liệu.\nChúc bạn thành công trong nghiên cứu và công việc về sau! 🎓\n\n← Lab trước: Lab 14 — Capstone | Đây là lab cuối của khoá học.",
     "crumbs": [
       "Trang chủ",
       "Lab theo buổi",
@@ -2427,51 +2835,84 @@
     "href": "lectures/buoi-11.html",
     "title": "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997",
     "section": "",
-    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO2, CLO3 — Phân tích các đánh đổi chính sách trong KT mở",
+    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO2, CLO3 — Phân tích đánh đổi chính sách trong KT mở qua khung Trilemma, vận dụng vào Việt Nam và bài học Khủng hoảng châu Á 1997.\nBuổi 10 cho thấy: tỷ giá cố định = mất CSTT; tỷ giá thả nổi = mất ổn định tỷ giá. Buổi 11 tổng quát hoá thành Bộ ba bất khả thi — một trong những định lý quan trọng nhất của vĩ mô kinh tế mở.",
     "crumbs": [
       "Chương 4 — Vĩ mô (KT mở)",
       "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997"
     ]
   },
   {
-    "objectID": "lectures/buoi-11.html#nội-dung-lý-thuyết-thuyết-giảng",
-    "href": "lectures/buoi-11.html#nội-dung-lý-thuyết-thuyết-giảng",
+    "objectID": "lectures/buoi-11.html#lộ-trình-buổi-11",
+    "href": "lectures/buoi-11.html#lộ-trình-buổi-11",
     "title": "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997",
-    "section": "Nội dung lý thuyết (thuyết giảng)",
-    "text": "Nội dung lý thuyết (thuyết giảng)\n4.3. Bộ ba bất khả thi (Impossible Trinity / Trilemma)\n\nPhát biểu và chứng minh\nBa góc: ổn định tỷ giá, tự do dòng vốn, độc lập tiền tệ\nSterilization — và giới hạn của nó\n\nViệt Nam trong Trilemma\n\nVị trí hiện tại của Việt Nam trong tam giác\nĐịnh hướng theo Đại hội XIV\n\nKhủng hoảng châu Á 1997\n\nNguyên nhân: bộ ba bất khả thi + thanh khoản ngoại tệ\nDiễn biến tại Thái Lan, Indonesia, Hàn Quốc\nBài học cho Việt Nam",
+    "section": "Lộ trình Buổi 11",
+    "text": "Lộ trình Buổi 11\n\n\n\nPhần\nNội dung\n\n\n\n\nA\nBộ ba bất khả thi — phát biểu và chứng minh\n\n\nB\nPhân loại quốc gia theo 3 cạnh tam giác\n\n\nC\nViệt Nam trong Trilemma\n\n\nD\nKhủng hoảng châu Á 1997 và bài học",
     "crumbs": [
       "Chương 4 — Vĩ mô (KT mở)",
       "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997"
     ]
   },
   {
-    "objectID": "lectures/buoi-11.html#thực-hành-thảo-luận",
-    "href": "lectures/buoi-11.html#thực-hành-thảo-luận",
+    "objectID": "lectures/buoi-11.html#a.-bộ-ba-bất-khả-thi",
+    "href": "lectures/buoi-11.html#a.-bộ-ba-bất-khả-thi",
     "title": "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997",
-    "section": "Thực hành / Thảo luận",
-    "text": "Thực hành / Thảo luận\nMô phỏng quyết định NHNN trong 3 vòng: cố giữ peg → sterilization → thả nổi. Mỗi vòng có cú sốc mới, sinh viên quyết định.",
+    "section": "A. Bộ ba bất khả thi",
+    "text": "A. Bộ ba bất khả thi\n\nA.1. Phát biểu Trilemma\nRobert Mundell (1963) — Impossible Trinity hay Trilemma:\n\nMột quốc gia không thể đồng thời đạt được cả ba mục tiêu:\n\nVốn tự do (capital mobility)\nTỷ giá cố định (fixed exchange rate)\nĐộc lập chính sách tiền tệ (monetary autonomy)\n\n\n→ Chỉ có thể chọn 2 trong 3. Mỗi quốc gia phải hi sinh 1 mục tiêu.\nĐây là cơ sở của chính sách kinh tế mở — mọi quyết định chính sách tỷ giá đều quay về Trilemma.\n\n\nA.2. Tam giác Trilemma — 3 cạnh\nHình dung Trilemma như một tam giác với 3 đỉnh là 3 mục tiêu. Mỗi quốc gia chọn 1 cạnh (= chọn 2 đỉnh, bỏ 1 đỉnh):\n\n\n\n\n\n\n\n\n\nCạnh\nChọn\nBỏ\nVí dụ\n\n\n\n\nCạnh 1\nVốn tự do + Cố định\nĐộc lập CSTT\nHong Kong (peg USD), Eurozone (chia sẻ EUR)\n\n\nCạnh 2\nVốn tự do + Thả nổi\nCố định\nMỹ, EU, Nhật, Anh, Úc\n\n\nCạnh 3\nCố định + Độc lập CSTT\nVốn tự do\nTrung Quốc trước 2010, Việt Nam\n\n\n\nKhông quốc gia nào đạt cả 3 đỉnh đồng thời trong dài hạn.\n\n\nA.3. Chứng minh Trilemma\nGiả sử có cả 3 mục tiêu + lãi suất nội \\(r\\) &gt; lãi suất quốc tế \\(r^*\\).\nHệ quả tất yếu:\n\n\\(r &gt; r^*\\) → vốn vào tìm lợi nhuận (vì vốn tự do)\nVốn vào → áp lực VND lên giá (cầu VND tăng)\nĐể giữ tỷ giá cố định, NHTW mua USD bằng VND mới in\n\\(M\\) tăng → \\(r\\) giảm → về \\(r^*\\)\nMất độc lập CSTT\n\n→ Mâu thuẫn: không thể đồng thời có cả 3. Phải bỏ 1.\n\n\nA.4. Sterilization — giải pháp một phần\nSterilization = NHTW trung hoà tác động của can thiệp tỷ giá lên cung tiền.\nCơ chế:\n\nNHTW mua USD → \\(M\\) tăng\nNHTW bán trái phiếu trong nước → \\(M\\) giảm trở lại\nTổng: tỷ giá giữ + \\(M\\) không tăng → khôi phục một phần CSTT\n\nHạn chế của sterilization:\n\nTốn kém: trái phiếu chính phủ trả lãi cao hơn lãi nhận từ dự trữ → chi phí trực tiếp\nKhông bền vững: dòng vốn vào lớn → cần phát hành trái phiếu liên tục → nợ công tăng\nKhó duy trì với quy mô vốn lớn\n\nTrung Quốc 2000s thực hành sterilization quy mô lớn nhất lịch sử — dự trữ tăng tới 4.000 tỷ USD năm 2014. Chi phí ước tính: ~1% GDP/năm.",
     "crumbs": [
       "Chương 4 — Vĩ mô (KT mở)",
       "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997"
     ]
   },
   {
-    "objectID": "lectures/buoi-11.html#bài-tập-lớn-tiểu-luận",
-    "href": "lectures/buoi-11.html#bài-tập-lớn-tiểu-luận",
+    "objectID": "lectures/buoi-11.html#b.-phân-loại-quốc-gia-theo-3-cạnh",
+    "href": "lectures/buoi-11.html#b.-phân-loại-quốc-gia-theo-3-cạnh",
     "title": "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997",
-    "section": "Bài tập lớn / Tiểu luận",
-    "text": "Bài tập lớn / Tiểu luận\nHoàn thiện báo cáo phân tích chính sách tỷ giá / dòng vốn (Phần 3 — kết luận và khuyến nghị).",
+    "section": "B. Phân loại quốc gia theo 3 cạnh",
+    "text": "B. Phân loại quốc gia theo 3 cạnh\n\nB.1. Cạnh 1: Vốn tự do + Cố định (mất CSTT)\nĐại diện: Hong Kong (LERS peg USD từ 1983), Eurozone (chia sẻ EUR).\nƯu: - Tỷ giá ổn định → tốt cho thương mại + tài chính quốc tế - Vốn tự do → trung tâm tài chính\nNhược: - Mất CSTT → phải theo r quốc tế - Không thể phản ứng riêng với cú sốc nội địa\nPhù hợp: KT mở hoàn toàn, có dự trữ lớn, quy mô nhỏ.\n\n\nB.2. Cạnh 2: Vốn tự do + Thả nổi (mất cố định)\nĐại diện: Mỹ, EU, Anh, Nhật, Úc, Canada.\nƯu: - Có CSTT tự chủ → phản ứng linh hoạt - Tỷ giá tự cân bằng cán cân - Vốn tự do → thị trường tài chính sâu rộng\nNhược: - Tỷ giá biến động → rủi ro thương mại - Nguy cơ overshooting (Dornbusch 1976) - Yêu cầu thị trường tài chính phát triển\nPhù hợp: KT phát triển lớn, đồng tiền đáng tin cậy.\n\n\nB.3. Cạnh 3: Cố định + Độc lập CSTT (kiểm soát vốn)\nĐại diện: Trung Quốc trước 2010, Việt Nam (crawl-like).\nƯu: - Tỷ giá ổn định → tốt cho xuất khẩu, FDI - Có CSTT tự chủ → phản ứng cú sốc nội địa\nNhược: - Kiểm soát vốn → giảm hiệu quả phân bổ vốn quốc tế - Khó hội nhập tài chính sâu - Có thể tạo thị trường ngầm và capital flight ngầm\nPhù hợp: KT đang phát triển, cần ổn định + tự chủ chính sách.",
     "crumbs": [
       "Chương 4 — Vĩ mô (KT mở)",
       "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997"
     ]
   },
   {
-    "objectID": "lectures/buoi-11.html#tự-học-có-hướng-dẫn",
-    "href": "lectures/buoi-11.html#tự-học-có-hướng-dẫn",
+    "objectID": "lectures/buoi-11.html#c.-việt-nam-trong-trilemma",
+    "href": "lectures/buoi-11.html#c.-việt-nam-trong-trilemma",
     "title": "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997",
-    "section": "Tự học có hướng dẫn",
-    "text": "Tự học có hướng dẫn\n\nBộ ba bất khả thi giải thích điều gì cho VN?\nBài học từ khủng hoảng Á 1997?\nKhi nào nên thả nổi tỷ giá VND?",
+    "section": "C. Việt Nam trong Trilemma",
+    "text": "C. Việt Nam trong Trilemma\n\nC.1. Vị trí hiện tại\nVN ở cạnh 3 (cố định mềm + kiểm soát vốn từng phần + CSTT bán tự chủ):\n\nTỷ giá: crawl-like (theo AREAER 2024) — biến động hẹp, có xu hướng yếu dần\nVốn: kiểm soát từng phần — FDI tự do, FPI có hạn chế, dòng vốn ngắn hạn bị giới hạn\nCSTT: bán tự chủ — NHNN có công cụ nhưng phải chịu áp lực bảo vệ tỷ giá\n\nChiến lược này cho phép VN có không gian chính sách trong khi vẫn ổn định tỷ giá để hỗ trợ XK và thu hút FDI.\n\n\nC.2. Áp lực hiện tại (2022-2024)\nFed tăng r 200+ bps → áp lực với mô hình hiện tại:\n\n\n\nÁp lực\nCơ chế\n\n\n\n\nVốn ra\nr USD cao hơn → vốn rút khỏi VN tìm lợi\n\n\nTỷ giá\nVND yếu hơn → áp lực mất giá\n\n\nCSTT\nNHNN phải tăng r để giữ vốn → mất tự chủ một phần\n\n\n\nNHNN năm 2022 tăng r chính sách + bán dự trữ ngoại hối + can thiệp thị trường — đây là biểu hiện thực tế của Trilemma.\n\n\nC.3. Định hướng Đại hội XIV\nĐại hội XIV (2026) đặt mục tiêu hội nhập tài chính sâu hơn:\n\nMở dần kiểm soát vốn\nPhát triển thị trường tài chính sâu\nVND có khả năng trở thành đồng tiền có ý nghĩa khu vực (Asian Currency Unit?)\n\nTrade-off: hội nhập tài chính sâu hơn → có thể phải hi sinh cố định tỷ giá hoặc hi sinh CSTT. Đây là quyết định lớn của thập kỷ.",
+    "crumbs": [
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-11.html#d.-khủng-hoảng-châu-á-1997-và-bài-học",
+    "href": "lectures/buoi-11.html#d.-khủng-hoảng-châu-á-1997-và-bài-học",
+    "title": "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997",
+    "section": "D. Khủng hoảng châu Á 1997 và bài học",
+    "text": "D. Khủng hoảng châu Á 1997 và bài học\n\nD.1. Bối cảnh trước 1997\nCác “Tiger châu Á” (Thái Lan, Indonesia, Hàn Quốc, Philippines, Malaysia) chia sẻ đặc điểm:\n\nTỷ giá peg USD (mềm)\nVốn tự do hoá nhanh đầu 1990s\nĐộc lập CSTT danh nghĩa\n\n→ Cố gắng đạt cả 3 đỉnh Trilemma — bom hẹn giờ.\nBằng chứng cảnh báo: - Vốn ngắn hạn (hot money) vào lớn - Tín dụng tăng nhanh, bong bóng BĐS - CA thâm hụt ngày càng lớn (Thái Lan ~8% GDP) - Nợ ngoại tệ ngắn hạn &gt; dự trữ ngoại hối\n\n\nD.2. Diễn biến\nTháng 5/1997: tấn công đầu tiên vào THB. Hedge funds (Soros, Robertson) bán khống.\n2/7/1997: Thái Lan rút khỏi peg, THB thả nổi → mất giá 50% trong 6 tháng.\nLan toả nhanh:\n\n\n\n\n\n\n\nQuốc gia\nHậu quả\n\n\n\n\nThái Lan\nTHB -50%, GDP -10%, IMF bail-out $17B\n\n\nIndonesia\nIDR -70%, GDP -13%, khủng hoảng chính trị → Suharto từ chức\n\n\nHàn Quốc\nKRW -50%, GDP -7%, IMF bail-out $58B (kỷ lục lúc đó)\n\n\nPhilippines, Malaysia\nSuy giảm mạnh nhưng phục hồi nhanh hơn\n\n\n\n\n\nD.3. Nguyên nhân cốt lõi (theo Krugman 1998)\nGeneration 1 model (Krugman 1979) áp dụng:\n\nPeg + chính sách không nhất quán + dự trữ giới hạn → khủng hoảng không thể tránh\nKhi dự trữ cạn → peg sụp đổ\nSpeculative attack đẩy nhanh quá trình\n\nYếu tố cấu trúc:\n\nTự do hoá vốn quá nhanh không đi kèm giám sát ngân hàng\nNợ ngoại tệ không hedge — DN vay USD đầu tư tài sản VND\nLiên kết tài chính khu vực yếu — không có cơ chế phòng vệ chung\n\n\n\nD.4. Việt Nam trong khủng hoảng 1997\nVN bị ảnh hưởng nhẹ hơn các “Tiger” — vì sao?\n\nVốn còn kiểm soát chặt (vào 1997 chưa mở)\nHệ thống ngân hàng kín với quốc tế\nTỷ giá điều chỉnh linh hoạt (không peg cứng)\nNợ ngoại tệ ít\n\n→ Bài học cho VN: thận trọng khi mở vốn. Cẩn nhắc tốc độ tự do hoá.\n\n\nD.5. Năm bài học cho VN\n\n\n\n\n\n\n\n#\nBài học\n\n\n\n\n1\nKhông tự do hoá vốn quá nhanh trước khi hệ thống tài chính đủ mạnh\n\n\n2\nTỷ giá peg + vốn tự do là bộ ba cấm — phải chọn\n\n\n3\nDự trữ ngoại hối đủ lớn (≥ nợ ngắn hạn)\n\n\n4\nGiám sát ngân hàng chặt — đặc biệt nợ ngoại tệ DN\n\n\n5\nHợp tác khu vực — ASEAN+3, Chiang Mai Initiative\n\n\n\n\n\n\n\n\n\nWarning✋ Bài tập thảo luận trên lớp\n\n\n\nMô phỏng quyết định NHNN trong 3 vòng kịch bản:\n\nVòng 1 (2022): Fed tăng r 75 bps. NHNN nên tăng r hay không?\nVòng 2 (2023): Fed tăng tiếp 200 bps tổng cộng. Bán dự trữ tới khi nào?\nVòng 3 (2024): Fed giảm r dần. NHNN nới hay tiếp tục thắt?\n\nÁp dụng khung Trilemma giải thích từng quyết định.",
+    "crumbs": [
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-11.html#tổng-kết-buổi-11-năm-điểm-cốt-lõi",
+    "href": "lectures/buoi-11.html#tổng-kết-buổi-11-năm-điểm-cốt-lõi",
+    "title": "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997",
+    "section": "Tổng kết Buổi 11 — Năm điểm cốt lõi",
+    "text": "Tổng kết Buổi 11 — Năm điểm cốt lõi\n\nTrilemma (Mundell 1963): chỉ chọn được 2/3 (vốn tự do, cố định, CSTT độc lập).\nSterilization là giải pháp tạm thời — tốn kém, không bền vững.\nBa cạnh tam giác: HK (cạnh 1, mất CSTT) / Mỹ-EU (cạnh 2, mất cố định) / VN-TQ (cạnh 3, mất vốn tự do).\nViệt Nam crawl-like với vốn kiểm soát từng phần. Đại hội XIV định hướng mở dần — sẽ phải chọn cạnh 1 hoặc 2.\nKhủng hoảng châu Á 1997: cố gắng đạt 3/3 đỉnh → bom hẹn giờ. VN né được nhờ vốn còn đóng. Bài học: thận trọng tự do hoá.",
+    "crumbs": [
+      "Chương 4 — Vĩ mô (KT mở)",
+      "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-11.html#bài-tập-về-nhà-chuẩn-bị-buổi-12-mở-chương-5",
+    "href": "lectures/buoi-11.html#bài-tập-về-nhà-chuẩn-bị-buổi-12-mở-chương-5",
+    "title": "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997",
+    "section": "Bài tập về nhà (chuẩn bị Buổi 12 — mở Chương 5)",
+    "text": "Bài tập về nhà (chuẩn bị Buổi 12 — mở Chương 5)\n\nĐọc HCMA chương về Quản trị địa phương.\nTự đọc về Tiebout, Oates, Musgrave (sẽ học chi tiết).\nChuẩn bị 1 ví dụ phân cấp tài khoá VN sau cải cách 2025.\nĐọc thêm Luật 72/2025/QH15 và Nghị quyết 202/2025/QH15.\n\n\n\n\n\n\n\nTip🔧 Stata Lab 11 (bonus 5%)\n\n\n\nBài này có lab event study Khủng hoảng châu Á 1997 trong Stata: phân tích phản ứng GDP, tỷ giá, lạm phát các nước quanh tháng 7/1997.\n→ Bắt đầu Lab 11 — Event study Khủng hoảng Á 1997 (~30 phút)",
     "crumbs": [
       "Chương 4 — Vĩ mô (KT mở)",
       "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997"
@@ -2482,7 +2923,7 @@
     "href": "lectures/buoi-11.html#đọc-thêm",
     "title": "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997",
     "section": "Đọc thêm",
-    "text": "Đọc thêm\n\nMankiw, Kinh tế học vĩ mô, chương 20.\nBlanchard (2020), chương 21.\nWorld Bank report on Asian Financial Crisis.\n\n\n\n\n\n\n\nWarning🚧 Nội dung đang biên soạn\n\n\n\nBài giảng buổi 11 hiện ở dạng dàn ý theo đề cương DTU301. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.\n\n\n\n← Buổi trước: Buổi 10 Buổi tiếp theo: Buổi 12 →",
+    "text": "Đọc thêm\n\nMankiw, Kinh tế học vĩ mô, chương 20 (mở rộng Mundell-Fleming).\nKrugman, P. (1979), A Model of Balance of Payments Crises.\nKrugman, P. (1998), What Happened to Asia?\nAizenman, J.; Chinn, M.; Ito, H. — Trilemma Indexes.\nIMF — Lessons from the Asian Crisis (1998 report).\n\n\n← Buổi trước: Buổi 10 — Mô hình Mundell-Fleming | Buổi tiếp theo: Buổi 12 — Quản trị địa phương và Phân cấp tài khoá →",
     "crumbs": [
       "Chương 4 — Vĩ mô (KT mở)",
       "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997"
@@ -2491,67 +2932,100 @@
   {
     "objectID": "lectures/buoi-15.html",
     "href": "lectures/buoi-15.html",
-    "title": "Buổi 15 — Tổng kết và đánh giá",
+    "title": "Buổi 15 — Thuyết trình + Tổng kết học phần",
     "section": "",
-    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO2, CLO3, CLO4, CLO5 — Đánh giá tổng kết toàn học phần",
+    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO2, CLO3, CLO4, CLO5 — Đánh giá tổng hợp năng lực vận dụng, phân tích, phối hợp nhóm và sử dụng công cụ số.\nBuổi 15 đóng lại học phần DTU301. Sinh viên thuyết trình kết quả workshop, phản biện chéo, và rút ra bài học cuối khoá.",
     "crumbs": [
       "Seminar tổng hợp",
-      "Buổi 15 — Tổng kết và đánh giá"
+      "Buổi 15 — Thuyết trình + Tổng kết học phần"
     ]
   },
   {
-    "objectID": "lectures/buoi-15.html#nội-dung-lý-thuyết-thuyết-giảng",
-    "href": "lectures/buoi-15.html#nội-dung-lý-thuyết-thuyết-giảng",
-    "title": "Buổi 15 — Tổng kết và đánh giá",
-    "section": "Nội dung lý thuyết (thuyết giảng)",
-    "text": "Nội dung lý thuyết (thuyết giảng)\nCấu trúc Buổi 15 — Tổng kết và đánh giá\n\nThuyết trình và phản biện của sinh viên về các vấn đề chính sách kinh tế\nPhản biện chéo giữa các nhóm\nĐánh giá tổng kết theo hình thức do giảng viên quyết định",
+    "objectID": "lectures/buoi-15.html#lộ-trình-buổi-15",
+    "href": "lectures/buoi-15.html#lộ-trình-buổi-15",
+    "title": "Buổi 15 — Thuyết trình + Tổng kết học phần",
+    "section": "Lộ trình Buổi 15",
+    "text": "Lộ trình Buổi 15\n\n\n\nPhần\nNội dung\n\n\n\n\nA\nTổng hợp 5 chương — liên kết khung lý thuyết\n\n\nB\nTrình bày của các nhóm — thứ tự, quy tắc, phản biện chéo\n\n\nC\nTiêu chí đánh giá — nội dung, trình bày, làm việc nhóm\n\n\nD\nBài học cuối khoá — 5 thông điệp + kỹ năng dài hạn",
     "crumbs": [
       "Seminar tổng hợp",
-      "Buổi 15 — Tổng kết và đánh giá"
+      "Buổi 15 — Thuyết trình + Tổng kết học phần"
     ]
   },
   {
-    "objectID": "lectures/buoi-15.html#thực-hành-thảo-luận",
-    "href": "lectures/buoi-15.html#thực-hành-thảo-luận",
-    "title": "Buổi 15 — Tổng kết và đánh giá",
-    "section": "Thực hành / Thảo luận",
-    "text": "Thực hành / Thảo luận\nThuyết trình nhóm (15–20 phút/nhóm) + phản biện 10 phút. Mỗi nhóm phản biện ít nhất 2 nhóm khác.",
+    "objectID": "lectures/buoi-15.html#a.-tổng-hợp-5-chương",
+    "href": "lectures/buoi-15.html#a.-tổng-hợp-5-chương",
+    "title": "Buổi 15 — Thuyết trình + Tổng kết học phần",
+    "section": "A. Tổng hợp 5 chương",
+    "text": "A. Tổng hợp 5 chương\n\nA.1. Hành trình từ Buổi 1 đến Buổi 13\nDTU301 đi qua 5 chương + Seminar xây dựng tư duy QLKT từ nền tảng đến vĩ mô mở rộng:\n\n\n\n\n\n\n\n\n\nChương\nBuổi\nTrọng tâm\nKhung chính\n\n\n\n\n1\n1–2\nTổng quan QLKT\nBentham, Kant, Rawls; 5 chức năng; 3 công cụ\n\n\n2\n3–5\nQLKT ngành + DN\nCấu trúc TT, thất bại TT, CSCN, NIS, OECD\n\n\n3\n6–8\nVĩ mô đóng\nCobb-Douglas, IS-LM, AD-AS, Phillips, CSTK+CSTT\n\n\n4\n9–11\nVĩ mô mở\nBoP, Mundell-Fleming, Trilemma, KH Á 1997\n\n\n5\n12–13\nĐịa phương + Vùng\nTiebout, Oates, Musgrave, NEG, 4 cực ĐH XIV\n\n\nSeminar\n14–15\nTổng hợp + thuyết trình\nTất cả\n\n\n\n\n\nA.2. Bốn cấp độ QLKT\nCấu trúc xuyên môn = bốn cấp độ liên kết:\n\n\n\nCấp\nTrọng tâm\nCông cụ chính\nChương\n\n\n\n\n1\nNgành\nCấu trúc TT, điều tiết\n2\n\n\n2\nVĩ mô đóng\nTài khoá, tiền tệ\n3\n\n\n3\nKT mở\nBoP, tỷ giá, MF\n4\n\n\n4\nĐịa phương + Vùng\nPhân cấp, NEG\n5\n\n\n\nMỗi cấp có công cụ riêng nhưng liên kết với nhau. Phối hợp 4 cấp = nghệ thuật QLKT hiện đại.\n\n\nA.3. Khung lý thuyết cốt lõi cần nhớ\nSau học phần, sinh viên nên ghi nhớ 6 khung lý thuyết sau làm hành trang:\n\n\n\nKhung\nTác giả\nÁp dụng\n\n\n\n\nCung – Cầu + Cấu trúc TT\nTân cổ điển (Marshall)\nChương 2\n\n\nThất bại thị trường (4 nguồn)\nStiglitz\nChương 2\n\n\nIS-LM\nHicks 1937\nChương 3\n\n\nAD-AS + Phillips\nKeynes + Friedman/Phelps\nChương 3\n\n\nMundell-Fleming + Trilemma\nMundell 1963\nChương 4\n\n\nSolow + Cobb-Douglas\nSolow 1957\nChương 3\n\n\nNEG\nKrugman 1991\nChương 5\n\n\n\nBảy khung trên là hộp dụng cụ tư duy mà sinh viên sẽ dùng dài hạn — trong khoá luận, công việc, hoặc cao học.",
     "crumbs": [
       "Seminar tổng hợp",
-      "Buổi 15 — Tổng kết và đánh giá"
+      "Buổi 15 — Thuyết trình + Tổng kết học phần"
     ]
   },
   {
-    "objectID": "lectures/buoi-15.html#bài-tập-lớn-tiểu-luận",
-    "href": "lectures/buoi-15.html#bài-tập-lớn-tiểu-luận",
-    "title": "Buổi 15 — Tổng kết và đánh giá",
-    "section": "Bài tập lớn / Tiểu luận",
-    "text": "Bài tập lớn / Tiểu luận\nĐánh giá cuối kỳ (60%) — diễn ra trong Buổi 14–15 hoặc theo lịch riêng của giảng viên. Tiêu chí xem mục Đánh giá.",
+    "objectID": "lectures/buoi-15.html#b.-trình-bày-của-các-nhóm",
+    "href": "lectures/buoi-15.html#b.-trình-bày-của-các-nhóm",
+    "title": "Buổi 15 — Thuyết trình + Tổng kết học phần",
+    "section": "B. Trình bày của các nhóm",
+    "text": "B. Trình bày của các nhóm\n\nB.1. Thứ tự trình bày\n\nBốc thăm thứ tự đầu buổi (đảm bảo công bằng)\nMỗi nhóm: 15–20 phút trình bày + 10 phút Q&A\nTổng cộng 4–6 nhóm trong ~3 giờ\nNghỉ giữa giờ 10 phút (sau nhóm thứ 3)\nCuối buổi: tổng kết của giảng viên ~20 phút\n\n\n\nB.2. Quy tắc trình bày\n\n\n\n#\nQuy tắc\nHậu quả nếu vi phạm\n\n\n\n\n1\nĐúng thời gian (cảnh báo 2 phút cuối)\nTrừ điểm trình bày\n\n\n2\nPhân công rõ thành viên\nKhó đánh giá CLO4\n\n\n3\nSlide rõ + đầy đủ trích dẫn\nTrừ điểm liêm chính\n\n\n4\nTrình bày không đọc slide\nTrừ điểm trình bày\n\n\n5\nTương tác với khán giả\nTrừ điểm trình bày\n\n\n\nMẹo trình bày tốt: - Tập trước ít nhất 2 lần với nhóm - Slide tối giản: 1 ý chính + 1 hình/bảng/biểu đồ - Câu chuyện: dẫn dắt từ vấn đề → khung lý thuyết → bằng chứng → khuyến nghị - Tự tin: nhìn khán giả, không quay lưng vào slide\n\n\nB.3. Phản biện chéo\nMỗi nhóm phản biện 1 nhóm khác (bốc thăm).\nQuy tắc phản biện:\n\n\n\n\n\n\n\n\nBước\nThời lượng\nNội dung\n\n\n\n\n1\n5 phút\nPhản biện: 3 điểm mạnh + 3 điểm yếu của nhóm bị phản biện\n\n\n2\n3 phút\nNhóm trả lời\n\n\n3\n2 phút\nGiảng viên tổng hợp và góp ý\n\n\n\nĐo lường: - CLO3 (phân tích): chất lượng câu hỏi phản biện - CLO4 (phối hợp): cách trả lời nhóm\nTinh thần phản biện học thuật: - Phản biện ý kiến, không công kích cá nhân - Có bằng chứng — không chỉ “tôi nghĩ” - Sẵn sàng học từ phản biện — không phòng thủ",
     "crumbs": [
       "Seminar tổng hợp",
-      "Buổi 15 — Tổng kết và đánh giá"
+      "Buổi 15 — Thuyết trình + Tổng kết học phần"
     ]
   },
   {
-    "objectID": "lectures/buoi-15.html#tự-học-có-hướng-dẫn",
-    "href": "lectures/buoi-15.html#tự-học-có-hướng-dẫn",
-    "title": "Buổi 15 — Tổng kết và đánh giá",
-    "section": "Tự học có hướng dẫn",
-    "text": "Tự học có hướng dẫn\n\nTổng hợp khung tư duy đã học qua 5 chương vào một sơ đồ.\nChuẩn bị 3 câu hỏi phản biện sắc sảo cho các nhóm khác.\nTự đánh giá đóng góp của mình trong nhóm theo CLO4.",
+    "objectID": "lectures/buoi-15.html#c.-tiêu-chí-đánh-giá",
+    "href": "lectures/buoi-15.html#c.-tiêu-chí-đánh-giá",
+    "title": "Buổi 15 — Thuyết trình + Tổng kết học phần",
+    "section": "C. Tiêu chí đánh giá",
+    "text": "C. Tiêu chí đánh giá\n\nC.1. Tiêu chí nội dung\n\n\n\n\n\n\n\n\nTiêu chí\nTrọng số\nCụ thể\n\n\n\n\nĐúng khung lý thuyết\n25%\nÁp dụng khung 5 chương phù hợp\n\n\nDữ liệu thực tế cập nhật\n20%\nSố liệu mới (2023-2024), có nguồn\n\n\nPhân tích sâu, có đánh đổi\n25%\nBước 4 của khung 5-bước (Buổi 14)\n\n\nĐề xuất khả thi cho VN\n15%\nBước 5 — cụ thể, có lộ trình\n\n\nTrích dẫn đầy đủ (APA 7th)\n15%\nNguồn rõ ràng, không đạo văn\n\n\n\n\n\nC.2. Tiêu chí trình bày\n\n\n\nTiêu chí\nTrọng số\n\n\n\n\nCấu trúc rõ ràng\n25%\n\n\nSlide chuyên nghiệp\n20%\n\n\nGiao tiếp + giọng nói\n20%\n\n\nTương tác khán giả\n15%\n\n\nĐúng thời gian\n20%\n\n\n\n\n\nC.3. Tiêu chí làm việc nhóm (CLO4)\nĐánh giá qua:\n\nPhân công rõ trong slide và phần trình bày\nTự đánh giá đóng góp cá nhân (mỗi sinh viên nộp 1 đoạn ngắn)\nĐánh giá chéo trong nhóm (mỗi sinh viên đánh giá đồng đội)\nQuan sát của giảng viên trong workshop Buổi 14\n\n\n\nC.4. Tiêu chí sử dụng AI (CLO5)\n\n\n\nTiêu chí\nYêu cầu\n\n\n\n\nKhai báo phạm vi\nCó ghi rõ phần nào dùng AI\n\n\nTự kiểm chứng\nMọi số liệu AI cung cấp đều được verify\n\n\nKhông sao chép trực tiếp\nPhải xử lý lại\n\n\nTrích dẫn nguồn gốc\nKhông che giấu nguồn\n\n\n\nVi phạm CLO5 → trừ tới 1/2 điểm phần thuyết trình.",
     "crumbs": [
       "Seminar tổng hợp",
-      "Buổi 15 — Tổng kết và đánh giá"
+      "Buổi 15 — Thuyết trình + Tổng kết học phần"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-15.html#d.-bài-học-cuối-khoá",
+    "href": "lectures/buoi-15.html#d.-bài-học-cuối-khoá",
+    "title": "Buổi 15 — Thuyết trình + Tổng kết học phần",
+    "section": "D. Bài học cuối khoá",
+    "text": "D. Bài học cuối khoá\n\nD.1. Năm thông điệp cốt lõi\n\n\n\n\n\n\n\n#\nThông điệp\n\n\n\n\n1\nQLKT là khoa học + nghệ thuật. Khung lý thuyết là chuẩn; vận dụng đòi hỏi phán đoán bối cảnh.\n\n\n2\nMọi chính sách đều có đánh đổi. Không có “win-win tuyệt đối” trong vĩ mô.\n\n\n3\nViệt Nam có đặc thù — KTTT định hướng XHCN. Chính sách quốc tế là tham khảo, không bắt chước máy móc.\n\n\n4\nDữ liệu là nền tảng. Không có dữ liệu, lập luận chỉ là opinion.\n\n\n5\nAI là công cụ, không phải thay thế tư duy. Sinh viên kinh tế phải học chứ không khoán cho AI.\n\n\n\n\n\nD.2. Kỹ năng dài hạn\nSau DTU301, sinh viên nên trang bị:\n\n\n\n\n\n\n\nKỹ năng\nCách rèn luyện\n\n\n\n\nĐọc hiểu chính sách\nĐọc văn kiện Đại hội, luật, NĐ — không chỉ tóm tắt báo chí\n\n\nPhân tích định lượng\nTiếp tục dùng Stata; học R, Python cho nâng cao\n\n\nViết học thuật\nViết tiểu luận có cấu trúc; trích dẫn chuẩn APA\n\n\nThuyết trình + phản biện\nTham gia clb tranh luận; chuẩn bị bài kỹ\n\n\nSử dụng AI có trách nhiệm\nAI là trợ lý, không phải tác giả\n\n\n\n\n\nD.3. Lời chia tay\nKhoá học kết thúc nhưng hành trình tư duy QLKT mới bắt đầu. Một số gợi ý:\n\nĐọc đều đặn: Vietnam Economic Times, Saigon Times, báo IMF/WB\nTheo dõi Đại hội Đảng XIV thực thi 2026-2030 — case study sống\nHọc sâu 1 lĩnh vực bạn yêu thích (tiền tệ? phát triển? vùng?)\nTham gia các nhóm nghiên cứu, hội thảo, cuộc thi\n\n\n\n\n\n\n\nTip💭 Một câu hỏi để mang theo\n\n\n\n\n“Quản lý kinh tế là khoa học hay nghệ thuật?”\nCâu hỏi này được Buổi 1 đặt ra. Sau 15 buổi, câu trả lời của bạn có thay đổi không?\nNếu chỉ có một bài học muốn mang theo từ DTU301, đó là gì?",
+    "crumbs": [
+      "Seminar tổng hợp",
+      "Buổi 15 — Thuyết trình + Tổng kết học phần"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-15.html#tổng-kết-buổi-15-năm-điểm-cốt-lõi",
+    "href": "lectures/buoi-15.html#tổng-kết-buổi-15-năm-điểm-cốt-lõi",
+    "title": "Buổi 15 — Thuyết trình + Tổng kết học phần",
+    "section": "Tổng kết Buổi 15 — Năm điểm cốt lõi",
+    "text": "Tổng kết Buổi 15 — Năm điểm cốt lõi\n\n5 chương tạo khung tư duy hoàn chỉnh: triết lý + ngành + vĩ mô đóng + vĩ mô mở + địa phương.\n7 khung lý thuyết cốt lõi cần nhớ dài hạn: cung-cầu, thất bại TT, IS-LM, AD-AS+Phillips, Mundell-Fleming, Solow, NEG.\nThuyết trình + phản biện chéo đo lường CLO3, CLO4 — kết nối lý thuyết với thực tiễn.\nTiêu chí đánh giá rõ ràng: nội dung (khung + dữ liệu + đánh đổi + đề xuất + trích dẫn) + trình bày + nhóm + AI.\nHành trang dài hạn: kỹ năng đọc chính sách, phân tích định lượng, viết học thuật, thuyết trình, dùng AI có trách nhiệm.",
+    "crumbs": [
+      "Seminar tổng hợp",
+      "Buổi 15 — Thuyết trình + Tổng kết học phần"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-15.html#sau-seminar",
+    "href": "lectures/buoi-15.html#sau-seminar",
+    "title": "Buổi 15 — Thuyết trình + Tổng kết học phần",
+    "section": "Sau Seminar",
+    "text": "Sau Seminar\n\nHoàn thiện báo cáo (nếu được giảng viên yêu cầu).\nTự đánh giá đóng góp cá nhân trong nhóm.\nÔn thi cuối kỳ (20 trắc nghiệm + 2 tự luận — xem Đánh giá).\nChuẩn bị tâm lý: học phần kết thúc nhưng học suốt đời mới bắt đầu.\n\n\n\n\n\n\n\nTip🔧 Stata Lab 15 (bonus 5%)\n\n\n\nLab cuối — xuất bảng + biểu đồ cho thuyết trình: dùng outreg2, coefplot, esttab để xuất kết quả ra Word/PDF chuyên nghiệp.\n→ Bắt đầu Lab 15 — Xuất bảng + biểu đồ (~25 phút)",
+    "crumbs": [
+      "Seminar tổng hợp",
+      "Buổi 15 — Thuyết trình + Tổng kết học phần"
     ]
   },
   {
     "objectID": "lectures/buoi-15.html#đọc-thêm",
     "href": "lectures/buoi-15.html#đọc-thêm",
-    "title": "Buổi 15 — Tổng kết và đánh giá",
+    "title": "Buổi 15 — Thuyết trình + Tổng kết học phần",
     "section": "Đọc thêm",
-    "text": "Đọc thêm\n\nToàn bộ tài liệu học phần.\nBáo cáo PCI / PAPI / PAR Index phiên bản mới nhất.\nBáo cáo cập nhật kinh tế VN mới nhất từ WB / IMF / ADB.\n\n\n\n\n\n\n\nWarning🚧 Nội dung đang biên soạn\n\n\n\nBài giảng buổi 15 hiện ở dạng dàn ý theo đề cương DTU301. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.\n\n\n\n← Buổi trước: Buổi 14 Đây là buổi cuối của học phần.",
+    "text": "Đọc thêm\n\nToàn bộ tài liệu học phần (Buổi 1-13).\nBáo cáo PCI / PAPI / PAR Index phiên bản mới nhất.\nBáo cáo cập nhật kinh tế VN mới nhất từ WB, IMF, ADB.\nVăn kiện Đại hội Đảng XIV (khi ra mắt 2026).\nMankiw, Kinh tế học vĩ mô — đọc lại các chương đã học.\n\n\n← Buổi trước: Buổi 14 — Seminar: Chia sẻ chuyên gia | Đây là buổi cuối của học phần. 🎓",
     "crumbs": [
       "Seminar tổng hợp",
-      "Buổi 15 — Tổng kết và đánh giá"
+      "Buổi 15 — Thuyết trình + Tổng kết học phần"
     ]
   },
   {
@@ -2854,67 +3328,100 @@
   {
     "objectID": "lectures/buoi-12.html",
     "href": "lectures/buoi-12.html",
-    "title": "Buổi 12 — Quản trị địa phương và phân cấp tài khoá",
+    "title": "Buổi 12 — Quản trị địa phương và Phân cấp tài khoá",
     "section": "",
-    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO3 — Phân tích phối hợp chính sách giữa các cấp",
+    "text": "Note🎯 Đóng góp CLO\n\n\n\nCLO3 — Phân tích phối hợp chính sách giữa các cấp chính quyền sau cải cách 2025.\nChương 5 mở rộng từ vĩ mô quốc gia sang chiều địa phương — Nhà nước trung ương + 34 tỉnh + xã. Buổi 12 đặt khung lý thuyết và case Việt Nam sau cải cách 2025 — cải cách hành chính lớn nhất sau 1975.",
     "crumbs": [
       "Chương 5 — Địa phương + Vùng",
-      "Buổi 12 — Quản trị địa phương và phân cấp tài khoá"
+      "Buổi 12 — Quản trị địa phương và Phân cấp tài khoá"
     ]
   },
   {
-    "objectID": "lectures/buoi-12.html#nội-dung-lý-thuyết-thuyết-giảng",
-    "href": "lectures/buoi-12.html#nội-dung-lý-thuyết-thuyết-giảng",
-    "title": "Buổi 12 — Quản trị địa phương và phân cấp tài khoá",
-    "section": "Nội dung lý thuyết (thuyết giảng)",
-    "text": "Nội dung lý thuyết (thuyết giảng)\n5.1. Quản trị địa phương và phân cấp tài khoá\n\nPhân cấp / phân quyền / tản quyền / uỷ quyền\nLý thuyết phân cấp:\n\nTiebout — voting with feet\nOates — Decentralization Theorem\nMusgrave — ba chức năng của Nhà nước\n\n\nBộ máy QLNN ở Việt Nam SAU cải cách 2025\n\nChính quyền hai cấp tỉnh – xã (Luật 72/2025/QH15)\n34 tỉnh/thành sau sắp xếp (NQ 202/2025/QH15)\nLuật NSNN 89/2025/QH15 — phân cấp nguồn thu, nhiệm vụ chi, trợ cấp cân đối\n\nĐánh giá quản trị địa phương\n\nPCI (Provincial Competitiveness Index — VCCI)\nPAPI (Public Administration Performance Index — UNDP)\nPAR Index (Public Administration Reform Index — Bộ Nội vụ)\n\nCơ chế đặc thù\n\nNQ 98/2023 cho TP.HCM\nCase Quảng Ninh",
+    "objectID": "lectures/buoi-12.html#lộ-trình-buổi-12",
+    "href": "lectures/buoi-12.html#lộ-trình-buổi-12",
+    "title": "Buổi 12 — Quản trị địa phương và Phân cấp tài khoá",
+    "section": "Lộ trình Buổi 12",
+    "text": "Lộ trình Buổi 12\n\n\n\n\n\n\n\nPhần\nNội dung\n\n\n\n\nA\nKhái niệm quản trị địa phương — phân cấp/phân quyền/tản quyền/uỷ quyền\n\n\nB\nLý thuyết kinh điển — Tiebout, Oates, Musgrave\n\n\nC\nViệt Nam sau cải cách 2025 — NQ 202, Luật 72, Luật 89\n\n\nD\nĐánh giá quản trị địa phương — PCI, PAPI, PAR Index",
     "crumbs": [
       "Chương 5 — Địa phương + Vùng",
-      "Buổi 12 — Quản trị địa phương và phân cấp tài khoá"
+      "Buổi 12 — Quản trị địa phương và Phân cấp tài khoá"
     ]
   },
   {
-    "objectID": "lectures/buoi-12.html#thực-hành-thảo-luận",
-    "href": "lectures/buoi-12.html#thực-hành-thảo-luận",
-    "title": "Buổi 12 — Quản trị địa phương và phân cấp tài khoá",
-    "section": "Thực hành / Thảo luận",
-    "text": "Thực hành / Thảo luận\nTrò chơi phân cấp ngân sách theo Luật NSNN 89/2025: 3 vai (TW – Tỉnh A đầu tàu – Tỉnh B kém phát triển). Mỗi tỉnh có nguồn thu khác nhau; thảo luận trợ cấp cân đối.",
+    "objectID": "lectures/buoi-12.html#a.-khái-niệm-quản-trị-địa-phương",
+    "href": "lectures/buoi-12.html#a.-khái-niệm-quản-trị-địa-phương",
+    "title": "Buổi 12 — Quản trị địa phương và Phân cấp tài khoá",
+    "section": "A. Khái niệm quản trị địa phương",
+    "text": "A. Khái niệm quản trị địa phương\n\nA.1. Local governance vs Local government\nHai khái niệm dễ nhầm:\n\n\n\n\n\n\n\n\n\nLocal government\nLocal governance\n\n\n\n\nBản chất\nBộ máy chính quyền địa phương\nCách thức quản lý ở địa phương\n\n\nPhạm vi\nHẹp — cơ quan công\nRộng — NN + DN + xã hội dân sự\n\n\nĐối tượng\nUBND, HĐND, công chức\nLiên kết, phối hợp, đối thoại nhiều bên\n\n\nCâu hỏi\nAi ra quyết định?\nQuyết định ra sao để có hiệu quả?\n\n\n\nQuản trị địa phương hiện đại quan tâm cả hai — cơ cấu + vận hành. Đặc biệt vai trò của xã hội dân sự và DN tư nhân trong tham gia hoạch định chính sách địa phương.\n\n\nA.2. Bốn khái niệm phân cấp\nTiếng Việt dùng từ chồng chéo — cần phân biệt:\n\n\n\n\n\n\n\n\nKhái niệm\nTiếng Anh\nBản chất\n\n\n\n\nPhân cấp\nDecentralization\nChia thẩm quyền giữa các cấp\n\n\nPhân quyền\nDevolution\nTrao tự chủ — địa phương có quyền hợp pháp riêng\n\n\nTản quyền\nDeconcentration\nNN trung ương đặt chi nhánh ở địa phương\n\n\nUỷ quyền\nDelegation\nGiao thực thi nhưng giữ thẩm quyền\n\n\n\nVí dụ phân biệt:\n\nBộ Y tế lập Sở Y tế tại tỉnh = tản quyền (vẫn thuộc bộ)\nTrao quyền cho UBND tỉnh quyết các vấn đề KT-XH cấp tỉnh = phân quyền\nGiao tổ chức xã hội thực thi gói trợ cấp = uỷ quyền\n\nCải cách 2025 ở VN là phân quyền mạnh — UBND tỉnh có nhiều thẩm quyền hơn.",
     "crumbs": [
       "Chương 5 — Địa phương + Vùng",
-      "Buổi 12 — Quản trị địa phương và phân cấp tài khoá"
+      "Buổi 12 — Quản trị địa phương và Phân cấp tài khoá"
     ]
   },
   {
-    "objectID": "lectures/buoi-12.html#bài-tập-lớn-tiểu-luận",
-    "href": "lectures/buoi-12.html#bài-tập-lớn-tiểu-luận",
-    "title": "Buổi 12 — Quản trị địa phương và phân cấp tài khoá",
-    "section": "Bài tập lớn / Tiểu luận",
-    "text": "Bài tập lớn / Tiểu luận\nĐề xuất chiến lược phát triển cho một tỉnh/vùng cụ thể (Phần 1 — cấu trúc đề xuất).",
+    "objectID": "lectures/buoi-12.html#b.-lý-thuyết-kinh-điển",
+    "href": "lectures/buoi-12.html#b.-lý-thuyết-kinh-điển",
+    "title": "Buổi 12 — Quản trị địa phương và Phân cấp tài khoá",
+    "section": "B. Lý thuyết kinh điển",
+    "text": "B. Lý thuyết kinh điển\n\nB.1. Tiebout (1956) — Voting with feet\nCharles Tiebout (1956) — A Pure Theory of Local Expenditures:\n\nHộ gia đình di chuyển giữa các địa phương → chọn gói thuế – dịch vụ công phù hợp. Mỗi địa phương cạnh tranh thu hút cư dân → cung cấp dịch vụ hiệu quả.\n\nCơ chế: - Mỗi địa phương có gói (thuế, dịch vụ) khác nhau - Hộ gia đình “bỏ phiếu bằng chân” (vote with feet) — di chuyển tới nơi phù hợp - Cạnh tranh giữa địa phương → hiệu quả phân bổ\nGiả định mạnh: - Di chuyển dễ dàng (chi phí ≈ 0) - Thông tin đầy đủ về các địa phương - Đủ số địa phương để có lựa chọn - Không có ngoại tác giữa các địa phương\nThực tế: di chuyển không hoàn toàn tự do — có chi phí công việc, gia đình, văn hoá. Nhưng xu hướng Tiebout tồn tại — đặc biệt với DN.\n\n\nB.2. Oates (1972) — Decentralization Theorem\nWallace Oates (1972) — Fiscal Federalism:\n\nPhân cấp tốt hơn khi sở thích đa dạng giữa các vùng. Tập trung tốt hơn khi có ngoại tác lớn giữa các vùng.\n\nDecentralization Theorem chính thức:\n\n\n\nYếu tố\nKhi nào phân cấp tốt?\nKhi nào tập trung tốt?\n\n\n\n\nĐa dạng sở thích\nĐa dạng cao\nĐồng nhất\n\n\nNgoại tác\nThấp\nCao\n\n\nLợi thế quy mô\nThấp\nCao\n\n\nNăng lực địa phương\nCao\nThấp\n\n\n\nÁp dụng: - Giáo dục tiểu học → phân cấp (sở thích đa dạng, ngoại tác hẹp) - Quốc phòng → tập trung (ngoại tác toàn quốc, quy mô lớn) - Hạ tầng đường cao tốc → tập trung (ngoại tác liên tỉnh)\nĐây là cơ sở của fiscal federalism hiện đại — chia chức năng tài khoá giữa các cấp theo tính chất hàng hoá công.\n\n\nB.3. Musgrave (1959) — Ba chức năng tài chính công\nRichard Musgrave (1959) — The Theory of Public Finance:\nTài chính công có 3 chức năng:\n\n\n\n\n\n\n\n\n#\nChức năng\nPhân cấp phù hợp?\n\n\n\n\n1\nPhân bổ (allocation): cung hàng hoá công\nCó — đa dạng sở thích địa phương\n\n\n2\nPhân phối (distribution): công bằng\nKhông — di chuyển cư dân làm vô hiệu\n\n\n3\nỔn định (stabilization): vĩ mô\nKhông — cần CSTK + CSTT tập trung\n\n\n\nHệ quả: phân cấp chức năng 1, tập trung 2 và 3.\n→ Đây là lý do hầu hết các nước: thuế thu nhập + ổn định vĩ mô ở trung ương; giáo dục + y tế cơ sở ở địa phương.",
     "crumbs": [
       "Chương 5 — Địa phương + Vùng",
-      "Buổi 12 — Quản trị địa phương và phân cấp tài khoá"
+      "Buổi 12 — Quản trị địa phương và Phân cấp tài khoá"
     ]
   },
   {
-    "objectID": "lectures/buoi-12.html#tự-học-có-hướng-dẫn",
-    "href": "lectures/buoi-12.html#tự-học-có-hướng-dẫn",
-    "title": "Buổi 12 — Quản trị địa phương và phân cấp tài khoá",
-    "section": "Tự học có hướng dẫn",
-    "text": "Tự học có hướng dẫn\n\nTại sao phân cấp cần đi cùng phân quyền tài khoá?\nCó nên dùng PCI làm KPI cho bí thư tỉnh?\nMô hình 34 tỉnh: ưu nhược điểm so với 63 tỉnh cũ?",
+    "objectID": "lectures/buoi-12.html#c.-việt-nam-sau-cải-cách-2025",
+    "href": "lectures/buoi-12.html#c.-việt-nam-sau-cải-cách-2025",
+    "title": "Buổi 12 — Quản trị địa phương và Phân cấp tài khoá",
+    "section": "C. Việt Nam sau cải cách 2025",
+    "text": "C. Việt Nam sau cải cách 2025\n\nC.1. Nghị quyết 202/2025/QH15 — 34 tỉnh\nNQ 202/2025/QH15 sắp xếp đơn vị hành chính cấp tỉnh:\n\nTừ 63 tỉnh/thành xuống 34 (giảm gần một nửa)\nHiệu lực từ năm 2026\nCải cách hành chính lớn nhất sau 1975\n\nMục tiêu: - Giảm trung gian, tăng quy mô địa phương - Tận dụng lợi thế quy mô (Oates Decentralization Theorem ngược lại) - Đồng bộ phát triển vùng\nTranh luận: - Ủng hộ: quy mô đủ lớn để phát triển, giảm chi phí hành chính - Phản đối: mất bản sắc địa phương, khó quản lý vùng rộng - Vấn đề chuyển tiếp: ngân sách, biên chế, hành chính\n\n\nC.2. Luật 72/2025/QH15 — Chính quyền 2 cấp\nLuật Tổ chức chính quyền địa phương 72/2025/QH15:\n\nMô hình 2 cấp: tỉnh – xã\nBỏ cấp huyện đối với chính quyền (không có HĐND/UBND huyện)\nPhân quyền mạnh cho cấp tỉnh và xã\n\nĐây là một bước cải cách lớn so với mô hình 3-4 cấp hiện hành. Trên thế giới, Pháp, Italy có 3-4 cấp. Mô hình 2 cấp gần với Hà Lan, Thuỵ Điển.\nLý do bỏ cấp huyện: - Cấp trung gian, ít chức năng độc lập - Trùng lặp với cấp tỉnh và xã - Chi phí hành chính cao\nThách thức: - Khoảng cách tỉnh – xã xa khi cấp huyện bị bỏ - Năng lực cấp xã phải nâng đáng kể - Cần tản quyền — cử công chức tỉnh xuống xã\n\n\nC.3. Luật 89/2025/QH15 — Ngân sách Nhà nước\nLuật NSNN 89/2025/QH15 cập nhật phân cấp ngân sách:\n\n\n\nYếu tố\nTrước 2026\nSau 2026\n\n\n\n\nCấp\n4 cấp\n2 cấp (TW + Tỉnh/Xã)\n\n\nSố tỉnh\n63\n34\n\n\nTrợ cấp cân đối\nPhức tạp\nĐơn giản hoá\n\n\n\nPhân cấp nguồn thu (gợi ý cải cách): - TW: thuế XNK, thuế DN lớn, thuế TNCN cao - Tỉnh: thuế đất, thuế tài sản, thuế GTGT chia sẻ - Xã: thu phí, lệ phí, đóng góp\nPhân cấp nhiệm vụ chi: - TW: quốc phòng, ngoại giao, hạ tầng liên tỉnh - Tỉnh: giáo dục THPT, y tế cấp tỉnh, hạ tầng tỉnh - Xã: giáo dục tiểu học/THCS, y tế cơ sở\nTrợ cấp cân đối (transfers): TW phải hỗ trợ tỉnh nghèo để đảm bảo dịch vụ công tối thiểu.",
     "crumbs": [
       "Chương 5 — Địa phương + Vùng",
-      "Buổi 12 — Quản trị địa phương và phân cấp tài khoá"
+      "Buổi 12 — Quản trị địa phương và Phân cấp tài khoá"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-12.html#d.-đánh-giá-quản-trị-địa-phương",
+    "href": "lectures/buoi-12.html#d.-đánh-giá-quản-trị-địa-phương",
+    "title": "Buổi 12 — Quản trị địa phương và Phân cấp tài khoá",
+    "section": "D. Đánh giá quản trị địa phương",
+    "text": "D. Đánh giá quản trị địa phương\n\nD.1. PCI — Provincial Competitiveness Index\nPCI (VCCI từ 2005) đo năng lực cạnh tranh cấp tỉnh qua khảo sát DN tư nhân.\n10 chỉ số cấu thành (cập nhật theo phiên bản mới):\n\nChi phí gia nhập thị trường\nTiếp cận đất đai\nTính minh bạch\nChi phí thời gian\nChi phí không chính thức\nCạnh tranh bình đẳng\nTính năng động lãnh đạo\nChính sách hỗ trợ DN\nĐào tạo lao động\nThể chế pháp lý và an ninh\n\nSử dụng: - DN xem để chọn nơi đầu tư - Tỉnh xem để cải thiện - Báo chí xếp hạng → áp lực chính trị\nTỉnh dẫn đầu: Quảng Ninh, Hải Phòng, Đà Nẵng, Bình Dương — thường xuyên top 10.\n\n\nD.2. PAPI — Public Administration Performance Index\nPAPI (UNDP từ 2009) đo hiệu quả hành chính công cấp tỉnh qua khảo sát người dân.\n8 trục nội dung:\n\nTham gia ở cấp cơ sở\nCông khai minh bạch\nTrách nhiệm giải trình\nKiểm soát tham nhũng\nThủ tục hành chính công\nCung ứng dịch vụ công\nQuản trị môi trường\nQuản trị điện tử\n\nKhác PCI: PCI từ góc nhìn DN, PAPI từ góc nhìn người dân. Cả hai bổ sung nhau.\n\n\nD.3. PAR Index — Public Administration Reform Index\nPAR Index (Bộ Nội vụ từ 2012) đo cải cách hành chính cấp tỉnh qua tự đánh giá + chuyên gia.\n7 lĩnh vực: - Thể chế - Thủ tục hành chính - Tổ chức bộ máy - Đội ngũ công chức - Tài chính công - Hiện đại hoá hành chính - Tác động cải cách\nKhác PCI/PAPI: PAR Index là đánh giá nội bộ của Nhà nước. Cả 3 chỉ số bổ sung — đo từ 3 góc khác nhau.\n\n\nD.4. Cơ chế đặc thù — Nghị quyết 98/2023\nNQ 98/2023 cho phép TP.HCM thí điểm cơ chế đặc thù:\n\nPhân cấp mạnh hơn\nQuyết định nhiều hạng mục đầu tư\nCơ chế ngân sách riêng\nĐặc biệt: thu hút nhân tài, R&D\n\nKinh nghiệm Quảng Ninh: tỉnh tiên phong về cải cách hành chính và PCI, cho thấy vai trò của lãnh đạo địa phương quyết định lớn.\n\n\n\n\n\n\nWarning✋ Bài tập thảo luận trên lớp\n\n\n\nPhân tích mô hình chính quyền 2 cấp (Luật 72/2025) qua khung Oates:\n\nChức năng nào nên ở cấp tỉnh?\nChức năng nào ở cấp xã?\nCấp huyện bị bỏ — khoảng trống tản quyền sẽ được bù bằng cách nào?\nCó nguy cơ over-centralization hoặc under-capacity không?",
+    "crumbs": [
+      "Chương 5 — Địa phương + Vùng",
+      "Buổi 12 — Quản trị địa phương và Phân cấp tài khoá"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-12.html#tổng-kết-buổi-12-năm-điểm-cốt-lõi",
+    "href": "lectures/buoi-12.html#tổng-kết-buổi-12-năm-điểm-cốt-lõi",
+    "title": "Buổi 12 — Quản trị địa phương và Phân cấp tài khoá",
+    "section": "Tổng kết Buổi 12 — Năm điểm cốt lõi",
+    "text": "Tổng kết Buổi 12 — Năm điểm cốt lõi\n\nQuản trị địa phương ≠ chính quyền địa phương — bao gồm NN + DN + xã hội dân sự.\nBốn khái niệm phân cấp: decentralization / devolution / deconcentration / delegation — khác nhau quan trọng.\nLý thuyết kinh điển: Tiebout (vote with feet), Oates (Decentralization Theorem), Musgrave (3 chức năng tài chính công).\nVN sau cải cách 2025: 34 tỉnh + chính quyền 2 cấp + Luật NSNN mới — cải cách lớn nhất sau 1975.\nĐánh giá: PCI (DN), PAPI (người dân), PAR Index (Nhà nước) — 3 góc bổ sung.",
+    "crumbs": [
+      "Chương 5 — Địa phương + Vùng",
+      "Buổi 12 — Quản trị địa phương và Phân cấp tài khoá"
+    ]
+  },
+  {
+    "objectID": "lectures/buoi-12.html#bài-tập-về-nhà-chuẩn-bị-buổi-13",
+    "href": "lectures/buoi-12.html#bài-tập-về-nhà-chuẩn-bị-buổi-13",
+    "title": "Buổi 12 — Quản trị địa phương và Phân cấp tài khoá",
+    "section": "Bài tập về nhà (chuẩn bị Buổi 13)",
+    "text": "Bài tập về nhà (chuẩn bị Buổi 13)\n\nĐọc Mankiw về kinh tế vùng (regional economics).\nTự đọc Krugman NEG.\nChuẩn bị 1 ví dụ vùng kinh tế VN (ĐNB, ĐBSCL, Tây Nguyên, BTB-DHMT).\nĐọc thêm về 4 cực động lực Đại hội XIV.\n\n\n\n\n\n\n\nTip🔧 Stata Lab 12 (bonus 5%)\n\n\n\nBài này có lab so sánh PCI / PAPI / PAR Index cho 34 tỉnh trong Stata: merge 3 dataset, tính correlation, scatter, ranking.\n→ Bắt đầu Lab 12 — PCI/PAPI/PAR theo tỉnh (~30 phút)",
+    "crumbs": [
+      "Chương 5 — Địa phương + Vùng",
+      "Buổi 12 — Quản trị địa phương và Phân cấp tài khoá"
     ]
   },
   {
     "objectID": "lectures/buoi-12.html#đọc-thêm",
     "href": "lectures/buoi-12.html#đọc-thêm",
-    "title": "Buổi 12 — Quản trị địa phương và phân cấp tài khoá",
+    "title": "Buổi 12 — Quản trị địa phương và Phân cấp tài khoá",
     "section": "Đọc thêm",
-    "text": "Đọc thêm\n\nHCMA (2021), Giáo trình Quản lý nhà nước về kinh tế, chương 5.\nTài liệu chuyên đề do giảng viên cung cấp.\nLuật 72/2025/QH15, Luật 89/2025/QH15, NQ 202/2025/QH15.\n\n\n\n\n\n\n\nWarning🚧 Nội dung đang biên soạn\n\n\n\nBài giảng buổi 12 hiện ở dạng dàn ý theo đề cương DTU301. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.\n\n\n\n← Buổi trước: Buổi 11 Buổi tiếp theo: Buổi 13 →",
+    "text": "Đọc thêm\n\nHCMA (2021), Giáo trình QLNN về KT, chương 5.\nTiebout, C. (1956), A Pure Theory of Local Expenditures.\nOates, W. (1972), Fiscal Federalism.\nMusgrave, R. (1959), The Theory of Public Finance.\nNQ 202/2025/QH15, Luật 72/2025/QH15, Luật 89/2025/QH15 (văn bản gốc).\nBáo cáo PCI/PAPI/PAR Index phiên bản mới nhất.\n\n\n← Buổi trước: Buổi 11 — Trilemma và Khủng hoảng châu Á 1997 | Buổi tiếp theo: Buổi 13 — Phát triển kinh tế vùng →",
     "crumbs": [
       "Chương 5 — Địa phương + Vùng",
-      "Buổi 12 — Quản trị địa phương và phân cấp tài khoá"
+      "Buổi 12 — Quản trị địa phương và Phân cấp tài khoá"
     ]
   },
   {

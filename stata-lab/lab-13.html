@@ -266,7 +266,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../stata-lab/lab-09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab 09 — Tính NEER và REER VND</span></a>
+ <span class="menu-text">Lab 9 — Tính NEER và REER VND</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -296,7 +296,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../stata-lab/lab-14.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab 14 — Capstone — phân tích 1 chính sách</span></a>
+ <span class="menu-text">Lab 14 — Capstone: Phân tích 1 chính sách</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -317,15 +317,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Trong bài</h2>
    
   <ul>
-  <li><a href="#khung-lab-13" id="toc-khung-lab-13" class="nav-link active" data-scroll-target="#khung-lab-13">Khung Lab 13</a>
-  <ul class="collapse">
-  <li><a href="#bài-toán" id="toc-bài-toán" class="nav-link" data-scroll-target="#bài-toán">1. Bài toán</a></li>
-  <li><a href="#dữ-liệu-cần" id="toc-dữ-liệu-cần" class="nav-link" data-scroll-target="#dữ-liệu-cần">2. Dữ liệu cần</a></li>
-  <li><a href="#lệnh-stata-trọng-tâm" id="toc-lệnh-stata-trọng-tâm" class="nav-link" data-scroll-target="#lệnh-stata-trọng-tâm">3. Lệnh Stata trọng tâm</a></li>
-  <li><a href="#câu-hỏi-suy-nghĩ-sẽ-chi-tiết" id="toc-câu-hỏi-suy-nghĩ-sẽ-chi-tiết" class="nav-link" data-scroll-target="#câu-hỏi-suy-nghĩ-sẽ-chi-tiết">4. Câu hỏi suy nghĩ (sẽ chi tiết)</a></li>
-  </ul></li>
-  <li><a href="#deliverable-lab-13" id="toc-deliverable-lab-13" class="nav-link" data-scroll-target="#deliverable-lab-13">Deliverable Lab 13</a></li>
-  <li><a href="#tiêu-chí-chấm" id="toc-tiêu-chí-chấm" class="nav-link" data-scroll-target="#tiêu-chí-chấm">Tiêu chí chấm</a></li>
+  <li><a href="#dataset-6-vùng-kt-xh" id="toc-dataset-6-vùng-kt-xh" class="nav-link active" data-scroll-target="#dataset-6-vùng-kt-xh">1. Dataset 6 vùng KT-XH</a></li>
+  <li><a href="#so-sánh-xếp-hạng" id="toc-so-sánh-xếp-hạng" class="nav-link" data-scroll-target="#so-sánh-xếp-hạng">2. So sánh + xếp hạng</a></li>
+  <li><a href="#box-plot-và-scatter" id="toc-box-plot-và-scatter" class="nav-link" data-scroll-target="#box-plot-và-scatter">3. Box plot và scatter</a></li>
+  <li><a href="#phân-tích-hội-tụ-convergence" id="toc-phân-tích-hội-tụ-convergence" class="nav-link" data-scroll-target="#phân-tích-hội-tụ-convergence">4. Phân tích hội tụ (convergence)</a></li>
+  <li><a href="#lý-thuyết-neg-krugman" id="toc-lý-thuyết-neg-krugman" class="nav-link" data-scroll-target="#lý-thuyết-neg-krugman">5. Lý thuyết NEG Krugman</a></li>
   </ul>
 </nav>
     </div>
@@ -335,7 +331,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-13.html">Lab 13 — So sánh 6 vùng KT-XH</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Lab 13 — So sánh 6 vùng KT-XH</h1>
-<p class="subtitle lead">Tương ứng Buổi 13: Phát triển vùng và chênh lệch</p>
+<p class="subtitle lead">Tương ứng Buổi 13: Chênh lệch GRDP và lý thuyết Krugman</p>
 </div>
 
 
@@ -362,120 +358,92 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Bài này áp dụng khái niệm chính từ <a href="../lectures/buoi-13.html">Buổi 13</a> vào dữ liệu thực tế Việt Nam.</p>
-<p><strong>Khái niệm Stata học</strong>: <code>collapse, group statistics, box plot</code></p>
+<p>So sánh <strong>6 vùng KT-XH Việt Nam</strong> về GRDP, dân số, FDI, hạ tầng — đo <em>chênh lệch vùng</em> và liên hệ với NEG.</p>
+<p><strong>Khái niệm Stata học</strong>: <code>collapse</code>, group statistics, box plot, ranking</p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>🚧 Lab đang biên soạn
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 13. Cấu trúc cố định theo template chuẩn của 16 lab.</p>
-</div>
-</div>
-<section id="khung-lab-13" class="level2">
-<h2 class="anchored" data-anchor-id="khung-lab-13">Khung Lab 13</h2>
-<section id="bài-toán" class="level3">
-<h3 class="anchored" data-anchor-id="bài-toán">1. Bài toán</h3>
-<p>Tính GRDP per capita 6 vùng và chênh lệch</p>
+<section id="dataset-6-vùng-kt-xh" class="level2">
+<h2 class="anchored" data-anchor-id="dataset-6-vùng-kt-xh">1. Dataset 6 vùng KT-XH</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 13 — DTU301 — 6 vùng KT-XH</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span> <span class="ot">all</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">more</span> <span class="kw">off</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">using</span> <span class="st">"lab13_&lt;ten&gt;.log"</span>, <span class="kw">replace</span> <span class="bn">text</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>input str30 vung <span class="kw">float</span> GRDP_pc <span class="kw">float</span> dan_so <span class="kw">float</span> FDI <span class="kw">float</span> ti_le_TLĐ</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="st">"Trung du miền núi phía Bắc"</span>  2200  13.5  3.5   65</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="st">"Đồng bằng sông Hồng"</span>         5800  22.5  18.2  80</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="st">"Bắc Trung Bộ &amp; DH miền Trung"</span> 3500  20.5  6.2   72</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="st">"Tây Nguyên"</span>                  2100   6.0  1.0   75</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="st">"Đông Nam Bộ"</span>                 8500  18.5  35.5  90</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="st">"Đồng bằng sông Cửu Long"</span>     3200  18.5  3.8   68</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="kw">label</span> <span class="kw">variable</span> GRDP_pc <span class="st">"GRDP/đầu người (USD)"</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="kw">label</span> <span class="kw">variable</span> dan_so <span class="st">"Dân số (triệu)"</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="kw">label</span> <span class="kw">variable</span> FDI <span class="st">"FDI cumulative (tỷ USD)"</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="kw">label</span> <span class="kw">variable</span> ti_le_TLĐ <span class="st">"Tỷ lệ LĐ qua đào tạo (%)"</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ot">list</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="dữ-liệu-cần" class="level3">
-<h3 class="anchored" data-anchor-id="dữ-liệu-cần">2. Dữ liệu cần</h3>
-<p>GDP theo tỉnh + phân loại vùng KT-XH</p>
+<section id="so-sánh-xếp-hạng" class="level2">
+<h2 class="anchored" data-anchor-id="so-sánh-xếp-hạng">2. So sánh + xếp hạng</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>* Ranking theo GRDP</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">preserve</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">gsort</span> -GRDP_pc</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">generate</span> rank_grdp = <span class="dt">_n</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="ot">list</span> vung GRDP_pc rank_grdp, <span class="kw">noobs</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="kw">restore</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>* Tính tỷ lệ GRDP vùng cao nhất vs thấp nhất</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="kw">summarize</span> GRDP_pc</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"Chênh lệch GRDP cao/thấp = "</span> <span class="fu">r</span>(<span class="fu">max</span>)/<span class="fu">r</span>(<span class="fu">min</span>) <span class="st">" lần"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 1</strong>: Vùng giàu nhất / nghèo nhất? Chênh lệch GRDP cao/thấp bao nhiêu lần?</p>
 </section>
-<section id="lệnh-stata-trọng-tâm" class="level3">
-<h3 class="anchored" data-anchor-id="lệnh-stata-trọng-tâm">3. Lệnh Stata trọng tâm</h3>
-<p>Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 13 — DTU301</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>* Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span> <span class="ot">all</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">more</span> <span class="kw">off</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">using</span> <span class="st">"lab13_&lt;ten&gt;.log"</span>, <span class="kw">replace</span> <span class="bn">text</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>* === Tải dữ liệu ===</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>* (sẽ chi tiết khi có dataset thật)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>* === Phân tích ===</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>* Sử dụng: <span class="kw">collapse</span>, <span class="fu">group</span> <span class="kw">statistics</span>, box plot</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>* === Đóng <span class="fu">log</span> ===</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">close</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="box-plot-và-scatter" class="level2">
+<h2 class="anchored" data-anchor-id="box-plot-và-scatter">3. Box plot và scatter</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>* Bar chart GRDP</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="bn">bar</span> GRDP_pc, <span class="bn">over</span>(vung, <span class="kw">label</span>(angle(45) <span class="bn">labsize</span>(small))) <span class="co">///</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    <span class="bn">bar</span>(1, <span class="kw">color</span>(<span class="st">"114 47 55"</span>)) <span class="co">///</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="bn">title</span>(<span class="st">"GRDP/đầu người — 6 vùng KT-XH Việt Nam"</span>) <span class="co">///</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="bn">ytitle</span>(<span class="st">"USD"</span>) <span class="co">///</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    graphregion(<span class="kw">color</span>(<span class="bn">white</span>))</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">export</span> <span class="st">"grdp_6vung.png"</span>, <span class="kw">replace</span> <span class="kw">width</span>(1400)</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>* Scatter FDI vs GRDP</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="kw">twoway</span> (<span class="kw">scatter</span> GRDP_pc FDI, <span class="bn">mlabel</span>(vung) <span class="bn">mlabsize</span>(small) <span class="co">///</span></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>        mcolor(<span class="st">"114 47 55"</span>)) <span class="co">///</span></span>
+<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>       (<span class="kw">lfit</span> GRDP_pc FDI, lcolor(<span class="st">"0 88 163"</span>)), <span class="co">///</span></span>
+<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>       <span class="bn">title</span>(<span class="st">"FDI và GRDP/đầu người — 6 vùng"</span>) <span class="co">///</span></span>
+<span id="cb3-15"><a href="#cb3-15" aria-hidden="true" tabindex="-1"></a>       graphregion(<span class="kw">color</span>(<span class="bn">white</span>))</span>
+<span id="cb3-16"><a href="#cb3-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-17"><a href="#cb3-17" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">export</span> <span class="st">"fdi_grdp.png"</span>, <span class="kw">replace</span> <span class="kw">width</span>(1400)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 2</strong>: FDI cao có đi đôi với GRDP cao? ĐNB là <em>điểm sáng</em> hay <em>outlier</em>?</p>
 </section>
-<section id="câu-hỏi-suy-nghĩ-sẽ-chi-tiết" class="level3">
-<h3 class="anchored" data-anchor-id="câu-hỏi-suy-nghĩ-sẽ-chi-tiết">4. Câu hỏi suy nghĩ (sẽ chi tiết)</h3>
-<ol type="1">
-<li>Câu hỏi mô tả dữ liệu</li>
-<li>Câu hỏi so sánh / xu hướng</li>
-<li>Câu hỏi liên hệ với lý thuyết</li>
-<li>Câu hỏi liên hệ với chính sách Việt Nam</li>
-<li>Câu hỏi mở rộng / phản biện</li>
-</ol>
+<section id="phân-tích-hội-tụ-convergence" class="level2">
+<h2 class="anchored" data-anchor-id="phân-tích-hội-tụ-convergence">4. Phân tích hội tụ (convergence)</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>* σ-convergence: độ biến thiên giảm theo thời gian</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>* Ở đây chỉ có 1 năm — không tính σ-conv được</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>* Nhưng có thể tính độ phân tán</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="kw">summarize</span> GRDP_pc, <span class="kw">detail</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"Coefficient of variation = "</span> <span class="fu">r</span>(<span class="fu">sd</span>)/<span class="fu">r</span>(<span class="kw">mean</span>) * 100 <span class="st">"%"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 3</strong>: CV cao thể hiện <em>bất bình đẳng vùng</em> lớn. So với các nước phát triển (CV ~20-30%), VN ở mức nào?</p>
 </section>
-</section>
-<section id="deliverable-lab-13" class="level2">
-<h2 class="anchored" data-anchor-id="deliverable-lab-13">Deliverable Lab 13</h2>
-<p>Nộp 3 file (như các lab trước):</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>File</th>
-<th>Nội dung</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>lab13_&lt;tên&gt;.do</code></td>
-<td>Code + comment</td>
-</tr>
-<tr class="even">
-<td><code>lab13_&lt;tên&gt;.log</code></td>
-<td>Output</td>
-</tr>
-<tr class="odd">
-<td><code>lab13_&lt;tên&gt;.pdf</code> (1-2 trang)</td>
-<td>Trả lời câu hỏi + biểu đồ</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Tiêu đề email</strong>: <code>DTU301-LAB13-MSSV-HọTên</code></p>
-</section>
-<section id="tiêu-chí-chấm" class="level2">
-<h2 class="anchored" data-anchor-id="tiêu-chí-chấm">Tiêu chí chấm</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Tiêu chí</th>
-<th style="text-align: center;">Điểm</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Code chạy đúng, có log</td>
-<td style="text-align: center;">30%</td>
-</tr>
-<tr class="even">
-<td>Vận dụng đúng khái niệm Stata mới của bài</td>
-<td style="text-align: center;">25%</td>
-</tr>
-<tr class="odd">
-<td>Biểu đồ / bảng kết quả rõ ràng</td>
-<td style="text-align: center;">20%</td>
-</tr>
-<tr class="even">
-<td>Trả lời câu hỏi sâu, có liên hệ thực tiễn</td>
-<td style="text-align: center;">25%</td>
-</tr>
-</tbody>
-</table>
+<section id="lý-thuyết-neg-krugman" class="level2">
+<h2 class="anchored" data-anchor-id="lý-thuyết-neg-krugman">5. Lý thuyết NEG Krugman</h2>
+<p><strong>Câu hỏi 4 + 5</strong> (suy nghĩ + viết, 400 từ):</p>
+<p>Áp dụng <strong>Mô hình Core-Periphery (Krugman 1991)</strong> cho VN:</p>
+<ul>
+<li>ĐNB là <em>Core</em> — tại sao? (3 nguồn ngoại tác Marshall)</li>
+<li>Tây Nguyên là <em>Periphery</em> — vì sao bị kẹt?</li>
+<li><strong>6 siêu dự án</strong> Đại hội XIV làm giảm chi phí vận chuyển τ. Theo Krugman, kết quả sẽ là <em>tập trung hơn</em> hay <em>phân tán</em>?</li>
+<li>Cần <em>chính sách bổ sung</em> gì để các vùng nghèo không bị bỏ rơi?</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">close</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
-<p>← <em>Lab trước</em>: <a href="../stata-lab/lab-12.html">Lab 12</a> | <em>Lab tiếp theo</em>: <a href="../stata-lab/lab-14.html">Lab 14</a> →</p>
+<p>← <em>Lab trước</em>: <a href="../stata-lab/lab-12.html">Lab 12 — PCI/PAPI/PAR</a> | <em>Lab tiếp theo</em>: <a href="../stata-lab/lab-14.html">Lab 14 — Capstone</a> →</p>
 
 
 </section>

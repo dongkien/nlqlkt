@@ -266,7 +266,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../stata-lab/lab-09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab 09 — Tính NEER và REER VND</span></a>
+ <span class="menu-text">Lab 9 — Tính NEER và REER VND</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -296,7 +296,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../stata-lab/lab-14.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab 14 — Capstone — phân tích 1 chính sách</span></a>
+ <span class="menu-text">Lab 14 — Capstone: Phân tích 1 chính sách</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -317,15 +317,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Trong bài</h2>
    
   <ul>
-  <li><a href="#khung-lab-11" id="toc-khung-lab-11" class="nav-link active" data-scroll-target="#khung-lab-11">Khung Lab 11</a>
-  <ul class="collapse">
-  <li><a href="#bài-toán" id="toc-bài-toán" class="nav-link" data-scroll-target="#bài-toán">1. Bài toán</a></li>
-  <li><a href="#dữ-liệu-cần" id="toc-dữ-liệu-cần" class="nav-link" data-scroll-target="#dữ-liệu-cần">2. Dữ liệu cần</a></li>
-  <li><a href="#lệnh-stata-trọng-tâm" id="toc-lệnh-stata-trọng-tâm" class="nav-link" data-scroll-target="#lệnh-stata-trọng-tâm">3. Lệnh Stata trọng tâm</a></li>
-  <li><a href="#câu-hỏi-suy-nghĩ-sẽ-chi-tiết" id="toc-câu-hỏi-suy-nghĩ-sẽ-chi-tiết" class="nav-link" data-scroll-target="#câu-hỏi-suy-nghĩ-sẽ-chi-tiết">4. Câu hỏi suy nghĩ (sẽ chi tiết)</a></li>
-  </ul></li>
-  <li><a href="#deliverable-lab-11" id="toc-deliverable-lab-11" class="nav-link" data-scroll-target="#deliverable-lab-11">Deliverable Lab 11</a></li>
-  <li><a href="#tiêu-chí-chấm" id="toc-tiêu-chí-chấm" class="nav-link" data-scroll-target="#tiêu-chí-chấm">Tiêu chí chấm</a></li>
+  <li><a href="#dataset-5-nền-kinh-tế-1995-2000" id="toc-dataset-5-nền-kinh-tế-1995-2000" class="nav-link active" data-scroll-target="#dataset-5-nền-kinh-tế-1995-2000">1. Dataset 5 nền kinh tế 1995-2000</a></li>
+  <li><a href="#event-dummy-và-phân-tích" id="toc-event-dummy-và-phân-tích" class="nav-link" data-scroll-target="#event-dummy-và-phân-tích">2. Event dummy và phân tích</a></li>
+  <li><a href="#biểu-đồ-panel" id="toc-biểu-đồ-panel" class="nav-link" data-scroll-target="#biểu-đồ-panel">3. Biểu đồ panel</a></li>
+  <li><a href="#vì-sao-việt-nam-tránh-được" id="toc-vì-sao-việt-nam-tránh-được" class="nav-link" data-scroll-target="#vì-sao-việt-nam-tránh-được">4. Vì sao Việt Nam tránh được?</a></li>
   </ul>
 </nav>
     </div>
@@ -335,7 +330,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-11.html">Lab 11 — Event study Khủng hoảng châu Á 1997</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Lab 11 — Event study Khủng hoảng châu Á 1997</h1>
-<p class="subtitle lead">Tương ứng Buổi 11: Tác động cú sốc lên các nền kinh tế</p>
+<p class="subtitle lead">Tương ứng Buổi 11: Phản ứng GDP, tỷ giá quanh 7/1997</p>
 </div>
 
 
@@ -362,120 +357,96 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Bài này áp dụng khái niệm chính từ <a href="../lectures/buoi-11.html">Buổi 11</a> vào dữ liệu thực tế Việt Nam.</p>
-<p><strong>Khái niệm Stata học</strong>: <code>rolling regression, event dummy</code></p>
+<p>Event study <strong>Khủng hoảng châu Á 1997</strong>: tác động lên Thái Lan, Indonesia, Hàn Quốc, Philippines. So sánh với Việt Nam — vì sao VN tránh được khủng hoảng?</p>
+<p><strong>Khái niệm Stata học</strong>: event dummy, before/after comparison, panel</p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>🚧 Lab đang biên soạn
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 11. Cấu trúc cố định theo template chuẩn của 16 lab.</p>
-</div>
-</div>
-<section id="khung-lab-11" class="level2">
-<h2 class="anchored" data-anchor-id="khung-lab-11">Khung Lab 11</h2>
-<section id="bài-toán" class="level3">
-<h3 class="anchored" data-anchor-id="bài-toán">1. Bài toán</h3>
-<p>Đo phản ứng GDP, tỷ giá, lạm phát quanh 7/1997</p>
+<section id="dataset-5-nền-kinh-tế-1995-2000" class="level2">
+<h2 class="anchored" data-anchor-id="dataset-5-nền-kinh-tế-1995-2000">1. Dataset 5 nền kinh tế 1995-2000</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 11 — DTU301 — Asian Crisis Event Study</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span> <span class="ot">all</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">more</span> <span class="kw">off</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">using</span> <span class="st">"lab11_&lt;ten&gt;.log"</span>, <span class="kw">replace</span> <span class="bn">text</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>input str10 country <span class="kw">int</span> <span class="fu">year</span> <span class="kw">float</span> GDP_growth <span class="kw">float</span> FX_change</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="st">"Thailand"</span>    1995  9.2   0</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="st">"Thailand"</span>    1996  5.9   0</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="st">"Thailand"</span>    1997 -1.4   55</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="st">"Thailand"</span>    1998 -10.5  20</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="st">"Thailand"</span>    1999  4.4  -5</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="st">"Thailand"</span>    2000  4.5  -3</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="st">"Indonesia"</span>   1995  8.2   0</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="st">"Indonesia"</span>   1996  7.8   0</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="st">"Indonesia"</span>   1997  4.7   75</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="st">"Indonesia"</span>   1998 -13.1  150</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="st">"Indonesia"</span>   1999  0.8  -10</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="st">"Indonesia"</span>   2000  4.9  -8</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="st">"Korea"</span>       1995  9.6   0</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="st">"Korea"</span>       1996  7.6   0</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="st">"Korea"</span>       1997  5.9   60</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="st">"Korea"</span>       1998 -5.5   45</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="st">"Korea"</span>       1999 11.3  -25</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="st">"Korea"</span>       2000  8.9  -8</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a><span class="st">"Philippines"</span> 1995  4.7   0</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="st">"Philippines"</span> 1996  5.8   0</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="st">"Philippines"</span> 1997  5.2   30</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="st">"Philippines"</span> 1998 -0.6   15</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="st">"Philippines"</span> 1999  3.4  -3</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a><span class="st">"Philippines"</span> 2000  4.4  -5</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="st">"Vietnam"</span>     1995  9.5   0</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="st">"Vietnam"</span>     1996  9.3   0</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="st">"Vietnam"</span>     1997  8.2   8</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="st">"Vietnam"</span>     1998  5.8   12</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="st">"Vietnam"</span>     1999  4.8   2</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="st">"Vietnam"</span>     2000  6.8   1</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="ot">list</span>, sepby(country)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="dữ-liệu-cần" class="level3">
-<h3 class="anchored" data-anchor-id="dữ-liệu-cần">2. Dữ liệu cần</h3>
-<p>Dữ liệu macro Thái/Indo/Hàn/VN 1995-2000</p>
+<section id="event-dummy-và-phân-tích" class="level2">
+<h2 class="anchored" data-anchor-id="event-dummy-và-phân-tích">2. Event dummy và phân tích</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>* Event: 7/1997 → dummy cho năm sau khủng hoảng</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> crisis = (<span class="fu">year</span> &gt;= 1997)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> post_crisis = (<span class="fu">year</span> &gt;= 1998)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>* So sánh GDP trước/sau với 4 nước bị khủng hoảng (loại VN)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"=== GDP growth trước vs sau crisis (4 nước Tiger) ==="</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="kw">tabulate</span> post_crisis <span class="kw">if</span> country != <span class="st">"Vietnam"</span>, <span class="kw">summarize</span>(GDP_growth)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>* VN</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"=== Vietnam ==="</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="kw">tabulate</span> post_crisis <span class="kw">if</span> country == <span class="st">"Vietnam"</span>, <span class="kw">summarize</span>(GDP_growth)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 1</strong>: GDP TB của 4 Tiger giảm bao nhiêu sau crisis? VN giảm bao nhiêu?</p>
 </section>
-<section id="lệnh-stata-trọng-tâm" class="level3">
-<h3 class="anchored" data-anchor-id="lệnh-stata-trọng-tâm">3. Lệnh Stata trọng tâm</h3>
-<p>Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 11 — DTU301</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>* Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span> <span class="ot">all</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">more</span> <span class="kw">off</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">using</span> <span class="st">"lab11_&lt;ten&gt;.log"</span>, <span class="kw">replace</span> <span class="bn">text</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>* === Tải dữ liệu ===</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>* (sẽ chi tiết khi có dataset thật)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>* === Phân tích ===</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>* Sử dụng: <span class="kw">rolling</span> regression, event dummy</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>* === Đóng <span class="fu">log</span> ===</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">close</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="biểu-đồ-panel" class="level2">
+<h2 class="anchored" data-anchor-id="biểu-đồ-panel">3. Biểu đồ panel</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">twoway</span> (<span class="kw">line</span> GDP_growth <span class="fu">year</span> <span class="kw">if</span> country == <span class="st">"Thailand"</span>,    lcolor(<span class="st">"114 47 55"</span>)) <span class="co">///</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>       (<span class="kw">line</span> GDP_growth <span class="fu">year</span> <span class="kw">if</span> country == <span class="st">"Indonesia"</span>,   lcolor(<span class="st">"0 88 163"</span>)) <span class="co">///</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>       (<span class="kw">line</span> GDP_growth <span class="fu">year</span> <span class="kw">if</span> country == <span class="st">"Korea"</span>,       lcolor(<span class="st">"46 125 80"</span>)) <span class="co">///</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>       (<span class="kw">line</span> GDP_growth <span class="fu">year</span> <span class="kw">if</span> country == <span class="st">"Philippines"</span>, lcolor(<span class="st">"193 154 77"</span>)) <span class="co">///</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>       (<span class="kw">line</span> GDP_growth <span class="fu">year</span> <span class="kw">if</span> country == <span class="st">"Vietnam"</span>,     lcolor(<span class="st">"46 0 100"</span>) lwidth(thick)), <span class="co">///</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>       <span class="bn">title</span>(<span class="st">"Tăng trưởng GDP 1995-2000 — Khủng hoảng châu Á"</span>) <span class="co">///</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>       <span class="bn">xline</span>(1997, lpattern(<span class="kw">dash</span>) lcolor(<span class="kw">red</span>)) <span class="co">///</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>       <span class="bn">legend</span>(<span class="kw">label</span>(1 <span class="st">"Thailand"</span>) <span class="kw">label</span>(2 <span class="st">"Indonesia"</span>) <span class="kw">label</span>(3 <span class="st">"Korea"</span>) <span class="co">///</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>              <span class="kw">label</span>(4 <span class="st">"Philippines"</span>) <span class="kw">label</span>(5 <span class="st">"Vietnam"</span>) <span class="bn">position</span>(6)) <span class="co">///</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>       graphregion(<span class="kw">color</span>(<span class="bn">white</span>))</span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">export</span> <span class="st">"asian_crisis.png"</span>, <span class="kw">replace</span> <span class="kw">width</span>(1400)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 2</strong>: Năm 1998, Indonesia GDP -13% — sâu nhất. Vì sao Indonesia bị nặng nhất? (Gợi ý: chính trị, nợ ngoại tệ DN, IMF)</p>
 </section>
-<section id="câu-hỏi-suy-nghĩ-sẽ-chi-tiết" class="level3">
-<h3 class="anchored" data-anchor-id="câu-hỏi-suy-nghĩ-sẽ-chi-tiết">4. Câu hỏi suy nghĩ (sẽ chi tiết)</h3>
-<ol type="1">
-<li>Câu hỏi mô tả dữ liệu</li>
-<li>Câu hỏi so sánh / xu hướng</li>
-<li>Câu hỏi liên hệ với lý thuyết</li>
-<li>Câu hỏi liên hệ với chính sách Việt Nam</li>
-<li>Câu hỏi mở rộng / phản biện</li>
-</ol>
-</section>
-</section>
-<section id="deliverable-lab-11" class="level2">
-<h2 class="anchored" data-anchor-id="deliverable-lab-11">Deliverable Lab 11</h2>
-<p>Nộp 3 file (như các lab trước):</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>File</th>
-<th>Nội dung</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>lab11_&lt;tên&gt;.do</code></td>
-<td>Code + comment</td>
-</tr>
-<tr class="even">
-<td><code>lab11_&lt;tên&gt;.log</code></td>
-<td>Output</td>
-</tr>
-<tr class="odd">
-<td><code>lab11_&lt;tên&gt;.pdf</code> (1-2 trang)</td>
-<td>Trả lời câu hỏi + biểu đồ</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Tiêu đề email</strong>: <code>DTU301-LAB11-MSSV-HọTên</code></p>
-</section>
-<section id="tiêu-chí-chấm" class="level2">
-<h2 class="anchored" data-anchor-id="tiêu-chí-chấm">Tiêu chí chấm</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Tiêu chí</th>
-<th style="text-align: center;">Điểm</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Code chạy đúng, có log</td>
-<td style="text-align: center;">30%</td>
-</tr>
-<tr class="even">
-<td>Vận dụng đúng khái niệm Stata mới của bài</td>
-<td style="text-align: center;">25%</td>
-</tr>
-<tr class="odd">
-<td>Biểu đồ / bảng kết quả rõ ràng</td>
-<td style="text-align: center;">20%</td>
-</tr>
-<tr class="even">
-<td>Trả lời câu hỏi sâu, có liên hệ thực tiễn</td>
-<td style="text-align: center;">25%</td>
-</tr>
-</tbody>
-</table>
+<section id="vì-sao-việt-nam-tránh-được" class="level2">
+<h2 class="anchored" data-anchor-id="vì-sao-việt-nam-tránh-được">4. Vì sao Việt Nam tránh được?</h2>
+<p><strong>Câu hỏi 3-5</strong> (suy nghĩ + viết, 500 từ):</p>
+<ul>
+<li>VN 1997 cũng peg + tăng trưởng cao + nợ ngoại tệ DN — sao không bị?</li>
+<li><strong>Hai lý do chính</strong> (kiểm soát vốn + tài chính chưa mở) đủ để bảo vệ không?</li>
+<li>Năm 2025, VN tự do hoá vốn nhiều hơn 1997. Nếu có “Khủng hoảng 2.0”, VN có an toàn không?</li>
+<li>5 bài học từ 1997 nào VN nên áp dụng ngay?</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">close</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
-<p>← <em>Lab trước</em>: <a href="../stata-lab/lab-10.html">Lab 10</a> | <em>Lab tiếp theo</em>: <a href="../stata-lab/lab-12.html">Lab 12</a> →</p>
+<p>← <em>Lab trước</em>: <a href="../stata-lab/lab-10.html">Lab 10 — Mundell-Fleming</a> | <em>Lab tiếp theo</em>: <a href="../stata-lab/lab-12.html">Lab 12 — PCI/PAPI/PAR</a> →</p>
 
 
 </section>

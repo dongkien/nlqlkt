@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles/custom.css">
 </head>
@@ -241,7 +270,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 09 — Cán cân thanh toán và tỷ giá</span></a>
+ <span class="menu-text">Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -270,7 +299,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-12.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 12 — Quản trị địa phương và phân cấp tài khoá</span></a>
+ <span class="menu-text">Buổi 12 — Quản trị địa phương và Phân cấp tài khoá</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -293,13 +322,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-14.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 14 — Chia sẻ thực tiễn</span></a>
+ <span class="menu-text">Buổi 14 — Seminar: Chia sẻ chuyên gia + Workshop</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-15.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 15 — Tổng kết và đánh giá</span></a>
+ <span class="menu-text">Buổi 15 — Thuyết trình + Tổng kết học phần</span></a>
   </div>
 </li>
       </ul>
@@ -314,10 +343,36 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Trong bài</h2>
    
   <ul>
-  <li><a href="#nội-dung-lý-thuyết-thuyết-giảng" id="toc-nội-dung-lý-thuyết-thuyết-giảng" class="nav-link active" data-scroll-target="#nội-dung-lý-thuyết-thuyết-giảng">Nội dung lý thuyết (thuyết giảng)</a></li>
-  <li><a href="#thực-hành-thảo-luận" id="toc-thực-hành-thảo-luận" class="nav-link" data-scroll-target="#thực-hành-thảo-luận">Thực hành / Thảo luận</a></li>
-  <li><a href="#bài-tập-lớn-tiểu-luận" id="toc-bài-tập-lớn-tiểu-luận" class="nav-link" data-scroll-target="#bài-tập-lớn-tiểu-luận">Bài tập lớn / Tiểu luận</a></li>
-  <li><a href="#tự-học-có-hướng-dẫn" id="toc-tự-học-có-hướng-dẫn" class="nav-link" data-scroll-target="#tự-học-có-hướng-dẫn">Tự học có hướng dẫn</a></li>
+  <li><a href="#lộ-trình-buổi-11" id="toc-lộ-trình-buổi-11" class="nav-link active" data-scroll-target="#lộ-trình-buổi-11">Lộ trình Buổi 11</a></li>
+  <li><a href="#a.-bộ-ba-bất-khả-thi" id="toc-a.-bộ-ba-bất-khả-thi" class="nav-link" data-scroll-target="#a.-bộ-ba-bất-khả-thi">A. Bộ ba bất khả thi</a>
+  <ul class="collapse">
+  <li><a href="#a.1.-phát-biểu-trilemma" id="toc-a.1.-phát-biểu-trilemma" class="nav-link" data-scroll-target="#a.1.-phát-biểu-trilemma">A.1. Phát biểu Trilemma</a></li>
+  <li><a href="#a.2.-tam-giác-trilemma-3-cạnh" id="toc-a.2.-tam-giác-trilemma-3-cạnh" class="nav-link" data-scroll-target="#a.2.-tam-giác-trilemma-3-cạnh">A.2. Tam giác Trilemma — 3 cạnh</a></li>
+  <li><a href="#a.3.-chứng-minh-trilemma" id="toc-a.3.-chứng-minh-trilemma" class="nav-link" data-scroll-target="#a.3.-chứng-minh-trilemma">A.3. Chứng minh Trilemma</a></li>
+  <li><a href="#a.4.-sterilization-giải-pháp-một-phần" id="toc-a.4.-sterilization-giải-pháp-một-phần" class="nav-link" data-scroll-target="#a.4.-sterilization-giải-pháp-một-phần">A.4. Sterilization — giải pháp một phần</a></li>
+  </ul></li>
+  <li><a href="#b.-phân-loại-quốc-gia-theo-3-cạnh" id="toc-b.-phân-loại-quốc-gia-theo-3-cạnh" class="nav-link" data-scroll-target="#b.-phân-loại-quốc-gia-theo-3-cạnh">B. Phân loại quốc gia theo 3 cạnh</a>
+  <ul class="collapse">
+  <li><a href="#b.1.-cạnh-1-vốn-tự-do-cố-định-mất-cstt" id="toc-b.1.-cạnh-1-vốn-tự-do-cố-định-mất-cstt" class="nav-link" data-scroll-target="#b.1.-cạnh-1-vốn-tự-do-cố-định-mất-cstt">B.1. Cạnh 1: Vốn tự do + Cố định (mất CSTT)</a></li>
+  <li><a href="#b.2.-cạnh-2-vốn-tự-do-thả-nổi-mất-cố-định" id="toc-b.2.-cạnh-2-vốn-tự-do-thả-nổi-mất-cố-định" class="nav-link" data-scroll-target="#b.2.-cạnh-2-vốn-tự-do-thả-nổi-mất-cố-định">B.2. Cạnh 2: Vốn tự do + Thả nổi (mất cố định)</a></li>
+  <li><a href="#b.3.-cạnh-3-cố-định-độc-lập-cstt-kiểm-soát-vốn" id="toc-b.3.-cạnh-3-cố-định-độc-lập-cstt-kiểm-soát-vốn" class="nav-link" data-scroll-target="#b.3.-cạnh-3-cố-định-độc-lập-cstt-kiểm-soát-vốn">B.3. Cạnh 3: Cố định + Độc lập CSTT (kiểm soát vốn)</a></li>
+  </ul></li>
+  <li><a href="#c.-việt-nam-trong-trilemma" id="toc-c.-việt-nam-trong-trilemma" class="nav-link" data-scroll-target="#c.-việt-nam-trong-trilemma">C. Việt Nam trong Trilemma</a>
+  <ul class="collapse">
+  <li><a href="#c.1.-vị-trí-hiện-tại" id="toc-c.1.-vị-trí-hiện-tại" class="nav-link" data-scroll-target="#c.1.-vị-trí-hiện-tại">C.1. Vị trí hiện tại</a></li>
+  <li><a href="#c.2.-áp-lực-hiện-tại-2022-2024" id="toc-c.2.-áp-lực-hiện-tại-2022-2024" class="nav-link" data-scroll-target="#c.2.-áp-lực-hiện-tại-2022-2024">C.2. Áp lực hiện tại (2022-2024)</a></li>
+  <li><a href="#c.3.-định-hướng-đại-hội-xiv" id="toc-c.3.-định-hướng-đại-hội-xiv" class="nav-link" data-scroll-target="#c.3.-định-hướng-đại-hội-xiv">C.3. Định hướng Đại hội XIV</a></li>
+  </ul></li>
+  <li><a href="#d.-khủng-hoảng-châu-á-1997-và-bài-học" id="toc-d.-khủng-hoảng-châu-á-1997-và-bài-học" class="nav-link" data-scroll-target="#d.-khủng-hoảng-châu-á-1997-và-bài-học">D. Khủng hoảng châu Á 1997 và bài học</a>
+  <ul class="collapse">
+  <li><a href="#d.1.-bối-cảnh-trước-1997" id="toc-d.1.-bối-cảnh-trước-1997" class="nav-link" data-scroll-target="#d.1.-bối-cảnh-trước-1997">D.1. Bối cảnh trước 1997</a></li>
+  <li><a href="#d.2.-diễn-biến" id="toc-d.2.-diễn-biến" class="nav-link" data-scroll-target="#d.2.-diễn-biến">D.2. Diễn biến</a></li>
+  <li><a href="#d.3.-nguyên-nhân-cốt-lõi-theo-krugman-1998" id="toc-d.3.-nguyên-nhân-cốt-lõi-theo-krugman-1998" class="nav-link" data-scroll-target="#d.3.-nguyên-nhân-cốt-lõi-theo-krugman-1998">D.3. Nguyên nhân cốt lõi (theo Krugman 1998)</a></li>
+  <li><a href="#d.4.-việt-nam-trong-khủng-hoảng-1997" id="toc-d.4.-việt-nam-trong-khủng-hoảng-1997" class="nav-link" data-scroll-target="#d.4.-việt-nam-trong-khủng-hoảng-1997">D.4. Việt Nam trong khủng hoảng 1997</a></li>
+  <li><a href="#d.5.-năm-bài-học-cho-vn" id="toc-d.5.-năm-bài-học-cho-vn" class="nav-link" data-scroll-target="#d.5.-năm-bài-học-cho-vn">D.5. Năm bài học cho VN</a></li>
+  </ul></li>
+  <li><a href="#tổng-kết-buổi-11-năm-điểm-cốt-lõi" id="toc-tổng-kết-buổi-11-năm-điểm-cốt-lõi" class="nav-link" data-scroll-target="#tổng-kết-buổi-11-năm-điểm-cốt-lõi">Tổng kết Buổi 11 — Năm điểm cốt lõi</a></li>
+  <li><a href="#bài-tập-về-nhà-chuẩn-bị-buổi-12-mở-chương-5" id="toc-bài-tập-về-nhà-chuẩn-bị-buổi-12-mở-chương-5" class="nav-link" data-scroll-target="#bài-tập-về-nhà-chuẩn-bị-buổi-12-mở-chương-5">Bài tập về nhà (chuẩn bị Buổi 12 — mở Chương 5)</a></li>
   <li><a href="#đọc-thêm" id="toc-đọc-thêm" class="nav-link" data-scroll-target="#đọc-thêm">Đọc thêm</a></li>
   </ul>
 </nav>
@@ -328,7 +383,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-09.html">Chương 4 — Vĩ mô (KT mở)</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-11.html">Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997</h1>
-<p class="subtitle lead">Trilemma; sterilization; VN trong Trilemma; định hướng XIV; bài học 1997</p>
+<p class="subtitle lead">Trilemma · Sterilization · Việt Nam trong tam giác · Bài học 1997</p>
 </div>
 
 
@@ -355,67 +410,377 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>CLO2, CLO3 — Phân tích các đánh đổi chính sách trong KT mở</strong></p>
+<p><strong>CLO2, CLO3</strong> — Phân tích đánh đổi chính sách trong KT mở qua khung Trilemma, vận dụng vào Việt Nam và bài học Khủng hoảng châu Á 1997.</p>
+<p>Buổi 10 cho thấy: tỷ giá cố định = mất CSTT; tỷ giá thả nổi = mất ổn định tỷ giá. Buổi 11 <strong>tổng quát hoá</strong> thành <strong>Bộ ba bất khả thi</strong> — một trong những định lý quan trọng nhất của vĩ mô kinh tế mở.</p>
 </div>
 </div>
-<section id="nội-dung-lý-thuyết-thuyết-giảng" class="level2">
-<h2 class="anchored" data-anchor-id="nội-dung-lý-thuyết-thuyết-giảng">Nội dung lý thuyết (thuyết giảng)</h2>
-<p><strong>4.3. Bộ ba bất khả thi (Impossible Trinity / Trilemma)</strong></p>
-<ul>
-<li>Phát biểu và chứng minh</li>
-<li>Ba góc: ổn định tỷ giá, tự do dòng vốn, độc lập tiền tệ</li>
-<li><strong>Sterilization</strong> — và giới hạn của nó</li>
-</ul>
-<p><strong>Việt Nam trong Trilemma</strong></p>
-<ul>
-<li>Vị trí hiện tại của Việt Nam trong tam giác</li>
-<li>Định hướng theo <strong>Đại hội XIV</strong></li>
-</ul>
-<p><strong>Khủng hoảng châu Á 1997</strong></p>
-<ul>
-<li>Nguyên nhân: bộ ba bất khả thi + thanh khoản ngoại tệ</li>
-<li>Diễn biến tại Thái Lan, Indonesia, Hàn Quốc</li>
-<li><strong>Bài học cho Việt Nam</strong></li>
-</ul>
+<section id="lộ-trình-buổi-11" class="level2">
+<h2 class="anchored" data-anchor-id="lộ-trình-buổi-11">Lộ trình Buổi 11</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Phần</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>A</strong></td>
+<td>Bộ ba bất khả thi — phát biểu và chứng minh</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>B</strong></td>
+<td>Phân loại quốc gia theo 3 cạnh tam giác</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>C</strong></td>
+<td>Việt Nam trong Trilemma</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>D</strong></td>
+<td>Khủng hoảng châu Á 1997 và bài học</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="thực-hành-thảo-luận" class="level2">
-<h2 class="anchored" data-anchor-id="thực-hành-thảo-luận">Thực hành / Thảo luận</h2>
-<p><strong>Mô phỏng</strong> quyết định NHNN trong 3 vòng: cố giữ peg → sterilization → thả nổi. Mỗi vòng có cú sốc mới, sinh viên quyết định.</p>
-</section>
-<section id="bài-tập-lớn-tiểu-luận" class="level2">
-<h2 class="anchored" data-anchor-id="bài-tập-lớn-tiểu-luận">Bài tập lớn / Tiểu luận</h2>
-<p>Hoàn thiện báo cáo phân tích chính sách tỷ giá / dòng vốn (Phần 3 — kết luận và khuyến nghị).</p>
-</section>
-<section id="tự-học-có-hướng-dẫn" class="level2">
-<h2 class="anchored" data-anchor-id="tự-học-có-hướng-dẫn">Tự học có hướng dẫn</h2>
+<section id="a.-bộ-ba-bất-khả-thi" class="level2">
+<h2 class="anchored" data-anchor-id="a.-bộ-ba-bất-khả-thi">A. Bộ ba bất khả thi</h2>
+<section id="a.1.-phát-biểu-trilemma" class="level3">
+<h3 class="anchored" data-anchor-id="a.1.-phát-biểu-trilemma">A.1. Phát biểu Trilemma</h3>
+<p><strong>Robert Mundell (1963)</strong> — <em>Impossible Trinity</em> hay <em>Trilemma</em>:</p>
+<blockquote class="blockquote">
+<p>Một quốc gia <em>không thể</em> đồng thời đạt được cả <strong>ba mục tiêu</strong>:</p>
 <ol type="1">
-<li>Bộ ba bất khả thi giải thích điều gì cho VN?</li>
-<li>Bài học từ khủng hoảng Á 1997?</li>
-<li>Khi nào nên thả nổi tỷ giá VND?</li>
+<li><strong>Vốn tự do</strong> (capital mobility)</li>
+<li><strong>Tỷ giá cố định</strong> (fixed exchange rate)</li>
+<li><strong>Độc lập chính sách tiền tệ</strong> (monetary autonomy)</li>
 </ol>
+</blockquote>
+<p>→ Chỉ có thể chọn <strong>2 trong 3</strong>. Mỗi quốc gia phải <strong>hi sinh 1 mục tiêu</strong>.</p>
+<p>Đây là <em>cơ sở của chính sách kinh tế mở</em> — mọi quyết định chính sách tỷ giá đều quay về Trilemma.</p>
 </section>
-<section id="đọc-thêm" class="level2">
-<h2 class="anchored" data-anchor-id="đọc-thêm">Đọc thêm</h2>
+<section id="a.2.-tam-giác-trilemma-3-cạnh" class="level3">
+<h3 class="anchored" data-anchor-id="a.2.-tam-giác-trilemma-3-cạnh">A.2. Tam giác Trilemma — 3 cạnh</h3>
+<p>Hình dung Trilemma như <strong>một tam giác</strong> với 3 đỉnh là 3 mục tiêu. Mỗi quốc gia chọn 1 <em>cạnh</em> (= chọn 2 đỉnh, bỏ 1 đỉnh):</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Cạnh</th>
+<th>Chọn</th>
+<th>Bỏ</th>
+<th>Ví dụ</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Cạnh 1</strong></td>
+<td>Vốn tự do + Cố định</td>
+<td>Độc lập CSTT</td>
+<td>Hong Kong (peg USD), Eurozone (chia sẻ EUR)</td>
+</tr>
+<tr class="even">
+<td><strong>Cạnh 2</strong></td>
+<td>Vốn tự do + Thả nổi</td>
+<td>Cố định</td>
+<td>Mỹ, EU, Nhật, Anh, Úc</td>
+</tr>
+<tr class="odd">
+<td><strong>Cạnh 3</strong></td>
+<td>Cố định + Độc lập CSTT</td>
+<td>Vốn tự do</td>
+<td>Trung Quốc trước 2010, Việt Nam</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Không quốc gia nào</strong> đạt cả 3 đỉnh đồng thời trong dài hạn.</p>
+</section>
+<section id="a.3.-chứng-minh-trilemma" class="level3">
+<h3 class="anchored" data-anchor-id="a.3.-chứng-minh-trilemma">A.3. Chứng minh Trilemma</h3>
+<p>Giả sử có <strong>cả 3 mục tiêu</strong> + <strong>lãi suất nội <span class="math inline">\(r\)</span> &gt; lãi suất quốc tế <span class="math inline">\(r^*\)</span></strong>.</p>
+<p><strong>Hệ quả tất yếu</strong>:</p>
+<ol type="1">
+<li><span class="math inline">\(r &gt; r^*\)</span> → <strong>vốn vào</strong> tìm lợi nhuận (vì vốn tự do)</li>
+<li>Vốn vào → áp lực <strong>VND lên giá</strong> (cầu VND tăng)</li>
+<li>Để giữ tỷ giá cố định, NHTW <strong>mua USD</strong> bằng VND mới in</li>
+<li><span class="math inline">\(M\)</span> tăng → <span class="math inline">\(r\)</span> giảm → về <span class="math inline">\(r^*\)</span></li>
+<li><strong>Mất độc lập CSTT</strong></li>
+</ol>
+<p>→ Mâu thuẫn: không thể đồng thời có cả 3. Phải bỏ 1.</p>
+</section>
+<section id="a.4.-sterilization-giải-pháp-một-phần" class="level3">
+<h3 class="anchored" data-anchor-id="a.4.-sterilization-giải-pháp-một-phần">A.4. Sterilization — giải pháp một phần</h3>
+<p><strong>Sterilization</strong> = NHTW <em>trung hoà</em> tác động của can thiệp tỷ giá lên cung tiền.</p>
+<p><strong>Cơ chế</strong>:</p>
+<ol type="1">
+<li>NHTW <strong>mua USD</strong> → <span class="math inline">\(M\)</span> tăng</li>
+<li>NHTW <strong>bán trái phiếu</strong> trong nước → <span class="math inline">\(M\)</span> giảm trở lại</li>
+<li>Tổng: tỷ giá giữ + <span class="math inline">\(M\)</span> không tăng → khôi phục một phần CSTT</li>
+</ol>
+<p><strong>Hạn chế của sterilization</strong>:</p>
 <ul>
-<li>Mankiw, <em>Kinh tế học vĩ mô</em>, chương 20.</li>
-<li>Blanchard (2020), chương 21.</li>
-<li>World Bank report on Asian Financial Crisis.</li>
+<li><strong>Tốn kém</strong>: trái phiếu chính phủ trả lãi cao hơn lãi nhận từ dự trữ → chi phí trực tiếp</li>
+<li><strong>Không bền vững</strong>: dòng vốn vào lớn → cần phát hành trái phiếu liên tục → nợ công tăng</li>
+<li><strong>Khó duy trì</strong> với quy mô vốn lớn</li>
 </ul>
-<div class="callout callout-style-simple callout-warning callout-titled">
+<p><strong>Trung Quốc 2000s</strong> thực hành sterilization quy mô lớn nhất lịch sử — dự trữ tăng tới 4.000 tỷ USD năm 2014. Chi phí ước tính: ~1% GDP/năm.</p>
+</section>
+</section>
+<section id="b.-phân-loại-quốc-gia-theo-3-cạnh" class="level2">
+<h2 class="anchored" data-anchor-id="b.-phân-loại-quốc-gia-theo-3-cạnh">B. Phân loại quốc gia theo 3 cạnh</h2>
+<section id="b.1.-cạnh-1-vốn-tự-do-cố-định-mất-cstt" class="level3">
+<h3 class="anchored" data-anchor-id="b.1.-cạnh-1-vốn-tự-do-cố-định-mất-cstt">B.1. Cạnh 1: Vốn tự do + Cố định (mất CSTT)</h3>
+<p><strong>Đại diện</strong>: Hong Kong (LERS peg USD từ 1983), Eurozone (chia sẻ EUR).</p>
+<p><strong>Ưu</strong>: - Tỷ giá ổn định → tốt cho thương mại + tài chính quốc tế - Vốn tự do → trung tâm tài chính</p>
+<p><strong>Nhược</strong>: - Mất CSTT → phải theo r quốc tế - Không thể phản ứng riêng với cú sốc nội địa</p>
+<p><strong>Phù hợp</strong>: KT mở hoàn toàn, có dự trữ lớn, quy mô nhỏ.</p>
+</section>
+<section id="b.2.-cạnh-2-vốn-tự-do-thả-nổi-mất-cố-định" class="level3">
+<h3 class="anchored" data-anchor-id="b.2.-cạnh-2-vốn-tự-do-thả-nổi-mất-cố-định">B.2. Cạnh 2: Vốn tự do + Thả nổi (mất cố định)</h3>
+<p><strong>Đại diện</strong>: Mỹ, EU, Anh, Nhật, Úc, Canada.</p>
+<p><strong>Ưu</strong>: - Có CSTT tự chủ → phản ứng linh hoạt - Tỷ giá tự cân bằng cán cân - Vốn tự do → thị trường tài chính sâu rộng</p>
+<p><strong>Nhược</strong>: - Tỷ giá biến động → rủi ro thương mại - Nguy cơ overshooting (Dornbusch 1976) - Yêu cầu thị trường tài chính phát triển</p>
+<p><strong>Phù hợp</strong>: KT phát triển lớn, đồng tiền <em>đáng tin cậy</em>.</p>
+</section>
+<section id="b.3.-cạnh-3-cố-định-độc-lập-cstt-kiểm-soát-vốn" class="level3">
+<h3 class="anchored" data-anchor-id="b.3.-cạnh-3-cố-định-độc-lập-cstt-kiểm-soát-vốn">B.3. Cạnh 3: Cố định + Độc lập CSTT (kiểm soát vốn)</h3>
+<p><strong>Đại diện</strong>: Trung Quốc trước 2010, Việt Nam (crawl-like).</p>
+<p><strong>Ưu</strong>: - Tỷ giá ổn định → tốt cho xuất khẩu, FDI - Có CSTT tự chủ → phản ứng cú sốc nội địa</p>
+<p><strong>Nhược</strong>: - Kiểm soát vốn → giảm hiệu quả phân bổ vốn quốc tế - Khó hội nhập tài chính sâu - Có thể tạo <em>thị trường ngầm</em> và <em>capital flight</em> ngầm</p>
+<p><strong>Phù hợp</strong>: KT đang phát triển, cần ổn định + tự chủ chính sách.</p>
+</section>
+</section>
+<section id="c.-việt-nam-trong-trilemma" class="level2">
+<h2 class="anchored" data-anchor-id="c.-việt-nam-trong-trilemma">C. Việt Nam trong Trilemma</h2>
+<section id="c.1.-vị-trí-hiện-tại" class="level3">
+<h3 class="anchored" data-anchor-id="c.1.-vị-trí-hiện-tại">C.1. Vị trí hiện tại</h3>
+<p>VN ở <strong>cạnh 3</strong> (cố định mềm + kiểm soát vốn từng phần + CSTT bán tự chủ):</p>
+<ul>
+<li><strong>Tỷ giá</strong>: crawl-like (theo AREAER 2024) — biến động hẹp, có xu hướng yếu dần</li>
+<li><strong>Vốn</strong>: kiểm soát từng phần — FDI tự do, FPI có hạn chế, dòng vốn ngắn hạn bị giới hạn</li>
+<li><strong>CSTT</strong>: bán tự chủ — NHNN có công cụ nhưng phải chịu áp lực bảo vệ tỷ giá</li>
+</ul>
+<p>Chiến lược này cho phép VN có <strong>không gian chính sách</strong> trong khi vẫn ổn định tỷ giá để hỗ trợ XK và thu hút FDI.</p>
+</section>
+<section id="c.2.-áp-lực-hiện-tại-2022-2024" class="level3">
+<h3 class="anchored" data-anchor-id="c.2.-áp-lực-hiện-tại-2022-2024">C.2. Áp lực hiện tại (2022-2024)</h3>
+<p><strong>Fed tăng r 200+ bps</strong> → áp lực với mô hình hiện tại:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Áp lực</th>
+<th>Cơ chế</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Vốn ra</strong></td>
+<td>r USD cao hơn → vốn rút khỏi VN tìm lợi</td>
+</tr>
+<tr class="even">
+<td><strong>Tỷ giá</strong></td>
+<td>VND yếu hơn → áp lực mất giá</td>
+</tr>
+<tr class="odd">
+<td><strong>CSTT</strong></td>
+<td>NHNN phải tăng r để giữ vốn → mất tự chủ một phần</td>
+</tr>
+</tbody>
+</table>
+<p>NHNN năm 2022 tăng r chính sách + bán dự trữ ngoại hối + can thiệp thị trường — đây là <em>biểu hiện thực tế</em> của Trilemma.</p>
+</section>
+<section id="c.3.-định-hướng-đại-hội-xiv" class="level3">
+<h3 class="anchored" data-anchor-id="c.3.-định-hướng-đại-hội-xiv">C.3. Định hướng Đại hội XIV</h3>
+<p>Đại hội XIV (2026) đặt mục tiêu hội nhập tài chính sâu hơn:</p>
+<ul>
+<li>Mở dần kiểm soát vốn</li>
+<li>Phát triển thị trường tài chính sâu</li>
+<li>VND có khả năng trở thành đồng tiền có ý nghĩa khu vực (Asian Currency Unit?)</li>
+</ul>
+<p><strong>Trade-off</strong>: hội nhập tài chính sâu hơn → có thể <em>phải hi sinh cố định tỷ giá</em> hoặc <em>hi sinh CSTT</em>. Đây là quyết định lớn của thập kỷ.</p>
+</section>
+</section>
+<section id="d.-khủng-hoảng-châu-á-1997-và-bài-học" class="level2">
+<h2 class="anchored" data-anchor-id="d.-khủng-hoảng-châu-á-1997-và-bài-học">D. Khủng hoảng châu Á 1997 và bài học</h2>
+<section id="d.1.-bối-cảnh-trước-1997" class="level3">
+<h3 class="anchored" data-anchor-id="d.1.-bối-cảnh-trước-1997">D.1. Bối cảnh trước 1997</h3>
+<p>Các “Tiger châu Á” (Thái Lan, Indonesia, Hàn Quốc, Philippines, Malaysia) chia sẻ đặc điểm:</p>
+<ul>
+<li><strong>Tỷ giá peg USD</strong> (mềm)</li>
+<li><strong>Vốn tự do hoá</strong> nhanh đầu 1990s</li>
+<li><strong>Độc lập CSTT</strong> danh nghĩa</li>
+</ul>
+<p>→ Cố gắng đạt <strong>cả 3 đỉnh Trilemma</strong> — bom hẹn giờ.</p>
+<p><strong>Bằng chứng cảnh báo</strong>: - Vốn ngắn hạn (hot money) vào lớn - Tín dụng tăng nhanh, bong bóng BĐS - CA thâm hụt ngày càng lớn (Thái Lan ~8% GDP) - Nợ ngoại tệ ngắn hạn &gt; dự trữ ngoại hối</p>
+</section>
+<section id="d.2.-diễn-biến" class="level3">
+<h3 class="anchored" data-anchor-id="d.2.-diễn-biến">D.2. Diễn biến</h3>
+<p><strong>Tháng 5/1997</strong>: tấn công đầu tiên vào THB. Hedge funds (Soros, Robertson) bán khống.</p>
+<p><strong>2/7/1997</strong>: Thái Lan <strong>rút khỏi peg</strong>, THB thả nổi → mất giá 50% trong 6 tháng.</p>
+<p><strong>Lan toả nhanh</strong>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Quốc gia</th>
+<th>Hậu quả</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Thái Lan</strong></td>
+<td>THB -50%, GDP -10%, IMF bail-out $17B</td>
+</tr>
+<tr class="even">
+<td><strong>Indonesia</strong></td>
+<td>IDR -70%, GDP -13%, khủng hoảng chính trị → Suharto từ chức</td>
+</tr>
+<tr class="odd">
+<td><strong>Hàn Quốc</strong></td>
+<td>KRW -50%, GDP -7%, IMF bail-out $58B (kỷ lục lúc đó)</td>
+</tr>
+<tr class="even">
+<td><strong>Philippines, Malaysia</strong></td>
+<td>Suy giảm mạnh nhưng phục hồi nhanh hơn</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="d.3.-nguyên-nhân-cốt-lõi-theo-krugman-1998" class="level3">
+<h3 class="anchored" data-anchor-id="d.3.-nguyên-nhân-cốt-lõi-theo-krugman-1998">D.3. Nguyên nhân cốt lõi (theo Krugman 1998)</h3>
+<p><strong>Generation 1 model</strong> (Krugman 1979) áp dụng:</p>
+<ul>
+<li>Peg + chính sách không nhất quán + dự trữ giới hạn → khủng hoảng <em>không thể tránh</em></li>
+<li>Khi dự trữ cạn → peg sụp đổ</li>
+<li>Speculative attack đẩy nhanh quá trình</li>
+</ul>
+<p><strong>Yếu tố cấu trúc</strong>:</p>
+<ul>
+<li><strong>Tự do hoá vốn quá nhanh</strong> không đi kèm giám sát ngân hàng</li>
+<li><strong>Nợ ngoại tệ</strong> không hedge — DN vay USD đầu tư tài sản VND</li>
+<li><strong>Liên kết tài chính khu vực</strong> yếu — không có cơ chế phòng vệ chung</li>
+</ul>
+</section>
+<section id="d.4.-việt-nam-trong-khủng-hoảng-1997" class="level3">
+<h3 class="anchored" data-anchor-id="d.4.-việt-nam-trong-khủng-hoảng-1997">D.4. Việt Nam trong khủng hoảng 1997</h3>
+<p>VN bị ảnh hưởng <em>nhẹ hơn</em> các “Tiger” — vì sao?</p>
+<ul>
+<li><strong>Vốn còn kiểm soát chặt</strong> (vào 1997 chưa mở)</li>
+<li><strong>Hệ thống ngân hàng kín</strong> với quốc tế</li>
+<li><strong>Tỷ giá điều chỉnh</strong> linh hoạt (không peg cứng)</li>
+<li><strong>Nợ ngoại tệ ít</strong></li>
+</ul>
+<p>→ Bài học cho VN: <em>thận trọng</em> khi mở vốn. Cẩn nhắc tốc độ tự do hoá.</p>
+</section>
+<section id="d.5.-năm-bài-học-cho-vn" class="level3">
+<h3 class="anchored" data-anchor-id="d.5.-năm-bài-học-cho-vn">D.5. Năm bài học cho VN</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>#</th>
+<th>Bài học</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td><strong>Không tự do hoá vốn quá nhanh</strong> trước khi hệ thống tài chính đủ mạnh</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><strong>Tỷ giá peg + vốn tự do</strong> là <em>bộ ba cấm</em> — phải chọn</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td><strong>Dự trữ ngoại hối</strong> đủ lớn (≥ nợ ngắn hạn)</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td><strong>Giám sát ngân hàng</strong> chặt — đặc biệt nợ ngoại tệ DN</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td><strong>Hợp tác khu vực</strong> — ASEAN+3, Chiang Mai Initiative</td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>🚧 Nội dung đang biên soạn
+<span class="screen-reader-only">Warning</span>✋ Bài tập thảo luận trên lớp
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Bài giảng buổi 11 hiện ở dạng <strong>dàn ý theo đề cương DTU301</strong>. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.</p>
+<p>Mô phỏng <strong>quyết định NHNN</strong> trong 3 vòng kịch bản:</p>
+<ol type="1">
+<li><strong>Vòng 1</strong> (2022): Fed tăng r 75 bps. NHNN nên tăng r hay không?</li>
+<li><strong>Vòng 2</strong> (2023): Fed tăng tiếp 200 bps tổng cộng. Bán dự trữ tới khi nào?</li>
+<li><strong>Vòng 3</strong> (2024): Fed <em>giảm</em> r dần. NHNN nới hay tiếp tục thắt?</li>
+</ol>
+<p>Áp dụng khung Trilemma giải thích từng quyết định.</p>
 </div>
 </div>
+</section>
+</section>
+<section id="tổng-kết-buổi-11-năm-điểm-cốt-lõi" class="level2">
+<h2 class="anchored" data-anchor-id="tổng-kết-buổi-11-năm-điểm-cốt-lõi">Tổng kết Buổi 11 — Năm điểm cốt lõi</h2>
+<ol type="1">
+<li><strong>Trilemma (Mundell 1963)</strong>: chỉ chọn được 2/3 (vốn tự do, cố định, CSTT độc lập).</li>
+<li><strong>Sterilization</strong> là <em>giải pháp tạm thời</em> — tốn kém, không bền vững.</li>
+<li><strong>Ba cạnh tam giác</strong>: HK (cạnh 1, mất CSTT) / Mỹ-EU (cạnh 2, mất cố định) / VN-TQ (cạnh 3, mất vốn tự do).</li>
+<li><strong>Việt Nam crawl-like</strong> với vốn kiểm soát từng phần. Đại hội XIV định hướng mở dần — sẽ phải chọn cạnh 1 hoặc 2.</li>
+<li><strong>Khủng hoảng châu Á 1997</strong>: cố gắng đạt 3/3 đỉnh → bom hẹn giờ. VN né được nhờ vốn còn đóng. Bài học: thận trọng tự do hoá.</li>
+</ol>
+</section>
+<section id="bài-tập-về-nhà-chuẩn-bị-buổi-12-mở-chương-5" class="level2">
+<h2 class="anchored" data-anchor-id="bài-tập-về-nhà-chuẩn-bị-buổi-12-mở-chương-5">Bài tập về nhà (chuẩn bị Buổi 12 — mở Chương 5)</h2>
+<ol type="1">
+<li><strong>Đọc</strong> HCMA chương về <strong>Quản trị địa phương</strong>.</li>
+<li><strong>Tự đọc</strong> về Tiebout, Oates, Musgrave (sẽ học chi tiết).</li>
+<li><strong>Chuẩn bị 1 ví dụ phân cấp tài khoá VN</strong> sau cải cách 2025.</li>
+<li><strong>Đọc thêm</strong> Luật 72/2025/QH15 và Nghị quyết 202/2025/QH15.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>🔧 Stata Lab 11 (bonus 5%)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Bài này có lab <strong>event study Khủng hoảng châu Á 1997</strong> trong Stata: phân tích phản ứng GDP, tỷ giá, lạm phát các nước quanh tháng 7/1997.</p>
+<p>→ <a href="../stata-lab/lab-11.html"><strong>Bắt đầu Lab 11 — Event study Khủng hoảng Á 1997</strong></a> <em>(~30 phút)</em></p>
+</div>
+</div>
+</section>
+<section id="đọc-thêm" class="level2">
+<h2 class="anchored" data-anchor-id="đọc-thêm">Đọc thêm</h2>
+<ul>
+<li>Mankiw, <em>Kinh tế học vĩ mô</em>, chương 20 (mở rộng Mundell-Fleming).</li>
+<li><strong>Krugman, P.</strong> (1979), <em>A Model of Balance of Payments Crises</em>.</li>
+<li><strong>Krugman, P.</strong> (1998), <em>What Happened to Asia?</em></li>
+<li><strong>Aizenman, J.; Chinn, M.; Ito, H.</strong> — Trilemma Indexes.</li>
+<li><strong>IMF</strong> — <em>Lessons from the Asian Crisis</em> (1998 report).</li>
+</ul>
 <hr>
-<p>← <em>Buổi trước</em>: <a href="../lectures/buoi-10.html">Buổi 10</a> <em>Buổi tiếp theo</em>: <a href="../lectures/buoi-12.html">Buổi 12</a> →</p>
+<p>← <em>Buổi trước</em>: <a href="../lectures/buoi-10.html">Buổi 10 — Mô hình Mundell-Fleming</a> | <em>Buổi tiếp theo</em>: <a href="../lectures/buoi-12.html">Buổi 12 — Quản trị địa phương và Phân cấp tài khoá</a> →</p>
 
 
 </section>

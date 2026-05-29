@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Lab 14 — Capstone — phân tích 1 chính sách – Nguyên lý Quản lý Kinh tế (DTU301)</title>
+<title>Lab 14 — Capstone: Phân tích 1 chính sách – Nguyên lý Quản lý Kinh tế (DTU301)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -165,7 +165,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-14.html">Lab 14 — Capstone — phân tích 1 chính sách</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-14.html">Lab 14 — Capstone: Phân tích 1 chính sách</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -266,7 +266,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../stata-lab/lab-09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab 09 — Tính NEER và REER VND</span></a>
+ <span class="menu-text">Lab 9 — Tính NEER và REER VND</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -296,7 +296,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../stata-lab/lab-14.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Lab 14 — Capstone — phân tích 1 chính sách</span></a>
+ <span class="menu-text">Lab 14 — Capstone: Phân tích 1 chính sách</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -317,25 +317,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Trong bài</h2>
    
   <ul>
-  <li><a href="#khung-lab-14" id="toc-khung-lab-14" class="nav-link active" data-scroll-target="#khung-lab-14">Khung Lab 14</a>
-  <ul class="collapse">
-  <li><a href="#bài-toán" id="toc-bài-toán" class="nav-link" data-scroll-target="#bài-toán">1. Bài toán</a></li>
-  <li><a href="#dữ-liệu-cần" id="toc-dữ-liệu-cần" class="nav-link" data-scroll-target="#dữ-liệu-cần">2. Dữ liệu cần</a></li>
-  <li><a href="#lệnh-stata-trọng-tâm" id="toc-lệnh-stata-trọng-tâm" class="nav-link" data-scroll-target="#lệnh-stata-trọng-tâm">3. Lệnh Stata trọng tâm</a></li>
-  <li><a href="#câu-hỏi-suy-nghĩ-sẽ-chi-tiết" id="toc-câu-hỏi-suy-nghĩ-sẽ-chi-tiết" class="nav-link" data-scroll-target="#câu-hỏi-suy-nghĩ-sẽ-chi-tiết">4. Câu hỏi suy nghĩ (sẽ chi tiết)</a></li>
-  </ul></li>
-  <li><a href="#deliverable-lab-14" id="toc-deliverable-lab-14" class="nav-link" data-scroll-target="#deliverable-lab-14">Deliverable Lab 14</a></li>
-  <li><a href="#tiêu-chí-chấm" id="toc-tiêu-chí-chấm" class="nav-link" data-scroll-target="#tiêu-chí-chấm">Tiêu chí chấm</a></li>
+  <li><a href="#yêu-cầu" id="toc-yêu-cầu" class="nav-link active" data-scroll-target="#yêu-cầu">1. Yêu cầu</a></li>
+  <li><a href="#đề-tài-gợi-ý" id="toc-đề-tài-gợi-ý" class="nav-link" data-scroll-target="#đề-tài-gợi-ý">2. Đề tài gợi ý</a></li>
+  <li><a href="#cấu-trúc-do-file" id="toc-cấu-trúc-do-file" class="nav-link" data-scroll-target="#cấu-trúc-do-file">3. Cấu trúc do-file</a></li>
+  <li><a href="#yêu-cầu-báo-cáo" id="toc-yêu-cầu-báo-cáo" class="nav-link" data-scroll-target="#yêu-cầu-báo-cáo">4. Yêu cầu báo cáo</a></li>
+  <li><a href="#tiêu-chí-chấm" id="toc-tiêu-chí-chấm" class="nav-link" data-scroll-target="#tiêu-chí-chấm">5. Tiêu chí chấm</a></li>
+  <li><a href="#khuyến-nghị-dùng-ai-có-trách-nhiệm" id="toc-khuyến-nghị-dùng-ai-có-trách-nhiệm" class="nav-link" data-scroll-target="#khuyến-nghị-dùng-ai-có-trách-nhiệm">6. Khuyến nghị: dùng AI có trách nhiệm</a></li>
+  <li><a href="#mở-rộng-tự-chọn" id="toc-mở-rộng-tự-chọn" class="nav-link" data-scroll-target="#mở-rộng-tự-chọn">7. Mở rộng (tự chọn)</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-14.html">Lab 14 — Capstone — phân tích 1 chính sách</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-14.html">Lab 14 — Capstone: Phân tích 1 chính sách</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Lab 14 — Capstone — phân tích 1 chính sách</h1>
-<p class="subtitle lead">Tương ứng Buổi 14: Tổng hợp xuyên 5 chương</p>
+<h1 class="title">Lab 14 — Capstone: Phân tích 1 chính sách</h1>
+<p class="subtitle lead">Tương ứng Buổi 14: Tổng hợp xuyên 5 chương bằng Stata</p>
 </div>
 
 
@@ -358,124 +356,235 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>🎯 Liên kết với Buổi 14
+<span class="screen-reader-only">Note</span>🎯 Lab Capstone
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Bài này áp dụng khái niệm chính từ <a href="../lectures/buoi-14.html">Buổi 14</a> vào dữ liệu thực tế Việt Nam.</p>
-<p><strong>Khái niệm Stata học</strong>: <code>tự chọn</code></p>
+<p>Đây là <strong>lab cuối kỳ tổng hợp</strong>. Bạn <em>tự chọn</em> 1 chính sách Việt Nam, áp dụng toàn bộ kỹ năng Stata từ Lab 0-13 để phân tích sâu.</p>
+<p><strong>Khái niệm Stata học</strong>: tự chọn — tùy đề tài, có thể là OLS, panel, time series, event study, hoặc combinations.</p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>🚧 Lab đang biên soạn
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 14. Cấu trúc cố định theo template chuẩn của 16 lab.</p>
-</div>
-</div>
-<section id="khung-lab-14" class="level2">
-<h2 class="anchored" data-anchor-id="khung-lab-14">Khung Lab 14</h2>
-<section id="bài-toán" class="level3">
-<h3 class="anchored" data-anchor-id="bài-toán">1. Bài toán</h3>
-<p>Áp dụng toàn bộ kỹ năng Stata đã học</p>
+<section id="yêu-cầu" class="level2">
+<h2 class="anchored" data-anchor-id="yêu-cầu">1. Yêu cầu</h2>
+<p><strong>Mục tiêu</strong>: phân tích <strong>1 chính sách kinh tế Việt Nam</strong> giai đoạn 2020-2025 bằng dữ liệu thật.</p>
+<p><strong>Quy mô</strong>:</p>
+<ul>
+<li><strong>Đặt vấn đề</strong>: 1 câu hỏi nghiên cứu chính + 2-3 câu hỏi phụ</li>
+<li><strong>Khung lý thuyết</strong>: vận dụng 1-2 khung từ 5 chương đã học</li>
+<li><strong>Dữ liệu</strong>: ≥ 1 nguồn chính thống (GSO, NHNN, WB, IMF)</li>
+<li><strong>Phân tích</strong>: ≥ 3 kỹ thuật Stata (descriptive, regression, plot, …)</li>
+<li><strong>Khuyến nghị</strong>: 3 đề xuất cho VN</li>
+</ul>
 </section>
-<section id="dữ-liệu-cần" class="level3">
-<h3 class="anchored" data-anchor-id="dữ-liệu-cần">2. Dữ liệu cần</h3>
-<p>Dữ liệu tự chọn theo chủ đề nhóm</p>
+<section id="đề-tài-gợi-ý" class="level2">
+<h2 class="anchored" data-anchor-id="đề-tài-gợi-ý">2. Đề tài gợi ý</h2>
+<p>Chọn <strong>1</strong> trong các đề tài sau (hoặc tự đề xuất, xin GV duyệt):</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Đề tài</th>
+<th>Khung</th>
+<th>Kỹ thuật Stata</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Đánh giá gói hỗ trợ Covid 2021-2022</td>
+<td>AD-AS + IS-LM</td>
+<td>Time series, before/after</td>
+</tr>
+<tr class="even">
+<td>Phân tích Phillips VN 2010-2024</td>
+<td>Phillips + NAIRU</td>
+<td>OLS, fitted line</td>
+</tr>
+<tr class="odd">
+<td>Kiểm chứng growth accounting VN</td>
+<td>Cobb-Douglas</td>
+<td>log regression, residual</td>
+</tr>
+<tr class="even">
+<td>Phân tích tỷ giá VND 2022</td>
+<td>Mundell-Fleming</td>
+<td>event study, panel</td>
+</tr>
+<tr class="odd">
+<td>So sánh PCI 34 tỉnh trước/sau cải cách</td>
+<td>Quản trị địa phương</td>
+<td>ranking, t-test</td>
+</tr>
+<tr class="even">
+<td>Đánh giá hiệu quả siêu dự án</td>
+<td>NEG + CBA</td>
+<td>descriptive + scatter</td>
+</tr>
+<tr class="odd">
+<td>Bán dẫn VN — case study NIS</td>
+<td>Schumpeter + NIS</td>
+<td>descriptive</td>
+</tr>
+<tr class="even">
+<td>Tác động NQ 98 lên TP.HCM</td>
+<td>Phân cấp + NEG</td>
+<td>difference-in-differences</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="lệnh-stata-trọng-tâm" class="level3">
-<h3 class="anchored" data-anchor-id="lệnh-stata-trọng-tâm">3. Lệnh Stata trọng tâm</h3>
-<p>Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 14 — DTU301</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>* Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span> <span class="ot">all</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">more</span> <span class="kw">off</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">using</span> <span class="st">"lab14_&lt;ten&gt;.log"</span>, <span class="kw">replace</span> <span class="bn">text</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>* === Tải dữ liệu ===</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>* (sẽ chi tiết khi có dataset thật)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>* === Phân tích ===</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>* Sử dụng: tự chọn</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>* === Đóng <span class="fu">log</span> ===</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">close</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="cấu-trúc-do-file" class="level2">
+<h2 class="anchored" data-anchor-id="cấu-trúc-do-file">3. Cấu trúc do-file</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 14 Capstone — DTU301</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>* Đề tài: &lt;tên đề tài&gt;</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>* Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span> <span class="ot">all</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">more</span> <span class="kw">off</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">using</span> <span class="st">"lab14_&lt;ten&gt;.log"</span>, <span class="kw">replace</span> <span class="bn">text</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>*-------------------------------</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>* PHẦN 1: ĐẶT VẤN ĐỀ</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>*-------------------------------</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"=== Capstone DTU301 ==="</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"Đề tài: &lt;tên&gt;"</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"Câu hỏi nghiên cứu chính: &lt;ghi vào đây&gt;"</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>*-------------------------------</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>* PHẦN 2: TẢI DỮ LIỆU</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>*-------------------------------</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>* (nguồn: GSO, NHNN, WB, ...)</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>*-------------------------------</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>* PHẦN 3: THỐNG KÊ MÔ TẢ</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>*-------------------------------</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>* <span class="kw">summarize</span>, <span class="kw">tabulate</span>, <span class="ot">list</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>*-------------------------------</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>* PHẦN 4: PHÂN TÍCH CHÍNH</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>*-------------------------------</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>* regression, plot, event study, ...</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>*-------------------------------</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>* PHẦN 5: KIỂM CHỨNG</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>*-------------------------------</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>* robustness check</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>*-------------------------------</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>* PHẦN 6: KHUYẾN NGHỊ</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>*-------------------------------</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>* 3 đề xuất cụ thể</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">close</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="câu-hỏi-suy-nghĩ-sẽ-chi-tiết" class="level3">
-<h3 class="anchored" data-anchor-id="câu-hỏi-suy-nghĩ-sẽ-chi-tiết">4. Câu hỏi suy nghĩ (sẽ chi tiết)</h3>
-<ol type="1">
-<li>Câu hỏi mô tả dữ liệu</li>
-<li>Câu hỏi so sánh / xu hướng</li>
-<li>Câu hỏi liên hệ với lý thuyết</li>
-<li>Câu hỏi liên hệ với chính sách Việt Nam</li>
-<li>Câu hỏi mở rộng / phản biện</li>
-</ol>
-</section>
-</section>
-<section id="deliverable-lab-14" class="level2">
-<h2 class="anchored" data-anchor-id="deliverable-lab-14">Deliverable Lab 14</h2>
-<p>Nộp 3 file (như các lab trước):</p>
+<section id="yêu-cầu-báo-cáo" class="level2">
+<h2 class="anchored" data-anchor-id="yêu-cầu-báo-cáo">4. Yêu cầu báo cáo</h2>
+<p>Báo cáo (5-7 trang Word/PDF) gồm:</p>
 <table class="caption-top table">
 <thead>
 <tr class="header">
-<th>File</th>
+<th>Mục</th>
 <th>Nội dung</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>lab14_&lt;tên&gt;.do</code></td>
-<td>Code + comment</td>
+<td><strong>1. Đặt vấn đề</strong></td>
+<td>Câu hỏi nghiên cứu + tại sao quan trọng</td>
 </tr>
 <tr class="even">
-<td><code>lab14_&lt;tên&gt;.log</code></td>
-<td>Output</td>
+<td><strong>2. Khung lý thuyết</strong></td>
+<td>1-2 khung từ 5 chương + tại sao chọn</td>
 </tr>
 <tr class="odd">
-<td><code>lab14_&lt;tên&gt;.pdf</code> (1-2 trang)</td>
-<td>Trả lời câu hỏi + biểu đồ</td>
+<td><strong>3. Dữ liệu</strong></td>
+<td>Nguồn, biến, kỳ</td>
+</tr>
+<tr class="even">
+<td><strong>4. Phương pháp</strong></td>
+<td>Kỹ thuật Stata sử dụng</td>
+</tr>
+<tr class="odd">
+<td><strong>5. Kết quả</strong></td>
+<td>Bảng + biểu đồ + diễn giải</td>
+</tr>
+<tr class="even">
+<td><strong>6. Thảo luận</strong></td>
+<td>Hạn chế, đánh đổi, rủi ro</td>
+</tr>
+<tr class="odd">
+<td><strong>7. Khuyến nghị</strong></td>
+<td>3 đề xuất khả thi cho VN</td>
+</tr>
+<tr class="even">
+<td><strong>Tài liệu tham khảo</strong></td>
+<td>APA 7th</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Tiêu đề email</strong>: <code>DTU301-LAB14-MSSV-HọTên</code></p>
 </section>
 <section id="tiêu-chí-chấm" class="level2">
-<h2 class="anchored" data-anchor-id="tiêu-chí-chấm">Tiêu chí chấm</h2>
+<h2 class="anchored" data-anchor-id="tiêu-chí-chấm">5. Tiêu chí chấm</h2>
 <table class="caption-top table">
 <thead>
 <tr class="header">
 <th>Tiêu chí</th>
-<th style="text-align: center;">Điểm</th>
+<th style="text-align: center;">Trọng số</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Code chạy đúng, có log</td>
-<td style="text-align: center;">30%</td>
+<td>Câu hỏi nghiên cứu rõ ràng + ý nghĩa</td>
+<td style="text-align: center;">15%</td>
 </tr>
 <tr class="even">
-<td>Vận dụng đúng khái niệm Stata mới của bài</td>
-<td style="text-align: center;">25%</td>
+<td>Khung lý thuyết phù hợp</td>
+<td style="text-align: center;">15%</td>
 </tr>
 <tr class="odd">
-<td>Biểu đồ / bảng kết quả rõ ràng</td>
-<td style="text-align: center;">20%</td>
+<td>Dữ liệu chất lượng (nguồn chính thống)</td>
+<td style="text-align: center;">15%</td>
 </tr>
 <tr class="even">
-<td>Trả lời câu hỏi sâu, có liên hệ thực tiễn</td>
-<td style="text-align: center;">25%</td>
+<td>Code Stata sạch, có comment</td>
+<td style="text-align: center;">20%</td>
+</tr>
+<tr class="odd">
+<td>Diễn giải kết quả sâu</td>
+<td style="text-align: center;">15%</td>
+</tr>
+<tr class="even">
+<td>Khuyến nghị cụ thể, khả thi</td>
+<td style="text-align: center;">15%</td>
+</tr>
+<tr class="odd">
+<td>Trích dẫn + format đẹp</td>
+<td style="text-align: center;">5%</td>
 </tr>
 </tbody>
 </table>
+</section>
+<section id="khuyến-nghị-dùng-ai-có-trách-nhiệm" class="level2">
+<h2 class="anchored" data-anchor-id="khuyến-nghị-dùng-ai-có-trách-nhiệm">6. Khuyến nghị: dùng AI có trách nhiệm</h2>
+<ul>
+<li><strong>Cho phép</strong>: ChatGPT/Claude tóm tắt tài liệu, debug code Stata, brainstorm ý tưởng</li>
+<li><strong>Bắt buộc khai báo</strong>: phần nào dùng AI, prompt gì</li>
+<li><strong>Kiểm chứng</strong>: mọi số liệu phải verify từ nguồn gốc</li>
+<li><strong>Không sao chép</strong>: phải viết lại bằng giọng văn của bạn</li>
+</ul>
+</section>
+<section id="mở-rộng-tự-chọn" class="level2">
+<h2 class="anchored" data-anchor-id="mở-rộng-tự-chọn">7. Mở rộng (tự chọn)</h2>
+<ul>
+<li>Học <strong>Quarto + Stata</strong> để tạo báo cáo có code chạy thật</li>
+<li>Thử <strong>Python + statsmodels</strong> để so sánh với Stata</li>
+<li>Tham gia <strong>VEPR, CIEM</strong> seminars để nghe nhà nghiên cứu thảo luận</li>
+</ul>
 <hr>
-<p>← <em>Lab trước</em>: <a href="../stata-lab/lab-13.html">Lab 13</a> | <em>Lab tiếp theo</em>: <a href="../stata-lab/lab-15.html">Lab 15</a> →</p>
+<p>← <em>Lab trước</em>: <a href="../stata-lab/lab-13.html">Lab 13 — 6 vùng KT-XH</a> | <em>Lab tiếp theo</em>: <a href="../stata-lab/lab-15.html">Lab 15 — Xuất bảng + biểu đồ</a> →</p>
 
 
 </section>

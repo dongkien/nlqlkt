@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Buổi 09 — Cán cân thanh toán và tỷ giá – Nguyên lý Quản lý Kinh tế (DTU301)</title>
+<title>Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái – Nguyên lý Quản lý Kinh tế (DTU301)</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles/custom.css">
 </head>
@@ -130,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-09.html">Chương 4 — Vĩ mô (KT mở)</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-09.html">Buổi 09 — Cán cân thanh toán và tỷ giá</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-09.html">Chương 4 — Vĩ mô (KT mở)</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-09.html">Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -241,7 +270,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-09.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Buổi 09 — Cán cân thanh toán và tỷ giá</span></a>
+ <span class="menu-text">Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -270,7 +299,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-12.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 12 — Quản trị địa phương và phân cấp tài khoá</span></a>
+ <span class="menu-text">Buổi 12 — Quản trị địa phương và Phân cấp tài khoá</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -293,13 +322,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-14.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 14 — Chia sẻ thực tiễn</span></a>
+ <span class="menu-text">Buổi 14 — Seminar: Chia sẻ chuyên gia + Workshop</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-15.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 15 — Tổng kết và đánh giá</span></a>
+ <span class="menu-text">Buổi 15 — Thuyết trình + Tổng kết học phần</span></a>
   </div>
 </li>
       </ul>
@@ -314,10 +343,36 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Trong bài</h2>
    
   <ul>
-  <li><a href="#nội-dung-lý-thuyết-thuyết-giảng" id="toc-nội-dung-lý-thuyết-thuyết-giảng" class="nav-link active" data-scroll-target="#nội-dung-lý-thuyết-thuyết-giảng">Nội dung lý thuyết (thuyết giảng)</a></li>
-  <li><a href="#thực-hành-thảo-luận" id="toc-thực-hành-thảo-luận" class="nav-link" data-scroll-target="#thực-hành-thảo-luận">Thực hành / Thảo luận</a></li>
-  <li><a href="#bài-tập-lớn-tiểu-luận" id="toc-bài-tập-lớn-tiểu-luận" class="nav-link" data-scroll-target="#bài-tập-lớn-tiểu-luận">Bài tập lớn / Tiểu luận</a></li>
-  <li><a href="#tự-học-có-hướng-dẫn" id="toc-tự-học-có-hướng-dẫn" class="nav-link" data-scroll-target="#tự-học-có-hướng-dẫn">Tự học có hướng dẫn</a></li>
+  <li><a href="#lộ-trình-buổi-9" id="toc-lộ-trình-buổi-9" class="nav-link active" data-scroll-target="#lộ-trình-buổi-9">Lộ trình Buổi 9</a></li>
+  <li><a href="#a.-cán-cân-thanh-toán-bop" id="toc-a.-cán-cân-thanh-toán-bop" class="nav-link" data-scroll-target="#a.-cán-cân-thanh-toán-bop">A. Cán cân thanh toán (BoP)</a>
+  <ul class="collapse">
+  <li><a href="#a.1.-khái-niệm" id="toc-a.1.-khái-niệm" class="nav-link" data-scroll-target="#a.1.-khái-niệm">A.1. Khái niệm</a></li>
+  <li><a href="#a.2.-cấu-trúc-ca-và-fa" id="toc-a.2.-cấu-trúc-ca-và-fa" class="nav-link" data-scroll-target="#a.2.-cấu-trúc-ca-và-fa">A.2. Cấu trúc CA và FA</a></li>
+  <li><a href="#a.3.-đồng-nhất-ca-s-i" id="toc-a.3.-đồng-nhất-ca-s-i" class="nav-link" data-scroll-target="#a.3.-đồng-nhất-ca-s-i">A.3. Đồng nhất CA = S − I</a></li>
+  <li><a href="#a.4.-bop-việt-nam-2020-2024" id="toc-a.4.-bop-việt-nam-2020-2024" class="nav-link" data-scroll-target="#a.4.-bop-việt-nam-2020-2024">A.4. BoP Việt Nam 2020-2024</a></li>
+  </ul></li>
+  <li><a href="#b.-tỷ-giá-hối-đoái" id="toc-b.-tỷ-giá-hối-đoái" class="nav-link" data-scroll-target="#b.-tỷ-giá-hối-đoái">B. Tỷ giá hối đoái</a>
+  <ul class="collapse">
+  <li><a href="#b.1.-tỷ-giá-danh-nghĩa" id="toc-b.1.-tỷ-giá-danh-nghĩa" class="nav-link" data-scroll-target="#b.1.-tỷ-giá-danh-nghĩa">B.1. Tỷ giá danh nghĩa</a></li>
+  <li><a href="#b.2.-tỷ-giá-thực" id="toc-b.2.-tỷ-giá-thực" class="nav-link" data-scroll-target="#b.2.-tỷ-giá-thực">B.2. Tỷ giá thực</a></li>
+  <li><a href="#b.3.-neer-và-reer" id="toc-b.3.-neer-và-reer" class="nav-link" data-scroll-target="#b.3.-neer-và-reer">B.3. NEER và REER</a></li>
+  <li><a href="#b.4.-chế-độ-tỷ-giá-theo-imf-areaer-2024" id="toc-b.4.-chế-độ-tỷ-giá-theo-imf-areaer-2024" class="nav-link" data-scroll-target="#b.4.-chế-độ-tỷ-giá-theo-imf-areaer-2024">B.4. Chế độ tỷ giá theo IMF AREAER 2024</a></li>
+  </ul></li>
+  <li><a href="#c.-các-quy-luật-ngang-giá-ppp-uip-cip" id="toc-c.-các-quy-luật-ngang-giá-ppp-uip-cip" class="nav-link" data-scroll-target="#c.-các-quy-luật-ngang-giá-ppp-uip-cip">C. Các quy luật ngang giá — PPP, UIP, CIP</a>
+  <ul class="collapse">
+  <li><a href="#c.1.-purchasing-power-parity-ppp" id="toc-c.1.-purchasing-power-parity-ppp" class="nav-link" data-scroll-target="#c.1.-purchasing-power-parity-ppp">C.1. Purchasing Power Parity (PPP)</a></li>
+  <li><a href="#c.2.-uncovered-interest-parity-uip" id="toc-c.2.-uncovered-interest-parity-uip" class="nav-link" data-scroll-target="#c.2.-uncovered-interest-parity-uip">C.2. Uncovered Interest Parity (UIP)</a></li>
+  <li><a href="#c.3.-covered-interest-parity-cip" id="toc-c.3.-covered-interest-parity-cip" class="nav-link" data-scroll-target="#c.3.-covered-interest-parity-cip">C.3. Covered Interest Parity (CIP)</a></li>
+  <li><a href="#c.4.-carry-trade" id="toc-c.4.-carry-trade" class="nav-link" data-scroll-target="#c.4.-carry-trade">C.4. Carry trade</a></li>
+  </ul></li>
+  <li><a href="#d.-dự-trữ-ngoại-hối-vai-trò-và-việt-nam" id="toc-d.-dự-trữ-ngoại-hối-vai-trò-và-việt-nam" class="nav-link" data-scroll-target="#d.-dự-trữ-ngoại-hối-vai-trò-và-việt-nam">D. Dự trữ ngoại hối — Vai trò và Việt Nam</a>
+  <ul class="collapse">
+  <li><a href="#d.1.-vai-trò-dự-trữ-nh" id="toc-d.1.-vai-trò-dự-trữ-nh" class="nav-link" data-scroll-target="#d.1.-vai-trò-dự-trữ-nh">D.1. Vai trò dự trữ NH</a></li>
+  <li><a href="#d.2.-tiêu-chuẩn-đầy-đủ-dự-trữ" id="toc-d.2.-tiêu-chuẩn-đầy-đủ-dự-trữ" class="nav-link" data-scroll-target="#d.2.-tiêu-chuẩn-đầy-đủ-dự-trữ">D.2. Tiêu chuẩn đầy đủ dự trữ</a></li>
+  <li><a href="#d.3.-bài-học-chính-sách" id="toc-d.3.-bài-học-chính-sách" class="nav-link" data-scroll-target="#d.3.-bài-học-chính-sách">D.3. Bài học chính sách</a></li>
+  </ul></li>
+  <li><a href="#tổng-kết-buổi-9-năm-điểm-cốt-lõi" id="toc-tổng-kết-buổi-9-năm-điểm-cốt-lõi" class="nav-link" data-scroll-target="#tổng-kết-buổi-9-năm-điểm-cốt-lõi">Tổng kết Buổi 9 — Năm điểm cốt lõi</a></li>
+  <li><a href="#bài-tập-về-nhà-chuẩn-bị-buổi-10" id="toc-bài-tập-về-nhà-chuẩn-bị-buổi-10" class="nav-link" data-scroll-target="#bài-tập-về-nhà-chuẩn-bị-buổi-10">Bài tập về nhà (chuẩn bị Buổi 10)</a></li>
   <li><a href="#đọc-thêm" id="toc-đọc-thêm" class="nav-link" data-scroll-target="#đọc-thêm">Đọc thêm</a></li>
   </ul>
 </nav>
@@ -325,10 +380,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-09.html">Chương 4 — Vĩ mô (KT mở)</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-09.html">Buổi 09 — Cán cân thanh toán và tỷ giá</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-09.html">Chương 4 — Vĩ mô (KT mở)</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-09.html">Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Buổi 09 — Cán cân thanh toán và tỷ giá</h1>
-<p class="subtitle lead">BoP, NEER, REER, chế độ tỷ giá, PPP, UIP, CIP, dự trữ ngoại hối</p>
+<h1 class="title">Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái</h1>
+<p class="subtitle lead">BoP · NEER/REER · PPP, UIP, CIP · Chế độ tỷ giá IMF · Dự trữ ngoại hối VN</p>
 </div>
 
 
@@ -355,70 +410,462 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>CLO2, CLO3 — Vận dụng khung tỷ giá</strong></p>
+<p><strong>CLO2, CLO3</strong> — Vận dụng khung BoP và lý thuyết tỷ giá vào tình huống Việt Nam.</p>
+<p>Chương 4 mở rộng phân tích sang <strong>kinh tế mở</strong>. Buổi 9 đặt nền tảng: làm thế nào đo lường dòng tiền giữa Việt Nam và thế giới (BoP), và các quy luật chi phối tỷ giá (PPP, UIP, CIP).</p>
 </div>
 </div>
-<section id="nội-dung-lý-thuyết-thuyết-giảng" class="level2">
-<h2 class="anchored" data-anchor-id="nội-dung-lý-thuyết-thuyết-giảng">Nội dung lý thuyết (thuyết giảng)</h2>
-<p><strong>4.1. Cán cân thanh toán (BoP)</strong></p>
-<ul>
-<li>Cấu trúc: tài khoản vãng lai (CA), tài khoản tài chính (FA)</li>
-<li>Đồng nhất: (CA = S - I)</li>
-<li>BoP Việt Nam</li>
-</ul>
-<p><strong>Tỷ giá</strong></p>
-<ul>
-<li>Danh nghĩa vs thực</li>
-<li><strong>NEER</strong> (nominal effective exchange rate)</li>
-<li><strong>REER</strong> (real effective exchange rate)</li>
-<li>Các chế độ tỷ giá theo IMF</li>
-</ul>
-<p><strong>Lý thuyết</strong></p>
-<ul>
-<li><strong>PPP</strong> (purchasing power parity)</li>
-<li><strong>UIP</strong> (uncovered interest parity)</li>
-<li><strong>CIP</strong> (covered interest parity)</li>
-<li>Carry trade</li>
-<li>Dự trữ ngoại hối — vai trò</li>
-</ul>
+<section id="lộ-trình-buổi-9" class="level2">
+<h2 class="anchored" data-anchor-id="lộ-trình-buổi-9">Lộ trình Buổi 9</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Phần</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>A</strong></td>
+<td>Cán cân thanh toán — CA, FA, đồng nhất kế toán</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>B</strong></td>
+<td>Tỷ giá hối đoái — danh nghĩa, thực, NEER, REER</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>C</strong></td>
+<td>Các quy luật ngang giá — PPP, UIP, CIP</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>D</strong></td>
+<td>Dự trữ ngoại hối và chế độ tỷ giá IMF</td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="thực-hành-thảo-luận" class="level2">
-<h2 class="anchored" data-anchor-id="thực-hành-thảo-luận">Thực hành / Thảo luận</h2>
-<p>Tính <strong>NEER và REER VND</strong> từ dữ liệu mới nhất; thảo luận VND có bị <strong>định giá quá cao/thấp</strong> so với rổ tiền tệ chính.</p>
-</section>
-<section id="bài-tập-lớn-tiểu-luận" class="level2">
-<h2 class="anchored" data-anchor-id="bài-tập-lớn-tiểu-luận">Bài tập lớn / Tiểu luận</h2>
-<p>Báo cáo phân tích chính sách (4–6 trang) về <strong>một vấn đề tỷ giá hoặc dòng vốn</strong> Việt Nam (Phần 1).</p>
-</section>
-<section id="tự-học-có-hướng-dẫn" class="level2">
-<h2 class="anchored" data-anchor-id="tự-học-có-hướng-dẫn">Tự học có hướng dẫn</h2>
-<ol type="1">
-<li>CA = S − I — hàm ý gì cho VN có thâm hụt CA?</li>
-<li>Tại sao PPP thường không nắm trong ngắn hạn?</li>
-<li>Dự trữ ngoại hối VN mức nào là đủ?</li>
-</ol>
-</section>
-<section id="đọc-thêm" class="level2">
-<h2 class="anchored" data-anchor-id="đọc-thêm">Đọc thêm</h2>
+<section id="a.-cán-cân-thanh-toán-bop" class="level2">
+<h2 class="anchored" data-anchor-id="a.-cán-cân-thanh-toán-bop">A. Cán cân thanh toán (BoP)</h2>
+<section id="a.1.-khái-niệm" class="level3">
+<h3 class="anchored" data-anchor-id="a.1.-khái-niệm">A.1. Khái niệm</h3>
+<p><strong>Balance of Payments (BoP)</strong> = ghi nhận <strong>tất cả giao dịch giữa cư dân Việt Nam và phần còn lại của thế giới</strong> trong một kỳ.</p>
+<p>Theo <strong>IMF BPM6</strong> (Balance of Payments Manual, 6th edition):</p>
 <ul>
-<li>Mankiw, <em>Kinh tế học vĩ mô</em>, chương 19.</li>
-<li>Blanchard (2020), chương 17–18.</li>
+<li>Đơn vị: tỷ USD/năm</li>
+<li>Ba phần: <strong>Tài khoản vãng lai (CA)</strong> + <strong>Tài khoản tài chính (FA)</strong> + <strong>Sai số</strong></li>
+<li>Đồng nhất kế toán kép: <strong>CA + FA + sai số = 0</strong></li>
 </ul>
-<div class="callout callout-style-simple callout-warning callout-titled">
+<p>Mọi giao dịch ghi <strong>hai lần</strong> — bên có và bên nợ — giống kế toán doanh nghiệp.</p>
+<p><strong>Việt Nam 2024</strong>: thặng dư CA khoảng <strong>4 tỷ USD</strong> (~1% GDP).</p>
+</section>
+<section id="a.2.-cấu-trúc-ca-và-fa" class="level3">
+<h3 class="anchored" data-anchor-id="a.2.-cấu-trúc-ca-và-fa">A.2. Cấu trúc CA và FA</h3>
+<p><strong>Tài khoản vãng lai (CA)</strong>:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Mục</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Thương mại hàng hoá</strong></td>
+<td>XK − NK</td>
+</tr>
+<tr class="even">
+<td><strong>Dịch vụ</strong></td>
+<td>Du lịch, vận tải, dịch vụ tài chính</td>
+</tr>
+<tr class="odd">
+<td><strong>Thu nhập</strong></td>
+<td>Lương + lợi tức đầu tư</td>
+</tr>
+<tr class="even">
+<td><strong>Chuyển giao</strong></td>
+<td>Kiều hối, viện trợ</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Tài khoản tài chính (FA)</strong>:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Mục</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>FDI</strong></td>
+<td>Đầu tư trực tiếp</td>
+</tr>
+<tr class="even">
+<td><strong>FPI</strong></td>
+<td>Đầu tư danh mục (cổ phiếu, trái phiếu)</td>
+</tr>
+<tr class="odd">
+<td><strong>OI</strong></td>
+<td>Đầu tư khác (vay, tiền gửi)</td>
+</tr>
+<tr class="even">
+<td><strong>Dự trữ ngoại hối</strong></td>
+<td>Thay đổi của NHTW</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Đồng nhất quan trọng</strong>: <span class="math inline">\(FA + \Delta\text{Dự trữ} = -CA\)</span> — thặng dư CA phải được “đầu tư ra ngoài” hoặc tích trữ dự trữ.</p>
+</section>
+<section id="a.3.-đồng-nhất-ca-s-i" class="level3">
+<h3 class="anchored" data-anchor-id="a.3.-đồng-nhất-ca-s-i">A.3. Đồng nhất CA = S − I</h3>
+<p>Từ đẳng thức GDP: <span class="math inline">\(Y = C + I + G + NX\)</span></p>
+<p>Sau khi sắp xếp lại (với <span class="math inline">\(S = Y - C - G\)</span>):</p>
+<p><span class="math display">\[\boxed{S - I = NX}\]</span></p>
+<p>Trong kinh tế mở, <span class="math inline">\(NX \approx CA\)</span>. Vậy:</p>
+<ul>
+<li><strong>CA dương</strong> = quốc gia tiết kiệm &gt; đầu tư → <strong>cho vay ròng</strong> ra nước ngoài</li>
+<li><strong>CA âm</strong> = quốc gia đầu tư &gt; tiết kiệm → <strong>vay ròng</strong> từ nước ngoài</li>
+</ul>
+<p><strong>Việt Nam</strong>: hiện CA dương ổn định → VN là <em>người cho vay ròng</em>. Điều này có vẻ ngược lý: VN cần vốn để phát triển — sao lại cho vay ra?</p>
+<p>Lý do: VN tích trữ dự trữ ngoại hối nhanh + kiều hối lớn + xuất khẩu vượt nhập (nhờ FDI export-oriented).</p>
+</section>
+<section id="a.4.-bop-việt-nam-2020-2024" class="level3">
+<h3 class="anchored" data-anchor-id="a.4.-bop-việt-nam-2020-2024">A.4. BoP Việt Nam 2020-2024</h3>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Yếu tố</th>
+<th>Quy mô gần đây</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>CA / GDP</strong></td>
+<td>+1% đến +4%</td>
+</tr>
+<tr class="even">
+<td><strong>Xuất khẩu hàng hoá</strong></td>
+<td>350–400 tỷ USD/năm</td>
+</tr>
+<tr class="odd">
+<td><strong>Nhập khẩu hàng hoá</strong></td>
+<td>320–370 tỷ USD/năm</td>
+</tr>
+<tr class="even">
+<td><strong>FDI thực tế giải ngân</strong></td>
+<td>20–25 tỷ USD/năm</td>
+</tr>
+<tr class="odd">
+<td><strong>Kiều hối</strong></td>
+<td>15–19 tỷ USD/năm</td>
+</tr>
+<tr class="even">
+<td><strong>Dự trữ NH</strong></td>
+<td>~90–100 tỷ USD (đang giảm sau 2022)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lưu ý</strong>: dự trữ NH giảm năm 2022–2023 do NHNN can thiệp bảo vệ tỷ giá VND trước Fed tăng r — đây là <em>chi phí</em> của chế độ tỷ giá quản lý.</p>
+</section>
+</section>
+<section id="b.-tỷ-giá-hối-đoái" class="level2">
+<h2 class="anchored" data-anchor-id="b.-tỷ-giá-hối-đoái">B. Tỷ giá hối đoái</h2>
+<section id="b.1.-tỷ-giá-danh-nghĩa" class="level3">
+<h3 class="anchored" data-anchor-id="b.1.-tỷ-giá-danh-nghĩa">B.1. Tỷ giá danh nghĩa</h3>
+<p><strong>Tỷ giá danh nghĩa <span class="math inline">\(E\)</span></strong> = số đơn vị nội tệ đổi 1 đơn vị ngoại tệ.</p>
+<p>Ví dụ Việt Nam 2024: <span class="math inline">\(E = 25.000\)</span> VND/USD.</p>
+<p>Quy ước:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Thuật ngữ</th>
+<th>Ý nghĩa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Appreciation (lên giá)</strong></td>
+<td><span class="math inline">\(E\)</span> giảm — VND mạnh hơn</td>
+</tr>
+<tr class="even">
+<td><strong>Depreciation (mất giá)</strong></td>
+<td><span class="math inline">\(E\)</span> tăng — VND yếu hơn</td>
+</tr>
+<tr class="odd">
+<td><strong>Revaluation</strong></td>
+<td>NHTW chính thức nâng giá (chế độ peg)</td>
+</tr>
+<tr class="even">
+<td><strong>Devaluation</strong></td>
+<td>NHTW chính thức hạ giá (chế độ peg)</td>
+</tr>
+</tbody>
+</table>
+<p>NHTW can thiệp qua mua bán ngoại tệ — mua USD đẩy VND yếu, bán USD đẩy VND mạnh.</p>
+</section>
+<section id="b.2.-tỷ-giá-thực" class="level3">
+<h3 class="anchored" data-anchor-id="b.2.-tỷ-giá-thực">B.2. Tỷ giá thực</h3>
+<p><strong>Tỷ giá thực</strong> đo <em>sức cạnh tranh hàng XK</em>:</p>
+<p><span class="math display">\[q = E \cdot \frac{P^*}{P}\]</span></p>
+<p>Trong đó: - <span class="math inline">\(E\)</span> = tỷ giá danh nghĩa - <span class="math inline">\(P^*\)</span> = mức giá nước ngoài - <span class="math inline">\(P\)</span> = mức giá trong nước</p>
+<p><strong>Diễn giải</strong>:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Thay đổi</th>
+<th>Tác động</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(q\)</span> tăng (real depreciation)</td>
+<td>Hàng VN rẻ hơn → XK tăng</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(q\)</span> giảm (real appreciation)</td>
+<td>Hàng VN đắt hơn → XK giảm</td>
+</tr>
+</tbody>
+</table>
+<p>Tỷ giá thực quan trọng hơn danh nghĩa khi đánh giá <em>cạnh tranh thương mại</em> dài hạn.</p>
+</section>
+<section id="b.3.-neer-và-reer" class="level3">
+<h3 class="anchored" data-anchor-id="b.3.-neer-và-reer">B.3. NEER và REER</h3>
+<p>Một quốc gia giao thương với <em>nhiều</em> đối tác — đo tỷ giá với 1 đồng tiền (vd VND/USD) chưa đủ.</p>
+<p><strong>NEER (Nominal Effective Exchange Rate)</strong>: tỷ giá danh nghĩa hiệu dụng — trung bình có trọng số với <strong>rổ đối tác thương mại</strong>.</p>
+<p><span class="math display">\[\text{NEER} = \prod_i E_i^{w_i}\]</span></p>
+<p><strong>REER (Real Effective Exchange Rate)</strong>: NEER điều chỉnh theo chênh lệch giá:</p>
+<p><span class="math display">\[\text{REER} = \text{NEER} \cdot \frac{P^*_{\text{weighted}}}{P}\]</span></p>
+<p><strong>Tại sao quan trọng</strong>: tránh phụ thuộc vào <em>một</em> đồng tiền (như USD). USD lên giá khắp thế giới không có nghĩa VND yếu <em>với tất cả đối tác</em>.</p>
+<p><strong>Việt Nam</strong>: <strong>BIS</strong> tính REER theo <strong>27 đối tác thương mại</strong>. Đây là chỉ số chuẩn để đánh giá VND đắt/rẻ.</p>
+</section>
+<section id="b.4.-chế-độ-tỷ-giá-theo-imf-areaer-2024" class="level3">
+<h3 class="anchored" data-anchor-id="b.4.-chế-độ-tỷ-giá-theo-imf-areaer-2024">B.4. Chế độ tỷ giá theo IMF AREAER 2024</h3>
+<p><strong>IMF AREAER</strong> (Annual Report on Exchange Arrangements) phân loại các nước thành <strong>10 chế độ</strong>, chia 3 nhóm:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Nhóm</th>
+<th>Chế độ</th>
+<th>Đặc điểm</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Cứng</strong></td>
+<td>Dollarization</td>
+<td>Dùng ngoại tệ làm tiền tệ chính (Ecuador, Panama)</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Currency board</td>
+<td>Cam kết tỷ giá cố định + dự trữ 100% (HK với USD)</td>
+</tr>
+<tr class="odd">
+<td><strong>Mềm</strong></td>
+<td>Peg cố định</td>
+<td>Tỷ giá cố định với 1 đồng tiền</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Crawling peg</td>
+<td>Tỷ giá điều chỉnh dần</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td><strong>Crawl-like</strong></td>
+<td>Tỷ giá biến động trong dải hẹp, có <em>xu hướng</em> — <strong>Việt Nam</strong> thuộc nhóm này</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Stabilized arrangement</td>
+<td>Dao động ≤ 2% trong 6 tháng</td>
+</tr>
+<tr class="odd">
+<td><strong>Thả nổi</strong></td>
+<td>Managed float</td>
+<td>NHTW can thiệp không định kỳ</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Free float</td>
+<td>Hoàn toàn thị trường</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Việt Nam</strong>: theo AREAER 2024, VN được phân loại <strong>crawl-like</strong> — VND biến động trong biên độ hẹp (≤ ±5%), có xu hướng yếu dần so với USD, NHNN can thiệp khi cần.</p>
+</section>
+</section>
+<section id="c.-các-quy-luật-ngang-giá-ppp-uip-cip" class="level2">
+<h2 class="anchored" data-anchor-id="c.-các-quy-luật-ngang-giá-ppp-uip-cip">C. Các quy luật ngang giá — PPP, UIP, CIP</h2>
+<section id="c.1.-purchasing-power-parity-ppp" class="level3">
+<h3 class="anchored" data-anchor-id="c.1.-purchasing-power-parity-ppp">C.1. Purchasing Power Parity (PPP)</h3>
+<p><strong>PPP (Cassel 1916, 1922)</strong>: trong dài hạn, tỷ giá điều chỉnh sao cho cùng một rổ hàng hoá có <em>cùng giá</em> khi quy về 1 đồng tiền.</p>
+<p><strong>PPP tuyệt đối</strong>: <span class="math display">\[E = \frac{P}{P^*} \implies q = 1\]</span></p>
+<p><strong>PPP tương đối</strong>: thay đổi tỷ giá = chênh lệch lạm phát.</p>
+<p><span class="math display">\[\frac{\Delta E}{E} = \pi - \pi^*\]</span></p>
+<p><strong>Thực tế</strong>: PPP hiếm khi nắm trong <strong>ngắn hạn</strong> (vài năm) do: - Hàng phi mậu dịch (haircut, nhà ở) - Chi phí vận chuyển, thuế - Sản phẩm không hoàn toàn đồng nhất</p>
+<p>Nhưng PPP <strong>xu hướng đúng dài hạn</strong> (10+ năm). Một biến thể đơn giản: <strong>Big Mac Index</strong> (The Economist) — so giá Big Mac toàn cầu.</p>
+</section>
+<section id="c.2.-uncovered-interest-parity-uip" class="level3">
+<h3 class="anchored" data-anchor-id="c.2.-uncovered-interest-parity-uip">C.2. Uncovered Interest Parity (UIP)</h3>
+<p><strong>UIP</strong>: chênh lệch lãi suất giữa hai đồng tiền ≈ kỳ vọng thay đổi tỷ giá.</p>
+<p><span class="math display">\[r - r^* = \frac{E^e_{t+1} - E_t}{E_t}\]</span></p>
+<p><strong>Logic</strong>: nếu lãi suất VND cao hơn USD 5%, kỳ vọng VND mất giá 5% — nếu không, sẽ có <em>arbitrage</em>.</p>
+<p><strong>Thực tế</strong>: UIP cũng <em>không nắm chặt</em> — gọi là <em>Forward Premium Puzzle</em>. Carry trade tận dụng chính sự lệch này.</p>
+</section>
+<section id="c.3.-covered-interest-parity-cip" class="level3">
+<h3 class="anchored" data-anchor-id="c.3.-covered-interest-parity-cip">C.3. Covered Interest Parity (CIP)</h3>
+<p><strong>CIP</strong> (Keynes 1923): chênh lệch lãi suất = chênh lệch <em>forward rate</em> và <em>spot rate</em>.</p>
+<p><span class="math display">\[r - r^* = \frac{F_t - E_t}{E_t}\]</span></p>
+<p>Trong đó <span class="math inline">\(F_t\)</span> = tỷ giá forward.</p>
+<p><strong>Logic</strong>: nếu CIP không đúng → arbitrage không rủi ro (covered = đã bảo hiểm tỷ giá). Tốt cho mọi điều kiện thị trường.</p>
+<p><strong>Thực tế</strong>: CIP nắm rất chặt trước 2008. Sau khủng hoảng tài chính 2008, có <strong>CIP deviations</strong> do <em>liquidity premium</em> và <em>balance sheet constraints</em> của ngân hàng.</p>
+</section>
+<section id="c.4.-carry-trade" class="level3">
+<h3 class="anchored" data-anchor-id="c.4.-carry-trade">C.4. Carry trade</h3>
+<p><strong>Carry trade</strong> = mượn đồng tiền lãi suất thấp (vd JPY), đầu tư đồng tiền lãi suất cao (vd AUD, BRL).</p>
+<ul>
+<li><strong>Khi yên ổn</strong>: lãi <em>carry differential</em> + <em>chêch tỷ giá ổn định</em>.</li>
+<li><strong>Khi có cú sốc</strong>: tỷ giá <em>unwind</em> nhanh, mất tiền lớn — gọi là <em>carry crash</em>.</li>
+</ul>
+<p>Carry trade quy mô lớn được coi là một nguồn của <strong>bất ổn tài chính toàn cầu</strong>.</p>
+</section>
+</section>
+<section id="d.-dự-trữ-ngoại-hối-vai-trò-và-việt-nam" class="level2">
+<h2 class="anchored" data-anchor-id="d.-dự-trữ-ngoại-hối-vai-trò-và-việt-nam">D. Dự trữ ngoại hối — Vai trò và Việt Nam</h2>
+<section id="d.1.-vai-trò-dự-trữ-nh" class="level3">
+<h3 class="anchored" data-anchor-id="d.1.-vai-trò-dự-trữ-nh">D.1. Vai trò dự trữ NH</h3>
+<p><strong>Dự trữ ngoại hối</strong> (NHTW nắm giữ) có ba vai trò chính:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Vai trò</th>
+<th>Cơ chế</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Bảo vệ tỷ giá</strong></td>
+<td>Bán USD khi VND yếu, mua khi VND mạnh</td>
+</tr>
+<tr class="even">
+<td><strong>Buffer khủng hoảng</strong></td>
+<td>Đảm bảo thanh khoản trong cú sốc</td>
+</tr>
+<tr class="odd">
+<td><strong>Tín hiệu thị trường</strong></td>
+<td>Dự trữ lớn → niềm tin nhà đầu tư</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="d.2.-tiêu-chuẩn-đầy-đủ-dự-trữ" class="level3">
+<h3 class="anchored" data-anchor-id="d.2.-tiêu-chuẩn-đầy-đủ-dự-trữ">D.2. Tiêu chuẩn đầy đủ dự trữ</h3>
+<p>Các tiêu chuẩn quốc tế:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Tiêu chuẩn</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>3 tháng nhập khẩu</strong></td>
+<td>Mức “tối thiểu cổ điển” (IMF guideline)</td>
+</tr>
+<tr class="even">
+<td><strong>ARA Metric</strong> (IMF)</td>
+<td>Tính theo XK + nợ ngắn hạn + M2</td>
+</tr>
+<tr class="odd">
+<td><strong>100% nợ ngắn hạn</strong></td>
+<td>Greenspan-Guidotti rule</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Việt Nam hiện tại</strong> (~90-100 tỷ USD):</p>
+<ul>
+<li>~3 tháng NK: <strong>đạt</strong></li>
+<li>ARA: <strong>khoảng 80-100%</strong> — vùng <em>adequate</em> nhưng không dư</li>
+<li>So với TQ, HK, Singapore: tỷ lệ thấp hơn</li>
+</ul>
+<p>Sau 2022, NHNN bán dự trữ để bảo vệ VND → dự trữ giảm ~15-20 tỷ USD trong 1 năm.</p>
+</section>
+<section id="d.3.-bài-học-chính-sách" class="level3">
+<h3 class="anchored" data-anchor-id="d.3.-bài-học-chính-sách">D.3. Bài học chính sách</h3>
+<p><strong>Trade-off</strong>: - Dự trữ <strong>quá thấp</strong> → dễ tổn thương khủng hoảng (Thái Lan 1997) - Dự trữ <strong>quá cao</strong> → chi phí cơ hội lớn (Trung Quốc)</p>
+<p>VN cần cân bằng: vừa đảm bảo <em>buffer</em>, vừa không “khoá vốn” quá nhiều.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>🚧 Nội dung đang biên soạn
+<span class="screen-reader-only">Warning</span>✋ Bài tập thảo luận trên lớp
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Bài giảng buổi 09 hiện ở dạng <strong>dàn ý theo đề cương DTU301</strong>. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.</p>
+<p>Tính NEER VND năm 2024 từ dữ liệu 5 đối tác thương mại lớn nhất:</p>
+<ol type="1">
+<li>Tải dữ liệu tỷ giá VND/USD, EUR, JPY, CNY, KRW.</li>
+<li>Tính trọng số theo kim ngạch XNK với mỗi đối tác.</li>
+<li>Tính NEER = trung bình có trọng số.</li>
+<li>So sánh với báo cáo của BIS — kết quả có gần không?</li>
+</ol>
 </div>
 </div>
+</section>
+</section>
+<section id="tổng-kết-buổi-9-năm-điểm-cốt-lõi" class="level2">
+<h2 class="anchored" data-anchor-id="tổng-kết-buổi-9-năm-điểm-cốt-lõi">Tổng kết Buổi 9 — Năm điểm cốt lõi</h2>
+<ol type="1">
+<li><strong>BoP</strong> ghi nhận giao dịch VN ↔︎ thế giới: CA + FA + sai số = 0.</li>
+<li><strong>CA = S − I</strong>: VN thặng dư CA dương = cho vay ròng, dù là KT đang phát triển.</li>
+<li><strong>NEER/REER</strong>: đo tỷ giá hiệu dụng theo rổ đối tác — quan trọng hơn VND/USD đơn lẻ.</li>
+<li><strong>PPP, UIP, CIP</strong>: ba quy luật ngang giá; PPP chỉ nắm dài hạn, UIP có puzzle, CIP nắm tốt.</li>
+<li><strong>VN crawl-like</strong> theo AREAER 2024, dự trữ ~90-100 tỷ USD (~3 tháng NK).</li>
+</ol>
+</section>
+<section id="bài-tập-về-nhà-chuẩn-bị-buổi-10" class="level2">
+<h2 class="anchored" data-anchor-id="bài-tập-về-nhà-chuẩn-bị-buổi-10">Bài tập về nhà (chuẩn bị Buổi 10)</h2>
+<ol type="1">
+<li><strong>Đọc</strong> Mankiw chương về <strong>Mundell-Fleming</strong>.</li>
+<li><strong>Tự đọc</strong> về điều kiện <strong>Marshall-Lerner</strong>.</li>
+<li><strong>Chuẩn bị 1 ví dụ chính sách tỷ giá Việt Nam 2022</strong> (can thiệp bảo vệ VND).</li>
+<li><strong>Đọc thêm</strong> case Hong Kong LERS, Reaganomics, ERM 1992.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>🔧 Stata Lab 9 (bonus 5%)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Bài này có lab <strong>tính NEER và REER VND 2015-2024</strong> trong Stata: tải dữ liệu tỷ giá song phương + CPI, tính trọng số rổ, tính NEER REER.</p>
+<p>→ <a href="../stata-lab/lab-09.html"><strong>Bắt đầu Lab 9 — NEER/REER VND</strong></a> <em>(~30 phút)</em></p>
+</div>
+</div>
+</section>
+<section id="đọc-thêm" class="level2">
+<h2 class="anchored" data-anchor-id="đọc-thêm">Đọc thêm</h2>
+<ul>
+<li>Mankiw, <em>Kinh tế học vĩ mô</em>, chương 19 (BoP, Tỷ giá).</li>
+<li><strong>IMF AREAER 2024</strong> — danh mục chế độ tỷ giá toàn cầu.</li>
+<li><strong>BIS</strong> — REER cho VND và các đồng tiền chính.</li>
+<li><strong>NHNN</strong> — Báo cáo thường niên về thị trường ngoại hối.</li>
+<li><em>Vietnam IMF Article IV</em> — đánh giá khung tỷ giá VN.</li>
+</ul>
 <hr>
-<p>← <em>Buổi trước</em>: <a href="../lectures/buoi-08.html">Buổi 8</a> <em>Buổi tiếp theo</em>: <a href="../lectures/buoi-10.html">Buổi 10</a> →</p>
+<p>← <em>Buổi trước</em>: <a href="../lectures/buoi-08.html">Buổi 8 — AD-AS, Phillips và Phối hợp chính sách</a> | <em>Buổi tiếp theo</em>: <a href="../lectures/buoi-10.html">Buổi 10 — Mô hình Mundell-Fleming</a> →</p>
 
 
 </section>

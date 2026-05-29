@@ -266,7 +266,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../stata-lab/lab-09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab 09 — Tính NEER và REER VND</span></a>
+ <span class="menu-text">Lab 9 — Tính NEER và REER VND</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -296,7 +296,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../stata-lab/lab-14.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Lab 14 — Capstone — phân tích 1 chính sách</span></a>
+ <span class="menu-text">Lab 14 — Capstone: Phân tích 1 chính sách</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -317,15 +317,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Trong bài</h2>
    
   <ul>
-  <li><a href="#khung-lab-12" id="toc-khung-lab-12" class="nav-link active" data-scroll-target="#khung-lab-12">Khung Lab 12</a>
-  <ul class="collapse">
-  <li><a href="#bài-toán" id="toc-bài-toán" class="nav-link" data-scroll-target="#bài-toán">1. Bài toán</a></li>
-  <li><a href="#dữ-liệu-cần" id="toc-dữ-liệu-cần" class="nav-link" data-scroll-target="#dữ-liệu-cần">2. Dữ liệu cần</a></li>
-  <li><a href="#lệnh-stata-trọng-tâm" id="toc-lệnh-stata-trọng-tâm" class="nav-link" data-scroll-target="#lệnh-stata-trọng-tâm">3. Lệnh Stata trọng tâm</a></li>
-  <li><a href="#câu-hỏi-suy-nghĩ-sẽ-chi-tiết" id="toc-câu-hỏi-suy-nghĩ-sẽ-chi-tiết" class="nav-link" data-scroll-target="#câu-hỏi-suy-nghĩ-sẽ-chi-tiết">4. Câu hỏi suy nghĩ (sẽ chi tiết)</a></li>
-  </ul></li>
-  <li><a href="#deliverable-lab-12" id="toc-deliverable-lab-12" class="nav-link" data-scroll-target="#deliverable-lab-12">Deliverable Lab 12</a></li>
-  <li><a href="#tiêu-chí-chấm" id="toc-tiêu-chí-chấm" class="nav-link" data-scroll-target="#tiêu-chí-chấm">Tiêu chí chấm</a></li>
+  <li><a href="#dataset-12-tỉnh" id="toc-dataset-12-tỉnh" class="nav-link active" data-scroll-target="#dataset-12-tỉnh">1. Dataset 12 tỉnh</a></li>
+  <li><a href="#correlation-3-chỉ-số" id="toc-correlation-3-chỉ-số" class="nav-link" data-scroll-target="#correlation-3-chỉ-số">2. Correlation 3 chỉ số</a></li>
+  <li><a href="#scatter-và-ranking" id="toc-scatter-và-ranking" class="nav-link" data-scroll-target="#scatter-và-ranking">3. Scatter và ranking</a></li>
+  <li><a href="#tổng-hợp-3-chỉ-số" id="toc-tổng-hợp-3-chỉ-số" class="nav-link" data-scroll-target="#tổng-hợp-3-chỉ-số">4. Tổng hợp 3 chỉ số</a></li>
+  <li><a href="#liên-hệ-chính-sách" id="toc-liên-hệ-chính-sách" class="nav-link" data-scroll-target="#liên-hệ-chính-sách">5. Liên hệ chính sách</a></li>
   </ul>
 </nav>
     </div>
@@ -335,7 +331,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-01.html">Lab theo buổi</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-12.html">Lab 12 — PCI / PAPI / PAR Index theo tỉnh</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Lab 12 — PCI / PAPI / PAR Index theo tỉnh</h1>
-<p class="subtitle lead">Tương ứng Buổi 12: Quản trị địa phương và đánh giá</p>
+<p class="subtitle lead">Tương ứng Buổi 12: So sánh 3 chỉ số đánh giá quản trị địa phương</p>
 </div>
 
 
@@ -362,120 +358,90 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Bài này áp dụng khái niệm chính từ <a href="../lectures/buoi-12.html">Buổi 12</a> vào dữ liệu thực tế Việt Nam.</p>
-<p><strong>Khái niệm Stata học</strong>: <code>merge, scatter, correlation</code></p>
+<p>So sánh <strong>PCI (DN) – PAPI (người dân) – PAR (Nhà nước)</strong> cho 12 tỉnh điển hình. Liên hệ chất lượng QLĐP với <em>thu hút đầu tư</em> và <em>hài lòng người dân</em>.</p>
+<p><strong>Khái niệm Stata học</strong>: <code>correlate</code>, scatter matrix, ranking, percentile</p>
 </div>
 </div>
-<div class="callout callout-style-simple callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>🚧 Lab đang biên soạn
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 12. Cấu trúc cố định theo template chuẩn của 16 lab.</p>
-</div>
-</div>
-<section id="khung-lab-12" class="level2">
-<h2 class="anchored" data-anchor-id="khung-lab-12">Khung Lab 12</h2>
-<section id="bài-toán" class="level3">
-<h3 class="anchored" data-anchor-id="bài-toán">1. Bài toán</h3>
-<p>So sánh 34 tỉnh sau cải cách 2025</p>
+<section id="dataset-12-tỉnh" class="level2">
+<h2 class="anchored" data-anchor-id="dataset-12-tỉnh">1. Dataset 12 tỉnh</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 12 — DTU301 — PCI/PAPI/PAR comparison</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span> <span class="ot">all</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">more</span> <span class="kw">off</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">using</span> <span class="st">"lab12_&lt;ten&gt;.log"</span>, <span class="kw">replace</span> <span class="bn">text</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>input str20 tinh <span class="kw">float</span> PCI <span class="kw">float</span> PAPI <span class="kw">float</span> PAR <span class="kw">float</span> GRDP_pc</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="st">"Quảng Ninh"</span>     71.0  47.2  91.5  9500</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="st">"Hải Phòng"</span>      70.4  46.5  93.2  8800</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="st">"Đà Nẵng"</span>        69.8  45.8  91.2  7500</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="st">"Bình Dương"</span>     67.8  43.5  90.0  10200</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="st">"TP.HCM"</span>         67.5  42.8  89.5  9100</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="st">"Hà Nội"</span>         67.0  42.0  90.5  7800</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="st">"Bắc Ninh"</span>       66.5  42.5  87.0  8500</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="st">"Đồng Nai"</span>       66.0  43.0  86.5  7200</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="st">"Khánh Hoà"</span>      65.0  42.0  85.0  4500</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="st">"Cần Thơ"</span>        64.5  41.5  84.5  4000</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="st">"Nghệ An"</span>        63.0  40.0  82.0  2800</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="st">"Tây Ninh"</span>       62.5  39.5  81.0  3500</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="kw">end</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="kw">label</span> <span class="kw">variable</span> PCI <span class="st">"PCI (VCCI)"</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="kw">label</span> <span class="kw">variable</span> PAPI <span class="st">"PAPI (UNDP)"</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="kw">label</span> <span class="kw">variable</span> PAR <span class="st">"PAR Index (Bộ Nội vụ)"</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="kw">label</span> <span class="kw">variable</span> GRDP_pc <span class="st">"GRDP/đầu người (USD)"</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a><span class="ot">list</span>, sepby(tinh)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="dữ-liệu-cần" class="level3">
-<h3 class="anchored" data-anchor-id="dữ-liệu-cần">2. Dữ liệu cần</h3>
-<p>Dữ liệu PCI (VCCI), PAPI (UNDP), PAR Index (Bộ Nội vụ)</p>
+<section id="correlation-3-chỉ-số" class="level2">
+<h2 class="anchored" data-anchor-id="correlation-3-chỉ-số">2. Correlation 3 chỉ số</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>correlate PCI PAPI PAR</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>* Có cao nhất giữa PCI–PAR hay PCI–PAPI?</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 1</strong>: 3 chỉ số có tương quan cao không? Cặp nào tương quan cao nhất? Ý nghĩa?</p>
 </section>
-<section id="lệnh-stata-trọng-tâm" class="level3">
-<h3 class="anchored" data-anchor-id="lệnh-stata-trọng-tâm">3. Lệnh Stata trọng tâm</h3>
-<p>Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 12 — DTU301</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>* Họ tên: &lt;điền&gt;, MSSV: &lt;điền&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span> <span class="ot">all</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">more</span> <span class="kw">off</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">using</span> <span class="st">"lab12_&lt;ten&gt;.log"</span>, <span class="kw">replace</span> <span class="bn">text</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>* === Tải dữ liệu ===</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>* (sẽ chi tiết khi có dataset thật)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>* === Phân tích ===</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>* Sử dụng: <span class="kw">merge</span>, <span class="kw">scatter</span>, <span class="kw">correlation</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>* === Đóng <span class="fu">log</span> ===</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">close</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="scatter-và-ranking" class="level2">
+<h2 class="anchored" data-anchor-id="scatter-và-ranking">3. Scatter và ranking</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>* === Scatter PCI vs GRDP ===</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">twoway</span> (<span class="kw">scatter</span> GRDP_pc PCI, <span class="bn">mlabel</span>(tinh) <span class="bn">mlabsize</span>(small) <span class="co">///</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>        mcolor(<span class="st">"114 47 55"</span>)) <span class="co">///</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>       (<span class="kw">lfit</span> GRDP_pc PCI, lcolor(<span class="st">"0 88 163"</span>)), <span class="co">///</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>       <span class="bn">title</span>(<span class="st">"PCI và GRDP/đầu người — 12 tỉnh"</span>) <span class="co">///</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>       <span class="bn">xtitle</span>(<span class="st">"PCI"</span>) <span class="bn">ytitle</span>(<span class="st">"GRDP/đầu người (USD)"</span>) <span class="co">///</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>       <span class="bn">legend</span>(<span class="kw">off</span>) <span class="co">///</span></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>       graphregion(<span class="kw">color</span>(<span class="bn">white</span>))</span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="kw">export</span> <span class="st">"pci_grdp.png"</span>, <span class="kw">replace</span> <span class="kw">width</span>(1400)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 2</strong>: PCI cao có đi đôi với GRDP cao? Outlier nào? Tại sao?</p>
 </section>
-<section id="câu-hỏi-suy-nghĩ-sẽ-chi-tiết" class="level3">
-<h3 class="anchored" data-anchor-id="câu-hỏi-suy-nghĩ-sẽ-chi-tiết">4. Câu hỏi suy nghĩ (sẽ chi tiết)</h3>
-<ol type="1">
-<li>Câu hỏi mô tả dữ liệu</li>
-<li>Câu hỏi so sánh / xu hướng</li>
-<li>Câu hỏi liên hệ với lý thuyết</li>
-<li>Câu hỏi liên hệ với chính sách Việt Nam</li>
-<li>Câu hỏi mở rộng / phản biện</li>
-</ol>
+<section id="tổng-hợp-3-chỉ-số" class="level2">
+<h2 class="anchored" data-anchor-id="tổng-hợp-3-chỉ-số">4. Tổng hợp 3 chỉ số</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>* Chuẩn hoá về 0-100</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">egen</span> PCI_norm  = <span class="fu">std</span>(PCI)</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="kw">egen</span> PAPI_norm = <span class="fu">std</span>(PAPI)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="kw">egen</span> PAR_norm  = <span class="fu">std</span>(PAR)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>* Tổng hợp</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> composite = (PCI_norm + PAPI_norm + PAR_norm) / 3</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>* Ranking</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="kw">gsort</span> -composite</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> <span class="fu">rank</span> = <span class="dt">_n</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="ot">list</span> tinh PCI PAPI PAR composite <span class="fu">rank</span>, <span class="kw">noobs</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Câu hỏi 3</strong>: Top 3 tỉnh quản trị tốt nhất theo composite? Bottom 3?</p>
 </section>
-</section>
-<section id="deliverable-lab-12" class="level2">
-<h2 class="anchored" data-anchor-id="deliverable-lab-12">Deliverable Lab 12</h2>
-<p>Nộp 3 file (như các lab trước):</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>File</th>
-<th>Nội dung</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>lab12_&lt;tên&gt;.do</code></td>
-<td>Code + comment</td>
-</tr>
-<tr class="even">
-<td><code>lab12_&lt;tên&gt;.log</code></td>
-<td>Output</td>
-</tr>
-<tr class="odd">
-<td><code>lab12_&lt;tên&gt;.pdf</code> (1-2 trang)</td>
-<td>Trả lời câu hỏi + biểu đồ</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Tiêu đề email</strong>: <code>DTU301-LAB12-MSSV-HọTên</code></p>
-</section>
-<section id="tiêu-chí-chấm" class="level2">
-<h2 class="anchored" data-anchor-id="tiêu-chí-chấm">Tiêu chí chấm</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Tiêu chí</th>
-<th style="text-align: center;">Điểm</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Code chạy đúng, có log</td>
-<td style="text-align: center;">30%</td>
-</tr>
-<tr class="even">
-<td>Vận dụng đúng khái niệm Stata mới của bài</td>
-<td style="text-align: center;">25%</td>
-</tr>
-<tr class="odd">
-<td>Biểu đồ / bảng kết quả rõ ràng</td>
-<td style="text-align: center;">20%</td>
-</tr>
-<tr class="even">
-<td>Trả lời câu hỏi sâu, có liên hệ thực tiễn</td>
-<td style="text-align: center;">25%</td>
-</tr>
-</tbody>
-</table>
+<section id="liên-hệ-chính-sách" class="level2">
+<h2 class="anchored" data-anchor-id="liên-hệ-chính-sách">5. Liên hệ chính sách</h2>
+<p><strong>Câu hỏi 4 + 5</strong> (suy nghĩ + viết, 400 từ):</p>
+<ul>
+<li>Sau cải cách 2025 (34 tỉnh), 12 tỉnh trên <em>có còn tồn tại không</em>? (Một số sẽ sáp nhập)</li>
+<li>Tỉnh nào sẽ là <em>trung tâm</em> sau sáp nhập? Quản trị tốt có giữ được không?</li>
+<li>Áp dụng khung Oates: cải cách 2025 là <em>phân cấp</em> hay <em>tập trung</em> hơn?</li>
+<li>Bài học nào từ Quảng Ninh có thể chia sẻ cho các tỉnh khác?</li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">close</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
-<p>← <em>Lab trước</em>: <a href="../stata-lab/lab-11.html">Lab 11</a> | <em>Lab tiếp theo</em>: <a href="../stata-lab/lab-13.html">Lab 13</a> →</p>
+<p>← <em>Lab trước</em>: <a href="../stata-lab/lab-11.html">Lab 11 — Event study 1997</a> | <em>Lab tiếp theo</em>: <a href="../stata-lab/lab-13.html">Lab 13 — 6 vùng KT-XH</a> →</p>
 
 
 </section>

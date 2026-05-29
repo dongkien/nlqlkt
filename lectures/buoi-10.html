@@ -70,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles/custom.css">
 </head>
@@ -241,7 +270,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-09.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 09 — Cán cân thanh toán và tỷ giá</span></a>
+ <span class="menu-text">Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -270,7 +299,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-12.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 12 — Quản trị địa phương và phân cấp tài khoá</span></a>
+ <span class="menu-text">Buổi 12 — Quản trị địa phương và Phân cấp tài khoá</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -293,13 +322,13 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-14.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 14 — Chia sẻ thực tiễn</span></a>
+ <span class="menu-text">Buổi 14 — Seminar: Chia sẻ chuyên gia + Workshop</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../lectures/buoi-15.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Buổi 15 — Tổng kết và đánh giá</span></a>
+ <span class="menu-text">Buổi 15 — Thuyết trình + Tổng kết học phần</span></a>
   </div>
 </li>
       </ul>
@@ -314,10 +343,35 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Trong bài</h2>
    
   <ul>
-  <li><a href="#nội-dung-lý-thuyết-thuyết-giảng" id="toc-nội-dung-lý-thuyết-thuyết-giảng" class="nav-link active" data-scroll-target="#nội-dung-lý-thuyết-thuyết-giảng">Nội dung lý thuyết (thuyết giảng)</a></li>
-  <li><a href="#thực-hành-thảo-luận" id="toc-thực-hành-thảo-luận" class="nav-link" data-scroll-target="#thực-hành-thảo-luận">Thực hành / Thảo luận</a></li>
-  <li><a href="#bài-tập-lớn-tiểu-luận" id="toc-bài-tập-lớn-tiểu-luận" class="nav-link" data-scroll-target="#bài-tập-lớn-tiểu-luận">Bài tập lớn / Tiểu luận</a></li>
-  <li><a href="#tự-học-có-hướng-dẫn" id="toc-tự-học-có-hướng-dẫn" class="nav-link" data-scroll-target="#tự-học-có-hướng-dẫn">Tự học có hướng dẫn</a></li>
+  <li><a href="#lộ-trình-buổi-10" id="toc-lộ-trình-buổi-10" class="nav-link active" data-scroll-target="#lộ-trình-buổi-10">Lộ trình Buổi 10</a></li>
+  <li><a href="#a.-khung-mundell-fleming" id="toc-a.-khung-mundell-fleming" class="nav-link" data-scroll-target="#a.-khung-mundell-fleming">A. Khung Mundell-Fleming</a>
+  <ul class="collapse">
+  <li><a href="#a.1.-vì-sao-cần-mundell-fleming" id="toc-a.1.-vì-sao-cần-mundell-fleming" class="nav-link" data-scroll-target="#a.1.-vì-sao-cần-mundell-fleming">A.1. Vì sao cần Mundell-Fleming?</a></li>
+  <li><a href="#a.2.-ba-phương-trình-mf" id="toc-a.2.-ba-phương-trình-mf" class="nav-link" data-scroll-target="#a.2.-ba-phương-trình-mf">A.2. Ba phương trình MF</a></li>
+  <li><a href="#a.3.-điều-kiện-marshall-lerner" id="toc-a.3.-điều-kiện-marshall-lerner" class="nav-link" data-scroll-target="#a.3.-điều-kiện-marshall-lerner">A.3. Điều kiện Marshall-Lerner</a></li>
+  </ul></li>
+  <li><a href="#b.-is-lm-bp-cho-kinh-tế-mở" id="toc-b.-is-lm-bp-cho-kinh-tế-mở" class="nav-link" data-scroll-target="#b.-is-lm-bp-cho-kinh-tế-mở">B. IS-LM-BP cho kinh tế mở</a>
+  <ul class="collapse">
+  <li><a href="#b.1.-đường-is-mở-rộng" id="toc-b.1.-đường-is-mở-rộng" class="nav-link" data-scroll-target="#b.1.-đường-is-mở-rộng">B.1. Đường IS mở rộng</a></li>
+  <li><a href="#b.2.-đường-lm-mở-rộng" id="toc-b.2.-đường-lm-mở-rộng" class="nav-link" data-scroll-target="#b.2.-đường-lm-mở-rộng">B.2. Đường LM mở rộng</a></li>
+  <li><a href="#b.3.-đường-bp" id="toc-b.3.-đường-bp" class="nav-link" data-scroll-target="#b.3.-đường-bp">B.3. Đường BP</a></li>
+  <li><a href="#b.4.-cân-bằng-is-lm-bp" id="toc-b.4.-cân-bằng-is-lm-bp" class="nav-link" data-scroll-target="#b.4.-cân-bằng-is-lm-bp">B.4. Cân bằng IS-LM-BP</a></li>
+  </ul></li>
+  <li><a href="#c.-tỷ-giá-cố-định-hiệu-lực-chính-sách" id="toc-c.-tỷ-giá-cố-định-hiệu-lực-chính-sách" class="nav-link" data-scroll-target="#c.-tỷ-giá-cố-định-hiệu-lực-chính-sách">C. Tỷ giá cố định — Hiệu lực chính sách</a>
+  <ul class="collapse">
+  <li><a href="#c.1.-đặc-điểm-chế-độ-cố-định" id="toc-c.1.-đặc-điểm-chế-độ-cố-định" class="nav-link" data-scroll-target="#c.1.-đặc-điểm-chế-độ-cố-định">C.1. Đặc điểm chế độ cố định</a></li>
+  <li><a href="#c.2.-hiệu-lực-cstk-dưới-tỷ-giá-cố-định" id="toc-c.2.-hiệu-lực-cstk-dưới-tỷ-giá-cố-định" class="nav-link" data-scroll-target="#c.2.-hiệu-lực-cstk-dưới-tỷ-giá-cố-định">C.2. Hiệu lực CSTK dưới tỷ giá cố định</a></li>
+  <li><a href="#c.3.-hiệu-lực-cstt-dưới-tỷ-giá-cố-định" id="toc-c.3.-hiệu-lực-cstt-dưới-tỷ-giá-cố-định" class="nav-link" data-scroll-target="#c.3.-hiệu-lực-cstt-dưới-tỷ-giá-cố-định">C.3. Hiệu lực CSTT dưới tỷ giá cố định</a></li>
+  </ul></li>
+  <li><a href="#d.-tỷ-giá-thả-nổi-cases-lịch-sử" id="toc-d.-tỷ-giá-thả-nổi-cases-lịch-sử" class="nav-link" data-scroll-target="#d.-tỷ-giá-thả-nổi-cases-lịch-sử">D. Tỷ giá thả nổi + Cases lịch sử</a>
+  <ul class="collapse">
+  <li><a href="#d.1.-hiệu-lực-chính-sách-dưới-tỷ-giá-thả-nổi" id="toc-d.1.-hiệu-lực-chính-sách-dưới-tỷ-giá-thả-nổi" class="nav-link" data-scroll-target="#d.1.-hiệu-lực-chính-sách-dưới-tỷ-giá-thả-nổi">D.1. Hiệu lực chính sách dưới tỷ giá thả nổi</a></li>
+  <li><a href="#d.2.-case-1-hong-kong-lers-linked-exchange-rate-system" id="toc-d.2.-case-1-hong-kong-lers-linked-exchange-rate-system" class="nav-link" data-scroll-target="#d.2.-case-1-hong-kong-lers-linked-exchange-rate-system">D.2. Case 1 — Hong Kong LERS (Linked Exchange Rate System)</a></li>
+  <li><a href="#d.3.-case-2-reaganomics-đầu-1980s" id="toc-d.3.-case-2-reaganomics-đầu-1980s" class="nav-link" data-scroll-target="#d.3.-case-2-reaganomics-đầu-1980s">D.3. Case 2 — Reaganomics đầu 1980s</a></li>
+  <li><a href="#d.4.-case-3-erm-1992-black-wednesday" id="toc-d.4.-case-3-erm-1992-black-wednesday" class="nav-link" data-scroll-target="#d.4.-case-3-erm-1992-black-wednesday">D.4. Case 3 — ERM 1992 (Black Wednesday)</a></li>
+  </ul></li>
+  <li><a href="#tổng-kết-buổi-10-năm-điểm-cốt-lõi" id="toc-tổng-kết-buổi-10-năm-điểm-cốt-lõi" class="nav-link" data-scroll-target="#tổng-kết-buổi-10-năm-điểm-cốt-lõi">Tổng kết Buổi 10 — Năm điểm cốt lõi</a></li>
+  <li><a href="#bài-tập-về-nhà-chuẩn-bị-buổi-11" id="toc-bài-tập-về-nhà-chuẩn-bị-buổi-11" class="nav-link" data-scroll-target="#bài-tập-về-nhà-chuẩn-bị-buổi-11">Bài tập về nhà (chuẩn bị Buổi 11)</a></li>
   <li><a href="#đọc-thêm" id="toc-đọc-thêm" class="nav-link" data-scroll-target="#đọc-thêm">Đọc thêm</a></li>
   </ul>
 </nav>
@@ -328,7 +382,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../lectures/buoi-09.html">Chương 4 — Vĩ mô (KT mở)</a></li><li class="breadcrumb-item"><a href="../lectures/buoi-10.html">Buổi 10 — Mô hình Mundell-Fleming</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Buổi 10 — Mô hình Mundell-Fleming</h1>
-<p class="subtitle lead">Ba phương trình IS-LM-BP; case Hong Kong LERS, Reaganomics, ERM 1992</p>
+<p class="subtitle lead">IS-LM-BP · Marshall-Lerner · Tỷ giá cố định vs thả nổi · Case HK, Reagan, ERM 1992</p>
 </div>
 
 
@@ -355,65 +409,344 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>CLO2, CLO3 — Phân tích chính sách dưới các chế độ tỷ giá</strong></p>
+<p><strong>CLO2, CLO3</strong> — Vận dụng Mundell-Fleming để phân tích chính sách dưới các chế độ tỷ giá.</p>
+<p>Buổi 7 trình bày IS-LM cho kinh tế đóng. Buổi 10 mở rộng cho <strong>kinh tế mở</strong>: thêm thị trường ngoại hối + dòng vốn quốc tế. Đây là khung <em>cốt lõi</em> để hiểu vì sao chính sách tài khoá và tiền tệ có hiệu lực <em>khác nhau</em> dưới hai chế độ tỷ giá.</p>
 </div>
 </div>
-<section id="nội-dung-lý-thuyết-thuyết-giảng" class="level2">
-<h2 class="anchored" data-anchor-id="nội-dung-lý-thuyết-thuyết-giảng">Nội dung lý thuyết (thuyết giảng)</h2>
-<p><strong>4.2. Mô hình Mundell-Fleming</strong></p>
+<section id="lộ-trình-buổi-10" class="level2">
+<h2 class="anchored" data-anchor-id="lộ-trình-buổi-10">Lộ trình Buổi 10</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Phần</th>
+<th>Nội dung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><strong>A</strong></td>
+<td>Khung Mundell-Fleming — lịch sử và 3 phương trình</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>B</strong></td>
+<td>IS-LM-BP cho kinh tế mở</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><strong>C</strong></td>
+<td>Tỷ giá cố định — hiệu lực CSTK vs CSTT</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><strong>D</strong></td>
+<td>Tỷ giá thả nổi + Case Hong Kong, Reagan, ERM 1992</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="a.-khung-mundell-fleming" class="level2">
+<h2 class="anchored" data-anchor-id="a.-khung-mundell-fleming">A. Khung Mundell-Fleming</h2>
+<section id="a.1.-vì-sao-cần-mundell-fleming" class="level3">
+<h3 class="anchored" data-anchor-id="a.1.-vì-sao-cần-mundell-fleming">A.1. Vì sao cần Mundell-Fleming?</h3>
+<p><strong>Hicks (1937)</strong> với IS-LM giải thích kinh tế đóng. Nhưng thực tế, mọi nền KT đều mở — có thương mại + dòng vốn quốc tế. IS-LM thuần <em>không bắt được</em>:</p>
 <ul>
-<li>Ba phương trình: IS, LM, BP</li>
-<li>Điều kiện <strong>Marshall-Lerner</strong></li>
-<li>Tác động chính sách tài khoá, tiền tệ và thương mại dưới:
-<ul>
-<li>Tỷ giá cố định</li>
-<li>Tỷ giá thả nổi</li>
-</ul></li>
+<li>Tác động tỷ giá lên xuất khẩu ròng (NX)</li>
+<li>Dòng vốn vào/ra theo chênh lệch lãi suất</li>
+<li>Khác biệt giữa các chế độ tỷ giá</li>
 </ul>
-<p><strong>Cases lịch sử</strong></p>
+<p><strong>Robert Mundell</strong> và <strong>J. Marcus Fleming</strong> (1960s) phát triển khung <strong>MF</strong> kết hợp IS-LM với <strong>cán cân thanh toán (BP)</strong>. Mundell sau này nhận <strong>Nobel Kinh tế 1999</strong> vì đóng góp này.</p>
+<p>Khung MF là <strong>xương sống của vĩ mô kinh tế mở</strong>.</p>
+</section>
+<section id="a.2.-ba-phương-trình-mf" class="level3">
+<h3 class="anchored" data-anchor-id="a.2.-ba-phương-trình-mf">A.2. Ba phương trình MF</h3>
+<p><span class="math display">\[\begin{cases}
+\text{IS}: \quad Y = C(Y-T) + I(r) + G + NX(e) \\
+\text{LM}: \quad \frac{M}{P} = L(Y, r) \\
+\text{BP}: \quad NX(e) + KA(r - r^*) = 0
+\end{cases}\]</span></p>
+<p><strong>Ba biến nội sinh</strong>: <span class="math inline">\(Y\)</span> (sản lượng), <span class="math inline">\(r\)</span> (lãi suất), <span class="math inline">\(e\)</span> (tỷ giá).</p>
+<p><strong>Khác IS-LM đóng</strong>:</p>
 <ul>
-<li><strong>Hong Kong LERS</strong> (Linked Exchange Rate System)</li>
-<li><strong>Reaganomics</strong> đầu thập kỷ 1980</li>
-<li><strong>ERM 1992</strong> — Black Wednesday và sự rút lui của Anh</li>
+<li>IS có thêm <span class="math inline">\(NX(e)\)</span> — xuất khẩu ròng phụ thuộc tỷ giá thực</li>
+<li>BP là phương trình mới — cân bằng cán cân thanh toán</li>
+</ul>
+<p>Cân bằng đồng thời ba thị trường: hàng hoá (IS) + tiền tệ (LM) + thanh toán (BP).</p>
+</section>
+<section id="a.3.-điều-kiện-marshall-lerner" class="level3">
+<h3 class="anchored" data-anchor-id="a.3.-điều-kiện-marshall-lerner">A.3. Điều kiện Marshall-Lerner</h3>
+<p><strong>Điều kiện Marshall-Lerner</strong>: tỷ giá tăng (devaluation) chỉ làm <span class="math inline">\(NX\)</span> tăng nếu:</p>
+<p><span class="math display">\[|\eta_X| + |\eta_M| &gt; 1\]</span></p>
+<p>Trong đó: - <span class="math inline">\(\eta_X\)</span> = độ co dãn cầu nước ngoài cho XK - <span class="math inline">\(\eta_M\)</span> = độ co dãn cầu nội địa cho NK</p>
+<p><strong>Logic</strong>: nếu cầu <em>cứng nhắc</em>, tăng giá NK không làm giảm NK đáng kể → NX <em>xấu đi</em> ngay sau devaluation. Phải đợi cầu điều chỉnh.</p>
+<p><strong>J-curve effect</strong>: NX ngắn hạn <em>giảm</em> trước, <em>tăng</em> sau. Hình dạng giống chữ J.</p>
+<p><strong>Việt Nam</strong>: phụ thuộc NK nguyên liệu lớn (~60% nội địa hoá ô tô là NK). Marshall-Lerner <em>có thể không nắm trong ngắn hạn</em> — devaluation VND chưa chắc cải thiện thương mại nhanh.</p>
+<p>(Sinh viên cử nhân: học khái niệm, không cần derivation chi tiết.)</p>
+</section>
+</section>
+<section id="b.-is-lm-bp-cho-kinh-tế-mở" class="level2">
+<h2 class="anchored" data-anchor-id="b.-is-lm-bp-cho-kinh-tế-mở">B. IS-LM-BP cho kinh tế mở</h2>
+<section id="b.1.-đường-is-mở-rộng" class="level3">
+<h3 class="anchored" data-anchor-id="b.1.-đường-is-mở-rộng">B.1. Đường IS mở rộng</h3>
+<p><span class="math display">\[Y = C(Y-T) + I(r) + G + NX(e, Y)\]</span></p>
+<p>So với IS đóng, thêm <span class="math inline">\(NX\)</span>:</p>
+<ul>
+<li><span class="math inline">\(e\)</span> tăng → NX tăng (nếu Marshall-Lerner nắm) → đẩy IS sang phải</li>
+<li><span class="math inline">\(Y\)</span> tăng → NK tăng → NX giảm → tạo <em>flatten</em> cho IS</li>
+</ul>
+<p><strong>IS mở dốc hơn IS đóng</strong> vì có “rò rỉ” qua nhập khẩu.</p>
+</section>
+<section id="b.2.-đường-lm-mở-rộng" class="level3">
+<h3 class="anchored" data-anchor-id="b.2.-đường-lm-mở-rộng">B.2. Đường LM mở rộng</h3>
+<p>LM hình thức giống đóng: <span class="math inline">\(M/P = L(Y, r)\)</span>.</p>
+<p><strong>Nhưng có khác biệt then chốt</strong>:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Chế độ tỷ giá</th>
+<th><span class="math inline">\(M\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Thả nổi</strong></td>
+<td><span class="math inline">\(M\)</span> <strong>độc lập</strong> — NHTW quyết định</td>
+</tr>
+<tr class="even">
+<td><strong>Cố định</strong></td>
+<td><span class="math inline">\(M\)</span> <strong>nội sinh</strong> — NHTW phải mua/bán USD để giữ tỷ giá → <span class="math inline">\(M\)</span> thay đổi</td>
+</tr>
+</tbody>
+</table>
+<p>Đây là điểm <strong>then chốt</strong> của Mundell-Fleming — chế độ tỷ giá quyết định <em>NHTW có quyền tự chủ tiền tệ hay không</em>.</p>
+</section>
+<section id="b.3.-đường-bp" class="level3">
+<h3 class="anchored" data-anchor-id="b.3.-đường-bp">B.3. Đường BP</h3>
+<p><strong>BP = 0</strong>: cán cân thanh toán cân bằng — không có dòng tiền ròng vào/ra:</p>
+<p><span class="math display">\[NX(e, Y) + KA(r - r^*) = 0\]</span></p>
+<p><strong>Độ luân chuyển vốn</strong> <span class="math inline">\(\kappa\)</span> quyết định độ dốc BP:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><span class="math inline">\(\kappa\)</span></th>
+<th>Mô tả</th>
+<th>Độ dốc BP</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(\kappa \approx 0\)</span></td>
+<td>Vốn không di chuyển (kiểm soát chặt)</td>
+<td>BP dốc đứng</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(\kappa\)</span> trung bình</td>
+<td>Vốn di chuyển hạn chế</td>
+<td>BP nghiêng</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(\kappa \approx \infty\)</span></td>
+<td>Vốn tự do hoàn toàn</td>
+<td>BP <strong>nằm ngang</strong> tại <span class="math inline">\(r = r^*\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Mankiw đơn giản hoá</strong>: giả định <span class="math inline">\(\kappa \approx \infty\)</span> → BP nằm ngang. Sinh viên cử nhân học theo giả định này.</p>
+</section>
+<section id="b.4.-cân-bằng-is-lm-bp" class="level3">
+<h3 class="anchored" data-anchor-id="b.4.-cân-bằng-is-lm-bp">B.4. Cân bằng IS-LM-BP</h3>
+<p>Ba đường giao tại một điểm <span class="math inline">\((Y^*, r^*)\)</span>:</p>
+<ul>
+<li><strong>Cân bằng nội</strong>: IS ∩ LM (thị trường hàng hoá + tiền tệ)</li>
+<li><strong>Cân bằng ngoại</strong>: BP = 0</li>
+<li><strong>Cùng cân bằng</strong>: ba đường cùng giao</li>
+</ul>
+<p><strong>Cơ chế tự động</strong>: nếu lệch khỏi BP, dòng tiền vào/ra làm <span class="math inline">\(M\)</span> thay đổi (chế độ cố định) hoặc <span class="math inline">\(e\)</span> thay đổi (thả nổi), kéo IS-LM về cân bằng BP.</p>
+</section>
+</section>
+<section id="c.-tỷ-giá-cố-định-hiệu-lực-chính-sách" class="level2">
+<h2 class="anchored" data-anchor-id="c.-tỷ-giá-cố-định-hiệu-lực-chính-sách">C. Tỷ giá cố định — Hiệu lực chính sách</h2>
+<section id="c.1.-đặc-điểm-chế-độ-cố-định" class="level3">
+<h3 class="anchored" data-anchor-id="c.1.-đặc-điểm-chế-độ-cố-định">C.1. Đặc điểm chế độ cố định</h3>
+<p>NHTW cam kết duy trì tỷ giá <span class="math inline">\(e\)</span> ở mức nhất định. Khi có áp lực:</p>
+<ul>
+<li><span class="math inline">\(e\)</span> muốn tăng (VND yếu) → NHTW <strong>bán USD</strong> mua VND → <span class="math inline">\(M\)</span> giảm</li>
+<li><span class="math inline">\(e\)</span> muốn giảm (VND mạnh) → NHTW <strong>mua USD</strong> bán VND → <span class="math inline">\(M\)</span> tăng</li>
+</ul>
+<p><strong>Hệ quả</strong>: <span class="math inline">\(M\)</span> <strong>nội sinh</strong> — không tự chủ.</p>
+</section>
+<section id="c.2.-hiệu-lực-cstk-dưới-tỷ-giá-cố-định" class="level3">
+<h3 class="anchored" data-anchor-id="c.2.-hiệu-lực-cstk-dưới-tỷ-giá-cố-định">C.2. Hiệu lực CSTK dưới tỷ giá cố định</h3>
+<p><strong>Tăng G</strong> → IS dịch phải → <span class="math inline">\(Y\)</span> tăng, <span class="math inline">\(r\)</span> tăng → vốn vào → áp lực <span class="math inline">\(e\)</span> giảm (VND mạnh) → NHTW <strong>mua USD</strong> → <span class="math inline">\(M\)</span> tăng → LM dịch phải → <span class="math inline">\(r\)</span> về <span class="math inline">\(r^*\)</span>.</p>
+<p><strong>Kết quả</strong>:</p>
+<ul>
+<li><span class="math inline">\(Y\)</span> tăng <em>mạnh</em> (cả IS dịch + LM dịch)</li>
+<li><span class="math inline">\(r\)</span> không đổi (về <span class="math inline">\(r^*\)</span>)</li>
+<li><span class="math inline">\(e\)</span> giữ nguyên</li>
+<li><span class="math inline">\(M\)</span> tăng</li>
+</ul>
+<p>→ <strong>CSTK rất hiệu quả dưới tỷ giá cố định</strong> (không có crowding out).</p>
+</section>
+<section id="c.3.-hiệu-lực-cstt-dưới-tỷ-giá-cố-định" class="level3">
+<h3 class="anchored" data-anchor-id="c.3.-hiệu-lực-cstt-dưới-tỷ-giá-cố-định">C.3. Hiệu lực CSTT dưới tỷ giá cố định</h3>
+<p><strong>Tăng M</strong> → LM dịch phải → <span class="math inline">\(r\)</span> giảm → vốn ra → áp lực <span class="math inline">\(e\)</span> tăng (VND yếu) → NHTW <strong>bán USD</strong> mua VND → <span class="math inline">\(M\)</span> giảm trở lại → LM dịch trái về ban đầu.</p>
+<p><strong>Kết quả</strong>:</p>
+<ul>
+<li><span class="math inline">\(Y\)</span> không đổi</li>
+<li><span class="math inline">\(r\)</span> về <span class="math inline">\(r^*\)</span></li>
+<li><span class="math inline">\(M\)</span> về ban đầu</li>
+</ul>
+<p>→ <strong>CSTT vô hiệu dưới tỷ giá cố định</strong> — NHTW <em>mất tự chủ tiền tệ</em>.</p>
+<p>Đây là tiền đề của <strong>Bộ ba bất khả thi</strong> (Buổi 11).</p>
+</section>
+</section>
+<section id="d.-tỷ-giá-thả-nổi-cases-lịch-sử" class="level2">
+<h2 class="anchored" data-anchor-id="d.-tỷ-giá-thả-nổi-cases-lịch-sử">D. Tỷ giá thả nổi + Cases lịch sử</h2>
+<section id="d.1.-hiệu-lực-chính-sách-dưới-tỷ-giá-thả-nổi" class="level3">
+<h3 class="anchored" data-anchor-id="d.1.-hiệu-lực-chính-sách-dưới-tỷ-giá-thả-nổi">D.1. Hiệu lực chính sách dưới tỷ giá thả nổi</h3>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th><strong>CSTK (Tăng G)</strong></th>
+<th><strong>CSTT (Tăng M)</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Hiệu ứng đầu</td>
+<td>IS dịch phải, r tăng</td>
+<td>LM dịch phải, r giảm</td>
+</tr>
+<tr class="even">
+<td>Dòng vốn</td>
+<td>Vào → e giảm (VND mạnh)</td>
+<td>Ra → e tăng (VND yếu)</td>
+</tr>
+<tr class="odd">
+<td>NX</td>
+<td>Giảm (cancel out IS)</td>
+<td>Tăng (reinforce LM)</td>
+</tr>
+<tr class="even">
+<td><strong>Kết quả Y</strong></td>
+<td><strong>Không đổi (crowded out hoàn toàn)</strong></td>
+<td><strong>Tăng mạnh</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Đảo ngược so với tỷ giá cố định</strong>:</p>
+<ul>
+<li>Thả nổi: <strong>CSTT mạnh, CSTK yếu</strong></li>
+<li>Cố định: <strong>CSTK mạnh, CSTT yếu</strong></li>
 </ul>
 </section>
-<section id="thực-hành-thảo-luận" class="level2">
-<h2 class="anchored" data-anchor-id="thực-hành-thảo-luận">Thực hành / Thảo luận</h2>
-<p>Phân tích <strong>chính sách tỷ giá Việt Nam 2022–2024</strong> qua khung Mundell-Fleming; <strong>mô phỏng quyết định NHNN</strong> trước cú sốc Fed tăng lãi suất 200 bps.</p>
+<section id="d.2.-case-1-hong-kong-lers-linked-exchange-rate-system" class="level3">
+<h3 class="anchored" data-anchor-id="d.2.-case-1-hong-kong-lers-linked-exchange-rate-system">D.2. Case 1 — Hong Kong LERS (Linked Exchange Rate System)</h3>
+<p><strong>Bối cảnh</strong>: HKD peg cứng với USD từ 1983 (1 USD = 7.8 HKD).</p>
+<p><strong>Cơ chế</strong>: HKMA (Hong Kong Monetary Authority) cam kết mua/bán USD ở tỷ giá cố định. Dự trữ ngoại hối ~3x M3 — đảm bảo cam kết.</p>
+<p><strong>Hệ quả</strong>: HK <em>mất hoàn toàn tự chủ tiền tệ</em> — <span class="math inline">\(r\)</span> HKD = <span class="math inline">\(r\)</span> USD. Khi Fed tăng r, HK phải theo.</p>
+<p><strong>Bài học</strong>: peg cứng + vốn tự do = mất CSTT. HK chấp nhận trade-off này để duy trì <em>vị thế trung tâm tài chính quốc tế</em>.</p>
 </section>
-<section id="bài-tập-lớn-tiểu-luận" class="level2">
-<h2 class="anchored" data-anchor-id="bài-tập-lớn-tiểu-luận">Bài tập lớn / Tiểu luận</h2>
-<p>Báo cáo phân tích chính sách về một vấn đề tỷ giá / dòng vốn VN (Phần 2): áp dụng Mundell-Fleming.</p>
-</section>
-<section id="tự-học-có-hướng-dẫn" class="level2">
-<h2 class="anchored" data-anchor-id="tự-học-có-hướng-dẫn">Tự học có hướng dẫn</h2>
-<ol type="1">
-<li>Tại sao Hong Kong vẫn giữ được peg sau bao năm?</li>
-<li>Reaganomics: bài học nào còn áp dụng được?</li>
-<li>ERM 1992: nguyên nhân cốt lõi nào dẫn đến đổ vỡ?</li>
-</ol>
-</section>
-<section id="đọc-thêm" class="level2">
-<h2 class="anchored" data-anchor-id="đọc-thêm">Đọc thêm</h2>
+<section id="d.3.-case-2-reaganomics-đầu-1980s" class="level3">
+<h3 class="anchored" data-anchor-id="d.3.-case-2-reaganomics-đầu-1980s">D.3. Case 2 — Reaganomics đầu 1980s</h3>
+<p><strong>Bối cảnh</strong>: Mỹ chế độ thả nổi. Reagan đề xuất:</p>
 <ul>
-<li>Mankiw, <em>Kinh tế học vĩ mô</em>, chương 20.</li>
-<li>Blanchard (2020), chương 19–20.</li>
+<li><strong>CSTK mở rộng</strong>: giảm thuế lớn, tăng chi quốc phòng</li>
+<li><strong>CSTT thắt chặt</strong> (Volcker): chống lạm phát stagflation</li>
 </ul>
-<div class="callout callout-style-simple callout-warning callout-titled">
+<p><strong>Kết quả MF dự đoán</strong>:</p>
+<ul>
+<li>CSTK mở rộng → IS dịch phải → r tăng → USD lên giá mạnh</li>
+<li>USD mạnh → NX giảm (deficit thương mại lớn)</li>
+<li>CSTK <em>vô hiệu một phần</em> do crowding out qua NX</li>
+</ul>
+<p><strong>Thực tế</strong>: đúng như MF dự đoán. USD lên giá ~50% so với rổ chính 1980-1985. <em>Twin deficits</em> (CA + budget) xuất hiện.</p>
+<p><strong>Plaza Accord (1985)</strong>: G5 thoả thuận làm yếu USD có phối hợp.</p>
+</section>
+<section id="d.4.-case-3-erm-1992-black-wednesday" class="level3">
+<h3 class="anchored" data-anchor-id="d.4.-case-3-erm-1992-black-wednesday">D.4. Case 3 — ERM 1992 (Black Wednesday)</h3>
+<p><strong>Bối cảnh</strong>: European Exchange Rate Mechanism (1979) — các nước EU peg tỷ giá với nhau, mục tiêu cuối là Euro.</p>
+<p><strong>1992</strong>: Đức tăng r mạnh (sau khi tái thống nhất) → các nước EU phải theo để giữ peg → nhưng kinh tế của họ cần r thấp hơn.</p>
+<p><strong>Anh</strong>: George Soros và quỹ Quantum tin Anh không thể giữ peg lâu → bán khống GBP với quy mô khổng lồ. Bank of England cố chống, mất hàng tỷ GBP dự trữ trong 1 ngày.</p>
+<p><strong>Kết quả “Black Wednesday” 16/9/1992</strong>: - Anh rút khỏi ERM, GBP thả nổi và mất giá - Soros lãi ~1 tỷ USD trong 1 ngày - Italy cũng rút theo</p>
+<p><strong>Bài học</strong>: peg + vốn tự do + chính sách độc lập = không tồn tại lâu nếu thị trường nghi ngờ. Đây là <strong>tiền đề thực nghiệm</strong> cho Trilemma.</p>
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>🚧 Nội dung đang biên soạn
+<span class="screen-reader-only">Warning</span>✋ Bài tập thảo luận trên lớp
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Bài giảng buổi 10 hiện ở dạng <strong>dàn ý theo đề cương DTU301</strong>. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.</p>
+<p>Phân tích <strong>chính sách tỷ giá Việt Nam 2022</strong> qua khung Mundell-Fleming:</p>
+<ol type="1">
+<li>VN crawl-like ≈ tỷ giá cố định mềm.</li>
+<li>Fed tăng r 200 bps → áp lực gì với VND?</li>
+<li>NHNN bán USD bảo vệ tỷ giá → <span class="math inline">\(M\)</span> thay đổi ra sao?</li>
+<li>CSTT VN có còn tự chủ năm 2022 không?</li>
+</ol>
 </div>
 </div>
+</section>
+</section>
+<section id="tổng-kết-buổi-10-năm-điểm-cốt-lõi" class="level2">
+<h2 class="anchored" data-anchor-id="tổng-kết-buổi-10-năm-điểm-cốt-lõi">Tổng kết Buổi 10 — Năm điểm cốt lõi</h2>
+<ol type="1">
+<li><strong>Mundell-Fleming</strong> = IS-LM-BP, ba phương trình, ba biến nội sinh (Y, r, e).</li>
+<li><strong>Marshall-Lerner</strong>: <span class="math inline">\(|\eta_X| + |\eta_M| &gt; 1\)</span> để devaluation cải thiện NX. VN có thể không thoả ngắn hạn.</li>
+<li><strong>Tỷ giá cố định</strong>: CSTK <em>rất hiệu quả</em>, CSTT <em>vô hiệu</em>.</li>
+<li><strong>Tỷ giá thả nổi</strong>: CSTT <em>rất hiệu quả</em>, CSTK <em>bị crowding out qua NX</em>.</li>
+<li><strong>Cases</strong>: HK LERS (mất tự chủ tiền tệ để giữ peg), Reaganomics (twin deficits), ERM 1992 (Soros vs BoE).</li>
+</ol>
+</section>
+<section id="bài-tập-về-nhà-chuẩn-bị-buổi-11" class="level2">
+<h2 class="anchored" data-anchor-id="bài-tập-về-nhà-chuẩn-bị-buổi-11">Bài tập về nhà (chuẩn bị Buổi 11)</h2>
+<ol type="1">
+<li><strong>Đọc</strong> Mankiw chương về <strong>Bộ ba bất khả thi</strong> (Trilemma).</li>
+<li><strong>Tự đọc</strong> về Mundell 1963 và <strong>sterilization</strong>.</li>
+<li><strong>Chuẩn bị 1 ví dụ</strong> về vị trí Việt Nam trong Trilemma.</li>
+<li><strong>Đọc thêm</strong> về Khủng hoảng châu Á 1997.</li>
+</ol>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>🔧 Stata Lab 10 (bonus 5%)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Bài này có lab phân tích <strong>Mundell-Fleming bằng dữ liệu lịch sử</strong>: Hong Kong, Mỹ thời Reagan, Anh ERM 1992. Tính BoP, tỷ giá, đo tác động của các cú sốc.</p>
+<p>→ <a href="../stata-lab/lab-10.html"><strong>Bắt đầu Lab 10 — Mundell-Fleming bằng dữ liệu lịch sử</strong></a> <em>(~25 phút)</em></p>
+</div>
+</div>
+</section>
+<section id="đọc-thêm" class="level2">
+<h2 class="anchored" data-anchor-id="đọc-thêm">Đọc thêm</h2>
+<ul>
+<li>Mankiw, <em>Kinh tế học vĩ mô</em>, chương 20 (Mundell-Fleming).</li>
+<li>Blanchard (2020), chương 19–20.</li>
+<li><strong>Mundell, R.</strong> (1963), <em>Capital Mobility and Stabilization Policy under Fixed and Flexible Exchange Rates</em>.</li>
+<li><strong>Krugman, P.</strong> (1979), <em>A Model of Balance of Payments Crises</em>.</li>
+<li><em>Inside the Black Box: Currency Crises</em> — review về Soros và ERM.</li>
+</ul>
 <hr>
-<p>← <em>Buổi trước</em>: <a href="../lectures/buoi-09.html">Buổi 9</a> <em>Buổi tiếp theo</em>: <a href="../lectures/buoi-11.html">Buổi 11</a> →</p>
+<p>← <em>Buổi trước</em>: <a href="../lectures/buoi-09.html">Buổi 9 — BoP và Tỷ giá</a> | <em>Buổi tiếp theo</em>: <a href="../lectures/buoi-11.html">Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997</a> →</p>
 
 
 </section>
