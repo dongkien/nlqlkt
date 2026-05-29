@@ -120,7 +120,7 @@ Thang điểm: **10**.
 | Hình thức | Nội dung | Phạm vi | Trọng số | CLO |
 |---|---|---|:---:|---|
 | **Đánh giá quá trình** | Chuyên cần + bài kiểm tra ngắn + tham gia thảo luận | Liên tục | **10%** | CLO1, CLO4 |
-| *Stata Lab (bonus)* | *15 lab tự học theo buổi, nộp tự nguyện* | *Liên tục* | *+5% bonus* | *CLO2, CLO5* |
+| *Stata/R/Python Lab (bonus)* | *15 lab × 3 ngôn ngữ tự học theo buổi* | *Liên tục* | *+5% → +9% bonus (1-3 lab)* | *CLO2, CLO5* |
 | **Đánh giá giữa kỳ** | Hình thức do giảng viên quyết định (thi viết, thuyết trình, hoặc kết hợp) | Chương 1–2 | **30%** | CLO1, CLO2 |
 | **Đánh giá cuối kỳ** | **Thi tự luận đóng** (không dùng tài liệu). Cấu trúc đề do **Bộ môn quyết định đầu kỳ**. Hiện hành: **20 câu trắc nghiệm + 2 câu tự luận** (tương ứng 2 mức Bloom khác nhau) | Toàn bộ học phần | **60%** | CLO2, CLO3, CLO4, CLO5 |
 | | | | **100%** | |

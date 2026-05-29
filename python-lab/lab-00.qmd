@@ -1,0 +1,364 @@
+---
+title: "Python Lab 0 — Cài Python + pandas + Jupyter"
+subtitle: "Nền tảng trước khi vào 15 lab buổi"
+reading-time: "~30 phút thực hành"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Mục tiêu Lab 0
+
+Sau Lab 0, bạn có thể:
+
+- **Cài Python + Jupyter** trên Windows/macOS/Linux (hoàn toàn miễn phí)
+- **Cài các package** cho phân tích kinh tế: pandas, numpy, matplotlib, statsmodels
+- **Tải, đọc, ghi** dataset (`.csv`, `.xlsx`, `.dta`)
+- **Khám phá nhanh** dữ liệu bằng `.info()`, `.describe()`, `.value_counts()`
+- **Viết script Python** đầu tiên có comment tiếng Việt
+- **Báo cáo** bằng Jupyter Notebook hoặc Quarto
+:::
+
+## 1. Cài Python + môi trường
+
+### Phương án A — Anaconda (khuyên dùng cho người mới)
+
+**Anaconda** = Python + 100+ package khoa học + Spyder IDE + Jupyter, tất cả trong 1 lần cài.
+
+| OS | Đường dẫn |
+|---|---|
+| **Windows** | https://www.anaconda.com/download → tải `.exe` |
+| **macOS** | https://www.anaconda.com/download → tải `.pkg` cho chip Intel hoặc Apple Silicon |
+| **Linux/WSL** | `wget https://repo.anaconda.com/archive/Anaconda3-latest-Linux-x86_64.sh && bash Anaconda3-latest-Linux-x86_64.sh` |
+
+Sau khi cài, mở **Anaconda Navigator** — bạn có thể chọn:
+- **Jupyter Lab** — môi trường tương tác (khuyên dùng)
+- **Spyder** — IDE giống RStudio
+- **VS Code** — IDE đa năng
+
+### Phương án B — Python.org + pip (gọn hơn)
+
+Nếu bạn muốn nhẹ:
+
+1. **Cài Python**: https://www.python.org/downloads/
+2. **Cài Jupyter + packages** trong Terminal:
+
+```bash
+pip install jupyterlab pandas numpy matplotlib seaborn statsmodels scikit-learn openpyxl pyreadstat linearmodels
+```
+
+3. **Chạy Jupyter Lab**:
+
+```bash
+jupyter lab
+```
+
+### Phương án C — Google Colab (không cài đặt)
+
+Nếu không muốn cài gì:
+
+- Vào https://colab.research.google.com — đăng nhập Google
+- Tạo notebook mới — Python chạy trên cloud
+- **Free unlimited** cho tasks nhỏ
+- Có sẵn pandas, numpy, matplotlib, statsmodels
+
+## 2. Cài thêm các package cho kinh tế
+
+Mở **Jupyter Lab** → tạo notebook mới → trong cell đầu:
+
+```python
+# Cài package (chỉ chạy 1 lần)
+%pip install pandas numpy matplotlib seaborn statsmodels scikit-learn
+%pip install openpyxl       # đọc Excel .xlsx
+%pip install pyreadstat     # đọc Stata .dta
+%pip install linearmodels   # panel data, IV
+%pip install wbdata         # World Bank API
+```
+
+`%pip install ...` là cú pháp đặc biệt cho Jupyter — chạy `pip install` trong môi trường đúng.
+
+Đợi vài phút. Sau khi cài xong, **restart kernel** (Kernel > Restart).
+
+## 3. Script Python đầu tiên
+
+Tạo notebook mới → đặt tên `lab00_<ten>.ipynb`.
+
+```python
+# Lab 0 — Buổi học đầu tiên với Python
+# Họ tên: <điền tên>
+# MSSV: <điền MSSV>
+
+# Import các thư viện
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Dataset có sẵn của seaborn: mpg (giống mtcars của R)
+mpg = sns.load_dataset("mpg")
+
+# In thông báo
+print("Python đang chạy. Bạn đã mở dataset mpg")
+print(f"Dataset có {mpg.shape[0]} dòng, {mpg.shape[1]} cột")
+
+# Xem 5 dòng đầu
+mpg.head()
+```
+
+**Lưu cell**: `Ctrl+S`. **Chạy cell**: `Shift+Enter` (chạy + xuống cell mới) hoặc `Ctrl+Enter` (chạy + ở lại).
+
+## 4. Khám phá dataset — bốn lệnh cốt lõi
+
+### `.info()` — mô tả cấu trúc
+
+```python
+mpg.info()
+```
+
+Output:
+- **Số dòng** + **số cột**
+- **Kiểu dữ liệu** từng cột (`int64`, `float64`, `object`...)
+- **Số missing** mỗi cột
+
+### `.describe()` — thống kê mô tả
+
+```python
+mpg.describe()                          # tất cả cột số
+mpg[["mpg", "horsepower", "weight"]].describe()  # chỉ 3 cột
+```
+
+Cho: count, mean, std, min, 25%, 50%, 75%, max.
+
+### `.value_counts()` — bảng tần suất
+
+```python
+mpg["origin"].value_counts()            # đếm theo xuất xứ
+mpg["cylinders"].value_counts()         # đếm theo xi-lanh
+pd.crosstab(mpg["origin"], mpg["cylinders"])  # bảng chéo
+```
+
+### Xem dòng dữ liệu
+
+```python
+mpg.head(10)                                  # 10 dòng đầu
+mpg[mpg["mpg"] > 30]                          # mpg > 30
+mpg[mpg["origin"] == "japan"][["name", "mpg"]]  # tên + mpg xe Nhật
+```
+
+::: {.callout-tip}
+## 📝 Bài tập nhỏ ngay tại Lab 0
+
+Mở dataset `mpg`, trả lời:
+
+1. Có bao nhiêu xe trong dataset?
+2. `mpg` (mile per gallon) trung bình là bao nhiêu?
+3. Có bao nhiêu xe theo `origin` (usa/europe/japan)?
+4. Xe nào có `mpg` cao nhất?
+5. So sánh trung bình `mpg` giữa xe Mỹ và xe Nhật?
+:::
+
+## 5. Tạo cột + lọc + sort
+
+```python
+# Tạo cột mới
+mpg["gpm"] = 1 / mpg["mpg"]                   # gallon per mile
+mpg["is_efficient"] = mpg["mpg"] > 25         # xe tiết kiệm
+
+# Lọc + select cột
+mpg_filtered = (
+    mpg[mpg["cylinders"] != 4]                # bỏ xe 4 xi-lanh
+    [["mpg", "horsepower", "gpm", "is_efficient"]]  # giữ 4 cột
+    .sort_values("mpg", ascending=False)      # sắp theo mpg giảm
+)
+
+mpg_filtered.head(10)
+```
+
+### groupby — bysort của Stata
+
+```python
+# Trung bình mpg theo origin
+mpg.groupby("origin")["mpg"].mean()
+
+# Nhiều stat cùng lúc
+mpg.groupby("origin")["mpg"].agg(["mean", "std", "min", "max"])
+
+# Theo 2 nhóm
+mpg.groupby(["origin", "cylinders"])["mpg"].mean()
+```
+
+## 6. Vẽ biểu đồ — matplotlib + seaborn
+
+### Scatter plot
+
+```python
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Cấu hình style
+sns.set_theme(style="whitegrid")
+
+fig, ax = plt.subplots(figsize=(10, 6))
+sns.scatterplot(data=mpg, x="mpg", y="horsepower", hue="origin", ax=ax)
+ax.set_title("Công suất vs Tiết kiệm xăng")
+ax.set_xlabel("Mile per gallon")
+ax.set_ylabel("Horsepower")
+plt.tight_layout()
+plt.savefig("scatter.png", dpi=150)
+plt.show()
+```
+
+### Bar chart theo nhóm
+
+```python
+fig, ax = plt.subplots(figsize=(8, 5))
+mpg["origin"].value_counts().plot(
+    kind="bar", ax=ax, color="#722f37"
+)
+ax.set_title("Số xe theo xuất xứ")
+ax.set_ylabel("Số xe")
+plt.tight_layout()
+plt.savefig("bar.png", dpi=150)
+plt.show()
+```
+
+### Histogram
+
+```python
+fig, ax = plt.subplots(figsize=(8, 5))
+sns.histplot(data=mpg, x="mpg", bins=20, color="#c19a4d", ax=ax)
+ax.set_title("Phân bố MPG")
+plt.tight_layout()
+plt.savefig("hist.png", dpi=150)
+plt.show()
+```
+
+## 7. Lưu output
+
+### Lưu dataset
+
+```python
+mpg_filtered.to_csv("mpg_clean.csv", index=False)
+mpg_filtered.to_excel("mpg_clean.xlsx", index=False)
+mpg_filtered.to_parquet("mpg_clean.parquet")  # nhanh nhất
+```
+
+### Lưu biểu đồ
+
+```python
+fig.savefig("mychart.png", dpi=150, bbox_inches="tight")
+fig.savefig("mychart.pdf", bbox_inches="tight")
+```
+
+## 8. Đọc dataset bên ngoài
+
+```python
+import pandas as pd
+
+# CSV
+df_csv = pd.read_csv("mydata.csv")
+
+# Excel
+df_excel = pd.read_excel("mydata.xlsx", sheet_name=0)
+
+# Stata
+df_dta = pd.read_stata("mydata.dta")
+
+# Parquet (định dạng nén, nhanh)
+df_pq = pd.read_parquet("mydata.parquet")
+```
+
+## 9. Báo cáo bằng Jupyter hoặc Quarto
+
+### Cách 1 — Jupyter Notebook (đơn giản)
+
+Nộp file `.ipynb` — giảng viên mở bằng Jupyter Lab xem được cả code + output.
+
+**Export ra HTML**: File > Export Notebook As > HTML.
+
+### Cách 2 — Quarto (đẹp như cuốn sách)
+
+Tạo file `.qmd` thay vì `.ipynb`:
+
+````markdown
+---
+title: "Python Lab 1"
+author: "Họ tên — MSSV"
+format: html
+jupyter: python3
+---
+
+## Phần 1: Đặt vấn đề
+
+Lab này phân tích...
+
+```python
+import pandas as pd
+import seaborn as sns
+mpg = sns.load_dataset("mpg")
+mpg.describe()
+```
+
+## Phần 2: Biểu đồ
+
+```python
+#| fig-cap: "Công suất vs MPG"
+import matplotlib.pyplot as plt
+fig, ax = plt.subplots()
+ax.scatter(mpg["mpg"], mpg["horsepower"])
+plt.show()
+```
+````
+
+Trong Terminal: `quarto render lab01.qmd` → ra HTML đẹp.
+
+## 10. Mẹo Python hiệu quả
+
+1. **Luôn import packages đầu file** — gọn, dễ debug
+2. **Dùng `pd.options.display.max_columns = None`** để xem hết cột
+3. **Comment tiếng Việt được** — Python hỗ trợ UTF-8 đầy đủ
+4. **Đặt biến `df` cho DataFrame chính** — phổ biến trong cộng đồng
+5. **Save dataset thường xuyên** sau khi clean
+6. **Method chaining**: dùng dấu ngoặc `()` để xuống dòng đẹp
+7. **Help**: gõ `pd.read_csv?` hoặc `help(pd.read_csv)` để xem docs
+
+## 11. Tích hợp với Stata MP (tuỳ chọn)
+
+Nếu bạn có Stata, Python có thể gọi Stata qua **PyStata**:
+
+```python
+import sys
+sys.path.insert(0, '/usr/local/stata19/utilities')
+import pystata
+pystata.config.init('mp', splash=False)
+
+# Truyền DataFrame → Stata
+pystata.stata.pdataframe_to_data(mpg, force=True)
+
+# Chạy lệnh Stata
+pystata.stata.run("""
+    regress mpg horsepower weight
+""")
+```
+
+Đặc điểm: tận dụng *hệ sinh thái Python* (visualization, ML) + *engine Stata* (lệnh kinh tế lượng quen).
+
+## Deliverable Lab 0
+
+Nộp **1 notebook** `lab00_<ten>.ipynb` hoặc `.qmd` thực hiện:
+
+1. Import pandas, numpy, matplotlib, seaborn
+2. Load `seaborn.load_dataset("mpg")`
+3. `.info()` + `.describe()`
+4. So sánh trung bình `mpg` giữa 3 xuất xứ (`groupby("origin")`)
+5. Vẽ scatter `mpg` vs `horsepower`, phân biệt theo `origin`
+6. Tạo biến mới `gpm = 1/mpg`
+7. **Comment tiếng Việt** ở mỗi bước
+8. (Tuỳ chọn) Export ra HTML
+
+Nộp kèm:
+- File `.ipynb` hoặc `.qmd`
+- File `.html` (export hoặc render)
+- Phản hồi ngắn 200 chữ: bạn thấy Python khó/dễ hơn Stata/R ở điểm nào?
+
+---
+
+*Lab tiếp theo*: [Python Lab 1 — Vẽ PPF và chi phí cơ hội](lab-01.qmd) →

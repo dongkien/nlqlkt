@@ -13,7 +13,7 @@ Thang điểm **10**. Học phần đánh giá qua **3 cấu phần**:
 | **Đánh giá quá trình** | **10%** | Điểm danh + bài kiểm tra ngắn + chất lượng thảo luận | Liên tục | CLO1, CLO4 |
 | **Đánh giá giữa kỳ** | **30%** | Thi viết, mini-case, thuyết trình, hoặc kết hợp (giảng viên quyết định) | Chương 1–2 | CLO1, CLO2 |
 | **Đánh giá cuối kỳ** | **60%** | **Thi tự luận đóng** — cấu trúc đề do **Bộ môn quyết định đầu kỳ**. Hiện hành: **20 trắc nghiệm + 2 tự luận** (2 mức Bloom khác nhau) | Toàn bộ học phần | CLO2, CLO3, CLO4, CLO5 |
-| **Stata Lab** *(bonus)* | **+5%** | 15 lab tự học, nộp tự nguyện. Tối đa cộng 0,5 điểm vào điểm tổng kết — xem [Stata Lab](../stata-lab/) | Liên tục | CLO2, CLO5 |
+| **Stata Lab** *(bonus)* | **+5% → +9%** | 15 lab tự học, nộp tự nguyện. Tối đa cộng 0,5 điểm vào điểm tổng kết — xem [Stata Lab](../stata-lab/) | Liên tục | CLO2, CLO5 |
 
 ::: {.callout-warning}
 *Lưu ý*: Hình thức thi và hoạt động gắn kết thực tiễn trong học phần có thể **linh hoạt do Bộ môn quyết định** phụ thuộc vào tình hình thực tế.

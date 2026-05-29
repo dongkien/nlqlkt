@@ -16,17 +16,18 @@ Mục tiêu:
 
 ::: {.callout-tip appearance="simple"}
 ::: {.callout-tip appearance="simple"}
-## 🔄 Cũng có: R Lab song song
+## 🔄 Cũng có: R Lab + Python Lab song song
 
-R Lab cùng nội dung phân tích, **free 100%**, ggplot2 đẹp. Sinh viên chọn 1 trong 2 — hoặc làm cả hai (bonus cao hơn).
+3 phiên bản cùng nội dung — sinh viên chọn 1 trong 3 hoặc làm nhiều hơn để bonus cao hơn (1 lab: +5%, 2 lab: +7%, 3 lab: +9%).
 
-→ [Xem R Lab](../r-lab/)
+- → [R Lab](../r-lab/) — tidyverse + ggplot2 (free)
+- → [Python Lab](../python-lab/) — pandas + matplotlib (free, mạnh nhất cho data science)
 :::
 
 
 ## 🎁 Cơ chế bonus
 
-Nộp Stata Lab có thể **cộng tới 0,5 điểm** vào điểm tổng kết (tối đa 5% bonus). Xem [Đánh giá](../exams/) để biết cách quy đổi.
+Nộp Lab (Stata/R/Python) có thể **cộng tới 0,5–0,9 điểm** vào điểm tổng kết (1 lab → 5%, 2 lab → 7%, 3 lab → 9% bonus). Xem [Đánh giá](../exams/) để biết cách quy đổi.
 :::
 
 ## Cấu trúc 16 bài lab

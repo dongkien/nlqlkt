@@ -1,0 +1,84 @@
+---
+title: "Python Lab 6 — Ước lượng Cobb-Douglas Việt Nam"
+subtitle: "Tương ứng Buổi 6 (Python, song song [Stata Lab 6](../stata-lab/lab-06.qmd) và [R Lab 6](../r-lab/lab-06.qmd))"
+reading-time: "~25 phút"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Liên kết với Buổi 6
+
+Phiên bản Python của [Stata Lab 6](../stata-lab/lab-06.qmd) / [R Lab 6](../r-lab/lab-06.qmd). Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.
+
+**Khái niệm Python học**: `statsmodels.formula.api.ols, np.log, residuals`
+:::
+
+::: {.callout-warning appearance="simple"}
+## 🚧 Python Lab đang biên soạn
+
+Khung lab đã có theo cấu trúc Stata Lab tương ứng. Code Python chi tiết sẽ được giảng viên cập nhật trước Buổi 6. Trong khi chờ, sinh viên có thể dùng [bảng quy đổi Stata → Python](../python-lab/#stata-python-cheatsheet) để tự chuyển code.
+:::
+
+## Khung Lab 6
+
+### 1. Bài toán
+
+log regression Y=AK^α L^(1-α), TFP residual, growth accounting
+
+### 2. Lab tương ứng
+
+Cùng phân tích như:
+- **[Stata Lab 6](../stata-lab/lab-06.qmd)** — xem **logic phân tích**, *yêu cầu chi tiết*, và *câu hỏi suy nghĩ*
+- **[R Lab 6](../r-lab/lab-06.qmd)** — xem cách dùng tidyverse + ggplot2
+
+Dùng **bảng quy đổi Stata → Python** ở [Python Lab index](index.qmd#stata-python-cheatsheet) để chuyển code.
+
+### 3. Khung code Python (mẫu)
+
+```python
+# Python Lab 6 — Ước lượng Cobb-Douglas Việt Nam
+# Họ tên: <điền>, MSSV: <điền>
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import statsmodels.formula.api as smf      # nếu cần hồi quy
+
+# === Đọc/tạo dataset ===
+# (sẽ chi tiết khi có dataset thật)
+
+# === Phân tích ===
+# Sử dụng: statsmodels.formula.api.ols, np.log, residuals
+
+# === Lưu kết quả ===
+# fig.savefig("lab6.png", dpi=150, bbox_inches="tight")
+```
+
+### 4. Câu hỏi suy nghĩ
+
+Giống Stata/R Lab 6 — xem chi tiết tại [Stata Lab 6](../stata-lab/lab-06.qmd).
+
+## Deliverable
+
+Nộp 3 file (như Lab khác):
+
+| File | Nội dung |
+|---|---|
+| `lab6_<tên>.ipynb` hoặc `.qmd` | Code Python + comment |
+| `lab6_<tên>.html` | Output (Jupyter export hoặc Quarto render) |
+| `lab6_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
+
+**Tiêu đề email**: `PYLAB6-MSSV-HọTên`
+
+## Tiêu chí chấm
+
+| Tiêu chí | Điểm |
+|---|:---:|
+| Code Python chạy đúng | 30% |
+| Vận dụng đúng kỹ thuật mới | 25% |
+| Biểu đồ đẹp (matplotlib/seaborn) | 20% |
+| Trả lời câu hỏi sâu | 25% |
+
+---
+
+← *Lab trước*: [Python Lab 5](lab-05.qmd) | *Lab tiếp theo*: [Python Lab 7](lab-07.qmd) →

@@ -38,12 +38,14 @@ website:
         text: "Lịch học"
       - href: lectures/index.qmd
         text: "Bài giảng"
-      - text: "Stata / R Lab"
+      - text: "Stata / R / Python Lab"
         menu:
           - href: stata-lab/index.qmd
             text: "Stata Lab"
           - href: r-lab/index.qmd
             text: "R Lab"
+          - href: python-lab/index.qmd
+            text: "Python Lab"
       - href: problem-sets/index.qmd
         text: "Tiểu luận / Bài tập"
       - href: exams/index.qmd
@@ -52,6 +54,35 @@ website:
         text: "Người hướng dẫn"
 
   sidebar:
+    - id: python-lab
+      title: "Python Lab"
+      style: docked
+      align: left
+      collapse-level: 2
+      contents:
+        - text: "← Trang chủ"
+          href: index.qmd
+        - python-lab/index.qmd
+        - section: "Hướng dẫn"
+          contents:
+            - python-lab/lab-00.qmd
+        - section: "Lab theo buổi"
+          contents:
+            - python-lab/lab-01.qmd
+            - python-lab/lab-02.qmd
+            - python-lab/lab-03.qmd
+            - python-lab/lab-04.qmd
+            - python-lab/lab-05.qmd
+            - python-lab/lab-06.qmd
+            - python-lab/lab-07.qmd
+            - python-lab/lab-08.qmd
+            - python-lab/lab-09.qmd
+            - python-lab/lab-10.qmd
+            - python-lab/lab-11.qmd
+            - python-lab/lab-12.qmd
+            - python-lab/lab-13.qmd
+            - python-lab/lab-14.qmd
+            - python-lab/lab-15.qmd
     - id: r-lab
       title: "R Lab"
       style: docked

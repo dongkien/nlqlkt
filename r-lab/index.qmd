@@ -19,11 +19,19 @@ Sinh viên **chọn 1 trong 2** (hoặc làm cả hai — bonus cao hơn):
 | Bonus 5% | ✅ | ✅ |
 
 ::: {.callout-tip}
-## 🎁 Bonus song song
+## 🎁 Bonus cộng dồn
 
-- Làm Stata Lab: tới **+5% bonus**
-- Làm R Lab: tới **+5% bonus**
-- Làm **cả hai** trong cùng Lab: tới **+7% bonus** (không phải +10%, vì câu hỏi suy nghĩ chấm 1 lần)
+- Làm **1** lab (Stata *hoặc* R *hoặc* Python): tới **+5% bonus**
+- Làm **2** lab cùng nội dung: tới **+7% bonus**
+- Làm **3** lab cùng nội dung (Stata + R + Python): tới **+9% bonus**
+
+*(Không +15% vì câu hỏi suy nghĩ chấm 1 lần — bonus chính là phần code chạy + biểu đồ + so sánh các cách tiếp cận)*
+:::
+
+::: {.callout-tip appearance="simple"}
+## 🔄 Cũng có: Python Lab song song
+
+→ [Python Lab](../python-lab/) — pandas + matplotlib, mạnh nhất cho data science + ML
 :::
 
 ## Vì sao học R?

@@ -1,0 +1,84 @@
+---
+title: "Python Lab 9 — Tính NEER và REER VND"
+subtitle: "Tương ứng Buổi 9 (Python, song song [Stata Lab 9](../stata-lab/lab-09.qmd) và [R Lab 9](../r-lab/lab-09.qmd))"
+reading-time: "~25 phút"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Liên kết với Buổi 9
+
+Phiên bản Python của [Stata Lab 9](../stata-lab/lab-09.qmd) / [R Lab 9](../r-lab/lab-09.qmd). Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.
+
+**Khái niệm Python học**: `np.prod, np.exp, np.log, weighted mean`
+:::
+
+::: {.callout-warning appearance="simple"}
+## 🚧 Python Lab đang biên soạn
+
+Khung lab đã có theo cấu trúc Stata Lab tương ứng. Code Python chi tiết sẽ được giảng viên cập nhật trước Buổi 9. Trong khi chờ, sinh viên có thể dùng [bảng quy đổi Stata → Python](../python-lab/#stata-python-cheatsheet) để tự chuyển code.
+:::
+
+## Khung Lab 9
+
+### 1. Bài toán
+
+Trọng số 5 đối tác, geometric mean, REER với CPI
+
+### 2. Lab tương ứng
+
+Cùng phân tích như:
+- **[Stata Lab 9](../stata-lab/lab-09.qmd)** — xem **logic phân tích**, *yêu cầu chi tiết*, và *câu hỏi suy nghĩ*
+- **[R Lab 9](../r-lab/lab-09.qmd)** — xem cách dùng tidyverse + ggplot2
+
+Dùng **bảng quy đổi Stata → Python** ở [Python Lab index](index.qmd#stata-python-cheatsheet) để chuyển code.
+
+### 3. Khung code Python (mẫu)
+
+```python
+# Python Lab 9 — Tính NEER và REER VND
+# Họ tên: <điền>, MSSV: <điền>
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import statsmodels.formula.api as smf      # nếu cần hồi quy
+
+# === Đọc/tạo dataset ===
+# (sẽ chi tiết khi có dataset thật)
+
+# === Phân tích ===
+# Sử dụng: np.prod, np.exp, np.log, weighted mean
+
+# === Lưu kết quả ===
+# fig.savefig("lab9.png", dpi=150, bbox_inches="tight")
+```
+
+### 4. Câu hỏi suy nghĩ
+
+Giống Stata/R Lab 9 — xem chi tiết tại [Stata Lab 9](../stata-lab/lab-09.qmd).
+
+## Deliverable
+
+Nộp 3 file (như Lab khác):
+
+| File | Nội dung |
+|---|---|
+| `lab9_<tên>.ipynb` hoặc `.qmd` | Code Python + comment |
+| `lab9_<tên>.html` | Output (Jupyter export hoặc Quarto render) |
+| `lab9_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
+
+**Tiêu đề email**: `PYLAB9-MSSV-HọTên`
+
+## Tiêu chí chấm
+
+| Tiêu chí | Điểm |
+|---|:---:|
+| Code Python chạy đúng | 30% |
+| Vận dụng đúng kỹ thuật mới | 25% |
+| Biểu đồ đẹp (matplotlib/seaborn) | 20% |
+| Trả lời câu hỏi sâu | 25% |
+
+---
+
+← *Lab trước*: [Python Lab 8](lab-08.qmd) | *Lab tiếp theo*: [Python Lab 10](lab-10.qmd) →

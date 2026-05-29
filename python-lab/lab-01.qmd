@@ -1,0 +1,188 @@
+---
+title: "Python Lab 1 — Vẽ PPF và tính chi phí cơ hội"
+subtitle: "Tương ứng Buổi 1 (phiên bản Python, song song [Stata Lab 1](../stata-lab/lab-01.qmd) và [R Lab 1](../r-lab/lab-01.qmd))"
+reading-time: "~20 phút"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Liên kết với Buổi 1
+
+Bài này áp dụng **PPF** và **chi phí cơ hội** từ [Buổi 1](../lectures/buoi-01.qmd), thực hiện bằng **Python + pandas + matplotlib**.
+
+**Khái niệm Python học**: `pd.DataFrame`, `np.sqrt`, `.shift()`, `plt.subplots`, multi-layer plot
+:::
+
+## 1. Bài toán
+
+Nền KT giả định 2 hàng hoá: **Y tế** và **Quốc phòng**. PPF dạng:
+
+$$Y^2 + X^2 = 100, \quad X \in [0, 10]$$
+
+## 2. Tạo dataset PPF
+
+```python
+# Python Lab 1 — Vẽ PPF và chi phí cơ hội
+# Họ tên: <điền>, MSSV: <điền>
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+
+# === Phần 1: Tạo dataset PPF ===
+ppf = pd.DataFrame({
+    "x": np.arange(0, 11),
+    "y": np.sqrt(100 - np.arange(0, 11)**2)
+})
+
+print(ppf)
+```
+
+**Câu hỏi 1**: Khi `x = 0`, `y` = ? Khi `x = 10`, `y` = ? Ý nghĩa?
+
+## 3. Vẽ PPF
+
+```python
+# === Phần 2: Vẽ PPF ===
+fig, ax = plt.subplots(figsize=(10, 6))
+ax.plot(ppf["x"], ppf["y"],
+        marker="o", markersize=8,
+        color="#722f37", linewidth=2)
+
+ax.set_title("PPF: Đánh đổi giữa Y tế và Quốc phòng",
+             fontsize=14, fontweight="bold")
+ax.set_xlabel("Quân sự (đơn vị)", fontsize=12)
+ax.set_ylabel("Y tế (số bệnh viện)", fontsize=12)
+ax.set_xlim(-0.5, 10.5)
+ax.set_ylim(-0.5, 10.5)
+ax.grid(alpha=0.3)
+
+plt.tight_layout()
+plt.savefig("ppf.png", dpi=150, bbox_inches="tight")
+plt.show()
+```
+
+**Câu hỏi 2**: Tại sao PPF *cong lõm*, không *thẳng*?
+
+## 4. Tính chi phí cơ hội
+
+```python
+# === Phần 3: Chi phí cơ hội biên ===
+ppf = ppf.sort_values("x").reset_index(drop=True)
+ppf["y_lag"] = ppf["y"].shift(1)                # y ở điểm trước
+ppf["opportunity_cost"] = ppf["y_lag"] - ppf["y"]  # bệnh viện hy sinh
+
+print(ppf)
+```
+
+Bạn sẽ thấy:
+
+| x | y | opportunity_cost |
+|:---:|:---:|:---:|
+| 0 | 10.00 | NaN |
+| 1 | 9.95 | 0.05 |
+| 5 | 8.66 | ... |
+| 10 | 0.00 | 4.36 |
+
+**Câu hỏi 3**: Chi phí cơ hội *tăng* hay *giảm*? Liên hệ với *Quy luật chi phí cơ hội tăng dần* (Mankiw).
+
+## 5. Trực quan hoá chi phí cơ hội
+
+```python
+# === Phần 4: Biểu đồ chi phí cơ hội ===
+ppf_valid = ppf.dropna(subset=["opportunity_cost"])
+
+fig, ax = plt.subplots(figsize=(10, 6))
+ax.bar(ppf_valid["x"], ppf_valid["opportunity_cost"],
+       color="#c19a4d", edgecolor="#722f37", linewidth=1.5)
+
+ax.set_title("Chi phí cơ hội biên tăng dần",
+             fontsize=14, fontweight="bold")
+ax.set_xlabel("Số đơn vị quân sự", fontsize=12)
+ax.set_ylabel("Bệnh viện hy sinh để thêm 1 quân sự", fontsize=12)
+ax.grid(alpha=0.3, axis="y")
+
+plt.tight_layout()
+plt.savefig("opportunity_cost.png", dpi=150, bbox_inches="tight")
+plt.show()
+```
+
+## 6. PPF dịch ra — tăng trưởng
+
+```python
+# === Phần 5: PPF dịch ra ===
+x_range = np.arange(0, 12)
+
+ppf_growth = pd.DataFrame({
+    "x": x_range,
+    "y_old": np.sqrt(np.maximum(100 - x_range**2, 0)),
+    "y_new": np.sqrt(np.maximum(130 - x_range**2, 0))
+})
+
+fig, ax = plt.subplots(figsize=(10, 6))
+ax.plot(ppf_growth["x"], ppf_growth["y_old"],
+        color="#722f37", linewidth=2, label="PPF cũ")
+ax.plot(ppf_growth["x"], ppf_growth["y_new"],
+        color="#2e7d50", linewidth=2, linestyle="--", label="PPF mới")
+
+ax.set_title("PPF dịch ra — đại diện cho tăng trưởng kinh tế",
+             fontsize=14, fontweight="bold")
+ax.set_xlabel("Quân sự", fontsize=12)
+ax.set_ylabel("Y tế", fontsize=12)
+ax.legend(loc="upper right", fontsize=11)
+ax.grid(alpha=0.3)
+
+plt.tight_layout()
+plt.savefig("ppf_growth.png", dpi=150, bbox_inches="tight")
+plt.show()
+```
+
+**Câu hỏi 4**: PPF mới mức tối đa Y khi X=0 = ? Đây có phải tăng trưởng đều giữa 2 ngành?
+
+## 7. Liên hệ thực tiễn Việt Nam
+
+**Câu hỏi 5** (suy nghĩ + viết, không cần code):
+
+Nếu Chính phủ chi 100.000 tỷ cho đường sắt cao tốc Bắc-Nam:
+
+- **Chi phí cơ hội** là gì? 3 phương án thay thế tốt nhất?
+- Nếu nền KT *trong* PPF (lãng phí), có "miễn phí"?
+
+## Deliverable Python Lab 1
+
+Nộp 3 file:
+
+| File | Nội dung |
+|---|---|
+| `lab01_<tên>.ipynb` hoặc `.qmd` | Code Python đầy đủ + comment tiếng Việt |
+| `lab01_<tên>.html` | Output rendered (Jupyter export hoặc Quarto render) |
+| `lab01_<tên>.pdf` (1-2 trang) | 5 câu hỏi + 3 biểu đồ |
+
+**Tiêu đề email**: `PYLAB01-MSSV-HọTên`
+
+## Tiêu chí chấm
+
+| Tiêu chí | Điểm |
+|---|:---:|
+| Code Python chạy đúng | 30% |
+| Bình luận tiếng Việt rõ | 15% |
+| 3 biểu đồ đẹp + format | 20% |
+| Trả lời 5 câu hỏi sâu | 35% |
+
+---
+
+::: {.callout-tip}
+## 💡 So sánh 3 cách
+
+| | Stata | R (ggplot2) | Python (matplotlib) |
+|---|---|---|---|
+| Cú pháp ngắn | Trung bình | Ngắn nhất (pipe) | Trung bình (chaining) |
+| Biểu đồ đẹp | Khá | **Đẹp nhất** | Đẹp nếu seaborn |
+| Tốc độ chạy | Nhanh | Nhanh | Nhanh nhất với big data |
+| Mạnh ngoài KT | Yếu | Trung bình | **Mạnh nhất** |
+
+Lựa chọn tuỳ mục đích — biết cả 3 là tốt nhất.
+:::
+
+---
+
+← *Lab trước*: [Python Lab 0 — Cài Python](lab-00.qmd) | *Lab tiếp theo*: [Python Lab 2](lab-02.qmd) →

@@ -1,0 +1,84 @@
+---
+title: "Python Lab 15 — Xuất bảng + biểu đồ cho thuyết trình"
+subtitle: "Tương ứng Buổi 15 (Python, song song [Stata Lab 15](../stata-lab/lab-15.qmd) và [R Lab 15](../r-lab/lab-15.qmd))"
+reading-time: "~25 phút"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Liên kết với Buổi 15
+
+Phiên bản Python của [Stata Lab 15](../stata-lab/lab-15.qmd) / [R Lab 15](../r-lab/lab-15.qmd). Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.
+
+**Khái niệm Python học**: `stargazer, tabulate, df.style.to_latex`
+:::
+
+::: {.callout-warning appearance="simple"}
+## 🚧 Python Lab đang biên soạn
+
+Khung lab đã có theo cấu trúc Stata Lab tương ứng. Code Python chi tiết sẽ được giảng viên cập nhật trước Buổi 15. Trong khi chờ, sinh viên có thể dùng [bảng quy đổi Stata → Python](../python-lab/#stata-python-cheatsheet) để tự chuyển code.
+:::
+
+## Khung Lab 15
+
+### 1. Bài toán
+
+stargazer, modelsummary, tabulate, plt.savefig cho báo cáo
+
+### 2. Lab tương ứng
+
+Cùng phân tích như:
+- **[Stata Lab 15](../stata-lab/lab-15.qmd)** — xem **logic phân tích**, *yêu cầu chi tiết*, và *câu hỏi suy nghĩ*
+- **[R Lab 15](../r-lab/lab-15.qmd)** — xem cách dùng tidyverse + ggplot2
+
+Dùng **bảng quy đổi Stata → Python** ở [Python Lab index](index.qmd#stata-python-cheatsheet) để chuyển code.
+
+### 3. Khung code Python (mẫu)
+
+```python
+# Python Lab 15 — Xuất bảng + biểu đồ cho thuyết trình
+# Họ tên: <điền>, MSSV: <điền>
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import statsmodels.formula.api as smf      # nếu cần hồi quy
+
+# === Đọc/tạo dataset ===
+# (sẽ chi tiết khi có dataset thật)
+
+# === Phân tích ===
+# Sử dụng: stargazer, tabulate, df.style.to_latex
+
+# === Lưu kết quả ===
+# fig.savefig("lab15.png", dpi=150, bbox_inches="tight")
+```
+
+### 4. Câu hỏi suy nghĩ
+
+Giống Stata/R Lab 15 — xem chi tiết tại [Stata Lab 15](../stata-lab/lab-15.qmd).
+
+## Deliverable
+
+Nộp 3 file (như Lab khác):
+
+| File | Nội dung |
+|---|---|
+| `lab15_<tên>.ipynb` hoặc `.qmd` | Code Python + comment |
+| `lab15_<tên>.html` | Output (Jupyter export hoặc Quarto render) |
+| `lab15_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
+
+**Tiêu đề email**: `PYLAB15-MSSV-HọTên`
+
+## Tiêu chí chấm
+
+| Tiêu chí | Điểm |
+|---|:---:|
+| Code Python chạy đúng | 30% |
+| Vận dụng đúng kỹ thuật mới | 25% |
+| Biểu đồ đẹp (matplotlib/seaborn) | 20% |
+| Trả lời câu hỏi sâu | 25% |
+
+---
+
+← *Lab trước*: [Python Lab 14](lab-14.qmd) | *Đây là Python Lab cuối.*

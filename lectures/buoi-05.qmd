@@ -273,13 +273,15 @@ Chọn **một ngành chiến lược** của Việt Nam (bán dẫn, EV, nông 
 4. **Đọc thêm** về 4 chuyển đổi của Đại hội XIV và liên hệ với CSCN.
 
 ::: {.callout-tip}
-## 🔧 Stata/R Lab 5 (bonus 5%)
+## 🔧 Stata / R / Python Lab 5 (bonus 5%)
 
 Bài này có lab phân tích **so sánh hiệu suất DNNN vs KTTN vs FDI** trong Stata dùng dữ liệu cấp DN: ROE, ROA, năng suất lao động, đầu tư R&D. Bạn sẽ học `by-group statistics`, `t-test` so sánh trung bình.
 
 → [**Bắt đầu Lab 5 — DNNN vs KTTN vs FDI**](../stata-lab/lab-05.qmd) *(~25 phút)*
 
 → [**Hoặc dùng R Lab 5**](../r-lab/lab-05.qmd) — phiên bản free, ggplot2 đẹp
+
+→ [**Hoặc dùng Python Lab 5**](../python-lab/lab-05.qmd) — pandas + matplotlib, mạnh nhất cho data science
 :::
 
 ## Đọc thêm

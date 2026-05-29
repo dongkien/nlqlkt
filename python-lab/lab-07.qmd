@@ -1,0 +1,84 @@
+---
+title: "Python Lab 7 — Mô phỏng IS-LM"
+subtitle: "Tương ứng Buổi 7 (Python, song song [Stata Lab 7](../stata-lab/lab-07.qmd) và [R Lab 7](../r-lab/lab-07.qmd))"
+reading-time: "~25 phút"
+---
+
+::: {.callout-note appearance="simple"}
+## 🎯 Liên kết với Buổi 7
+
+Phiên bản Python của [Stata Lab 7](../stata-lab/lab-07.qmd) / [R Lab 7](../r-lab/lab-07.qmd). Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.
+
+**Khái niệm Python học**: `np.linalg.solve, plt.plot, sympy (optional)`
+:::
+
+::: {.callout-warning appearance="simple"}
+## 🚧 Python Lab đang biên soạn
+
+Khung lab đã có theo cấu trúc Stata Lab tương ứng. Code Python chi tiết sẽ được giảng viên cập nhật trước Buổi 7. Trong khi chờ, sinh viên có thể dùng [bảng quy đổi Stata → Python](../python-lab/#stata-python-cheatsheet) để tự chuyển code.
+:::
+
+## Khung Lab 7
+
+### 1. Bài toán
+
+Tìm Y* r* bằng số, simulate ΔG ΔM, đo crowding out
+
+### 2. Lab tương ứng
+
+Cùng phân tích như:
+- **[Stata Lab 7](../stata-lab/lab-07.qmd)** — xem **logic phân tích**, *yêu cầu chi tiết*, và *câu hỏi suy nghĩ*
+- **[R Lab 7](../r-lab/lab-07.qmd)** — xem cách dùng tidyverse + ggplot2
+
+Dùng **bảng quy đổi Stata → Python** ở [Python Lab index](index.qmd#stata-python-cheatsheet) để chuyển code.
+
+### 3. Khung code Python (mẫu)
+
+```python
+# Python Lab 7 — Mô phỏng IS-LM
+# Họ tên: <điền>, MSSV: <điền>
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import statsmodels.formula.api as smf      # nếu cần hồi quy
+
+# === Đọc/tạo dataset ===
+# (sẽ chi tiết khi có dataset thật)
+
+# === Phân tích ===
+# Sử dụng: np.linalg.solve, plt.plot, sympy (optional)
+
+# === Lưu kết quả ===
+# fig.savefig("lab7.png", dpi=150, bbox_inches="tight")
+```
+
+### 4. Câu hỏi suy nghĩ
+
+Giống Stata/R Lab 7 — xem chi tiết tại [Stata Lab 7](../stata-lab/lab-07.qmd).
+
+## Deliverable
+
+Nộp 3 file (như Lab khác):
+
+| File | Nội dung |
+|---|---|
+| `lab7_<tên>.ipynb` hoặc `.qmd` | Code Python + comment |
+| `lab7_<tên>.html` | Output (Jupyter export hoặc Quarto render) |
+| `lab7_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
+
+**Tiêu đề email**: `PYLAB7-MSSV-HọTên`
+
+## Tiêu chí chấm
+
+| Tiêu chí | Điểm |
+|---|:---:|
+| Code Python chạy đúng | 30% |
+| Vận dụng đúng kỹ thuật mới | 25% |
+| Biểu đồ đẹp (matplotlib/seaborn) | 20% |
+| Trả lời câu hỏi sâu | 25% |
+
+---
+
+← *Lab trước*: [Python Lab 6](lab-06.qmd) | *Lab tiếp theo*: [Python Lab 8](lab-08.qmd) →

@@ -1,0 +1,113 @@
+---
+title: "Python Lab"
+subtitle: "Tự học Python qua 16 bài thực hành — phiên bản song song với Stata Lab và R Lab"
+toc: true
+---
+
+## Python Lab là gì?
+
+Python Lab là **phiên bản thứ ba** của hệ thống thực hành — song song với [Stata Lab](../stata-lab/) và [R Lab](../r-lab/).
+
+Sinh viên chọn **1 trong 3** (hoặc nhiều hơn để bonus cao hơn):
+
+| | **Stata Lab** | **R Lab** | **Python Lab** |
+|---|---|---|---|
+| Chi phí | Có phí (license) | **100% free** | **100% free** |
+| Phổ biến VN | Cao (truyền thống) | Đang tăng | Tăng rất nhanh |
+| Mạnh nhất ở | Kinh tế lượng cổ điển | Visualization + statistics | Data science + ML + automation |
+| Phù hợp nhất | Phòng máy FTU | Khoá luận, nghiên cứu | Khoá luận, web scraping, AI |
+
+::: {.callout-tip}
+## 🎁 Bonus cộng dồn
+
+- Làm **1** lab (Stata *hoặc* R *hoặc* Python): tới **+5% bonus**
+- Làm **2** lab cùng nội dung: tới **+7% bonus**
+- Làm **3** lab cùng nội dung: tới **+9% bonus**
+
+*(Không +15% vì câu hỏi suy nghĩ chấm 1 lần — bonus chính là phần code chạy + biểu đồ + so sánh 3 cách tiếp cận)*
+:::
+
+## Vì sao học Python?
+
+| Lý do | Chi tiết |
+|---|---|
+| **100% Free** | Không cần license — sinh viên cài về máy cá nhân |
+| **Pandas + NumPy** | Hệ sinh thái data science mạnh nhất hiện nay |
+| **Cộng đồng khoa học dữ liệu** | Lớn nhất trong các ngôn ngữ — học là vận dụng được mọi nơi |
+| **Ngoài kinh tế** | Web scraping, AI/ML, automation — đa dụng nhất |
+| **Quarto + Jupyter** | Tích hợp tốt cho báo cáo học thuật |
+| **Stata + Python** | Có thể gọi nhau qua PyStata — không phải bỏ Stata |
+
+## Cấu trúc 16 bài Python Lab
+
+Tương ứng với Stata Lab và R Lab:
+
+| Lab | Chủ đề | Stata | R |
+|:---:|---|:---:|:---:|
+| **0** | [Cài Python + pandas + Jupyter](lab-00.qmd) | [↗](../stata-lab/lab-00.qmd) | [↗](../r-lab/lab-00.qmd) |
+| **1** | [PPF + chi phí cơ hội](lab-01.qmd) | [↗](../stata-lab/lab-01.qmd) | [↗](../r-lab/lab-01.qmd) |
+| **2** | [Phân tích chi tiêu công VN](lab-02.qmd) | [↗](../stata-lab/lab-02.qmd) | [↗](../r-lab/lab-02.qmd) |
+| **3** | [Tính HHI 5 ngành VN](lab-03.qmd) | [↗](../stata-lab/lab-03.qmd) | [↗](../r-lab/lab-03.qmd) |
+| **4** | [Mô phỏng thuế Pigou](lab-04.qmd) | [↗](../stata-lab/lab-04.qmd) | [↗](../r-lab/lab-04.qmd) |
+| **5** | [DNNN vs KTTN vs FDI](lab-05.qmd) | [↗](../stata-lab/lab-05.qmd) | [↗](../r-lab/lab-05.qmd) |
+| **6** | [Cobb-Douglas VN](lab-06.qmd) | [↗](../stata-lab/lab-06.qmd) | [↗](../r-lab/lab-06.qmd) |
+| **7** | [Mô phỏng IS-LM](lab-07.qmd) | [↗](../stata-lab/lab-07.qmd) | [↗](../r-lab/lab-07.qmd) |
+| **8** | [Phillips VN 2010-2024](lab-08.qmd) | [↗](../stata-lab/lab-08.qmd) | [↗](../r-lab/lab-08.qmd) |
+| **9** | [NEER/REER VND](lab-09.qmd) | [↗](../stata-lab/lab-09.qmd) | [↗](../r-lab/lab-09.qmd) |
+| **10** | [Mundell-Fleming](lab-10.qmd) | [↗](../stata-lab/lab-10.qmd) | [↗](../r-lab/lab-10.qmd) |
+| **11** | [Event study KH Á 1997](lab-11.qmd) | [↗](../stata-lab/lab-11.qmd) | [↗](../r-lab/lab-11.qmd) |
+| **12** | [PCI/PAPI/PAR](lab-12.qmd) | [↗](../stata-lab/lab-12.qmd) | [↗](../r-lab/lab-12.qmd) |
+| **13** | [6 vùng KT-XH](lab-13.qmd) | [↗](../stata-lab/lab-13.qmd) | [↗](../r-lab/lab-13.qmd) |
+| **14** | [Capstone](lab-14.qmd) | [↗](../stata-lab/lab-14.qmd) | [↗](../r-lab/lab-14.qmd) |
+| **15** | [Xuất bảng + biểu đồ](lab-15.qmd) | [↗](../stata-lab/lab-15.qmd) | [↗](../r-lab/lab-15.qmd) |
+
+## Stata → Python cheatsheet {#stata-python-cheatsheet}
+
+Bảng quy đổi nhanh cho người đã quen Stata:
+
+| Stata | Python (pandas + statsmodels) | Mục đích |
+|---|---|---|
+| `use mydata.dta` | `df = pd.read_stata("mydata.dta")` | Đọc file Stata |
+| `import delimited "mydata.csv"` | `df = pd.read_csv("mydata.csv")` | Đọc CSV |
+| `describe` | `df.info()` | Mô tả cấu trúc |
+| `summarize` | `df.describe()` | Thống kê mô tả |
+| `tabulate x` | `df["x"].value_counts()` | Đếm theo nhóm |
+| `gen y = x*2` | `df["y"] = df["x"] * 2` | Tạo biến mới |
+| `keep if x > 0` | `df = df[df["x"] > 0]` | Lọc |
+| `bysort id: gen mean_y = mean(y)` | `df["mean_y"] = df.groupby("id")["y"].transform("mean")` | Group by |
+| `regress y x1 x2` | `smf.ols("y ~ x1 + x2", df).fit()` | Hồi quy OLS |
+| `regress y x1 x2, robust` | `smf.ols("y ~ x1 + x2", df).fit(cov_type="HC1")` | OLS robust SE |
+| `xtreg y x, fe i(id)` | `PanelOLS.from_formula("y ~ x + EntityEffects", df.set_index(["id","t"])).fit()` *(linearmodels)* | Panel FE |
+| `twoway scatter y x` | `plt.scatter(df["x"], df["y"])` | Scatter |
+| `twoway line y x` | `plt.plot(df["x"], df["y"])` | Line plot |
+
+Tham khảo thêm: [pandas docs](https://pandas.pydata.org/docs/), [statsmodels docs](https://www.statsmodels.org/).
+
+## Cách nộp Python Lab
+
+Mỗi lab nộp 3 file:
+
+| File | Nội dung |
+|---|---|
+| `lab<số>_<tên>.py` hoặc `.ipynb` | Code Python + comment tiếng Việt |
+| `lab<số>_<tên>.html` (nếu Jupyter/Quarto) | Output sau render |
+| `lab<số>_<tên>.pdf` | Trả lời câu hỏi + biểu đồ (1-2 trang) |
+
+**Tiêu đề email**: `PYLAB<số>-MSSV-HọTên` → giảng viên trước hạn nộp.
+
+## Khi nào nên chọn Python?
+
+- ✅ Muốn học **data science + AI/ML** lâu dài
+- ✅ Định làm **khoá luận** có web scraping, NLP, hoặc API
+- ✅ Đã quen Python rồi (lập trình từ trước)
+- ✅ Muốn **automation** (tự động chạy báo cáo định kỳ)
+
+Khi **R** hợp hơn:
+- Chuyên về thống kê + visualization học thuật
+
+Khi **Stata** hợp hơn:
+- Phòng máy FTU + cộng đồng kinh tế lượng cổ điển
+
+## Bắt đầu ở đâu?
+
+→ [Lab 0 — Cài Python + pandas + Jupyter](lab-00.qmd)

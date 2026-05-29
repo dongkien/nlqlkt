@@ -272,13 +272,15 @@ Phân tích **mô hình chính quyền 2 cấp** (Luật 72/2025) qua khung Oate
 4. **Đọc thêm** về 4 cực động lực Đại hội XIV.
 
 ::: {.callout-tip}
-## 🔧 Stata/R Lab 12 (bonus 5%)
+## 🔧 Stata / R / Python Lab 12 (bonus 5%)
 
 Bài này có lab **so sánh PCI / PAPI / PAR Index** cho 34 tỉnh trong Stata: merge 3 dataset, tính correlation, scatter, ranking.
 
 → [**Bắt đầu Lab 12 — PCI/PAPI/PAR theo tỉnh**](../stata-lab/lab-12.qmd) *(~30 phút)*
 
 → [**Hoặc dùng R Lab 12**](../r-lab/lab-12.qmd) — phiên bản free, ggplot2 đẹp
+
+→ [**Hoặc dùng Python Lab 12**](../python-lab/lab-12.qmd) — pandas + matplotlib, mạnh nhất cho data science
 :::
 
 ## Đọc thêm

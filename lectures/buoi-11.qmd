@@ -258,13 +258,15 @@ Mô phỏng **quyết định NHNN** trong 3 vòng kịch bản:
 4. **Đọc thêm** Luật 72/2025/QH15 và Nghị quyết 202/2025/QH15.
 
 ::: {.callout-tip}
-## 🔧 Stata/R Lab 11 (bonus 5%)
+## 🔧 Stata / R / Python Lab 11 (bonus 5%)
 
 Bài này có lab **event study Khủng hoảng châu Á 1997** trong Stata: phân tích phản ứng GDP, tỷ giá, lạm phát các nước quanh tháng 7/1997.
 
 → [**Bắt đầu Lab 11 — Event study Khủng hoảng Á 1997**](../stata-lab/lab-11.qmd) *(~30 phút)*
 
 → [**Hoặc dùng R Lab 11**](../r-lab/lab-11.qmd) — phiên bản free, ggplot2 đẹp
+
+→ [**Hoặc dùng Python Lab 11**](../python-lab/lab-11.qmd) — pandas + matplotlib, mạnh nhất cho data science
 :::
 
 ## Đọc thêm
