@@ -1,6 +1,6 @@
 ---
 title: "Người hướng dẫn"
-subtitle: "Đội ngũ giảng viên Bộ môn Kinh tế và Quản lý — Viện KT&KDQT, ĐH Ngoại Thương"
+subtitle: "Giảng viên phụ trách học liệu — Bộ môn Kinh tế và Quản lý, Viện KT&KDQT, ĐH Ngoại Thương"
 toc: true
 ---
 
@@ -8,124 +8,63 @@ toc: true
 
 **Viện Kinh tế và Kinh doanh Quốc tế** — Trường Đại học Ngoại Thương.
 
-Bộ môn Kinh tế và Quản lý phụ trách giảng dạy môn **Nguyên lý Quản lý Kinh tế** cho sinh viên cử nhân năm 3-4 các ngành Kinh tế, Quản lý và liên quan.
+Bộ môn phụ trách giảng dạy môn **Nguyên lý Quản lý Kinh tế** cho sinh viên cử nhân năm 3-4 các ngành Kinh tế, Quản lý và liên quan.
 
-## Đội ngũ giảng viên
-
-### Trưởng Bộ môn
+## Giảng viên phụ trách học liệu
 
 ::: {.callout-note appearance="simple"}
 **TS. Đỗ Ngọc Kiên** *(Trưởng Bộ môn)*
 
 - 📧 [dongockien@ftu.edu.vn](mailto:dongockien@ftu.edu.vn)
-- 📞 0988 303 023
-- 🏛️ Trụ sở HN
+- 🏛️ Bộ môn Kinh tế và Quản lý, Viện KT&KDQT — Trường ĐH Ngoại Thương
 :::
 
-### Các giảng viên khác
-
-::: {.grid}
-
-::: {.g-col-12 .g-col-md-6}
-
-#### Trụ sở Hà Nội
-
-**TS. Nguyễn Thị Việt Hoa**
-- 📧 ntvthoa@ftu.edu.vn
-- 📞 0904 222 666
-
-**ThS. Đinh Hoàng Minh**
-- 📧 hoangminh007@ftu.edu.vn
-- 📞 0938 279 792
-
-**TS. Trần Thanh Phương**
-- 📧 Phuong.tranthanh@ftu.edu.vn
-- 📞 0909 634 388
-
-**PGS. TS. Trần Thị Ngọc Quyên**
-- 📧 quyenttn@ftu.edu.vn
-- 📞 0912 217 789
-
-:::
-
-::: {.g-col-12 .g-col-md-6}
-
-#### Trụ sở Hà Nội (tiếp)
-
-**TS. Cao Thị Hồng Vinh**
-- 📧 caovinhftu@ftu.edu.vn
-- 📞 0988 002 401
-
-**TS. Hoàng Hương Giang**
-- 📧 hoanghuonggiang@ftu.edu.vn
-- 📞 0988 161 658
-
-**PGS. TS. Nguyễn Thị Thùy Vinh**
-- 📧 vinhntt@ftu.edu.vn
-- 📞 0977 514 377
-
-:::
-
-:::
-
-::: {.grid}
-
-::: {.g-col-12}
-
-#### Cơ sở II (TP.HCM)
-
-| Họ và tên | Email | Điện thoại |
-|---|---|---|
-| **TS. Nguyễn Quỳnh Hương** | nguyenquynhhuong.cs2@ftu.edu.vn | — |
-| **ThS. Trương Bích Phương** | truongbichphuong.cs2@ftu.edu.vn | 0977 418 414 |
-| **ThS. Phạm Thanh Dung** | phamthanhdung.cs2@ftu.edu.vn | 0936 154 865 |
-
-:::
-
-:::
+Bộ học liệu mở này được biên soạn và phát triển dưới sự phụ trách của TS. Đỗ Ngọc Kiên. Các giảng viên khác trong Bộ môn có thể tham gia giảng dạy môn học theo phân công của Bộ môn từng học kỳ.
 
 ## Vai trò trong môn học
 
 | Vai trò | Trách nhiệm |
 |---|---|
-| **Giảng viên phụ trách** | Giảng lý thuyết, hướng dẫn thảo luận, chấm điểm |
+| **Giảng viên phụ trách lớp** | Giảng lý thuyết, hướng dẫn thảo luận, chấm điểm |
 | **Trợ giảng (TA)** | Hỗ trợ thực hành, chấm bài tập lớn, giải đáp Stata/R |
 | **Trưởng Bộ môn** | Phê duyệt đề cương, đề thi, chính sách chấm |
+
+Thông tin chi tiết về giảng viên đứng lớp và trợ giảng từng học kỳ sẽ được thông báo trực tiếp tại lớp.
 
 ## Cách liên hệ
 
 ### Câu hỏi học thuật
 
-Liên hệ trực tiếp **giảng viên phụ trách lớp** của bạn (xem lịch dạy) qua email. Phản hồi thường trong **2-3 ngày làm việc**.
+Liên hệ trực tiếp **giảng viên đứng lớp** của bạn (xem thông báo đầu kỳ) qua email FTU. Phản hồi thường trong **2-3 ngày làm việc**.
 
-### Câu hỏi đề cương + đánh giá
+### Câu hỏi về đề cương + đánh giá
 
-Liên hệ **Trưởng Bộ môn**: [dongockien@ftu.edu.vn](mailto:dongockien@ftu.edu.vn)
+Liên hệ qua Bộ môn Kinh tế và Quản lý hoặc trực tiếp Trưởng Bộ môn: [dongockien@ftu.edu.vn](mailto:dongockien@ftu.edu.vn).
 
-### Câu hỏi hỗ trợ Stata/R
+### Câu hỏi hỗ trợ Stata/R Lab
 
-- **Trên lớp**: hỏi giảng viên trực tiếp
-- **Ngoài giờ**: dùng group chat của lớp (Zalo/Teams)
+- **Trên lớp**: hỏi giảng viên hoặc trợ giảng trực tiếp
+- **Ngoài giờ**: sử dụng kênh liên lạc của lớp (do giảng viên thiết lập)
 - **Phòng máy FTU**: liên hệ trợ giảng (TA) khi đến phòng máy
 
 ## Hoạt động nghiên cứu của Bộ môn
 
-Các giảng viên Bộ môn Kinh tế và Quản lý hoạt động trong **các lĩnh vực nghiên cứu chính**:
+Bộ môn Kinh tế và Quản lý hoạt động trong các lĩnh vực nghiên cứu chính:
 
 - **Kinh tế phát triển**: tăng trưởng, năng suất, công nghiệp hoá
 - **Kinh tế quốc tế**: thương mại, FDI, hội nhập
-- **Quản lý nhà nước**: chính sách công, quản trị địa phương
+- **Quản lý nhà nước về kinh tế**: chính sách công, quản trị địa phương
 - **Kinh tế lượng ứng dụng**: chính sách công, tài chính, lao động
 
-Sinh viên quan tâm có thể liên hệ giảng viên để tham gia các dự án nghiên cứu, hoặc đăng ký làm khoá luận tốt nghiệp.
+Sinh viên quan tâm có thể liên hệ Bộ môn để tham gia các dự án nghiên cứu, hoặc đăng ký làm khoá luận tốt nghiệp.
 
 ## Phê duyệt đề cương
 
-::: {.callout-note}
+::: {.callout-note appearance="simple"}
 - **Trưởng Bộ môn**: TS. Đỗ Ngọc Kiên
-- **Viện trưởng**: PGS. TS. Bùi Thị Lý
+- **Viện trưởng**: PGS. TS. Bùi Thị Lý *(theo đề cương chính thức)*
 :::
 
 ---
 
-*Trang này được cập nhật theo từng học kỳ. Mọi thay đổi nhân sự sẽ được thông báo trực tiếp tại các lớp.*
+*Trang này chỉ giới thiệu giảng viên phụ trách học liệu. Thông tin về toàn bộ Bộ môn và đội ngũ giảng viên có thể tham khảo tại website chính thức của Trường ĐH Ngoại Thương.*

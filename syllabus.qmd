@@ -23,19 +23,11 @@ date: last-modified
 
 ## 2. Đội ngũ giảng viên
 
-| STT | Họ và tên | Email FTU | Trụ sở |
-|:---:|---|---|:---:|
-| 1 | TS. Nguyễn Thị Việt Hoa | ntvthoa@ftu.edu.vn | HN |
-| 2 | ThS. Đinh Hoàng Minh | hoangminh007@ftu.edu.vn | HN |
-| 3 | **TS. Đỗ Ngọc Kiên** *(Trưởng Bộ môn)* | dongockien@ftu.edu.vn | HN |
-| 4 | TS. Trần Thanh Phương | Phuong.tranthanh@ftu.edu.vn | HN |
-| 5 | PGS. TS. Trần Thị Ngọc Quyên | quyenttn@ftu.edu.vn | HN |
-| 6 | TS. Cao Thị Hồng Vinh | caovinhftu@ftu.edu.vn | HN |
-| 7 | TS. Hoàng Hương Giang | hoanghuonggiang@ftu.edu.vn | HN |
-| 8 | PGS. TS. Nguyễn Thị Thùy Vinh | vinhntt@ftu.edu.vn | HN |
-| 9 | TS. Nguyễn Quỳnh Hương | nguyenquynhhuong.cs2@ftu.edu.vn | CS II |
-| 10 | ThS. Trương Bích Phương | truongbichphuong.cs2@ftu.edu.vn | CS II |
-| 11 | ThS. Phạm Thanh Dung | phamthanhdung.cs2@ftu.edu.vn | CS II |
+Học phần được giảng dạy bởi các giảng viên của **Bộ môn Kinh tế và Quản lý** — Viện Kinh tế và Kinh doanh Quốc tế, Trường ĐH Ngoại Thương.
+
+**Giảng viên phụ trách học liệu**: TS. Đỗ Ngọc Kiên *(Trưởng Bộ môn)* — [dongockien@ftu.edu.vn](mailto:dongockien@ftu.edu.vn).
+
+Phân công giảng viên đứng lớp và trợ giảng từng học kỳ sẽ được Bộ môn thông báo trực tiếp tới sinh viên đầu kỳ. Xem thêm tại trang [Người hướng dẫn](nguoi-huong-dan.qmd).
 
 ## 3. Mô tả học phần
 
