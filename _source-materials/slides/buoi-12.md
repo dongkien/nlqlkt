@@ -1,6 +1,6 @@
 ## Slide 1
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-12/ppt/media/image-1-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-12/ppt/media/image-1-1.png "Image 0")
 
 DTU301 · CHƯƠNG 5 · QUẢN TRỊ ĐP & VÙNG
 
@@ -18,7 +18,7 @@ Năm học 2025--2026
 
 ## Slide 2
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-12/ppt/media/image-2-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-12/ppt/media/image-2-1.png "Image 0")
 
 01
 
@@ -62,7 +62,7 @@ DTU301 · Buổi 12 · Chương 5 --- Quản trị địa phương & Vùng
 
 3
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-12/ppt/media/image-3-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-12/ppt/media/image-3-1.png "Image 0")
 
 ## Slide 4
 
@@ -82,7 +82,7 @@ DTU301 · Buổi 12 · Chương 5 --- Quản trị địa phương & Vùng
 
 4
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-12/ppt/media/image-4-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-12/ppt/media/image-4-1.png "Image 0")
 
 ## Slide 5
 
@@ -102,11 +102,11 @@ DTU301 · Buổi 12 · Chương 5 --- Quản trị địa phương & Vùng
 
 5
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-12/ppt/media/image-5-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-12/ppt/media/image-5-1.png "Image 0")
 
 ## Slide 6
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-12/ppt/media/image-6-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-12/ppt/media/image-6-1.png "Image 0")
 
 02
 
@@ -132,7 +132,7 @@ DTU301 · Buổi 12 · Chương 5 --- Quản trị địa phương & Vùng
 
 7
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-12/ppt/media/image-7-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-12/ppt/media/image-7-1.png "Image 0")
 
 ## Slide 8
 
@@ -152,7 +152,7 @@ DTU301 · Buổi 12 · Chương 5 --- Quản trị địa phương & Vùng
 
 8
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-12/ppt/media/image-8-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-12/ppt/media/image-8-1.png "Image 0")
 
 ## Slide 9
 
@@ -172,11 +172,11 @@ DTU301 · Buổi 12 · Chương 5 --- Quản trị địa phương & Vùng
 
 9
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-12/ppt/media/image-9-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-12/ppt/media/image-9-1.png "Image 0")
 
 ## Slide 10
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-12/ppt/media/image-10-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-12/ppt/media/image-10-1.png "Image 0")
 
 03
 
@@ -202,7 +202,7 @@ DTU301 · Buổi 12 · Chương 5 --- Quản trị địa phương & Vùng
 
 11
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-12/ppt/media/image-11-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-12/ppt/media/image-11-1.png "Image 0")
 
 ## Slide 12
 
@@ -222,7 +222,7 @@ DTU301 · Buổi 12 · Chương 5 --- Quản trị địa phương & Vùng
 
 12
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-12/ppt/media/image-12-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-12/ppt/media/image-12-1.png "Image 0")
 
 ## Slide 13
 
@@ -242,11 +242,11 @@ DTU301 · Buổi 12 · Chương 5 --- Quản trị địa phương & Vùng
 
 13
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-12/ppt/media/image-13-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-12/ppt/media/image-13-1.png "Image 0")
 
 ## Slide 14
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-12/ppt/media/image-14-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-12/ppt/media/image-14-1.png "Image 0")
 
 04
 
@@ -272,7 +272,7 @@ DTU301 · Buổi 12 · Chương 5 --- Quản trị địa phương & Vùng
 
 15
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-12/ppt/media/image-15-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-12/ppt/media/image-15-1.png "Image 0")
 
 ## Slide 16
 
@@ -292,7 +292,7 @@ DTU301 · Buổi 12 · Chương 5 --- Quản trị địa phương & Vùng
 
 16
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-12/ppt/media/image-16-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-12/ppt/media/image-16-1.png "Image 0")
 
 ## Slide 17
 
@@ -312,7 +312,7 @@ DTU301 · Buổi 12 · Chương 5 --- Quản trị địa phương & Vùng
 
 17
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-12/ppt/media/image-17-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-12/ppt/media/image-17-1.png "Image 0")
 
 ## Slide 18
 
@@ -338,11 +338,11 @@ DTU301 · Buổi 12 · Chương 5 --- Quản trị địa phương & Vùng
 
 18
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-12/ppt/media/image-18-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-12/ppt/media/image-18-1.png "Image 0")
 
 ## Slide 19
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-12/ppt/media/image-19-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-12/ppt/media/image-19-1.png "Image 0")
 
 ★
 
@@ -368,7 +368,7 @@ DTU301 · Buổi 12 · Chương 5 --- Quản trị địa phương & Vùng
 
 20
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-12/ppt/media/image-20-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-12/ppt/media/image-20-1.png "Image 0")
 
 ## Slide 21
 
@@ -387,11 +387,11 @@ DTU301 · Buổi 12 · Chương 5 --- Quản trị địa phương & Vùng
 
 21
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-12/ppt/media/image-21-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-12/ppt/media/image-21-1.png "Image 0")
 
 ## Slide 22
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-12/ppt/media/image-22-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-12/ppt/media/image-22-1.png "Image 0")
 
 Cảm ơn --- chuyển sang Buổi 13
 

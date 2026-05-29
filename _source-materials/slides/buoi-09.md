@@ -1,6 +1,6 @@
 ## Slide 1
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-09/ppt/media/image-1-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-09/ppt/media/image-1-1.png "Image 0")
 
 DTU301 · CHƯƠNG 4 · QLKT VĨ MÔ (KT MỞ)
 
@@ -18,7 +18,7 @@ Năm học 2025--2026
 
 ## Slide 2
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-09/ppt/media/image-2-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-09/ppt/media/image-2-1.png "Image 0")
 
 01
 
@@ -62,7 +62,7 @@ DTU301 · Buổi 9 · Chương 4 --- QLKT vĩ mô (KT mở)
 
 3
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-09/ppt/media/image-3-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-09/ppt/media/image-3-1.png "Image 0")
 
 ## Slide 4
 
@@ -82,7 +82,7 @@ DTU301 · Buổi 9 · Chương 4 --- QLKT vĩ mô (KT mở)
 
 4
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-09/ppt/media/image-4-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-09/ppt/media/image-4-1.png "Image 0")
 
 ## Slide 5
 
@@ -102,7 +102,7 @@ DTU301 · Buổi 9 · Chương 4 --- QLKT vĩ mô (KT mở)
 
 5
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-09/ppt/media/image-5-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-09/ppt/media/image-5-1.png "Image 0")
 
 ## Slide 6
 
@@ -122,7 +122,7 @@ DTU301 · Buổi 9 · Chương 4 --- QLKT vĩ mô (KT mở)
 
 6
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-09/ppt/media/image-6-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-09/ppt/media/image-6-1.png "Image 0")
 
 ## Slide 7
 
@@ -142,11 +142,11 @@ DTU301 · Buổi 9 · Chương 4 --- QLKT vĩ mô (KT mở)
 
 7
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-09/ppt/media/image-7-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-09/ppt/media/image-7-1.png "Image 0")
 
 ## Slide 8
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-09/ppt/media/image-8-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-09/ppt/media/image-8-1.png "Image 0")
 
 02
 
@@ -172,7 +172,7 @@ DTU301 · Buổi 9 · Chương 4 --- QLKT vĩ mô (KT mở)
 
 9
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-09/ppt/media/image-9-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-09/ppt/media/image-9-1.png "Image 0")
 
 ## Slide 10
 
@@ -192,7 +192,7 @@ DTU301 · Buổi 9 · Chương 4 --- QLKT vĩ mô (KT mở)
 
 10
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-09/ppt/media/image-10-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-09/ppt/media/image-10-1.png "Image 0")
 
 ## Slide 11
 
@@ -212,7 +212,7 @@ DTU301 · Buổi 9 · Chương 4 --- QLKT vĩ mô (KT mở)
 
 11
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-09/ppt/media/image-11-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-09/ppt/media/image-11-1.png "Image 0")
 
 ## Slide 12
 
@@ -232,11 +232,11 @@ DTU301 · Buổi 9 · Chương 4 --- QLKT vĩ mô (KT mở)
 
 12
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-09/ppt/media/image-12-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-09/ppt/media/image-12-1.png "Image 0")
 
 ## Slide 13
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-09/ppt/media/image-13-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-09/ppt/media/image-13-1.png "Image 0")
 
 03
 
@@ -262,7 +262,7 @@ DTU301 · Buổi 9 · Chương 4 --- QLKT vĩ mô (KT mở)
 
 14
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-09/ppt/media/image-14-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-09/ppt/media/image-14-1.png "Image 0")
 
 ## Slide 15
 
@@ -282,7 +282,7 @@ DTU301 · Buổi 9 · Chương 4 --- QLKT vĩ mô (KT mở)
 
 15
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-09/ppt/media/image-15-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-09/ppt/media/image-15-1.png "Image 0")
 
 ## Slide 16
 
@@ -302,11 +302,11 @@ DTU301 · Buổi 9 · Chương 4 --- QLKT vĩ mô (KT mở)
 
 16
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-09/ppt/media/image-16-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-09/ppt/media/image-16-1.png "Image 0")
 
 ## Slide 17
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-09/ppt/media/image-17-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-09/ppt/media/image-17-1.png "Image 0")
 
 04
 
@@ -332,7 +332,7 @@ DTU301 · Buổi 9 · Chương 4 --- QLKT vĩ mô (KT mở)
 
 18
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-09/ppt/media/image-18-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-09/ppt/media/image-18-1.png "Image 0")
 
 ## Slide 19
 
@@ -352,11 +352,11 @@ DTU301 · Buổi 9 · Chương 4 --- QLKT vĩ mô (KT mở)
 
 19
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-09/ppt/media/image-19-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-09/ppt/media/image-19-1.png "Image 0")
 
 ## Slide 20
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-09/ppt/media/image-20-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-09/ppt/media/image-20-1.png "Image 0")
 
 ★
 
@@ -382,7 +382,7 @@ DTU301 · Buổi 9 · Chương 4 --- QLKT vĩ mô (KT mở)
 
 21
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-09/ppt/media/image-21-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-09/ppt/media/image-21-1.png "Image 0")
 
 ## Slide 22
 
@@ -401,11 +401,11 @@ DTU301 · Buổi 9 · Chương 4 --- QLKT vĩ mô (KT mở)
 
 22
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-09/ppt/media/image-22-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-09/ppt/media/image-22-1.png "Image 0")
 
 ## Slide 23
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-09/ppt/media/image-23-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-09/ppt/media/image-23-1.png "Image 0")
 
 Cảm ơn --- chuyển sang Buổi 10
 

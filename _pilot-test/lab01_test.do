@@ -3,7 +3,7 @@
 
 clear all
 set more off
-cd "/home/kiendn/material-building/_pilot-test"
+cd "/home/kiendn/nlqlkt/_pilot-test"
 log using "lab01_test.log", replace text
 
 * === Phần 1: Tạo dataset PPF ===

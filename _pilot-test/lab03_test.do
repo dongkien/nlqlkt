@@ -1,7 +1,7 @@
 * === Lab 3 Pilot Test ===
 clear all
 set more off
-cd "/home/kiendn/material-building/_pilot-test"
+cd "/home/kiendn/nlqlkt/_pilot-test"
 log using "lab03_test.log", replace text
 
 clear

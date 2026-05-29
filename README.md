@@ -9,7 +9,7 @@ Quarto (single source)  →  HTML site / PDF / Slides
 ## 📁 Cấu trúc
 
 ```
-material-building/
+nlqlkt/
 ├── _quarto.yml             Cấu hình site (navbar, sidebar, theme)
 ├── index.qmd               Trang chủ
 ├── syllabus.qmd            Đề cương chi tiết
@@ -113,7 +113,7 @@ Cùng 1 file `.qmd` → ra HTML / PDF / Slide / Word.
 ```bash
 git init && git add . && git commit -m "Initial"
 git branch -M main
-git remote add origin https://github.com/<user>/material-building.git
+git remote add origin https://github.com/<user>/nlqlkt.git
 git push -u origin main
 ```
 

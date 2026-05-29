@@ -5,9 +5,9 @@
 ## 📍 Quick context (đọc 30 giây)
 
 - **Project**: Website học liệu môn **Nguyên lý Quản lý Kinh tế** (FTU, Viện KT&KDQT)
-- **Path**: `/home/kiendn/material-building/`
-- **Live URL**: https://dongkien.github.io/material-building/
-- **GitHub repo**: https://github.com/dongkien/material-building
+- **Path**: `/home/kiendn/nlqlkt/`
+- **Live URL**: https://dongkien.github.io/nlqlkt/
+- **GitHub repo**: https://github.com/dongkien/nlqlkt
 - **Tech stack**: Quarto + Stata MP + R + nbstata + Netlify-like (GitHub Pages)
 - **Người chính**: TS. Đỗ Ngọc Kiên (Trưởng Bộ môn) + đội 11 giảng viên FTU
 
@@ -52,7 +52,7 @@
 
 ```bash
 # === LÀM VIỆC LOCAL ===
-cd /home/kiendn/material-building
+cd /home/kiendn/nlqlkt
 source .venv/bin/activate
 export PATH="$HOME/.local/bin:$PATH"
 
@@ -79,7 +79,7 @@ stata-mp -b do myfile.do
 ## 📁 Cấu trúc thư mục
 
 ```
-material-building/
+nlqlkt/
 ├── _quarto.yml              ← config navbar, sidebar, theme
 ├── index.qmd                ← trang chủ
 ├── syllabus.qmd             ← đề cương
@@ -137,14 +137,14 @@ claude
 # Rồi nói: "tiếp Material Building, đọc PROJECT-STATE.md"
 ```
 
-Memory file `~/.claude/projects/-home-kiendn/memory/material-building.md` sẽ auto-load với context.
+Memory file `~/.claude/projects/-home-kiendn/memory/nlqlkt.md` sẽ auto-load với context.
 
 ## 📞 Liên hệ + nhận diện
 
 Nếu file này không khớp với những gì bạn nghĩ Claude nhớ:
-- Memory: `cat ~/.claude/projects/-home-kiendn/memory/material-building.md`
-- Git log: `cd /home/kiendn/material-building && git log --oneline | head -20`
-- File tree: `find /home/kiendn/material-building -type f -name "*.qmd" | head -20`
+- Memory: `cat ~/.claude/projects/-home-kiendn/memory/nlqlkt.md`
+- Git log: `cd /home/kiendn/nlqlkt && git log --oneline | head -20`
+- File tree: `find /home/kiendn/nlqlkt -type f -name "*.qmd" | head -20`
 
 ## 🎯 Kế hoạch dài hạn (nếu user muốn mở rộng)
 

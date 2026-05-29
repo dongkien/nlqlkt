@@ -1,6 +1,6 @@
 ## Slide 1
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-15/ppt/media/image-1-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-15/ppt/media/image-1-1.png "Image 0")
 
 DTU301 · SEMINAR · BUỔI 15
 
@@ -18,7 +18,7 @@ Năm học 2025--2026
 
 ## Slide 2
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-15/ppt/media/image-2-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-15/ppt/media/image-2-1.png "Image 0")
 
 01
 
@@ -62,7 +62,7 @@ DTU301 · Buổi 15 · Seminar tổng hợp và ứng dụng
 
 3
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-15/ppt/media/image-3-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-15/ppt/media/image-3-1.png "Image 0")
 
 ## Slide 4
 
@@ -82,7 +82,7 @@ DTU301 · Buổi 15 · Seminar tổng hợp và ứng dụng
 
 4
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-15/ppt/media/image-4-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-15/ppt/media/image-4-1.png "Image 0")
 
 ## Slide 5
 
@@ -102,7 +102,7 @@ DTU301 · Buổi 15 · Seminar tổng hợp và ứng dụng
 
 5
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-15/ppt/media/image-5-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-15/ppt/media/image-5-1.png "Image 0")
 
 ## Slide 6
 
@@ -122,11 +122,11 @@ DTU301 · Buổi 15 · Seminar tổng hợp và ứng dụng
 
 6
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-15/ppt/media/image-6-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-15/ppt/media/image-6-1.png "Image 0")
 
 ## Slide 7
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-15/ppt/media/image-7-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-15/ppt/media/image-7-1.png "Image 0")
 
 02
 
@@ -152,7 +152,7 @@ DTU301 · Buổi 15 · Seminar tổng hợp và ứng dụng
 
 8
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-15/ppt/media/image-8-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-15/ppt/media/image-8-1.png "Image 0")
 
 ## Slide 9
 
@@ -172,7 +172,7 @@ DTU301 · Buổi 15 · Seminar tổng hợp và ứng dụng
 
 9
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-15/ppt/media/image-9-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-15/ppt/media/image-9-1.png "Image 0")
 
 ## Slide 10
 
@@ -192,11 +192,11 @@ DTU301 · Buổi 15 · Seminar tổng hợp và ứng dụng
 
 10
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-15/ppt/media/image-10-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-15/ppt/media/image-10-1.png "Image 0")
 
 ## Slide 11
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-15/ppt/media/image-11-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-15/ppt/media/image-11-1.png "Image 0")
 
 03
 
@@ -222,7 +222,7 @@ DTU301 · Buổi 15 · Seminar tổng hợp và ứng dụng
 
 12
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-15/ppt/media/image-12-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-15/ppt/media/image-12-1.png "Image 0")
 
 ## Slide 13
 
@@ -242,7 +242,7 @@ DTU301 · Buổi 15 · Seminar tổng hợp và ứng dụng
 
 13
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-15/ppt/media/image-13-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-15/ppt/media/image-13-1.png "Image 0")
 
 ## Slide 14
 
@@ -262,11 +262,11 @@ DTU301 · Buổi 15 · Seminar tổng hợp và ứng dụng
 
 14
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-15/ppt/media/image-14-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-15/ppt/media/image-14-1.png "Image 0")
 
 ## Slide 15
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-15/ppt/media/image-15-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-15/ppt/media/image-15-1.png "Image 0")
 
 04
 
@@ -292,7 +292,7 @@ DTU301 · Buổi 15 · Seminar tổng hợp và ứng dụng
 
 16
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-15/ppt/media/image-16-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-15/ppt/media/image-16-1.png "Image 0")
 
 ## Slide 17
 
@@ -312,11 +312,11 @@ DTU301 · Buổi 15 · Seminar tổng hợp và ứng dụng
 
 17
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-15/ppt/media/image-17-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-15/ppt/media/image-17-1.png "Image 0")
 
 ## Slide 18
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-15/ppt/media/image-18-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-15/ppt/media/image-18-1.png "Image 0")
 
 ★
 
@@ -342,11 +342,11 @@ DTU301 · Buổi 15 · Seminar tổng hợp và ứng dụng
 
 19
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-15/ppt/media/image-19-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-15/ppt/media/image-19-1.png "Image 0")
 
 ## Slide 20
 
-![preencoded.png](/home/kiendn/material-building/_source-materials/slides/media-15/ppt/media/image-20-1.png "Image 0")
+![preencoded.png](/home/kiendn/nlqlkt/_source-materials/slides/media-15/ppt/media/image-20-1.png "Image 0")
 
 Cảm ơn --- Kết thúc học phần
 
