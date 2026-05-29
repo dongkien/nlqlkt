@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi" xml:lang="vi"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Python Lab 0 — Cài Python + pandas + Jupyter – Nguyên lý Quản lý Kinh tế</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-3a25ebfbbb03e529eea34e993f2a5140.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-b0e610993ba9119e54b64e8e30a4d128.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": true,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="styles/custom.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Nguyên lý Quản lý Kinh tế</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Trang chủ</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html"> 
+<span class="menu-text">Đề cương</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../schedule.html"> 
+<span class="menu-text">Lịch học</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../lectures/index.html"> 
+<span class="menu-text">Bài giảng</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-stata--r--python-lab" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Stata / R / Python Lab</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-stata--r--python-lab">    
+        <li>
+    <a class="dropdown-item" href="../stata-lab/index.html">
+ <span class="dropdown-text">Stata Lab</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../r-lab/index.html">
+ <span class="dropdown-text">R Lab</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../python-lab/index.html">
+ <span class="dropdown-text">Python Lab</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../problem-sets/index.html"> 
+<span class="menu-text">Tiểu luận / Bài tập</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../exams/index.html"> 
+<span class="menu-text">Đánh giá</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../nguoi-huong-dan.html"> 
+<span class="menu-text">Người hướng dẫn</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../python-lab/lab-00.html">Hướng dẫn</a></li><li class="breadcrumb-item"><a href="../python-lab/lab-00.html">Python Lab 0 — Cài Python + pandas + Jupyter</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">← Trang chủ</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../python-lab/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Python Lab</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Hướng dẫn</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../python-lab/lab-00.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Python Lab 0 — Cài Python + pandas + Jupyter</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Lab theo buổi</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../python-lab/lab-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Python Lab 1 — Vẽ PPF và tính chi phí cơ hội</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../python-lab/lab-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Python Lab 2 — Phân tích chi tiêu công Việt Nam</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../python-lab/lab-03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Python Lab 3 — Tính HHI cho 5 ngành Việt Nam</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../python-lab/lab-04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Python Lab 4 — Mô phỏng thuế Pigou</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../python-lab/lab-05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Python Lab 5 — DNNN vs KTTN vs FDI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../python-lab/lab-06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Python Lab 6 — Ước lượng Cobb-Douglas Việt Nam</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../python-lab/lab-07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Python Lab 7 — Mô phỏng IS-LM</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../python-lab/lab-08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Python Lab 8 — Đường Phillips Việt Nam 2010-2024</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../python-lab/lab-09.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Python Lab 9 — Tính NEER và REER VND</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../python-lab/lab-10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Python Lab 10 — Mundell-Fleming bằng dữ liệu lịch sử</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../python-lab/lab-11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Python Lab 11 — Event study Khủng hoảng châu Á 1997</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../python-lab/lab-12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Python Lab 12 — PCI / PAPI / PAR Index theo tỉnh</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../python-lab/lab-13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Python Lab 13 — So sánh 6 vùng KT-XH</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../python-lab/lab-14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Python Lab 14 — Capstone phân tích chính sách</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../python-lab/lab-15.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Python Lab 15 — Xuất bảng + biểu đồ cho thuyết trình</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Trong bài</h2>
+   
+  <ul>
+  <li><a href="#cài-python-môi-trường" id="toc-cài-python-môi-trường" class="nav-link active" data-scroll-target="#cài-python-môi-trường">1. Cài Python + môi trường</a>
+  <ul class="collapse">
+  <li><a href="#phương-án-a-anaconda-khuyên-dùng-cho-người-mới" id="toc-phương-án-a-anaconda-khuyên-dùng-cho-người-mới" class="nav-link" data-scroll-target="#phương-án-a-anaconda-khuyên-dùng-cho-người-mới">Phương án A — Anaconda (khuyên dùng cho người mới)</a></li>
+  <li><a href="#phương-án-b-python.org-pip-gọn-hơn" id="toc-phương-án-b-python.org-pip-gọn-hơn" class="nav-link" data-scroll-target="#phương-án-b-python.org-pip-gọn-hơn">Phương án B — Python.org + pip (gọn hơn)</a></li>
+  <li><a href="#phương-án-c-google-colab-không-cài-đặt" id="toc-phương-án-c-google-colab-không-cài-đặt" class="nav-link" data-scroll-target="#phương-án-c-google-colab-không-cài-đặt">Phương án C — Google Colab (không cài đặt)</a></li>
+  </ul></li>
+  <li><a href="#cài-thêm-các-package-cho-kinh-tế" id="toc-cài-thêm-các-package-cho-kinh-tế" class="nav-link" data-scroll-target="#cài-thêm-các-package-cho-kinh-tế">2. Cài thêm các package cho kinh tế</a></li>
+  <li><a href="#script-python-đầu-tiên" id="toc-script-python-đầu-tiên" class="nav-link" data-scroll-target="#script-python-đầu-tiên">3. Script Python đầu tiên</a></li>
+  <li><a href="#khám-phá-dataset-bốn-lệnh-cốt-lõi" id="toc-khám-phá-dataset-bốn-lệnh-cốt-lõi" class="nav-link" data-scroll-target="#khám-phá-dataset-bốn-lệnh-cốt-lõi">4. Khám phá dataset — bốn lệnh cốt lõi</a>
+  <ul class="collapse">
+  <li><a href="#info-mô-tả-cấu-trúc" id="toc-info-mô-tả-cấu-trúc" class="nav-link" data-scroll-target="#info-mô-tả-cấu-trúc"><code>.info()</code> — mô tả cấu trúc</a></li>
+  <li><a href="#describe-thống-kê-mô-tả" id="toc-describe-thống-kê-mô-tả" class="nav-link" data-scroll-target="#describe-thống-kê-mô-tả"><code>.describe()</code> — thống kê mô tả</a></li>
+  <li><a href="#value_counts-bảng-tần-suất" id="toc-value_counts-bảng-tần-suất" class="nav-link" data-scroll-target="#value_counts-bảng-tần-suất"><code>.value_counts()</code> — bảng tần suất</a></li>
+  <li><a href="#xem-dòng-dữ-liệu" id="toc-xem-dòng-dữ-liệu" class="nav-link" data-scroll-target="#xem-dòng-dữ-liệu">Xem dòng dữ liệu</a></li>
+  </ul></li>
+  <li><a href="#tạo-cột-lọc-sort" id="toc-tạo-cột-lọc-sort" class="nav-link" data-scroll-target="#tạo-cột-lọc-sort">5. Tạo cột + lọc + sort</a>
+  <ul class="collapse">
+  <li><a href="#groupby-bysort-của-stata" id="toc-groupby-bysort-của-stata" class="nav-link" data-scroll-target="#groupby-bysort-của-stata">groupby — bysort của Stata</a></li>
+  </ul></li>
+  <li><a href="#vẽ-biểu-đồ-matplotlib-seaborn" id="toc-vẽ-biểu-đồ-matplotlib-seaborn" class="nav-link" data-scroll-target="#vẽ-biểu-đồ-matplotlib-seaborn">6. Vẽ biểu đồ — matplotlib + seaborn</a>
+  <ul class="collapse">
+  <li><a href="#scatter-plot" id="toc-scatter-plot" class="nav-link" data-scroll-target="#scatter-plot">Scatter plot</a></li>
+  <li><a href="#bar-chart-theo-nhóm" id="toc-bar-chart-theo-nhóm" class="nav-link" data-scroll-target="#bar-chart-theo-nhóm">Bar chart theo nhóm</a></li>
+  <li><a href="#histogram" id="toc-histogram" class="nav-link" data-scroll-target="#histogram">Histogram</a></li>
+  </ul></li>
+  <li><a href="#lưu-output" id="toc-lưu-output" class="nav-link" data-scroll-target="#lưu-output">7. Lưu output</a>
+  <ul class="collapse">
+  <li><a href="#lưu-dataset" id="toc-lưu-dataset" class="nav-link" data-scroll-target="#lưu-dataset">Lưu dataset</a></li>
+  <li><a href="#lưu-biểu-đồ" id="toc-lưu-biểu-đồ" class="nav-link" data-scroll-target="#lưu-biểu-đồ">Lưu biểu đồ</a></li>
+  </ul></li>
+  <li><a href="#đọc-dataset-bên-ngoài" id="toc-đọc-dataset-bên-ngoài" class="nav-link" data-scroll-target="#đọc-dataset-bên-ngoài">8. Đọc dataset bên ngoài</a></li>
+  <li><a href="#báo-cáo-bằng-jupyter-hoặc-quarto" id="toc-báo-cáo-bằng-jupyter-hoặc-quarto" class="nav-link" data-scroll-target="#báo-cáo-bằng-jupyter-hoặc-quarto">9. Báo cáo bằng Jupyter hoặc Quarto</a>
+  <ul class="collapse">
+  <li><a href="#cách-1-jupyter-notebook-đơn-giản" id="toc-cách-1-jupyter-notebook-đơn-giản" class="nav-link" data-scroll-target="#cách-1-jupyter-notebook-đơn-giản">Cách 1 — Jupyter Notebook (đơn giản)</a></li>
+  <li><a href="#cách-2-quarto-đẹp-như-cuốn-sách" id="toc-cách-2-quarto-đẹp-như-cuốn-sách" class="nav-link" data-scroll-target="#cách-2-quarto-đẹp-như-cuốn-sách">Cách 2 — Quarto (đẹp như cuốn sách)</a></li>
+  </ul></li>
+  <li><a href="#mẹo-python-hiệu-quả" id="toc-mẹo-python-hiệu-quả" class="nav-link" data-scroll-target="#mẹo-python-hiệu-quả">10. Mẹo Python hiệu quả</a></li>
+  <li><a href="#tích-hợp-với-stata-mp-tuỳ-chọn" id="toc-tích-hợp-với-stata-mp-tuỳ-chọn" class="nav-link" data-scroll-target="#tích-hợp-với-stata-mp-tuỳ-chọn">11. Tích hợp với Stata MP (tuỳ chọn)</a></li>
+  <li><a href="#deliverable-lab-0" id="toc-deliverable-lab-0" class="nav-link" data-scroll-target="#deliverable-lab-0">Deliverable Lab 0</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../python-lab/lab-00.html">Hướng dẫn</a></li><li class="breadcrumb-item"><a href="../python-lab/lab-00.html">Python Lab 0 — Cài Python + pandas + Jupyter</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Python Lab 0 — Cài Python + pandas + Jupyter</h1>
+<p class="subtitle lead">Nền tảng trước khi vào 15 lab buổi</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>🎯 Mục tiêu Lab 0
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sau Lab 0, bạn có thể:</p>
+<ul>
+<li><strong>Cài Python + Jupyter</strong> trên Windows/macOS/Linux (hoàn toàn miễn phí)</li>
+<li><strong>Cài các package</strong> cho phân tích kinh tế: pandas, numpy, matplotlib, statsmodels</li>
+<li><strong>Tải, đọc, ghi</strong> dataset (<code>.csv</code>, <code>.xlsx</code>, <code>.dta</code>)</li>
+<li><strong>Khám phá nhanh</strong> dữ liệu bằng <code>.info()</code>, <code>.describe()</code>, <code>.value_counts()</code></li>
+<li><strong>Viết script Python</strong> đầu tiên có comment tiếng Việt</li>
+<li><strong>Báo cáo</strong> bằng Jupyter Notebook hoặc Quarto</li>
+</ul>
+</div>
+</div>
+<section id="cài-python-môi-trường" class="level2">
+<h2 class="anchored" data-anchor-id="cài-python-môi-trường">1. Cài Python + môi trường</h2>
+<section id="phương-án-a-anaconda-khuyên-dùng-cho-người-mới" class="level3">
+<h3 class="anchored" data-anchor-id="phương-án-a-anaconda-khuyên-dùng-cho-người-mới">Phương án A — Anaconda (khuyên dùng cho người mới)</h3>
+<p><strong>Anaconda</strong> = Python + 100+ package khoa học + Spyder IDE + Jupyter, tất cả trong 1 lần cài.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>OS</th>
+<th>Đường dẫn</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Windows</strong></td>
+<td>https://www.anaconda.com/download → tải <code>.exe</code></td>
+</tr>
+<tr class="even">
+<td><strong>macOS</strong></td>
+<td>https://www.anaconda.com/download → tải <code>.pkg</code> cho chip Intel hoặc Apple Silicon</td>
+</tr>
+<tr class="odd">
+<td><strong>Linux/WSL</strong></td>
+<td><code>wget https://repo.anaconda.com/archive/Anaconda3-latest-Linux-x86_64.sh &amp;&amp; bash Anaconda3-latest-Linux-x86_64.sh</code></td>
+</tr>
+</tbody>
+</table>
+<p>Sau khi cài, mở <strong>Anaconda Navigator</strong> — bạn có thể chọn: - <strong>Jupyter Lab</strong> — môi trường tương tác (khuyên dùng) - <strong>Spyder</strong> — IDE giống RStudio - <strong>VS Code</strong> — IDE đa năng</p>
+</section>
+<section id="phương-án-b-python.org-pip-gọn-hơn" class="level3">
+<h3 class="anchored" data-anchor-id="phương-án-b-python.org-pip-gọn-hơn">Phương án B — Python.org + pip (gọn hơn)</h3>
+<p>Nếu bạn muốn nhẹ:</p>
+<ol type="1">
+<li><strong>Cài Python</strong>: https://www.python.org/downloads/</li>
+<li><strong>Cài Jupyter + packages</strong> trong Terminal:</li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">pip</span> install jupyterlab pandas numpy matplotlib seaborn statsmodels scikit-learn openpyxl pyreadstat linearmodels</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ol start="3" type="1">
+<li><strong>Chạy Jupyter Lab</strong>:</li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">jupyter</span> lab</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="phương-án-c-google-colab-không-cài-đặt" class="level3">
+<h3 class="anchored" data-anchor-id="phương-án-c-google-colab-không-cài-đặt">Phương án C — Google Colab (không cài đặt)</h3>
+<p>Nếu không muốn cài gì:</p>
+<ul>
+<li>Vào https://colab.research.google.com — đăng nhập Google</li>
+<li>Tạo notebook mới — Python chạy trên cloud</li>
+<li><strong>Free unlimited</strong> cho tasks nhỏ</li>
+<li>Có sẵn pandas, numpy, matplotlib, statsmodels</li>
+</ul>
+</section>
+</section>
+<section id="cài-thêm-các-package-cho-kinh-tế" class="level2">
+<h2 class="anchored" data-anchor-id="cài-thêm-các-package-cho-kinh-tế">2. Cài thêm các package cho kinh tế</h2>
+<p>Mở <strong>Jupyter Lab</strong> → tạo notebook mới → trong cell đầu:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cài package (chỉ chạy 1 lần)</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install pandas numpy matplotlib seaborn statsmodels scikit<span class="op">-</span>learn</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install openpyxl       <span class="co"># đọc Excel .xlsx</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install pyreadstat     <span class="co"># đọc Stata .dta</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install linearmodels   <span class="co"># panel data, IV</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="op">%</span>pip install wbdata         <span class="co"># World Bank API</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><code>%pip install ...</code> là cú pháp đặc biệt cho Jupyter — chạy <code>pip install</code> trong môi trường đúng.</p>
+<p>Đợi vài phút. Sau khi cài xong, <strong>restart kernel</strong> (Kernel &gt; Restart).</p>
+</section>
+<section id="script-python-đầu-tiên" class="level2">
+<h2 class="anchored" data-anchor-id="script-python-đầu-tiên">3. Script Python đầu tiên</h2>
+<p>Tạo notebook mới → đặt tên <code>lab00_&lt;ten&gt;.ipynb</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Lab 0 — Buổi học đầu tiên với Python</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Họ tên: &lt;điền tên&gt;</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co"># MSSV: &lt;điền MSSV&gt;</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Import các thư viện</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Dataset có sẵn của seaborn: mpg (giống mtcars của R)</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>mpg <span class="op">=</span> sns.load_dataset(<span class="st">"mpg"</span>)</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co"># In thông báo</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Python đang chạy. Bạn đã mở dataset mpg"</span>)</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Dataset có </span><span class="sc">{</span>mpg<span class="sc">.</span>shape[<span class="dv">0</span>]<span class="sc">}</span><span class="ss"> dòng, </span><span class="sc">{</span>mpg<span class="sc">.</span>shape[<span class="dv">1</span>]<span class="sc">}</span><span class="ss"> cột"</span>)</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Xem 5 dòng đầu</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>mpg.head()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Lưu cell</strong>: <code>Ctrl+S</code>. <strong>Chạy cell</strong>: <code>Shift+Enter</code> (chạy + xuống cell mới) hoặc <code>Ctrl+Enter</code> (chạy + ở lại).</p>
+</section>
+<section id="khám-phá-dataset-bốn-lệnh-cốt-lõi" class="level2">
+<h2 class="anchored" data-anchor-id="khám-phá-dataset-bốn-lệnh-cốt-lõi">4. Khám phá dataset — bốn lệnh cốt lõi</h2>
+<section id="info-mô-tả-cấu-trúc" class="level3">
+<h3 class="anchored" data-anchor-id="info-mô-tả-cấu-trúc"><code>.info()</code> — mô tả cấu trúc</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>mpg.info()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Output: - <strong>Số dòng</strong> + <strong>số cột</strong> - <strong>Kiểu dữ liệu</strong> từng cột (<code>int64</code>, <code>float64</code>, <code>object</code>…) - <strong>Số missing</strong> mỗi cột</p>
+</section>
+<section id="describe-thống-kê-mô-tả" class="level3">
+<h3 class="anchored" data-anchor-id="describe-thống-kê-mô-tả"><code>.describe()</code> — thống kê mô tả</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>mpg.describe()                          <span class="co"># tất cả cột số</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>mpg[[<span class="st">"mpg"</span>, <span class="st">"horsepower"</span>, <span class="st">"weight"</span>]].describe()  <span class="co"># chỉ 3 cột</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Cho: count, mean, std, min, 25%, 50%, 75%, max.</p>
+</section>
+<section id="value_counts-bảng-tần-suất" class="level3">
+<h3 class="anchored" data-anchor-id="value_counts-bảng-tần-suất"><code>.value_counts()</code> — bảng tần suất</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>mpg[<span class="st">"origin"</span>].value_counts()            <span class="co"># đếm theo xuất xứ</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>mpg[<span class="st">"cylinders"</span>].value_counts()         <span class="co"># đếm theo xi-lanh</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>pd.crosstab(mpg[<span class="st">"origin"</span>], mpg[<span class="st">"cylinders"</span>])  <span class="co"># bảng chéo</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="xem-dòng-dữ-liệu" class="level3">
+<h3 class="anchored" data-anchor-id="xem-dòng-dữ-liệu">Xem dòng dữ liệu</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>mpg.head(<span class="dv">10</span>)                                  <span class="co"># 10 dòng đầu</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>mpg[mpg[<span class="st">"mpg"</span>] <span class="op">&gt;</span> <span class="dv">30</span>]                          <span class="co"># mpg &gt; 30</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>mpg[mpg[<span class="st">"origin"</span>] <span class="op">==</span> <span class="st">"japan"</span>][[<span class="st">"name"</span>, <span class="st">"mpg"</span>]]  <span class="co"># tên + mpg xe Nhật</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>📝 Bài tập nhỏ ngay tại Lab 0
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Mở dataset <code>mpg</code>, trả lời:</p>
+<ol type="1">
+<li>Có bao nhiêu xe trong dataset?</li>
+<li><code>mpg</code> (mile per gallon) trung bình là bao nhiêu?</li>
+<li>Có bao nhiêu xe theo <code>origin</code> (usa/europe/japan)?</li>
+<li>Xe nào có <code>mpg</code> cao nhất?</li>
+<li>So sánh trung bình <code>mpg</code> giữa xe Mỹ và xe Nhật?</li>
+</ol>
+</div>
+</div>
+</section>
+</section>
+<section id="tạo-cột-lọc-sort" class="level2">
+<h2 class="anchored" data-anchor-id="tạo-cột-lọc-sort">5. Tạo cột + lọc + sort</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Tạo cột mới</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>mpg[<span class="st">"gpm"</span>] <span class="op">=</span> <span class="dv">1</span> <span class="op">/</span> mpg[<span class="st">"mpg"</span>]                   <span class="co"># gallon per mile</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>mpg[<span class="st">"is_efficient"</span>] <span class="op">=</span> mpg[<span class="st">"mpg"</span>] <span class="op">&gt;</span> <span class="dv">25</span>         <span class="co"># xe tiết kiệm</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Lọc + select cột</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>mpg_filtered <span class="op">=</span> (</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    mpg[mpg[<span class="st">"cylinders"</span>] <span class="op">!=</span> <span class="dv">4</span>]                <span class="co"># bỏ xe 4 xi-lanh</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>    [[<span class="st">"mpg"</span>, <span class="st">"horsepower"</span>, <span class="st">"gpm"</span>, <span class="st">"is_efficient"</span>]]  <span class="co"># giữ 4 cột</span></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>    .sort_values(<span class="st">"mpg"</span>, ascending<span class="op">=</span><span class="va">False</span>)      <span class="co"># sắp theo mpg giảm</span></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>mpg_filtered.head(<span class="dv">10</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="groupby-bysort-của-stata" class="level3">
+<h3 class="anchored" data-anchor-id="groupby-bysort-của-stata">groupby — bysort của Stata</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Trung bình mpg theo origin</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>mpg.groupby(<span class="st">"origin"</span>)[<span class="st">"mpg"</span>].mean()</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Nhiều stat cùng lúc</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>mpg.groupby(<span class="st">"origin"</span>)[<span class="st">"mpg"</span>].agg([<span class="st">"mean"</span>, <span class="st">"std"</span>, <span class="st">"min"</span>, <span class="st">"max"</span>])</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Theo 2 nhóm</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a>mpg.groupby([<span class="st">"origin"</span>, <span class="st">"cylinders"</span>])[<span class="st">"mpg"</span>].mean()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="vẽ-biểu-đồ-matplotlib-seaborn" class="level2">
+<h2 class="anchored" data-anchor-id="vẽ-biểu-đồ-matplotlib-seaborn">6. Vẽ biểu đồ — matplotlib + seaborn</h2>
+<section id="scatter-plot" class="level3">
+<h3 class="anchored" data-anchor-id="scatter-plot">Scatter plot</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Cấu hình style</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>sns.set_theme(style<span class="op">=</span><span class="st">"whitegrid"</span>)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(data<span class="op">=</span>mpg, x<span class="op">=</span><span class="st">"mpg"</span>, y<span class="op">=</span><span class="st">"horsepower"</span>, hue<span class="op">=</span><span class="st">"origin"</span>, ax<span class="op">=</span>ax)</span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">"Công suất vs Tiết kiệm xăng"</span>)</span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a>ax.set_xlabel(<span class="st">"Mile per gallon"</span>)</span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"Horsepower"</span>)</span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">"scatter.png"</span>, dpi<span class="op">=</span><span class="dv">150</span>)</span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="bar-chart-theo-nhóm" class="level3">
+<h3 class="anchored" data-anchor-id="bar-chart-theo-nhóm">Bar chart theo nhóm</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">5</span>))</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>mpg[<span class="st">"origin"</span>].value_counts().plot(</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>    kind<span class="op">=</span><span class="st">"bar"</span>, ax<span class="op">=</span>ax, color<span class="op">=</span><span class="st">"#722f37"</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">"Số xe theo xuất xứ"</span>)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>ax.set_ylabel(<span class="st">"Số xe"</span>)</span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">"bar.png"</span>, dpi<span class="op">=</span><span class="dv">150</span>)</span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="histogram" class="level3">
+<h3 class="anchored" data-anchor-id="histogram">Histogram</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">8</span>, <span class="dv">5</span>))</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>sns.histplot(data<span class="op">=</span>mpg, x<span class="op">=</span><span class="st">"mpg"</span>, bins<span class="op">=</span><span class="dv">20</span>, color<span class="op">=</span><span class="st">"#c19a4d"</span>, ax<span class="op">=</span>ax)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">"Phân bố MPG"</span>)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>plt.savefig(<span class="st">"hist.png"</span>, dpi<span class="op">=</span><span class="dv">150</span>)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="lưu-output" class="level2">
+<h2 class="anchored" data-anchor-id="lưu-output">7. Lưu output</h2>
+<section id="lưu-dataset" class="level3">
+<h3 class="anchored" data-anchor-id="lưu-dataset">Lưu dataset</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>mpg_filtered.to_csv(<span class="st">"mpg_clean.csv"</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>mpg_filtered.to_excel(<span class="st">"mpg_clean.xlsx"</span>, index<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>mpg_filtered.to_parquet(<span class="st">"mpg_clean.parquet"</span>)  <span class="co"># nhanh nhất</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="lưu-biểu-đồ" class="level3">
+<h3 class="anchored" data-anchor-id="lưu-biểu-đồ">Lưu biểu đồ</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>fig.savefig(<span class="st">"mychart.png"</span>, dpi<span class="op">=</span><span class="dv">150</span>, bbox_inches<span class="op">=</span><span class="st">"tight"</span>)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>fig.savefig(<span class="st">"mychart.pdf"</span>, bbox_inches<span class="op">=</span><span class="st">"tight"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="đọc-dataset-bên-ngoài" class="level2">
+<h2 class="anchored" data-anchor-id="đọc-dataset-bên-ngoài">8. Đọc dataset bên ngoài</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="co"># CSV</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>df_csv <span class="op">=</span> pd.read_csv(<span class="st">"mydata.csv"</span>)</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Excel</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a>df_excel <span class="op">=</span> pd.read_excel(<span class="st">"mydata.xlsx"</span>, sheet_name<span class="op">=</span><span class="dv">0</span>)</span>
+<span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-9"><a href="#cb16-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Stata</span></span>
+<span id="cb16-10"><a href="#cb16-10" aria-hidden="true" tabindex="-1"></a>df_dta <span class="op">=</span> pd.read_stata(<span class="st">"mydata.dta"</span>)</span>
+<span id="cb16-11"><a href="#cb16-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-12"><a href="#cb16-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Parquet (định dạng nén, nhanh)</span></span>
+<span id="cb16-13"><a href="#cb16-13" aria-hidden="true" tabindex="-1"></a>df_pq <span class="op">=</span> pd.read_parquet(<span class="st">"mydata.parquet"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="báo-cáo-bằng-jupyter-hoặc-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="báo-cáo-bằng-jupyter-hoặc-quarto">9. Báo cáo bằng Jupyter hoặc Quarto</h2>
+<section id="cách-1-jupyter-notebook-đơn-giản" class="level3">
+<h3 class="anchored" data-anchor-id="cách-1-jupyter-notebook-đơn-giản">Cách 1 — Jupyter Notebook (đơn giản)</h3>
+<p>Nộp file <code>.ipynb</code> — giảng viên mở bằng Jupyter Lab xem được cả code + output.</p>
+<p><strong>Export ra HTML</strong>: File &gt; Export Notebook As &gt; HTML.</p>
+</section>
+<section id="cách-2-quarto-đẹp-như-cuốn-sách" class="level3">
+<h3 class="anchored" data-anchor-id="cách-2-quarto-đẹp-như-cuốn-sách">Cách 2 — Quarto (đẹp như cuốn sách)</h3>
+<p>Tạo file <code>.qmd</code> thay vì <code>.ipynb</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb17"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Python Lab 1"</span></span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Họ tên — MSSV"</span></span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="an">format:</span><span class="co"> html</span></span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="an">jupyter:</span><span class="co"> python3</span></span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a><span class="fu">## Phần 1: Đặt vấn đề</span></span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>Lab này phân tích...</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>mpg <span class="op">=</span> sns.load_dataset(<span class="st">"mpg"</span>)</span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>mpg.describe()</span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## Phần 2: Biểu đồ</span></span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Công suất vs MPG"</span></span>
+<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb17-25"><a href="#cb17-25" aria-hidden="true" tabindex="-1"></a>ax.scatter(mpg[<span class="st">"mpg"</span>], mpg[<span class="st">"horsepower"</span>])</span>
+<span id="cb17-26"><a href="#cb17-26" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb17-27"><a href="#cb17-27" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Trong Terminal: <code>quarto render lab01.qmd</code> → ra HTML đẹp.</p>
+</section>
+</section>
+<section id="mẹo-python-hiệu-quả" class="level2">
+<h2 class="anchored" data-anchor-id="mẹo-python-hiệu-quả">10. Mẹo Python hiệu quả</h2>
+<ol type="1">
+<li><strong>Luôn import packages đầu file</strong> — gọn, dễ debug</li>
+<li><strong>Dùng <code>pd.options.display.max_columns = None</code></strong> để xem hết cột</li>
+<li><strong>Comment tiếng Việt được</strong> — Python hỗ trợ UTF-8 đầy đủ</li>
+<li><strong>Đặt biến <code>df</code> cho DataFrame chính</strong> — phổ biến trong cộng đồng</li>
+<li><strong>Save dataset thường xuyên</strong> sau khi clean</li>
+<li><strong>Method chaining</strong>: dùng dấu ngoặc <code>()</code> để xuống dòng đẹp</li>
+<li><strong>Help</strong>: gõ <code>pd.read_csv?</code> hoặc <code>help(pd.read_csv)</code> để xem docs</li>
+</ol>
+</section>
+<section id="tích-hợp-với-stata-mp-tuỳ-chọn" class="level2">
+<h2 class="anchored" data-anchor-id="tích-hợp-với-stata-mp-tuỳ-chọn">11. Tích hợp với Stata MP (tuỳ chọn)</h2>
+<p>Nếu bạn có Stata, Python có thể gọi Stata qua <strong>PyStata</strong>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sys</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>sys.path.insert(<span class="dv">0</span>, <span class="st">'/usr/local/stata19/utilities'</span>)</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pystata</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>pystata.config.init(<span class="st">'mp'</span>, splash<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Truyền DataFrame → Stata</span></span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>pystata.stata.pdataframe_to_data(mpg, force<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Chạy lệnh Stata</span></span>
+<span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a>pystata.stata.run(<span class="st">"""</span></span>
+<span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a><span class="st">    regress mpg horsepower weight</span></span>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a><span class="st">"""</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Đặc điểm: tận dụng <em>hệ sinh thái Python</em> (visualization, ML) + <em>engine Stata</em> (lệnh kinh tế lượng quen).</p>
+</section>
+<section id="deliverable-lab-0" class="level2">
+<h2 class="anchored" data-anchor-id="deliverable-lab-0">Deliverable Lab 0</h2>
+<p>Nộp <strong>1 notebook</strong> <code>lab00_&lt;ten&gt;.ipynb</code> hoặc <code>.qmd</code> thực hiện:</p>
+<ol type="1">
+<li>Import pandas, numpy, matplotlib, seaborn</li>
+<li>Load <code>seaborn.load_dataset("mpg")</code></li>
+<li><code>.info()</code> + <code>.describe()</code></li>
+<li>So sánh trung bình <code>mpg</code> giữa 3 xuất xứ (<code>groupby("origin")</code>)</li>
+<li>Vẽ scatter <code>mpg</code> vs <code>horsepower</code>, phân biệt theo <code>origin</code></li>
+<li>Tạo biến mới <code>gpm = 1/mpg</code></li>
+<li><strong>Comment tiếng Việt</strong> ở mỗi bước</li>
+<li>(Tuỳ chọn) Export ra HTML</li>
+</ol>
+<p>Nộp kèm: - File <code>.ipynb</code> hoặc <code>.qmd</code> - File <code>.html</code> (export hoặc render) - Phản hồi ngắn 200 chữ: bạn thấy Python khó/dễ hơn Stata/R ở điểm nào?</p>
+<hr>
+<p><em>Lab tiếp theo</em>: <a href="../python-lab/lab-01.html">Python Lab 1 — Vẽ PPF và chi phí cơ hội</a> →</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/dongkien\.github\.io\/material-building\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 — Bộ môn Kinh tế và Quản lý, Viện Kinh tế và Kinh doanh Quốc tế, ĐH Ngoại Thương · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.vi">CC BY-NC-SA 4.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+<p>TS. Đỗ Ngọc Kiên — Trưởng Bộ môn</p>
+</div>
+    <div class="nav-footer-right">
+<p>Tạo bằng <a href="https://quarto.org/">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
