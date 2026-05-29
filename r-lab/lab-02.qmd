@@ -1,13 +1,13 @@
 ---
-title: "R Lab 02 — Phân tích chi tiêu công Việt Nam"
-subtitle: "Tương ứng Buổi 2 (phiên bản R, song song [Stata Lab 02](../stata-lab/lab-02.qmd))"
+title: "R Lab 2 — Phân tích chi tiêu công Việt Nam"
+subtitle: "Tương ứng Buổi 2 (phiên bản R, song song [Stata Lab 2](../stata-lab/lab-02.qmd))"
 reading-time: "~25 phút"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Liên kết với Buổi 2
 
-Phiên bản R của [Stata Lab 02](../stata-lab/lab-02.qmd). Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.
+Phiên bản R của [Stata Lab 2](../stata-lab/lab-02.qmd). Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.
 
 **Khái niệm R học**: `read_excel, group_by/summarise, pivot_longer, geom_area`
 :::
@@ -15,7 +15,7 @@ Phiên bản R của [Stata Lab 02](../stata-lab/lab-02.qmd). Cùng dataset, cù
 ::: {.callout-warning appearance="simple"}
 ## 🚧 R Lab đang biên soạn
 
-Khung lab đã có theo cấu trúc Stata Lab tương ứng. Code R chi tiết sẽ được giảng viên cập nhật trước Buổi 02. Trong khi chờ, sinh viên có thể dùng [bảng quy đổi Stata → R](../r-lab/#stata-r-cheatsheet) để tự chuyển code Stata sang R.
+Khung lab đã có theo cấu trúc Stata Lab tương ứng. Code R chi tiết sẽ được giảng viên cập nhật trước Buổi 2. Trong khi chờ, sinh viên có thể dùng [bảng quy đổi Stata → R](../r-lab/#stata-r-cheatsheet) để tự chuyển code Stata sang R.
 :::
 
 ## Khung Lab 02
@@ -26,15 +26,15 @@ Phân loại chi NSNN theo 5 chức năng QLKT, tỷ trọng, stacked area
 
 ### 2. Stata Lab tương ứng
 
-Cùng phân tích như **[Stata Lab 02](../stata-lab/lab-02.qmd)** — bạn có thể:
+Cùng phân tích như **[Stata Lab 2](../stata-lab/lab-02.qmd)** — bạn có thể:
 
-- Mở Stata Lab 02 để xem **logic phân tích**, *yêu cầu chi tiết*, và *câu hỏi suy nghĩ*
+- Mở Stata Lab 2 để xem **logic phân tích**, *yêu cầu chi tiết*, và *câu hỏi suy nghĩ*
 - Dùng **bảng quy đổi Stata → R** ở [R Lab index](index.qmd#stata-r-cheatsheet) để chuyển code
 
 ### 3. Khung code R (mẫu)
 
 ```r
-# R Lab 02 — Phân tích chi tiêu công Việt Nam
+# R Lab 2 — Phân tích chi tiêu công Việt Nam
 # Họ tên: <điền>, MSSV: <điền>
 
 library(tidyverse)
@@ -48,12 +48,12 @@ library(fixest)              # cho hồi quy nâng cao (nếu cần)
 # Sử dụng: read_excel, group_by/summarise, pivot_longer, geom_area
 
 # === Lưu kết quả ===
-# ggsave("lab02.png", plot_obj, width = 10, height = 6, dpi = 150)
+# ggsave("lab2.png", plot_obj, width = 10, height = 6, dpi = 150)
 ```
 
 ### 4. Câu hỏi suy nghĩ
 
-Giống Stata Lab 02 — xem chi tiết tại [Stata Lab 02](../stata-lab/lab-02.qmd).
+Giống Stata Lab 2 — xem chi tiết tại [Stata Lab 2](../stata-lab/lab-02.qmd).
 
 ## Deliverable
 
@@ -61,11 +61,11 @@ Nộp 3 file (như Lab khác):
 
 | File | Nội dung |
 |---|---|
-| `lab02_<tên>.R` hoặc `.qmd` | Code R + comment |
-| `lab02_<tên>.html` (nếu Quarto) | Output rendered |
-| `lab02_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
+| `lab2_<tên>.R` hoặc `.qmd` | Code R + comment |
+| `lab2_<tên>.html` (nếu Quarto) | Output rendered |
+| `lab2_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
 
-**Tiêu đề email**: `RLAB02-MSSV-HọTên`
+**Tiêu đề email**: `RLAB2-MSSV-HọTên`
 
 ## Tiêu chí chấm
 

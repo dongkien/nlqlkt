@@ -1,13 +1,13 @@
 ---
-title: "R Lab 08 — Đường Phillips Việt Nam 2010-2024"
-subtitle: "Tương ứng Buổi 8 (phiên bản R, song song [Stata Lab 08](../stata-lab/lab-08.qmd))"
+title: "R Lab 8 — Đường Phillips Việt Nam 2010-2024"
+subtitle: "Tương ứng Buổi 8 (phiên bản R, song song [Stata Lab 8](../stata-lab/lab-08.qmd))"
 reading-time: "~25 phút"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Liên kết với Buổi 8
 
-Phiên bản R của [Stata Lab 08](../stata-lab/lab-08.qmd). Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.
+Phiên bản R của [Stata Lab 8](../stata-lab/lab-08.qmd). Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.
 
 **Khái niệm R học**: `lm, geom_smooth, lag, fixest::feols`
 :::
@@ -15,7 +15,7 @@ Phiên bản R của [Stata Lab 08](../stata-lab/lab-08.qmd). Cùng dataset, cù
 ::: {.callout-warning appearance="simple"}
 ## 🚧 R Lab đang biên soạn
 
-Khung lab đã có theo cấu trúc Stata Lab tương ứng. Code R chi tiết sẽ được giảng viên cập nhật trước Buổi 08. Trong khi chờ, sinh viên có thể dùng [bảng quy đổi Stata → R](../r-lab/#stata-r-cheatsheet) để tự chuyển code Stata sang R.
+Khung lab đã có theo cấu trúc Stata Lab tương ứng. Code R chi tiết sẽ được giảng viên cập nhật trước Buổi 8. Trong khi chờ, sinh viên có thể dùng [bảng quy đổi Stata → R](../r-lab/#stata-r-cheatsheet) để tự chuyển code Stata sang R.
 :::
 
 ## Khung Lab 08
@@ -26,15 +26,15 @@ OLS CPI~unemployment, 2 giai đoạn, NAIRU
 
 ### 2. Stata Lab tương ứng
 
-Cùng phân tích như **[Stata Lab 08](../stata-lab/lab-08.qmd)** — bạn có thể:
+Cùng phân tích như **[Stata Lab 8](../stata-lab/lab-08.qmd)** — bạn có thể:
 
-- Mở Stata Lab 08 để xem **logic phân tích**, *yêu cầu chi tiết*, và *câu hỏi suy nghĩ*
+- Mở Stata Lab 8 để xem **logic phân tích**, *yêu cầu chi tiết*, và *câu hỏi suy nghĩ*
 - Dùng **bảng quy đổi Stata → R** ở [R Lab index](index.qmd#stata-r-cheatsheet) để chuyển code
 
 ### 3. Khung code R (mẫu)
 
 ```r
-# R Lab 08 — Đường Phillips Việt Nam 2010-2024
+# R Lab 8 — Đường Phillips Việt Nam 2010-2024
 # Họ tên: <điền>, MSSV: <điền>
 
 library(tidyverse)
@@ -48,12 +48,12 @@ library(fixest)              # cho hồi quy nâng cao (nếu cần)
 # Sử dụng: lm, geom_smooth, lag, fixest::feols
 
 # === Lưu kết quả ===
-# ggsave("lab08.png", plot_obj, width = 10, height = 6, dpi = 150)
+# ggsave("lab8.png", plot_obj, width = 10, height = 6, dpi = 150)
 ```
 
 ### 4. Câu hỏi suy nghĩ
 
-Giống Stata Lab 08 — xem chi tiết tại [Stata Lab 08](../stata-lab/lab-08.qmd).
+Giống Stata Lab 8 — xem chi tiết tại [Stata Lab 8](../stata-lab/lab-08.qmd).
 
 ## Deliverable
 
@@ -61,11 +61,11 @@ Nộp 3 file (như Lab khác):
 
 | File | Nội dung |
 |---|---|
-| `lab08_<tên>.R` hoặc `.qmd` | Code R + comment |
-| `lab08_<tên>.html` (nếu Quarto) | Output rendered |
-| `lab08_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
+| `lab8_<tên>.R` hoặc `.qmd` | Code R + comment |
+| `lab8_<tên>.html` (nếu Quarto) | Output rendered |
+| `lab8_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
 
-**Tiêu đề email**: `RLAB08-MSSV-HọTên`
+**Tiêu đề email**: `RLAB8-MSSV-HọTên`
 
 ## Tiêu chí chấm
 

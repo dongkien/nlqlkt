@@ -74,8 +74,8 @@ Bảng quy đổi nhanh cho người đã quen Stata:
 | `keep if x > 0` | `df <- df |> filter(x > 0)` | Lọc |
 | `bysort id: gen mean_y = mean(y)` | `df |> group_by(id) |> mutate(mean_y = mean(y))` | Group by |
 | `regress y x1 x2` | `lm(y ~ x1 + x2, data = df)` | Hồi quy OLS |
-| `regress y x1 x2, robust` | `feols(y ~ x1 + x2, data = df)` (fixest) | OLS robust |
-| `xtreg y x, fe i(id)` | `feols(y ~ x | id, data = df)` (fixest) | Panel FE |
+| `regress y x1 x2, robust` | `feols(y ~ x1 + x2, data = df, vcov = "hetero")` *(fixest)* | OLS robust SE (HC1 — phải khai báo `vcov`) |
+| `xtreg y x, fe i(id) vce(robust)` | <code>feols(y ~ x &#124; id, data = df)</code> *(fixest)* | Panel FE — fixest tự cluster SE tại id |
 | `twoway scatter y x` | `ggplot(df, aes(x, y)) + geom_point()` | Scatter |
 | `twoway line y x` | `ggplot(df, aes(x, y)) + geom_line()` | Line plot |
 

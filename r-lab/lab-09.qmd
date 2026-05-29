@@ -1,13 +1,13 @@
 ---
-title: "R Lab 09 — Tính NEER và REER VND"
-subtitle: "Tương ứng Buổi 9 (phiên bản R, song song [Stata Lab 09](../stata-lab/lab-09.qmd))"
+title: "R Lab 9 — Tính NEER và REER VND"
+subtitle: "Tương ứng Buổi 9 (phiên bản R, song song [Stata Lab 9](../stata-lab/lab-09.qmd))"
 reading-time: "~25 phút"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Liên kết với Buổi 9
 
-Phiên bản R của [Stata Lab 09](../stata-lab/lab-09.qmd). Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.
+Phiên bản R của [Stata Lab 9](../stata-lab/lab-09.qmd). Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.
 
 **Khái niệm R học**: `prod, weighted geometric mean, tidy with pivot_longer`
 :::
@@ -15,7 +15,7 @@ Phiên bản R của [Stata Lab 09](../stata-lab/lab-09.qmd). Cùng dataset, cù
 ::: {.callout-warning appearance="simple"}
 ## 🚧 R Lab đang biên soạn
 
-Khung lab đã có theo cấu trúc Stata Lab tương ứng. Code R chi tiết sẽ được giảng viên cập nhật trước Buổi 09. Trong khi chờ, sinh viên có thể dùng [bảng quy đổi Stata → R](../r-lab/#stata-r-cheatsheet) để tự chuyển code Stata sang R.
+Khung lab đã có theo cấu trúc Stata Lab tương ứng. Code R chi tiết sẽ được giảng viên cập nhật trước Buổi 9. Trong khi chờ, sinh viên có thể dùng [bảng quy đổi Stata → R](../r-lab/#stata-r-cheatsheet) để tự chuyển code Stata sang R.
 :::
 
 ## Khung Lab 09
@@ -26,15 +26,15 @@ Trọng số 5 đối tác, geometric mean, REER với CPI
 
 ### 2. Stata Lab tương ứng
 
-Cùng phân tích như **[Stata Lab 09](../stata-lab/lab-09.qmd)** — bạn có thể:
+Cùng phân tích như **[Stata Lab 9](../stata-lab/lab-09.qmd)** — bạn có thể:
 
-- Mở Stata Lab 09 để xem **logic phân tích**, *yêu cầu chi tiết*, và *câu hỏi suy nghĩ*
+- Mở Stata Lab 9 để xem **logic phân tích**, *yêu cầu chi tiết*, và *câu hỏi suy nghĩ*
 - Dùng **bảng quy đổi Stata → R** ở [R Lab index](index.qmd#stata-r-cheatsheet) để chuyển code
 
 ### 3. Khung code R (mẫu)
 
 ```r
-# R Lab 09 — Tính NEER và REER VND
+# R Lab 9 — Tính NEER và REER VND
 # Họ tên: <điền>, MSSV: <điền>
 
 library(tidyverse)
@@ -48,12 +48,12 @@ library(fixest)              # cho hồi quy nâng cao (nếu cần)
 # Sử dụng: prod, weighted geometric mean, tidy with pivot_longer
 
 # === Lưu kết quả ===
-# ggsave("lab09.png", plot_obj, width = 10, height = 6, dpi = 150)
+# ggsave("lab9.png", plot_obj, width = 10, height = 6, dpi = 150)
 ```
 
 ### 4. Câu hỏi suy nghĩ
 
-Giống Stata Lab 09 — xem chi tiết tại [Stata Lab 09](../stata-lab/lab-09.qmd).
+Giống Stata Lab 9 — xem chi tiết tại [Stata Lab 9](../stata-lab/lab-09.qmd).
 
 ## Deliverable
 
@@ -61,11 +61,11 @@ Nộp 3 file (như Lab khác):
 
 | File | Nội dung |
 |---|---|
-| `lab09_<tên>.R` hoặc `.qmd` | Code R + comment |
-| `lab09_<tên>.html` (nếu Quarto) | Output rendered |
-| `lab09_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
+| `lab9_<tên>.R` hoặc `.qmd` | Code R + comment |
+| `lab9_<tên>.html` (nếu Quarto) | Output rendered |
+| `lab9_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
 
-**Tiêu đề email**: `RLAB09-MSSV-HọTên`
+**Tiêu đề email**: `RLAB9-MSSV-HọTên`
 
 ## Tiêu chí chấm
 

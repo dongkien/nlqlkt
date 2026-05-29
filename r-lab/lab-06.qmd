@@ -1,13 +1,13 @@
 ---
-title: "R Lab 06 — Ước lượng Cobb-Douglas Việt Nam"
-subtitle: "Tương ứng Buổi 6 (phiên bản R, song song [Stata Lab 06](../stata-lab/lab-06.qmd))"
+title: "R Lab 6 — Ước lượng Cobb-Douglas Việt Nam"
+subtitle: "Tương ứng Buổi 6 (phiên bản R, song song [Stata Lab 6](../stata-lab/lab-06.qmd))"
 reading-time: "~25 phút"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Liên kết với Buổi 6
 
-Phiên bản R của [Stata Lab 06](../stata-lab/lab-06.qmd). Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.
+Phiên bản R của [Stata Lab 6](../stata-lab/lab-06.qmd). Cùng dataset, cùng phân tích, cùng câu hỏi — chỉ khác ngôn ngữ.
 
 **Khái niệm R học**: `lm, broom::tidy, log transform, residuals`
 :::
@@ -15,7 +15,7 @@ Phiên bản R của [Stata Lab 06](../stata-lab/lab-06.qmd). Cùng dataset, cù
 ::: {.callout-warning appearance="simple"}
 ## 🚧 R Lab đang biên soạn
 
-Khung lab đã có theo cấu trúc Stata Lab tương ứng. Code R chi tiết sẽ được giảng viên cập nhật trước Buổi 06. Trong khi chờ, sinh viên có thể dùng [bảng quy đổi Stata → R](../r-lab/#stata-r-cheatsheet) để tự chuyển code Stata sang R.
+Khung lab đã có theo cấu trúc Stata Lab tương ứng. Code R chi tiết sẽ được giảng viên cập nhật trước Buổi 6. Trong khi chờ, sinh viên có thể dùng [bảng quy đổi Stata → R](../r-lab/#stata-r-cheatsheet) để tự chuyển code Stata sang R.
 :::
 
 ## Khung Lab 06
@@ -26,15 +26,15 @@ log regression Y=AK^α L^(1-α), TFP residual, growth accounting
 
 ### 2. Stata Lab tương ứng
 
-Cùng phân tích như **[Stata Lab 06](../stata-lab/lab-06.qmd)** — bạn có thể:
+Cùng phân tích như **[Stata Lab 6](../stata-lab/lab-06.qmd)** — bạn có thể:
 
-- Mở Stata Lab 06 để xem **logic phân tích**, *yêu cầu chi tiết*, và *câu hỏi suy nghĩ*
+- Mở Stata Lab 6 để xem **logic phân tích**, *yêu cầu chi tiết*, và *câu hỏi suy nghĩ*
 - Dùng **bảng quy đổi Stata → R** ở [R Lab index](index.qmd#stata-r-cheatsheet) để chuyển code
 
 ### 3. Khung code R (mẫu)
 
 ```r
-# R Lab 06 — Ước lượng Cobb-Douglas Việt Nam
+# R Lab 6 — Ước lượng Cobb-Douglas Việt Nam
 # Họ tên: <điền>, MSSV: <điền>
 
 library(tidyverse)
@@ -48,12 +48,12 @@ library(fixest)              # cho hồi quy nâng cao (nếu cần)
 # Sử dụng: lm, broom::tidy, log transform, residuals
 
 # === Lưu kết quả ===
-# ggsave("lab06.png", plot_obj, width = 10, height = 6, dpi = 150)
+# ggsave("lab6.png", plot_obj, width = 10, height = 6, dpi = 150)
 ```
 
 ### 4. Câu hỏi suy nghĩ
 
-Giống Stata Lab 06 — xem chi tiết tại [Stata Lab 06](../stata-lab/lab-06.qmd).
+Giống Stata Lab 6 — xem chi tiết tại [Stata Lab 6](../stata-lab/lab-06.qmd).
 
 ## Deliverable
 
@@ -61,11 +61,11 @@ Nộp 3 file (như Lab khác):
 
 | File | Nội dung |
 |---|---|
-| `lab06_<tên>.R` hoặc `.qmd` | Code R + comment |
-| `lab06_<tên>.html` (nếu Quarto) | Output rendered |
-| `lab06_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
+| `lab6_<tên>.R` hoặc `.qmd` | Code R + comment |
+| `lab6_<tên>.html` (nếu Quarto) | Output rendered |
+| `lab6_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
 
-**Tiêu đề email**: `RLAB06-MSSV-HọTên`
+**Tiêu đề email**: `RLAB6-MSSV-HọTên`
 
 ## Tiêu chí chấm
 
