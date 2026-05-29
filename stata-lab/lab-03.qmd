@@ -128,10 +128,14 @@ restore
 Theo Luật Cạnh tranh VN 2018, DN có **thị phần > 30%** được coi là có *vị trí thống lĩnh thị trường*.
 
 ```stata
-* === Tìm DN có thị phần > 30% ===
-generate thong_linh = (thi_phan > 30)
+* === Tìm DN có thị phần > 30% (LOẠI nhóm "Khác") ===
+generate thong_linh = (thi_phan > 30 & doanh_nghiep != "Khác")
 list nganh doanh_nghiep thi_phan if thong_linh == 1, noobs
 ```
+
+::: {.callout-note appearance="simple"}
+*Lưu ý*: "Khác" là **tổng nhiều DN nhỏ**, không phải 1 DN — phải loại khỏi phép kiểm tra thống lĩnh.
+:::
 
 **Câu hỏi 3**: Có những DN nào có vị trí thống lĩnh trong 5 ngành? DN nào có thị phần cao nhất?
 

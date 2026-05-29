@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi" xml:lang="vi"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.38">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Lab 0 — Cài Stata và các lệnh cơ bản – Nguyên lý Quản lý Kinh tế (DTU301)</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-3a25ebfbbb03e529eea34e993f2a5140.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-b0e610993ba9119e54b64e8e30a4d128.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": true,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+
+
+<link rel="stylesheet" href="styles/custom.css">
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Nguyên lý Quản lý Kinh tế (DTU301)</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Trang chủ</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../syllabus.html"> 
+<span class="menu-text">Đề cương</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../schedule.html"> 
+<span class="menu-text">Lịch học</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../lectures/index.html"> 
+<span class="menu-text">Bài giảng</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../stata-lab/index.html"> 
+<span class="menu-text">Stata Lab</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../problem-sets/index.html"> 
+<span class="menu-text">Tiểu luận / Bài tập</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../exams/index.html"> 
+<span class="menu-text">Đánh giá</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-00.html">Hướng dẫn</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-00.html">Lab 0 — Cài Stata và các lệnh cơ bản</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">← Trang chủ</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../stata-lab/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Stata Lab</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Hướng dẫn</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../stata-lab/lab-00.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Lab 0 — Cài Stata và các lệnh cơ bản</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Lab theo buổi</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../stata-lab/lab-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 1 — Vẽ PPF và tính chi phí cơ hội</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../stata-lab/lab-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 2 — Phân tích chi tiêu công Việt Nam</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../stata-lab/lab-03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 3 — Tính HHI cho 5 ngành Việt Nam</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../stata-lab/lab-04.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 4 — Mô phỏng thuế Pigou</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../stata-lab/lab-05.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 5 — DNNN vs KTTN vs FDI</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../stata-lab/lab-06.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 6 — Ước lượng Cobb-Douglas cho Việt Nam</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../stata-lab/lab-07.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 7 — Mô phỏng cân bằng IS-LM</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../stata-lab/lab-08.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 8 — Đường Phillips Việt Nam 2010-2024</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../stata-lab/lab-09.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 9 — Tính NEER và REER VND</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../stata-lab/lab-10.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 10 — Mundell-Fleming bằng dữ liệu lịch sử</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../stata-lab/lab-11.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 11 — Event study Khủng hoảng châu Á 1997</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../stata-lab/lab-12.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 12 — PCI / PAPI / PAR Index theo tỉnh</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../stata-lab/lab-13.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 13 — So sánh 6 vùng KT-XH</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../stata-lab/lab-14.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 14 — Capstone: Phân tích 1 chính sách</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../stata-lab/lab-15.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Lab 15 — Xuất bảng + biểu đồ cho thuyết trình</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Trong bài</h2>
+   
+  <ul>
+  <li><a href="#tiếp-cận-stata" id="toc-tiếp-cận-stata" class="nav-link active" data-scroll-target="#tiếp-cận-stata">1. Tiếp cận Stata</a>
+  <ul class="collapse">
+  <li><a href="#phương-án-a-phòng-máy-ftu-khuyên-dùng-cho-sinh-viên" id="toc-phương-án-a-phòng-máy-ftu-khuyên-dùng-cho-sinh-viên" class="nav-link" data-scroll-target="#phương-án-a-phòng-máy-ftu-khuyên-dùng-cho-sinh-viên">Phương án A — Phòng máy FTU (khuyên dùng cho sinh viên)</a></li>
+  <li><a href="#phương-án-b-mua-stata-be-cho-sinh-viên-129năm" id="toc-phương-án-b-mua-stata-be-cho-sinh-viên-129năm" class="nav-link" data-scroll-target="#phương-án-b-mua-stata-be-cho-sinh-viên-129năm">Phương án B — Mua Stata BE cho sinh viên (~$129/năm)</a></li>
+  <li><a href="#phương-án-c-stata-cloud-trải-nghiệm-ngắn" id="toc-phương-án-c-stata-cloud-trải-nghiệm-ngắn" class="nav-link" data-scroll-target="#phương-án-c-stata-cloud-trải-nghiệm-ngắn">Phương án C — Stata Cloud (trải nghiệm ngắn)</a></li>
+  </ul></li>
+  <li><a href="#cấu-trúc-cửa-sổ-stata" id="toc-cấu-trúc-cửa-sổ-stata" class="nav-link" data-scroll-target="#cấu-trúc-cửa-sổ-stata">2. Cấu trúc cửa sổ Stata</a></li>
+  <li><a href="#viết-do-file-đầu-tiên" id="toc-viết-do-file-đầu-tiên" class="nav-link" data-scroll-target="#viết-do-file-đầu-tiên">3. Viết do-file đầu tiên</a></li>
+  <li><a href="#khám-phá-dataset-bốn-lệnh-cốt-lõi" id="toc-khám-phá-dataset-bốn-lệnh-cốt-lõi" class="nav-link" data-scroll-target="#khám-phá-dataset-bốn-lệnh-cốt-lõi">4. Khám phá dataset — bốn lệnh cốt lõi</a>
+  <ul class="collapse">
+  <li><a href="#describe-mô-tả-cấu-trúc" id="toc-describe-mô-tả-cấu-trúc" class="nav-link" data-scroll-target="#describe-mô-tả-cấu-trúc"><code>describe</code> — mô tả cấu trúc</a></li>
+  <li><a href="#summarize-thống-kê-mô-tả-số" id="toc-summarize-thống-kê-mô-tả-số" class="nav-link" data-scroll-target="#summarize-thống-kê-mô-tả-số"><code>summarize</code> — thống kê mô tả số</a></li>
+  <li><a href="#tabulate-bảng-tần-suất-biến-phân-loại" id="toc-tabulate-bảng-tần-suất-biến-phân-loại" class="nav-link" data-scroll-target="#tabulate-bảng-tần-suất-biến-phân-loại"><code>tabulate</code> — bảng tần suất biến phân loại</a></li>
+  <li><a href="#list-xem-dòng-dữ-liệu-thô" id="toc-list-xem-dòng-dữ-liệu-thô" class="nav-link" data-scroll-target="#list-xem-dòng-dữ-liệu-thô"><code>list</code> — xem dòng dữ liệu thô</a></li>
+  </ul></li>
+  <li><a href="#tạo-biến-mới-và-lọc-dữ-liệu" id="toc-tạo-biến-mới-và-lọc-dữ-liệu" class="nav-link" data-scroll-target="#tạo-biến-mới-và-lọc-dữ-liệu">5. Tạo biến mới và lọc dữ liệu</a>
+  <ul class="collapse">
+  <li><a href="#generate-tạo-biến-mới" id="toc-generate-tạo-biến-mới" class="nav-link" data-scroll-target="#generate-tạo-biến-mới"><code>generate</code> — tạo biến mới</a></li>
+  <li><a href="#replace-sửa-giá-trị-biến-hiện-có" id="toc-replace-sửa-giá-trị-biến-hiện-có" class="nav-link" data-scroll-target="#replace-sửa-giá-trị-biến-hiện-có"><code>replace</code> — sửa giá trị biến hiện có</a></li>
+  <li><a href="#keep-drop-giữ-xóa-biến-hoặc-dòng" id="toc-keep-drop-giữ-xóa-biến-hoặc-dòng" class="nav-link" data-scroll-target="#keep-drop-giữ-xóa-biến-hoặc-dòng"><code>keep</code> / <code>drop</code> — giữ / xóa biến hoặc dòng</a></li>
+  <li><a href="#sort-sắp-xếp" id="toc-sort-sắp-xếp" class="nav-link" data-scroll-target="#sort-sắp-xếp"><code>sort</code> — sắp xếp</a></li>
+  </ul></li>
+  <li><a href="#vẽ-biểu-đồ-cơ-bản" id="toc-vẽ-biểu-đồ-cơ-bản" class="nav-link" data-scroll-target="#vẽ-biểu-đồ-cơ-bản">6. Vẽ biểu đồ cơ bản</a>
+  <ul class="collapse">
+  <li><a href="#scatter-plot" id="toc-scatter-plot" class="nav-link" data-scroll-target="#scatter-plot">Scatter plot</a></li>
+  <li><a href="#bar-chart" id="toc-bar-chart" class="nav-link" data-scroll-target="#bar-chart">Bar chart</a></li>
+  <li><a href="#histogram" id="toc-histogram" class="nav-link" data-scroll-target="#histogram">Histogram</a></li>
+  </ul></li>
+  <li><a href="#lưu-output-ra-log-file" id="toc-lưu-output-ra-log-file" class="nav-link" data-scroll-target="#lưu-output-ra-log-file">7. Lưu output ra log file</a></li>
+  <li><a href="#lưu-và-đọc-dataset" id="toc-lưu-và-đọc-dataset" class="nav-link" data-scroll-target="#lưu-và-đọc-dataset">8. Lưu và đọc dataset</a>
+  <ul class="collapse">
+  <li><a href="#lưu-dataset-hiện-tại" id="toc-lưu-dataset-hiện-tại" class="nav-link" data-scroll-target="#lưu-dataset-hiện-tại">Lưu dataset hiện tại</a></li>
+  <li><a href="#đọc-dataset-bên-ngoài" id="toc-đọc-dataset-bên-ngoài" class="nav-link" data-scroll-target="#đọc-dataset-bên-ngoài">Đọc dataset bên ngoài</a></li>
+  </ul></li>
+  <li><a href="#mẹo-làm-stata-hiệu-quả" id="toc-mẹo-làm-stata-hiệu-quả" class="nav-link" data-scroll-target="#mẹo-làm-stata-hiệu-quả">9. Mẹo làm Stata hiệu quả</a></li>
+  <li><a href="#lệnh-giúp-đỡ" id="toc-lệnh-giúp-đỡ" class="nav-link" data-scroll-target="#lệnh-giúp-đỡ">10. Lệnh giúp đỡ</a></li>
+  <li><a href="#deliverable-lab-0" id="toc-deliverable-lab-0" class="nav-link" data-scroll-target="#deliverable-lab-0">Deliverable Lab 0</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../stata-lab/lab-00.html">Hướng dẫn</a></li><li class="breadcrumb-item"><a href="../stata-lab/lab-00.html">Lab 0 — Cài Stata và các lệnh cơ bản</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Lab 0 — Cài Stata và các lệnh cơ bản</h1>
+<p class="subtitle lead">Hướng dẫn nền tảng trước khi vào 15 lab buổi</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="callout callout-style-simple callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>🎯 Mục tiêu Lab 0
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Sau Lab 0, bạn có thể:</p>
+<ul>
+<li><strong>Mở Stata</strong> trên máy phòng FTU hoặc máy cá nhân</li>
+<li><strong>Tải, đọc, ghi</strong> dataset (<code>.dta</code>, <code>.csv</code>, <code>.xlsx</code>)</li>
+<li><strong>Khám phá nhanh</strong> một dataset bằng <code>describe</code>, <code>summarize</code>, <code>tabulate</code></li>
+<li><strong>Viết do-file</strong> đầu tiên có comment tiếng Việt</li>
+<li><strong>Lưu kết quả</strong> ra log file</li>
+</ul>
+</div>
+</div>
+<section id="tiếp-cận-stata" class="level2">
+<h2 class="anchored" data-anchor-id="tiếp-cận-stata">1. Tiếp cận Stata</h2>
+<section id="phương-án-a-phòng-máy-ftu-khuyên-dùng-cho-sinh-viên" class="level3">
+<h3 class="anchored" data-anchor-id="phương-án-a-phòng-máy-ftu-khuyên-dùng-cho-sinh-viên">Phương án A — Phòng máy FTU (khuyên dùng cho sinh viên)</h3>
+<p>Đa số phòng máy của FTU có Stata cài sẵn. Lịch sử dụng:</p>
+<ul>
+<li>Hỏi giảng viên về <strong>lịch phòng máy</strong> dành cho lớp DTU301</li>
+<li>Mang theo <strong>USB</strong> để lưu file do/log/dataset của bạn</li>
+<li>Mỗi buổi lên phòng máy 1-2 lần là đủ làm xong 1-2 lab</li>
+</ul>
+</section>
+<section id="phương-án-b-mua-stata-be-cho-sinh-viên-129năm" class="level3">
+<h3 class="anchored" data-anchor-id="phương-án-b-mua-stata-be-cho-sinh-viên-129năm">Phương án B — Mua Stata BE cho sinh viên (~$129/năm)</h3>
+<p>Nếu bạn dự định <strong>làm khoá luận</strong> hoặc <strong>tiếp tục nghiên cứu lâu dài</strong>, cân nhắc mua <strong>Stata BE student</strong>:</p>
+<ul>
+<li>Đăng ký trên <a href="https://www.stata.com/order/new/edu/gradplans/">stata.com</a> — cần ảnh chụp thẻ sinh viên FTU</li>
+<li>Cài đặt trên Windows / macOS — quy trình tự động</li>
+<li>Có quyền sử dụng tới khi tốt nghiệp</li>
+</ul>
+</section>
+<section id="phương-án-c-stata-cloud-trải-nghiệm-ngắn" class="level3">
+<h3 class="anchored" data-anchor-id="phương-án-c-stata-cloud-trải-nghiệm-ngắn">Phương án C — Stata Cloud (trải nghiệm ngắn)</h3>
+<p>Stata có <strong>trial cloud</strong> thông qua trình duyệt — không cài đặt:</p>
+<ul>
+<li>Vào https://www.stata.com/</li>
+<li>Có thể trial trong giới hạn nhất định</li>
+<li>Không lưu được do-file dài hạn</li>
+</ul>
+</section>
+</section>
+<section id="cấu-trúc-cửa-sổ-stata" class="level2">
+<h2 class="anchored" data-anchor-id="cấu-trúc-cửa-sổ-stata">2. Cấu trúc cửa sổ Stata</h2>
+<p>Khi mở Stata lần đầu, có <strong>5 cửa sổ chính</strong> bạn cần biết:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Cửa sổ</th>
+<th>Vai trò</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Command</strong> (dưới đáy)</td>
+<td>Gõ lệnh ngay — chạy 1 dòng tức thì</td>
+</tr>
+<tr class="even">
+<td><strong>Results</strong> (giữa)</td>
+<td>Output của mọi lệnh đã chạy</td>
+</tr>
+<tr class="odd">
+<td><strong>Variables</strong> (bên phải)</td>
+<td>Danh sách biến trong dataset hiện tại</td>
+</tr>
+<tr class="even">
+<td><strong>Properties</strong> (góc phải dưới)</td>
+<td>Thông tin về biến đang chọn</td>
+</tr>
+<tr class="odd">
+<td><strong>History</strong> (bên trái)</td>
+<td>Lịch sử lệnh đã chạy</td>
+</tr>
+</tbody>
+</table>
+<p>Cửa sổ thứ 6 — <strong>Do-file Editor</strong> — mở bằng nút “Do-file Editor” hoặc <code>Ctrl+9</code>. Đây là chỗ bạn <strong>viết script</strong> thay vì gõ từng lệnh.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>🔑 Khẩu lệnh quan trọng nhất
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Đừng gõ lệnh ở Command window!</strong> Luôn dùng <strong>Do-file Editor</strong>. Lý do: bạn cần tái tạo lại được phân tích về sau, và cần nộp file <code>.do</code> cho giảng viên.</p>
+</div>
+</div>
+</section>
+<section id="viết-do-file-đầu-tiên" class="level2">
+<h2 class="anchored" data-anchor-id="viết-do-file-đầu-tiên">3. Viết do-file đầu tiên</h2>
+<p>Mở Do-file Editor (<code>Ctrl+9</code>) và gõ:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>* Lab 0 — DTU301 — Buổi học đầu tiên với Stata</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>* Họ tên: &lt;điền tên&gt;</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>* MSSV: &lt;điền MSSV&gt;</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>* Ngày: &lt;điền ngày&gt;</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="kw">clear</span> <span class="ot">all</span>                    <span class="co">// Xóa dữ liệu cũ trong bộ nhớ</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="kw">set</span> <span class="kw">more</span> <span class="kw">off</span>                 <span class="co">// Không phải bấm space để xem tiếp output</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>* Tải dataset có sẵn của Stata</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="kw">sysuse</span> auto, <span class="kw">clear</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>* In thông báo ra màn hình</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="kw">display</span> <span class="st">"Stata đang chạy. Bạn đã mở dataset auto.dta"</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>* Xem cấu trúc dataset</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="kw">describe</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>* Xem 5 dòng đầu</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ot">list</span> <span class="kw">in</span> 1/5</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Lưu file</strong> với tên <code>lab00_&lt;tên&gt;.do</code> ở thư mục bạn chọn.</p>
+<p><strong>Chạy file</strong>: nhấn nút <em>Execute (do)</em> — hoặc phím tắt <code>Ctrl+D</code> để chạy tất cả, <code>Ctrl+R</code> để chạy phần được bôi đen.</p>
+</section>
+<section id="khám-phá-dataset-bốn-lệnh-cốt-lõi" class="level2">
+<h2 class="anchored" data-anchor-id="khám-phá-dataset-bốn-lệnh-cốt-lõi">4. Khám phá dataset — bốn lệnh cốt lõi</h2>
+<section id="describe-mô-tả-cấu-trúc" class="level3">
+<h3 class="anchored" data-anchor-id="describe-mô-tả-cấu-trúc"><code>describe</code> — mô tả cấu trúc</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">describe</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Output sẽ cho biết: - <strong>Số quan sát</strong> (observations) — bao nhiêu dòng - <strong>Số biến</strong> (variables) — bao nhiêu cột - <strong>Kiểu dữ liệu</strong> từng biến (<code>byte</code>, <code>int</code>, <code>float</code>, <code>str</code>…) - <strong>Label</strong> của biến (nếu có)</p>
+</section>
+<section id="summarize-thống-kê-mô-tả-số" class="level3">
+<h3 class="anchored" data-anchor-id="summarize-thống-kê-mô-tả-số"><code>summarize</code> — thống kê mô tả số</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">summarize</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">summarize</span> price mpg <span class="kw">weight</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="kw">summarize</span>, <span class="kw">detail</span>   <span class="co">// có thêm phân vị, độ lệch, kurtosis</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Đây là lệnh <strong>thường dùng nhất</strong>. Hãy luôn <code>summarize</code> ngay sau khi mở dataset mới.</p>
+</section>
+<section id="tabulate-bảng-tần-suất-biến-phân-loại" class="level3">
+<h3 class="anchored" data-anchor-id="tabulate-bảng-tần-suất-biến-phân-loại"><code>tabulate</code> — bảng tần suất biến phân loại</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">tabulate</span> foreign</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="kw">tabulate</span> foreign, <span class="kw">summarize</span>(price)   <span class="co">// có cả mean price theo nhóm</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="kw">tabulate</span> foreign rep78               <span class="co">// bảng chéo</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="list-xem-dòng-dữ-liệu-thô" class="level3">
+<h3 class="anchored" data-anchor-id="list-xem-dòng-dữ-liệu-thô"><code>list</code> — xem dòng dữ liệu thô</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ot">list</span> make price mpg <span class="kw">in</span> 1/10            <span class="co">// 10 dòng đầu</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="ot">list</span> <span class="kw">if</span> mpg &gt; 30                       <span class="co">// tất cả dòng có mpg &gt; 30</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="ot">list</span> make price <span class="kw">if</span> foreign == 1        <span class="co">// xe nhập khẩu</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>📝 Bài tập nhỏ ngay tại Lab 0
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Mở dataset <code>auto</code>, trả lời các câu hỏi:</p>
+<ol type="1">
+<li>Có bao nhiêu xe trong dataset?</li>
+<li>Giá trung bình là bao nhiêu?</li>
+<li>Có bao nhiêu xe nội địa (<code>foreign == 0</code>) và bao nhiêu xe nhập khẩu (<code>foreign == 1</code>)?</li>
+<li>Xe nào có <code>mpg</code> cao nhất?</li>
+<li>So sánh giá trung bình giữa xe nội địa và xe nhập khẩu — xe nào đắt hơn?</li>
+</ol>
+</div>
+</div>
+</section>
+</section>
+<section id="tạo-biến-mới-và-lọc-dữ-liệu" class="level2">
+<h2 class="anchored" data-anchor-id="tạo-biến-mới-và-lọc-dữ-liệu">5. Tạo biến mới và lọc dữ liệu</h2>
+<section id="generate-tạo-biến-mới" class="level3">
+<h3 class="anchored" data-anchor-id="generate-tạo-biến-mới"><code>generate</code> — tạo biến mới</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>* Tạo biến mới từ công thức</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> price_thousand = price / 1000</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> is_expensive = (price &gt; 10000)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="kw">generate</span> ln_price = <span class="fu">log</span>(price)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="replace-sửa-giá-trị-biến-hiện-có" class="level3">
+<h3 class="anchored" data-anchor-id="replace-sửa-giá-trị-biến-hiện-có"><code>replace</code> — sửa giá trị biến hiện có</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">replace</span> mpg = 25 <span class="kw">if</span> make == <span class="st">"Honda Accord"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="keep-drop-giữ-xóa-biến-hoặc-dòng" class="level3">
+<h3 class="anchored" data-anchor-id="keep-drop-giữ-xóa-biến-hoặc-dòng"><code>keep</code> / <code>drop</code> — giữ / xóa biến hoặc dòng</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">keep</span> make price mpg foreign          <span class="co">// Giữ 4 biến này, bỏ phần còn lại</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="kw">drop</span> <span class="kw">if</span> price &lt; 4000                  <span class="co">// Xóa các dòng có price &lt; 4000</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="kw">keep</span> <span class="kw">if</span> foreign == 1                  <span class="co">// Giữ chỉ xe nhập khẩu</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="sort-sắp-xếp" class="level3">
+<h3 class="anchored" data-anchor-id="sort-sắp-xếp"><code>sort</code> — sắp xếp</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">sort</span> price                            <span class="co">// tăng dần theo price</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="kw">gsort</span> -price                          <span class="co">// GIẢM dần theo price</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="vẽ-biểu-đồ-cơ-bản" class="level2">
+<h2 class="anchored" data-anchor-id="vẽ-biểu-đồ-cơ-bản">6. Vẽ biểu đồ cơ bản</h2>
+<section id="scatter-plot" class="level3">
+<h3 class="anchored" data-anchor-id="scatter-plot">Scatter plot</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">twoway</span> <span class="kw">scatter</span> price mpg</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="kw">twoway</span> <span class="kw">scatter</span> price mpg, <span class="bn">title</span>(<span class="st">"Giá vs Tiêu thụ xăng"</span>) <span class="co">///</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>    <span class="bn">xtitle</span>(<span class="st">"Mile per gallon"</span>) <span class="bn">ytitle</span>(<span class="st">"Giá (USD)"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="bar-chart" class="level3">
+<h3 class="anchored" data-anchor-id="bar-chart">Bar chart</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="bn">bar</span> (<span class="kw">mean</span>) price, <span class="bn">over</span>(foreign)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="kw">graph</span> <span class="bn">bar</span> (<span class="kw">mean</span>) price (<span class="kw">mean</span>) mpg, <span class="bn">over</span>(foreign)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="histogram" class="level3">
+<h3 class="anchored" data-anchor-id="histogram">Histogram</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">histogram</span> price</span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="kw">histogram</span> price, <span class="kw">by</span>(foreign) <span class="fu">normal</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="lưu-output-ra-log-file" class="level2">
+<h2 class="anchored" data-anchor-id="lưu-output-ra-log-file">7. Lưu output ra log file</h2>
+<p>Để chấm Stata Lab, bạn cần nộp file <code>.log</code> chứng minh code đã chạy. Cách bật log:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>* Đầu <span class="kw">do</span>-file</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">using</span> <span class="st">"lab00_&lt;tên&gt;.log"</span>, <span class="kw">replace</span> <span class="bn">text</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>* ... toàn bộ phân tích của bạn ở đây ...</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>* Cuối <span class="kw">do</span>-file</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="fu">log</span> <span class="kw">close</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>File log sẽ ở <strong>cùng thư mục</strong> với do-file.</p>
+</section>
+<section id="lưu-và-đọc-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="lưu-và-đọc-dataset">8. Lưu và đọc dataset</h2>
+<section id="lưu-dataset-hiện-tại" class="level3">
+<h3 class="anchored" data-anchor-id="lưu-dataset-hiện-tại">Lưu dataset hiện tại</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">save</span> <span class="st">"mydata.dta"</span>, <span class="kw">replace</span>          <span class="co">// Lưu định dạng Stata</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="kw">export</span> delimited <span class="st">"mydata.csv"</span>, <span class="kw">replace</span>   <span class="co">// Lưu CSV</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="đọc-dataset-bên-ngoài" class="level3">
+<h3 class="anchored" data-anchor-id="đọc-dataset-bên-ngoài">Đọc dataset bên ngoài</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">use</span> <span class="st">"mydata.dta"</span>, <span class="kw">clear</span>             <span class="co">// Đọc .dta</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>import delimited <span class="st">"mydata.csv"</span>, <span class="kw">clear</span> <span class="kw">case</span>(<span class="fu">lower</span>)   <span class="co">// Đọc CSV</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>import excel <span class="st">"mydata.xlsx"</span>, firstrow <span class="kw">clear</span>         <span class="co">// Đọc Excel</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+<section id="mẹo-làm-stata-hiệu-quả" class="level2">
+<h2 class="anchored" data-anchor-id="mẹo-làm-stata-hiệu-quả">9. Mẹo làm Stata hiệu quả</h2>
+<ol type="1">
+<li><strong>Luôn dùng do-file</strong>, không gõ lệnh tay</li>
+<li><strong>Comment tiếng Việt</strong> sau mỗi đoạn code</li>
+<li><strong>Đặt tên biến dễ hiểu</strong>: <code>gdp_thuc</code> thay vì <code>g1</code></li>
+<li><strong>Sử dụng <code>///</code></strong> để xuống dòng trong 1 lệnh dài</li>
+<li><strong>Bật <code>set more off</code></strong> đầu file để không phải bấm space</li>
+<li><strong>Save thường xuyên</strong> dataset đã làm sạch</li>
+<li><strong>Tạo working directory chuyên cho DTU301</strong>: <code>cd "đường-dẫn"</code> đầu file</li>
+</ol>
+</section>
+<section id="lệnh-giúp-đỡ" class="level2">
+<h2 class="anchored" data-anchor-id="lệnh-giúp-đỡ">10. Lệnh giúp đỡ</h2>
+<p>Khi không nhớ syntax:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb16"><pre class="sourceCode stata code-with-copy"><code class="sourceCode stata"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">help</span> <span class="kw">summarize</span>         <span class="co">// Hướng dẫn chi tiết</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="kw">help</span> <span class="kw">twoway</span>            <span class="co">// Hướng dẫn về biểu đồ</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="kw">search</span> PPF             <span class="co">// Tìm tài liệu, ví dụ</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="deliverable-lab-0" class="level2">
+<h2 class="anchored" data-anchor-id="deliverable-lab-0">Deliverable Lab 0</h2>
+<p>Nộp <strong>1 file do</strong> <code>lab00_&lt;tên&gt;.do</code> thực hiện:</p>
+<ol type="1">
+<li>Mở <code>sysuse auto, clear</code></li>
+<li>Mô tả dataset (<code>describe</code>)</li>
+<li>Tính thống kê mô tả cho <code>price</code>, <code>mpg</code></li>
+<li>So sánh trung bình <code>price</code> giữa xe nội địa và nhập khẩu (<code>tabulate foreign, summarize(price)</code>)</li>
+<li>Vẽ scatter <code>price</code> vs <code>mpg</code>, phân biệt nội địa/nhập khẩu</li>
+<li>Tạo biến mới <code>ln_price = log(price)</code></li>
+<li><strong>Comment tiếng Việt</strong> ở mỗi bước</li>
+<li>Bật <code>log using "lab00.log"</code> ở đầu, <code>log close</code> ở cuối</li>
+</ol>
+<p>Nộp kèm: - <code>lab00_&lt;tên&gt;.do</code> - <code>lab00_&lt;tên&gt;.log</code> - Phản hồi ngắn 200 chữ: bạn thấy Stata khó/dễ hơn so với Excel ở điểm nào?</p>
+<hr>
+<p><em>Lab tiếp theo</em>: <a href="../stata-lab/lab-01.html">Lab 1 — Vẽ PPF và tính chi phí cơ hội</a> →</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/dongkien\.github\.io\/material-building\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2026 — Bộ môn Kinh tế và Quản lý, Viện Kinh tế và Kinh doanh Quốc tế, ĐH Ngoại Thương · <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.vi">CC BY-NC-SA 4.0</a></p>
+</div>   
+    <div class="nav-footer-center">
+<p>TS. Đỗ Ngọc Kiên — Trưởng Bộ môn</p>
+</div>
+    <div class="nav-footer-right">
+<p>Tạo bằng <a href="https://quarto.org/">Quarto</a></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>
