@@ -181,7 +181,7 @@
     "href": "python-lab/lab-00.html#cài-thêm-các-package-cho-kinh-tế",
     "title": "Python Lab 0 — Cài Python + pandas + Jupyter",
     "section": "2. Cài thêm các package cho kinh tế",
-    "text": "2. Cài thêm các package cho kinh tế\nMở Jupyter Lab → tạo notebook mới → trong cell đầu:\n# Cài package (chỉ chạy 1 lần)\n%pip install pandas numpy matplotlib seaborn statsmodels scikit-learn\n%pip install openpyxl       # đọc Excel .xlsx\n%pip install pyreadstat     # đọc Stata .dta\n%pip install linearmodels   # panel data, IV\n%pip install wbdata         # World Bank API\n%pip install ... là cú pháp đặc biệt cho Jupyter — chạy pip install trong môi trường đúng.\nĐợi vài phút. Sau khi cài xong, restart kernel (Kernel &gt; Restart).",
+    "text": "2. Cài thêm các package cho kinh tế\nTrong Jupyter Lab → tạo notebook mới → trong cell đầu:\n# Cài package (chỉ chạy 1 lần — chỉ dùng trong Jupyter)\n%pip install pandas numpy matplotlib seaborn statsmodels scikit-learn\n%pip install openpyxl       # đọc Excel .xlsx\n%pip install pyreadstat     # đọc Stata .dta\n%pip install linearmodels   # panel data, IV\n%pip install wbdata         # World Bank API\n%pip install ... là Jupyter magic command — chạy pip install trong môi trường đúng. Chỉ hoạt động trong notebook (.ipynb), không hoạt động trong file .py thuần.\n\n\n\n\n\n\nNếu chạy từ Terminal (file .py): dùng pip install trực tiếp trong bash (không phải Python):\npip install pandas numpy matplotlib seaborn statsmodels scikit-learn openpyxl pyreadstat linearmodels wbdata\n\n\n\nĐợi vài phút. Sau khi cài xong, restart kernel (Kernel &gt; Restart).",
     "crumbs": [
       "Trang chủ",
       "Hướng dẫn",
