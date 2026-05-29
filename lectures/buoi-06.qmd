@@ -279,7 +279,7 @@ So sánh:
 4. **Đọc thêm** về Solow growth accounting tại Việt Nam.
 
 ::: {.callout-tip}
-## 🔧 Stata / R / Python Lab 6 (bonus 5%)
+## 🔧 AcLab+ 6 (bonus 5%)
 
 Bài này có lab thực hành **ước lượng Cobb-Douglas cho Việt Nam** trong Stata: lấy dữ liệu Y, K, L từ Penn World Tables, hồi quy log-linear, ước lượng α và TFP residual. Bạn sẽ học `regress`, `log`, robust SE, residual analysis.
 

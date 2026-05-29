@@ -281,7 +281,7 @@ Sử dụng khung **AD-AS** và **Phillips** để phân tích **gói hỗ trợ
 4. **Đọc thêm** về **Mundell-Fleming**.
 
 ::: {.callout-tip}
-## 🔧 Stata / R / Python Lab 8 (bonus 5%)
+## 🔧 AcLab+ 8 (bonus 5%)
 
 Bài này có lab **ước lượng đường Phillips Việt Nam 2010-2024** trong Stata: lấy dữ liệu CPI và unemployment từ GSO, vẽ scatter, ước lượng OLS, so sánh Phillips ngắn hạn từng giai đoạn.
 

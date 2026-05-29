@@ -38,7 +38,7 @@ website:
         text: "Lịch học"
       - href: lectures/index.qmd
         text: "Bài giảng"
-      - text: "Stata / R / Python Lab"
+      - text: "AcLab+"
         menu:
           - href: stata-lab/index.qmd
             text: "Stata Lab"

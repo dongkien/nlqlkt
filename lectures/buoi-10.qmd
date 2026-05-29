@@ -245,7 +245,7 @@ Phân tích **chính sách tỷ giá Việt Nam 2022** qua khung Mundell-Fleming
 4. **Đọc thêm** về Khủng hoảng châu Á 1997.
 
 ::: {.callout-tip}
-## 🔧 Stata / R / Python Lab 10 (bonus 5%)
+## 🔧 AcLab+ 10 (bonus 5%)
 
 Bài này có lab phân tích **Mundell-Fleming bằng dữ liệu lịch sử**: Hong Kong, Mỹ thời Reagan, Anh ERM 1992. Tính BoP, tỷ giá, đo tác động của các cú sốc.
 

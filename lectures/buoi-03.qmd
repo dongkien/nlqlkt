@@ -276,7 +276,7 @@ Tính **HHI** cho một ngành Việt Nam tự chọn (ngân hàng, bán lẻ, h
 4. **Đọc thêm** về thuế Pigou và định lý Coase.
 
 ::: {.callout-tip}
-## 🔧 Stata / R / Python Lab 3 (bonus 5%)
+## 🔧 AcLab+ 3 (bonus 5%)
 
 Bài này có lab thực hành **tính HHI cho 5 ngành Việt Nam** trong Stata: viễn thông, ngân hàng, bia, bán lẻ, hàng không. Bạn sẽ học `egen rowtotal`, `gsort`, formatting bảng so sánh.
 

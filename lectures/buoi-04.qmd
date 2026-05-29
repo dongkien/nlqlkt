@@ -270,7 +270,7 @@ Khi thuế Pigou = MEC, **giá thị trường = giá xã hội đúng**, sản 
 4. **Đọc thêm** về Hệ thống Đổi mới sáng tạo quốc gia (NIS).
 
 ::: {.callout-tip}
-## 🔧 Stata / R / Python Lab 4 (bonus 5%)
+## 🔧 AcLab+ 4 (bonus 5%)
 
 Bài này có lab thực hành **mô phỏng thuế Pigou** trong Stata: tạo dataset cung-cầu, tìm cân bằng trước và sau khi áp thuế, đo *deadweight loss (DWL)* và tổng phúc lợi. Áp dụng cho case **thuế carbon Việt Nam**.
 

@@ -231,7 +231,7 @@ Phân tích **chiến lược phát triển ĐBSCL 2026-2030** qua khung NEG:
 4. **Đọc thêm** về các quy hoạch vùng (vd Quy hoạch ĐBSCL 2021-2030).
 
 ::: {.callout-tip}
-## 🔧 Stata / R / Python Lab 13 (bonus 5%)
+## 🔧 AcLab+ 13 (bonus 5%)
 
 Bài này có lab **so sánh 6 vùng KT-XH** trong Stata: tính GRDP/đầu người, chênh lệch vùng, box plot.
 

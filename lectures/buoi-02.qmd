@@ -265,7 +265,7 @@ Bốn loại kinh tế này sẽ là **trọng tâm chính sách kinh tế Việ
 4. **Đọc thêm (tự chọn)**: Case Singapore — *Lý Hiển Long: Ba quy tắc QLKT*.
 
 ::: {.callout-tip}
-## 🔧 Stata / R / Python Lab 2 (bonus 5%)
+## 🔧 AcLab+ 2 (bonus 5%)
 
 Bài này có lab thực hành **phân tích cơ cấu chi NSNN Việt Nam 2015-2024** trong Stata: phân loại các nhóm chi theo *5 chức năng QLKT*, tính tỷ trọng, so sánh hai giai đoạn 2015-2019 và 2020-2024, vẽ biểu đồ stacked area.
 

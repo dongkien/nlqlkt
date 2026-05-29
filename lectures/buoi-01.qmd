@@ -312,7 +312,7 @@ Nếu chính sách vượt qua cả ba kiểm tra → chính sách tốt theo nh
 4. **Tự đọc**: Nghị quyết 60/2025 về bộ máy chính quyền hai cấp.
 
 ::: {.callout-tip}
-## 🔧 Stata / R / Python Lab 1 (bonus 5%)
+## 🔧 AcLab+ 1 (bonus 5%)
 
 Sau buổi này, bạn có thể **vẽ PPF và tính chi phí cơ hội bằng dữ liệu** trong Stata. Lab 1 hướng dẫn từng bước: tạo dataset PPF, vẽ đường cong lõm, tính chi phí cơ hội biên tăng dần, và mô phỏng *PPF dịch ra* khi nền kinh tế tăng trưởng.
 

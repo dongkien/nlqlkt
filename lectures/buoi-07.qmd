@@ -241,7 +241,7 @@ Phân tích **phản ứng NHNN trước cú sốc cung giá xăng dầu 2022** 
 4. **Đọc thêm** về crowding out và bẫy thanh khoản (Krugman 1998 về Nhật Bản).
 
 ::: {.callout-tip}
-## 🔧 Stata / R / Python Lab 7 (bonus 5%)
+## 🔧 AcLab+ 7 (bonus 5%)
 
 Bài này có lab **mô phỏng cân bằng IS-LM bằng số** trong Stata: cài tham số, vẽ hai đường, tìm $(Y^*, r^*)$, mô phỏng tác động của tăng $G$ và tăng $M$.
 
