@@ -1,49 +1,233 @@
 ---
-title: "Buổi 15 — Tổng kết và đánh giá"
-subtitle: "Thuyết trình sinh viên; phản biện chéo; đánh giá tổng kết cuối kỳ"
-reading-time: "Chương Seminar"
+title: "Buổi 15 — Thuyết trình + Tổng kết học phần"
+subtitle: "Tổng hợp 5 chương · Thuyết trình nhóm · Phản biện chéo · Bài học cuối khoá"
+reading-time: "Seminar · ~40 phút đọc"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Đóng góp CLO
 
-**CLO2, CLO3, CLO4, CLO5 — Đánh giá tổng kết toàn học phần**
+**CLO2, CLO3, CLO4, CLO5** — Đánh giá tổng hợp năng lực vận dụng, phân tích, phối hợp nhóm và sử dụng công cụ số.
+
+Buổi 15 đóng lại học phần DTU301. Sinh viên thuyết trình kết quả workshop, phản biện chéo, và rút ra bài học cuối khoá.
 :::
 
-## Nội dung lý thuyết (thuyết giảng)
+## Lộ trình Buổi 15
 
-**Cấu trúc Buổi 15 — Tổng kết và đánh giá**
+| Phần | Nội dung |
+|:---:|---|
+| **A** | Tổng hợp 5 chương — liên kết khung lý thuyết |
+| **B** | Trình bày của các nhóm — thứ tự, quy tắc, phản biện chéo |
+| **C** | Tiêu chí đánh giá — nội dung, trình bày, làm việc nhóm |
+| **D** | Bài học cuối khoá — 5 thông điệp + kỹ năng dài hạn |
 
-- **Thuyết trình và phản biện** của sinh viên về các vấn đề chính sách kinh tế
-- **Phản biện chéo** giữa các nhóm
-- **Đánh giá tổng kết** theo hình thức do giảng viên quyết định
+## A. Tổng hợp 5 chương
 
-## Thực hành / Thảo luận
+### A.1. Hành trình từ Buổi 1 đến Buổi 13
 
-Thuyết trình nhóm (15–20 phút/nhóm) + phản biện 10 phút. Mỗi nhóm phản biện ít nhất 2 nhóm khác.
+DTU301 đi qua **5 chương + Seminar** xây dựng tư duy QLKT từ nền tảng đến vĩ mô mở rộng:
 
-## Bài tập lớn / Tiểu luận
+| Chương | Buổi | Trọng tâm | Khung chính |
+|:---:|---|---|---|
+| **1** | 1–2 | Tổng quan QLKT | Bentham, Kant, Rawls; 5 chức năng; 3 công cụ |
+| **2** | 3–5 | QLKT ngành + DN | Cấu trúc TT, thất bại TT, CSCN, NIS, OECD |
+| **3** | 6–8 | Vĩ mô đóng | Cobb-Douglas, IS-LM, AD-AS, Phillips, CSTK+CSTT |
+| **4** | 9–11 | Vĩ mô mở | BoP, Mundell-Fleming, Trilemma, KH Á 1997 |
+| **5** | 12–13 | Địa phương + Vùng | Tiebout, Oates, Musgrave, NEG, 4 cực ĐH XIV |
+| **Seminar** | 14–15 | Tổng hợp + thuyết trình | Tất cả |
 
-**Đánh giá cuối kỳ (60%)** — diễn ra trong Buổi 14–15 hoặc theo lịch riêng của giảng viên. Tiêu chí xem mục [Đánh giá](../exams/index.qmd).
+### A.2. Bốn cấp độ QLKT
 
-## Tự học có hướng dẫn
+Cấu trúc xuyên môn = **bốn cấp độ liên kết**:
 
-1. Tổng hợp khung tư duy đã học qua 5 chương vào một sơ đồ.
-2. Chuẩn bị 3 câu hỏi phản biện sắc sảo cho các nhóm khác.
-3. Tự đánh giá đóng góp của mình trong nhóm theo CLO4.
+| Cấp | Trọng tâm | Công cụ chính | Chương |
+|:---:|---|---|---|
+| **1** | Ngành | Cấu trúc TT, điều tiết | 2 |
+| **2** | Vĩ mô đóng | Tài khoá, tiền tệ | 3 |
+| **3** | KT mở | BoP, tỷ giá, MF | 4 |
+| **4** | Địa phương + Vùng | Phân cấp, NEG | 5 |
+
+Mỗi cấp có *công cụ riêng* nhưng *liên kết với nhau*. Phối hợp 4 cấp = nghệ thuật QLKT hiện đại.
+
+### A.3. Khung lý thuyết cốt lõi cần nhớ
+
+Sau học phần, sinh viên nên ghi nhớ **6 khung lý thuyết** sau làm hành trang:
+
+| Khung | Tác giả | Áp dụng |
+|---|---|---|
+| **Cung – Cầu + Cấu trúc TT** | Tân cổ điển (Marshall) | Chương 2 |
+| **Thất bại thị trường** (4 nguồn) | Stiglitz | Chương 2 |
+| **IS-LM** | Hicks 1937 | Chương 3 |
+| **AD-AS + Phillips** | Keynes + Friedman/Phelps | Chương 3 |
+| **Mundell-Fleming + Trilemma** | Mundell 1963 | Chương 4 |
+| **Solow + Cobb-Douglas** | Solow 1957 | Chương 3 |
+| **NEG** | Krugman 1991 | Chương 5 |
+
+Bảy khung trên là **hộp dụng cụ tư duy** mà sinh viên sẽ dùng *dài hạn* — trong khoá luận, công việc, hoặc cao học.
+
+## B. Trình bày của các nhóm
+
+### B.1. Thứ tự trình bày
+
+- **Bốc thăm** thứ tự đầu buổi (đảm bảo công bằng)
+- Mỗi nhóm: **15–20 phút** trình bày + **10 phút** Q&A
+- Tổng cộng **4–6 nhóm** trong **~3 giờ**
+- **Nghỉ giữa giờ** 10 phút (sau nhóm thứ 3)
+- **Cuối buổi**: tổng kết của giảng viên ~20 phút
+
+### B.2. Quy tắc trình bày
+
+| # | Quy tắc | Hậu quả nếu vi phạm |
+|---|---|---|
+| 1 | **Đúng thời gian** (cảnh báo 2 phút cuối) | Trừ điểm trình bày |
+| 2 | **Phân công rõ thành viên** | Khó đánh giá CLO4 |
+| 3 | **Slide rõ + đầy đủ trích dẫn** | Trừ điểm liêm chính |
+| 4 | **Trình bày không đọc slide** | Trừ điểm trình bày |
+| 5 | **Tương tác với khán giả** | Trừ điểm trình bày |
+
+**Mẹo trình bày tốt**:
+- Tập trước ít nhất **2 lần** với nhóm
+- **Slide tối giản**: 1 ý chính + 1 hình/bảng/biểu đồ
+- **Câu chuyện**: dẫn dắt từ vấn đề → khung lý thuyết → bằng chứng → khuyến nghị
+- **Tự tin**: nhìn khán giả, không quay lưng vào slide
+
+### B.3. Phản biện chéo
+
+Mỗi nhóm **phản biện 1 nhóm khác** (bốc thăm).
+
+**Quy tắc phản biện**:
+
+| Bước | Thời lượng | Nội dung |
+|---|---|---|
+| 1 | 5 phút | Phản biện: **3 điểm mạnh + 3 điểm yếu** của nhóm bị phản biện |
+| 2 | 3 phút | Nhóm trả lời |
+| 3 | 2 phút | Giảng viên tổng hợp và góp ý |
+
+**Đo lường**:
+- **CLO3** (phân tích): chất lượng câu hỏi phản biện
+- **CLO4** (phối hợp): cách trả lời nhóm
+
+**Tinh thần phản biện học thuật**:
+- Phản biện *ý kiến*, không công kích *cá nhân*
+- Có *bằng chứng* — không chỉ "tôi nghĩ"
+- Sẵn sàng *học từ phản biện* — không phòng thủ
+
+## C. Tiêu chí đánh giá
+
+### C.1. Tiêu chí nội dung
+
+| Tiêu chí | Trọng số | Cụ thể |
+|---|:---:|---|
+| **Đúng khung lý thuyết** | 25% | Áp dụng khung 5 chương phù hợp |
+| **Dữ liệu thực tế cập nhật** | 20% | Số liệu mới (2023-2024), có nguồn |
+| **Phân tích sâu, có đánh đổi** | 25% | Bước 4 của khung 5-bước (Buổi 14) |
+| **Đề xuất khả thi cho VN** | 15% | Bước 5 — cụ thể, có lộ trình |
+| **Trích dẫn đầy đủ (APA 7th)** | 15% | Nguồn rõ ràng, không đạo văn |
+
+### C.2. Tiêu chí trình bày
+
+| Tiêu chí | Trọng số |
+|---|:---:|
+| **Cấu trúc rõ ràng** | 25% |
+| **Slide chuyên nghiệp** | 20% |
+| **Giao tiếp + giọng nói** | 20% |
+| **Tương tác khán giả** | 15% |
+| **Đúng thời gian** | 20% |
+
+### C.3. Tiêu chí làm việc nhóm (CLO4)
+
+Đánh giá qua:
+
+- **Phân công rõ** trong slide và phần trình bày
+- **Tự đánh giá đóng góp** cá nhân (mỗi sinh viên nộp 1 đoạn ngắn)
+- **Đánh giá chéo** trong nhóm (mỗi sinh viên đánh giá đồng đội)
+- **Quan sát của giảng viên** trong workshop Buổi 14
+
+### C.4. Tiêu chí sử dụng AI (CLO5)
+
+| Tiêu chí | Yêu cầu |
+|---|---|
+| **Khai báo phạm vi** | Có ghi rõ phần nào dùng AI |
+| **Tự kiểm chứng** | Mọi số liệu AI cung cấp đều được verify |
+| **Không sao chép trực tiếp** | Phải xử lý lại |
+| **Trích dẫn nguồn gốc** | Không che giấu nguồn |
+
+Vi phạm CLO5 → trừ tới 1/2 điểm phần thuyết trình.
+
+## D. Bài học cuối khoá
+
+### D.1. Năm thông điệp cốt lõi
+
+| # | Thông điệp |
+|---|---|
+| **1** | **QLKT là khoa học + nghệ thuật**. Khung lý thuyết là *chuẩn*; vận dụng đòi hỏi *phán đoán bối cảnh*. |
+| **2** | **Mọi chính sách đều có đánh đổi**. Không có "win-win tuyệt đối" trong vĩ mô. |
+| **3** | **Việt Nam có đặc thù** — KTTT định hướng XHCN. Chính sách quốc tế là *tham khảo*, không *bắt chước máy móc*. |
+| **4** | **Dữ liệu là nền tảng**. Không có dữ liệu, lập luận chỉ là *opinion*. |
+| **5** | **AI là công cụ, không phải thay thế tư duy**. Sinh viên kinh tế phải *học chứ không khoán cho AI*. |
+
+### D.2. Kỹ năng dài hạn
+
+Sau DTU301, sinh viên nên trang bị:
+
+| Kỹ năng | Cách rèn luyện |
+|---|---|
+| **Đọc hiểu chính sách** | Đọc văn kiện Đại hội, luật, NĐ — không chỉ tóm tắt báo chí |
+| **Phân tích định lượng** | Tiếp tục dùng Stata; học R, Python cho nâng cao |
+| **Viết học thuật** | Viết tiểu luận có cấu trúc; trích dẫn chuẩn APA |
+| **Thuyết trình + phản biện** | Tham gia clb tranh luận; chuẩn bị bài kỹ |
+| **Sử dụng AI có trách nhiệm** | AI là *trợ lý*, không phải *tác giả* |
+
+### D.3. Lời chia tay
+
+Khoá học kết thúc nhưng *hành trình tư duy QLKT mới bắt đầu*. Một số gợi ý:
+
+- **Đọc đều đặn**: *Vietnam Economic Times*, *Saigon Times*, báo IMF/WB
+- **Theo dõi** Đại hội Đảng XIV thực thi 2026-2030 — *case study sống*
+- **Học sâu** 1 lĩnh vực bạn yêu thích (tiền tệ? phát triển? vùng?)
+- **Tham gia** các nhóm nghiên cứu, hội thảo, cuộc thi
+
+::: {.callout-tip}
+## 💭 Một câu hỏi để mang theo
+
+> *"Quản lý kinh tế là khoa học hay nghệ thuật?"*
+>
+> Câu hỏi này được Buổi 1 đặt ra. Sau 15 buổi, câu trả lời của bạn có thay đổi không?
+>
+> *Nếu chỉ có một bài học muốn mang theo từ DTU301, đó là gì?*
+:::
+
+## Tổng kết Buổi 15 — Năm điểm cốt lõi
+
+1. **5 chương** tạo *khung tư duy hoàn chỉnh*: triết lý + ngành + vĩ mô đóng + vĩ mô mở + địa phương.
+2. **7 khung lý thuyết** cốt lõi cần nhớ dài hạn: cung-cầu, thất bại TT, IS-LM, AD-AS+Phillips, Mundell-Fleming, Solow, NEG.
+3. **Thuyết trình + phản biện chéo** đo lường CLO3, CLO4 — *kết nối lý thuyết với thực tiễn*.
+4. **Tiêu chí đánh giá** rõ ràng: nội dung (khung + dữ liệu + đánh đổi + đề xuất + trích dẫn) + trình bày + nhóm + AI.
+5. **Hành trang dài hạn**: kỹ năng đọc chính sách, phân tích định lượng, viết học thuật, thuyết trình, dùng AI có trách nhiệm.
+
+## Sau Seminar
+
+1. **Hoàn thiện báo cáo** (nếu được giảng viên yêu cầu).
+2. **Tự đánh giá** đóng góp cá nhân trong nhóm.
+3. **Ôn thi cuối kỳ** (20 trắc nghiệm + 2 tự luận — xem [Đánh giá](../exams/)).
+4. **Chuẩn bị tâm lý**: học phần kết thúc nhưng học suốt đời mới bắt đầu.
+
+::: {.callout-tip}
+## 🔧 Stata Lab 15 (bonus 5%)
+
+Lab cuối — **xuất bảng + biểu đồ cho thuyết trình**: dùng `outreg2`, `coefplot`, `esttab` để xuất kết quả ra Word/PDF chuyên nghiệp.
+
+→ [**Bắt đầu Lab 15 — Xuất bảng + biểu đồ**](../stata-lab/lab-15.qmd) *(~25 phút)*
+:::
 
 ## Đọc thêm
 
-- Toàn bộ tài liệu học phần.
+- Toàn bộ tài liệu học phần (Buổi 1-13).
 - Báo cáo PCI / PAPI / PAR Index phiên bản mới nhất.
-- Báo cáo cập nhật kinh tế VN mới nhất từ WB / IMF / ADB.
-
-::: {.callout-warning appearance="simple"}
-## 🚧 Nội dung đang biên soạn
-
-Bài giảng buổi 15 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
-:::
+- Báo cáo cập nhật kinh tế VN mới nhất từ WB, IMF, ADB.
+- *Văn kiện Đại hội Đảng XIV* (khi ra mắt 2026).
+- Mankiw, *Kinh tế học vĩ mô* — đọc lại các chương đã học.
 
 ---
 
-← *Buổi trước*: [Buổi 14](buoi-14.qmd) *Đây là buổi cuối của học phần.*
+← *Buổi trước*: [Buổi 14 — Seminar: Chia sẻ chuyên gia](buoi-14.qmd) | *Đây là buổi cuối của học phần.* 🎓

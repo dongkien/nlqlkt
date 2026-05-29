@@ -1,84 +1,112 @@
 ---
 title: "Lab 11 — Event study Khủng hoảng châu Á 1997"
-subtitle: "Tương ứng Buổi 11: Tác động cú sốc lên các nền kinh tế"
-reading-time: "~20 phút"
+subtitle: "Tương ứng Buổi 11: Phản ứng GDP, tỷ giá quanh 7/1997"
+reading-time: "~25 phút"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Liên kết với Buổi 11
 
-Bài này áp dụng khái niệm chính từ [Buổi 11](../lectures/buoi-11.qmd) vào dữ liệu thực tế Việt Nam.
+Event study **Khủng hoảng châu Á 1997**: tác động lên Thái Lan, Indonesia, Hàn Quốc, Philippines. So sánh với Việt Nam — vì sao VN tránh được khủng hoảng?
 
-**Khái niệm Stata học**: `rolling regression, event dummy`
+**Khái niệm Stata học**: event dummy, before/after comparison, panel
 :::
 
-::: {.callout-warning appearance="simple"}
-## 🚧 Lab đang biên soạn
-
-Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 11. Cấu trúc cố định theo template chuẩn của 16 lab.
-:::
-
-## Khung Lab 11
-
-### 1. Bài toán
-
-Đo phản ứng GDP, tỷ giá, lạm phát quanh 7/1997
-
-### 2. Dữ liệu cần
-
-Dữ liệu macro Thái/Indo/Hàn/VN 1995-2000
-
-### 3. Lệnh Stata trọng tâm
-
-Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):
+## 1. Dataset 5 nền kinh tế 1995-2000
 
 ```stata
-* Lab 11 — DTU301
-* Họ tên: <điền>, MSSV: <điền>
-
+* Lab 11 — DTU301 — Asian Crisis Event Study
 clear all
 set more off
 log using "lab11_<ten>.log", replace text
 
-* === Tải dữ liệu ===
-* (sẽ chi tiết khi có dataset thật)
+clear
+input str10 country int year float GDP_growth float FX_change
+"Thailand"    1995  9.2   0
+"Thailand"    1996  5.9   0
+"Thailand"    1997 -1.4   55
+"Thailand"    1998 -10.5  20
+"Thailand"    1999  4.4  -5
+"Thailand"    2000  4.5  -3
+"Indonesia"   1995  8.2   0
+"Indonesia"   1996  7.8   0
+"Indonesia"   1997  4.7   75
+"Indonesia"   1998 -13.1  150
+"Indonesia"   1999  0.8  -10
+"Indonesia"   2000  4.9  -8
+"Korea"       1995  9.6   0
+"Korea"       1996  7.6   0
+"Korea"       1997  5.9   60
+"Korea"       1998 -5.5   45
+"Korea"       1999 11.3  -25
+"Korea"       2000  8.9  -8
+"Philippines" 1995  4.7   0
+"Philippines" 1996  5.8   0
+"Philippines" 1997  5.2   30
+"Philippines" 1998 -0.6   15
+"Philippines" 1999  3.4  -3
+"Philippines" 2000  4.4  -5
+"Vietnam"     1995  9.5   0
+"Vietnam"     1996  9.3   0
+"Vietnam"     1997  8.2   8
+"Vietnam"     1998  5.8   12
+"Vietnam"     1999  4.8   2
+"Vietnam"     2000  6.8   1
+end
 
-* === Phân tích ===
-* Sử dụng: rolling regression, event dummy
+list, sepby(country)
+```
 
-* === Đóng log ===
+## 2. Event dummy và phân tích
+
+```stata
+* Event: 7/1997 → dummy cho năm sau khủng hoảng
+generate crisis = (year >= 1997)
+generate post_crisis = (year >= 1998)
+
+* So sánh GDP trước/sau với 4 nước bị khủng hoảng (loại VN)
+display "=== GDP growth trước vs sau crisis (4 nước Tiger) ==="
+tabulate post_crisis if country != "Vietnam", summarize(GDP_growth)
+
+* VN
+display "=== Vietnam ==="
+tabulate post_crisis if country == "Vietnam", summarize(GDP_growth)
+```
+
+**Câu hỏi 1**: GDP TB của 4 Tiger giảm bao nhiêu sau crisis? VN giảm bao nhiêu?
+
+## 3. Biểu đồ panel
+
+```stata
+twoway (line GDP_growth year if country == "Thailand",    lcolor("114 47 55")) ///
+       (line GDP_growth year if country == "Indonesia",   lcolor("0 88 163")) ///
+       (line GDP_growth year if country == "Korea",       lcolor("46 125 80")) ///
+       (line GDP_growth year if country == "Philippines", lcolor("193 154 77")) ///
+       (line GDP_growth year if country == "Vietnam",     lcolor("46 0 100") lwidth(thick)), ///
+       title("Tăng trưởng GDP 1995-2000 — Khủng hoảng châu Á") ///
+       xline(1997, lpattern(dash) lcolor(red)) ///
+       legend(label(1 "Thailand") label(2 "Indonesia") label(3 "Korea") ///
+              label(4 "Philippines") label(5 "Vietnam") position(6)) ///
+       graphregion(color(white))
+
+graph export "asian_crisis.png", replace width(1400)
+```
+
+**Câu hỏi 2**: Năm 1998, Indonesia GDP -13% — sâu nhất. Vì sao Indonesia bị nặng nhất? (Gợi ý: chính trị, nợ ngoại tệ DN, IMF)
+
+## 4. Vì sao Việt Nam tránh được?
+
+**Câu hỏi 3-5** (suy nghĩ + viết, 500 từ):
+
+- VN 1997 cũng peg + tăng trưởng cao + nợ ngoại tệ DN — sao không bị?
+- **Hai lý do chính** (kiểm soát vốn + tài chính chưa mở) đủ để bảo vệ không?
+- Năm 2025, VN tự do hoá vốn nhiều hơn 1997. Nếu có "Khủng hoảng 2.0", VN có an toàn không?
+- 5 bài học từ 1997 nào VN nên áp dụng ngay?
+
+```stata
 log close
 ```
 
-### 4. Câu hỏi suy nghĩ (sẽ chi tiết)
-
-1. Câu hỏi mô tả dữ liệu
-2. Câu hỏi so sánh / xu hướng
-3. Câu hỏi liên hệ với lý thuyết
-4. Câu hỏi liên hệ với chính sách Việt Nam
-5. Câu hỏi mở rộng / phản biện
-
-## Deliverable Lab 11
-
-Nộp 3 file (như các lab trước):
-
-| File | Nội dung |
-|---|---|
-| `lab11_<tên>.do` | Code + comment |
-| `lab11_<tên>.log` | Output |
-| `lab11_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
-
-**Tiêu đề email**: `DTU301-LAB11-MSSV-HọTên`
-
-## Tiêu chí chấm
-
-| Tiêu chí | Điểm |
-|---|:---:|
-| Code chạy đúng, có log | 30% |
-| Vận dụng đúng khái niệm Stata mới của bài | 25% |
-| Biểu đồ / bảng kết quả rõ ràng | 20% |
-| Trả lời câu hỏi sâu, có liên hệ thực tiễn | 25% |
-
 ---
 
-← *Lab trước*: [Lab 10](lab-10.qmd) | *Lab tiếp theo*: [Lab 12](lab-12.qmd) →
+← *Lab trước*: [Lab 10 — Mundell-Fleming](lab-10.qmd) | *Lab tiếp theo*: [Lab 12 — PCI/PAPI/PAR](lab-12.qmd) →

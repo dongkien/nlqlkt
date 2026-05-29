@@ -1,50 +1,236 @@
 ---
-title: "Buổi 14 — Chia sẻ thực tiễn"
-subtitle: "Mời chuyên gia chia sẻ; thảo luận chính sách; vận dụng nhóm"
-reading-time: "Chương Seminar"
+title: "Buổi 14 — Seminar: Chia sẻ chuyên gia + Workshop"
+subtitle: "Chuyên gia thực tiễn · Thảo luận chính sách · Workshop nhóm"
+reading-time: "Seminar · ~40 phút đọc"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Đóng góp CLO
 
-**CLO2, CLO3, CLO4, CLO5 — Tổng hợp xuyên suốt 5 chương**
+**CLO3, CLO4, CLO5** — Tổng hợp xuyên 5 chương + làm việc nhóm + sử dụng có trách nhiệm công cụ số.
+
+Buổi 14 mở Seminar tổng hợp — chuyển từ *học* sang *vận dụng*. Sinh viên gặp chuyên gia thực tiễn, thảo luận chính sách, và *chuẩn bị* cho thuyết trình ở Buổi 15.
 :::
 
-## Nội dung lý thuyết (thuyết giảng)
+## Lộ trình Buổi 14
 
-**Mục tiêu**: Tổng hợp xuyên suốt năm chương; tổ chức không gian phản biện học thuật cuối kỳ.
+| Phần | Nội dung |
+|:---:|---|
+| **A** | Mục tiêu Seminar và cấu trúc 2 buổi |
+| **B** | Chia sẻ chuyên gia — profile, chủ đề, Q&A |
+| **C** | Thảo luận chính sách — quy tắc, khung phân tích |
+| **D** | Workshop nhóm — bố cục, đề tài, sản phẩm |
 
-**Cấu trúc Buổi 14 — Chia sẻ thực tiễn**
+## A. Mục tiêu Seminar
 
-- Mời **chuyên gia bên ngoài** (nhà hoạch định chính sách, lãnh đạo địa phương, chuyên gia tổ chức quốc tế) chia sẻ thực tiễn
-- **Thảo luận chính sách** với chuyên gia
-- **Hoạt động vận dụng theo nhóm** dưới hướng dẫn của giảng viên
+### A.1. Bốn mục tiêu cốt lõi
 
-## Thực hành / Thảo luận
+| # | Mục tiêu | CLO liên quan |
+|---|---|---|
+| **1** | Tổng hợp 5 chương đã học | Tất cả |
+| **2** | Đo lường năng lực **phân tích** | **CLO3** |
+| **3** | Đo lường năng lực **phối hợp nhóm** | **CLO4** |
+| **4** | Đo lường năng lực **sử dụng AI có trách nhiệm** | **CLO5** |
 
-Q&A với chuyên gia; thảo luận chính sách mở; phân công nhóm chuẩn bị thuyết trình Buổi 15.
+**Tinh thần**: Seminar = nơi *kết nối lý thuyết với thực tiễn Việt Nam*. Không phải ôn tập thuộc lòng.
 
-## Bài tập lớn / Tiểu luận
+### A.2. Cấu trúc 2 buổi Seminar
 
-**Sản phẩm nhóm** cho Buổi 15: bản đề cương thuyết trình + tài liệu phản biện chéo.
+| | **Buổi 14** | **Buổi 15** |
+|---|---|---|
+| **Chủ đề** | Chia sẻ chuyên gia + Workshop nhóm | Thuyết trình + Tổng kết |
+| **Thời lượng** | 5h LT + 5h thực hành | 5h LT + 5h thực hành |
+| **Hoạt động** | Chuyên gia chia sẻ, Q&A, workshop | Thuyết trình, phản biện chéo, tổng kết |
+| **Vai trò** | *Hấp thu* | *Trình bày* |
 
-## Tự học có hướng dẫn
+**Phân nhóm**: chia **4–6 nhóm**, mỗi nhóm **4–6 sinh viên**. Đề tài do giảng viên phân công đầu kỳ.
 
-1. Chuẩn bị nội dung thuyết trình theo chủ đề giảng viên giao.
-2. Đọc bổ sung tài liệu chuyên đề.
-3. Tổng hợp kiến thức xuyên 5 chương.
+## B. Chia sẻ chuyên gia
+
+### B.1. Profile chuyên gia mời
+
+Tiêu chí lựa chọn chuyên gia:
+
+- Có **thực tiễn 5+ năm** trong lĩnh vực QLKT
+- Có khả năng truyền đạt và đối thoại với sinh viên
+- Đại diện cho **bốn nguồn** khác nhau:
+
+| Nguồn | Ví dụ |
+|---|---|
+| **Nhà nước** | Cán bộ NHNN, Bộ KH-ĐT, Bộ Tài chính, lãnh đạo tỉnh |
+| **Doanh nghiệp** | CEO/CFO tập đoàn lớn (Vingroup, FPT, Thaco), DN khởi nghiệp |
+| **Viện nghiên cứu** | VEPR, CIEM, NEU, HCMA, Fulbright |
+| **Tổ chức quốc tế** | WB, IMF, ADB, UNDP tại VN |
+
+Giảng viên gửi **profile chuyên gia** đến sinh viên *trước 1 tuần* — để chuẩn bị câu hỏi.
+
+### B.2. Năm chủ đề gợi ý
+
+Một số chủ đề thực tiễn phù hợp với 5 chương đã học:
+
+| # | Chủ đề | Liên kết chương |
+|---|---|---|
+| **1** | Điều hành chính sách vĩ mô thực tế (NHNN, MoF) | Chương 3, 4 |
+| **2** | Cải cách thể chế 2025 (NQ 202, Luật 72/89) | Chương 5 |
+| **3** | Hội nhập kinh tế và Trilemma VN | Chương 4 |
+| **4** | Phát triển vùng + 4 cực Đại hội XIV | Chương 5 |
+| **5** | AI và chính sách công | CLO5 |
+
+Mỗi chuyên gia chia sẻ ~45 phút, sau đó Q&A 30 phút.
+
+### B.3. Hoạt động Q&A
+
+**Quy tắc Q&A**:
+
+- Mỗi nhóm chuẩn bị **2 câu hỏi**
+- Câu hỏi **mở** (không yes/no)
+- Liên kết **lý thuyết – thực tiễn**
+- Tránh câu hỏi *chung chung*
+
+**Ví dụ câu hỏi tốt**:
+
+> *"Anh/chị áp dụng khung **Trilemma** ở NHNN như thế nào khi Fed tăng r 200bps năm 2022? Quyết định nào khó nhất?"*
+
+**Ví dụ câu hỏi yếu**:
+
+> *"Anh/chị nghĩ gì về kinh tế Việt Nam?"* — quá chung chung, không có hướng trả lời cụ thể.
+
+## C. Thảo luận chính sách
+
+### C.1. Năm quy tắc thảo luận
+
+| # | Quy tắc | Ý nghĩa |
+|---|---|---|
+| 1 | **Tôn trọng đa quan điểm** | Không có "đáp án đúng duy nhất" cho chính sách |
+| 2 | **Có dữ liệu, có dẫn chứng** | Không lập luận cảm tính |
+| 3 | **Phân biệt thực chứng vs chuẩn tắc** | Buổi 1: là chuyện *sự kiện* hay *giá trị*? |
+| 4 | **Sẵn sàng thay đổi quan điểm** | Khi gặp bằng chứng tốt hơn |
+| 5 | **Không phán xét cá nhân** | Phản biện ý kiến, không công kích người |
+
+Đây là **chuẩn mực học thuật** — sinh viên nên rèn từ giờ để chuẩn bị cho nghiên cứu, làm việc trong DN, hoặc cơ quan nhà nước.
+
+### C.2. Khung phân tích chính sách 5 bước
+
+Khi phân tích một vấn đề chính sách trong thảo luận hoặc thuyết trình, áp dụng khung 5 bước:
+
+| Bước | Nội dung | Câu hỏi cốt lõi |
+|:---:|---|---|
+| **1** | **Nhận diện vấn đề** | Đây là vấn đề gì? Tại sao quan trọng? |
+| **2** | **Lý thuyết áp dụng** | Khung lý thuyết nào trong 5 chương phù hợp? |
+| **3** | **Dữ liệu thực tế** | Số liệu cập nhật từ nguồn chính thống? |
+| **4** | **Đánh giá đánh đổi và rủi ro** | Mỗi lựa chọn có cái mất gì? |
+| **5** | **Đề xuất giải pháp** | Khuyến nghị cụ thể, khả thi cho VN? |
+
+**Lưu ý**: Bước 4 quan trọng nhất — *phân tích chính sách* khác *cổ vũ chính sách*. Mọi chính sách đều có trade-off.
+
+## D. Workshop nhóm
+
+### D.1. Bố cục workshop
+
+Sau chuyên gia, sinh viên làm việc nhóm để chuẩn bị thuyết trình cho Buổi 15.
+
+**Thời lượng**: ~3 giờ workshop.
+
+**Hoạt động**:
+
+| Thời gian | Hoạt động |
+|---|---|
+| 30 phút | Brainstorm: vấn đề chính sách hấp dẫn cho nhóm |
+| 30 phút | Khung lý thuyết: áp dụng nội dung 5 chương nào |
+| 60 phút | Thu thập dữ liệu: tìm số liệu từ TCTK, WB, IMF, NHNN |
+| 30 phút | Soạn outline thuyết trình |
+| 30 phút | Phân công thành viên + đóng góp |
+
+### D.2. Đề tài gợi ý cho nhóm
+
+| Đề tài | Chương chính |
+|---|---|
+| Phân tích chính sách kiểm soát giá điện 2024 | 2, 3 |
+| Đánh giá NQ 98 cho TP.HCM | 5 |
+| Phối hợp tài khoá – tiền tệ 2020–2024 | 3 |
+| Trilemma và VN trước Fed 2022 | 4 |
+| 4 cực động lực Đại hội XIV — khả thi? | 5 |
+| AI và quản lý kinh tế — cơ hội + rủi ro | 5, CLO5 |
+| Cải cách 2025 (34 tỉnh, 2 cấp) — kỳ vọng vs thách thức | 5 |
+| Chiến lược bán dẫn VN — bài học Đông Á | 2, 5 |
+
+Mỗi nhóm chọn 1 đề tài (không trùng nhau).
+
+### D.3. Sản phẩm nhóm
+
+Mỗi nhóm cuối Workshop nộp:
+
+| Sản phẩm | Định dạng | Yêu cầu |
+|---|---|---|
+| **Outline thuyết trình** | PowerPoint hoặc Quarto | 10–15 slide |
+| **Tài liệu phản biện** | Word/PDF | 2–3 trang tóm tắt |
+| **Phân công nhóm** | Bảng | Ai làm gì, ai trình bày phần nào |
+
+Đây là *cơ sở* cho thuyết trình ở Buổi 15.
+
+### D.4. Hướng dẫn dùng AI có trách nhiệm
+
+**Cho phép**:
+
+- Tóm tắt tài liệu dài
+- Đặt câu hỏi để hiểu khái niệm
+- Brainstorm ý tưởng
+- Kiểm tra ngữ pháp, văn phong
+
+**Cấm**:
+
+- Sao chép trực tiếp output AI vào bài
+- Để AI viết toàn bộ bài
+- Không khai báo phạm vi sử dụng AI
+
+**Bắt buộc**:
+
+- **Khai báo phạm vi dùng AI** trong báo cáo (vd: "Đoạn 2.3 dùng ChatGPT để brainstorm và đã edit lại")
+- **Kiểm chứng số liệu** AI cung cấp — AI có thể hallucinate
+- **Trích dẫn** nguồn gốc
+
+::: {.callout-warning}
+## ✋ Hoạt động cuối Buổi 14
+
+Mỗi nhóm cuối buổi nộp **outline thuyết trình** (1 trang) gồm:
+
+1. Đề tài và câu hỏi nghiên cứu chính
+2. Khung lý thuyết áp dụng
+3. Nguồn dữ liệu dự kiến
+4. Khuyến nghị sơ bộ
+5. Phân công thành viên
+:::
+
+## Tổng kết Buổi 14 — Năm điểm cốt lõi
+
+1. **Mục tiêu Seminar**: tổng hợp 5 chương + đo CLO3 (phân tích) + CLO4 (nhóm) + CLO5 (AI có trách nhiệm).
+2. **Chuyên gia mời** từ 4 nguồn: Nhà nước / DN / Viện NC / Tổ chức quốc tế.
+3. **Quy tắc thảo luận**: tôn trọng đa quan điểm + có dữ liệu + phân biệt thực chứng/chuẩn tắc + sẵn sàng đổi quan điểm + không phán xét cá nhân.
+4. **Khung phân tích 5 bước**: nhận diện → lý thuyết → dữ liệu → đánh đổi → đề xuất.
+5. **Workshop** = chuẩn bị thuyết trình Buổi 15. AI được dùng *có khai báo* và *có kiểm chứng*.
+
+## Bài tập về nhà (chuẩn bị Buổi 15)
+
+1. **Hoàn thiện thuyết trình** theo outline đã làm.
+2. **Tổng hợp kiến thức** xuyên 5 chương.
+3. **Chuẩn bị phản biện** 1 nhóm khác (bốc thăm).
+4. **Tự đánh giá** đóng góp cá nhân trong nhóm.
+
+::: {.callout-tip}
+## 🔧 Stata Lab 14 (bonus 5%)
+
+Bài này có lab **Capstone** — phân tích 1 chính sách bằng Stata, tổng hợp các kỹ năng đã học từ Lab 0-13.
+
+→ [**Bắt đầu Lab 14 — Capstone**](../stata-lab/lab-14.qmd) *(tự chọn thời lượng)*
+:::
 
 ## Đọc thêm
 
-- Tài liệu giảng viên cung cấp tại lớp.
-- Bài đọc bổ sung theo chủ đề nhóm.
-
-::: {.callout-warning appearance="simple"}
-## 🚧 Nội dung đang biên soạn
-
-Bài giảng buổi 14 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
-:::
+- Các báo cáo chuyên đề do giảng viên cung cấp.
+- World Bank, IMF, ADB — báo cáo Vietnam updates mới nhất.
+- *Vietnam Economic Times*, *Saigon Times Daily* — tham khảo case study.
+- HCMA, *Bộ Tư liệu QLKT* — case Việt Nam.
 
 ---
 
-← *Buổi trước*: [Buổi 13](buoi-13.qmd) *Buổi tiếp theo*: [Buổi 15](buoi-15.qmd) →
+← *Buổi trước*: [Buổi 13 — Phát triển kinh tế vùng](buoi-13.qmd) | *Buổi tiếp theo*: [Buổi 15 — Thuyết trình + Tổng kết](buoi-15.qmd) →

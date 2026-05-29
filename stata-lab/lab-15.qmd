@@ -1,84 +1,193 @@
 ---
 title: "Lab 15 — Xuất bảng + biểu đồ cho thuyết trình"
-subtitle: "Tương ứng Buổi 15: Trình bày kết quả"
-reading-time: "~20 phút"
+subtitle: "Tương ứng Buổi 15: outreg2, coefplot, esttab — chuyên nghiệp hoá kết quả"
+reading-time: "~25 phút"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Liên kết với Buổi 15
 
-Bài này áp dụng khái niệm chính từ [Buổi 15](../lectures/buoi-15.qmd) vào dữ liệu thực tế Việt Nam.
+Lab cuối cùng: xuất kết quả Stata ra **Word/LaTeX/Excel** đẹp dùng cho thuyết trình. Đây là kỹ năng *bắt buộc* khi viết khoá luận hoặc paper học thuật.
 
-**Khái niệm Stata học**: `outreg2, coefplot, esttab, putexcel`
+**Khái niệm Stata học**: `outreg2`, `esttab`, `coefplot`, `putexcel`, `tabout`
 :::
 
-::: {.callout-warning appearance="simple"}
-## 🚧 Lab đang biên soạn
-
-Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 15. Cấu trúc cố định theo template chuẩn của 16 lab.
-:::
-
-## Khung Lab 15
-
-### 1. Bài toán
-
-Xuất kết quả ra Word/Excel/PDF format chuẩn
-
-### 2. Dữ liệu cần
-
-Dữ liệu từ Lab Capstone
-
-### 3. Lệnh Stata trọng tâm
-
-Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):
+## 1. Cài đặt packages
 
 ```stata
-* Lab 15 — DTU301
-* Họ tên: <điền>, MSSV: <điền>
-
+* Lab 15 — DTU301 — Xuất bảng + biểu đồ
 clear all
 set more off
 log using "lab15_<ten>.log", replace text
 
-* === Tải dữ liệu ===
-* (sẽ chi tiết khi có dataset thật)
+* Cài packages (chỉ chạy 1 lần)
+ssc install outreg2, replace
+ssc install estout, replace          // bao gồm esttab
+ssc install coefplot, replace
+ssc install tabout, replace
+```
 
-* === Phân tích ===
-* Sử dụng: outreg2, coefplot, esttab, putexcel
+## 2. Hồi quy mẫu
 
-* === Đóng log ===
+```stata
+* Dùng dataset auto có sẵn
+sysuse auto, clear
+
+* === 3 hồi quy ===
+regress price mpg
+estimates store m1
+
+regress price mpg weight
+estimates store m2
+
+regress price mpg weight foreign
+estimates store m3
+```
+
+## 3. Xuất bảng hồi quy bằng outreg2
+
+```stata
+* === outreg2: xuất ra Word/LaTeX ===
+outreg2 [m1 m2 m3] using "regression_results.doc", replace ///
+    title("Hồi quy giá xe theo các biến") ///
+    addnote("*** p<0.01, ** p<0.05, * p<0.1") ///
+    label
+```
+
+Output: file `regression_results.doc` mở được bằng Word, bảng chuẩn học thuật.
+
+## 4. Xuất bảng bằng esttab (đẹp hơn)
+
+```stata
+* === esttab: chuẩn LaTeX/HTML ===
+esttab m1 m2 m3 using "regression_esttab.rtf", replace ///
+    title("Hồi quy giá xe — esttab style") ///
+    cells(b(star fmt(3)) se(par fmt(3))) ///
+    starlevels(* 0.10 ** 0.05 *** 0.01) ///
+    stats(r2 N, labels("R-squared" "N")) ///
+    label
+```
+
+**Câu hỏi 1**: So sánh outreg2 vs esttab — bạn thấy bảng nào dễ đọc hơn?
+
+## 5. Coefficient plot (forest plot)
+
+```stata
+* === coefplot: biểu đồ hệ số ===
+coefplot m1 m2 m3, ///
+    drop(_cons) ///
+    title("Coefficient Plot — 3 mô hình hồi quy") ///
+    xtitle("Hệ số") ///
+    xline(0, lcolor(red)) ///
+    legend(rows(1)) ///
+    graphregion(color(white))
+
+graph export "coefplot.png", replace width(1400)
+```
+
+**Câu hỏi 2**: Coefficient plot có lợi gì so với bảng truyền thống?
+
+## 6. Xuất bảng descriptive bằng tabout
+
+```stata
+* === tabout: xuất tabulate ra file ===
+tabout foreign using "tab_foreign.html", replace ///
+    cells(freq col) format(0 1) ///
+    style(html) ///
+    h1(Nguồn gốc xe)
+
+* Hoặc summary stats
+tabstat price mpg weight, statistics(mean sd min max) ///
+    columns(statistics) ///
+    save
+```
+
+## 7. Vẽ biểu đồ chuyên nghiệp
+
+```stata
+* === Theme và style đẹp ===
+set scheme s2color
+* Hoặc: set scheme white2 (cho slide thuyết trình)
+
+* === Scatter với marker tùy chỉnh ===
+twoway (scatter price mpg if foreign == 0, ///
+        mcolor("114 47 55") msymbol(circle)) ///
+       (scatter price mpg if foreign == 1, ///
+        mcolor("0 88 163") msymbol(triangle)) ///
+       (lfit price mpg, lcolor("46 125 80")), ///
+       title("Giá xe theo MPG", size(medium)) ///
+       subtitle("Phân biệt nội địa vs nhập khẩu", size(small)) ///
+       xtitle("Mile per gallon") ///
+       ytitle("Giá (USD)") ///
+       legend(label(1 "Nội địa") label(2 "Nhập khẩu") label(3 "OLS fit") ///
+              position(2) ring(0) cols(1)) ///
+       graphregion(color(white)) ///
+       plotregion(margin(small))
+
+graph export "scatter_final.png", replace width(1400)
+```
+
+## 8. Xuất ra Excel bằng putexcel
+
+```stata
+* === Tạo file Excel có nhiều sheets ===
+putexcel set "results.xlsx", replace
+putexcel A1 = "Kết quả phân tích DTU301", bold
+putexcel A2 = "Lab 15 — Họ tên: <điền>"
+
+* Sheet "Descriptive"
+putexcel set "results.xlsx", sheet("Descriptive") modify
+putexcel A1 = ("Biến", "Mean", "SD", "Min", "Max"), bold
+putexcel A2 = "Price"
+putexcel B2 = formula("=AVERAGE(...)")
+* ... v.v
+```
+
+## 9. Mẹo trình bày kết quả Stata
+
+| # | Mẹo |
+|---|---|
+| 1 | **Bảng chỉ giữ kết quả quan trọng** — không xuất tất cả output |
+| 2 | **Số liệu thập phân**: 2-3 chữ số là đủ, đừng quá chi tiết |
+| 3 | **Sao biểu thị mức ý nghĩa**: dùng quy ước rõ ràng |
+| 4 | **Notes dưới bảng**: ghi rõ standard errors, mức ý nghĩa |
+| 5 | **Biểu đồ phải có**: tiêu đề, nhãn trục, đơn vị, nguồn |
+| 6 | **Font + cỡ**: đồng nhất trong toàn báo cáo |
+| 7 | **Màu sắc**: tối đa 3-4 màu — quá nhiều gây rối |
+
+## 10. Liên hệ thuyết trình Buổi 15
+
+**Câu hỏi 3-5** (suy nghĩ + viết, 300 từ):
+
+- Bạn dùng `outreg2` hay `esttab` cho slide thuyết trình? Tại sao?
+- Trong slide chỉ có 5-10 giây để đọc — bảng nên *tối đa* bao nhiêu hàng/cột?
+- Biểu đồ tốt cho slide khác biểu đồ tốt cho báo cáo — khác ở đâu?
+- Có nên dùng *interactive plot* (plotly)? Khi nào?
+
+```stata
 log close
 ```
 
-### 4. Câu hỏi suy nghĩ (sẽ chi tiết)
+---
 
-1. Câu hỏi mô tả dữ liệu
-2. Câu hỏi so sánh / xu hướng
-3. Câu hỏi liên hệ với lý thuyết
-4. Câu hỏi liên hệ với chính sách Việt Nam
-5. Câu hỏi mở rộng / phản biện
+## 🎉 Kết thúc 16 lab DTU301
 
-## Deliverable Lab 15
+Bạn đã hoàn thành **Lab 0 → 15** — học từ basics đến advanced. Tài sản kỹ năng:
 
-Nộp 3 file (như các lab trước):
+- Cài Stata + do-file workflow
+- Đọc/ghi/xử lý dữ liệu
+- Phân tích descriptive + regression
+- Mô phỏng (IS-LM, Pigou, PPF)
+- Time series + panel
+- Event study + before/after
+- Xuất bảng + biểu đồ chuẩn học thuật
 
-| File | Nội dung |
-|---|---|
-| `lab15_<tên>.do` | Code + comment |
-| `lab15_<tên>.log` | Output |
-| `lab15_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
+Đây là **hành trang kỹ năng dài hạn** cho khoá luận, công việc, hoặc cao học.
 
-**Tiêu đề email**: `DTU301-LAB15-MSSV-HọTên`
+**Lời chia tay**: Stata không phải mục đích — nó là *công cụ*. Mục đích là *hỏi câu hỏi tốt* và *trả lời bằng dữ liệu*.
 
-## Tiêu chí chấm
-
-| Tiêu chí | Điểm |
-|---|:---:|
-| Code chạy đúng, có log | 30% |
-| Vận dụng đúng khái niệm Stata mới của bài | 25% |
-| Biểu đồ / bảng kết quả rõ ràng | 20% |
-| Trả lời câu hỏi sâu, có liên hệ thực tiễn | 25% |
+Chúc bạn thành công trong nghiên cứu và công việc về sau! 🎓
 
 ---
 
-← *Lab trước*: [Lab 14](lab-14.qmd) | *Đây là lab cuối.*
+← *Lab trước*: [Lab 14 — Capstone](lab-14.qmd) | *Đây là lab cuối của khoá học.*

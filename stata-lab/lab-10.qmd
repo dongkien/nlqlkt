@@ -1,84 +1,142 @@
 ---
 title: "Lab 10 — Mundell-Fleming bằng dữ liệu lịch sử"
-subtitle: "Tương ứng Buổi 10: Vận hành Mundell-Fleming trong ba case"
-reading-time: "~20 phút"
+subtitle: "Tương ứng Buổi 10: Hong Kong LERS, Reaganomics, ERM 1992"
+reading-time: "~25 phút"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Liên kết với Buổi 10
 
-Bài này áp dụng khái niệm chính từ [Buổi 10](../lectures/buoi-10.qmd) vào dữ liệu thực tế Việt Nam.
+Phân tích **3 case lịch sử** bằng dữ liệu macro: Hong Kong LERS (peg cứng), Reaganomics 1980s (twin deficits), ERM 1992 (Black Wednesday).
 
-**Khái niệm Stata học**: `panel data, time fixed effects`
+**Khái niệm Stata học**: panel data setup, time-varying analysis, conditional statements
 :::
 
-::: {.callout-warning appearance="simple"}
-## 🚧 Lab đang biên soạn
-
-Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 10. Cấu trúc cố định theo template chuẩn của 16 lab.
-:::
-
-## Khung Lab 10
-
-### 1. Bài toán
-
-Phân tích case Hong Kong LERS, Reaganomics, ERM 1992
-
-### 2. Dữ liệu cần
-
-Dữ liệu BoP, tỷ giá, lãi suất Hong Kong / Mỹ / Anh
-
-### 3. Lệnh Stata trọng tâm
-
-Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):
+## 1. Tạo dataset 3 nền kinh tế
 
 ```stata
-* Lab 10 — DTU301
-* Họ tên: <điền>, MSSV: <điền>
-
+* Lab 10 — DTU301 — Mundell-Fleming historical cases
 clear all
 set more off
 log using "lab10_<ten>.log", replace text
 
-* === Tải dữ liệu ===
-* (sẽ chi tiết khi có dataset thật)
+clear
+set obs 30                      // 3 nước × 10 năm
+generate id = ceil(_n/10)       // 1=HK, 2=Mỹ Reagan, 3=Anh ERM
+generate year = mod(_n-1, 10)
 
-* === Phân tích ===
-* Sử dụng: panel data, time fixed effects
+* === HK 2015-2024 ===
+replace year = 2015 + year if id == 1
+* === Mỹ 1980-1989 ===
+replace year = 1980 + year if id == 2
+* === Anh 1985-1994 ===
+replace year = 1985 + year if id == 3
 
-* === Đóng log ===
+generate country = ""
+replace country = "Hong Kong" if id == 1
+replace country = "USA"       if id == 2
+replace country = "UK"        if id == 3
+
+* Tỷ giá thực
+generate REER = .
+* Hong Kong: ổn định nhờ peg
+replace REER = 100 + 2*(year - 2015) if id == 1
+
+* Mỹ thời Reagan: lên giá mạnh
+replace REER = 100             if id == 2 & year == 1980
+replace REER = 110             if id == 2 & year == 1981
+replace REER = 125             if id == 2 & year == 1982
+replace REER = 140             if id == 2 & year == 1983
+replace REER = 155             if id == 2 & year == 1984
+replace REER = 150             if id == 2 & year == 1985
+replace REER = 130             if id == 2 & year == 1986
+replace REER = 115             if id == 2 & year == 1987
+replace REER = 105             if id == 2 & year == 1988
+replace REER = 102             if id == 2 & year == 1989
+
+* Anh ERM: cao trước 1992, sụp 1992
+replace REER = 100             if id == 3 & year == 1985
+replace REER = 102             if id == 3 & year == 1986
+replace REER = 105             if id == 3 & year == 1987
+replace REER = 108             if id == 3 & year == 1988
+replace REER = 110             if id == 3 & year == 1989
+replace REER = 113             if id == 3 & year == 1990
+replace REER = 115             if id == 3 & year == 1991
+replace REER = 85              if id == 3 & year == 1992
+replace REER = 80              if id == 3 & year == 1993
+replace REER = 78              if id == 3 & year == 1994
+
+* CA / GDP (%)
+generate CA = .
+replace CA = 5  if id == 1                                  // HK luôn thặng dư
+replace CA = -1 if id == 2 & year == 1980
+replace CA = -1 if id == 2 & year == 1981
+replace CA = -2 if id == 2 & year == 1982
+replace CA = -3 if id == 2 & year == 1983
+replace CA = -3 if id == 2 & year == 1984
+replace CA = -3 if id == 2 & year == 1985
+replace CA = -3 if id == 2 & year == 1986
+replace CA = -3 if id == 2 & year == 1987
+replace CA = -2 if id == 2 & year == 1988
+replace CA = -2 if id == 2 & year == 1989
+replace CA = -2 if id == 3                                  // Anh
+replace CA = -4 if id == 3 & year >= 1989 & year <= 1991
+replace CA = -1 if id == 3 & year >= 1993
+
+list, sepby(country)
+```
+
+## 2. Phân tích case-by-case
+
+```stata
+* === Hong Kong: peg + tỷ giá ổn định ===
+display "=== Hong Kong LERS ==="
+summarize REER if country == "Hong Kong"
+display "REER std dev rất thấp do peg cứng"
+
+* === Mỹ Reaganomics ===
+display "=== Reaganomics ==="
+summarize REER if country == "USA"
+display "REER lên giá ~55% giữa 1980-1985 → twin deficits"
+
+* === ERM 1992 ===
+display "=== ERM 1992 — Anh ==="
+summarize REER if country == "UK"
+display "REER giảm mạnh 1992 → Black Wednesday"
+```
+
+**Câu hỏi 1**: REER HK ổn định nhất do cơ chế nào? (Gợi ý: peg cứng + dự trữ 3x M3)
+
+**Câu hỏi 2**: Mỹ Reagan REER tăng 55% trong 5 năm — phản ánh CSTK + CSTT phối hợp như thế nào?
+
+**Câu hỏi 3**: Anh ERM REER giảm 30% năm 1992 trong 1 ngày — Soros bán khống GBP với quy mô bao nhiêu?
+
+## 3. Vẽ biểu đồ so sánh
+
+```stata
+twoway (line REER year if country == "Hong Kong", lcolor("114 47 55") lwidth(thick)) ///
+       (line REER year if country == "USA",       lcolor("0 88 163") lwidth(thick)) ///
+       (line REER year if country == "UK",        lcolor("46 125 80") lwidth(thick)), ///
+       title("REER 3 case Mundell-Fleming") ///
+       legend(label(1 "HK LERS") label(2 "USA Reagan") label(3 "UK ERM") ///
+              position(2) ring(0) cols(1)) ///
+       graphregion(color(white))
+
+graph export "mf_3cases.png", replace width(1400)
+```
+
+## 4. Liên hệ Việt Nam
+
+**Câu hỏi 4 + 5** (suy nghĩ + viết, 400 từ):
+
+- VN giống HK (peg), Mỹ (thả nổi), hay Anh (cố gắng peg)?
+- Bài học nào từ ERM 1992 cho VN khi muốn duy trì crawl-like trong môi trường vốn ngày càng tự do?
+- Nếu VN bị tấn công tỷ giá kiểu Soros, NHNN có thể bảo vệ được không?
+
+```stata
 log close
 ```
 
-### 4. Câu hỏi suy nghĩ (sẽ chi tiết)
-
-1. Câu hỏi mô tả dữ liệu
-2. Câu hỏi so sánh / xu hướng
-3. Câu hỏi liên hệ với lý thuyết
-4. Câu hỏi liên hệ với chính sách Việt Nam
-5. Câu hỏi mở rộng / phản biện
-
-## Deliverable Lab 10
-
-Nộp 3 file (như các lab trước):
-
-| File | Nội dung |
-|---|---|
-| `lab10_<tên>.do` | Code + comment |
-| `lab10_<tên>.log` | Output |
-| `lab10_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
-
-**Tiêu đề email**: `DTU301-LAB10-MSSV-HọTên`
-
-## Tiêu chí chấm
-
-| Tiêu chí | Điểm |
-|---|:---:|
-| Code chạy đúng, có log | 30% |
-| Vận dụng đúng khái niệm Stata mới của bài | 25% |
-| Biểu đồ / bảng kết quả rõ ràng | 20% |
-| Trả lời câu hỏi sâu, có liên hệ thực tiễn | 25% |
-
 ---
 
-← *Lab trước*: [Lab 9](lab-09.qmd) | *Lab tiếp theo*: [Lab 11](lab-11.qmd) →
+← *Lab trước*: [Lab 9 — NEER/REER VND](lab-09.qmd) | *Lab tiếp theo*: [Lab 11 — Event study KH châu Á 1997](lab-11.qmd) →

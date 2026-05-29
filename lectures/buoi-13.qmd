@@ -1,65 +1,252 @@
 ---
 title: "Buổi 13 — Phát triển kinh tế vùng"
-subtitle: "Marshall, Krugman; 6 vùng KT-XH, 4 vùng KTTĐ; 4 cực động lực, 6 siêu dự án XIV"
-reading-time: "Chương 5"
+subtitle: "Khái niệm vùng · Lý thuyết NEG (Marshall, Krugman, FKV) · 6 vùng KT-XH · 4 cực động lực ĐH XIV"
+reading-time: "Chương 5 · ~50 phút đọc"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Đóng góp CLO
 
-**CLO3, CLO4 — Phân tích phát triển vùng và phối hợp liên vùng**
+**CLO3, CLO4** — Phân tích phát triển vùng và phối hợp liên vùng trong bối cảnh Việt Nam.
+
+Buổi 12 phân tích quản trị theo *cấp* (TW – tỉnh – xã). Buổi 13 phân tích theo *vùng* (6 vùng KT-XH, 4 vùng KTTĐ). Cộng lại, Chương 5 cho khung tư duy đầy đủ về *chiều địa phương* trong QLKT.
 :::
 
-## Nội dung lý thuyết (thuyết giảng)
+## Lộ trình Buổi 13
 
-**5.2. Phát triển kinh tế vùng**
+| Phần | Nội dung |
+|:---:|---|
+| **A** | Khái niệm vùng và bốn cơ chế chênh lệch |
+| **B** | Lý thuyết NEG — Marshall, Krugman, FKV |
+| **C** | Phân vùng kinh tế Việt Nam |
+| **D** | Định hướng Đại hội XIV — 4 cực động lực và 6 siêu dự án |
 
-- Khái niệm vùng và cơ chế tạo chênh lệch
-- Lý thuyết kinh tế vùng:
-  - **Marshall** — agglomeration economies
-  - **Krugman** — New Economic Geography
+## A. Khái niệm vùng
 
-**Phân vùng kinh tế Việt Nam**
+### A.1. Ba cách hiểu vùng
 
-- **Sáu vùng KT-XH**: TDMNPB, ĐBSH, BTB-DHMT, Tây Nguyên, ĐNB, ĐBSCL
-- **Bốn vùng KTTĐ**: Bắc Bộ, miền Trung, phía Nam, ĐBSCL
-- Hành lang kinh tế
+**Vùng** = nhóm địa phương có liên kết kinh tế. Có ba cách hiểu khác nhau:
 
-**Định hướng Đại hội XIV**
+| Loại | Cơ sở phân định | Ví dụ VN |
+|---|---|---|
+| **Vùng địa lý** | Đặc điểm tự nhiên | Vùng núi phía Bắc, Đồng bằng sông Cửu Long |
+| **Vùng hành chính** | Đơn vị HC | Tỉnh, vùng KT-XH theo QĐ Chính phủ |
+| **Vùng chức năng** | Liên kết kinh tế thực tế | Vùng đô thị, vùng công nghiệp, hành lang KT |
 
-- **Bốn cực động lực**
-- **Sáu siêu dự án** trọng điểm
+Các tổ chức quốc tế (**UNDP 2009**, **OECD 2020**, **HCMA 2021**) ngày càng nhấn mạnh **vùng chức năng** — vì *vùng kinh tế thực tế* không trùng đơn vị hành chính.
 
-**Phát triển bền vững vùng**
+**Việt Nam**: chính thức có **6 vùng KT-XH** theo QĐ 943/QĐ-TTg/2024 (phần C).
 
-- Case **ĐNB**, **ĐBSCL**, **Tây Nguyên**, **BTB-DHMT**
+### A.2. Bốn cơ chế tạo chênh lệch vùng
 
-## Thực hành / Thảo luận
+Vì sao một số vùng giàu hơn vùng khác? Bốn cơ chế chính:
 
-Đối chiếu **PCI / PAPI / PAR Index** cho 3 tỉnh thuộc 3 vùng khác nhau; thảo luận về **chênh lệch vùng** và bài học chính sách.
+| # | Cơ chế | Cơ chế hoạt động |
+|---|---|---|
+| **1** | **Lợi thế ban đầu** (initial advantage) | Vị trí địa lý: cảng biển, đồng bằng, tài nguyên |
+| **2** | **Hiệu ứng tích tụ** (agglomeration) | DN tập trung → năng suất cao → thu hút DN mới |
+| **3** | **Vốn nhân lực + năng suất** | Vùng giàu thu hút LĐ chất lượng → vòng phản hồi tích cực |
+| **4** | **Thể chế + chính sách** | Chất lượng QLĐP (PCI, PAPI) — chính sách ưu đãi |
 
-## Bài tập lớn / Tiểu luận
+→ Bốn cơ chế tạo **phân hoá vùng giàu – vùng nghèo**. Đây là *quy luật chung*, không riêng VN.
 
-Đề xuất chiến lược phát triển cho một tỉnh/vùng (Phần 2 — đề xuất cụ thể với số liệu).
+### A.3. Convergence vùng — Có hay không?
 
-## Tự học có hướng dẫn
+Câu hỏi cốt lõi: vùng nghèo *bắt kịp* vùng giàu không?
 
-1. Bốn cực động lực có tạo ra chênh lệch vùng mới không?
-2. ĐBSCL: ưu tiên thích ứng biến đổi khí hậu hay tăng trưởng?
-3. Marshall vs Krugman: khung nào phù hợp VN hơn?
+**Hai khái niệm**:
+
+| Loại | Định nghĩa |
+|---|---|
+| **β-convergence** | Vùng nghèo *tăng nhanh hơn* vùng giàu |
+| **σ-convergence** | Sự *phân tán* thu nhập vùng *giảm* qua thời gian |
+
+**Lý thuyết Solow**: dự đoán *hội tụ có điều kiện* — vùng nghèo có vốn ít → MPK cao → tăng trưởng cao → bắt kịp.
+
+**Quah (1996)** — *Twin Peaks*: thực tế quan sát thấy **không hội tụ** — các vùng phân thành hai *cụm* (giàu / nghèo) ổn định.
+
+**Việt Nam**: σ-convergence **chậm** — chênh lệch ĐNB và Tây Nguyên không thu hẹp nhanh. Cần can thiệp chính sách.
+
+## B. Lý thuyết NEG — Marshall, Krugman, FKV
+
+### B.1. Marshall (1890) — Nguyên tắc Agglomeration
+
+**Alfred Marshall (1890)** — *Principles of Economics*:
+
+> Các ngành kinh tế *tự nhiên tập trung* về một vùng do **ba nguồn ngoại tác tích cực**:
+
+| Nguồn | Cơ chế |
+|---|---|
+| **Labor pooling** | Tích tụ LĐ kỹ năng cao → DN tìm được người, người tìm được việc |
+| **Intermediate goods** | Nhà cung cấp đầu vào tập trung → chi phí giao dịch giảm |
+| **Knowledge spillover** | Tri thức lan toả qua tiếp xúc → đổi mới nhanh |
+
+**Ví dụ kinh điển**:
+- **Silicon Valley** (Mỹ): tích tụ công nghệ
+- **Khu công nghiệp Bắc Ninh** (VN): tích tụ điện tử quanh Samsung
+- **Detroit** (Mỹ trước 1990): tích tụ ô tô
+
+Marshall là **cơ sở** của mọi lý thuyết NEG hiện đại.
+
+### B.2. Krugman (1991) — NEG chính thức hoá
+
+**Paul Krugman (1991)** — *Geography and Trade*. Nobel Kinh tế 2008.
+
+Krugman **mô hình hoá** ý tưởng Marshall thành mô hình toán học:
+
+**Mô hình Core-Periphery**:
+
+- Hai vùng: **Core** (trung tâm) và **Periphery** (ngoại vi)
+- Hai trạng thái cân bằng: **tập trung** (mọi sản xuất ở Core) hoặc **phân tán**
+- Trạng thái phụ thuộc **chi phí vận chuyển τ**:
+  - τ rất cao → tự cấp tự túc (phân tán)
+  - τ rất thấp → tập trung (lợi thế quy mô vượt chi phí)
+  - τ trung bình → có thể có cả hai cân bằng (path-dependence)
+
+**Hệ quả chính sách**: cải thiện hạ tầng giao thông *có thể* dẫn tới *tập trung mạnh hơn* — phản trực giác.
+
+### B.3. FKV (1999) — Spatial Economy
+
+**Fujita-Krugman-Venables (1999)** — *The Spatial Economy: Cities, Regions, and International Trade*:
+
+Mở rộng NEG với:
+
+- Nhiều khu vực (không chỉ Core-Periphery)
+- Phân tích **đô thị + thương mại quốc tế** đồng thời
+- Khung quy hoạch *được sử dụng rộng rãi* trong chính sách phát triển vùng
+
+**Bài học chính sách**:
+- Phát triển vùng *không thể chỉ dựa vào thị trường* — cần can thiệp
+- Can thiệp nên *targeting* (hướng đối tượng): chọn vùng có lợi thế thực tế
+- Hạ tầng kết nối là *quan trọng nhất* — vì giảm τ trong mô hình
+
+## C. Phân vùng kinh tế Việt Nam
+
+### C.1. Sáu vùng KT-XH (QĐ 943/QĐ-TTg/2024)
+
+| # | Vùng | Đặc trưng |
+|---|---|---|
+| **1** | Trung du miền núi phía Bắc | Núi cao, khoáng sản, biên giới |
+| **2** | Đồng bằng sông Hồng | Hà Nội — đầu não chính trị, dân số đông |
+| **3** | Bắc Trung Bộ & DH miền Trung | Dải dài, dễ bão lũ |
+| **4** | Tây Nguyên | Cao nguyên, cà phê, hồ tiêu |
+| **5** | Đông Nam Bộ (ĐNB) | TP.HCM — đầu não kinh tế, GRDP cao nhất |
+| **6** | Đồng bằng sông Cửu Long (ĐBSCL) | Lúa gạo, thuỷ sản, đe doạ BĐKH |
+
+**Chênh lệch lớn**: GRDP/đầu người ĐNB ~10x Tây Nguyên (ước tính).
+
+### C.2. Bốn vùng kinh tế trọng điểm (KTTĐ)
+
+Khác *6 vùng KT-XH*, có **4 vùng KTTĐ** — tập trung *cực tăng trưởng*:
+
+| # | Vùng KTTĐ | Trung tâm |
+|---|---|---|
+| **1** | Bắc Bộ | Hà Nội, Hải Phòng, Quảng Ninh |
+| **2** | Miền Trung | Đà Nẵng, Quảng Nam, Quảng Ngãi |
+| **3** | Phía Nam | TP.HCM, Bình Dương, Đồng Nai, BR-VT |
+| **4** | ĐBSCL | Cần Thơ, An Giang |
+
+Các vùng KTTĐ được *ưu tiên đầu tư hạ tầng và cơ chế đặc thù*.
+
+### C.3. Hành lang kinh tế
+
+VN xác định nhiều **hành lang kinh tế** liên kết các đô thị:
+
+- **Hành lang ven biển**: HP – Đà Nẵng – TP.HCM
+- **Hành lang Lào Cai – Hà Nội – Hải Phòng** (đường sắt)
+- **Hành lang TP.HCM – Phnom Penh – Bangkok**
+- **Hành lang Đông – Tây miền Trung**
+
+Hành lang = trục giao thông + đô thị + công nghiệp dọc theo. Đây là *vũ khí mạnh* để giảm chi phí vận chuyển τ — khuyến khích tập trung kinh tế (theo Krugman).
+
+## D. Đại hội XIV — 4 cực động lực và 6 siêu dự án
+
+### D.1. Bốn cực động lực
+
+Đại hội XIV (2026) xác định **4 cực động lực** phát triển:
+
+| Cực | Lõi | Chiến lược |
+|---|---|---|
+| **1. Hà Nội** | Đầu não chính trị + tài chính phía Bắc | Đô thị thông minh, công nghệ cao |
+| **2. TP.HCM** | Đầu não kinh tế + tài chính phía Nam | Trung tâm tài chính quốc tế, NQ 98 |
+| **3. Đà Nẵng** | Trung tâm miền Trung | Du lịch, công nghệ, logistics |
+| **4. Cần Thơ** | Trung tâm ĐBSCL | Nông nghiệp công nghệ cao, ứng phó BĐKH |
+
+**Tranh luận**: 4 cực có *tạo ra chênh lệch vùng mới*? Theo NEG: có thể — nếu đầu tư tập trung quá mạnh, vùng còn lại bị bỏ rơi.
+
+**Giảm thiểu**: cần chính sách *cân đối*: cực mạnh nhưng có *hành lang* kết nối với vùng còn lại + trợ cấp cân đối ngân sách.
+
+### D.2. Sáu siêu dự án trọng điểm
+
+Đại hội XIV xác định **6 siêu dự án** ưu tiên:
+
+| Siêu dự án | Đặc điểm |
+|---|---|
+| **Đường sắt cao tốc Bắc – Nam** | ~67 tỷ USD, kết nối 4 cực |
+| **Sân bay Long Thành** | Hoàn thành GĐ 1 đến 2026, mở rộng tới 2050 |
+| **Hệ thống đường cao tốc** | Hoàn thiện 5.000+ km |
+| **Mở rộng cảng biển trung tâm** | HP, Đà Nẵng, Cái Mép – Thị Vải |
+| **Cảng quốc tế Cần Giờ** | Cảng nước sâu cho tàu siêu lớn |
+| **Trung tâm tài chính quốc tế TP.HCM** | NQ 98/2023 mở rộng |
+
+Các siêu dự án này nhằm *giảm chi phí vận chuyển τ* → khuyến khích tập trung kinh tế (Krugman) → tăng năng suất.
+
+### D.3. Phát triển bền vững vùng
+
+Mỗi vùng có *thách thức riêng*:
+
+| Vùng | Thách thức |
+|---|---|
+| **ĐNB** | Quá tải đô thị, ô nhiễm, BĐKH ven biển |
+| **ĐBSCL** | Nước mặn xâm nhập, sụt lún, lũ + hạn cực đoan |
+| **Tây Nguyên** | Phá rừng, suy thoái đất, hạ tầng yếu |
+| **BTB-DHMT** | Thiên tai (bão, lũ), nghèo dải dài |
+
+**Bài toán**: phát triển bền vững + giảm chênh lệch + chống BĐKH — đòi hỏi *chính sách vùng có chiều kích lớn*.
+
+::: {.callout-warning}
+## ✋ Bài tập thảo luận trên lớp
+
+Phân tích **chiến lược phát triển ĐBSCL 2026-2030** qua khung NEG:
+
+1. ĐBSCL có cơ chế chênh lệch nào (4 cơ chế phần A)?
+2. Áp dụng NEG: ĐBSCL nên *tập trung* sản xuất ở Cần Thơ, hay *phân tán* qua 13 tỉnh?
+3. 6 siêu dự án có ảnh hưởng gì đến ĐBSCL?
+4. Cần chính sách gì để vừa phát triển vừa chống BĐKH?
+:::
+
+## Tổng kết Buổi 13 — Năm điểm cốt lõi
+
+1. **Vùng** có 3 cách hiểu (địa lý, hành chính, chức năng); 4 cơ chế chênh lệch (lợi thế ban đầu, tích tụ, vốn nhân lực, thể chế).
+2. **NEG**: Marshall (1890) → Krugman (1991) Core-Periphery → FKV (1999) — chứng minh tập trung *là kết quả tự nhiên* của thị trường.
+3. **VN**: 6 vùng KT-XH + 4 vùng KTTĐ + nhiều hành lang kinh tế. Chênh lệch lớn nhất giữa ĐNB và Tây Nguyên.
+4. **Đại hội XIV**: 4 cực động lực (HN, TP.HCM, ĐN, CT) + 6 siêu dự án — giảm τ, khuyến khích tập trung.
+5. **PTBV vùng**: mỗi vùng có thách thức riêng; ĐBSCL đặc biệt với BĐKH.
+
+## Bài tập về nhà (chuẩn bị Buổi 14 — Seminar)
+
+1. **Đọc** lại toàn bộ 5 chương (Buổi 1-13).
+2. **Tự đọc** các báo cáo chuyên đề về 1 chủ đề chính sách yêu thích.
+3. **Chuẩn bị 3 câu hỏi sắc** cho buổi gặp chuyên gia.
+4. **Đọc thêm** về các quy hoạch vùng (vd Quy hoạch ĐBSCL 2021-2030).
+
+::: {.callout-tip}
+## 🔧 Stata Lab 13 (bonus 5%)
+
+Bài này có lab **so sánh 6 vùng KT-XH** trong Stata: tính GRDP/đầu người, chênh lệch vùng, box plot.
+
+→ [**Bắt đầu Lab 13 — So sánh 6 vùng KT-XH**](../stata-lab/lab-13.qmd) *(~25 phút)*
+:::
 
 ## Đọc thêm
 
-- HCMA (2021), chương 6.
-- Văn kiện Đại hội XIV — chiến lược phát triển vùng.
-- Báo cáo World Bank về phát triển vùng VN.
-
-::: {.callout-warning appearance="simple"}
-## 🚧 Nội dung đang biên soạn
-
-Bài giảng buổi 13 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
-:::
+- **Marshall, A.** (1890), *Principles of Economics*.
+- **Krugman, P.** (1991), *Geography and Trade*.
+- **Fujita, Krugman, Venables** (1999), *The Spatial Economy*.
+- Quyết định 943/QĐ-TTg/2024 (6 vùng KT-XH).
+- Văn kiện Đại hội XIV — định hướng phát triển vùng và 4 cực động lực.
+- World Bank — *Vietnam Spatial Development Report*.
 
 ---
 
-← *Buổi trước*: [Buổi 12](buoi-12.qmd) *Buổi tiếp theo*: [Buổi 14](buoi-14.qmd) →
+← *Buổi trước*: [Buổi 12 — Quản trị địa phương và Phân cấp tài khoá](buoi-12.qmd) | *Buổi tiếp theo*: [Buổi 14 — Seminar: Chia sẻ chuyên gia](buoi-14.qmd) →

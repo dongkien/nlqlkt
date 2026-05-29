@@ -1,68 +1,293 @@
 ---
-title: "Buổi 12 — Quản trị địa phương và phân cấp tài khoá"
-subtitle: "Phân cấp; Tiebout, Oates, Musgrave; cải cách 2025 (34 tỉnh, 2 cấp); PCI, PAPI, PAR Index"
-reading-time: "Chương 5"
+title: "Buổi 12 — Quản trị địa phương và Phân cấp tài khoá"
+subtitle: "Khái niệm · Tiebout-Oates-Musgrave · Cải cách 2025 · PCI, PAPI, PAR Index"
+reading-time: "Chương 5 · ~50 phút đọc"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Đóng góp CLO
 
-**CLO3 — Phân tích phối hợp chính sách giữa các cấp**
+**CLO3** — Phân tích phối hợp chính sách giữa các cấp chính quyền sau cải cách 2025.
+
+Chương 5 mở rộng từ vĩ mô quốc gia sang **chiều địa phương** — Nhà nước trung ương + 34 tỉnh + xã. Buổi 12 đặt khung lý thuyết và case Việt Nam sau cải cách 2025 — cải cách hành chính lớn nhất sau 1975.
 :::
 
-## Nội dung lý thuyết (thuyết giảng)
+## Lộ trình Buổi 12
 
-**5.1. Quản trị địa phương và phân cấp tài khoá**
+| Phần | Nội dung |
+|:---:|---|
+| **A** | Khái niệm quản trị địa phương — phân cấp/phân quyền/tản quyền/uỷ quyền |
+| **B** | Lý thuyết kinh điển — Tiebout, Oates, Musgrave |
+| **C** | Việt Nam sau cải cách 2025 — NQ 202, Luật 72, Luật 89 |
+| **D** | Đánh giá quản trị địa phương — PCI, PAPI, PAR Index |
 
-- **Phân cấp / phân quyền / tản quyền / uỷ quyền**
-- Lý thuyết phân cấp:
-  - **Tiebout** — voting with feet
-  - **Oates** — Decentralization Theorem
-  - **Musgrave** — ba chức năng của Nhà nước
+## A. Khái niệm quản trị địa phương
 
-**Bộ máy QLNN ở Việt Nam SAU cải cách 2025**
+### A.1. Local governance vs Local government
 
-- **Chính quyền hai cấp** tỉnh – xã (Luật 72/2025/QH15)
-- **34 tỉnh/thành** sau sắp xếp (NQ 202/2025/QH15)
-- **Luật NSNN 89/2025/QH15** — phân cấp nguồn thu, nhiệm vụ chi, trợ cấp cân đối
+Hai khái niệm dễ nhầm:
 
-**Đánh giá quản trị địa phương**
+| | **Local government** | **Local governance** |
+|---|---|---|
+| Bản chất | **Bộ máy** chính quyền địa phương | **Cách thức** quản lý ở địa phương |
+| Phạm vi | Hẹp — cơ quan công | Rộng — NN + DN + xã hội dân sự |
+| Đối tượng | UBND, HĐND, công chức | Liên kết, phối hợp, đối thoại nhiều bên |
+| Câu hỏi | *Ai* ra quyết định? | *Quyết định ra sao* để có hiệu quả? |
 
-- **PCI** (Provincial Competitiveness Index — VCCI)
-- **PAPI** (Public Administration Performance Index — UNDP)
-- **PAR Index** (Public Administration Reform Index — Bộ Nội vụ)
+Quản trị địa phương hiện đại quan tâm cả hai — *cơ cấu* + *vận hành*. Đặc biệt vai trò của *xã hội dân sự* và *DN tư nhân* trong tham gia hoạch định chính sách địa phương.
 
-**Cơ chế đặc thù**
+### A.2. Bốn khái niệm phân cấp
 
-- **NQ 98/2023** cho TP.HCM
-- Case **Quảng Ninh**
+Tiếng Việt dùng từ chồng chéo — cần phân biệt:
 
-## Thực hành / Thảo luận
+| Khái niệm | Tiếng Anh | Bản chất |
+|---|---|---|
+| **Phân cấp** | Decentralization | Chia *thẩm quyền* giữa các cấp |
+| **Phân quyền** | Devolution | Trao *tự chủ* — địa phương có quyền hợp pháp riêng |
+| **Tản quyền** | Deconcentration | NN trung ương đặt *chi nhánh* ở địa phương |
+| **Uỷ quyền** | Delegation | Giao *thực thi* nhưng giữ thẩm quyền |
 
-**Trò chơi phân cấp ngân sách** theo Luật NSNN 89/2025: 3 vai (TW – Tỉnh A đầu tàu – Tỉnh B kém phát triển). Mỗi tỉnh có nguồn thu khác nhau; thảo luận trợ cấp cân đối.
+**Ví dụ phân biệt**:
 
-## Bài tập lớn / Tiểu luận
+- Bộ Y tế lập **Sở Y tế** tại tỉnh = *tản quyền* (vẫn thuộc bộ)
+- Trao quyền cho **UBND tỉnh** quyết các vấn đề KT-XH cấp tỉnh = *phân quyền*
+- Giao **tổ chức xã hội** thực thi gói trợ cấp = *uỷ quyền*
 
-Đề xuất **chiến lược phát triển cho một tỉnh/vùng** cụ thể (Phần 1 — cấu trúc đề xuất).
+Cải cách 2025 ở VN là **phân quyền mạnh** — UBND tỉnh có nhiều thẩm quyền hơn.
 
-## Tự học có hướng dẫn
+## B. Lý thuyết kinh điển
 
-1. Tại sao phân cấp cần đi cùng phân quyền tài khoá?
-2. Có nên dùng PCI làm KPI cho bí thư tỉnh?
-3. Mô hình 34 tỉnh: ưu nhược điểm so với 63 tỉnh cũ?
+### B.1. Tiebout (1956) — Voting with feet
+
+**Charles Tiebout (1956)** — *A Pure Theory of Local Expenditures*:
+
+> Hộ gia đình *di chuyển* giữa các địa phương → chọn gói **thuế – dịch vụ công** phù hợp. Mỗi địa phương cạnh tranh thu hút cư dân → cung cấp dịch vụ hiệu quả.
+
+**Cơ chế**:
+- Mỗi địa phương có gói (thuế, dịch vụ) khác nhau
+- Hộ gia đình "bỏ phiếu bằng chân" (vote with feet) — di chuyển tới nơi phù hợp
+- Cạnh tranh giữa địa phương → hiệu quả phân bổ
+
+**Giả định mạnh**:
+- Di chuyển dễ dàng (chi phí ≈ 0)
+- Thông tin đầy đủ về các địa phương
+- Đủ số địa phương để có lựa chọn
+- Không có ngoại tác giữa các địa phương
+
+**Thực tế**: di chuyển không hoàn toàn tự do — có chi phí công việc, gia đình, văn hoá. Nhưng *xu hướng* Tiebout tồn tại — đặc biệt với DN.
+
+### B.2. Oates (1972) — Decentralization Theorem
+
+**Wallace Oates (1972)** — *Fiscal Federalism*:
+
+> Phân cấp tốt hơn khi *sở thích đa dạng* giữa các vùng. Tập trung tốt hơn khi *có ngoại tác lớn* giữa các vùng.
+
+**Decentralization Theorem** chính thức:
+
+| Yếu tố | Khi nào phân cấp tốt? | Khi nào tập trung tốt? |
+|---|---|---|
+| Đa dạng sở thích | Đa dạng cao | Đồng nhất |
+| Ngoại tác | Thấp | Cao |
+| Lợi thế quy mô | Thấp | Cao |
+| Năng lực địa phương | Cao | Thấp |
+
+**Áp dụng**:
+- Giáo dục tiểu học → phân cấp (sở thích đa dạng, ngoại tác hẹp)
+- Quốc phòng → tập trung (ngoại tác toàn quốc, quy mô lớn)
+- Hạ tầng đường cao tốc → tập trung (ngoại tác liên tỉnh)
+
+Đây là **cơ sở của fiscal federalism hiện đại** — chia chức năng tài khoá giữa các cấp theo tính chất hàng hoá công.
+
+### B.3. Musgrave (1959) — Ba chức năng tài chính công
+
+**Richard Musgrave (1959)** — *The Theory of Public Finance*:
+
+Tài chính công có **3 chức năng**:
+
+| # | Chức năng | Phân cấp phù hợp? |
+|---|---|---|
+| **1** | **Phân bổ** (allocation): cung hàng hoá công | **Có** — đa dạng sở thích địa phương |
+| **2** | **Phân phối** (distribution): công bằng | **Không** — di chuyển cư dân làm vô hiệu |
+| **3** | **Ổn định** (stabilization): vĩ mô | **Không** — cần CSTK + CSTT tập trung |
+
+**Hệ quả**: phân cấp **chức năng 1**, tập trung **2 và 3**.
+
+→ Đây là lý do hầu hết các nước: thuế thu nhập + ổn định vĩ mô ở trung ương; giáo dục + y tế cơ sở ở địa phương.
+
+## C. Việt Nam sau cải cách 2025
+
+### C.1. Nghị quyết 202/2025/QH15 — 34 tỉnh
+
+**NQ 202/2025/QH15** sắp xếp đơn vị hành chính cấp tỉnh:
+
+- Từ **63 tỉnh/thành xuống 34** (giảm gần một nửa)
+- Hiệu lực từ năm **2026**
+- **Cải cách hành chính lớn nhất sau 1975**
+
+**Mục tiêu**:
+- Giảm trung gian, tăng quy mô địa phương
+- Tận dụng lợi thế quy mô (Oates Decentralization Theorem ngược lại)
+- Đồng bộ phát triển vùng
+
+**Tranh luận**:
+- *Ủng hộ*: quy mô đủ lớn để phát triển, giảm chi phí hành chính
+- *Phản đối*: mất bản sắc địa phương, khó quản lý vùng rộng
+- *Vấn đề chuyển tiếp*: ngân sách, biên chế, hành chính
+
+### C.2. Luật 72/2025/QH15 — Chính quyền 2 cấp
+
+**Luật Tổ chức chính quyền địa phương** 72/2025/QH15:
+
+- Mô hình **2 cấp**: tỉnh – xã
+- **Bỏ cấp huyện** đối với chính quyền (không có HĐND/UBND huyện)
+- **Phân quyền mạnh** cho cấp tỉnh và xã
+
+Đây là **một bước cải cách lớn** so với mô hình 3-4 cấp hiện hành. Trên thế giới, Pháp, Italy có 3-4 cấp. Mô hình 2 cấp gần với Hà Lan, Thuỵ Điển.
+
+**Lý do bỏ cấp huyện**:
+- Cấp trung gian, ít chức năng độc lập
+- Trùng lặp với cấp tỉnh và xã
+- Chi phí hành chính cao
+
+**Thách thức**:
+- Khoảng cách tỉnh – xã *xa* khi cấp huyện bị bỏ
+- Năng lực cấp xã phải nâng đáng kể
+- Cần *tản quyền* — cử công chức tỉnh xuống xã
+
+### C.3. Luật 89/2025/QH15 — Ngân sách Nhà nước
+
+**Luật NSNN** 89/2025/QH15 cập nhật phân cấp ngân sách:
+
+| Yếu tố | Trước 2026 | Sau 2026 |
+|---|---|---|
+| Cấp | 4 cấp | **2 cấp** (TW + Tỉnh/Xã) |
+| Số tỉnh | 63 | **34** |
+| Trợ cấp cân đối | Phức tạp | Đơn giản hoá |
+
+**Phân cấp nguồn thu** (gợi ý cải cách):
+- TW: thuế XNK, thuế DN lớn, thuế TNCN cao
+- Tỉnh: thuế đất, thuế tài sản, thuế GTGT chia sẻ
+- Xã: thu phí, lệ phí, đóng góp
+
+**Phân cấp nhiệm vụ chi**:
+- TW: quốc phòng, ngoại giao, hạ tầng liên tỉnh
+- Tỉnh: giáo dục THPT, y tế cấp tỉnh, hạ tầng tỉnh
+- Xã: giáo dục tiểu học/THCS, y tế cơ sở
+
+**Trợ cấp cân đối** (transfers): TW phải hỗ trợ tỉnh nghèo để đảm bảo dịch vụ công tối thiểu.
+
+## D. Đánh giá quản trị địa phương
+
+### D.1. PCI — Provincial Competitiveness Index
+
+**PCI** (VCCI từ 2005) đo *năng lực cạnh tranh cấp tỉnh* qua khảo sát DN tư nhân.
+
+**10 chỉ số cấu thành** (cập nhật theo phiên bản mới):
+
+1. Chi phí gia nhập thị trường
+2. Tiếp cận đất đai
+3. Tính minh bạch
+4. Chi phí thời gian
+5. Chi phí không chính thức
+6. Cạnh tranh bình đẳng
+7. Tính năng động lãnh đạo
+8. Chính sách hỗ trợ DN
+9. Đào tạo lao động
+10. Thể chế pháp lý và an ninh
+
+**Sử dụng**:
+- DN xem để chọn nơi đầu tư
+- Tỉnh xem để cải thiện
+- Báo chí xếp hạng → áp lực chính trị
+
+**Tỉnh dẫn đầu**: Quảng Ninh, Hải Phòng, Đà Nẵng, Bình Dương — thường xuyên top 10.
+
+### D.2. PAPI — Public Administration Performance Index
+
+**PAPI** (UNDP từ 2009) đo *hiệu quả hành chính công cấp tỉnh* qua khảo sát người dân.
+
+**8 trục nội dung**:
+
+1. Tham gia ở cấp cơ sở
+2. Công khai minh bạch
+3. Trách nhiệm giải trình
+4. Kiểm soát tham nhũng
+5. Thủ tục hành chính công
+6. Cung ứng dịch vụ công
+7. Quản trị môi trường
+8. Quản trị điện tử
+
+**Khác PCI**: PCI từ góc nhìn *DN*, PAPI từ góc nhìn *người dân*. Cả hai bổ sung nhau.
+
+### D.3. PAR Index — Public Administration Reform Index
+
+**PAR Index** (Bộ Nội vụ từ 2012) đo *cải cách hành chính cấp tỉnh* qua tự đánh giá + chuyên gia.
+
+**7 lĩnh vực**:
+- Thể chế
+- Thủ tục hành chính
+- Tổ chức bộ máy
+- Đội ngũ công chức
+- Tài chính công
+- Hiện đại hoá hành chính
+- Tác động cải cách
+
+**Khác PCI/PAPI**: PAR Index là *đánh giá nội bộ* của Nhà nước. Cả 3 chỉ số bổ sung — đo từ 3 góc khác nhau.
+
+### D.4. Cơ chế đặc thù — Nghị quyết 98/2023
+
+**NQ 98/2023** cho phép **TP.HCM** thí điểm cơ chế đặc thù:
+
+- Phân cấp mạnh hơn
+- Quyết định nhiều hạng mục đầu tư
+- Cơ chế ngân sách riêng
+- Đặc biệt: thu hút nhân tài, R&D
+
+**Kinh nghiệm Quảng Ninh**: tỉnh tiên phong về cải cách hành chính và PCI, cho thấy *vai trò của lãnh đạo địa phương* quyết định lớn.
+
+::: {.callout-warning}
+## ✋ Bài tập thảo luận trên lớp
+
+Phân tích **mô hình chính quyền 2 cấp** (Luật 72/2025) qua khung Oates:
+
+1. Chức năng nào nên ở *cấp tỉnh*?
+2. Chức năng nào ở *cấp xã*?
+3. Cấp huyện bị bỏ — khoảng trống *tản quyền* sẽ được bù bằng cách nào?
+4. Có nguy cơ *over-centralization* hoặc *under-capacity* không?
+:::
+
+## Tổng kết Buổi 12 — Năm điểm cốt lõi
+
+1. **Quản trị địa phương** ≠ chính quyền địa phương — bao gồm NN + DN + xã hội dân sự.
+2. **Bốn khái niệm phân cấp**: decentralization / devolution / deconcentration / delegation — khác nhau quan trọng.
+3. **Lý thuyết kinh điển**: Tiebout (vote with feet), Oates (Decentralization Theorem), Musgrave (3 chức năng tài chính công).
+4. **VN sau cải cách 2025**: 34 tỉnh + chính quyền 2 cấp + Luật NSNN mới — cải cách lớn nhất sau 1975.
+5. **Đánh giá**: PCI (DN), PAPI (người dân), PAR Index (Nhà nước) — 3 góc bổ sung.
+
+## Bài tập về nhà (chuẩn bị Buổi 13)
+
+1. **Đọc** Mankiw về **kinh tế vùng** (regional economics).
+2. **Tự đọc** Krugman NEG.
+3. **Chuẩn bị 1 ví dụ vùng kinh tế VN** (ĐNB, ĐBSCL, Tây Nguyên, BTB-DHMT).
+4. **Đọc thêm** về 4 cực động lực Đại hội XIV.
+
+::: {.callout-tip}
+## 🔧 Stata Lab 12 (bonus 5%)
+
+Bài này có lab **so sánh PCI / PAPI / PAR Index** cho 34 tỉnh trong Stata: merge 3 dataset, tính correlation, scatter, ranking.
+
+→ [**Bắt đầu Lab 12 — PCI/PAPI/PAR theo tỉnh**](../stata-lab/lab-12.qmd) *(~30 phút)*
+:::
 
 ## Đọc thêm
 
-- HCMA (2021), *Giáo trình Quản lý nhà nước về kinh tế*, chương 5.
-- Tài liệu chuyên đề do giảng viên cung cấp.
-- Luật 72/2025/QH15, Luật 89/2025/QH15, NQ 202/2025/QH15.
-
-::: {.callout-warning appearance="simple"}
-## 🚧 Nội dung đang biên soạn
-
-Bài giảng buổi 12 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
-:::
+- HCMA (2021), *Giáo trình QLNN về KT*, chương 5.
+- **Tiebout, C.** (1956), *A Pure Theory of Local Expenditures*.
+- **Oates, W.** (1972), *Fiscal Federalism*.
+- **Musgrave, R.** (1959), *The Theory of Public Finance*.
+- **NQ 202/2025/QH15**, **Luật 72/2025/QH15**, **Luật 89/2025/QH15** (văn bản gốc).
+- **Báo cáo PCI/PAPI/PAR Index** phiên bản mới nhất.
 
 ---
 
-← *Buổi trước*: [Buổi 11](buoi-11.qmd) *Buổi tiếp theo*: [Buổi 13](buoi-13.qmd) →
+← *Buổi trước*: [Buổi 11 — Trilemma và Khủng hoảng châu Á 1997](buoi-11.qmd) | *Buổi tiếp theo*: [Buổi 13 — Phát triển kinh tế vùng](buoi-13.qmd) →

@@ -1,84 +1,210 @@
 ---
-title: "Lab 09 — Tính NEER và REER VND"
-subtitle: "Tương ứng Buổi 9: Tỷ giá hiệu lực danh nghĩa và thực"
-reading-time: "~20 phút"
+title: "Lab 9 — Tính NEER và REER VND"
+subtitle: "Tương ứng Buổi 9: Tỷ giá hiệu dụng với rổ 5 đối tác"
+reading-time: "~30 phút"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Liên kết với Buổi 9
 
-Bài này áp dụng khái niệm chính từ [Buổi 9](../lectures/buoi-09.qmd) vào dữ liệu thực tế Việt Nam.
+Bài này tính **NEER và REER VND** từ tỷ giá song phương với 5 đối tác lớn (USD, EUR, JPY, CNY, KRW) và CPI tương ứng.
 
-**Khái niệm Stata học**: `weighted average, log, time series`
+**Khái niệm Stata học**: weighted average, normalization, time series plotting, growth rates
 :::
 
-::: {.callout-warning appearance="simple"}
-## 🚧 Lab đang biên soạn
-
-Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 09. Cấu trúc cố định theo template chuẩn của 16 lab.
-:::
-
-## Khung Lab 09
-
-### 1. Bài toán
-
-Tính NEER REER VND 2015-2024
-
-### 2. Dữ liệu cần
-
-Dữ liệu tỷ giá VND/USD, EUR, JPY, CNY + CPI VN và đối tác
-
-### 3. Lệnh Stata trọng tâm
-
-Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):
+## 1. Dataset tỷ giá + CPI
 
 ```stata
-* Lab 09 — DTU301
-* Họ tên: <điền>, MSSV: <điền>
-
+* Lab 9 — DTU301 — NEER/REER VND
 clear all
 set more off
 log using "lab09_<ten>.log", replace text
 
-* === Tải dữ liệu ===
-* (sẽ chi tiết khi có dataset thật)
+* Dataset hàng năm 2015-2024 (mô phỏng từ số liệu thực)
+clear
+set obs 10
+generate year = 2014 + _n
 
-* === Phân tích ===
-* Sử dụng: weighted average, log, time series
+* Tỷ giá song phương (VND/foreign currency)
+generate VND_USD = .
+replace VND_USD = 21800 if year == 2015
+replace VND_USD = 22300 if year == 2016
+replace VND_USD = 22700 if year == 2017
+replace VND_USD = 23200 if year == 2018
+replace VND_USD = 23200 if year == 2019
+replace VND_USD = 23200 if year == 2020
+replace VND_USD = 22800 if year == 2021
+replace VND_USD = 24200 if year == 2022
+replace VND_USD = 24300 if year == 2023
+replace VND_USD = 25000 if year == 2024
 
-* === Đóng log ===
+generate VND_EUR = .
+replace VND_EUR = 24000 if year == 2015
+replace VND_EUR = 24500 if year == 2016
+replace VND_EUR = 25500 if year == 2017
+replace VND_EUR = 27000 if year == 2018
+replace VND_EUR = 26000 if year == 2019
+replace VND_EUR = 26500 if year == 2020
+replace VND_EUR = 27000 if year == 2021
+replace VND_EUR = 25400 if year == 2022
+replace VND_EUR = 26300 if year == 2023
+replace VND_EUR = 27000 if year == 2024
+
+generate VND_JPY = .
+replace VND_JPY = 182 if year == 2015
+replace VND_JPY = 200 if year == 2016
+replace VND_JPY = 205 if year == 2017
+replace VND_JPY = 210 if year == 2018
+replace VND_JPY = 215 if year == 2019
+replace VND_JPY = 218 if year == 2020
+replace VND_JPY = 200 if year == 2021
+replace VND_JPY = 185 if year == 2022
+replace VND_JPY = 170 if year == 2023
+replace VND_JPY = 165 if year == 2024
+
+generate VND_CNY = .
+replace VND_CNY = 3500 if year == 2015
+replace VND_CNY = 3350 if year == 2016
+replace VND_CNY = 3450 if year == 2017
+replace VND_CNY = 3370 if year == 2018
+replace VND_CNY = 3350 if year == 2019
+replace VND_CNY = 3500 if year == 2020
+replace VND_CNY = 3550 if year == 2021
+replace VND_CNY = 3450 if year == 2022
+replace VND_CNY = 3400 if year == 2023
+replace VND_CNY = 3450 if year == 2024
+
+generate VND_KRW = .
+replace VND_KRW = 19.0 if year == 2015
+replace VND_KRW = 19.2 if year == 2016
+replace VND_KRW = 20.1 if year == 2017
+replace VND_KRW = 21.0 if year == 2018
+replace VND_KRW = 20.0 if year == 2019
+replace VND_KRW = 21.0 if year == 2020
+replace VND_KRW = 19.0 if year == 2021
+replace VND_KRW = 18.5 if year == 2022
+replace VND_KRW = 18.6 if year == 2023
+replace VND_KRW = 18.4 if year == 2024
+
+* CPI (Index, 2015=100)
+generate CPI_VN  = 100 + 3*(year - 2015)   // Mô phỏng đơn giản
+generate CPI_US  = 100 + 2*(year - 2015)
+generate CPI_EU  = 100 + 1.5*(year - 2015)
+generate CPI_JP  = 100 + 0.5*(year - 2015)
+generate CPI_CN  = 100 + 2*(year - 2015)
+generate CPI_KR  = 100 + 2*(year - 2015)
+
+list year VND_USD VND_EUR VND_JPY
+```
+
+## 2. Trọng số rổ thương mại (ước lượng)
+
+| Đối tác | Trọng số (%) |
+|---|:---:|
+| USD (Mỹ + thị trường USD) | 28 |
+| CNY (Trung Quốc) | 30 |
+| KRW (Hàn Quốc) | 18 |
+| JPY (Nhật Bản) | 14 |
+| EUR (EU) | 10 |
+
+```stata
+scalar w_usd = 0.28
+scalar w_cny = 0.30
+scalar w_krw = 0.18
+scalar w_jpy = 0.14
+scalar w_eur = 0.10
+```
+
+## 3. Chuẩn hoá tỷ giá (2015 = 100)
+
+```stata
+* Tính chỉ số tỷ giá (base 2015 = 100)
+foreach v in USD EUR JPY CNY KRW {
+    generate idx_`v' = VND_`v' / VND_`v'[1] * 100
+}
+list year idx_USD idx_EUR idx_JPY idx_CNY idx_KRW
+```
+
+## 4. Tính NEER (geometric mean)
+
+NEER là **bình quân hình học có trọng số** của các tỷ giá song phương:
+
+$$\text{NEER} = \prod_i \text{idx}_i^{w_i}$$
+
+```stata
+generate NEER = exp( ///
+    w_usd * log(idx_USD) + ///
+    w_eur * log(idx_EUR) + ///
+    w_jpy * log(idx_JPY) + ///
+    w_cny * log(idx_CNY) + ///
+    w_krw * log(idx_KRW) ///
+)
+
+list year NEER
+```
+
+**Câu hỏi 1**: NEER VND năm 2024 so với 2015 thay đổi bao nhiêu %? VND có *lên giá* hay *mất giá* theo rổ này?
+
+## 5. Tính REER
+
+$$\text{REER} = \text{NEER} \cdot \frac{\text{CPI}_{\text{foreign,weighted}}}{\text{CPI}_{\text{VN}}}$$
+
+```stata
+* CPI foreign weighted (geometric mean)
+generate CPI_foreign = exp( ///
+    w_usd * log(CPI_US) + ///
+    w_eur * log(CPI_EU) + ///
+    w_jpy * log(CPI_JP) + ///
+    w_cny * log(CPI_CN) + ///
+    w_krw * log(CPI_KR) ///
+)
+
+generate REER = NEER * CPI_foreign / CPI_VN
+
+list year NEER REER
+```
+
+**Câu hỏi 2**: REER khác NEER ở chỗ nào? Trong giai đoạn 2015-2024, REER *tăng* hay *giảm* nhiều hơn NEER? Ý nghĩa?
+
+## 6. Vẽ biểu đồ NEER và REER
+
+```stata
+twoway (line NEER year, lcolor("114 47 55") lwidth(thick)) ///
+       (line REER year, lcolor("0 88 163") lwidth(thick) lpattern(dash)), ///
+       title("NEER và REER VND, 2015-2024") ///
+       subtitle("Base year 2015 = 100") ///
+       xtitle("Năm") ytitle("Index") ///
+       yline(100, lcolor(gray) lpattern(dot)) ///
+       legend(label(1 "NEER") label(2 "REER") position(2) ring(0) cols(1)) ///
+       graphregion(color(white))
+
+graph export "neer_reer.png", replace width(1400)
+```
+
+**Câu hỏi 3**: Năm nào VND *real depreciation* nhiều nhất? Có trùng với năm Fed tăng lãi suất mạnh (2022) không?
+
+## 7. Liên hệ chính sách
+
+**Câu hỏi 4 + 5** (suy nghĩ + viết, 400 từ):
+
+- VND có bị *định giá quá cao* (overvalued) theo REER không?
+- So sánh REER VN với REER Trung Quốc, Thái Lan cùng giai đoạn — ai cạnh tranh hơn?
+- Nếu REER tăng (VND lên giá thực), tác động đến XK Việt Nam ra sao?
+- NHNN nên *tiếp tục crawl-like* hay chuyển sang *managed float* dài hạn?
+
+```stata
 log close
 ```
 
-### 4. Câu hỏi suy nghĩ (sẽ chi tiết)
-
-1. Câu hỏi mô tả dữ liệu
-2. Câu hỏi so sánh / xu hướng
-3. Câu hỏi liên hệ với lý thuyết
-4. Câu hỏi liên hệ với chính sách Việt Nam
-5. Câu hỏi mở rộng / phản biện
-
-## Deliverable Lab 09
-
-Nộp 3 file (như các lab trước):
-
-| File | Nội dung |
-|---|---|
-| `lab09_<tên>.do` | Code + comment |
-| `lab09_<tên>.log` | Output |
-| `lab09_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
-
-**Tiêu đề email**: `DTU301-LAB09-MSSV-HọTên`
-
-## Tiêu chí chấm
+## Deliverable + Tiêu chí chấm
 
 | Tiêu chí | Điểm |
 |---|:---:|
-| Code chạy đúng, có log | 30% |
-| Vận dụng đúng khái niệm Stata mới của bài | 25% |
-| Biểu đồ / bảng kết quả rõ ràng | 20% |
-| Trả lời câu hỏi sâu, có liên hệ thực tiễn | 25% |
+| Code chạy + tính NEER REER đúng | 30% |
+| Biểu đồ rõ ràng | 25% |
+| Trả lời 5 câu hỏi sâu | 30% |
+| Liên hệ thực tiễn 2022-2024 | 15% |
 
 ---
 
-← *Lab trước*: [Lab 8](lab-08.qmd) | *Lab tiếp theo*: [Lab 10](lab-10.qmd) →
+← *Lab trước*: [Lab 8 — Phillips VN](lab-08.qmd) | *Lab tiếp theo*: [Lab 10 — Mundell-Fleming](lab-10.qmd) →

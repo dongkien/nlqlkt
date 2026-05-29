@@ -1,84 +1,109 @@
 ---
 title: "Lab 12 — PCI / PAPI / PAR Index theo tỉnh"
-subtitle: "Tương ứng Buổi 12: Quản trị địa phương và đánh giá"
-reading-time: "~20 phút"
+subtitle: "Tương ứng Buổi 12: So sánh 3 chỉ số đánh giá quản trị địa phương"
+reading-time: "~25 phút"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Liên kết với Buổi 12
 
-Bài này áp dụng khái niệm chính từ [Buổi 12](../lectures/buoi-12.qmd) vào dữ liệu thực tế Việt Nam.
+So sánh **PCI (DN) – PAPI (người dân) – PAR (Nhà nước)** cho 12 tỉnh điển hình. Liên hệ chất lượng QLĐP với *thu hút đầu tư* và *hài lòng người dân*.
 
-**Khái niệm Stata học**: `merge, scatter, correlation`
+**Khái niệm Stata học**: `correlate`, scatter matrix, ranking, percentile
 :::
 
-::: {.callout-warning appearance="simple"}
-## 🚧 Lab đang biên soạn
-
-Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 12. Cấu trúc cố định theo template chuẩn của 16 lab.
-:::
-
-## Khung Lab 12
-
-### 1. Bài toán
-
-So sánh 34 tỉnh sau cải cách 2025
-
-### 2. Dữ liệu cần
-
-Dữ liệu PCI (VCCI), PAPI (UNDP), PAR Index (Bộ Nội vụ)
-
-### 3. Lệnh Stata trọng tâm
-
-Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):
+## 1. Dataset 12 tỉnh
 
 ```stata
-* Lab 12 — DTU301
-* Họ tên: <điền>, MSSV: <điền>
-
+* Lab 12 — DTU301 — PCI/PAPI/PAR comparison
 clear all
 set more off
 log using "lab12_<ten>.log", replace text
 
-* === Tải dữ liệu ===
-* (sẽ chi tiết khi có dataset thật)
+clear
+input str20 tinh float PCI float PAPI float PAR float GRDP_pc
+"Quảng Ninh"     71.0  47.2  91.5  9500
+"Hải Phòng"      70.4  46.5  93.2  8800
+"Đà Nẵng"        69.8  45.8  91.2  7500
+"Bình Dương"     67.8  43.5  90.0  10200
+"TP.HCM"         67.5  42.8  89.5  9100
+"Hà Nội"         67.0  42.0  90.5  7800
+"Bắc Ninh"       66.5  42.5  87.0  8500
+"Đồng Nai"       66.0  43.0  86.5  7200
+"Khánh Hoà"      65.0  42.0  85.0  4500
+"Cần Thơ"        64.5  41.5  84.5  4000
+"Nghệ An"        63.0  40.0  82.0  2800
+"Tây Ninh"       62.5  39.5  81.0  3500
+end
 
-* === Phân tích ===
-* Sử dụng: merge, scatter, correlation
+label variable PCI "PCI (VCCI)"
+label variable PAPI "PAPI (UNDP)"
+label variable PAR "PAR Index (Bộ Nội vụ)"
+label variable GRDP_pc "GRDP/đầu người (USD)"
 
-* === Đóng log ===
+list, sepby(tinh)
+```
+
+## 2. Correlation 3 chỉ số
+
+```stata
+correlate PCI PAPI PAR
+
+* Có cao nhất giữa PCI–PAR hay PCI–PAPI?
+```
+
+**Câu hỏi 1**: 3 chỉ số có tương quan cao không? Cặp nào tương quan cao nhất? Ý nghĩa?
+
+## 3. Scatter và ranking
+
+```stata
+* === Scatter PCI vs GRDP ===
+twoway (scatter GRDP_pc PCI, mlabel(tinh) mlabsize(small) ///
+        mcolor("114 47 55")) ///
+       (lfit GRDP_pc PCI, lcolor("0 88 163")), ///
+       title("PCI và GRDP/đầu người — 12 tỉnh") ///
+       xtitle("PCI") ytitle("GRDP/đầu người (USD)") ///
+       legend(off) ///
+       graphregion(color(white))
+
+graph export "pci_grdp.png", replace width(1400)
+```
+
+**Câu hỏi 2**: PCI cao có đi đôi với GRDP cao? Outlier nào? Tại sao?
+
+## 4. Tổng hợp 3 chỉ số
+
+```stata
+* Chuẩn hoá về 0-100
+egen PCI_norm  = std(PCI)
+egen PAPI_norm = std(PAPI)
+egen PAR_norm  = std(PAR)
+
+* Tổng hợp
+generate composite = (PCI_norm + PAPI_norm + PAR_norm) / 3
+
+* Ranking
+gsort -composite
+generate rank = _n
+
+list tinh PCI PAPI PAR composite rank, noobs
+```
+
+**Câu hỏi 3**: Top 3 tỉnh quản trị tốt nhất theo composite? Bottom 3?
+
+## 5. Liên hệ chính sách
+
+**Câu hỏi 4 + 5** (suy nghĩ + viết, 400 từ):
+
+- Sau cải cách 2025 (34 tỉnh), 12 tỉnh trên *có còn tồn tại không*? (Một số sẽ sáp nhập)
+- Tỉnh nào sẽ là *trung tâm* sau sáp nhập? Quản trị tốt có giữ được không?
+- Áp dụng khung Oates: cải cách 2025 là *phân cấp* hay *tập trung* hơn?
+- Bài học nào từ Quảng Ninh có thể chia sẻ cho các tỉnh khác?
+
+```stata
 log close
 ```
 
-### 4. Câu hỏi suy nghĩ (sẽ chi tiết)
-
-1. Câu hỏi mô tả dữ liệu
-2. Câu hỏi so sánh / xu hướng
-3. Câu hỏi liên hệ với lý thuyết
-4. Câu hỏi liên hệ với chính sách Việt Nam
-5. Câu hỏi mở rộng / phản biện
-
-## Deliverable Lab 12
-
-Nộp 3 file (như các lab trước):
-
-| File | Nội dung |
-|---|---|
-| `lab12_<tên>.do` | Code + comment |
-| `lab12_<tên>.log` | Output |
-| `lab12_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
-
-**Tiêu đề email**: `DTU301-LAB12-MSSV-HọTên`
-
-## Tiêu chí chấm
-
-| Tiêu chí | Điểm |
-|---|:---:|
-| Code chạy đúng, có log | 30% |
-| Vận dụng đúng khái niệm Stata mới của bài | 25% |
-| Biểu đồ / bảng kết quả rõ ràng | 20% |
-| Trả lời câu hỏi sâu, có liên hệ thực tiễn | 25% |
-
 ---
 
-← *Lab trước*: [Lab 11](lab-11.qmd) | *Lab tiếp theo*: [Lab 13](lab-13.qmd) →
+← *Lab trước*: [Lab 11 — Event study 1997](lab-11.qmd) | *Lab tiếp theo*: [Lab 13 — 6 vùng KT-XH](lab-13.qmd) →

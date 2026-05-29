@@ -1,84 +1,130 @@
 ---
-title: "Lab 14 — Capstone — phân tích 1 chính sách"
-subtitle: "Tương ứng Buổi 14: Tổng hợp xuyên 5 chương"
-reading-time: "~20 phút"
+title: "Lab 14 — Capstone: Phân tích 1 chính sách"
+subtitle: "Tương ứng Buổi 14: Tổng hợp xuyên 5 chương bằng Stata"
+reading-time: "tự chọn (~60-120 phút)"
 ---
 
 ::: {.callout-note appearance="simple"}
-## 🎯 Liên kết với Buổi 14
+## 🎯 Lab Capstone
 
-Bài này áp dụng khái niệm chính từ [Buổi 14](../lectures/buoi-14.qmd) vào dữ liệu thực tế Việt Nam.
+Đây là **lab cuối kỳ tổng hợp**. Bạn *tự chọn* 1 chính sách Việt Nam, áp dụng toàn bộ kỹ năng Stata từ Lab 0-13 để phân tích sâu.
 
-**Khái niệm Stata học**: `tự chọn`
+**Khái niệm Stata học**: tự chọn — tùy đề tài, có thể là OLS, panel, time series, event study, hoặc combinations.
 :::
 
-::: {.callout-warning appearance="simple"}
-## 🚧 Lab đang biên soạn
+## 1. Yêu cầu
 
-Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 14. Cấu trúc cố định theo template chuẩn của 16 lab.
-:::
+**Mục tiêu**: phân tích **1 chính sách kinh tế Việt Nam** giai đoạn 2020-2025 bằng dữ liệu thật.
 
-## Khung Lab 14
+**Quy mô**:
 
-### 1. Bài toán
+- **Đặt vấn đề**: 1 câu hỏi nghiên cứu chính + 2-3 câu hỏi phụ
+- **Khung lý thuyết**: vận dụng 1-2 khung từ 5 chương đã học
+- **Dữ liệu**: ≥ 1 nguồn chính thống (GSO, NHNN, WB, IMF)
+- **Phân tích**: ≥ 3 kỹ thuật Stata (descriptive, regression, plot, ...)
+- **Khuyến nghị**: 3 đề xuất cho VN
 
-Áp dụng toàn bộ kỹ năng Stata đã học
+## 2. Đề tài gợi ý
 
-### 2. Dữ liệu cần
+Chọn **1** trong các đề tài sau (hoặc tự đề xuất, xin GV duyệt):
 
-Dữ liệu tự chọn theo chủ đề nhóm
+| Đề tài | Khung | Kỹ thuật Stata |
+|---|---|---|
+| Đánh giá gói hỗ trợ Covid 2021-2022 | AD-AS + IS-LM | Time series, before/after |
+| Phân tích Phillips VN 2010-2024 | Phillips + NAIRU | OLS, fitted line |
+| Kiểm chứng growth accounting VN | Cobb-Douglas | log regression, residual |
+| Phân tích tỷ giá VND 2022 | Mundell-Fleming | event study, panel |
+| So sánh PCI 34 tỉnh trước/sau cải cách | Quản trị địa phương | ranking, t-test |
+| Đánh giá hiệu quả siêu dự án | NEG + CBA | descriptive + scatter |
+| Bán dẫn VN — case study NIS | Schumpeter + NIS | descriptive |
+| Tác động NQ 98 lên TP.HCM | Phân cấp + NEG | difference-in-differences |
 
-### 3. Lệnh Stata trọng tâm
-
-Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):
+## 3. Cấu trúc do-file
 
 ```stata
-* Lab 14 — DTU301
+* Lab 14 Capstone — DTU301
+* Đề tài: <tên đề tài>
 * Họ tên: <điền>, MSSV: <điền>
 
 clear all
 set more off
 log using "lab14_<ten>.log", replace text
 
-* === Tải dữ liệu ===
-* (sẽ chi tiết khi có dataset thật)
+*-------------------------------
+* PHẦN 1: ĐẶT VẤN ĐỀ
+*-------------------------------
+display "=== Capstone DTU301 ==="
+display "Đề tài: <tên>"
+display "Câu hỏi nghiên cứu chính: <ghi vào đây>"
 
-* === Phân tích ===
-* Sử dụng: tự chọn
+*-------------------------------
+* PHẦN 2: TẢI DỮ LIỆU
+*-------------------------------
+* (nguồn: GSO, NHNN, WB, ...)
 
-* === Đóng log ===
+*-------------------------------
+* PHẦN 3: THỐNG KÊ MÔ TẢ
+*-------------------------------
+* summarize, tabulate, list
+
+*-------------------------------
+* PHẦN 4: PHÂN TÍCH CHÍNH
+*-------------------------------
+* regression, plot, event study, ...
+
+*-------------------------------
+* PHẦN 5: KIỂM CHỨNG
+*-------------------------------
+* robustness check
+
+*-------------------------------
+* PHẦN 6: KHUYẾN NGHỊ
+*-------------------------------
+* 3 đề xuất cụ thể
+
 log close
 ```
 
-### 4. Câu hỏi suy nghĩ (sẽ chi tiết)
+## 4. Yêu cầu báo cáo
 
-1. Câu hỏi mô tả dữ liệu
-2. Câu hỏi so sánh / xu hướng
-3. Câu hỏi liên hệ với lý thuyết
-4. Câu hỏi liên hệ với chính sách Việt Nam
-5. Câu hỏi mở rộng / phản biện
+Báo cáo (5-7 trang Word/PDF) gồm:
 
-## Deliverable Lab 14
-
-Nộp 3 file (như các lab trước):
-
-| File | Nội dung |
+| Mục | Nội dung |
 |---|---|
-| `lab14_<tên>.do` | Code + comment |
-| `lab14_<tên>.log` | Output |
-| `lab14_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
+| **1. Đặt vấn đề** | Câu hỏi nghiên cứu + tại sao quan trọng |
+| **2. Khung lý thuyết** | 1-2 khung từ 5 chương + tại sao chọn |
+| **3. Dữ liệu** | Nguồn, biến, kỳ |
+| **4. Phương pháp** | Kỹ thuật Stata sử dụng |
+| **5. Kết quả** | Bảng + biểu đồ + diễn giải |
+| **6. Thảo luận** | Hạn chế, đánh đổi, rủi ro |
+| **7. Khuyến nghị** | 3 đề xuất khả thi cho VN |
+| **Tài liệu tham khảo** | APA 7th |
 
-**Tiêu đề email**: `DTU301-LAB14-MSSV-HọTên`
+## 5. Tiêu chí chấm
 
-## Tiêu chí chấm
-
-| Tiêu chí | Điểm |
+| Tiêu chí | Trọng số |
 |---|:---:|
-| Code chạy đúng, có log | 30% |
-| Vận dụng đúng khái niệm Stata mới của bài | 25% |
-| Biểu đồ / bảng kết quả rõ ràng | 20% |
-| Trả lời câu hỏi sâu, có liên hệ thực tiễn | 25% |
+| Câu hỏi nghiên cứu rõ ràng + ý nghĩa | 15% |
+| Khung lý thuyết phù hợp | 15% |
+| Dữ liệu chất lượng (nguồn chính thống) | 15% |
+| Code Stata sạch, có comment | 20% |
+| Diễn giải kết quả sâu | 15% |
+| Khuyến nghị cụ thể, khả thi | 15% |
+| Trích dẫn + format đẹp | 5% |
+
+## 6. Khuyến nghị: dùng AI có trách nhiệm
+
+- **Cho phép**: ChatGPT/Claude tóm tắt tài liệu, debug code Stata, brainstorm ý tưởng
+- **Bắt buộc khai báo**: phần nào dùng AI, prompt gì
+- **Kiểm chứng**: mọi số liệu phải verify từ nguồn gốc
+- **Không sao chép**: phải viết lại bằng giọng văn của bạn
+
+## 7. Mở rộng (tự chọn)
+
+- Học **Quarto + Stata** để tạo báo cáo có code chạy thật
+- Thử **Python + statsmodels** để so sánh với Stata
+- Tham gia **VEPR, CIEM** seminars để nghe nhà nghiên cứu thảo luận
 
 ---
 
-← *Lab trước*: [Lab 13](lab-13.qmd) | *Lab tiếp theo*: [Lab 15](lab-15.qmd) →
+← *Lab trước*: [Lab 13 — 6 vùng KT-XH](lab-13.qmd) | *Lab tiếp theo*: [Lab 15 — Xuất bảng + biểu đồ](lab-15.qmd) →

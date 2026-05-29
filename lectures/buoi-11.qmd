@@ -1,60 +1,278 @@
 ---
 title: "Buổi 11 — Bộ ba bất khả thi và Khủng hoảng châu Á 1997"
-subtitle: "Trilemma; sterilization; VN trong Trilemma; định hướng XIV; bài học 1997"
-reading-time: "Chương 4"
+subtitle: "Trilemma · Sterilization · Việt Nam trong tam giác · Bài học 1997"
+reading-time: "Chương 4 · ~50 phút đọc"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Đóng góp CLO
 
-**CLO2, CLO3 — Phân tích các đánh đổi chính sách trong KT mở**
+**CLO2, CLO3** — Phân tích đánh đổi chính sách trong KT mở qua khung Trilemma, vận dụng vào Việt Nam và bài học Khủng hoảng châu Á 1997.
+
+Buổi 10 cho thấy: tỷ giá cố định = mất CSTT; tỷ giá thả nổi = mất ổn định tỷ giá. Buổi 11 **tổng quát hoá** thành **Bộ ba bất khả thi** — một trong những định lý quan trọng nhất của vĩ mô kinh tế mở.
 :::
 
-## Nội dung lý thuyết (thuyết giảng)
+## Lộ trình Buổi 11
 
-**4.3. Bộ ba bất khả thi (Impossible Trinity / Trilemma)**
+| Phần | Nội dung |
+|:---:|---|
+| **A** | Bộ ba bất khả thi — phát biểu và chứng minh |
+| **B** | Phân loại quốc gia theo 3 cạnh tam giác |
+| **C** | Việt Nam trong Trilemma |
+| **D** | Khủng hoảng châu Á 1997 và bài học |
 
-- Phát biểu và chứng minh
-- Ba góc: ổn định tỷ giá, tự do dòng vốn, độc lập tiền tệ
-- **Sterilization** — và giới hạn của nó
+## A. Bộ ba bất khả thi
 
-**Việt Nam trong Trilemma**
+### A.1. Phát biểu Trilemma
 
-- Vị trí hiện tại của Việt Nam trong tam giác
-- Định hướng theo **Đại hội XIV**
+**Robert Mundell (1963)** — *Impossible Trinity* hay *Trilemma*:
 
-**Khủng hoảng châu Á 1997**
+> Một quốc gia *không thể* đồng thời đạt được cả **ba mục tiêu**:
+>
+> 1. **Vốn tự do** (capital mobility)
+> 2. **Tỷ giá cố định** (fixed exchange rate)
+> 3. **Độc lập chính sách tiền tệ** (monetary autonomy)
 
-- Nguyên nhân: bộ ba bất khả thi + thanh khoản ngoại tệ
-- Diễn biến tại Thái Lan, Indonesia, Hàn Quốc
-- **Bài học cho Việt Nam**
+→ Chỉ có thể chọn **2 trong 3**. Mỗi quốc gia phải **hi sinh 1 mục tiêu**.
 
-## Thực hành / Thảo luận
+Đây là *cơ sở của chính sách kinh tế mở* — mọi quyết định chính sách tỷ giá đều quay về Trilemma.
 
-**Mô phỏng** quyết định NHNN trong 3 vòng: cố giữ peg → sterilization → thả nổi. Mỗi vòng có cú sốc mới, sinh viên quyết định.
+### A.2. Tam giác Trilemma — 3 cạnh
 
-## Bài tập lớn / Tiểu luận
+Hình dung Trilemma như **một tam giác** với 3 đỉnh là 3 mục tiêu. Mỗi quốc gia chọn 1 *cạnh* (= chọn 2 đỉnh, bỏ 1 đỉnh):
 
-Hoàn thiện báo cáo phân tích chính sách tỷ giá / dòng vốn (Phần 3 — kết luận và khuyến nghị).
+| Cạnh | Chọn | Bỏ | Ví dụ |
+|---|---|---|---|
+| **Cạnh 1** | Vốn tự do + Cố định | Độc lập CSTT | Hong Kong (peg USD), Eurozone (chia sẻ EUR) |
+| **Cạnh 2** | Vốn tự do + Thả nổi | Cố định | Mỹ, EU, Nhật, Anh, Úc |
+| **Cạnh 3** | Cố định + Độc lập CSTT | Vốn tự do | Trung Quốc trước 2010, Việt Nam |
 
-## Tự học có hướng dẫn
+**Không quốc gia nào** đạt cả 3 đỉnh đồng thời trong dài hạn.
 
-1. Bộ ba bất khả thi giải thích điều gì cho VN?
-2. Bài học từ khủng hoảng Á 1997?
-3. Khi nào nên thả nổi tỷ giá VND?
+### A.3. Chứng minh Trilemma
+
+Giả sử có **cả 3 mục tiêu** + **lãi suất nội $r$ > lãi suất quốc tế $r^*$**.
+
+**Hệ quả tất yếu**:
+
+1. $r > r^*$ → **vốn vào** tìm lợi nhuận (vì vốn tự do)
+2. Vốn vào → áp lực **VND lên giá** (cầu VND tăng)
+3. Để giữ tỷ giá cố định, NHTW **mua USD** bằng VND mới in
+4. $M$ tăng → $r$ giảm → về $r^*$
+5. **Mất độc lập CSTT**
+
+→ Mâu thuẫn: không thể đồng thời có cả 3. Phải bỏ 1.
+
+### A.4. Sterilization — giải pháp một phần
+
+**Sterilization** = NHTW *trung hoà* tác động của can thiệp tỷ giá lên cung tiền.
+
+**Cơ chế**:
+
+1. NHTW **mua USD** → $M$ tăng
+2. NHTW **bán trái phiếu** trong nước → $M$ giảm trở lại
+3. Tổng: tỷ giá giữ + $M$ không tăng → khôi phục một phần CSTT
+
+**Hạn chế của sterilization**:
+
+- **Tốn kém**: trái phiếu chính phủ trả lãi cao hơn lãi nhận từ dự trữ → chi phí trực tiếp
+- **Không bền vững**: dòng vốn vào lớn → cần phát hành trái phiếu liên tục → nợ công tăng
+- **Khó duy trì** với quy mô vốn lớn
+
+**Trung Quốc 2000s** thực hành sterilization quy mô lớn nhất lịch sử — dự trữ tăng tới 4.000 tỷ USD năm 2014. Chi phí ước tính: ~1% GDP/năm.
+
+## B. Phân loại quốc gia theo 3 cạnh
+
+### B.1. Cạnh 1: Vốn tự do + Cố định (mất CSTT)
+
+**Đại diện**: Hong Kong (LERS peg USD từ 1983), Eurozone (chia sẻ EUR).
+
+**Ưu**:
+- Tỷ giá ổn định → tốt cho thương mại + tài chính quốc tế
+- Vốn tự do → trung tâm tài chính
+
+**Nhược**:
+- Mất CSTT → phải theo r quốc tế
+- Không thể phản ứng riêng với cú sốc nội địa
+
+**Phù hợp**: KT mở hoàn toàn, có dự trữ lớn, quy mô nhỏ.
+
+### B.2. Cạnh 2: Vốn tự do + Thả nổi (mất cố định)
+
+**Đại diện**: Mỹ, EU, Anh, Nhật, Úc, Canada.
+
+**Ưu**:
+- Có CSTT tự chủ → phản ứng linh hoạt
+- Tỷ giá tự cân bằng cán cân
+- Vốn tự do → thị trường tài chính sâu rộng
+
+**Nhược**:
+- Tỷ giá biến động → rủi ro thương mại
+- Nguy cơ overshooting (Dornbusch 1976)
+- Yêu cầu thị trường tài chính phát triển
+
+**Phù hợp**: KT phát triển lớn, đồng tiền *đáng tin cậy*.
+
+### B.3. Cạnh 3: Cố định + Độc lập CSTT (kiểm soát vốn)
+
+**Đại diện**: Trung Quốc trước 2010, Việt Nam (crawl-like).
+
+**Ưu**:
+- Tỷ giá ổn định → tốt cho xuất khẩu, FDI
+- Có CSTT tự chủ → phản ứng cú sốc nội địa
+
+**Nhược**:
+- Kiểm soát vốn → giảm hiệu quả phân bổ vốn quốc tế
+- Khó hội nhập tài chính sâu
+- Có thể tạo *thị trường ngầm* và *capital flight* ngầm
+
+**Phù hợp**: KT đang phát triển, cần ổn định + tự chủ chính sách.
+
+## C. Việt Nam trong Trilemma
+
+### C.1. Vị trí hiện tại
+
+VN ở **cạnh 3** (cố định mềm + kiểm soát vốn từng phần + CSTT bán tự chủ):
+
+- **Tỷ giá**: crawl-like (theo AREAER 2024) — biến động hẹp, có xu hướng yếu dần
+- **Vốn**: kiểm soát từng phần — FDI tự do, FPI có hạn chế, dòng vốn ngắn hạn bị giới hạn
+- **CSTT**: bán tự chủ — NHNN có công cụ nhưng phải chịu áp lực bảo vệ tỷ giá
+
+Chiến lược này cho phép VN có **không gian chính sách** trong khi vẫn ổn định tỷ giá để hỗ trợ XK và thu hút FDI.
+
+### C.2. Áp lực hiện tại (2022-2024)
+
+**Fed tăng r 200+ bps** → áp lực với mô hình hiện tại:
+
+| Áp lực | Cơ chế |
+|---|---|
+| **Vốn ra** | r USD cao hơn → vốn rút khỏi VN tìm lợi |
+| **Tỷ giá** | VND yếu hơn → áp lực mất giá |
+| **CSTT** | NHNN phải tăng r để giữ vốn → mất tự chủ một phần |
+
+NHNN năm 2022 tăng r chính sách + bán dự trữ ngoại hối + can thiệp thị trường — đây là *biểu hiện thực tế* của Trilemma.
+
+### C.3. Định hướng Đại hội XIV
+
+Đại hội XIV (2026) đặt mục tiêu hội nhập tài chính sâu hơn:
+
+- Mở dần kiểm soát vốn
+- Phát triển thị trường tài chính sâu
+- VND có khả năng trở thành đồng tiền có ý nghĩa khu vực (Asian Currency Unit?)
+
+**Trade-off**: hội nhập tài chính sâu hơn → có thể *phải hi sinh cố định tỷ giá* hoặc *hi sinh CSTT*. Đây là quyết định lớn của thập kỷ.
+
+## D. Khủng hoảng châu Á 1997 và bài học
+
+### D.1. Bối cảnh trước 1997
+
+Các "Tiger châu Á" (Thái Lan, Indonesia, Hàn Quốc, Philippines, Malaysia) chia sẻ đặc điểm:
+
+- **Tỷ giá peg USD** (mềm)
+- **Vốn tự do hoá** nhanh đầu 1990s
+- **Độc lập CSTT** danh nghĩa
+
+→ Cố gắng đạt **cả 3 đỉnh Trilemma** — bom hẹn giờ.
+
+**Bằng chứng cảnh báo**:
+- Vốn ngắn hạn (hot money) vào lớn
+- Tín dụng tăng nhanh, bong bóng BĐS
+- CA thâm hụt ngày càng lớn (Thái Lan ~8% GDP)
+- Nợ ngoại tệ ngắn hạn > dự trữ ngoại hối
+
+### D.2. Diễn biến
+
+**Tháng 5/1997**: tấn công đầu tiên vào THB. Hedge funds (Soros, Robertson) bán khống.
+
+**2/7/1997**: Thái Lan **rút khỏi peg**, THB thả nổi → mất giá 50% trong 6 tháng.
+
+**Lan toả nhanh**:
+
+| Quốc gia | Hậu quả |
+|---|---|
+| **Thái Lan** | THB -50%, GDP -10%, IMF bail-out $17B |
+| **Indonesia** | IDR -70%, GDP -13%, khủng hoảng chính trị → Suharto từ chức |
+| **Hàn Quốc** | KRW -50%, GDP -7%, IMF bail-out $58B (kỷ lục lúc đó) |
+| **Philippines, Malaysia** | Suy giảm mạnh nhưng phục hồi nhanh hơn |
+
+### D.3. Nguyên nhân cốt lõi (theo Krugman 1998)
+
+**Generation 1 model** (Krugman 1979) áp dụng:
+
+- Peg + chính sách không nhất quán + dự trữ giới hạn → khủng hoảng *không thể tránh*
+- Khi dự trữ cạn → peg sụp đổ
+- Speculative attack đẩy nhanh quá trình
+
+**Yếu tố cấu trúc**:
+
+- **Tự do hoá vốn quá nhanh** không đi kèm giám sát ngân hàng
+- **Nợ ngoại tệ** không hedge — DN vay USD đầu tư tài sản VND
+- **Liên kết tài chính khu vực** yếu — không có cơ chế phòng vệ chung
+
+### D.4. Việt Nam trong khủng hoảng 1997
+
+VN bị ảnh hưởng *nhẹ hơn* các "Tiger" — vì sao?
+
+- **Vốn còn kiểm soát chặt** (vào 1997 chưa mở)
+- **Hệ thống ngân hàng kín** với quốc tế
+- **Tỷ giá điều chỉnh** linh hoạt (không peg cứng)
+- **Nợ ngoại tệ ít**
+
+→ Bài học cho VN: *thận trọng* khi mở vốn. Cẩn nhắc tốc độ tự do hoá.
+
+### D.5. Năm bài học cho VN
+
+| # | Bài học |
+|---|---|
+| 1 | **Không tự do hoá vốn quá nhanh** trước khi hệ thống tài chính đủ mạnh |
+| 2 | **Tỷ giá peg + vốn tự do** là *bộ ba cấm* — phải chọn |
+| 3 | **Dự trữ ngoại hối** đủ lớn (≥ nợ ngắn hạn) |
+| 4 | **Giám sát ngân hàng** chặt — đặc biệt nợ ngoại tệ DN |
+| 5 | **Hợp tác khu vực** — ASEAN+3, Chiang Mai Initiative |
+
+::: {.callout-warning}
+## ✋ Bài tập thảo luận trên lớp
+
+Mô phỏng **quyết định NHNN** trong 3 vòng kịch bản:
+
+1. **Vòng 1** (2022): Fed tăng r 75 bps. NHNN nên tăng r hay không?
+2. **Vòng 2** (2023): Fed tăng tiếp 200 bps tổng cộng. Bán dự trữ tới khi nào?
+3. **Vòng 3** (2024): Fed *giảm* r dần. NHNN nới hay tiếp tục thắt?
+
+Áp dụng khung Trilemma giải thích từng quyết định.
+:::
+
+## Tổng kết Buổi 11 — Năm điểm cốt lõi
+
+1. **Trilemma (Mundell 1963)**: chỉ chọn được 2/3 (vốn tự do, cố định, CSTT độc lập).
+2. **Sterilization** là *giải pháp tạm thời* — tốn kém, không bền vững.
+3. **Ba cạnh tam giác**: HK (cạnh 1, mất CSTT) / Mỹ-EU (cạnh 2, mất cố định) / VN-TQ (cạnh 3, mất vốn tự do).
+4. **Việt Nam crawl-like** với vốn kiểm soát từng phần. Đại hội XIV định hướng mở dần — sẽ phải chọn cạnh 1 hoặc 2.
+5. **Khủng hoảng châu Á 1997**: cố gắng đạt 3/3 đỉnh → bom hẹn giờ. VN né được nhờ vốn còn đóng. Bài học: thận trọng tự do hoá.
+
+## Bài tập về nhà (chuẩn bị Buổi 12 — mở Chương 5)
+
+1. **Đọc** HCMA chương về **Quản trị địa phương**.
+2. **Tự đọc** về Tiebout, Oates, Musgrave (sẽ học chi tiết).
+3. **Chuẩn bị 1 ví dụ phân cấp tài khoá VN** sau cải cách 2025.
+4. **Đọc thêm** Luật 72/2025/QH15 và Nghị quyết 202/2025/QH15.
+
+::: {.callout-tip}
+## 🔧 Stata Lab 11 (bonus 5%)
+
+Bài này có lab **event study Khủng hoảng châu Á 1997** trong Stata: phân tích phản ứng GDP, tỷ giá, lạm phát các nước quanh tháng 7/1997.
+
+→ [**Bắt đầu Lab 11 — Event study Khủng hoảng Á 1997**](../stata-lab/lab-11.qmd) *(~30 phút)*
+:::
 
 ## Đọc thêm
 
-- Mankiw, *Kinh tế học vĩ mô*, chương 20.
-- Blanchard (2020), chương 21.
-- World Bank report on Asian Financial Crisis.
-
-::: {.callout-warning appearance="simple"}
-## 🚧 Nội dung đang biên soạn
-
-Bài giảng buổi 11 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
-:::
+- Mankiw, *Kinh tế học vĩ mô*, chương 20 (mở rộng Mundell-Fleming).
+- **Krugman, P.** (1979), *A Model of Balance of Payments Crises*.
+- **Krugman, P.** (1998), *What Happened to Asia?*
+- **Aizenman, J.; Chinn, M.; Ito, H.** — Trilemma Indexes.
+- **IMF** — *Lessons from the Asian Crisis* (1998 report).
 
 ---
 
-← *Buổi trước*: [Buổi 10](buoi-10.qmd) *Buổi tiếp theo*: [Buổi 12](buoi-12.qmd) →
+← *Buổi trước*: [Buổi 10 — Mô hình Mundell-Fleming](buoi-10.qmd) | *Buổi tiếp theo*: [Buổi 12 — Quản trị địa phương và Phân cấp tài khoá](buoi-12.qmd) →

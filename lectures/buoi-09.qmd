@@ -1,63 +1,297 @@
 ---
-title: "Buổi 09 — Cán cân thanh toán và tỷ giá"
-subtitle: "BoP, NEER, REER, chế độ tỷ giá, PPP, UIP, CIP, dự trữ ngoại hối"
-reading-time: "Chương 4"
+title: "Buổi 9 — Cán cân thanh toán và Tỷ giá hối đoái"
+subtitle: "BoP · NEER/REER · PPP, UIP, CIP · Chế độ tỷ giá IMF · Dự trữ ngoại hối VN"
+reading-time: "Chương 4 · ~50 phút đọc"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Đóng góp CLO
 
-**CLO2, CLO3 — Vận dụng khung tỷ giá**
+**CLO2, CLO3** — Vận dụng khung BoP và lý thuyết tỷ giá vào tình huống Việt Nam.
+
+Chương 4 mở rộng phân tích sang **kinh tế mở**. Buổi 9 đặt nền tảng: làm thế nào đo lường dòng tiền giữa Việt Nam và thế giới (BoP), và các quy luật chi phối tỷ giá (PPP, UIP, CIP).
 :::
 
-## Nội dung lý thuyết (thuyết giảng)
+## Lộ trình Buổi 9
 
-**4.1. Cán cân thanh toán (BoP)**
+| Phần | Nội dung |
+|:---:|---|
+| **A** | Cán cân thanh toán — CA, FA, đồng nhất kế toán |
+| **B** | Tỷ giá hối đoái — danh nghĩa, thực, NEER, REER |
+| **C** | Các quy luật ngang giá — PPP, UIP, CIP |
+| **D** | Dự trữ ngoại hối và chế độ tỷ giá IMF |
 
-- Cấu trúc: tài khoản vãng lai (CA), tài khoản tài chính (FA)
-- Đồng nhất: \(CA = S - I\)
-- BoP Việt Nam
+## A. Cán cân thanh toán (BoP)
 
-**Tỷ giá**
+### A.1. Khái niệm
 
-- Danh nghĩa vs thực
-- **NEER** (nominal effective exchange rate)
-- **REER** (real effective exchange rate)
-- Các chế độ tỷ giá theo IMF
+**Balance of Payments (BoP)** = ghi nhận **tất cả giao dịch giữa cư dân Việt Nam và phần còn lại của thế giới** trong một kỳ.
 
-**Lý thuyết**
+Theo **IMF BPM6** (Balance of Payments Manual, 6th edition):
 
-- **PPP** (purchasing power parity)
-- **UIP** (uncovered interest parity)
-- **CIP** (covered interest parity)
-- Carry trade
-- Dự trữ ngoại hối — vai trò
+- Đơn vị: tỷ USD/năm
+- Ba phần: **Tài khoản vãng lai (CA)** + **Tài khoản tài chính (FA)** + **Sai số**
+- Đồng nhất kế toán kép: **CA + FA + sai số = 0**
 
-## Thực hành / Thảo luận
+Mọi giao dịch ghi **hai lần** — bên có và bên nợ — giống kế toán doanh nghiệp.
 
-Tính **NEER và REER VND** từ dữ liệu mới nhất; thảo luận VND có bị **định giá quá cao/thấp** so với rổ tiền tệ chính.
+**Việt Nam 2024**: thặng dư CA khoảng **4 tỷ USD** (~1% GDP).
 
-## Bài tập lớn / Tiểu luận
+### A.2. Cấu trúc CA và FA
 
-Báo cáo phân tích chính sách (4–6 trang) về **một vấn đề tỷ giá hoặc dòng vốn** Việt Nam (Phần 1).
+**Tài khoản vãng lai (CA)**:
 
-## Tự học có hướng dẫn
+| Mục | Nội dung |
+|---|---|
+| **Thương mại hàng hoá** | XK − NK |
+| **Dịch vụ** | Du lịch, vận tải, dịch vụ tài chính |
+| **Thu nhập** | Lương + lợi tức đầu tư |
+| **Chuyển giao** | Kiều hối, viện trợ |
 
-1. CA = S − I — hàm ý gì cho VN có thâm hụt CA?
-2. Tại sao PPP thường không nắm trong ngắn hạn?
-3. Dự trữ ngoại hối VN mức nào là đủ?
+**Tài khoản tài chính (FA)**:
+
+| Mục | Nội dung |
+|---|---|
+| **FDI** | Đầu tư trực tiếp |
+| **FPI** | Đầu tư danh mục (cổ phiếu, trái phiếu) |
+| **OI** | Đầu tư khác (vay, tiền gửi) |
+| **Dự trữ ngoại hối** | Thay đổi của NHTW |
+
+**Đồng nhất quan trọng**: $FA + \Delta\text{Dự trữ} = -CA$ — thặng dư CA phải được "đầu tư ra ngoài" hoặc tích trữ dự trữ.
+
+### A.3. Đồng nhất CA = S − I
+
+Từ đẳng thức GDP: $Y = C + I + G + NX$
+
+Sau khi sắp xếp lại (với $S = Y - C - G$):
+
+$$\boxed{S - I = NX}$$
+
+Trong kinh tế mở, $NX \approx CA$. Vậy:
+
+- **CA dương** = quốc gia tiết kiệm > đầu tư → **cho vay ròng** ra nước ngoài
+- **CA âm** = quốc gia đầu tư > tiết kiệm → **vay ròng** từ nước ngoài
+
+**Việt Nam**: hiện CA dương ổn định → VN là *người cho vay ròng*. Điều này có vẻ ngược lý: VN cần vốn để phát triển — sao lại cho vay ra?
+
+Lý do: VN tích trữ dự trữ ngoại hối nhanh + kiều hối lớn + xuất khẩu vượt nhập (nhờ FDI export-oriented).
+
+### A.4. BoP Việt Nam 2020-2024
+
+| Yếu tố | Quy mô gần đây |
+|---|---|
+| **CA / GDP** | +1% đến +4% |
+| **Xuất khẩu hàng hoá** | 350–400 tỷ USD/năm |
+| **Nhập khẩu hàng hoá** | 320–370 tỷ USD/năm |
+| **FDI thực tế giải ngân** | 20–25 tỷ USD/năm |
+| **Kiều hối** | 15–19 tỷ USD/năm |
+| **Dự trữ NH** | ~90–100 tỷ USD (đang giảm sau 2022) |
+
+**Lưu ý**: dự trữ NH giảm năm 2022–2023 do NHNN can thiệp bảo vệ tỷ giá VND trước Fed tăng r — đây là *chi phí* của chế độ tỷ giá quản lý.
+
+## B. Tỷ giá hối đoái
+
+### B.1. Tỷ giá danh nghĩa
+
+**Tỷ giá danh nghĩa $E$** = số đơn vị nội tệ đổi 1 đơn vị ngoại tệ.
+
+Ví dụ Việt Nam 2024: $E = 25.000$ VND/USD.
+
+Quy ước:
+
+| Thuật ngữ | Ý nghĩa |
+|---|---|
+| **Appreciation (lên giá)** | $E$ giảm — VND mạnh hơn |
+| **Depreciation (mất giá)** | $E$ tăng — VND yếu hơn |
+| **Revaluation** | NHTW chính thức nâng giá (chế độ peg) |
+| **Devaluation** | NHTW chính thức hạ giá (chế độ peg) |
+
+NHTW can thiệp qua mua bán ngoại tệ — mua USD đẩy VND yếu, bán USD đẩy VND mạnh.
+
+### B.2. Tỷ giá thực
+
+**Tỷ giá thực** đo *sức cạnh tranh hàng XK*:
+
+$$q = E \cdot \frac{P^*}{P}$$
+
+Trong đó:
+- $E$ = tỷ giá danh nghĩa
+- $P^*$ = mức giá nước ngoài
+- $P$ = mức giá trong nước
+
+**Diễn giải**:
+
+| Thay đổi | Tác động |
+|---|---|
+| $q$ tăng (real depreciation) | Hàng VN rẻ hơn → XK tăng |
+| $q$ giảm (real appreciation) | Hàng VN đắt hơn → XK giảm |
+
+Tỷ giá thực quan trọng hơn danh nghĩa khi đánh giá *cạnh tranh thương mại* dài hạn.
+
+### B.3. NEER và REER
+
+Một quốc gia giao thương với *nhiều* đối tác — đo tỷ giá với 1 đồng tiền (vd VND/USD) chưa đủ.
+
+**NEER (Nominal Effective Exchange Rate)**: tỷ giá danh nghĩa hiệu dụng — trung bình có trọng số với **rổ đối tác thương mại**.
+
+$$\text{NEER} = \prod_i E_i^{w_i}$$
+
+**REER (Real Effective Exchange Rate)**: NEER điều chỉnh theo chênh lệch giá:
+
+$$\text{REER} = \text{NEER} \cdot \frac{P^*_{\text{weighted}}}{P}$$
+
+**Tại sao quan trọng**: tránh phụ thuộc vào *một* đồng tiền (như USD). USD lên giá khắp thế giới không có nghĩa VND yếu *với tất cả đối tác*.
+
+**Việt Nam**: **BIS** tính REER theo **27 đối tác thương mại**. Đây là chỉ số chuẩn để đánh giá VND đắt/rẻ.
+
+### B.4. Chế độ tỷ giá theo IMF AREAER 2024
+
+**IMF AREAER** (Annual Report on Exchange Arrangements) phân loại các nước thành **10 chế độ**, chia 3 nhóm:
+
+| Nhóm | Chế độ | Đặc điểm |
+|---|---|---|
+| **Cứng** | Dollarization | Dùng ngoại tệ làm tiền tệ chính (Ecuador, Panama) |
+|  | Currency board | Cam kết tỷ giá cố định + dự trữ 100% (HK với USD) |
+| **Mềm** | Peg cố định | Tỷ giá cố định với 1 đồng tiền |
+|  | Crawling peg | Tỷ giá điều chỉnh dần |
+|  | **Crawl-like** | Tỷ giá biến động trong dải hẹp, có *xu hướng* — **Việt Nam** thuộc nhóm này |
+|  | Stabilized arrangement | Dao động ≤ 2% trong 6 tháng |
+| **Thả nổi** | Managed float | NHTW can thiệp không định kỳ |
+|  | Free float | Hoàn toàn thị trường |
+
+**Việt Nam**: theo AREAER 2024, VN được phân loại **crawl-like** — VND biến động trong biên độ hẹp (≤ ±5%), có xu hướng yếu dần so với USD, NHNN can thiệp khi cần.
+
+## C. Các quy luật ngang giá — PPP, UIP, CIP
+
+### C.1. Purchasing Power Parity (PPP)
+
+**PPP (Cassel 1916, 1922)**: trong dài hạn, tỷ giá điều chỉnh sao cho cùng một rổ hàng hoá có *cùng giá* khi quy về 1 đồng tiền.
+
+**PPP tuyệt đối**:
+$$E = \frac{P}{P^*} \implies q = 1$$
+
+**PPP tương đối**: thay đổi tỷ giá = chênh lệch lạm phát.
+
+$$\frac{\Delta E}{E} = \pi - \pi^*$$
+
+**Thực tế**: PPP hiếm khi nắm trong **ngắn hạn** (vài năm) do:
+- Hàng phi mậu dịch (haircut, nhà ở)
+- Chi phí vận chuyển, thuế
+- Sản phẩm không hoàn toàn đồng nhất
+
+Nhưng PPP **xu hướng đúng dài hạn** (10+ năm). Một biến thể đơn giản: **Big Mac Index** (The Economist) — so giá Big Mac toàn cầu.
+
+### C.2. Uncovered Interest Parity (UIP)
+
+**UIP**: chênh lệch lãi suất giữa hai đồng tiền ≈ kỳ vọng thay đổi tỷ giá.
+
+$$r - r^* = \frac{E^e_{t+1} - E_t}{E_t}$$
+
+**Logic**: nếu lãi suất VND cao hơn USD 5%, kỳ vọng VND mất giá 5% — nếu không, sẽ có *arbitrage*.
+
+**Thực tế**: UIP cũng *không nắm chặt* — gọi là *Forward Premium Puzzle*. Carry trade tận dụng chính sự lệch này.
+
+### C.3. Covered Interest Parity (CIP)
+
+**CIP** (Keynes 1923): chênh lệch lãi suất = chênh lệch *forward rate* và *spot rate*.
+
+$$r - r^* = \frac{F_t - E_t}{E_t}$$
+
+Trong đó $F_t$ = tỷ giá forward.
+
+**Logic**: nếu CIP không đúng → arbitrage không rủi ro (covered = đã bảo hiểm tỷ giá). Tốt cho mọi điều kiện thị trường.
+
+**Thực tế**: CIP nắm rất chặt trước 2008. Sau khủng hoảng tài chính 2008, có **CIP deviations** do *liquidity premium* và *balance sheet constraints* của ngân hàng.
+
+### C.4. Carry trade
+
+**Carry trade** = mượn đồng tiền lãi suất thấp (vd JPY), đầu tư đồng tiền lãi suất cao (vd AUD, BRL).
+
+- **Khi yên ổn**: lãi *carry differential* + *chêch tỷ giá ổn định*.
+- **Khi có cú sốc**: tỷ giá *unwind* nhanh, mất tiền lớn — gọi là *carry crash*.
+
+Carry trade quy mô lớn được coi là một nguồn của **bất ổn tài chính toàn cầu**.
+
+## D. Dự trữ ngoại hối — Vai trò và Việt Nam
+
+### D.1. Vai trò dự trữ NH
+
+**Dự trữ ngoại hối** (NHTW nắm giữ) có ba vai trò chính:
+
+| Vai trò | Cơ chế |
+|---|---|
+| **Bảo vệ tỷ giá** | Bán USD khi VND yếu, mua khi VND mạnh |
+| **Buffer khủng hoảng** | Đảm bảo thanh khoản trong cú sốc |
+| **Tín hiệu thị trường** | Dự trữ lớn → niềm tin nhà đầu tư |
+
+### D.2. Tiêu chuẩn đầy đủ dự trữ
+
+Các tiêu chuẩn quốc tế:
+
+| Tiêu chuẩn | Nội dung |
+|---|---|
+| **3 tháng nhập khẩu** | Mức "tối thiểu cổ điển" (IMF guideline) |
+| **ARA Metric** (IMF) | Tính theo XK + nợ ngắn hạn + M2 |
+| **100% nợ ngắn hạn** | Greenspan-Guidotti rule |
+
+**Việt Nam hiện tại** (~90-100 tỷ USD):
+
+- ~3 tháng NK: **đạt**
+- ARA: **khoảng 80-100%** — vùng *adequate* nhưng không dư
+- So với TQ, HK, Singapore: tỷ lệ thấp hơn
+
+Sau 2022, NHNN bán dự trữ để bảo vệ VND → dự trữ giảm ~15-20 tỷ USD trong 1 năm.
+
+### D.3. Bài học chính sách
+
+**Trade-off**:
+- Dự trữ **quá thấp** → dễ tổn thương khủng hoảng (Thái Lan 1997)
+- Dự trữ **quá cao** → chi phí cơ hội lớn (Trung Quốc)
+
+VN cần cân bằng: vừa đảm bảo *buffer*, vừa không "khoá vốn" quá nhiều.
+
+::: {.callout-warning}
+## ✋ Bài tập thảo luận trên lớp
+
+Tính NEER VND năm 2024 từ dữ liệu 5 đối tác thương mại lớn nhất:
+
+1. Tải dữ liệu tỷ giá VND/USD, EUR, JPY, CNY, KRW.
+2. Tính trọng số theo kim ngạch XNK với mỗi đối tác.
+3. Tính NEER = trung bình có trọng số.
+4. So sánh với báo cáo của BIS — kết quả có gần không?
+:::
+
+## Tổng kết Buổi 9 — Năm điểm cốt lõi
+
+1. **BoP** ghi nhận giao dịch VN ↔ thế giới: CA + FA + sai số = 0.
+2. **CA = S − I**: VN thặng dư CA dương = cho vay ròng, dù là KT đang phát triển.
+3. **NEER/REER**: đo tỷ giá hiệu dụng theo rổ đối tác — quan trọng hơn VND/USD đơn lẻ.
+4. **PPP, UIP, CIP**: ba quy luật ngang giá; PPP chỉ nắm dài hạn, UIP có puzzle, CIP nắm tốt.
+5. **VN crawl-like** theo AREAER 2024, dự trữ ~90-100 tỷ USD (~3 tháng NK).
+
+## Bài tập về nhà (chuẩn bị Buổi 10)
+
+1. **Đọc** Mankiw chương về **Mundell-Fleming**.
+2. **Tự đọc** về điều kiện **Marshall-Lerner**.
+3. **Chuẩn bị 1 ví dụ chính sách tỷ giá Việt Nam 2022** (can thiệp bảo vệ VND).
+4. **Đọc thêm** case Hong Kong LERS, Reaganomics, ERM 1992.
+
+::: {.callout-tip}
+## 🔧 Stata Lab 9 (bonus 5%)
+
+Bài này có lab **tính NEER và REER VND 2015-2024** trong Stata: tải dữ liệu tỷ giá song phương + CPI, tính trọng số rổ, tính NEER REER.
+
+→ [**Bắt đầu Lab 9 — NEER/REER VND**](../stata-lab/lab-09.qmd) *(~30 phút)*
+:::
 
 ## Đọc thêm
 
-- Mankiw, *Kinh tế học vĩ mô*, chương 19.
-- Blanchard (2020), chương 17–18.
-
-::: {.callout-warning appearance="simple"}
-## 🚧 Nội dung đang biên soạn
-
-Bài giảng buổi 09 hiện ở dạng **dàn ý theo đề cương DTU301**. Nội dung chi tiết sẽ được giảng viên cập nhật khi có slide thực tế.
-:::
+- Mankiw, *Kinh tế học vĩ mô*, chương 19 (BoP, Tỷ giá).
+- **IMF AREAER 2024** — danh mục chế độ tỷ giá toàn cầu.
+- **BIS** — REER cho VND và các đồng tiền chính.
+- **NHNN** — Báo cáo thường niên về thị trường ngoại hối.
+- *Vietnam IMF Article IV* — đánh giá khung tỷ giá VN.
 
 ---
 
-← *Buổi trước*: [Buổi 8](buoi-08.qmd) *Buổi tiếp theo*: [Buổi 10](buoi-10.qmd) →
+← *Buổi trước*: [Buổi 8 — AD-AS, Phillips và Phối hợp chính sách](buoi-08.qmd) | *Buổi tiếp theo*: [Buổi 10 — Mô hình Mundell-Fleming](buoi-10.qmd) →

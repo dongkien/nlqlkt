@@ -1,84 +1,112 @@
 ---
 title: "Lab 13 — So sánh 6 vùng KT-XH"
-subtitle: "Tương ứng Buổi 13: Phát triển vùng và chênh lệch"
-reading-time: "~20 phút"
+subtitle: "Tương ứng Buổi 13: Chênh lệch GRDP và lý thuyết Krugman"
+reading-time: "~25 phút"
 ---
 
 ::: {.callout-note appearance="simple"}
 ## 🎯 Liên kết với Buổi 13
 
-Bài này áp dụng khái niệm chính từ [Buổi 13](../lectures/buoi-13.qmd) vào dữ liệu thực tế Việt Nam.
+So sánh **6 vùng KT-XH Việt Nam** về GRDP, dân số, FDI, hạ tầng — đo *chênh lệch vùng* và liên hệ với NEG.
 
-**Khái niệm Stata học**: `collapse, group statistics, box plot`
+**Khái niệm Stata học**: `collapse`, group statistics, box plot, ranking
 :::
 
-::: {.callout-warning appearance="simple"}
-## 🚧 Lab đang biên soạn
-
-Khung lab đã có nhưng dataset và code chi tiết sẽ được giảng viên cập nhật trước Buổi 13. Cấu trúc cố định theo template chuẩn của 16 lab.
-:::
-
-## Khung Lab 13
-
-### 1. Bài toán
-
-Tính GRDP per capita 6 vùng và chênh lệch
-
-### 2. Dữ liệu cần
-
-GDP theo tỉnh + phân loại vùng KT-XH
-
-### 3. Lệnh Stata trọng tâm
-
-Bài này sẽ sử dụng các lệnh Stata sau (sẽ chi tiết hoá khi có dataset):
+## 1. Dataset 6 vùng KT-XH
 
 ```stata
-* Lab 13 — DTU301
-* Họ tên: <điền>, MSSV: <điền>
-
+* Lab 13 — DTU301 — 6 vùng KT-XH
 clear all
 set more off
 log using "lab13_<ten>.log", replace text
 
-* === Tải dữ liệu ===
-* (sẽ chi tiết khi có dataset thật)
+clear
+input str30 vung float GRDP_pc float dan_so float FDI float ti_le_TLĐ
+"Trung du miền núi phía Bắc"  2200  13.5  3.5   65
+"Đồng bằng sông Hồng"         5800  22.5  18.2  80
+"Bắc Trung Bộ & DH miền Trung" 3500  20.5  6.2   72
+"Tây Nguyên"                  2100   6.0  1.0   75
+"Đông Nam Bộ"                 8500  18.5  35.5  90
+"Đồng bằng sông Cửu Long"     3200  18.5  3.8   68
+end
 
-* === Phân tích ===
-* Sử dụng: collapse, group statistics, box plot
+label variable GRDP_pc "GRDP/đầu người (USD)"
+label variable dan_so "Dân số (triệu)"
+label variable FDI "FDI cumulative (tỷ USD)"
+label variable ti_le_TLĐ "Tỷ lệ LĐ qua đào tạo (%)"
 
-* === Đóng log ===
+list
+```
+
+## 2. So sánh + xếp hạng
+
+```stata
+* Ranking theo GRDP
+preserve
+    gsort -GRDP_pc
+    generate rank_grdp = _n
+    list vung GRDP_pc rank_grdp, noobs
+restore
+
+* Tính tỷ lệ GRDP vùng cao nhất vs thấp nhất
+summarize GRDP_pc
+display "Chênh lệch GRDP cao/thấp = " r(max)/r(min) " lần"
+```
+
+**Câu hỏi 1**: Vùng giàu nhất / nghèo nhất? Chênh lệch GRDP cao/thấp bao nhiêu lần?
+
+## 3. Box plot và scatter
+
+```stata
+* Bar chart GRDP
+graph bar GRDP_pc, over(vung, label(angle(45) labsize(small))) ///
+    bar(1, color("114 47 55")) ///
+    title("GRDP/đầu người — 6 vùng KT-XH Việt Nam") ///
+    ytitle("USD") ///
+    graphregion(color(white))
+
+graph export "grdp_6vung.png", replace width(1400)
+
+* Scatter FDI vs GRDP
+twoway (scatter GRDP_pc FDI, mlabel(vung) mlabsize(small) ///
+        mcolor("114 47 55")) ///
+       (lfit GRDP_pc FDI, lcolor("0 88 163")), ///
+       title("FDI và GRDP/đầu người — 6 vùng") ///
+       graphregion(color(white))
+
+graph export "fdi_grdp.png", replace width(1400)
+```
+
+**Câu hỏi 2**: FDI cao có đi đôi với GRDP cao? ĐNB là *điểm sáng* hay *outlier*?
+
+## 4. Phân tích hội tụ (convergence)
+
+```stata
+* σ-convergence: độ biến thiên giảm theo thời gian
+* Ở đây chỉ có 1 năm — không tính σ-conv được
+* Nhưng có thể tính độ phân tán
+
+summarize GRDP_pc, detail
+display "Coefficient of variation = " r(sd)/r(mean) * 100 "%"
+```
+
+**Câu hỏi 3**: CV cao thể hiện *bất bình đẳng vùng* lớn. So với các nước phát triển (CV ~20-30%), VN ở mức nào?
+
+## 5. Lý thuyết NEG Krugman
+
+**Câu hỏi 4 + 5** (suy nghĩ + viết, 400 từ):
+
+Áp dụng **Mô hình Core-Periphery (Krugman 1991)** cho VN:
+
+- ĐNB là *Core* — tại sao? (3 nguồn ngoại tác Marshall)
+- Tây Nguyên là *Periphery* — vì sao bị kẹt?
+- **6 siêu dự án** Đại hội XIV làm giảm chi phí vận chuyển τ. Theo Krugman, kết quả sẽ là *tập trung hơn* hay *phân tán*?
+- Cần *chính sách bổ sung* gì để các vùng nghèo không bị bỏ rơi?
+
+```stata
 log close
 ```
 
-### 4. Câu hỏi suy nghĩ (sẽ chi tiết)
-
-1. Câu hỏi mô tả dữ liệu
-2. Câu hỏi so sánh / xu hướng
-3. Câu hỏi liên hệ với lý thuyết
-4. Câu hỏi liên hệ với chính sách Việt Nam
-5. Câu hỏi mở rộng / phản biện
-
-## Deliverable Lab 13
-
-Nộp 3 file (như các lab trước):
-
-| File | Nội dung |
-|---|---|
-| `lab13_<tên>.do` | Code + comment |
-| `lab13_<tên>.log` | Output |
-| `lab13_<tên>.pdf` (1-2 trang) | Trả lời câu hỏi + biểu đồ |
-
-**Tiêu đề email**: `DTU301-LAB13-MSSV-HọTên`
-
-## Tiêu chí chấm
-
-| Tiêu chí | Điểm |
-|---|:---:|
-| Code chạy đúng, có log | 30% |
-| Vận dụng đúng khái niệm Stata mới của bài | 25% |
-| Biểu đồ / bảng kết quả rõ ràng | 20% |
-| Trả lời câu hỏi sâu, có liên hệ thực tiễn | 25% |
-
 ---
 
-← *Lab trước*: [Lab 12](lab-12.qmd) | *Lab tiếp theo*: [Lab 14](lab-14.qmd) →
+← *Lab trước*: [Lab 12 — PCI/PAPI/PAR](lab-12.qmd) | *Lab tiếp theo*: [Lab 14 — Capstone](lab-14.qmd) →
