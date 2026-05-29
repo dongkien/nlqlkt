@@ -50,8 +50,6 @@ website:
         text: "Tiểu luận / Bài tập"
       - href: exams/index.qmd
         text: "Đánh giá"
-      - href: nguoi-huong-dan.qmd
-        text: "Người hướng dẫn"
 
   sidebar:
     - id: python-lab

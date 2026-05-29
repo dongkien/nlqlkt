@@ -27,7 +27,7 @@ Học phần được giảng dạy bởi các giảng viên của **Bộ môn K
 
 **Giảng viên phụ trách học liệu**: TS. Đỗ Ngọc Kiên *(Trưởng Bộ môn)* — [dongockien@ftu.edu.vn](mailto:dongockien@ftu.edu.vn).
 
-Phân công giảng viên đứng lớp và trợ giảng từng học kỳ sẽ được Bộ môn thông báo trực tiếp tới sinh viên đầu kỳ. Xem thêm tại trang [Người hướng dẫn](nguoi-huong-dan.qmd).
+Phân công giảng viên đứng lớp và trợ giảng từng học kỳ sẽ được Bộ môn thông báo trực tiếp tới sinh viên đầu kỳ.
 
 ## 3. Mô tả học phần
 
